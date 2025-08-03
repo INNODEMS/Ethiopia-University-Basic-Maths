@@ -1,53 +1,128 @@
-<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-definition-of-a-parabola" class="anchor">
-<title>Definition of a Parabola</title>
-
-<table>
-<tabular>
-<row>
-<cell><alert>Definition 4.3:</alert> Let <em>L</em> be a fixed line and F be a fixed point not on the line, both lying on the plane. A <alert>parabola</alert> is a set of points equidistant from <em>L</em> and F. The line <em>L</em> is called the <alert>directrix</alert> and the fixed point F is called the <alert>focus</alert> of the parabola.</cell>
-</row>
-</tabular>
-</table>
-<p>This definition is illustrated by Figure 4.12.</p>
-<table>
-<tabular>
-<row>
-<cell><ul>
-<li><p>Note that the point halfway between the focus F and directrix <em>L</em> is on the parabola; it is called the <alert>vertex,</alert> denoted by V.</p></li>
-<li><p><alert>|</alert>VF| is called the <alert>focal length</alert>.</p></li>
-<li><p>The line through F perpendicular to the directrix is called the <alert>axis</alert> of the parabola. It is the line of symmetry for the parabola.</p></li>
-<li><p>The chord BB′ through F perpendicular to the axis is called <alert>latus rectum</alert>.</p></li>
-<li><p>The length of the latus rectum, i.e, <alert>|</alert>BB<alert>′|</alert>, is called <alert>focal width</alert>.</p></li>
-</ul></cell>
-<cell></cell>
-</row>
-</tabular>
-</table>
-<p>Letting <alert>|</alert>VF <alert>| =</alert> <em>p</em><alert>,</alert> you may show that <alert>|</alert>BB<alert>′|</alert> = 4<em>p</em>; i.e., focal width is 4 times focal length.</p>
-<p>If P(<em>x,y</em>) is any point on the parabola, then by the definition, the distance of P from the directrix is equal to the distance between P and the focus F. This is used to determine an equation of a parabola. To do this, we consider first the cases when the axis of the parabola is parallel to one of the coordinate axes.</p>
-<p><alert>Exercise 4.3.1</alert></p>
-<table>
-<tabular>
-<row header="yes">
-<cell><p>Use the definition of parabola and the given information to answer or solve each of the following problems.</p>
-<p>1. Suppose the focal length of a parabola is <em>p</em>, for some <em>p</em> &gt; 0. Then, show that the focal width (length of the latus rectum) of the parabola is 4<em>p</em>.</p>
-<p>2. Suppose the vertex of a parabola is the origin and its focus is F(0,1). Then,</p>
-<p>(a) What is the focal length of the parabola.</p>
-<p>(b) Find the equations of the axis and directrix of the parabola.</p>
-<p>(c) Find the endpoints of the latus rectum of the parabola.</p>
-<p>(d) Determine whether each of the following point is on the parabola or not.</p>
-<p>(i) (4, 4) (ii) (2, 2) (iii) (−4, 4) (iv) (4, −4) (v) (1, 1/4)</p>
-<p>(Note: By the definition, a point is on the parabola iff its distances from the focus and from the directrix are equal. )</p>
-<p>3. Suppose the vertex of a parabola is V(0, 1) and its directrix is the line <em>x</em> = −2. Then,</p>
-<p>(a) Find the equation of the axis of the parabola.</p>
-<p>(b) Find the focus of the parabola.</p>
-<p>(c) Find the length and endpoints of the latus rectum of the parabola.</p>
-<p>(d) Determine whether each of the following point is on the parabola or not.</p></cell>
-</row>
-
-<row>
-<cell>(i) (1, 0) (ii) (3, 0) (iii) (8, 9) (iv) (8, −7) (v) (8, 8)</cell>
-</row>
-</tabular>
-</table>
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-definition-of-a-parabola" >
+    <title>Definition of a Parabola</title>
+     
+     <p>
+        <m>\textbf{Definition 4.3: }</m>Let L be a fixed line and F be a fixed point not on the line, both lying on the
+        plane. A parabola is a set of points equidistant from L and F. The line L is called the
+        directrix and the fixed point F is called the focus of the parabola.
+     </p>
+     <p>
+        This definition is illustrated by Figure 4.12.
+    <ul>
+        <li>
+            <p>
+                Note that the point halfway between the focus F and directrix <em>L</em> is on the parabola; it is called the <alert>vertex,</alert> denoted by V.
+            </p>
+        </li>
+        <li>
+            <p>
+                VF| is called the <alert>focal length</alert>.
+            </p>
+        </li>
+        <li>
+            <p>
+                The line through F perpendicular to the directrix is called the <alert>axis</alert> of the parabola. It is the line of symmetry for the parabola.
+            </p>
+        </li>
+        <li>
+            <p>
+                The chord BB′ through F perpendicular to the axis is called <alert>latus rectum</alert>.
+            </p>
+        </li>
+        <li>
+            <p>
+                The length of the latus rectum, i.e, <alert>|</alert>BB<alert>′|</alert>, is called <alert>focal width</alert>.
+            </p>
+        </li>
+    </ul>
+    </p>
+    <p>
+        Letting <alert>|</alert>VF <alert>| =</alert> <em>p</em><alert>,</alert> you may show that <alert>|</alert>BB<alert>′|</alert> = 4<em>p</em>; i.e., focal width is 4 times focal length.
+    </p>
+    <p>
+        If P(<em>x,y</em>) is any point on the parabola, then by the definition, the distance of P from the directrix is equal to the distance between P and the focus F. This is used to determine an equation of a parabola. To do this, we consider first the cases when the axis of the parabola is parallel to one of the coordinate axes.
+    </p>
+    <p>
+        <alert>Exercise 4.3.1</alert>
+    </p>
+    <p>
+        Use the definition of parabola and the given information to answer or solve each of the following problems.
+    </p>
+    <p>
+        <ol>
+            <li>
+                <p>
+                   Suppose the focal length of a parabola is <em>p</em>, for some <em>p</em> &gt; 0. Then, show that the focal width (length of the latus rectum) of the parabola is 4<em>p</em>.
+                </p>
+            </li>
+            <li>
+                <p>
+                   Suppose the vertex of a parabola is the origin and its focus is F(0,1). Then,         
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                (a) What is the focal length of the parabola.
+                                
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (b) Find the equations of the axis and directrix of the parabola.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (c) Find the endpoints of the latus rectum of the parabola.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (d) Determine whether each of the following point is on the parabola or not.
+                            </p>
+                            <p>
+                                <m> (i) (4, 4) (ii) (2, 2) (iii) (-4, 4) (iv) (4, -4) (v) (1, \frac{1}{4})</m>
+                            </p>
+                            <p>
+                                (Note: By the definition, a point is on the parabola iff its distances from the focus and from the directrix are equal. )
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+            <li>
+                <p>
+                     Suppose the vertex of a parabola is V(0, 1) and its directrix is the line <em>x</em> = −2. Then,
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                Find the equation of the axis of the parabola.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Find the focus of the parabola.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Find the length and endpoints of the latus rectum of the parabola.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Determine whether each of the following point is on the parabola or not.
+                            </p>
+                            <p>
+                                <m> (i) (1, 0) (ii) (3, 0) (iii) (8, 9) (iv) (8, -7) (v) (8, 8)</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+        </ol>
+    </p>
 </subsection>
