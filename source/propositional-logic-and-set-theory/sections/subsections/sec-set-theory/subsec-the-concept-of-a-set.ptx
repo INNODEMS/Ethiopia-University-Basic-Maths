@@ -1,6 +1,0 @@
-<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-the-concept-of-a-set">
-<title>The concept of a set</title>
-<p>The term set is an undefined term, just as a point and a line are undefined terms in geometry. However, the concept of a set permeates every aspect of mathematics. Set theory underlies the language and concepts of modern mathematics. The term set refers to a well-defined collection of objects that share a certain property or certain properties. The term “<alert>well-defined</alert>” here means that the set is described in such a way that one can decide whether or not a given object belongs in the set. If <m>A</m> is a set, then the objects of the collection <m>A</m> are called the elements or members of the set <m>A</m>. If <m>x</m> is an element of the set <m>A</m>, we write <m>x \in A</m>. If <m>x</m> is not an element of the set <m>A</m>, we write <m>x \notin A</m>.</p>
-<p>As a convention, we use capital letters to denote the names of sets and lowercase letters for elements of a set.</p>
-<p>Note that for each objects <m>x</m> and each set <m>A</m>, exactly one of <m>\text{x\ } \in A</m> or <m>\text{x\ } \notin A</m> but not both must be true.</p>
-</subsection>
