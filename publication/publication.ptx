@@ -147,6 +147,7 @@
     <!-- put <css style="oscarlevin"/>                         -->
     <!-- See also                                              -->
     <!-- https://pretextbook.org/doc/guide/html/publication-file-online.html#online-style-options -->
+     <css theme="denver" palette="leaves" main-color="green" />
       <!--<css
           style="oscarlevin"
           colors="blue_red"

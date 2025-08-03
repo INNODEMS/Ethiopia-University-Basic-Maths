@@ -49,13 +49,13 @@
         Only propositions assert that something is (or is not) the case, and therefore only they can be true or false.</term>
     </p>
 
-    <!-- <definition xml:id="def-definition_1.1:">
+    <definition xml:id="def-definition_1_1">
         <statement>
             <p>
                 A proposition (or statement) is a sentence which has a truth value (either True or False but not both).
             </p>
         </statement>
-    </definition> -->
+    </definition>
 
     <p>
         The above definition does not mean that we must always know what the truth value is. 
@@ -65,6 +65,6 @@
     </p>
 
     <p>
-        Every proposition has a truth value, namely <term>true</term> (denoted by <m>\mathbf{T}</m>) or <term>false</term> (denoted by <m>\mathbf{F}</m>).
+        Every proposition has a truth value, namely <term>true</term> (denoted by <em><term>T</term></em>) or <term>false</term> (denoted by <em><term>F</term></em>).
     </p>
 </subsection>
