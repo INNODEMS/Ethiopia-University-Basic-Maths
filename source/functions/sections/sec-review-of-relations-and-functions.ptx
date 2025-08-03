@@ -1,6 +1,7 @@
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-review-of-relations-and-functions" class="anchor"><title>Review of relations and functions</title>
-<introduction>
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-review-of-relations-and-functions">
+    <title>Review of relations and functions</title>
 <p>After completing this section, the student should be able to:</p>
+<p>
 <ul>
 <li><p>define Cartesian product of two sets</p></li>
 <li><p>understand the notion of relation and function</p></li>
@@ -8,313 +9,990 @@
 <li><p>determine the domain and range of relations and functions</p></li>
 <li><p>find the inverse of a relation</p></li>
 </ul>
+</p>
 <p>The student is familiar with the phrase ordered pair. In the ordered pair <m>(2,3),( - 2,4)</m> and <m>(a,b)</m>; <m>2,\  - 2</m> and <m>a</m> are the first coordinates while <m>3,\ 4</m> and <m>b</m> are the second coordinates.</p>
+<p>
 <ul>
-<li><p><alert>Cartesian Product</alert></p></li>
+<li><p><m>\textbf{Cartesian Product}</m></p></li>
 </ul>
+</p>
 <p>Given sets <m>A = \left\{ 3,\ 4 \right\}</m> and <m>B = \left\{ 2,\ 4,\ 5 \right\}</m>. Then, the set <m>\left\{ (3,2),(3,4),(3,5),(4,2),(4,4),(4,5) \right\}</m> is the Cartesian product of <m>A</m> and <m>B</m>, and it is denoted by <m>A \times B</m>.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.1:</alert> Suppose <m>A</m> and <m>B</m> are sets. The Cartesian product of <m>A</m> and <m>B</m>, denoted by <m>A \times B</m>, is the set which contains every ordered pair whose first coordinate is an element of <m>A</m> and second coordinate is an element of <m>B</m>, i.e.</p>
-<p><m>A \times B =</m> and <m>b \in B</m>.</p></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 3.1</alert>: For <m>A = \left\{ 2,\ 4 \right\}</m> and <m>A = \left\{ - 1,\ 3 \right\}</m>, we have</p>
-<ol type="a">
+<definition xml:id="def-Cartesian-product">
+    <statement>
+        <p>
+            Suppose <m>A</m> and <m>B</m> are sets. The Cartesian product of <m>A</m> and <m>B</m>, denoted by <m>A \times B</m>, is the set which contains every ordered pair whose first coordinate is an element of <m>A</m> and second coordinate is an element of <m>B</m>, i.e.</p>
+            <p><m>A \times B ={(a,b):a}</m> and <m>b \in B</m>.
+        </p>
+    </statement>
+</definition>
+<example>
+    <statement>
+        <p>
+            For <m>A = \left\{ 2,\ 4 \right\}</m> and <m>A = \left\{ - 1,\ 3 \right\}</m>, we have
+        </p>
+    </statement>
+</example>
+<p>
+<ol marker="a">
 <li><p><m>A \times B = \left\{ (2, - 1),(2,3),(4, - 1),(4,3) \right\}</m>, and</p></li>
 <li><p><m>B \times A = \left\{ ( - 1,2),( - 1,4),(3,2),(3,4) \right\}</m>.</p></li>
 </ol>
-<p><alert>Example 3.2</alert>: Let <m>A = \left\{ 1,2,3 \right\}</m> and <m>B = \left\{ a,b,c \right\}</m>. Then,</p>
+</p>
+
+<example>
+    <statement>
+        <p>
+            Let <m>A = \left\{ 1,2,3 \right\}</m> and <m>B = \left\{ a,b,c \right\}</m>. Then,
+        </p>
+    </statement>
+</example>
 
 <p><m>A \times B = \left\{ (1,a),(1,b),(1,c),(2,a),(2,b),(2,c),(3,a),(3,b),(3,c) \right\}</m>.</p>
 
 <p>From example 3.1, we can see that <m>A \times B</m> and <m>B \times A</m> are not equal. Recall that two sets are equal if one is a subset of the other and vice versa. To check equality of Cartesian products we need to define equality of ordered pairs.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.2: (Equality of ordered Pairs)</alert></p>
-<p>Two ordered pairs <m>(a,b)</m> and <m>(c,d)</m> are equal if and only if <m>a = c</m> and <m>b = d</m>.</p></cell>
-</row>
-</tabular>
-</table>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.3: (Relation from</alert> <m>A</m> <alert>into</alert> <m>B</m><alert>)</alert></p>
-<p>If <m>A</m> and <m>B</m> are sets, any subset of <m>A \times B</m> is called a relation from <em>A</em> into <em>B</em>.</p></cell>
-</row>
-</tabular>
-</table>
+<definition xml:id="def-Equality-of-ordered-pairs">
+    <statement>
+        <p>
+            Two ordered pairs <m>(a,b)</m> and <m>(c,d)</m> are equal if and only if <m>a = c</m> and <m>b = d</m>.
+        </p>
+    </statement>
+</definition>
+
+<definition xml:id="def-Relation">
+    <statement>
+        <p>
+            If <m>A</m> and <m>B</m> are sets, any subset of <m>A \times B</m> is called a relation from <em>A</em> into <em>B</em>.
+        </p>
+    </statement>
+</definition>
 <p>Suppose <em>R</em> is a relation from a set <em>A</em> to a set <em>B</em>. Then, <em>R</em>⊆ <em>A</em>×<em>B</em> and hence for each <m>(a,b) \in A \times B</m>, we have either <m>(a,b) \in R</m> or <m>(a,b) \notin R</m>. If <m>(a,b) \in R</m>, we say “<em>a</em> is <em>R-</em>related (or simply related) to <em>b</em>”, and write <m>\text{aRb}</m>. If <m>(a,b) \notin R</m>, we say that “<em>a</em> is not related to <em>b</em>”.</p>
 <p>In particular if <em>R</em> is a relation from a set <em>A</em> to itself, then we say that <em>R</em> is a relation on <em>A</em>.</p>
-<p><alert>Example 3.3</alert>:</p>
-<ol type="1">
+<p>
+<ol marker="1">
 <li><p>Let <m>A = \left\{ 1,3,5,7 \right\}</m> and <m>B = \left\{ 6,8 \right\}</m>. Let <m>R</m> be the relation “less than” from <m>A</m> to <m>B</m>. Then, <m>R = \left\{ (1,6),(1,8),((3,6),(3,8),(5,6),(5,8),(7,8) \right\}</m>.</p></li>
 <li><p>Let <m>A = \left\{ 1,2,3,4,5 \right\}</m> and <m>B = \left\{ a,b,c \right\}</m>.</p></li>
-</ol>
-<ol type="a">
-<li><p>The following are relations from <m>A</m> into <m>B</m>;</p></li>
-</ol>
-<ol type="i">
-<li></li>
-<li></li>
-<li></li>
-</ol>
-<ol start="2" type="a">
-<li><p>The following are relations from <m>B</m> to <m>A</m>;</p></li>
-</ol>
-<ol type="i">
-<li></li>
-<li></li>
-<li></li>
-</ol>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.4:</alert> Let <m>R</m> be a relation from <m>A</m> into <m>B</m>. Then,</p>
-<ol type="a">
-<li><p>the domain of <m>R</m>, denoted by <m>\text{Dom}(R)</m>, is the set of first coordinates of the elements of <m>R</m>, i.e</p></li>
-<li><p>the range of <m>R</m>, denoted by <m>\text{Range}(R)</m>, is the set of second coordinates of elements of <m>R</m>, i.e</p></li>
-</ol></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Remark</alert>: If <m>R</m> is a relation from the set <m>A</m> to the set <m>B</m>, then the set <m>B</m> is called the codomain of the relation <m>R</m>. The range of relation is always a subset of the codomain.</p>
-<p><alert>Example 3.4</alert>:</p>
-<ol type="1">
-<li><p>The set <m>R = \left\{ (4,7),(5,8),(6,\text{10}) \right\}</m> is a relation from set <m>A = \left\{ 1,2,3,4,5,6 \right\}</m> to set <m>B = \left\{ 6,7,8,9,\text{10} \right\}</m>. The domain of <m>R</m> is <m>\left\{ 4,5,6 \right\}</m>, the range of <m>R</m> is <m>\left\{ 7,8,\text{10} \right\}</m> and the codomain of <m>R</m> is <m>\left\{ 6,7,8,9,\text{10} \right\}</m>.</p></li>
-<li><p>The set of ordered pairs <m>R = \left\{ (8,2),(6, - 3),(5,7),(5, - 3) \right\}</m> is a relation between the sets <m>\left\{ 5,6,8 \right\}</m> and <m>\left\{ 2, - 3,7 \right\}</m>, where <m>\left\{ 5,6,7 \right\}</m> is the domain and <m>\left\{ 2, - 3,7 \right\}</m> is the range.</p></li>
-</ol>
-<p><alert>Remark</alert>:</p>
-<ol type="1">
-<li><p>If <m>(a,b) \in R</m> for a relation <m>R</m>, we say <m>a</m> is related to (or paired with) <m>b</m>. Note that <m>a</m> may also be paired with an element different from <m>b</m>. In any case, <m>b</m> is called the image of <m>a</m> while <m>a</m> is called the pimageA of <m>b</m>under <m>R</m>.</p></li>
-<li><p>If the domain and/or range of a relation is infinite, we cannot list each element assignment, so instead we use set builder notation to describe the relation. The situation we will encounter most frequently is that of a relation defined by an equation or formula. For example,</p></li>
-</ol>
+<li>
+    <p>
+        <ol marker="a)">
+            <li>
+                <p>
+                    The following are relations from <m>A</m> into <m>B</m>;
+                </p>
+            </li>
 
-<p>is a relation for which the range value is 3 less than twice the domain value. Hence, <m>(0,\  - 3),(0\text{.}5,\  - 2)</m>and <m>( - 2, - 7)</m> are examples of ordered pairs that are of the assignment.</p>
+            <li>
+                <p>
+                    <ol marker="i)">
+                        <li>
+                            <p>
+                               <m>R_1={(1,a)}</m> 
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>R_2{(2,b ),(3,b ),(4,c ),(5, a)}</m> 
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>R_3={(1,a),(2,b),(3,c)}</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+        </ol>
+    </p>
+</li>
 
-<p><alert>Example 3.5</alert>:</p>
-<ol type="1">
-<li><p>Let <m>A = \left\{ 1,\ 2,\ 3,\ 4,\ 6 \right\}</m> Let <m>R</m> be the relation on <m>A</m> defined by <m>R =</m>is a factor of <m>b</m>. Find the domain and range of <m>R</m>.</p></li>
+<li>
+    <p>
+        The following are relations from <m>B</m> to <m>A</m>;
+    </p>
+</li>
+<li>
+    <p>
+        <ol marker="i)">
+            <li>
+                <p>
+                    <m>R_4={(a,3),(b,1)}</m>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>R_5={(b,2),(c,4),(a,2),(b,3)}</m>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>R_6={(b,5)}</m>
+                </p>
+            </li>
+        </ol>
+    </p>
+</li>
 </ol>
-<p><alert>Solution</alert>: We have</p>
-<p><m>R = \left\{ (1,1),(1,2),(1,3),(1,4),(1,6),(2,2),(2,4),(2,6),(3,3),(3,6),(4,4),(6,6) \right\}</m>.</p>
-<p>Then, <m>\text{Dom}(R) = \left\{ 1,2,3,4,6 \right\}</m> and <m>\text{Range}(R) = \left\{ 1,2,3,4,6 \right\}</m>.</p>
-<ol start="2" type="1">
-<li><p>Let <m>A = \left\{ 1,2,3,4,5 \right\}</m> and <m>B = \left\{ 1,\ 2,\ 3,\ \cdots,\ \text{67} \right\}</m>.</p></li>
-</ol>
-<p>Let <m>R =</m>is cube root of<m>\left. \ y \right\}</m> . Find a) <m>R</m> b) <m>\text{Dom}(R)</m> c) <m>\text{Range}(R)</m></p>
-<p><alert>Solution</alert>: We have <m>1 = \sqrt[{3,}]{1},\ 2 = \sqrt[3]{8},\ 3 = \sqrt[3]{\text{27}},\ 4 = \sqrt[3]{\text{64}},\ 5 = \sqrt[3]{\text{125}}</m> and <m>1,\ 8,\ \text{27}</m> and 64 are in <m>B</m> whereas 125 is not in <m>B</m>. Thus, <m>R = \left\{ (1,1),(2,8),(3,\text{27}),(4,\text{64}) \right\}</m>, <m>\text{Dom}(R) = \left\{ 1,2,3,4 \right\}</m> and <m>R = \left\{ 1,8,\text{27},\text{64} \right\}</m>.</p>
-<p><alert>Remark</alert>:</p>
-<ol start="2" type="1">
-<li><p>A relation <m>R</m> on a set <m>A</m> is called</p></li>
-</ol>
-<ol type="i">
-<li><p>a universal relation if <m>R = A \times A</m></p></li>
-<li><p>identity relation if <m>R = \left\{ (a,a):a \in A \right\}</m></p></li>
-<li><p>void or empty relation if <m>R = \varphi</m></p></li>
-</ol>
-<ol start="3" type="1">
-<li><p>If <m>R</m>is a relation from <m>A</m> into <m>B</m>, then the inverse relation of <m>R</m>, denoted by <m>R^{- 1}</m>, is a relation from <m>B</m> to <m>A</m> and is given by:</p></li>
-</ol>
+</p>
 
-<p><m>R^{- 1} = \left\{ (y,x):(x,y) \in R \right\}</m>.</p>
+<definition xml:id="def-relation-from-A-B">
+    <statement>
+        <p>
+            Let <m>R</m> be a relation from <m>A</m> into <m>B</m>. Then,
+        </p>
 
-<p>Observe that <m>\text{Dom}(R) = \text{Range}(R^{- 1})</m> and <m>\text{Range}(R) = \text{Dom}(R^{- 1})</m>. For instance, if <m>R = \left\{ (1,4),(9,\text{15}),(\text{10},2) \right\}</m> is a relation on a set <m>A = \left\{ 1,2,3,\cdots,\text{20} \right\}</m>, then <m>R^{- 1} = \left\{ (4,1),(\text{15},9),(2,\text{10}) \right\}</m></p>
-<p><alert>Example 3.6</alert>: Let <m>R</m> be a relation defined on <m>\text{IN}</m> by <m>R = \left\{ (a,b):a,b \in \text{IN},\ a + 2b = \text{11} \right\}</m>.</p>
-<p>Find a) <m>R</m> b) <m>\text{Dom}(R)</m> c) <m>\text{Range}(R)</m> d) <m>R^{- 1}</m></p>
-<p><alert>Solution</alert>: The smallest natural number is 1.</p>
-<p><m>b = 1</m> <m>\Rightarrow</m> <m>a + 2(1) = \text{11}\  \Rightarrow a = 9</m></p>
-<p><m>b = 2\  \Rightarrow \ a + 2(2) = \text{11}\  \Rightarrow a = 7</m></p>
-<p><m>b = 3\  \Rightarrow \ a + 2(3) = \text{11}\  \Rightarrow a = 5</m></p>
-<p><m>b = 4\  \Rightarrow \ a + 2(4) = \text{11}\  \Rightarrow a = 3</m></p>
-<p><m>b = 5\  \Rightarrow \ a + 2(5) = \text{11}\  \Rightarrow a = 1</m></p>
-<p><m>b = 6\  \Rightarrow \ a + 2(6) = \text{11}\  \Rightarrow a = - 1 \notin \text{IN}</m></p>
-<p>Therefore, <m>R = \left\{ (9,1),(7,2),(5,3),(3,4),(1,5) \right\}</m>, <m>\text{Dom}(R) = \left\{ 1,3,5,7,9 \right\}</m>, <m>\text{Range}(R) = \left\{ 1,2,3,4,5 \right\}</m> and <m>R^{- 1} = \left\{ (1,9),(2,7),(3,5),(4,3),(5,1) \right\}</m>.</p>
-<ul>
-<li><p><alert>Functions</alert></p></li>
-</ul>
+        <p>
+            <ol marker="a)">
+                <li>
+                    <p>
+                        the domain of <m>R</m>, denoted by <m>\text{Dom}(R)</m>, is the set of first coordinates of the elements of <m>R</m>, i.e
+                    </p>
+                    <p>
+                        <m>\text{Dom}(R) = {a \epsilon A:(a,b) \epsilon R}</m>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        the range of <m>R</m>, denoted by <m>\text{Range}(R)</m>, is the set of second coordinates of elements of <m>R</m>, i.e
+                    </p>
+                    <p>
+                        <m>\text{Range}(R) = {b \epsilon B:(a,b) \epsilon R}</m>
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+</definition>
+
+<p>
+    <m>\textbf{Remark}</m>: If <m>R</m> is a relation from the set <m>A</m> to the set <m>B</m>, then the set <m>B</m> is called the codomain of the relation <m>R</m>. The range of relation is always a subset of the codomain.
+</p>
+
+<example>
+    <statement>
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        The set <m>R = \left\{ (4,7),(5,8),(6,\text{10}) \right\}</m> is a relation from set <m>A = \left\{ 1,2,3,4,5,6 \right\}</m> to set <m>B = \left\{ 6,7,8,9,\text{10} \right\}</m>. The domain of <m>R</m> is <m>\left\{ 4,5,6 \right\}</m>, the range of <m>R</m> is <m>\left\{ 7,8,\text{10} \right\}</m> and the codomain of <m>R</m> is <m>\left\{ 6,7,8,9,\text{10} \right\}</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        The set of ordered pairs <m>R = \left\{ (8,2),(6, - 3),(5,7),(5, - 3) \right\}</m> is a relation between the sets <m>\left\{ 5,6,8 \right\}</m> and <m>\left\{ 2, - 3,7 \right\}</m>, where <m>\left\{ 5,6,7 \right\}</m> is the domain and <m>\left\{ 2, - 3,7 \right\}</m> is the range.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+</example>
+<p>
+    <m>\textbf{Remark}</m>
+</p>
+<p>
+    <ol>
+        <li>
+            <p>
+                If <m>(a,b) \in R</m> for a relation <m>R</m>, we say <m>a</m> is related to (or paired with) <m>b</m>. Note that <m>a</m> may also be paired with an element different from <m>b</m>. In any case, <m>b</m> is called the image of <m>a</m> while <m>a</m> is called the pimageA of <m>b</m>under <m>R</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+                If the domain and/or range of a relation is infinite, we cannot list each element assignment, so instead we use set builder notation to describe the relation. The situation we will encounter most frequently is that of a relation defined by an equation or formula. For example,
+            </p>
+
+            <p>
+                <m>R={(x,y):y=2x-3,x,y  \epsilon R}</m>
+            </p>
+            <p>
+                is a relation for which the range value is 3 less than twice the domain value. Hence, <m>(0,\  - 3),(0\text{.}5,\  - 2)</m>and <m>( - 2, - 7)</m> are examples of ordered pairs that are of the assignment.
+            </p>
+        </li>
+    </ol>
+</p>
+
+<example>
+    <statement>
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        Let <m>A = \left\{ 1,\ 2,\ 3,\ 4,\ 6 \right\}</m> Let <m>R</m> be the relation on <m>A</m> defined by <m>R =</m>is a factor of <m>b</m>. Find the domain and range of <m>R</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Let <m>A = \left\{ 1,2,3,4,5 \right\}</m> and <m>B = \left\{ 1,\ 2,\ 3,\ \cdots,\ \text{67} \right\}</m>.
+                    </p>
+
+                    <p>
+                        Let <m>R={(x,y) \epsilon A \times B:x is cube root of y}.  </m>Find
+                    </p>
+
+                    <sidebyside>
+                        <p>
+                            (a) <m>R</m>
+                        </p>
+                        <p>
+                            (b) <m>\text{Dom}(R)</m>
+                        </p>
+
+                        <p>
+                            (c) <m>\text{Range}(R)</m>
+                        </p>
+                    </sidebyside>
+                </li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        We have
+                    </p>
+                    <p>
+                        <m>R = \left\{ (1,1),(1,2),(1,3),(1,4),(1,6),(2,2),(2,4),(2,6),(3,3),(3,6),(4,4),(6,6) \right\}</m>.
+                    </p>
+
+                    <p>
+                        Then, <m>\text{Dom}(R) = \left\{ 1,2,3,4,6 \right\}</m> and <m>\text{Range}(R) = \left\{ 1,2,3,4,6 \right\}</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        We have
+                    </p>
+
+                    <p>
+                         <m>1 = \sqrt[{3,}]{1},\ 2 = \sqrt[3]{8},\ 3 = \sqrt[3]{\text{27}},\ 4 = \sqrt[3]{\text{64}},\ 5 = \sqrt[3]{\text{125}}</m> and <m>1,\ 8,\ \text{27}</m> and 64 are in <m>B</m> whereas 125 is not in <m>B</m>. Thus, <m>R = \left\{ (1,1),(2,8),(3,\text{27}),(4,\text{64}) \right\}</m>, <m>\text{Dom}(R) = \left\{ 1,2,3,4 \right\}</m> and <m>R = \left\{ 1,8,\text{27},\text{64} \right\}</m>.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</example>
+
+<p>
+    <m>\textbf{Remark:}</m>
+</p>
+
+<p>
+    <ol>
+        <li>
+            <p>
+                A relation <m>R</m> on a set <m>A</m> is called
+            </p>
+        </li>
+
+        <li>
+            <p>
+                <ol marker="i)">
+                    <li>
+                        <p>
+                            a universal relation if <m>R = A \times A</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            identity relation if <m>R = \left\{ (a,a):a \in A \right\}</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            void or empty relation if <m>R = \varphi</m>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                If <m>R</m>is a relation from <m>A</m> into <m>B</m>, then the inverse relation of <m>R</m>, denoted by <m>R^{- 1}</m>, is a relation from <m>B</m> to <m>A</m> and is given by:
+            </p>
+
+            <p>
+                <m>R^{- 1} = \left\{ (y,x):(x,y) \in R \right\}</m>.
+            </p>
+
+            <p>
+                Observe that <m>\text{Dom}(R) = \text{Range}(R^{- 1})</m> and <m>\text{Range}(R) = \text{Dom}(R^{- 1})</m>. For instance, if <m>R = \left\{ (1,4),(9,\text{15}),(\text{10},2) \right\}</m> is a relation on a set <m>A = \left\{ 1,2,3,\cdots,\text{20} \right\}</m>, then <m>R^{- 1} = \left\{ (4,1),(\text{15},9),(2,\text{10}) \right\}</m>
+            </p>
+        </li>
+    </ol>
+</p>
+
+<example>
+    <statement>
+        <p>
+            Let <m>R</m> be a relation defined on <m>\text{IN}</m> by <m>R = \left\{ (a,b):a,b \in \text{IN},\ a + 2b = \text{11} \right\}</m>.Find
+        </p>
+        <sidebyside>
+            <p>
+                (a) <m>R</m>
+            </p>
+
+            <p>
+                (b) <m>\text{Dom}(R)</m>
+            </p>
+
+            <p>
+                (c) <m>\text{Range}(R)</m>
+            </p>
+
+            <p>
+                (d) <m>R^{- 1}</m>
+            </p>
+        </sidebyside>
+    </statement>
+
+    <solution>
+        <p>
+            The smallest natural number is <m>1.</m>
+        </p>
+        <p><m>b = 1</m> <m>\Rightarrow</m> <m>a + 2(1) = \text{11}\  \Rightarrow a = 9</m></p>
+        <p><m>b = 2\  \Rightarrow \ a + 2(2) = \text{11}\  \Rightarrow a = 7</m></p>
+        <p><m>b = 3\  \Rightarrow \ a + 2(3) = \text{11}\  \Rightarrow a = 5</m></p>
+        <p><m>b = 4\  \Rightarrow \ a + 2(4) = \text{11}\  \Rightarrow a = 3</m></p>
+        <p><m>b = 5\  \Rightarrow \ a + 2(5) = \text{11}\  \Rightarrow a = 1</m></p>
+        <p><m>b = 6\  \Rightarrow \ a + 2(6) = \text{11}\  \Rightarrow a = - 1 \notin \text{IN}</m></p>
+        <p>Therefore, <m>R = \left\{ (9,1),(7,2),(5,3),(3,4),(1,5) \right\}</m>, <m>\text{Dom}(R) = \left\{ 1,3,5,7,9 \right\}</m>, <m>\text{Range}(R) = \left\{ 1,2,3,4,5 \right\}</m> and <m>R^{- 1} = \left\{ (1,9),(2,7),(3,5),(4,3),(5,1) \right\}</m>.</p>
+    </solution>
+</example>
+<p>
+    <ul>
+        <li>
+            <p>
+                <m>\textbf{Functions}</m>
+            </p>
+        </li>
+    </ul>
+</p>
 <p>Mathematically, it is important for us to distinguish among the relations that assign a unique range element to each domain element and those that do not.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.5: (Function)</alert></p>
-<p>A function is a relation in which each element of the domain corresponds to exactly one element of the range.</p></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 3.7</alert>: Determine whether the following relations are functions.</p>
-<ol type="a">
-<li><p><m>R = \left\{ (5, - 2),(3,5),(3,7) \right\}</m> b) <m>R</m>{(2,4),(3,4),(6,-4)}</p></li>
-</ol>
-<p><alert>Solution</alert>:</p>
-<ol type="a">
-<li><p>Since the domain element 3 is assigned to two different values in the range, 5 and 7, it is not a function.</p></li>
-<li><p>Each element in the domain, <m>\left\{ 2,3,6 \right\}</m>, is assigned no more than one value in the range, 2 is assigned only 4, 3 is assigned only 4, and 6 is assigned only – 4. Therefore, it is a function.</p></li>
-</ol>
-<p><alert>Remark</alert>: Map or mapping, transformation and correspondence are synonyms for the word function. If <m>f</m> is a function and <m>(x,y) \in f</m>, we say <em>x</em> is mapped to <em>y</em> by <em>f</em>.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.6</alert>: A relation <m>f</m>from <em>A</em> into <em>B</em> is called a function from <em>A</em> into <em>B</em>, denoted by</p>
-<p><m>f:A \rightarrow B</m> or <m>A\overrightarrow{f}B</m></p>
-<p>if and only if</p>
-<ol type="i">
-<li></li>
-<li><p>No element of <em>A</em> is mapped by <m>f</m> to more than one element in <em>B</em>, i.e. if <m>(x,y) \in f</m> and <m>(x,z) \in f</m>, then <m>y = z</m>.</p></li>
-</ol></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Remark</alert>: 1. If to the element <em>x</em> of <m>A</m> corresponds <m>y\ ( \in B)</m> under the function <m>f</m>, then we write <m>f(x) = y</m> and <m>y</m> is called the image of <em>x</em> under <m>y</m> and <em>x</em> is called a pimageA of <m>y</m> under <m>f</m>.</p>
-<p>2. The symbol <m>f(x)</m> is read as “<m>f</m> of <em>x</em>” but not “<m>f</m> times <em>x</em>”.</p>
-<ol start="4" type="1">
-<li><p>In order to show that a relation <m>f</m> from <em>A</em> into <em>B</em> is a function, we first show that the domain of <m>f</m> is <em>A</em> and next we show that <m>f</m> well defined or single-valued, i.e. if <m>x = y</m> in <em>A</em>, then <m>f(x) = f(y)</m> in <em>B</em> for all <m>x,y \in A</m>.</p></li>
-</ol>
-<p><alert>Example 3.8</alert>:</p>
-<ol type="1">
-<li><p>Let <m>A = \left\{ 1,2,3,4 \right\}</m> and <m>B = \left\{ 1,6,8,\text{11},\text{15} \right\}</m>. Which of the following are functions from <em>A</em> to <m>B</m>.</p></li>
-</ol>
-<ol type="a">
-<li><p><m>f</m> defined by <m>f(1) = 1,\ f(2) = 6,\ f(3) = 8,\ f(4) = 8</m></p></li>
-<li><p><m>f</m> defined by <m>f(1) = 1,\ f(2) = 6,\ f(3) = \text{15}</m></p></li>
-<li><p><m>f</m> defined by <m>f(1) = 6,\ f(2) = 6,\ f(3) = 6,\ f(4) = 6</m></p></li>
-<li><p><m>f</m> defined by <m>f(1) = 1,\ f(2) = 6,\ f(2) = 8,\ f(3) = 8,\ f(4) = \text{11}</m></p></li>
-<li><p><m>f</m> defined by <m>f(1) = 1,\ f(2) = 8,\ f(3) = \text{11},\ f(4) = \text{15}</m></p></li>
-</ol>
-<p><alert>Solution</alert>:</p>
 
-<p>a) <m>f</m> is a function because to each element of <em>A</em> there corresponds exactly one element of <m>B</m>.</p>
+<definition xml:id="def-Function">
+    <statement>
+        <p>
+            A function is a relation in which each element of the domain corresponds to exactly one element of the range.
+        </p>
+    </statement>
+</definition>
 
-<p>b) <m>f</m> is not a function because there is no element of <em>B</em> which correspond to <em>4</em>(<m>\in</m><em>A</em>).</p>
+<example>
+    <statement>
+        <p>
+            Determine whether the following relations are functions.
+        </p>
+        <sidebyside>
+            <p>
+               (a) <m>R = \left\{ (5, - 2),(3,5),(3,7) \right\}</m>
+            </p>
 
-<p>c) <m>f</m> is a function because to each element of <em>A</em> there corresponds exactly one element</p>
-<p>of <em>B</em>. In the given function, the images of all element of <em>A</em> are the same.</p>
-<p>d)<m>f</m> is not a function because there are two elements of <m>B</m> which correspond to 2.</p>
-<p>In other words, the image of 2 is not unique.</p>
+            <p>
+                (b)  <m>R{(2,4),(3,4),(6,-4)}</m>
+            </p>
+        </sidebyside>
+    </statement>
+    <solution>
+        <p>
+            <ol marker="a)">
+                <li>
+                    <p>
+                        Since the domain element 3 is assigned to two different values in the range, 5 and 7, it is not a function.
+                    </p>
+                </li>
 
-<p>e) <m>f</m> is a function because to each element of <m>A</m> there corresponds exactly one element</p>
-<p>of <m>B\text{.}</m></p>
-<p>As with relations, we can describe a function with an equation. For example, <em>y=2x+1</em> is a function, since each <em>x</em> will produce only one <m>y</m>.</p>
-<ol start="2" type="1">
-<li><p>Let <m>f = \left\{ (x,y):y = x^{2} \right\}</m>. Then, <m>f</m> maps:</p></li>
-</ol>
+                <li>
+                    <p>
+                        Each element in the domain, <m>\left\{ 2,3,6 \right\}</m>, is assigned no more than one value in the range, 2 is assigned only 4, 3 is assigned only 4, and 6 is assigned only <m>-4</m>. Therefore, it is a function.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</example>
 
-<p>1 to 1 -1 to 1</p>
-<p>2 to 4 -2 to 4</p>
-<p>3 to 9 -3 to 9</p>
+<p>
+    <m>\textbf{Remark:}</m> Map or mapping, transformation and correspondence are synonyms for the word function. If <m>f</m> is a function and <m>(x,y) \in f</m>, we say <em>x</em> is mapped to <em>y</em> by <em>f</em>.
+</p>
+
+<definition xml:id="def-mapping-transformation-correspondence">
+    <statement>
+        <p>
+            A relation <m>f</m>from <em>A</em> into <em>B</em> is called a function from <em>A</em> into <em>B</em>, denoted by
+        </p>
+
+        <p>
+            <m>f:A \rightarrow B</m> or <m>A\overrightarrow{f}B</m>
+        </p>
+
+        <p>
+            if and only if
+        </p>
+
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        <m>Dom(f)=A</m>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        No element of <em>A</em> is mapped by <m>f</m> to more than one element in <em>B</em>, i.e. if <m>(x,y) \in f</m> and <m>(x,z) \in f</m>, then <m>y = z</m>.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+</definition>
+<p>
+    <m>\textbf{Remark:}</m>
+</p>
+<p>
+    <ol marker="a)">
+        <li>
+            <p>
+                If to the element <em>x</em> of <m>A</m> corresponds <m>y\ ( \in B)</m> under the function <m>f</m>, then we write <m>f(x) = y</m> and <m>y</m> is called the image of <em>x</em> under <m>y</m> and <em>x</em> is called a pimageA of <m>y</m> under <m>f</m>.
+            </p>
+        </li>
+
+        <li>
+            <p>
+                The symbol <m>f(x)</m> is read as “<m>f</m> of <em>x</em>” but not “<m>f</m> times <em>x</em>”.
+            </p>
+        </li>
+
+        <li>
+            <p>
+                In order to show that a relation <m>f</m> from <em>A</em> into <em>B</em> is a function, we first show that the domain of <m>f</m> is <em>A</em> and next we show that <m>f</m> well defined or single-valued, i.e. if <m>x = y</m> in <em>A</em>, then <m>f(x) = f(y)</m> in <em>B</em> for all <m>x,y \in A</m>.
+            </p>
+        </li>
+    </ol>
+</p>
+
+<example>
+    <statement>
+        <p>
+            Let <m>A = \left\{ 1,2,3,4 \right\}</m> and <m>B = \left\{ 1,6,8,\text{11},\text{15} \right\}</m>. Which of the following are functions from <em>A</em> to <m>B</m>.
+        </p>
+        <p>
+            <ol marker="a)">
+                <li><p><m>f</m> defined by <m>f(1) = 1,\ f(2) = 6,\ f(3) = 8,\ f(4) = 8</m></p></li>
+                <li><p><m>f</m> defined by <m>f(1) = 1,\ f(2) = 6,\ f(3) = \text{15}</m></p></li>
+                <li><p><m>f</m> defined by <m>f(1) = 6,\ f(2) = 6,\ f(3) = 6,\ f(4) = 6</m></p></li>
+                <li><p><m>f</m> defined by <m>f(1) = 1,\ f(2) = 6,\ f(2) = 8,\ f(3) = 8,\ f(4) = \text{11}</m></p></li>
+                <li><p><m>f</m> defined by <m>f(1) = 1,\ f(2) = 8,\ f(3) = \text{11},\ f(4) = \text{15}</m></p></li>
+            </ol>
+        </p>
+    </statement>
+
+    <solution>
+        <p>
+            <ol marker="a)">
+                <li>
+                    <p>
+                        <m>f</m> is a function because to each element of <em>A</em> there corresponds exactly one element of <m>B</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <m>f</m> is not a function because there is no element of <em>B</em> which correspond to <em>4</em>(<m>\in</m><em>A</em>).
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <m>f</m> is a function because to each element of <em>A</em> there corresponds exactly one element of <em>B</em>. In the given function, the images of all element of <em>A</em> are the same.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <m>f</m> is not a function because there are two elements of <m>B</m> which correspond to <m>2</m>.In other words, the image of <m>2</m> is not unique.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <m>f</m> is a function because to each element of <m>A</m> there corresponds exactly one element of <m>B</m>.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</example>
+
+<p>
+    As with relations, we can describe a function with an equation. For example, <em>y=2x+1</em> is a function, since each <em>x</em> will produce only one <m>y</m>.
+</p>
+
+<example>
+    <statement>
+        <p>
+            Let <m>f = \left\{ (x,y):y = x^{2} \right\}</m>. Then, <m>f</m> maps:
+        </p>
+
+        <p>
+            <m>1 \text{to} 1 \,\, -1 \text{to} 1</m>
+        </p>
+
+        <p>
+            <m>2 \text{to} 4 \,\, -2 \text{to} 4</m>
+        </p>
+
+        <p>
+            <m>3 \text{to} 9 \,\, -3 \text{to} 9</m>
+        </p>
+    </statement>
+</example>
 
 <p>More generally any real number <em>x</em> is mapped to its square. As the square of a number is unique, <m>f</m> maps every real number to a unique number. Thus, <m>f</m> is a function from <m>\Re</m> into <m>\Re</m>.</p>
 <p>We will find it useful to use the following vocabulary: The independent variable refers to the variable representing possible values in the domain, and the dependent variable refers to the variable representing possible values in the range. Thus, in our usual ordered pair notation <m>(x,y)</m>, <em>x</em> is the independent variable and <m>y</m> is the dependent variable.</p>
-<ol start="3" type="1">
-<li><p>Let <em>f</em> be the subset of <m>Q \times Z</m>defined by <m>f = \left\{ \left( \frac{p}{q},p \right):p,q \in Z,\ q \neq 0 \right\}</m>. Is <em>f</em> a function?</p></li>
-</ol>
-<p><alert>Solution</alert>: First we note that <m>\text{Dom}(f) = Q</m>. Then, <m>f</m> satisfies condition (i) in the definition of a function. Now, <m>\left( \frac{2}{3},2 \right) \in f</m>, <m>\left( \frac{4}{6},4 \right) \in f</m> and <m>\frac{2}{3} = \frac{4}{6}</m> but <m>f\left( \frac{2}{3} \right) = 2 \neq 4 = f\left( \frac{4}{6} \right)</m>. Thus <m>f</m> is not well defined. Hence, <m>f</m> is not a function from <m>Q</m> to <m>Z</m>.</p>
-<ol start="4" type="1">
-<li><p>Let <m>f</m> be the subset of <m>Z \times Z</m> defined by <m>f = \left\{ (\text{mn},m + n):m,n \in Z \right\}</m>. Is <m>f</m> a function?</p></li>
-</ol>
-<p><alert>Solution</alert>: First we show that <m>f</m> satisfies condition (i) in the definition. Let <m>x</m> be any element of <m>Z</m>. Then, <m>x = x \cdot 1</m>. Hence, <m>(x,x + 1) = (x \cdot 1,x + 1) \in f</m>. This implies that<m>x \in \text{Dom}(f)</m>. Thus, <m>Z \subseteq \text{Dom}(f)</m>. However, <m>\text{Dom}(f) \subseteq Z</m> and so <m>\text{Dom}(f) = Z</m>. Now, <m></m> and <m>4 = 4 \cdot 1 = 2 \cdot 2</m>. Thus, <m>(4 \cdot 1,4 + 1)</m> and <m>(2 \cdot 2,2 + 2)</m> are in <m>f</m>. Hence we find that <m>4 \cdot 1 = 2 \cdot 2</m> and <m>f(4 \cdot 1) = 5 \neq 4 = f(2 \cdot 2)</m>. This implies that <m>f</m> is not well defined, i.e, <m>f</m> does not satisfy condition (ii). Hence, <m>f</m> is not a function from <m>Z</m> to <m>Z</m>.</p>
-<ul>
-<li><p><alert>Domain, codomain and range of a function</alert></p></li>
-</ul>
-<p>For a function <m>f:A \rightarrow B</m></p>
-<ol type="i">
-<li><p>The set <em>A</em> is called the domain of <m>f</m></p></li>
-<li><p>The set <em>B</em> is called the codomain of <m></m></p></li>
-<li><p>The set <m>\left\{ f(x):x \in A \right\}</m> of all image of elements of <em>A</em> is called the range of <m>f</m></p></li>
-</ol>
-<p><alert>Example 3.9</alert>:</p>
-<ol type="1">
-<li><p>Let <m>A = \left\{ 1,2,3 \right\}</m> and <m>B = \left\{ 1,2,3,\cdots,\text{10} \right\}</m>. Let <m>f:A \rightarrow B</m> be the correspondence which assigns to each element in <m>A</m>, its square. Thus, we have <m>f(1) = 1,\ f(2) = 4,\ f(3) = 9</m>. Therefore, <m>f</m> is a function and <m>\text{Dom}(f) = \left\{ 1,2,3 \right\}</m>, <m>\text{Range}(f) = \left\{ 1,4,9 \right\}</m> and codomain of <m>f</m> is <m>\left\{ 1,2,3,\cdots,\text{10} \right\}</m>.</p></li>
-<li><p>Let <m>A = \left\{ 2,4,6,7,9 \right\},\ B = \text{IN}</m>. Let <m>x</m> and <m>y</m> represent the elements in the sets <m>A</m> and <m>B</m>, respectively. Let <m>f:A \rightarrow B</m> be a function defined by <m>f(x) = \text{15}x + \text{17},\ x \in A</m>.</p></li>
-</ol>
-<p>The variable <m>x</m> can take values 2, 4, 6, 7, 9. Thus, we have</p>
-<p><m>f(2) = \text{15}(2) + \text{17} = \text{47},\ f(4) = \text{77},\ f(6) = \text{107},\ f(7) = \text{122},\ f(9) = \text{152}</m>.</p>
-<p>This implies that <m>\text{Dom}(f) = \left\{ 2,4,6,7,9 \right\},\ \text{Range}(f) = \left\{ \text{47},\text{77},\text{107},\text{122},\text{152} \right\}</m> and codomain</p>
-<p>of <m>f</m>is <em>IN</em>.</p>
-<ol start="3" type="1">
-<li><p>Determine whether the following equations determine <m>y</m> as a function of <m>x</m>, if so, find the domain of the function.</p></li>
-</ol>
-<ol type="a">
-<li><p><m>y = - 3x + 5</m> b) <m>y = \frac{2x}{3x - 5}</m> c) <m>y^{2} = x</m></p></li>
-</ol>
 
-<p><alert>Solution</alert>:</p>
+<example>
+    <statement>
+        <p>
+            Let <em>f</em> be the subset of <m>Q \times Z</m>defined by <m>f = \left\{ \left( \frac{p}{q},p \right):p,q \in Z,\ q \neq 0 \right\}</m>. Is <em>f</em> a function?
+        </p>
+    </statement>
 
-<ol type="a">
-<li><p>To determine whether <m>y = - 3x + 5</m> gives <m>y</m> as a function of <m>x</m>, we need to know whether each <em>x-value</em> uniquely determines a <em>y-value</em>. Looking at the equation <m>y = - 3x + 5</m>, we can see that once <m>x</m> is chosen we multiply it by – 3 and then add 5. Thus, for each <em>x</em> there is a unique <m>y</m>. Therefore, <m>y = - 3x + 5</m> is a function. It domain is the set of all real numbers.</p></li>
-<li><p>Looking at the equation <m>y = \frac{2x}{3x - 5}</m> carefully, we can see that each <em>x-value</em> uniquely determines a <em>y-value</em> (one <em>x-value</em> can not produce two different <em>y-values</em>). Therefore, <m>y = \frac{2x}{3x - 5}</m> is a function.</p></li>
-</ol>
-<p>As for its domain, we ask ourselves. Are there any values of <m>x</m> that must be excluded? Since <m>y = \frac{2x}{3x - 5}</m> is a fractional expression, we must exclude any value of <m>x</m> that makes the denominator equal to zero. We must have</p>
+    <solution>
+        <p>
+            First we note that <m>\text{Dom}(f) = Q</m>. Then, <m>f</m> satisfies condition (i) in the definition of a function. Now, <m>\left( \frac{2}{3},2 \right) \in f</m>, <m>\left( \frac{4}{6},4 \right) \in f</m> and <m>\frac{2}{3} = \frac{4}{6}</m> but <m>f\left( \frac{2}{3} \right) = 2 \neq 4 = f\left( \frac{4}{6} \right)</m>. Thus <m>f</m> is not well defined. Hence, <m>f</m> is not a function from <m>Q</m> to <m>Z</m>.
+        </p>
+    </solution>
+</example>
 
-<p><m>3x - 5 \neq 0\  \Leftrightarrow \ x \neq \frac{5}{3}</m></p>
+<example>
+    <statement>
+        <p>
+            Let <m>f</m> be the subset of <m>Z \times Z</m> defined by <m>f = \left\{ (\text{mn},m + n):m,n \in Z \right\}</m>. Is <m>f</m> a function?
+        </p>
+    </statement>
 
-<p>Therefore, the domain consists of all real numbers except <m>\frac{5}{3}</m>. Thus, <m>\text{Dom}(f) =</m><m>\left\{ x:x \neq \frac{5}{3} \right\}</m>.</p>
-<ol start="3" type="a">
-<li><p>For the equation <m>y^{2} = x</m>, if we choose <m>x = 9</m> we get <m>y^{2} = 9</m>, which gives <m>y = \pm 3</m>. In other words, there are two <m>y -</m>values associated with <m>x = 9</m>. Therefore, <m>y^{2} = x</m> is not a function.</p></li>
-</ol>
-<ol start="4" type="1">
-<li><p>Find the domain of the function <m>y = \sqrt{3x - x}</m>.</p></li>
-</ol>
-<p><alert>Solution</alert>: Since <m>y</m> is defined and is real when the expression under the radical is non-negative, we need <m>x</m> to satisfy the inequality</p>
-<p><m>3x - x^{2} \geq 0\  \Leftrightarrow \ x(3 - x) \geq 0</m></p>
-<p>This is a quadratic inequality, which can be solved by analyzing signs:</p>
-<p>Sign of <m>3x - x^{2}</m> <m>\begin{matrix}
-\overrightarrow{- \  - \  - \ |\  + \  + \  + \ |\  - \  - \  -} \\
-\ 0\ 3 \\
-\end{matrix}</m></p>
-<p>Since we want <m>3x - x^{2} = x(3 - x)</m> to be non-negative, the sign analysis shows us that the domain is <m>\left\{ x:0 \leq x \leq 3 \right\}</m> or <m>\lbrack 0,3\rbrack</m>.</p>
-<p><alert>Exercise 3.1</alert></p>
-<ol type="1">
-<li><p>Let <em>R</em> be a relation on the set <m>A = \left\{ 1,2,3,4,5,6 \right\}</m> defined by <m>R = \left\{ (a,b):a + b \leq 9 \right\}</m>.</p></li>
-</ol>
-<ol type="i">
-<li><p>List the elements of <m>R</m></p></li>
-<li><p>Is <m>R = R^{- 1}</m></p></li>
-</ol>
-<ol start="2" type="1">
-<li><p>Let <em>R</em> be a relation on the set <m>A = \left\{ 1,2,3,4,5,6,7 \right\}</m> defined by <m>R =</m> divides <m>\left. \ a - b \right\}</m>.</p></li>
-</ol>
-<ol type="i">
-<li><p>List the elements of <m>R</m></p></li>
-<li><p>Find <m>\text{Dom}(R)\  \land \ \text{Range}(R)</m></p></li>
-<li><p>Find the elements of <m>R^{- 1}</m></p></li>
-<li><p>Find <m>\text{Dom}(R^{- 1})\  \land \ \text{Range}(R^{- 1})</m></p></li>
-</ol>
-<ol start="3" type="1">
-<li><p>Let <m>A = \left\{ 1,2,3,4,5,6 \right\}</m>. Define a relation on <m>A</m> by <m>R = \left\{ (x,y):y = x + 1 \right\}</m>. Write down the domain, codomain and range of <m>R</m>. Find <m>R^{- 1}</m>.</p></li>
-<li><p>Find the domain and range of the relation <m>\left\{ (x,y):\left| x \right| + y \geq 2 \right\}</m>.</p></li>
-<li><p>Let <m>A = \left\{ 1,2,3 \right\}</m> and <m>B = \left\{ 3,5,6,8 \right\}</m>. Which of the following are functions from <m>A</m> to <m>B</m>?</p></li>
-</ol>
-<ol type="a">
-<li><p><m>f = \left\{ (1,3),(2,3),(3,3) \right\}</m> c) <m>f = \left\{ (1,8),(2,5) \right\}</m></p></li>
-<li><p><m>f = \left\{ (1,3),(2,5),(1,6) \right\}</m> d) <m>f = \left\{ (1,6),(2,5),(3,3) \right\}</m></p></li>
-</ol>
-<ol start="6" type="1">
-<li><p>Determine the domain and range of the following relations. Which relation a function?</p></li>
-</ol>
-<ol type="a">
-<li><p><m>\left\{ ( - 4, - 3),(2, - 5),(4,6),(2,0) \right\}</m> d) <m>\left\{ ( - \frac{1}{2},\frac{1}{6}),( - 1,1),(\frac{1}{3},\frac{1}{8}) \right\}</m></p></li>
-<li><p><m>\left\{ (8, - 2),(6, - \frac{3}{2}),( - 1,5) \right\}</m> e) <m>\left\{ (0,5),(1,5),(2,5),(3,5),(4,5),(5,5) \right\}</m></p></li>
-<li><p><m>\left\{ ( - \sqrt{3},3),( - 1,1),(0,0),(1,1),(\sqrt{3},3) \right\}</m> f) {(5,0),(5,1),(5,2),(5,3),(5,4),(5,5)}</p></li>
-</ol>
-<ol start="7" type="1">
-<li><p>Find the domain and range of the following functions.</p></li>
-</ol>
-<ol type="a">
-<li><p><m>f(x) = 1 + 8x - 2x^{2}</m> c) <m>f(x) = \sqrt{x^{2} - 6x + 8}</m></p></li>
-<li><p><m>f(x) = \frac{1}{x^{2} - 5x + 6}</m> d) <m>f(x) = \begin{matrix}
-\left\{ 3x + 4,\  - 1 \leq x &lt; 2 \middle| \right.\  \\
-\end{matrix}</m></p></li>
-</ol>
-<ol start="8" type="1">
-<li><p>Given <m>f(x) = \begin{matrix}
-\left\{ 3x - 5,\ x &lt; 1 \middle| \right.\  \\
-\end{matrix}</m>.</p></li>
-</ol>
-<p>Find a) <m>f( - 3)</m> b)<m>f(1)</m> c) <m>f(6)</m></p>
-</introduction>
+    <solution>
+        <p>
+            First we show that <m>f</m> satisfies condition (i) in the definition. Let <m>x</m> be any element of <m>Z</m>. Then, <m>x = x \cdot 1</m>. Hence, <m>(x,x + 1) = (x \cdot 1,x + 1) \in f</m>. This implies that<m>x \in \text{Dom}(f)</m>. Thus, <m>Z \subseteq \text{Dom}(f)</m>. However, <m>\text{Dom}(f) \subseteq Z</m> and so <m>\text{Dom}(f) = Z</m>. Now, <m></m> and <m>4 = 4 \cdot 1 = 2 \cdot 2</m>. Thus, <m>(4 \cdot 1,4 + 1)</m> and <m>(2 \cdot 2,2 + 2)</m> are in <m>f</m>. Hence we find that <m>4 \cdot 1 = 2 \cdot 2</m> and <m>f(4 \cdot 1) = 5 \neq 4 = f(2 \cdot 2)</m>. This implies that <m>f</m> is not well defined, i.e, <m>f</m> does not satisfy condition (ii). Hence, <m>f</m> is not a function from <m>Z</m> to <m>Z</m>.
+        </p>
+    </solution>
+</example>
+
+<p>
+    <ul>
+        <li>
+            <p>
+                <m>\textbf{Domain, codomain and range of a function}</m>
+            </p>
+        </li>
+    </ul>
+</p>
+<p>
+    For a function <m>f:A \rightarrow B</m>
+</p>
+<p>
+    <ol marker="i)">
+        <li>
+            <p>
+                The set <em>A</em> is called the domain of <m>f</m>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                The set <em>B</em> is called the codomain of <m>f</m>
+            </p>
+        </li>
+
+        <li>
+            <p>
+                The set <m>\left\{ f(x):x \in A \right\}</m> of all image of elements of <em>A</em> is called the range of <m>f</m>
+            </p>
+        </li>
+    </ol>
+</p>
+
+<example>
+    <statement>
+        <p>
+            
+        </p>
+    </statement>
+</example>
+
+<example>
+    <statement>
+        <p>
+            Let <m>A = \left\{ 1,2,3 \right\}</m> and <m>B = \left\{ 1,2,3,\cdots,\text{10} \right\}</m>. Let <m>f:A \rightarrow B</m> be the correspondence which assigns to each element in <m>A</m>, its square. Thus, we have <m>f(1) = 1,\ f(2) = 4,\ f(3) = 9</m>. Therefore, <m>f</m> is a function and <m>\text{Dom}(f) = \left\{ 1,2,3 \right\}</m>, <m>\text{Range}(f) = \left\{ 1,4,9 \right\}</m> and codomain of <m>f</m> is <m>\left\{ 1,2,3,\cdots,\text{10} \right\}</m>.
+        </p>
+    </statement>
+</example>
+
+<example>
+    <statement>
+        <p>
+            Let <m>A = \left\{ 2,4,6,7,9 \right\},\ B = \text{IN}</m>. Let <m>x</m> and <m>y</m> represent the elements in the sets <m>A</m> and <m>B</m>, respectively. Let <m>f:A \rightarrow B</m> be a function defined by <m>f(x) = \text{15}x + \text{17},\ x \in A</m>.
+        </p>
+
+        <p>
+            The variable <m>x</m> can take values <m>2, 4, 6, 7, 9.</m> Thus, we have
+        </p>
+
+        <p>
+            <m>f(2) = \text{15}(2) + \text{17} = \text{47},\ f(4) = \text{77},\ f(6) = \text{107},\ f(7) = \text{122},\ f(9) = \text{152}</m>.
+        </p>
+
+        <p>
+            This implies that <m>\text{Dom}(f) = \left\{ 2,4,6,7,9 \right\},\ \text{Range}(f) = \left\{ \text{47},\text{77},\text{107},\text{122},\text{152} \right\}</m> and codomain of <m>f</m>is <em>IN</em>.
+        </p>
+    </statement>
+</example>
+
+<example>
+    <statement>
+        <p>
+            Determine whether the following equations determine <m>y</m> as a function of <m>x</m>, if so, find the domain of the function.
+        </p>
+
+        <sidebyside>
+            <p>
+                <ol marker="a)">
+                    <li>
+                        <p>
+                            <m>y = - 3x + 5</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>y = \frac{2x}{3x - 5}</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>y^{2} = x</m>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </sidebyside>
+    </statement>
+
+    <solution>
+        <p>
+            <ol marker="a)">
+                <li>
+                    <p>
+                        To determine whether <m>y = - 3x + 5</m> gives <m>y</m> as a function of <m>x</m>, we need to know whether each <em>x-value</em> uniquely determines a <em>y-value</em>. Looking at the equation <m>y = - 3x + 5</m>, we can see that once <m>x</m> is chosen we multiply it by – 3 and then add 5. Thus, for each <em>x</em> there is a unique <m>y</m>. Therefore, <m>y = - 3x + 5</m> is a function. It domain is the set of all real numbers.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Looking at the equation <m>y = \frac{2x}{3x - 5}</m> carefully, we can see that each <em>x-value</em> uniquely determines a <em>y-value</em> (one <em>x-value</em> can not produce two different <em>y-values</em>). Therefore, <m>y = \frac{2x}{3x - 5}</m> is a function.
+                    </p>
+
+                    <p>
+                        As for its domain, we ask ourselves. Are there any values of <m>x</m> that must be excluded? Since <m>y = \frac{2x}{3x - 5}</m> is a fractional expression, we must exclude any value of <m>x</m> that makes the denominator equal to zero. We must have
+                    </p>
+
+                    <p>
+                        <m>3x - 5 \neq 0\  \Leftrightarrow \ x \neq \frac{5}{3}</m>
+                    </p>
+
+                    <p>
+                        Therefore, the domain consists of all real numbers except <m>\frac{5}{3}</m>. Thus, <m>\text{Dom}(f) =</m><m>\left\{ x:x \neq \frac{5}{3} \right\}</m>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        For the equation <m>y^{2} = x</m>, if we choose <m>x = 9</m> we get <m>y^{2} = 9</m>, which gives <m>y = \pm 3</m>. In other words, there are two <m>y -</m>values associated with <m>x = 9</m>. Therefore, <m>y^{2} = x</m> is not a function.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</example>
+
+<example>
+    <statement>
+        <p>
+            Find the domain of the function <m>y = \sqrt{3x - x^2}</m>.
+        </p>
+    </statement>
+    <solution>
+        <p>
+            Since <m>y</m> is defined and is real when the expression under the radical is non-negative, we need <m>x</m> to satisfy the inequality
+        </p>
+
+        <p>
+            <m>3x - x^{2} \geq 0\  \Leftrightarrow \ x(3 - x) \geq 0</m>
+        </p>
+
+        <p>
+            This is a quadratic inequality, which can be solved by analyzing signs:
+        </p>
+
+        <p>
+            Sign of <m>3x - x^{2}</m> <m>\begin{matrix}
+            \overrightarrow{- \  - \  - \ |\  + \  + \  + \ |\  - \  - \  -} \\
+            \ 0\ 3 \\
+            \end{matrix}</m>
+        </p>
+
+        <p>
+            Since we want <m>3x - x^{2} = x(3 - x)</m> to be non-negative, the sign analysis shows us that the domain is <m>\left\{ x:0 \leq x \leq 3 \right\}</m> or <m>\lbrack 0,3\rbrack</m>.
+        </p>
+    </solution>
+</example>
+
+<exercises xml:id="exercises-Review-of-relations-and-functions">
+    <exercise>
+        <statement>
+            <p>
+                Let <em>R</em> be a relation on the set <m>A = \left\{ 1,2,3,4,5,6 \right\}</m> defined by <m>R = \left\{ (a,b):a + b \leq 9 \right\}</m>.
+            </p>
+            <p>
+                <ol marker="i) ">
+                    <li>
+                        <p>
+                            List the elements of <m>R</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Is <m>R = R^{- 1}</m>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Let <em>R</em> be a relation on the set <m>A = \left\{ 1,2,3,4,5,6,7 \right\}</m> defined by <m>R ={(a,b):4}</m> divides <m>\left. \ a - b \right\</m>.
+            </p>
+
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            List the elements of <m>R</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Find <m>\text{Dom}(R)\  \land \ \text{Range}(R)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Find the elements of <m>R^{- 1}</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Find <m>\text{Dom}(R^{- 1})\  \land \ \text{Range}(R^{- 1})</m>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Let <m>A = \left\{ 1,2,3,4,5,6 \right\}</m>. Define a relation on <m>A</m> by <m>R = \left\{ (x,y):y = x + 1 \right\}</m>. Write down the domain, codomain and range of <m>R</m>. Find <m>R^{- 1}</m>.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Find the domain and range of the relation <m>\left\{ (x,y):\left| x \right| + y \geq 2 \right\}</m>.
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Let <m>A = \left\{ 1,2,3 \right\}</m> and <m>B = \left\{ 3,5,6,8 \right\}</m>. Which of the following are functions from <m>A</m> to <m>B</m>?
+            </p>
+
+            <p>
+                <ol marker="a)">
+                    <li>
+                        <p>
+                            <m>f = \left\{ (1,3),(2,3),(3,3) \right\}</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>f = \left\{ (1,3),(2,5),(1,6) \right\}</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>f = \left\{ (1,8),(2,5) \right\}</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>f = \left\{ (1,6),(2,5),(3,3) \right\}</m>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Determine the domain and range of the following relations. Which relation a function?
+            </p>
+
+            <p>
+                <ol marker="a)">
+                    <li>
+                        <p>
+                            <m>\left\{ ( - 4, - 3),(2, - 5),(4,6),(2,0) \right\}</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\left\{ (8, - 2),(6, - \frac{3}{2}),( - 1,5) \right\}</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\left\{ ( - \sqrt{3},3),( - 1,1),(0,0),(1,1),(\sqrt{3},3) \right\}</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\left\{ ( - \frac{1}{2},\frac{1}{6}),( - 1,1),(\frac{1}{3},\frac{1}{8}) \right\}</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                             <m>\left\{ (0,5),(1,5),(2,5),(3,5),(4,5),(5,5) \right\}</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>{(5,0),(5,1),(5,2),(5,3),(5,4),(5,5)}</m>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Find the domain and range of the following functions.
+            </p>
+
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            <m>f(x) = 1 + 8x - 2x^{2}</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>f(x) = \frac{1}{x^{2} - 5x + 6}</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>f(x) = \sqrt{x^{2} - 6x + 8}</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>f(x) =
+                        \begin{cases}
+                        3x + 4,  -1 \le x \le 2 \\
+                        1 + x,  2 \le x \le 5
+                        \end{cases}</m>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </exercise>
+
+    <exercise>
+        <statement>
+            <p>
+                Given   <m>f(x) =f(x) =
+                \begin{cases}
+                3x - 5,  x \le 1 \\
+                x^2 - 1,  x \gt 1
+                \end{cases}</m>.
+            </p>
+
+            <p>
+                Find
+            </p>
+            <sidebyside>
+                <p>
+                    <ol marker="a)">
+                        <li>
+                            <p>
+                                <m>f( - 3)</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>f(1)</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>f(6)</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </sidebyside>
+        </statement>
+    </exercise>
+</exercises>
 
 </section>

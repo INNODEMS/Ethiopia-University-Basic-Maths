@@ -1,69 +1,139 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-real-valued-functions-and-their">
 <title>Real Valued functions and their properties</title>
-<introduction>
 <p>After completing this section, the student should be able to:</p>
+<p>
 <ul>
 <li><p>perform the four fundamental operations on polynomials</p></li>
 <li><p>compose functions to get a new function</p></li>
 <li><p>determine the domain of the sum, difference, product and quotient of two functions</p></li>
 <li><p>define equality of two functions</p></li>
 </ul>
+</p>
+
 <p>Let <m>f</m> be a function from set <m>A</m> to set <m>B</m>. If <m>B</m> is a subset of the set of real numbers <m>\Re</m>, then <m>f</m> is called a real valued function, and in particular if <m>A</m> is also a subset of <m>\Re</m>, then <m>f:A \rightarrow B</m> is called a real function.</p>
-<p><alert>Example 3.10</alert>: 1. The function <m>f:\Re \rightarrow \Re</m> defined by <m>f(x) = x^{2} + 3x + 7</m>, <m>x \in \Re</m> is a real function.</p>
-<p>2. The function <m>f:\Re \rightarrow \Re</m> defined as <m>f(x) = \left| x \right|</m> is also a real valued function.</p>
-<ul>
-<li><p><alert>Operations on functions</alert></p></li>
-</ul>
+
+<example>
+    <statement>
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        The function <m>f:\Re \rightarrow \Re</m> defined by <m>f(x) = x^{2} + 3x + 7</m>, <m>x \in \Re</m> is a real function.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        The function <m>f:\Re \rightarrow \Re</m> defined as <m>f(x) = \left| x \right|</m> is also a real valued function.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+</example>
+
+<p>
+    <ul>
+        <li>
+            <p>
+                <m>\textbf{Operations on functions}</m>
+            </p>
+        </li>
+    </ul>
+</p>
 <p>Functions are not numbers. But just as two numbers <m>a</m> and <m>b</m> can be added to produce a new number <m>a + b</m>, so two functions <m>f</m> and <m>g</m> can be added to produce a new function <m>f + g</m>. This is just one of the several operations on functions that we will describe in this section.</p>
 <p>Consider functions <m>f</m> and <m>g</m> defined by <m>f(x) = \frac{x - 3}{2}</m> and <m>g(x) = \sqrt{x}</m>. We can make a new function <m>f + g</m> by having it assign to <m>x</m>the value <m>\frac{x - 3}{2} + \sqrt{x}</m>, that is,</p>
 <p><m>(f + g)(x) = f(x) + g(x) = \frac{x - 3}{2} + \sqrt{x}</m> .</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.7: Sum, Difference, Product and Quotient of two functions</alert></p>
-<p>Let <m>f(x)</m> and <m>g(x)</m> be two functions. We define the following four functions:</p>
-<ol type="1">
-<li><p><m>(f + g)(x) = f(x) + g(x)</m> The sum of the two functions</p></li>
-<li><p><m>(f - g)(x) = f(x) - g(x)</m> The difference of the two functions</p></li>
-<li><p><m>(f \cdot g)(x) = f(x)g(x)</m> The product of the two functions</p></li>
-<li><p><m>\left( \frac{f}{g} \right)(x) = \frac{f(x)}{g(x)}</m> The quotient of the two functions (provided <m>g(x) \neq 0)</m></p></li>
-</ol>
-<p>Since an <m>x -</m>value must be an input into both <m>f</m> and <m>g</m>, the domain of <m>(f + g)(x)</m> is the set of all <m>x</m> common to the domain of <m>f</m> and <m>g</m>. This is usually written as <m>\text{Dom}(f + g) = \text{Dom}(f) \cap \text{Dom}(g)</m>. Similar statements hold for the domains of the difference and product of two functions. In the case of the quotient, we must impose the additional restriction that all elements in the domain of <m>g</m> for which <m>g(x) = 0</m> are excluded.</p></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 3.11</alert>:</p>
-<ol type="1">
-<li><p>Let <m>f(x) = 3x^{2} + 2</m> and <m>g(x) = 5x - 4</m>. Find each of the following and its domain</p></li>
-</ol>
-<ol type="a">
-<li><p><m>(f + g)(x)</m> b) <m>(f - g)(x)</m> c) <m>(f\text{.}g)(x)</m> d) <m>\left( \frac{f}{g} \right)(x)</m></p></li>
-</ol>
-<p><alert>Solution</alert>:</p>
-<ol type="a">
-<li><p><m>(f + g)(x) = f(x) + g(x) = (3x^{2} + 2) + (5x - 4) =</m><m>3x^{2} + 5x - 2</m></p></li>
-<li><p><m>(f - g)(x) = f(x) - g(x) = (3x^{2} + 2) - (5x - 4) =</m><m>3x^{2} - 5x + 6</m></p></li>
-<li><p><m>(f \cdot g)(x) = (3x^{2} + 2)(5x - 4) =</m><m>\text{15}x^{3} - \text{12}x^{2} + \text{10}x - 8</m></p></li>
-<li><p><m>\left( \frac{f}{g} \right)(x) = \frac{f(x)}{g(x)} =</m><m>\frac{3x^{2} + 2}{5x - 4}</m></p></li>
-</ol>
-<p>We have</p>
-<ol start="2" type="1">
-<li><p>Let <m>f(x) = \sqrt[4]{x + 1}</m> and <m>g(x) = \sqrt{9 - x^{2}}</m>, with respective domains <m>\lbrack - 1,\infty)</m> and <m>\lbrack - 3,3\rbrack</m>. Find formulas for <m>f + g,\ f - g,\ f \cdot g,\frac{f}{g}</m> and <m>f^{3}</m> and give their domains.</p></li>
-</ol>
-<p><alert>Solution</alert>:</p>
-<table>
-<tabular>
-<row header="yes">
-<cell><alert>Formula Domain</alert></cell>
-</row>
 
-<row>
+<definition xml:id="def-sum-difference-product-quotient-of-functions">
+    <statement>
+        <p>
+            Let <m>f(x)</m> and <m>g(x)</m> be two functions. We define the following four functions:
+        </p>
+    <p>
+        <ol>
+            <li><p><m>(f + g)(x) = f(x) + g(x)</m> The sum of the two functions</p></li>
+            <li><p><m>(f - g)(x) = f(x) - g(x)</m> The difference of the two functions</p></li>
+            <li><p><m>(f \cdot g)(x) = f(x)g(x)</m> The product of the two functions</p></li>
+            <li><p><m>\left( \frac{f}{g} \right)(x) = \frac{f(x)}{g(x)}</m> The quotient of the two functions (provided <m>g(x) \neq 0)</m></p></li>
+        </ol>
+    </p>
+
+    <p>
+        Since an <m>x -</m>value must be an input into both <m>f</m> and <m>g</m>, the domain of <m>(f + g)(x)</m> is the set of all <m>x</m> common to the domain of <m>f</m> and <m>g</m>. This is usually written as <m>\text{Dom}(f + g) = \text{Dom}(f) \cap \text{Dom}(g)</m>. Similar statements hold for the domains of the difference and product of two functions. In the case of the quotient, we must impose the additional restriction that all elements in the domain of <m>g</m> for which <m>g(x) = 0</m> are excluded.
+    </p>
+    </statement>
+</definition>
+
+<example>
+    <statement>
+        <p>
+            Let <m>f(x) = 3x^{2} + 2</m> and <m>g(x) = 5x - 4</m>. Find each of the following and its domain
+        </p>
+
+        <sidebyside>
+            <p>
+                <ol marker="a)">
+                    <li>
+                        <p>
+                            <m>(f + g)(x)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>(f - g)(x)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>(f\text{.}g)(x)</m>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <m>\left( \frac{f}{g} \right)(x)</m>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </sidebyside>
+    </statement>
+
+    <solution>
+        <p>
+            <ol marker="a)">
+                <li><p><m>(f + g)(x) = f(x) + g(x) = (3x^{2} + 2) + (5x - 4) =</m><m>3x^{2} + 5x - 2</m></p></li>
+                <li><p><m>(f - g)(x) = f(x) - g(x) = (3x^{2} + 2) - (5x - 4) =</m><m>3x^{2} - 5x + 6</m></p></li>
+                <li><p><m>(f \cdot g)(x) = (3x^{2} + 2)(5x - 4) =</m><m>\text{15}x^{3} - \text{12}x^{2} + \text{10}x - 8</m></p></li>
+                <li><p><m>\left( \frac{f}{g} \right)(x) = \frac{f(x)}{g(x)} =</m><m>\frac{3x^{2} + 2}{5x - 4}</m></p></li>
+                                
+            </ol>
+        </p>
+    </solution>
+</example>
+
+<example>
+    <statement>
+        <p>
+            Let <m>f(x) = \sqrt[4]{x + 1}</m> and <m>g(x) = \sqrt{9 - x^{2}}</m>, with respective domains <m>\lbrack - 1,\infty)</m> and <m>\lbrack - 3,3\rbrack</m>. Find formulas for <m>f + g,\ f - g,\ f \cdot g,\frac{f}{g}</m> and <m>f^{3}</m> and give their domains.
+        </p>
+    </statement>
+
+    <!-- <solution>
+        <p>
 <cell><p><m>(f + g)(x) = f(x) + g(x) = \sqrt[4]{x + 1} + \sqrt{9 - x^{2}}</m> <m>\lbrack - 1,\ 3\rbrack</m></p>
 <p><m>(f - g)(x) = f(x) - g(x) = \sqrt[4]{x + 1} - \sqrt{9 - x^{2}}</m> <m>\lbrack - 1,\ 3\rbrack</m></p>
 <p><m>(f \cdot g)(x) = f(x) \cdot g(x) = \sqrt[4]{x + 1} \cdot \sqrt{9 - x^{2}}</m> <m>\lbrack - 1,\ 3\rbrack</m></p>
 <p><m>\left( \frac{f}{g} \right)(x) = \frac{f(x)}{g(x)} = \frac{\sqrt[4]{x + 1}}{\sqrt{9 - x^{2}}}</m> <m>\lbrack - 1,\ 3)</m></p>
 <p><m>f^{3}(x) = \left( f(x) \right)^{3} = \left( \sqrt[4]{x + 1} \right)^{3} = \left( x + 1 \right)^{\frac{3}{4}}</m> <m>\lbrack - 1,\infty)</m></p></cell>
-</row>
+
+        </p>
+    </solution> -->
+</example>
+<!-- </row>
 </tabular>
 </table>
 <p>There is yet another way of producing a new function from two given functions.</p>
@@ -192,8 +262,6 @@
 <ol type="a">
 <li><p><m>f(5x + 7)</m> c) <m>f(g(h(3)))</m> e) <m>f(x + a)</m></p></li>
 <li><p><m>5f(x) + 7</m> d) <m>f(1) \cdot g(2) \cdot h(3)</m> f) <m>f(x) + a</m></p></li>
-</ol>
-
-</introduction>
+</ol> -->
 
 </section>
