@@ -2,256 +2,535 @@
 <title>Definition and basic properties of logarithmic, exponential, trigonometric and hyperbolic functions and their graphs</title>
 <introduction>
 <p>After completing this section, the student should be able to:</p>
-<ul>
-<li><p>define exponential, logarithmic, trigonometric and hyperbolic functions</p></li>
-<li><p>understand the relationship of the exponential and logarithmic functions</p></li>
-<li><p>define the hyperbolic functions and be familiar with their properties</p></li>
-<li><p>sketch the graph of exponential, logarithmic, trigonometric and hyperbolic functions</p></li>
-<li><p>use basic properties of logarithmic, exponential, hyperbolic and trigonometric functions to solve problems</p></li>
-</ul>
-<ul>
-<li><p><alert>Exponents and radicals</alert></p></li>
-</ul>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.14:</alert> For a natural number <m>n</m> and a real number <m>x</m>, the power <m>x^{n}</m>, read “ the <m>n^{\text{th}}</m> power of <m>x</m>” or “<m>x</m> raised to <m>n</m>”, is defined as follows:</p>
-<p><m>x^{n} = \underset{n\ \text{factors}\ \text{each}\ \text{equal}\ \text{to}\ x}{\overset{x \cdot x \cdot \cdots \cdot x}{\underbrace{}}}</m></p>
-<p>In the symbol<m>x^{n}</m>, <m>x</m> is called the base and <m>n</m> is called the exponent.</p></cell>
-</row>
-</tabular>
-</table>
+<p>
+    <ul>
+    <li><p>define exponential, logarithmic, trigonometric and hyperbolic functions</p></li>
+    <li><p>understand the relationship of the exponential and logarithmic functions</p></li>
+    <li><p>define the hyperbolic functions and be familiar with their properties</p></li>
+    <li><p>sketch the graph of exponential, logarithmic, trigonometric and hyperbolic functions</p></li>
+    <li><p>use basic properties of logarithmic, exponential, hyperbolic and trigonometric functions to solve problems</p></li>
+    </ul>
+</p>
+<p>
+    <ul>
+
+
+    <li><p><m>\textbf{Exponents and radicals}</m></p></li>
+    </ul>
+</p>
+<definition xml:id="def-exponents-and-radicals">
+    <statement>
+        <p><term>For a natural number</term> <m>n</m> <term>and a real number</term> <m>x</m>, <term>the power</term> <m>x^{n}</m>, <term>read “ the</term> <m>n^{\text{th}}</m> <term>power of</term> <m>x</m>” or “<m>x</m> r<term>raised to</term> <m>n</m>”, <term>is defined as follows:</term></p>
+        <p><me>x^{n} = \underset{n\ \text{factors}\ \text{each}\ \text{equal}\ \text{to}\ x}{\overset{x \cdot x \cdot \cdots \cdot x}{\underbrace{}}}</me></p>
+        <p><term>In the symbol</term>  <m>x^{n}</m>, <m>x</m> <term>is called the base and</term> <m>n</m> <term>is called the exponent.</term></p>
+    </statement>
+</definition>
+
+
+
 <p>For example, <m>2^{5} = 2 \times 2 \times 2 \times 2 \times 2 = \text{32}</m>.</p>
-<p>Based of the definition of <m>x^{n}</m>, <m>n</m> must be a natural number. It does not make sense for <m>n</m> to be negative or zero. However, we can extend the definition of exponents to include 0 and negative exponents.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.15: (Zero and Negative Exponents)</alert></p>
-<p><em>Definition of zero Exponent Definition of Negative Exponent</em></p>
-<p><m>x^{0} = 1\ (x \neq 0)</m> <m>x^{- n} = \frac{1}{x^{n}}\ \left( x \neq 0 \right)</m></p>
-<p>Note: <m>0^{0}</m> is undefined.</p></cell>
-</row>
-</tabular>
-</table>
+<p>Based of the definition of <m>x^{n}</m>, <m>n</m> must be a natural number. It does
+    not make sense for <m>n</m> to be negative or zero. However, we can extend the definition of exponents to include 0 and negative exponents.
+</p>
+
+<definition xml:id="def-zero-and-negative-exponents">
+    <statement>
+        <p><m>\textbf{Zero and Negative Exponents)}</m></p>
+        <p><m>\textit{Definition of zero Exponent   Definition of Negative Exponent}</m></p>
+        <p><m>x^{0} = 1\ (x \neq 0)</m> <m>x^{- n} = \frac{1}{x^{n}}\ \left( x \neq 0 \right)</m></p>
+        <p>Note: <m>0^{0}</m> is undefined.</p>
+    </statement>
+</definition>
+
+
 <p>As a result of the above definition, we have <m>\frac{1}{x^{- n}} = x^{n}</m>. We have the following rules of exponents for integer exponents:</p>
-<table>
-<tabular>
-<row header="yes">
-<cell><alert>Rules for Integer Exponents</alert></cell>
+
+<tabular  left="medium" right="medium" top="medium">
+<row header="yes" halign="left">
+ <cell><alert>Rules for Integer Exponents</alert></cell>
 </row>
 
-<row>
-<cell><ol type="1">
-<li><p><m>x^{n} \cdot x^{m} = x^{n + m}</m> 4. <m>(\text{xy})^{n} = x^{n}y^{n}</m></p></li>
-<li><p><m>(x^{n})^{m} = x^{\text{nm}}</m> 5. <m>\frac{x^{n}}{x^{m}} = x^{n - m}</m></p></li>
-<li></li>
-</ol></cell>
+<row bottom="medium">
+    <cell><p><ol marker="1.">
+    <li><p><m>x^{n} \cdot x^{m} = x^{n + m}</m>  <m>\qquad \qquad \, \text{4.}(\text{xy})^{n} = x^{n}y^{n}</m></p></li>
+    <li><p><m>(x^{n})^{m} = x^{\text{nm}}</m>  <m>\qquad \qquad \, \text{5.}\frac{x^{n}}{x^{m}} = x^{n - m}</m></p></li>
+    <li><p><m> \left ( \frac{x}{y} \right )^n=\frac{x^n}{y^n} \, (y \neq 0)</m></p></li>
+    </ol></p></cell>
 </row>
 </tabular>
-</table>
+
 <p>Next we extend the definition of exponents even further to include rational number exponents. To do this, we assume that we want the rules for integer exponents also to apply to rational exponents and then use the rules to show us to define a rational exponent. For example, how do we define <m>a^{\frac{1}{2}}</m>? Consider <m>9^{\frac{1}{2}}</m>.</p>
 <p>If we apply rule 2 and square <m>9^{\frac{1}{2}}</m>, we get <m>\left( 9^{\frac{1}{2}} \right)^{2} = 9^{\frac{1}{2}} = 9</m>. Thus, <m>9^{\frac{1}{2}}</m> is a number that, when squared, yields 9. There are two possible answers: 3 and – 3, since squaring either number will yield 9. To avoid ambiguity, we define <m>a^{\frac{1}{2}}</m>(called the principal square root of <m>a</m>) as the non-negative quantity that, when squared, yield <m>a</m>. Thus, <m>9^{\frac{1}{2}} = 3</m>.</p>
 <p>We will arrive at the definition of <m>a^{\frac{1}{3}}</m> in the same way as we did for <m>a^{\frac{1}{2}}</m>. For example, if we cube <m>8^{\frac{1}{3}}</m>, we get <m>\left( 8^{\frac{1}{3}} \right)^{3} = 8^{\frac{3}{3}} = 8</m>. Thus, <m>8^{\frac{1}{3}}</m> is the number that, when cubed, yields 8. Since <m>2^{3} = 8</m> we have <m></m>. Similarly, <m>\left( - \text{27} \right)^{\frac{1}{3}} = - 3</m>. Thus, we define <m>a^{\frac{1}{3}}</m>(called the cube root of <m>a</m>) as the quantity that, when cubed yields <m>a</m>.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.16: (Rational Exponent</alert> <m>a^{\frac{1}{n}}</m><alert>)</alert></p>
-<p>If <m>n</m> is an odd positive integer, then <m>a^{\frac{1}{n}} = b</m> if and only if <m>b^{n} = a</m></p>
-<p>If <m>n</m> is an even positive integer and <m>a \geq 0</m>, then <m>a^{\frac{1}{n}} = \left| b \right|</m> if and only if <m>b^{n} = a</m></p></cell>
-</row>
-</tabular>
-</table>
-<p>We call <m>a^{\frac{1}{n}}</m> the principal <m>n^{\text{th}}</m> root of <m>a</m>. Hence, <m>a^{\frac{1}{n}}</m> is the real number (nonnegative when <m>n</m> is even) that, when raised to the <m>n^{\text{th}}</m> power, yields <m>a</m>. Therefore,</p>
-<p><m>\left( \text{16} \right)^{\frac{1}{2}} = 4</m> since <m>4^{2} = \text{16}</m></p>
-<p><m>\left( - \text{125} \right)^{\frac{1}{3}} = - 5</m> since <m>( - 5)^{3} = - \text{125}</m></p>
-<p><m>\left( \frac{1}{\text{81}} \right)^{\frac{1}{4}} = \frac{1}{3}</m> since <m>\left( \frac{1}{3} \right)^{4} = \frac{1}{\text{81}}</m></p>
-<p><m>\text{27}^{\frac{1}{3}} = 3</m> since <m>3^{3} = \text{27}</m></p>
-<p><m>\left( - \text{16} \right)^{\frac{1}{4}}</m> is not a real number</p>
-<p>Thus far, we have defined <m>a^{\frac{1}{n}}</m>, where <m>n</m> is a natural number. With the help of the second rule for exponent, we can define the expression <m>a^{\frac{m}{n}}</m>, where <m>m</m> and <m>n</m> are natural numbers and <m>\frac{m}{n}</m> is reduced to lowest terms.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.17: (Rational Exponent</alert> <m>a^{\frac{m}{n}}</m><alert>)</alert></p>
-<p>If <m>a^{\frac{1}{n}}</m> is a real number, then <m>a^{\frac{m}{n}} = \left( a^{\frac{1}{n}} \right)^{m}</m>(i.e. the <m>n^{\text{th}}</m> root of a raised to the <m>m^{\text{th}}</m> power)</p></cell>
-</row>
-</tabular>
-</table>
-<p>We can also define negative rational exponents:</p>
-<table>
-<tabular>
-<row>
-<cell><m>a^{- \frac{m}{n}} = \frac{1}{a^{\frac{m}{n}}}\ \left( a \neq 0 \right)</m></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 3.29</alert>: Evaluate the following</p>
-<ol type="a">
-<li><p><m>\text{27}^{\frac{2}{3}}</m> b) <m>\text{36}^{- \frac{1}{2}}</m> c) <m>( - \text{32})^{- \frac{3}{5}}</m></p></li>
-</ol>
-<p><alert>Solution</alert>: We have</p>
-<ol type="a">
-<li></li>
-<li></li>
-<li></li>
-</ol>
-<p>Radical notation is an alternative way of writing an expression with rational exponents. We define for real number <m>a</m>, the <m>n^{\text{th}}</m> root of <m>a</m> as follows:</p>
-<table>
-<tabular>
-<row>
-<cell><alert>Definition 3.18 (</alert><m>n^{\text{th}}</m> <alert>root of</alert> <m>a</m><alert>):</alert> <m>\sqrt[n]{a}</m>= <m>a^{\frac{1}{n}}</m>, where <m>n</m> is a positive integer.</cell>
-</row>
-</tabular>
-</table>
-<p>The number <m>\sqrt[n]{a}</m> is also called the principal <m>n^{\text{th}}</m> root of <m>a</m>. If the <m>n^{\text{th}}</m> root of <m>a</m> exists, we have:</p>
-<table>
-<tabular>
-<row>
-<cell><p>For <m>a</m> a real number and <m>n</m> a positive integer,</p>
-<p><m>\sqrt[n]{a^{n}} = \begin{matrix}
-\left\{ \left| a \right|,\ \text{if}\ n\ \text{is}\ \text{even} \middle| \right.\  \\
-\end{matrix}</m></p></cell>
-</row>
-</tabular>
-</table>
-<p>For example, <m>\sqrt[3]{5^{3}} = 5</m> and <m>\sqrt[4]{( - 3)^{4}} = 3</m>.</p>
-<ul>
-<li><p><alert>Exponential Functions</alert></p></li>
-</ul>
-<p>In the previous sections we examined functions of the form <m>f(x) = x^{n}</m>, where <m>n</m> is a constant. How is this function different from <m>f(x) = n^{x}</m>.</p>
-<table>
-<tabular>
-<row>
-<cell><alert>Definition 3.19:</alert> A function of the form <m>y = f(x) = b^{x}</m>, where <m>b &gt; 0</m> and <m>b \neq 1</m>, is called an exponential function.</cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 3.30</alert>: The functions <m>f(x) = 2^{x}</m>, <m>g(x) = 3^{x}</m> and <m>h(x) = \left( \frac{1}{2} \right)^{x}</m> are examples of exponential functions.</p>
-<p>As usual the first question raised when we encounter a new function is its domain. Since rational exponents are well defined, we know that any rational number will be in the domain of an exponential function. For example, let <m>f(x) = 3^{x}</m>. Then as <m>x</m> takes on the rational values <m>x = 4,\ </m> – 2 , <m>\frac{1}{2}</m> and <m>\frac{4}{5}</m>, we have</p>
-<p><m>f(4) = 3^{4} = 3 \cdot 3 \cdot 3 \cdot 3 = \text{81}</m> <m>f( - 2) = 3^{- 2} = \frac{1}{3^{2}} = \frac{1}{9}</m></p>
-<p><m>f(\frac{1}{2}) = 3^{\frac{1}{2}} = \sqrt{3}</m> <m>f(\frac{4}{5}) = 3^{\frac{4}{5}} = \sqrt[5]{3^{4}} = \sqrt[5]{\text{81}}</m></p>
-<p>Note that even though we do not know the exact values of <m>\sqrt{3}</m> and <m>\sqrt[5]{\text{81}}</m>, we do know exactly what they mean. However, what about <m>f(x)</m> for irrational values of <m>x</m>? For instance, <m>f(\sqrt{2}) = 3^{\sqrt{2}} = ?</m></p>
-<p>We have not defined the meaning of irrational exponents. In fact, a precise formal definition of <m>b^{x}</m> where <m>x</m> is irrational requires the ideas of calculus. However, we can get an idea of what <m>3^{\sqrt{2}}</m> should be by using successive rational approximations to <m>\sqrt{2}</m>. For example, we have</p>
-<p><m>1\text{.}\text{414} &lt; \sqrt{2} &lt; 1\text{.}\text{415}</m></p>
-<p>Thus, it would seem reasonable to expect that <m>3^{1\text{.}\text{414}} &lt; 3^{\sqrt{2}} &lt; 3^{1\text{.}\text{415}}</m>. Since 1.414 and 1.415 are rational numbers, <m>3^{1\text{.}\text{414}}</m> and <m>3^{1\text{.}\text{415}}</m> are well defined, even though we cannot compute their values by hand. Using a calculator, we get <m>4\text{.}\text{7276950} &lt; 3^{\sqrt{2}} &lt; 4\text{.}\text{7328918}</m>. If we use better approximations to <m>\sqrt{2}</m>, we get <m>3^{1\text{.}\text{4142}} &lt; 3^{\sqrt{2}} &lt; 3</m>. Using a calculator again, we get <m>4\text{.}\text{7287339} &lt; 3^{\sqrt{2}} &lt; 4\text{.}\text{7292535}</m>. Computing <m>3^{\sqrt{2}}</m>directly on a calculator gives <m>3^{\sqrt{2}} \approx 4\text{.}\text{7288044}</m>. This numerical evidence suggests that as <m>x</m> approaches <m>\sqrt{2}</m>, the values of <m>3^{x}</m> approach a unique real number that we designate by <m>3^{\sqrt{2}}</m>, and so we will accept without proof, the fact that the domain of the exponential function is the set of real numbers.</p>
-<table>
-<tabular>
-<row>
-<cell>The exponential function <m>y = b^{x}</m>, where <m>b &gt; 0</m> and <m>b \neq 1</m>, is defined for all real values of <m>x</m>. In addition all the rules for rational exponents hold for real number exponents as well.</cell>
-</row>
-</tabular>
-</table>
-<p>Before we state some general facts about exponential functions , let’s see if we can determine what the graph of an exponential function will look like.</p>
-<p><alert>Example 3.31</alert>:</p>
-<ol type="1">
-<li><p>Sketch the graph of the function <m>y = 2^{x}</m> and identify its domain and range.</p></li>
-</ol>
-<p><alert>Solution</alert>: To aid in our analysis, we set up a short table of values to give us a frame of</p>
-<p>reference.</p>
-<table>
-<tabular>
-<row>
-<cell></cell>
-<cell></cell>
-</row>
-<row>
-<cell></cell>
-<cell></cell>
-</row>
-<row>
-<cell></cell>
-<cell></cell>
-</row>
-<row>
-<cell>0</cell>
-<cell></cell>
-</row>
-<row>
-<cell>1</cell>
-<cell></cell>
-</row>
-<row>
-<cell>2</cell>
-<cell></cell>
-</row>
-<row>
-<cell>3</cell>
-<cell></cell>
-</row>
-</tabular>
-</table>
-<p><alert><br />
-</alert></p>
-<p>With these points in hand, we draw a smooth curve through the points obtaining the graph appearing above. Observe that the domain of <m>y = 2^{x}</m> is <m>\text{IR}</m>, the graph has no <m>x -</m>intercepts, as</p>
-<p><m>x \rightarrow + \infty</m>, the <m>y</m> values are increasing very rapidly, whereas as <m>x \rightarrow - \infty</m>, the <m>y</m>values are getting closer and closer to 0. Thus, <m>x - \text{axis}</m> is a horizontal asymptote, the <m>y -</m>intercept is 1 and the range of <m>y = 2^{x}</m> is the set of positive real numbers.</p>
-<ol start="2" type="1">
-<li><p>Sketch the graph of <m>y = f(x) = \left( \frac{1}{2} \right)^{x}</m>.</p></li>
-</ol>
-<p><alert>Solution</alert>: It would be instructive to compute a table of values as we did in example 1 above (you are urged to do so). However, we will take a different approach. We note that <m>y = f(x) = \left( \frac{1}{2} \right)^{x} = \frac{1}{2^{x}} = 2^{- x}</m>. If <m>f(x) = 2^{x}</m>, then <m>f( - x) = 2^{- x}</m>. Thus by the graphing principle for <m>f( - x)</m>, we can obtain the graph of <m>y = 2^{- x}</m> by reflecting the graph of <m>y = 2^{x}</m> about the <m>y - \text{axis}</m>.</p>
-<p><image source="/./media/png72/image74.png" style="width:2.94722in;height:1.80972in" /></p>
-<p>Here again the <m>x - \text{axis}</m> is a horizontal asymptote, there is no <m>x -</m>intercept, 1 is <m>y -</m>intercept and the range is the set of positive real numbers. However, the graph is now decreasing rather than increasing.</p>
-<p>The following box summarizes the important facts about exponential functions and their graphs.</p>
-<table>
-<tabular>
-<row header="yes">
-<cell><alert>The Exponential function</alert> <m>y = f(x) = b^{x}</m></cell>
-</row>
 
-<row>
-<cell><ol type="1">
-<li><p>The domain of the exponential function is the set of real numbers</p></li>
-<li><p>The range of the exponential function is the set of positive real numbers</p></li>
-<li><p>The graph of <m>y = b^{x}</m> exhibits exponential growth if <m>b &gt; 1</m> or exponential decay if <m>0 &lt; b &lt; 1</m>.</p></li>
-<li><p>The <m>y -</m>intercept is 1.</p></li>
-<li><p>The <m>x -</m>intercept is a horizontal asymptote</p></li>
-<li><p>The exponential function is 1 – 1. Algebraically if <m>b^{x} = b^{y}</m>, then <m>x = y</m></p></li>
-</ol></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 3.32</alert>: Sketch the graph of each of the following. Find the domain, range, intercepts, and asymptotes.</p>
-<ol type="a">
-<li><p><m>y = 3^{x} + 1</m> b) <m>y = 3^{x + 1}</m> c) <m>y = - 9^{- x} + 3</m></p></li>
-</ol>
-<p><alert>Solution</alert>:</p>
-<ol type="a">
-<li><p>To get the graph of <m>y = 3^{x} + 1</m>. We start with the graph of <m>y = 3^{x}</m>, which is the basic exponential growth graph, and shift it up 1 unit.</p></li>
-</ol>
-<table>
-<tabular>
-<row>
-<cell></cell>
-<cell><p>From the graph we see that</p>
-<ul>
-<li></li>
-<li></li>
-<li><p>The <m>y -</m>intercept is 2</p></li>
-<li><p>The line <m>y = 1</m> is a horizontal asymptote</p></li>
-</ul></cell>
-</row>
-</tabular>
-</table>
-<ol start="2" type="a">
-<li><p>To get the graph of <m>y = 3^{x + 1}</m>, we start with the graph of <m>y = 3^{x}</m>, and shift 1 unit to the left.</p></li>
-</ol>
-<table>
-<tabular>
-<row>
-<cell></cell>
-<cell><p>From the graph we see that</p>
-<ul>
-<li></li>
-<li></li>
-<li><p>The <m>y -</m>intercept is 3</p></li>
-<li><p>The line <m>y = 0</m> is a horizontal asymptote</p></li>
-</ul></cell>
-</row>
-</tabular>
-</table>
+<definition xml:id="def-rational-exponent">
+    <statement>
+        <p><m>\textbf{(Rational Exponent}</m> <m>a^{\frac{1}{n}}</m><m>)</m></p>
+    <p>If <m>n</m> is an odd positive integer, then <m>a^{\frac{1}{n}} = b</m> if and only if <m>b^{n} = a</m></p>
+    <p>If <m>n</m> is an even positive integer and <m>a \geq 0</m>, then <m>a^{\frac{1}{n}} = \left| b \right|</m> if and only if <m>b^{n} = a</m></p>
+    </statement>
+</definition>
+
+
+<p>We call <m>a^{\frac{1}{n}}</m> the principal <m>n^{\text{th}}</m> root of <m>a</m>. Hence, <m>a^{\frac{1}{n}}</m> is the real number (nonnegative when <m>n</m> is even) that, when raised to the <m>n^{\text{th}}</m> power, yields <m>a</m>. Therefore,</p>
+<p><me>\left( \text{16} \right)^{\frac{1}{2}} = 4 \,  \text{since} 4^{2} = \text{16}</me></p>
+<p><me>\left( - \text{125} \right)^{\frac{1}{3}} = - 5 \,  \text{since} ( - 5)^{3} = - \text{125}</me></p>
+<p><me>\left( \frac{1}{\text{81}} \right)^{\frac{1}{4}} = \frac{1}{3} \,  \text{since} \left( \frac{1}{3} \right)^{4} = \frac{1}{\text{81}}</me></p>
+<p><me>\text{27}^{\frac{1}{3}} = 3\, \text{since} \,3^{3} = \text{27}</me></p>
+<p><me>\left( - \text{16} \right)^{\frac{1}{4}} \,\text{is not a real number}</me></p>
+<p>Thus far, we have defined <m>a^{\frac{1}{n}}</m>, where <m>n</m> is a natural number. With the help of the second rule for exponent, we can define the expression <m>a^{\frac{m}{n}}</m>, where <m>m</m> and <m>n</m> are natural numbers and <m>\frac{m}{n}</m> is reduced to lowest terms.</p>
+
+<definition xml:id="def-rational-exponent-2">
+    <statement>
+        <p><m>\textbf{Definition 3.17: (Rational Exponent}</m> <m>a^{\frac{m}{n}}</m><m>)</m></p>
+       <p>If <m>a^{\frac{1}{n}}</m> is a real number, then <m>a^{\frac{m}{n}} = \left( a^{\frac{1}{n}} \right)^{m}</m>(i.e. the <m>n^{\text{th}}</m> root of a raised to the <m>m^{\text{th}}</m> power)</p>
+    </statement>
+</definition>
+
+
+
+<p>We can also define negative rational exponents:</p>
+<p>
+    <me>
+        \huge{a^{- \frac{m}{n}} = \frac{1}{a^{\frac{m}{n}}}\ \left( a \neq 0 \right)}
+    </me>
+    
+</p>
+
+
+
+<example>
+    <statement>
+        <p>
+        Evaluate the following
+        </p>
+        <p>
+        <ol marker="a)">
+        <li><p><m>\text{27}^{\frac{2}{3}}</m>  <m> \qquad \qquad \text{b)}\,\text{36}^{- \frac{1}{2}}</m>  <m>\qquad \qquad\text{c)}\,( - \text{32})^{- \frac{3}{5}}</m></p></li>
+        </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            We have
+        </p>
+        <p>
+            <ol marker="a)">
+                <li>
+                    <p>
+                        <m>27^\frac{2}{3}=\left ( 27^\frac{1}{3} \right )^2=3^2=9</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>36^{\frac{-1}{2}}=\frac{1}{36^\frac{1}{2}}=\frac{1}{6}</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>(-32)^{-\frac{3}{5}}=\frac{1}{\left (-32)^\frac{1}{5} \right)^3}=\frac{1}{(-2)^3}=-\frac{1}{8}
+
+                        </m>
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</example>
+
+
+
+
+<p>Radical notation is an alternative way of writing an expression with rational exponents. We define for real number <m>a</m>, the <m>n^{\text{th}}</m> root of <m>a</m> as follows:</p>
+<definition xml:id="def-n-th-root">
+    <statement>
+        <p>
+            <alert>(</alert><m>n^{\text{th}}</m> <alert>root of</alert> <m>a</m><alert>):</alert> <m>\sqrt[n]{a}</m>= <m>a^{\frac{1}{n}}</m>, where <m>n</m> is a positive integer.
+        </p>
+    </statement>
+</definition>
+
+
+<p>The number <m>\sqrt[n]{a}</m> is also called the principal <m>n^{\text{th}}</m> root of <m>a</m>. If the <m>n^{\text{th}}</m> root of <m>a</m> exists, we have:</p>
+<p>
+    <me>
+        \text{For} a \text{a real number and a positive integer,}
+    </me>
+    
+</p>
+<p>
+    <me>
+        n\sqrt{a^n}=\left\{\begin{matrix}
+        |a| \quad \text{ if n is even}\\ 
+        \\
+        a, \quad \text{if n is odd} \\
+        \end{matrix}\right.
+    </me>
+    
+</p>
+<p>
+    For example, <m>3\sqrt{5^3}=5 \, \text{and}\, 4\sqrt{(-3)^4}=3</m>.
+</p>
+<p>
+    <ul>
+        <li><p><m>\textbf{Exponential Functions}</m></p></li>
+    </ul>
+</p>
+<p>In the previous sections we examined functions of the form <m>f(x) = x^{n}</m>, where <m>n</m> is a constant. How is this function different from <m>f(x) = n^{x}</m>.</p>
+
+<definition xml:id="def-exponential-function">
+    <statement>
+        <p>
+            A function of the form <m>y = f(x) = b^{x}</m>, where <m>b &gt; 0</m> and <m>b \neq 1</m>, is called an exponential function.
+        </p>
+    </statement>
+</definition>
+
+<example>
+    <p> The functions <m>f(x) = 2^{x}</m>, <m>g(x) = 3^{x}</m> and <m>h(x) = \left( \frac{1}{2} \right)^{x}</m> are examples of exponential functions.</p>
+    <p>As usual the first question raised when we encounter a new function is its domain. Since rational exponents are well defined, we know that any rational number will be in the domain of an exponential function. For example, let <m>f(x) = 3^{x}</m>. Then as <m>x</m> takes on the rational values <m>x = 4,\ </m> – 2 , <m>\frac{1}{2}</m> and <m>\frac{4}{5}</m>, we have</p>
+    <p><m>f(4) = 3^{4} = 3 \cdot 3 \cdot 3 \cdot 3 = \text{81}</m> <m>f( - 2) = 3^{- 2} = \frac{1}{3^{2}} = \frac{1}{9}</m></p>
+    <p><m>f(\frac{1}{2}) = 3^{\frac{1}{2}} = \sqrt{3}</m> <m>f(\frac{4}{5}) = 3^{\frac{4}{5}} = \sqrt[5]{3^{4}} = \sqrt[5]{\text{81}}</m></p>
+    <p>Note that even though we do not know the exact values of <m>\sqrt{3}</m> and <m>\sqrt[5]{\text{81}}</m>, we do know exactly what they mean. However, what about <m>f(x)</m> for irrational values of <m>x</m>? For instance, <m>f(\sqrt{2}) = 3^{\sqrt{2}} = ?</m></p>
+    <p>We have not defined the meaning of irrational exponents. In fact, a precise formal definition of <m>b^{x}</m> where <m>x</m> is irrational requires the ideas of calculus. However, we can get an idea of what <m>3^{\sqrt{2}}</m> should be by using successive rational approximations to <m>\sqrt{2}</m>. For example, we have</p>
+    <p><m>1\text{.}\text{414} &lt; \sqrt{2} &lt; 1\text{.}\text{415}</m></p>
+    <p>Thus, it would seem reasonable to expect that <m>3^{1\text{.}\text{414}} &lt; 3^{\sqrt{2}} &lt; 3^{1\text{.}\text{415}}</m>. Since 1.414 and 1.415 are rational numbers, <m>3^{1\text{.}\text{414}}</m> and <m>3^{1\text{.}\text{415}}</m> are well defined, even though we cannot compute their values by hand. Using a calculator, we get <m>4\text{.}\text{7276950} &lt; 3^{\sqrt{2}} &lt; 4\text{.}\text{7328918}</m>. If we use better approximations to <m>\sqrt{2}</m>, we get <m>3^{1\text{.}\text{4142}} &lt; 3^{\sqrt{2}} &lt; 3</m>. Using a calculator again, we get <m>4\text{.}\text{7287339} &lt; 3^{\sqrt{2}} &lt; 4\text{.}\text{7292535}</m>. Computing <m>3^{\sqrt{2}}</m>directly on a calculator gives <m>3^{\sqrt{2}} \approx 4\text{.}\text{7288044}</m>. This numerical evidence suggests that as <m>x</m> approaches <m>\sqrt{2}</m>, the values of <m>3^{x}</m> approach a unique real number that we designate by <m>3^{\sqrt{2}}</m>, and so we will accept without proof, the fact that the domain of the exponential function is the set of real numbers.</p>
+    
+    <tabular left="medium" right="medium" top="medium" bottom="medium">
+        <row>
+        <cell>The exponential function <m>y = b^{x}</m>, where <m>b &gt; 0</m> and <m>b \neq 1</m>, 
+            is defined for all real values of <m>x</m>. In addition all the rules 
+            for rational exponents hold for real number exponents as well.</cell>
+        </row>
+    </tabular>
+
+    <p>Before we state some general facts about exponential functions , let’s see 
+        if we can determine what the graph of an exponential function will look like.</p>
+
+</example>
+
+<example>
+    <statement>
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        Sketch the graph of the function <m>y = 2^{x}</m> and identify its domain and range.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Sketch the graph of <m>y = f(x) = \left( \frac{1}{2} \right)^{x}</m>.
+                    </p>
+                </li>
+            </ol>
+        </p>
+        
+    </statement>
+    <solution>
+        <p>
+            <ol>
+                <li>
+                    <sidebyside>
+                    <tabular halign="left" valign="top" left="medium" right="medium" top="medium" bottom="medium"> 
+                        <row header="yes" >
+                            <cell><m>x</m></cell>
+                            <cell><m>y</m></cell>
+                        </row>
+
+                        <row>
+                            <cell>-3</cell>
+                            <cell><m>2^{-3} = \frac{1}{8}</m></cell>
+                        </row>
+                        <row>
+                            <cell><m>-2</m></cell>
+                            <cell><m>2^{-2} = \frac{1}{4}</m></cell>
+                        </row>
+                        <row>
+                            <cell><m>-1</m></cell>
+                            <cell><m>2^{-1} = \frac{1}{2}</m></cell>
+                        </row>
+                        <row>
+                            <cell><m>0</m></cell>
+                            <cell><m>2^{0} = 1</m></cell>
+                        </row>
+                        <row>
+                            <cell><m>1</m></cell>
+                            <cell><m>2^{1} = 2</m></cell>
+                        </row>
+                        <row>
+                            <cell><m>2</m></cell>
+                            <cell><m>2^{2} = 4</m></cell>
+                        </row>
+                        <row>
+                            <cell><m>3</m></cell>
+                            <cell><m>2^{3} = 8</m></cell>
+                        </row>
+                    </tabular>
+                        <image width="50%">
+                        <latex-image label="funct">
+                            \begin{tikzpicture}
+                                \begin{axis}[very thick,
+                                        axis lines = middle,
+                                        xmin = -2.5, xmax = 3,
+                                        ymin = -2, ymax = 4.5,
+                                        xtick = {1},   xticklabels = {$1$},
+                                        ytick = {1,2}, yticklabels = {$1$,$2$},
+                                        xlabel = {$x$}, ylabel = {$y$},
+                                        clip = false
+                                        ]
+                                        % y = 2^x
+                                        \addplot[very thick, domain=-2:2.5, samples=140] {2^x};
+
+                                        % Point (1,2)
+                                        \addplot[only marks, mark=*] coordinates {(1,2)};
+
+                                        % Dotted guide lines
+                                        \draw[very thick, dotted] (axis cs:1,0) -- (axis cs:1,2) -- (axis cs:0,2);
+
+                                        % Labels
+                                        \node [below] at (axis cs:-0.1,0){\textbf{O}};
+                                        \node at (axis cs:1.3,2) {$(1,2)$};
+                                        \node at (axis cs:2.2,3.6) {$y = 2^{x}$};
+                                    \end{axis}
+                            \end{tikzpicture}
+                        </latex-image>  
+                        </image>
+                    </sidebyside>
+                    <p>With these points in hand, we draw a smooth curve through the points obtaining the graph appearing above. Observe that the domain of <m>y = 2^{x}</m> is <m>\text{IR}</m>, the graph has no <m>x -</m>intercepts, as</p>
+                    <p><m>x \rightarrow + \infty</m>, the <m>y</m> values are increasing very rapidly, whereas as <m>x \rightarrow - \infty</m>, the <m>y</m>values are getting closer and closer to 0. Thus, <m>x - \text{axis}</m> is a horizontal asymptote, the <m>y -</m>intercept is 1 and the range of <m>y = 2^{x}</m> is the set of positive real numbers.</p>
+
+                </li>
+                <li>
+                    
+                    <p>It would be instructive to compute a table of values as we did in example 1 above (you are urged to do so). 
+                        However, we will take a different approach. We note that <m>y = f(x) = \left( \frac{1}{2} \right)^{x} = \frac{1}{2^{x}} = 2^{- x}</m>. If <m>f(x) = 2^{x}</m>, then <m>f( - x) = 2^{- x}</m>. Thus by the graphing principle for <m>f( - x)</m>, we can obtain the graph of <m>y = 2^{- x}</m> by reflecting the graph of <m>y = 2^{x}</m> about the <m>y - \text{axis}</m>.
+
+                    </p>
+                    <image width="50%">
+                    <latex-image label="funct2">
+                        \begin{tikzpicture}[&gt;=stealth]
+                             % Axes -------------------------------------------------
+                            \draw[very thick,-&gt;] (-3,0) -- (3,0)  node[right] {$x$};
+                            \draw[very thick ,-&gt;] (0,-0.5) -- (0,4.5) node[above] {$y$};
+
+                            % Curve y = 2^x ---------------------------------------
+                            \draw[very thick, smooth, samples=140, domain=-2.5:2.5, variable=\x]
+                                    plot ({-\x},{exp(\x*ln(2))});
+
+                            % Point (1,2) and dotted guides -----------------------
+                            \fill (-1,2) circle (2pt);
+                            \draw[dotted] (-1,0) -- (-1,2) -- (0,2);
+
+                            % Tick marks and labels ---------------------------------
+                            \draw (1,0.12) -- (1,-0.12) node[below] {$1$};
+                            \draw (-1,0.12) -- (-1,-0.12) node[below] {$1$};
+                            \draw (0.12,1) -- (-0.12,1) node[left]  {$1$};
+                            \draw (0.12,2) -- (-0.12,2) node[left]  {$2$};
+                            \node[below left] at (0,0) {O};
+
+                            % Extra text ------------------------------------------
+                            \node[left] at (-1,2) {$(-1,2)$};
+                            \node[left] at (-2.2,{exp(2.2*ln(2))}) {$y =(\frac{1}{2}) ^{x}$};
+                        \end{tikzpicture}
+                    </latex-image>
+                        
+                    </image>
+                    <p>Here again the <m>x - \text{axis}</m> is a horizontal asymptote, there is no <m>x -</m>intercept, 1 is <m>y -</m>intercept and the range is the set of positive real numbers. However, the graph is now decreasing rather than increasing.</p>
+                    <p>The following box summarizes the important facts about exponential functions and their graphs.</p>
+                    <tabular left="medium" right="medium" top="medium" bottom="medium">
+                    <row header="yes">
+                    <cell><alert>The Exponential function</alert> <m>y = f(x) = b^{x}</m></cell>
+                    </row>
+
+                    <row>
+                        <cell>
+                            <p>
+                                
+                            <ol marker="1.">
+                                <li><p>The domain of the exponential function is the set of real numbers</p></li>
+                                <li><p>The range of the exponential function is the set of positive real numbers</p></li>
+                                <li><p>The graph of <m>y = b^{x}</m> exhibits exponential growth if <m>b &gt; 1</m> or exponential decay if <m>0 &lt; b &lt; 1</m>.</p></li>
+                                <li><p>The <m>y -</m>intercept is 1.</p></li>
+                                <li><p>The <m>x -</m>intercept is a horizontal asymptote</p></li>
+                                <li><p>The exponential function is 1 – 1. Algebraically if <m>b^{x} = b^{y}</m>, then <m>x = y</m></p></li>
+                            </ol>
+                          </p>
+                      </cell>
+                    </row>
+                    </tabular>
+                    
+                        
+                    
+                </li>
+            </ol>
+        </p>
+        
+            
+    
+        
+        
+    </solution>
+</example>
+<example>
+    <statement>
+        <p> Sketch the graph of each of the following. Find the domain, range, intercepts, and asymptotes.</p>
+        <p>
+            a) <m>y = 3^{x} + 1</m>  <m> \qquad \qquad \text{b)}\,y = 3^{x + 1}</m> <m>\qquad \qquad \text{c)}\,y = - 9^{- x} + 3</m>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <ol marker="a)">
+                <li>
+                    <p>To get the graph of <m>y = 3^{x} + 1</m>. We start with the graph of <m>y = 3^{x}</m>, which is the basic exponential growth graph, and shift it up 1 unit.</p>
+                    <sidebyside>
+                        <image width="50%">
+                        <latex-image label="funct3">
+                            \begin{tikzpicture}
+                                % Axes -------------------------------------------------
+                                \draw[very thick,-&gt;] (-4,0) -- (5,0) node[right] {$x$};
+                                \draw[very thick,-&gt;] (0,-0.5) -- (0,11) node[above] {$y$};
+
+                                % Curve y = 3^x + 1 -----------------------------------
+                                \draw[thick, smooth, samples=140, domain=-2:2.2, variable=\x]
+                                        plot ({\x},{exp(\x*ln(3)) + 1});
+
+                                % Horizontal asymptote y=1 ----------------------------
+                                \draw[dashed] (-4,1) -- (3,1);
+                                \node[above] at (3,1) {$y=1$};
+
+                                % Dotted guide lines to (2,10) ------------------------
+                                \draw[very thick,dashed, gray] (2,0) -- (2,10);
+                                \draw[very thick,dashed, gray] (0,10) -- (2,10);
+
+                                % Tick marks and labels ---------------------------------
+                                \draw (1,0.15) -- (1,-0.15) node[below] {$1$};
+                                \draw (2,0.15) -- (2,-0.15) node[below] {$2$};
+
+                                \draw (0.15,1) -- (-0.15,1) node[left] {$1$};
+                                
+                                \draw (0.15,2) -- (-0.15,2) node[left] {$2$};
+                                \draw (0.15,10) -- (-0.15,10) node[left] {$10$};
+
+                                % Origin label
+                                \node[below left] at (0,0) {O};
+
+                                % Label for function
+                                
+                                \node[right] at (2.2,{exp(2.1*ln(3)) + 1}) {$y=3^{x}+1$};
+                            \end{tikzpicture}
+                        </latex-image>
+                        </image>
+                        
+                        <tabular>
+                        <row>
+                        <cell></cell>
+                        <cell><p>From the graph we see that</p>
+                        <p>
+                            <ul>
+                                <li><em>Dom( f )</em><m> = \Re</m></li>
+                                <li><em>Range( f )</em><m> = (1, \infty)</m></li>
+                                <li><p>The <m>y -</m>intercept is 2</p></li>
+                                <li><p>The line <m>y = 1</m> is a horizontal asymptote</p></li>
+                            </ul>
+                        </p></cell>
+                        </row>
+                        </tabular>
+                        
+                    </sidebyside>
+                </li>
+                <li>
+                    <p>To get the graph of <m>y = 3^{x + 1}</m>, we start with the graph of <m>y = 3^{x}</m>, and shift 1 unit to the left.</p>
+                    <sidebyside>
+                        <image>
+                        <latex-image>
+                            \begin{tikzpicture}
+                                % Axes -------------------------------------------------
+                                \draw[very thick,-&gt;] (-4,0) -- (2.5,0) node[right] {$x$};
+                                \draw[very thick,-&gt;] (0,-2) -- (0,10) node[above] {$y$};
+
+                                % Curve y = 3^{x+1} -----------------------------------
+                                \draw[very thick, smooth, samples=140, domain=-4:1.1, variable=\x]
+                                        plot ({\x},{exp((\x+1)*ln(3))});
+
+                                % Dotted guide lines to (1,9) -------------------------
+                                \draw[very thick,dashed, gray] (1,0) -- (1,9);
+                                \draw[very thick,dashed, gray] (0,9) -- (1,9);
+
+                                % Tick marks and  labels ---------------------------------
+                                \draw (1,0.15) -- (1,-0.15) node[below] {$1$};
+
+                                \draw (0.15,1) -- (-0.15,1);
+                                \node[left] at (0,1) {$1$};
+
+                                \draw (0.15,3) -- (-0.15,3);
+                                
+
+                                \draw (0.15,9) -- (-0.15,9);
+                                \node[left] at (0,9) {$9$};
+
+                                % Origin label
+                                \node[below left] at (0,0) {O};
+
+                                % Label for function
+                                \node[right] at (1.7,{exp((2)*ln(3))}) {$y=3^{x+1}$};
+                            \end{tikzpicture}
+                        </latex-image>
+                        </image>
+                        <tabular>
+                        <row>
+                        <cell></cell>
+                        <cell><p>From the graph we see that</p>
+                        <p>
+                            <ul>
+                            <li><em>Dom( f )</em><m> = \Re</m></li>
+                            <li><em>Range( f )</em><m> = (0, \infty)</m></li>
+                            <li><p>The <m>y -</m>intercept is 3</p></li>
+                            <li><p>The line <m>y = 0</m> is a horizontal asymptote</p></li>
+                            </ul>
+                        </p></cell>
+                        </row>
+                        </tabular>
+                        
+                    </sidebyside>
+                </li>
+                <li>
+                    <p>To get the graph of <m>y = - 9^{- x} + 3</m>, we start with the basic exponential decay <m>y = 9^{- x}</m>. We then reflect it with respect to the <m>x - \text{axis}</m>, which gives the graph of <m>y = - 9^{- x}</m>. Finally, we shift this graph up 3 units to get the required graph of <m>y = - 9^{- x} + 3</m>.</p>
+
+                    <p>From the graph of <m>y = - 9^{- x} + 3</m>, we can see that <m>\text{Dom}(h) = \Re</m>, <m>\text{Range}(h) = ( - \infty,3)</m>, the line <m>y = 3</m> is a horizontal asymptote, 2 is the <m>y -</m>intercept and <m>x = - \frac{1}{2}</m> is the <m>x -</m>intercept.</p>
+                    <p><m>\textbf{Remark}</m>: When the base <m>b</m> of the exponential function <m>f(x) = b^{x}</m> equals to the number <m>e</m>, where <m>e = 2\text{.}\text{7182}\cdots</m>, we call the exponential function the natural exponential function.</p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</example>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <ol start="3" type="a">
-<li><p>To get the graph of <m>y = - 9^{- x} + 3</m>, we start with the basic exponential decay <m>y = 9^{- x}</m>. We then reflect it with respect to the <m>x - \text{axis}</m>, which gives the graph of <m>y = - 9^{- x}</m>. Finally, we shift this graph up 3 units to get the required graph of <m>y = - 9^{- x} + 3</m>.</p></li>
+<li></li>
 </ol>
-<p>From the graph of <m>y = - 9^{- x} + 3</m>, we can see that <m>\text{Dom}(h) = \Re</m>, <m>\text{Range}(h) = ( - \infty,3)</m>, the line <m>y = 3</m> is a horizontal asymptote, 2 is the <m>y -</m>intercept and <m>x = - \frac{1}{2}</m> is the <m>x -</m>intercept.</p>
-<p><alert>Remark</alert>: When the base <m>b</m> of the exponential function <m>f(x) = b^{x}</m> equals to the number <m>e</m>, where <m>e = 2\text{.}\text{7182}\cdots</m>, we call the exponential function the natural exponential function.</p>
+
 <ul>
 <li><p><alert>Logarithmic Functions</alert></p></li>
 </ul>

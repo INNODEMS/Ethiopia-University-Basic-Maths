@@ -1,34 +1,39 @@
 
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml-id="functions"><title>Functions</title>
-<introduction>
-<p>Our everyday lives are filled with situations in which we encounter relationships between two sets. For example,</p>
-<ul>
-<li><p>To each automobile, there corresponds a license plate number</p></li>
-<li><p>To each circle, there corresponds a circumference</p></li>
-<li><p>To each number, there corresponds its square</p></li>
-</ul>
-<p>In order to apply mathematics to a variety of disciplines, we must make the idea of a “relationship” between two sets mathematically precise.</p>
-<p>On completion of this chapter students will be able to:</p>
-<ul>
-<li><p>understand the notion of relation and function</p></li>
-<li><p>determine the domain and range of relations and functions</p></li>
-<li><p>find the inverse of a relation</p></li>
-<li><p>define polynomial and rational functions</p></li>
-<li><p>perform the fundamental operations on polynomials</p></li>
-<li><p>find the inverse of an invertible function</p></li>
-<li><p>apply the theorems on polynomials to find the zeros of polynomial functions</p></li>
-<li><p>apply theorems on polynomials to solve related problems</p></li>
-<li><p>sketch and analyze the graphs of rational functions</p></li>
-<li><p>define exponential, logarithmic, trigonometric and hyperbolic functions</p></li>
-<li><p>sketch the graph of exponential, logarithmic, trigonometric and hyperbolic functions</p></li>
-<li><p>use basic properties of logarithmic, exponential, hyperbolic and trigonometric functions to solve physical problems</p></li>
-</ul>
-<p>In this chapter, we first look at the definitions of relations and functions, and study real valued functions and their properties, types of functions, polynomial functions, zeros of polynomial functions, rational functions and their graphs, logarithmic, exponential, trigonometric and hyperbolic functions and their graphs. Let’s begin with the review of relations and functions.</p>
-</introduction>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml-id="functions">
+    <title>Functions</title>
+    <introduction>
+    <p>Our everyday lives are filled with situations in which we encounter relationships between two sets. For example,</p>
+    <p>
+        <ul>
+            <li><p>To each automobile, there corresponds a license plate number</p></li>
+            <li><p>To each circle, there corresponds a circumference</p></li>
+            <li><p>To each number, there corresponds its square</p></li>
+        </ul>
+    </p>
+    <p>In order to apply mathematics to a variety of disciplines, we must make the idea of a “relationship” between two sets mathematically precise.</p>
+    <p>On completion of this chapter students will be able to:</p>
+    <p>    
+        <ul>
+        <li><p>understand the notion of relation and function</p></li>
+        <li><p>determine the domain and range of relations and functions</p></li>
+        <li><p>find the inverse of a relation</p></li>
+        <li><p>define polynomial and rational functions</p></li>
+        <li><p>perform the fundamental operations on polynomials</p></li>
+        <li><p>find the inverse of an invertible function</p></li>
+        <li><p>apply the theorems on polynomials to find the zeros of polynomial functions</p></li>
+        <li><p>apply theorems on polynomials to solve related problems</p></li>
+        <li><p>sketch and analyze the graphs of rational functions</p></li>
+        <li><p>define exponential, logarithmic, trigonometric and hyperbolic functions</p></li>
+        <li><p>sketch the graph of exponential, logarithmic, trigonometric and hyperbolic functions</p></li>
+        <li><p>use basic properties of logarithmic, exponential, hyperbolic and trigonometric functions to solve physical problems</p></li>
+        </ul>
+    </p>
+    <p>In this chapter, we first look at the definitions of relations and functions, and study real valued functions and their properties, types of functions, polynomial functions, zeros of polynomial functions, rational functions and their graphs, logarithmic, exponential, trigonometric and hyperbolic functions and their graphs. Let’s begin with the review of relations and functions.</p>
+    </introduction>
 
-<xi:include href="sections/sec-review-of-relations-and-functions.ptx" />
-<xi:include href="sections/sec-real-valued-functions-and-their.ptx" />
-<xi:include href="sections/sec-types-of-functions-and-inverse.ptx" />
-<xi:include href="sections/sec-polynomials,-zeros-of-polynomials,-rational.ptx" />
-<xi:include href="sections/sec-definition-and-basic-properties-of.ptx" />
+    <xi:include href="sections/sec-review-of-relations-and-functions.ptx" />
+    <xi:include href="sections/sec-real-valued-functions-and-their.ptx" />
+    <xi:include href="sections/sec-types-of-functions-and-inverse.ptx" />
+    <xi:include href="sections/sec-polynomials,-zeros-of-polynomials,-rational.ptx" />
+    <xi:include href="sections/sec-definition-and-basic-properties-of.ptx" />
 </chapter>
