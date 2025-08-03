@@ -1,5 +1,5 @@
 
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml-id="analytic-geometry"><title>Analytic Geometry </title>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="analytic-geometry"><title>Analytic Geometry </title>
 <introduction>
 <table>
 <tabular>

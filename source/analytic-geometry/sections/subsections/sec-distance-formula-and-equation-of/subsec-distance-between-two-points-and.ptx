@@ -1,70 +1,247 @@
 <subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-distance-between-two-points-and">
-<title>Distance between two points and division of segments </title>
-<p>If P and Q are two points on the coordinate plane, then PQ represents the line segment joining P and Q and <em>d</em>(P<em>,</em>Q) or <alert>|</alert>PQ<alert>|</alert> represents the distance between P and Q<em>.</em></p>
-<p>Recall that the distance between points <em>a</em> and <em>b</em> on a number line is |<em>a</em> −<em>b</em>| = |<em>b</em> −<em>a</em>|. Thus, the distance between two points P(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>) and R(<em>x</em><sub>2</sub>, <em>y</em><sub>1</sub>) on a horizontal line must be |<em>x</em><sub>2</sub> −<em>x</em><sub>1</sub>| and the distance between Q(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>) and R(<em>x</em><sub>2</sub>, <em>y</em><sub>1</sub>) on a vertical line must be |<em>y</em><sub>2</sub> −<em>y</em><sub>1</sub>|. (See Figure 4.2).</p>
-<p>To find distance <alert>|</alert>PQ<alert>|</alert> between any two points P(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>) and Q(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>), we note that triangle PRQ in Figure 4.2 is a right triangle, and so by Pythagorean Theorem we get:</p>
-<p>Therefore, we have the following:</p>
-<table>
-<tabular>
-<row>
-<cell><alert>Distance Formula:</alert> The distance between the points P(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>) and Q(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>) is</cell>
-</row>
-</tabular>
-</table>
-<p>Note that, from the distance formula, the distance between the origin O(0,0) and a point P(<em>x</em>, <em>y</em>) is</p>
-<table>
-<tabular>
-<row>
-<cell></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 4.1:</alert> (i) The distance between O(0,0) and P(3,4) is</p>
-<p>.</p>
-<p>(ii) The distance between P(1,2) and Q(3,6) is</p>
-<p>.</p>
-<p>(iii) The distance between P(−1,2) and Q(5,−6) is</p>
-<p>.</p>
-<p><alert>Division point of a line segment:</alert> Given two distinct points P(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>) and Q(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>) in the coordinate plane, we want to find the coordinates (<em>x</em><sub>0</sub>, <em>y</em><sub>0</sub>) of the point R that lies on the segment PQ and divides the segment in the ratio <em>r</em><sub>1</sub> to <em>r</em><sub>2</sub> ; that is</p>
-<p><alert>,</alert></p>
-<p>where <em>r</em><sub>1</sub> and <em>r</em><sub>2</sub> are given positive numbers. (See Figure 4.3).</p>
-<p>To determine (<em>x</em><sub>0</sub>, <em>y</em><sub>0</sub>), we construct two right triangles ∆PSR and ∆RTQ as in Figure 4.3. We then have <alert>|</alert>PS| = <em>x</em><sub>0</sub> −<em>x</em><sub>1</sub> , |SR| <alert>=</alert> <em>y</em><sub>0</sub>−<em>y</em><sub>1</sub> , |RT| <alert>=</alert> <em>x</em><sub>2</sub> −<em>x</em><sub>0</sub> , and |TQ| <alert>=</alert> <em>y</em><sub>2</sub> −<em>y</em><sub>0</sub> . Now since ∆PSR is similar to ∆RTQ, we have that</p>
-<p>and</p>
-<p>or <em>r</em><sub>2</sub>(<em>x</em><sub>0</sub> −<em>x</em><sub>1</sub>) = <em>r</em><sub>1</sub> (<em>x</em><sub>2</sub> −<em>x</em><sub>0</sub>) and <em>r</em><sub>2</sub>(<em>y</em><sub>0</sub> −<em>y</em><sub>1</sub>) = <em>r</em><sub>1</sub> (<em>y</em><sub>2</sub> −<em>y</em><sub>0</sub>) .</p>
-<p>Solving for <em>x</em><sub>0</sub> and <em>y</em><sub>0</sub> , we obtain and</p>
-<p>Therefore, we have shown the following.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Theorem 4.1:</alert> Let P(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>) and Q(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>) be distinct points in the coordinate plane.</p>
-<p>If R(<em>x</em><sub>0</sub>, <em>y</em><sub>0</sub>) is a point on the line segment PQ that divides the segment in the ratio |PR| <alert>:</alert> |RQ| = <em>r</em><sub>1</sub><alert>:</alert> <em>r</em><sub>2</sub>, then the coordinates of R is given by</p>
-<p>In particular, the midpoint of PQ is given by</p></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 4.2:</alert> Given P(−3, 3) and Q(7,8 ),</p>
-<p>(i) find the coordinates of the point R on the line segment PQ such that |PR| <alert>:</alert> |RQ| = 2 <alert>:</alert> 3.</p>
-<p>(ii) find the coordinates of the midpoint of PQ.</p>
-<p><alert>Solution:</alert> (i) Obviously R(<em>x</em><sub>0</sub>,<em>y</em><sub>0</sub>) is given by</p>
-<p>(ii) The coordinates of the midpoint is .</p>
-<p><alert>Exercise 4.1.1</alert></p>
-<table>
-<tabular>
-<row>
-<cell><p>1. Find the distance between the following pair of points.</p>
-<p>(a) (−1, 0) and (3, 0). (d) The origin and .</p>
-<p>(b) (1, −2) and (1, 4). (e) (<em>a</em>, <em>a</em>) and (−<em>a</em>, −<em>a</em>)</p>
-<p>(c) (−2, 3) and (2, 0) (f) (<em>a</em>, <em>b</em>) and (−<em>a</em>, −<em>b</em>)</p>
-<p>2. If the vertices of ∆ABC are A(1,1), B(4,5) and C(7, 1), find the perimeter of the triangle.</p>
-<p>3. Let P = (−3,0) and Q be a point on the positive <em><alert>y</alert></em>-axis. Find the coordinates of Q if |PQ| =5.</p>
-<p>4. Suppose the endpoints of a line segment AB are A(−1,1) and B(5, 10). Find the coordinates of point P and Q if</p>
-<p>(a) P is the midpoint of AB.</p>
-<p>(b) P divides AB in the ratio 2<alert>:</alert>3 (That is, |AP|<alert>:</alert> |PB| = 2<alert>:</alert>3 ).</p>
-<p>(c) Q divides AB in the ratio 3<alert>:</alert>2.</p>
-<p>(d) P and Q trisect AB (i.e., divide it into three equal parts).</p>
-<p>5. Let M(−1,3) be the midpoint of a line segment PQ. If the coordinates of P is (−5, −7), then what is the coordinates of Q?</p>
-<p>6. Let A(<em>a</em>, 0), B(0,<em>b</em>) and O(0,0) be the vertices of a right triangle. Show that the midpoint of AB is equidistant from the vertices of the triangle</p></cell>
-</row>
-</tabular>
-</table>
+    <title>Distance between two points and division of segments </title>
+    <p>If P and Q are two points on the coordinate plane, then PQ represents the line segment joining P and Q and <em>d</em>(P<em>,</em>Q) or <alert>|</alert>PQ<alert>|</alert> represents the distance between P and Q<em>.</em></p>
+    <p>Recall that the distance between points <em>a</em> and <em>b</em> on a number line is |<em>a</em> -<em>b</em>| = |<em>b</em> −<em>a</em>|. Thus, the distance between two points P(<m>x_1</m>, <m>y_1</m>) and R(<m>x_2</m>, <m>y_1</m>) on a horizontal line must be |<m>x_2</m> <m>x_1</m>| and the distance between Q(<m>x_2</m>, <m>y_2</m>) and R(<m>x_2</m>, <m>y_1</m>) on a vertical line must be |<m>y_2</m> -<m>y_1</m>|. (See Figure 4.2).</p>
+    <p>To find distance <alert>|</alert>PQ<alert>|</alert> between any two points P(<m>x_1</m>, <m>y_1</m>) and Q(<m>x_2</m>, <m>y_2</m>), we note that triangle PRQ in Figure 4.2 is a right triangle, and so by Pythagorean Theorem we get:</p>
+    <p>Therefore, we have the following:</p>
+
+    <p>
+        <m>\textbf{Distance Formula:}</m> The distance between the points P(<m>x_1</m>, <m>y_1</m>) and Q(<m>x_2</m>, <m>y_2</m>) is
+    </p>
+    <p>
+        <me>
+            \left  | PQ\right | = \sqrt[]{(x^{2}-x^{1})^{2}+(y^{2}-y^{1})^{2}}
+        </me> 
+    </p>
+
+
+    <p>Note that, from the distance formula, the distance between the origin O(0,0) and a point P(<em>x</em>, <em>y</em>) is</p>
+    <p>
+        <me>
+            \left  | QP\right | = \sqrt[]{x^{2}+y^{2}}
+        </me>
+        
+    </p>
+    <example>
+        <statement>
+            <p>
+                <ol marker= "(i)">
+                    <li>
+                        <p>
+                            The distance between O(0,0) and P(3,4) is
+                        </p>
+                        <p>
+                            <me>
+                                \left  | QP\right | = \sqrt[]{3^{2}+4^{2}} = 5
+                            </me>   
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The distance between P(1,2) and Q(3,6) is
+                        </p>
+                        <p>
+                            <me>
+                                \left  | PQ\right | = \sqrt{(3-1)^{2}+(6-2)^{2}} = \sqrt{20}
+                            </me>
+                            
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The distance between P(−1,2) and Q(5,−6) is
+                        </p>
+                        <p>
+                            <me>
+                                \left  | PQ\right | = \sqrt{(5+1)^{2}+(-6-2)^{2}} = \sqrt{10}
+                            </me>
+                            
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+    </example>
+
+    <p><alert>Division point of a line segment:</alert> Given two distinct points P(<m>x_1</m>, <m>y_1</m>) and Q(<m>x_2</m>, <m>y_2</m>) in the coordinate plane, we want to find the coordinates (<m>x_0</m>, <m>y_0</m>) of the point R that lies on the segment PQ and divides the segment in the ratio <m>r_1</m> to <m>r_2</m> ; that is</p>
+    <p>
+        <me>
+            \frac{\left |PR \right |}{\left | RQ\right |}=\frac{r_{1}}{r_{2}} ,
+        </me>
+        
+    </p>
+    <p>
+        where <m>r_1</m> and <m>r_2</m> are given positive numbers.
+    </p>
+
+    <p>To determine (<m>x_0</m>, <m>y_0</m>), we construct two right triangles ∆PSR and ∆RTQ as shown. We then have <alert>|</alert>PS| = <m>x</m> −<m>x</m> , |SR| <alert>=</alert> <m>y_0</m>−<m>y_1</m> , |RT| <alert>=</alert> <em>x_2</em> −<em>x_0</em> , and |TQ| <alert>=</alert> <em>y_2</em> −<em>y_0</em> . Now since ∆PSR is similar to ∆RTQ, we have that</p>
+    <p>
+        <me>
+            \frac{x_{0}- x_{1}}{x_{2}-x_{0}}=\frac{r_{1}}{r_{2}} and \frac{y_{0}- y_{1}}{y_{2}-y_{0}}=\frac{r_{1}}{r_{2}}
+        </me>
+        
+    </p>
+    <p>or <m>r_2</m>(<m>x_0</m> −<m>x_1</m>) = <m>r_1</m> (<m>x_2</m> −<m>x_0</m>) and <m>r_2</m>(<m>y</m> −<m>y</m>) = <m>r_1</m> (<m>y_2</m> −<m>y_0</m>) .</p>
+    <p>Solving for <m>x_0</m> and <m>y_0</m> , we obtain</p>
+    <p>
+        <me>
+            x_{0}= \frac{x_{1}r_{2}+x_{2}r_{1}}{r_{1}+r_{2}} and y_{0}= \frac{y_{1}r_{2}+y_{2}r_{1}}{r_{1}+r_{2}}
+        </me>
+        
+    </p>
+    <p>Therefore, we have shown the following.</p>
+    <theorem xml:id="thm-1">
+        <statement>
+            <p>Let P(<m>x_1</m> , <m>y_1</m> ) and Q(<m>x_2</m> , <m>y_2</m> ) be distinct points in the coordinate plane.</p>
+            <p>
+                If R(<m>x_0</m> , <m>y_0</m> ) is a point on the line segment PQ that divides the segment in the ratio |PR| <alert>:</alert> |RQ| = <m>r_1</m> <alert>:</alert> <m>r_2</m> , then the coordinates of R is given by
+            </p>
+            <p>
+                <me>
+                    \left ( x_{0},y_{0} \right )=\left ( \frac{x_{1}r_{2}+x_{2}r_{1}}{r_{1}+r_{2}},\frac{y_{1}r_{2}+y_{2}r_{1}}{r_{1}+r_{2}} \right )
+                </me>
+                
+            </p>
+            <p>
+                In particular, the midpoint of PQ is given by
+            </p>
+            <p>
+                <me>
+                    \left ( \frac{x_{1}+x_{2}}{2},\frac{y_{1}+y_{2}}{2} \right )
+                </me>
+                
+            </p>
+        </statement>
+    </theorem>
+
+    <example>
+        <statement>
+            <p>
+                Given P(−3, 3) and Q(7,8 ),
+            </p>
+            <p>
+                <ol marker="(i)">
+                    <li>
+                        <p>
+                            find the coordinates of the point R on the line segment PQ such that |PR| <alert>:</alert> |RQ| = 2 <alert>:</alert> 3.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            find the coordinates of the midpoint of PQ.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <ol marker="(i)">
+                    <li>
+                        <p>
+                            Obviously R(<m>x_0</m> ,<m>y_0</m>) is given by
+                        </p>
+                        <p>
+                            <me>
+                                \left ( x_{0},y_{0} \right )=\left ( \frac{-3\times3+7\times2}{2+3},\frac{3\times3+8\times2}{2+3} \right ) = \left ( 1,5 \right )
+                            </me>
+                            
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            The coordinates of the midpoint is 
+                        </p>
+                        <p>
+                            <me>
+                                \left ( \frac{-3+7}{2},\frac{3+8}{2} \right ) = \left ( 2,\frac{11}{2} \right )
+                            </me>
+                            
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </example>
+
+    <exercises xml:id="exercises-distance-between-two-points-and">
+        <exercise>
+            <p>
+                Find the distance between the following pair of points.
+            </p>
+            <p>
+                <ol marker="(a)">
+                    <li>
+                        <p>
+                            (−1, 0) and (3, 0).
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            (1, −2) and (1, 4).
+                        </p>
+                    </li>
+                    <li><p>(−2, 3) and (2, 0)</p></li>
+                    <li><p>The origin and <m>\left ( -\sqrt{3},\sqrt{6} \right )</m></p></li>
+                    <li><p>(<em>a</em>, <em>a</em>) and (−<em>a</em>, −<em>a</em>)</p></li>
+                    <li><p>(<em>a</em>, <em>b</em>) and (−<em>a</em>, −<em>b</em>)</p></li>
+                </ol>
+            </p>
+        </exercise>
+        <exercise>
+            <p>
+                If the vertices of ∆ABC are A(1,1), B(4,5) and C(7, 1), find the perimeter of the triangle.
+            </p>
+        </exercise>
+        <exercise>
+            <p>
+                Let P = (−3,0) and Q be a point on the positive <em><alert>y</alert></em>-axis. Find the coordinates of Q if |PQ| =5.
+            </p>
+        </exercise>
+        <exercise>
+            <p>
+                Suppose the endpoints of a line segment AB are A(−1,1) and B(5, 10). Find the coordinates of point P and Q if
+            </p>
+            <p>
+                <ol marker="(a)">
+                    <li>
+                        <p>
+                            P is the midpoint of AB.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            P divides AB in the ratio 2<alert>:</alert>3 (That is, |AP|<alert>:</alert> |PB| = 2<alert>:</alert>3 ).
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Q divides AB in the ratio 3<alert>:</alert>2.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            P and Q trisect AB (i.e., divide it into three equal parts).
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </exercise>
+        <exercise>
+            <p>
+                Let M(−1,3) be the midpoint of a line segment PQ. If the coordinates of P is (−5, −7), then what is the coordinates of Q?
+            </p>
+        </exercise>
+        <exercise>
+            <p>
+                Let A(<em>a</em>, 0), B(0,<em>b</em>) and O(0,0) be the vertices of a right triangle. Show that the midpoint of AB is equidistant from the vertices of the triangle
+            </p>
+        </exercise>
+    </exercises>
+
+
+
+
+
+
 </subsection>
