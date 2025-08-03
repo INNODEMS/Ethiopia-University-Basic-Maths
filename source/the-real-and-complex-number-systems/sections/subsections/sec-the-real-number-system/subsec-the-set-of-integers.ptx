@@ -1,71 +1,263 @@
-<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-the-set-of-integers" class="anchor"><title>The set of Integers</title>
-<p>As the knowledge and interest of human beings increased, it was important and obligatory to extend the natural number system. For instance to solve the equation x+1= 0, the set of natural numbers was not sufficient. Hence the set of integers was developed to satisfy such extended demands.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 2.8</alert></p>
-<p>The set of integers is denoted by <alert>Z</alert> and described as <alert>Z</alert> = <m>\left\{ \ \text{.}\ \text{.}\ \text{.}\ , - 2,\  - 1,\ 0,\ 1\ ,\ 2,\ \ldots\  \right\}</m></p></cell>
-</row>
-</tabular>
-</table>
-<ol type="1">
-<li><p><alert>Operations on the set of integers</alert></p></li>
-</ol>
-<p><alert>i) Addition (+)</alert></p>
-<p>If two integers <em>a</em> &amp; <em>b</em> are added using the operation “+”, then the sum <em>a</em>+<em>b</em> is also an integer. If the sum of the two integers <em>a</em> &amp; <em>b</em> is denoted by c, then we can write the operation as: <em>c</em> = <em>a</em>+<em>b</em>, where <em>c</em> is called the sum and <em>a</em> &amp; <em>b</em> are called terms.</p>
-<p><alert>Example 2.20</alert>: 4+9 = 13, here 13 is the sum whereas 4 &amp; 9 are terms.</p>
-<p><alert>ii) Subtraction (</alert><m>-</m><alert>)</alert></p>
-<p>For any two integers <em>a</em> &amp; <em>b</em>, the operation of subtracting <em>b</em> from <em>a</em>, denoted by <m>a - b</m> is defined by <m>a - b = a + ( - b)</m>. This means that subtracting <em>b</em> from <em>a</em> is equivalent to adding the additive inverse of <em>b</em> to <em>a</em>.</p>
-<p><alert>Example 2.21</alert>: <m>7 - 5 = 7 + ( - 5) = 2</m></p>
-<p><alert>iii) Multiplication (</alert><m></m><alert>)</alert></p>
-<p>If two integers <em>a</em> &amp; <em>b</em> are multiplied using the operation “<m></m>”, then the product <em>a</em><m></m><em>b</em> is also an integer. If the product of the two integers <em>a</em> &amp; <em>b</em> is denoted by <em>c</em>, then we can write the operation as: <em>c</em> = <em>a</em><m></m><em>b</em>, where <em>c</em> is called the product and <em>a</em> &amp; <em>b</em> are called factors.</p>
-<p><alert>Example 2.22</alert>: 4<m></m>7 = 28, here 28 is the product whereas 4 &amp; 7 are factors.</p>
-<p><alert>Properties of addition and multiplication on the set of integers</alert></p>
-<p>i. For any two integers <em>a</em> &amp; <em>b</em>, the sum <em>a</em>+<em>b</em> is also an integer. For instance in the above example, 4 and 9 are integers, their sum 13 is also an integer. In general, we say that the set of integers is closed under addition.</p>
-<p>ii. For any two integers <em>a</em> &amp; <em>b</em>, <em>a</em>+<em>b</em> = <em>b</em>+<em>a</em>.</p>
-<p><alert>Example 2.23</alert>: 4+9 = 9+4 = 13. In general, we say that addition is commutative on the set of integers.</p>
-<p>iii. For any three integers <em>a</em>, <em>b</em> &amp; <em>c</em>, (<em>a</em>+<em>b</em>)+<em>c</em> = <em>a</em>+(<em>b</em>+<em>c</em>).</p>
-<p><alert>Example 2.24</alert>: (5+9)+8 = 5+(9+8) = 22. In general, we say that addition is associative on the set of integers.</p>
-<p>iv. For any integer <em>a</em>, it holds that <em>a</em>+0 = 0+<em>a</em> = <em>a</em>.</p>
-<p><alert>Example 2.25</alert>: 7+0 = 0+7 = 7. In general, we say that addition has an identity element on the set of integers and 0 is the identity element.</p>
-<p>v. For any integer <em>a</em>, it holds that <m>a + ( - a) = - a + a = 0</m>.</p>
-<p><alert>Example 2.26</alert>: 4+-4 = -4+4 = 0. In general, we say that every integer <em>a</em> has an additive inverse denoted by<m>- a</m>.</p>
-<p>vi. For any two integers <em>a</em> &amp; <em>b</em>, the product <em>a</em><m></m><em>b</em> is also an integer. For instance in the above example, 4 and 7 are integers, their product 28 is also an integer. In general, we say that the set of integers is closed under multiplication.</p>
-<p>vii. For any two integers <em>a</em> &amp; <em>b</em>, <em>a</em><m></m><em>b</em> = <em>b</em><m></m><em>a</em>.</p>
-<p><alert>Example 2.27</alert>: 4<m></m>7 = 7<m></m>4 = 28. In general, we say that multiplication is commutative on the set of integers.</p>
-<p>viii. For any three integers <em>a</em>, <em>b</em> &amp; <em>c</em>, (<em>a</em><m></m><em>b</em>) <m></m><em>c</em> = <em>a</em><m></m> (<em>b</em><m></m><em>c</em>).</p>
-<p><alert>Example 2.28</alert>: (3<m></m>5) <m></m>4 = 3<m></m> (5<m></m>4) = 60. In general, we say that multiplication is associative on the set of integers.</p>
-<p>ix. For any integer a, it holds that <em>a</em><m></m>1 = 1<m></m><em>a</em> = <em>a</em>.</p>
-<p><alert>Example 2.29</alert>: 5<m></m>1 = 1<m></m>5 = 5. In general, we say that multiplication has an identity element on the set of integers and 1 is the identity element.</p>
-<p>x. For any three integers <em>a</em>, <em>b</em> &amp; <em>c</em>, <em>a</em><m></m><alert>(</alert><em>b</em><alert>+</alert><em>c</em>) = (<em>a</em><m></m><em>b</em>)+(<em>a</em><m></m><em>c</em>).</p>
-<p><alert>Example 2.30</alert>: 4<m></m>(5+6) = (4<m></m>5)+ (4<m></m>6) = 44. In general, we say that multiplication is distributive over addition on the set of integers.</p>
-<ol start="2" type="1">
-<li><p><alert>Order Relation in Z</alert></p></li>
-</ol>
-<p>i) <alert>Transitive property:</alert> For any three integers <em>a</em>, <em>b</em> &amp; <em>c</em>, <m>a &gt; b\  \land \ b &gt; c\  \Rightarrow a &gt; c</m></p>
-<p>ii) <alert>Addition property</alert>: For any three integers <em>a</em>, <em>b</em> &amp; <em>c</em>, <m>a &gt; b\  \Rightarrow \ a + c &gt; b + c</m></p>
-<p>iii) <alert>Multiplication property</alert>: For any three integers <em>a</em>, <em>b</em> and <em>c</em>, where c&gt;0, <m>a &gt; b\  \Rightarrow \ \text{ac} &gt; \text{bc}</m></p>
-<p>iv) <alert>Law of trichotomy</alert>: For any two integers <em>a</em> &amp; <em>b</em> we have <m>a &gt; b\ \text{or}\ a &lt; b\ \text{or}\ a = b</m>.</p>
-<table>
-<tabular>
-<row>
-<cell><alert>Exercise 2.1</alert></cell>
-</row>
-</tabular>
-</table>
-<table>
-<tabular>
-<row>
-<cell><p>1. Find an odd natural number x such that LCM (x, 40) = 1400.</p>
-<p>2. There are between 50 and 60 number of eggs in a basket. When Loza counts by 3’s, there are 2 eggs left over. When she counts by 5’s, there are 4 left over. How many eggs are there in the basket?</p>
-<p>3. The GCF of two numbers is 3 and their LCM is 180. If one of the numbers is 45, then find the second number.</p>
-<p>4. Using Mathematical Induction, prove the following:</p>
-<p>d) <m>2 + 4 + 6 + \cdots + 2n = n(n + 1)</m></p>
-<p>e) <m>1^{2} + 2^{2} + 3^{2} + \cdots + n^{2} = \frac{n\ (n + 1)(2n + 1)}{6}</m></p>
-<p>f) <m>1^{3} + 2^{3} + 3^{3} + \cdots + n^{3} = \frac{n^{2}\ (n + 1)^{2}}{4}</m></p>
-<p>g) <m>\frac{1}{1 \times 2} + \frac{1}{2 \times 3} + \frac{1}{3 \times 4} + \cdots + \frac{1}{n(n + 1)} = \frac{n}{n + 1}</m></p></cell>
-</row>
-</tabular>
-</table>
+<subsection xml:id="subsec-the-set-of-integers">
+    <title>The set of Integers</title>
+    <introduction>
+        <p>
+            As the knowledge and interest of human beings increased, it was important and obligatory 
+            to extend the natural number system. For instance to solve the equation x+1= 0, 
+            the set of natural numbers was not sufficient. 
+            Hence the set of integers was developed to satisfy such extended demands.
+        </p>
+        <definition xml:id="def-set-of-integers">
+            <statement>
+                <p>
+                    The set of integers is denoted by <alert>Z</alert> and described as 
+                    <m>\mathbf{Z}</m> = <m>\left\{ \ldots , - 2,\ - 1, 0, 1 , 2, \ldots\  \right\}</m>
+                </p>
+            </statement>
+        </definition>
+    </introduction>
+    <subsubsection xml:id="subsubsec-operations-on-the-set-of-integers">
+        <title>Operations on the set of integers</title>
+        <p>
+            <m>\textbf{i) Addition (+)}</m>
+        </p>
+        <p>
+            If two integers <em>a</em> &amp; <em>b</em> are added using the operation “+”,
+            then the sum <em>a</em>+<em>b</em> is also an integer. If the sum of the two integers <em>a</em> &amp; <em>b</em> 
+            is denoted by c, then we can write the operation as: <em>c</em> = <em>a</em>+<em>b</em>,
+            where <em>c</em> is called the sum and <em>a</em> &amp; <em>b</em> are called terms.
+        </p>
+        <example>
+            <statement>
+                <p>
+                    <m>4+9 = 13</m>, here <m>13</m> is the sum whereas <m>4</m> &amp; <m>9</m> are terms.
+                </p>
+            </statement>
+        </example>
+        <p>
+            <m>\textbf{ii) Subtraction (-)}</m>
+        </p>
+        <p>
+            For any two integers <em>a</em> &amp; <em>b</em>, the operation of subtracting <em>b</em> from <em>a</em>, 
+            denoted by <m>a - b</m> is defined by <m>a - b = a + ( - b)</m>. 
+            This means that subtracting <em>b</em> from <em>a</em> is equivalent to adding the additive inverse of <em>b</em> to <em>a</em>.
+        </p>
+        <example>
+            <statement>
+                <p>
+                    <m>7 - 5 = 7 + ( - 5) = 2</m>
+                </p>
+            </statement>
+        </example>
+        <p>
+            <m>\textbf{iii) Multiplication (\times)}</m>
+        </p>
+        <p>
+            If two integers <em>a</em> &amp; <em>b</em> are multiplied using the operation “<m>\times</m>”, 
+            then the product <em>a</em><m>\times</m><em>b</em> is also an integer. 
+            If the product of the two integers <em>a</em> &amp; <em>b</em> is denoted by <em>c</em>, 
+            then we can write the operation as: <em>c</em> = <em>a</em><m>\times</m><em>b</em>, 
+            where <em>c</em> is called the product and <em>a</em> &amp; <em>b</em> are called factors.
+        </p>
+        <example>
+            <statement>
+                <p>
+                   <m> 4\times7 = 28</m>, here <m>28</m> is the product whereas <m>4</m> &amp; <m>7</m> are factors.
+                </p>
+            </statement>
+        </example>
+        <p>
+            <m>\textbf{Properties of addition and multiplication on the set of integers}</m>
+        </p>
+        <p>
+            i)  For any two integers <em>a</em> &amp; <em>b</em>, the sum <em>a</em>+<em>b</em> is also an integer. 
+                For instance in the above example, 4 and 9 are integers, their sum 13 is also an integer. 
+                In general, we say that the set of integers is closed under addition.
+        </p>
+        <p>
+            ii) For any two integers <em>a</em> &amp; <em>b</em>, <em>a</em>+<em>b</em> = <em>b</em>+<em>a</em>.
+        </p>
+        <example>
+            <statement>
+                <p>
+                   <m> 4+9 = 9+4 = 13</m>. In general, we say that addition is commutative on the set of integers.
+                </p>
+            </statement>
+        </example>
+        <p>
+            iii) For any three integers <em>a</em>, <em>b</em> &amp; <em>c</em>, (<em>a</em>+<em>b</em>)+<em>c</em> = <em>a</em>+(<em>b</em>+<em>c</em>).
+        </p>
+        <example>
+            <statement>
+                <p>
+                   <m> (5+9)+8 = 5+(9+8) = 22</m>. In general, we say that addition is associative on the set of integers.
+                </p>
+            </statement>
+        </example>
+        <p>
+            iv) For any integer <em>a</em>, it holds that <em>a</em>+0 = 0+<em>a</em> = <em>a</em>.
+        </p>
+        <example>
+            <statement>
+                <p>
+                    <m>7+0 = 0+7 = 7</m>. In general, we say that addition has an identity element on the set of integers and <m>0</m> is the identity element.
+                </p>
+            </statement>
+        </example>
+        <p>
+            v) For any integer <em>a</em>, it holds that <m>a + ( - a) = - a + a = 0</m>.
+        </p>
+        <example>
+            <statement>
+                <p>
+                    <m>4+-4 = -4+4 = 0</m>. In general, we say that every integer <em>a</em> has an additive inverse denoted by<m>- a</m>.
+                </p>
+            </statement>
+        </example>
+        <p>
+            vi) For any two integers <em>a</em> &amp; <em>b</em>, the product <em>a</em><m>\times</m><em>b</em> is also an integer. 
+                For instance in the above example, <m>4</m> and <m>7</m> are integers, their product <m>28</m> is also an integer. 
+                In general, we say that the set of integers is closed under multiplication.
+        </p>
+        <p>
+            vii) For any two integers <em>a</em> &amp; <em>b</em>, <em>a</em><m>\times</m><em>b</em> = <em>b</em><m>\times</m><em>a</em>.
+        </p>
+        <example>
+            <statement>
+                <p>
+                    <m>4 \times 7 = 7\times4 = 28</m>. In general, we say that multiplication is commutative on the set of integers.
+                </p>
+            </statement>
+        </example>
+        <p>
+            viii) For any three integers <em>a</em>, <em>b</em> &amp; <em>c</em>, 
+                 (<em>a</em><m>\times</m><em>b</em>) <m>\times</m><em>c</em> = <em>a</em><m>\times</m> (<em>b</em><m>\times</m><em>c</em>).
+        </p>
+        <example>
+            <statement>
+                <p>
+                   <m> (3 \times 5) \times 4 = 3 \times (5 \times 4) = 60 </m>. In general, we say that multiplication is associative on the set of integers.
+                </p>
+            </statement>
+        </example>
+        <p>
+            ix) For any integer a, it holds that <em>a</em><m>\times</m>1 = 1<m>\times</m><em>a</em> = <em>a</em>.
+        </p>
+        <example>
+            <statement>
+                <p>
+                    <m>5 \times 1 = 1 \times 5 = 5 </m>. In general, we say that multiplication has an identity element on the set of integers and 1 is the identity element.
+                </p>
+            </statement>
+        </example>
+        <p>
+            x) For any three integers <em>a</em>, <em>b</em> &amp; <em>c</em>, <em>a</em><m>\times</m><alert>(</alert><em>b</em><alert>+</alert><em>c</em>)
+                = (<em>a</em><m>\times</m><em>b</em>)+(<em>a</em><m>\times</m><em>c</em>).
+        </p>
+        <example>
+            <statement>
+                <p>
+                    <m>4 \times (5+6) = (4 \times 5)+ (4 \times 6) = 44</m>. In general, we say that multiplication is distributive over addition on the set of integers.
+                </p>
+            </statement>
+        </example>
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-order-relation-in-z">
+        <title>Order Relation in Z</title>
+        <p>
+            <ol marker="i)">
+                <li>
+                    <p>
+                        <alert>Transitive property:</alert> For any three integers <em>a</em>, <em>b</em> &amp; <em>c</em>, <m>a &gt; b\  \land \ b &gt; c\  \Rightarrow a &gt; c</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <alert>Addition property</alert>: For any three integers <em>a</em>, <em>b</em> &amp; <em>c</em>, <m>a &gt; b\  \Rightarrow \ a + c &gt; b + c</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                         <alert>Multiplication property</alert>: For any three integers <em>a</em>, <em>b</em> and <em>c</em>, where c&gt;0, <m>a &gt; b\  \Rightarrow \ \text{ac} &gt; \text{bc}</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <alert>Law of trichotomy</alert>: For any two integers <em>a</em> &amp; <em>b</em> we have <m>a &gt; b\ \text{or}\ a &lt; b\ \text{or}\ a = b</m>.
+                    </p>
+                </li>
+            </ol>
+        </p>
+        <exercises xml:id="exercises-sets-of-integers">
+            <exercise>
+                <statement>
+                    <p>
+                        Find an odd natural number x such that LCM (x, 40) = 1400.
+                    </p>
+                </statement>
+            </exercise>
+            <exercise>
+                <statement>
+                    <p>
+                        There are between <m>50</m> and <m>60</m> number of eggs in a basket. When Loza counts by 3’s, there are <m>2</m> eggs left over. 
+                        When she counts by 5’s, there are <m>4</m> left over. How many eggs are there in the basket?
+                    </p>
+                </statement>
+            </exercise>
+            <exercise>
+                <statement>
+                    <p>
+                        The GCF of two numbers is <m>3</m> and their LCM is <m>180</m>. If one of the numbers is <m>45</m>, then find the second number.
+                    </p>
+                </statement>
+            </exercise>
+            <exercise>
+                <statement>
+                    <p>
+                        Using Mathematical Induction, prove the following:
+                    </p>
+                    <p>
+                        <ol marker="a) ">
+                            <li>
+                                <p>
+                                    <m>6^n -1</m> is divisible by <m>5</m>, for <m>n \geq 0</m>.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>2^n \leq (n+1)!, \quad</m> for <m>n \geq 0</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>x^n + y^n </m> is divisible by <m>x+y</m> for odd natural number <m>n \geq 1.</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                     <m>2 + 4 + 6 + \cdots + 2n = n(n + 1)</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>1^{2} + 2^{2} + 3^{2} + \cdots + n^{2} = \frac{n (n + 1)(2n + 1)}{6}</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>1^{3} + 2^{3} + 3^{3} + \cdots + n^{3} = \frac{n^{2}\ (n + 1)^{2}}{4}</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>\frac{1}{1 \times 2} + \frac{1}{2 \times 3} + \frac{1}{3 \times 4} + \cdots + \frac{1}{n(n + 1)} = \frac{n}{n + 1}</m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </exercise>
+        </exercises>
+    </subsubsection>
 
 </subsection>

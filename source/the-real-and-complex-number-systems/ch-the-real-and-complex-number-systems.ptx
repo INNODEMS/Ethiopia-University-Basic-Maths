@@ -1,21 +1,33 @@
 
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml-id="the-real-and-complex-number-systems"><title>The Real and Complex Number Systems</title>
-<introduction>
-<p>In everyday life, knowingly or unknowingly, we are doing with numbers. Therefore, it will be nice if we get familiarized with numbers. Whatever course (which needs the concept of mathematics) we take, we face with the concept of numbers directly or indirectly. For this purpose, numbers and their basic properties will be introduced under this chapter.</p>
-<p><alert>Objective of the Chapter</alert></p>
-<p>At the end of this chapter, students will be able to:</p>
-<ul>
-<li><p>check the closure property of a given set of numbers on some operations</p></li>
-<li><p>determine the GCF and LCM of natural numbers</p></li>
-<li><p>apply the principle of mathematical induction to prove different mathematical formulae</p></li>
-<li><p>determine whether a given real number is rational number or not</p></li>
-<li><p>plot complex numbers on the complex plane</p></li>
-<li><p>convert a complex number from rectangular form to polar form and vice-versa</p></li>
-<li><p>extract roots of complex numbers</p></li>
-</ul>
+<chapter xml:id="the-real-and-complex-number-systems" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>The Real and Complex Number Systems</title>
+    <introduction>
+        <p>
+            In everyday life, knowingly or unknowingly, we are doing with numbers.
+            Therefore, it will be nice if we get familiarized with numbers. 
+            Whatever course (which needs the concept of mathematics) we take, 
+            we face with the concept of numbers directly or indirectly. 
+            For this purpose, numbers and their basic properties will be introduced under this chapter.
+        </p>
+    </introduction>
+    <objectives>
+        <title>Objective of the Chapter</title>
+        <introduction>
+            <p>
+                At the end of this chapter, students will be able to:
+            </p>
+        </introduction>
+        <ul>
+            <li><p>check the closure property of a given set of numbers on some operations</p></li>
+            <li><p>determine the GCF and LCM of natural numbers</p></li>
+            <li><p>apply the principle of mathematical induction to prove different mathematical formulae</p></li>
+            <li><p>determine whether a given real number is rational number or not</p></li>
+            <li><p>plot complex numbers on the complex plane</p></li>
+            <li><p>convert a complex number from rectangular form to polar form and vice-versa</p></li>
+            <li><p>extract roots of complex numbers</p></li>
+        </ul>
+    </objectives>
 
-</introduction>
-
-<xi:include href="sections/sec-the-real-number-system.ptx" />
-<xi:include href="sections/sec-the-set-of-complex-numbers.ptx" />
+    <xi:include href="sections/sec-the-real-number-system.ptx" />
+    <!-- <xi:include href="sections/sec-the-set-of-complex-numbers.ptx" /> -->
 </chapter>

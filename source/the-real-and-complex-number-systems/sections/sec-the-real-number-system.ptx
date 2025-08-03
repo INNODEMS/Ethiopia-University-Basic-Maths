@@ -1,10 +1,8 @@
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-the-real-number-system" class="anchor"><title>The real number System</title>
-<introduction>
+<section xml:id="sec-the-real-number-system" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>The real number System</title>
 
-</introduction>
-
-<xi:include href="subsections/sec-the-real-number-system/subsec-the-set-of-natural-numbers.ptx" />
-<xi:include href="subsections/sec-the-real-number-system/subsec-the-set-of-integers.ptx" />
-<xi:include href="subsections/sec-the-real-number-system/subsec-the-set-of-rational-numbers.ptx" />
-<xi:include href="subsections/sec-the-real-number-system/subsec-the-set-of-real-numbers.ptx" />
+    <xi:include href="subsections/sec-the-real-number-system/subsec-the-set-of-natural-numbers.ptx" />
+    <xi:include href="subsections/sec-the-real-number-system/subsec-the-set-of-integers.ptx" />
+    <xi:include href="subsections/sec-the-real-number-system/subsec-the-set-of-rational-numbers.ptx" />
+    <xi:include href="subsections/sec-the-real-number-system/subsec-the-set-of-real-numbers.ptx" />
 </section>
