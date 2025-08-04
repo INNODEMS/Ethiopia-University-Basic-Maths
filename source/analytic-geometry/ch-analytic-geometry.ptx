@@ -1,46 +1,45 @@
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
+<chapter xml:id="ch-analytic-geometry" xmlns:xi="http://www.w3.org/2001/XInclude" >
     <title>Analytic Geometry </title>
-<introduction>
-    <tabular>
-        <row>
-            <cell>
-                <p>
-                    The main topics of study in analytic geometry are straight lines and conic sections. Accordingly, by the end of this chapter you must
-                </p>
-                <p>
-                    <ul>
-                        <li>
-                            <p>be able to derive basic equations that are representing straight lines, circles, parabolas, ellipses, and hyperbola.</p>
-                        </li>
-                        <li>
-                             <p>know the main (important) properties of each of these five geometric objects.</p>
-                        </li>
-                        <li>
-                            <p>be able to identify equations of straight lines, circles, parabolas, ellipses, hyperbolas and sketch their graphs.</p>
-                        </li>
-                    </ul>
-                </p>
-                    <p>More specific objectives are given in each section.</p>
-            </cell>
-            </row>
-        </tabular>
-                <p>The major part of this chapter is <alert>conic sections</alert>. Conic sections are <alert>circles</alert>, <alert>parabolas, ellipse</alert>s and <alert>hyperbolas</alert>. They are called conic sections because they are generated when a plane cuts a right circular double cone. Depending on how the plane cuts the cone the intersection forms a curve called a circle, an ellipse, a parabola or a hyperbola (See, Figure 4.1).</p>
-                <p>We will see that a conic section is described by a second degree equation in <em>x</em> and <em>y</em> of the form</p>
-                <p>,</p>
-                <p>when A, C, D, E and F are constant real numbers. In the analysis of such equations we will frequently need the method of completing the square. Recall that completing the square is the method of converting an equation of the form</p>
+    <introduction>
+    <p>By the end of this section, you should:</p>
+    <p>
+        <ul>
+            <li>
+                <p>know the general form of second degree equation representing conic sections whose lines of symmetry are not necessarily parallel to the coordinate axes.</p>
+            </li>
+            <li>
+                <p>know the rotation formula for rotating the coordinate axes.</p>
+            </li>
+            <li>
+                <p>be able to find equivalent equation of a conic section under rotation of the reference axes.</p>
+            </li>
+            <li>
+                <p>be able to apply the rotation formula to find a suitable coordinate system in which a given general second degree equation is converted to a simpler standard form.</p>
+            </li>
+            <li>
+                <p>be able to convert a given general second degree equation to an equivalent simpler standard form of equation of a conic section.</p>
+            </li>
+            <li>
+                <p>be able to identify a conic section that a given general second degree equation represents and sketch the corresponding conic section.</p>
+            </li>
+        </ul>
+    </p>
 
-                <p><m>x^2 + ax = b \text{to} (x+ h)^2 = c </m>(<em>Can you establish the relationships between</em> <em>a</em>,<em>b</em> <em>and</em> <em>h</em>,<em>c</em> ?)</p>
 
-                <p>To do this :- <em>Add</em> <em>to both sides of the former equation</em>.</p>
-                <p>- <em>Then complete the square of the resulting expression to get the later form.</em></p>
-                <p>Here recall that: and .</p>
+
+    <p>In the previous sections we have seen that, except in degenerate cases, the graph of the equation</p>
+    <p>A<m>x_2</m> + C<m>y_2</m> + D<m>x</m> + E<em>y</em> + F = 0</p>
+    <p>is a circle, parabola, ellipse or hyperbola. The construction of these equations was based on the assumption that the axis of symmetry of a conic section is parallel to one of the coordinate axes. The assumption seems to be quite restrictive because the axis of symmetry for a parabola, ellipse, or hyperbola can be any oblique line as indicated in their corresponding definitions.</p>
+    <p>However, the reason why we have assumed that is not only for simplicity but there is always a coordinate system whose one of the axes is parallel to a desired line of symmetry. In particular, we can rotate the axes of our <em>xy</em><alert>-</alert>coordinate system, whenever needed, so as to form a new <em>x</em>'<em>y</em>'-coordinate system such that either the x'- axis or y'-axis is parallel to the desired line of symmetry. Toward this end, let us review the notion of rotation of axes.</p>
+
 
 </introduction>
 
-<!-- <xi:include href="sections/sec-distance-formula-and-equation-of.ptx" /> -->
-<!-- <xi:include href="sections/sec-circles.ptx" /> -->
-<xi:include href="sections/sec-parabolas.ptx" />
-<!-- <xi:include href="sections/sec-ellipses.ptx" /> -->
-<xi:include href="sections/sec-hyperbolas.ptx" />
-<!-- <xi:include href="sections/sec-the-general-second-degree-equation.ptx" /> -->
+
+        <!-- <xi:include href="sections/sec-distance-formula-and-equation-of.ptx" /> -->
+        <!-- <xi:include href="sections/sec-circles.ptx" /> -->
+        <xi:include href="sections/sec-parabolas.ptx" />
+        <!-- <xi:include href="sections/sec-ellipses.ptx" /> -->
+        <xi:include href="sections/sec-hyperbolas.ptx" />
+        <!-- <xi:include href="sections/sec-the-general-second-degree-equation.ptx" /> -->
 </chapter>
