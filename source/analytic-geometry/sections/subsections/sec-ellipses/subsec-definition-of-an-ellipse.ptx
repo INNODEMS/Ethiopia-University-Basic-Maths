@@ -1,4 +1,4 @@
-<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-definition-of-an-ellipse" class="anchor">
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-definition-of-an-ellipse" >
 <title>Definition of an Ellipse</title>
 
 <definition xml:id="def-ellipse">
@@ -13,12 +13,10 @@
 <p>
     The two fixed points, F and F<alert>′</alert>, are called <alert>foci</alert> (singular- <alert>focus</alert>) of the ellipse.
 </p>
-<figure xml:id="fig-ellipse-definition">
-    <caption>Figure 4.18: Ellipse: |PF| + |PF<alert>′</alert>|= constant</caption>
-    <image source="/ellipse-definition.png" width="70%">
-        <shortdescription></shortdescription>
-    </image>
-</figure>
+<image source="/ellipse-definition.png" width="70%">
+    <shortdescription></shortdescription>
+</image>
+<p><alert>Figure 4.18</alert>: Ellipse: |PF| + |PF<alert>′</alert>|= constant</p>
 <p>
     Note also the following terminologies and relationships about ellipse.
 </p>
@@ -227,17 +225,17 @@
                             <ol marker="(i)">
                                 <li>
                                     <p>
-                                        <m>(\frac{1}{2}, \sqrt(3))</m>
+                                        <m>(\frac{1}{2}, \sqrt{3})</m>
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <m>(\sqrt(2),1)</m>
+                                        <m>(\sqrt{2},1)</m>
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <m>(-\frac{1}{2}, -\sqrt(3))</m>
+                                        <m>(-\frac{1}{2}, -\sqrt{3})</m>
                                     </p>
                                 </li>
                                 <li>

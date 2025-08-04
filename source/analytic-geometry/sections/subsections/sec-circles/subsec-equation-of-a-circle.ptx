@@ -3,42 +3,42 @@
     <p>
         We now construct an equation that the coordinates (<em>x</em>,<em>y</em>) of the points on the circle should satisfy. 
         So, let P(<em>x,y</em>) be any point on a circle of radius <em>r</em> and center C(<em>h,k</em>) (see, Figure 4.7).
-        Then, the definition of a circle requires that</p>
+        Then, the definition of a circle requires that
     </p>
     <p>
-    <p>|CP|= <em>r</em></p>
-    <p>⇒ <m>\sqrt((x-h)^2 + (y-k)^2) = r</m></p>
+        |CP|= <em>r</em>
+    </p>
+    <p>
+        ⇒ <m>\sqrt((x-h)^2 + (y-k)^2) = r</m>
+    </p>
     <p>or</p>
-    <table>
+    <!-- <table> -->
+    <!-- <title>Standard equation of a circle</title> -->
     <tabular>
     <row>
     <cell><m>(x-h)^2 + (y-k)^2 = r^2</m></cell>
-    <cell><p>(Standard equation of a circle with</p>
-    <p>center (<em>h</em>,k) and radius <em>r).</em></p></cell>
+    <cell>(Standard equation of a circle with
+         center (<em>h</em>,k) and radius <em>r).</em>
+    </cell>
     </row>
     </tabular>
-    </table>
+    <!-- </table> -->
     <p>In particular, if the center is at origin, i.e., (<em>h,k</em>) = <m>(0,0)</m>, the equation is</p>
-    <table>
+    <!-- <table>
+    <title>Standard equation of a circle at origin</title> -->
     <tabular>
     <row>
     <cell><m>x^2 + y^2 = r^2</m></cell>
     <cell>(Standard Equation of a circle of radius <em>r</em> centered at origin)</cell>
     </row>
     </tabular>
-    </table>
-    <sidebyside>    
-    <figure xml:id="Figure-4.7">
-        <caption>Figure 4.7 circles </caption>
-        <image source="/center-a.png " width ="70%">
-            <shortdescription>(a) center at C<m>(h,k)</m></shortdescription>
-        </image>
-        <image source="/center-b.png " width="70%">
-            <shortdescription>(b) center at origin</shortdescription>
-        </image>
-
-    </figure>
-    </sidebyside>
+    <!-- </table> -->
+        <sidebyside>
+            <image source="/center-a.png" width="80%"/>
+            <image source="/center-b.png" width="80%"/>
+            <p></p>
+        </sidebyside>
+        <p><alert>Figure 4.7</alert>:(a) Center at C(h,k) ; (b) Center at origin</p>
     <example>
         <statement>
             <p>
@@ -138,21 +138,17 @@
                     </li>
                     <li>
                         <p>
-                            <m>⇔</m> <image source="/media/png72/imageC2260.png" /> (Adding <m>1^2</m> and <m>3^2</m> to both sides)
+                            <m>⇔(x^2+2x+1^2)+ (y^2-6y+3^2) = -7+1+9.</m> (Adding <m>1^2</m> and <m>3^2</m> to both sides)
                         </p>
                         <p>
-                            <p><m>⇔ ( x + 1)^2 + (y - 3)^2 = 3</m>.
+                            <m>⇔ ( x + 1)^2 + (y - 3)^2 = 3</m>.
                         </p>
                         <p>
-                            Comparing this with the standard equation of circle this is equation of a circle with center (<em>h</em>, <em>k</em>) <m>= (-1, 3)</m> and radius <image source="/media/png72/imageC2261.png" />. 
-                            The graph of the circle is sketched in Figure 4.8
+                            Comparing this with the standard equation of a circle, this is the equation of a circle with center (<em>h</em>, <em>k</em>) = (-1, 3) and radius r = <m>\sqrt{3}</m>. The graph of the circle is sketched in Figure 4.8 below.
                         </p>
-                        <figure xml:id="Figure-4.8">
-                            <caption>Figure 4.8</caption>
-                            <image source="/figure-4.8.png " width="70%">
-                                <shortdescription></shortdescription>
-                            </image>
-                        </figure>
+                        <image source="/figure-4.8.png" width="70%">
+                        </image>
+                        <p><alert>Figure 4.8</alert>.</p>
                     </li>
                     <li>
                         <p>
@@ -176,7 +172,12 @@
         </solution>
     </example>
     <remark>
-        <m>\term{Remark:}</m> Consider an equation of the form
+        <p>
+            
+        </p>
+         <p>
+            Consider an equation of the form
+         </p>
         <p>
             <m>x^2 + y^2 + Dx + Ey + F = 0</m>
         </p>
@@ -188,12 +189,12 @@
                 <li>
                     <p>
                         If <m>D^2 + E^2 - 4F &gt; 0</m> , then the equation represents a circle with
-                        center <m>(-\frac{D}{2}, -\frac{E}{2})</m> and radius <m>r = \frac{1}{2}\sqrt(D^2 + E^2 - 4F)</m>.
+                        center <m>(-\frac{D}{2}, -\frac{E}{2})</m> and radius <m>r = \frac{1}{2}\sqrt{D^2 + E^2 - 4F}</m>.
                     </p>
                 </li>
                 <li>
                     <p>
-                        If <me>D^2 + E^2  - 4F = 0</me> , then the equation is satisfied by the point <m>(-\frac{D}{2}, -\frac{E}{2})</m> only. 
+                        If <m>D^2 + E^2  - 4F = 0</m> , then the equation is satisfied by the point <m>(-\frac{D}{2}, -\frac{E}{2})</m> only. 
                         In this case the locus of the equation is called <alert>point-circle</alert> (circle of zero radius).
                     </p>
                 </li>
@@ -226,7 +227,7 @@
                         </li>
                         <li>
                             <p>
-                                <m>(0,-\sqrt(5))</m>
+                                <m>(0,-\sqrt{5})</m>
                             </p>
                         </li>
                         <li>
@@ -262,7 +263,7 @@
         <exercise>
             <statement>
                 <p>
-                    Find the value(s) of <em>k</em> for which the equation <m>2x^2 + 2y^2 + 6x - 4y + k =</em> 0</m> represent a circle.
+                    Find the value(s) of <em>k</em> for which the equation <m>2x^2 + 2y^2 + 6x - 4y + k =0</m> represent a circle.
                 </p>
             </statement>
         </exercise>
@@ -294,7 +295,7 @@
                     In each of the following, check whether or not the given equation represents a circle. If the equation represents a circle, then identify its center and the length of its diameter.
                 </p>
                 <p>
-                    <ol marker"(a)">
+                    <ol marker="(a)">
                         <li>
                             <p>
                                 <m>x^2+y^2-18x +24y = 0</m>

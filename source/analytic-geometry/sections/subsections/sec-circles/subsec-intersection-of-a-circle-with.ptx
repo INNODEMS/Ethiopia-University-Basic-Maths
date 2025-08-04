@@ -1,4 +1,4 @@
-<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-intersection-of-a-circle-with" class="anchor">
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-intersection-of-a-circle-with">
     <title>Intersection of a circle with a line and tangent line to a circle</title>
 
     <p>
@@ -14,12 +14,10 @@
         In this case, the intersection point is called the <alert>point of tangency</alert>. 
         Thus, <m>l_3 </m> a tangent line to the circle in Figure 4.9 and P is the point of tangency.
     </p>
-    <figure xml:id="intersection-of-a-circle">
-        <caption>Figure 4.9: Intersection of a line and circle</caption>
-        <image source="/intersection-of-circles.png" width="70%">
-            <shortdescription></shortdescription>
-        </image>
-    </figure>
+    <image source="/intersection-of-circles.png" width="70%">
+        <shortdescription></shortdescription>
+    </image>
+    <p><alert>Figure 4.9</alert>. Intersection of a line and circle</p>
     <p>
         In Figure 4.9, observe that every point on <m> l_1</m> are outside of the circle. 
         Hence, <em>d</em>(C,Q) &gt; <em>r</em> for every point Q on <m>l_1</m>. 
@@ -71,9 +69,12 @@
             <p>
                 The circle in the question is as in Figure 4.10.
             </p>
-            <image source="/example1.png " width="70%">
+            <image source="/example1.png" width="70%">
                 <shortdescription>Figure 4.10</shortdescription>
             </image>
+            <p>
+                <alert>Figure 4.10</alert>
+            </p>
             <p>
                 Let C(<em>h, k</em>) be the center of the circle.
                 (<em>h, k</em>) is on the line <m>y =(1/2)x ⇒ k =(1/2)h</m> ; and
@@ -100,12 +101,10 @@
             <p>
                 The circle in the question is as in Figure 4.11.
             </p>
-            <figure xml:id="intersection-of-a-circle">
-                <caption>Figure 4.11</caption>
-                <image source="/example2.png" width="70%">
-                    <shortdescription></shortdescription>
-                </image>
-            </figure>
+            <image source="/example2.png" width="70%">
+                <shortdescription></shortdescription>
+            </image>
+            <p><alert>Figure 4.11</alert>.</p>
             <p>
                 Let the center of the circle be C(<em>h</em>,0). 
                 We need to find <em>h</em>. The slope of the line <em><alert>l</alert></em> : <em>y=x</em> is <m>1</m> and <em><alert>l</alert></em> is perpendicular to CP. 
@@ -157,7 +156,7 @@
         <exercise>
             <statement>
                 <p>
-                    Find equation of the line through (<m>\sqrt(32),0</m>) and tangent to the circle with equation <m>x^2 + y^2 = 16</m>.
+                    Find equation of the line through (<m>\sqrt{32},0</m>) and tangent to the circle with equation <m>x^2 + y^2 = 16</m>.
                 </p>
             </statement>
         </exercise>

@@ -12,12 +12,10 @@
 <p>
     Definition 4.2 is illustrated by Figure 4.6 in which the center of the circle is denoted by ''C'' and its radius is denoted by <em>r</em>.
 </p>
-<figure xml:id="definition-of-a-circle">
-    <caption>Figure 4.6. Circle with center C, radius r</caption>
-    <image source="/Circle with center C, radius r.png">
-        <shortdescription></shortdescription>
-    </image>
-</figure>
+<image source="/Circle with center C, radius r.png">
+    <shortdescription></shortdescription>
+</image>
+<p><alert>Figure 4.6</alert>. Circle with center C, radius r</p>
 
 
 <p> Observe that a circle is symmetric with respect its center. 
@@ -56,8 +54,17 @@
         <p>
             Thus, P is on the circle if <m>|PC|^2 =25</m>, inside the circle if <alert>|</alert>PC<alert>|</alert><m>^2 &lt; 25</m> and outside the circle if <alert>|</alert>PC<alert>|</alert><m>^2 &gt; 25</m>. 
             So, we can use the square distance to answer the question. Thus, as
-            <m>|P_1C|^2 = (5-2)^2+(5-1)^2 = 25, |P_2C|^2 = (4-2)^2+(5-1)^2= 20 and |P_3C|^2 = (-2-2)^2+(5-1)^2= 32,</m>
-            <m>P_1</m>is on the circle, <m>P_2</m> is inside the circle, and <m>P_3</m> is outside the circle. Similarly, 
+             
+           
+        </p>
+        <p>
+            <m>|P_1C|^2 = (5-2)^2+(5-1)^2 = 25, |P_2C|^2 = (4-2)^2+(5-1)^2= 20</m>
+        </p>
+        <p>
+            and <m>|P_3C|^2 = (-2-2)^2+(5-1)^2= 32,</m>
+        </p>
+        <p>
+             <m>P_1</m>is on the circle, <m>P_2</m> is inside the circle, and <m>P_3</m> is outside the circle. Similarly, 
             you can show that <m>P_4</m> is inside the circle, <m>P_5</m> is on the circle, 
             and <m>P_6</m> is outside the circle.
         </p>
@@ -68,14 +75,14 @@
     <exercise>
         <statement>
             <p>
-                Suppose the center of a circle is <m>C(1,-2) and P(7, 6)</m> is a point on the circle. What is the radius of the circle?
+                Suppose the center of a circle is <m>C(1,-2)</m> and <m>P(7, 6)</m> is a point on the circle. What is the radius of the circle?
             </p>
         </statement>
     </exercise>
     <exercise>
         <statement>
             <p>
-                Let <m>A(1, 2) and B(5, -2)</m> are endpoints of a diameter of a circle. Find the center and radius of the circle.
+                Let <m>A(1, 2)</m> and <m>B(5, -2)</m> are endpoints of a diameter of a circle. Find the center and radius of the circle.
             </p>
         </statement>
     </exercise>
@@ -98,7 +105,7 @@
                     </li>
                     <li>
                         <p>
-                            <m>(0, -\sqrt(5))</m>
+                            <m>(0, -\sqrt{5})</m>
                         </p>
                     </li>
                     <li>

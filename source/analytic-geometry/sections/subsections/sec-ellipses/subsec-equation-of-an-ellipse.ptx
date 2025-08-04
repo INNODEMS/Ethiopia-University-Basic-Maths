@@ -1,4 +1,4 @@
-<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-equation-of-an-ellipse" class="anchor">
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-equation-of-an-ellipse">
 <title>Equation of an Ellipse</title>
 
 <introduction>
@@ -13,12 +13,10 @@
         There are two possible situations, namely, when the major axis lies on <em>x</em>-axis (called horizontal ellipse) and when the major axis lies on <em>y</em>-axis (called vertical ellipse).
          We first consider a horizontal ellipse as in Figure 4.19
     </p>
-    <figure xml:id="horizontal-ellipse">
-        <caption>Figure 4.19: Horizontal ellipse at standard position</caption>
-        <image source="/equation-of-ellipse.png " width="70%">
-            <shortdescription></shortdescription>
-        </image>
-    </figure>
+    <image source="/equation-of-ellipse.png" width="70%">
+        <shortdescription></shortdescription>
+    </image>
+    <p><alert>Figure 4.19</alert>: Horizontal ellipse at standard position</p>
     <p>
         Let the center of the ellipse be at the origin, C(0,0) and foci at F′(−<em>c</em>,0), F (<em>c</em>,0) and vertices at
         (−<em>a</em>,0) and (<em>a</em>,0) (see Figure 4.19). Then, a point P(<em>x,y</em>) is on the ellipse iff
@@ -27,19 +25,19 @@
         |PF′| + |PF| = 2<em>a</em> .
     </p>
     <p>
-        That is, <m>\sqrt((x+c)^2+ y^2)+ \sqrt((x-c)^2 + y^2) = 2a </m>
+        That is, <m>\sqrt{(x+c)^2+ y^2}+ \sqrt{(x-c)^2 + y^2} = 2a </m>
     </p>
     <p>
-        or <m>\sqrt((x-c)^2 + y^2) = 2a - \sqrt((x+c)^2 + y^2)</m>
+        or <m>\sqrt{(x-c)^2 + y^2} = 2a - \sqrt{(x+c)^2 + y^2}</m>
     </p>
     <p>
         Squaring both sides we get
     </p>
     <p>
-        <m>x^2 - 2cx + c^2 + y^2 = 4a^2 - 4a\sqrt((x+c)^2 + y^2) + x^2 + 2cx+ c^2 + y^2</m>
+        <m>x^2 - 2cx + c^2 + y^2 = 4a^2 - 4a\sqrt{(x+c)^2 + y^2} + x^2 + 2cx+ c^2 + y^2</m>
     </p>
     <p>
-        which simplifies to <m>a\sqrt((x+c)^2 + y^2) = a^2 + cx</m>
+        which simplifies to <m>a\sqrt{(x+c)^2 + y^2} = a^2 + cx</m>
     </p>
     <p>
         Again squaring both sides, we get <m>a^2(x^2+2cx+c^2+y^2) a^4 + 2a^2cx+c^2x^2</m>
@@ -53,8 +51,8 @@
     <tabular>
         <row>
         <cell><m>\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1</m></cell>
-        <cell><p>(Equation of horizontal ellipse at <alert>standard position,</alert></p>
-        <p>vertices (±<em>a</em>, 0), foci (±<em>c</em>, 0), where <m>c^2 = a^2 - b^2</m>) </p></cell>
+        <cell>(Equation of horizontal ellipse at <alert>standard position,</alert>
+        vertices (±<em>a</em>, 0), foci (±<em>c</em>, 0), where <m>c^2 = a^2 - b^2</m>) </cell>
         </row>
     </tabular>
     <p>
@@ -63,8 +61,8 @@
     <tabular>
         <row>
         <cell><m>\frac{x^2}{b^2} + \frac{y^2}{a^2} = 1</m></cell>
-        <cell><p>(Equation of vertical ellipse at <alert>standard position,</alert></p>
-        <p>vertices (0,±<em>a</em>), foci (0,±<em>c</em>), where <m>c^2 = a^2 - b^2</m>) </p></cell>
+        <cell>(Equation of vertical ellipse at <alert>standard position,</alert>
+        vertices (0,±<em>a</em>), foci (0,±<em>c</em>), where <m>c^2 = a^2 - b^2</m>) </cell>
         </row>
     </tabular>
     <p>
@@ -86,15 +84,13 @@
             <p>
                 This is equation of a vertical ellipse at standard position with <em>a=</em>4, so vertices at (0, ±4), and
                  <em>b=</em>3; i.e., endpoints of the minor axis at <m>(±3, 0)</m>. 
-                 Since <m>c^2= a^2-b^2 =7 ⇒ c = \sqrt(7)</m>, the foci are <m>(0,±\sqrt(7))</m>.
+                 Since <m>c^2= a^2-b^2 =7 ⇒ c = \sqrt{7}</m>, the foci are <m>(0,±\sqrt{7})</m>.
                  The graph is sketched in Figure 4.20.
             </p>
-            <figure xml:id="figure-ellipse">
-                <caption>Figure 4.20: <m>16x^2 + 9y^2</m></caption>
-                <image source="/figure-4.20.png " width="70%">
-                    <shortdescription></shortdescription>
-                </image>
-            </figure>
+            <image source="/figure-4.20.png" width="70%">
+                <shortdescription></shortdescription>
+            </image>
+            <p><alert>Figure 4.20</alert>: <m>16x^2 + 9y^2</m></p>
         </solution>
     </example>
     
@@ -106,17 +102,15 @@
         When an ellipse is not at standard position but with center at a point C(<em>h,k</em>), then we can still obtain its equation by considering translation of the <em>xy</em>-axes in such a way that its origin translated to the point C(<em>h</em>,<em>k</em>). 
         This result in a new <em>X</em><alert>′</alert><em>Y</em><alert>′</alert> coordinate system whose origin O′ is at C(<em>h,k</em>) so that the ellipse is at standard position relative to the <em>X</em><alert>′</alert><em>Y</em><alert>′</alert> system( see, Figure 4.21)
     </p>
-    <figure xml:id="equation-of-shifted-ellipses">
-        <caption>Fig.4.21</caption>
-        <sidebyside>
-            <image source="/figure-a.png " width="70%">
-                <shortdescription>(a) horizontal ellipse, center C(h,k)</shortdescription>
-            </image>
-            <image source="/figure-b.png " width="70%">
-                <shortdescription>(b) vertical ellipse, center C(h,k)</shortdescription>
-            </image>
-        </sidebyside>
-    </figure>
+    <sidebyside>
+        <image source="/figure-a.png" width="70%">
+            <shortdescription>(a) horizontal ellipse, center C(h,k)</shortdescription>
+        </image>
+        <image source="/figure-b.png" width="70%">
+            <shortdescription>(b) vertical ellipse, center C(h,k)</shortdescription>
+        </image>
+    </sidebyside>
+    <p><alert>Figure 4.21</alert>: (a) horizontal ellipse, center C(h,k); (b) vertical ellipse, center C(h,k)</p>
     <p>
         Consequently, the equation of the horizontal and vertical ellipses relative to the new <em>X</em><alert>′</alert><em>Y</em><alert>′</alert> coordinate system with (<em>x</em>′, <em>y</em>′) coordinate points are
     </p>
@@ -177,12 +171,10 @@
             <p>
                 The graph of the ellipse is sketched in Figure 4.22.
             </p>
-            <figure xml:id="equation-of-an-ellipse">
-                <caption>Figure 4.22</caption>
-                <image source="/example-ellipse.png" width="70%">
-                    <shortdescription></shortdescription>
-                </image>
-            </figure>
+            <image source="/example-ellipse.png" width="70%">
+                <shortdescription></shortdescription>
+            </image>
+            <p><alert>Figure 4.22</alert>: Example ellipse</p>
         </solution>
     </example>
     <example>
@@ -222,15 +214,16 @@
             <p>
                 The graph of the ellipse is sketched in Figure 4.23.
             </p>
-            <figure xml:id="equation-of-an-ellipse">
-                <caption>Figure 4.23: <m>4x^2+y^2+8x=0</m></caption>
-                <image source="/figure-4.23.png " width="70%">
+                <image source="/figure-4.23.png" width="70%">
                     <shortdescription></shortdescription>
                 </image>
-            </figure>
+                <p><alert>Figure 4.23</alert>: <m>4x^2+y^2+8x=0</m></p>
         </solution>
     </example>
     <remark>
+        <p>
+            
+        </p>
         <p>
              Consider the equation: <m>Ax^2 + Cy^2 + Dx + Ey + F = 0</m>,
         </p>
@@ -268,7 +261,7 @@
             </ul>
         </p>
     </remark>
-    <exercises xml:id="equation-of-an-ellipse">
+    <exercises xml:id="fig-ellipse">
         <title>Exercise </title>
         <introduction>
             <p>
@@ -327,7 +320,7 @@
         <exercise>
             <statement>
                 <p>
-                    The distance between its foci is <m>2\sqrt(5)</m> and the endpoints of its minor axis are <m>(-1, -2)</m> and <m>(3,-2)</m>.
+                    The distance between its foci is <m>2\sqrt{5} </m> and the endpoints of its minor axis are <m>(-1, -2)</m> and <m>(3,-2)</m>.
                 </p>
             </statement>
         </exercise>
@@ -440,7 +433,7 @@
 
                 </p>
                 <p>
-                    (a) is an ellipse. (b) is a point. (c) consists of no points at all.
+                    (a) is an ellipse. (b) is a point.  (c) consists of no points at all.
                 </p>
             </statement>
         </exercise>
