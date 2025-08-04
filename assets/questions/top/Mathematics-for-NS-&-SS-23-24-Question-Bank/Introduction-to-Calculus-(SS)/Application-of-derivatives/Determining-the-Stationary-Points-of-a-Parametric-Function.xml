@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Determining the Stationary Points of a Parametric Function</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p hidden>{@make_multsgn("blank")@}
+
+<p>Determine the coordinates of the stationary points of the parametric function,</p>
+<p style="margin-left: 30px;">\(x={@xx@},\) &emsp; \(y = {@yy@}\)</p>
+
+<p>Stationary Point 1: \( \big( \) [[input:ans1]] [[validation:ans1]] \(,\) [[input:ans2]] [[validation:ans2]] \( \big) \)</p>
+
+<p>[[feedback:prt1]]</p>
+<p>[[feedback:prt2]]</p>
+
+<p>Stationary Point 2: \( \big( \) [[input:ans3]] [[validation:ans3]] \(,\) [[input:ans4]] [[validation:ans4]] \( \big) \)</p>
+
+<p>[[feedback:prt3]]</p>
+<p>[[feedback:prt4]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p hidden>{@make_multsgn("blank")@}
+
+<h3>Worked Solution</h3>
+
+<p>We first differentiate \(x\) with respect to \(t\):</p>
+<p style="margin-left: 30px">\(x = {@aa*t^2@}\)</p>
+<p style="margin-left: 30px">\(\frac{dx}{dt} = {@aa*2*t@}\)</p>
+
+<br>
+
+<p>Similarly, we differentiate \(y\) with respect to \(t\):</p>
+<p style="margin-left: 30px">\(y = {@t^3-bb*t@}\)</p>
+<p style="margin-left: 30px">\(\frac{dy}{dt} = {@3*t^2 - bb@}\)</p>
+
+<br>
+
+<p>Using the chain rule, we can determine the derivative of \(y\) with respect to \(x\).</p>
+<p style="margin-left: 30px">\(\frac{dy}{dx} = \frac{dy}{dt} \cdot \frac{dt}{dx} = \frac{{@3*t^2 - bb@}}{{@aa*2*t@}}\)</p>
+
+<br>
+
+<p>To find stationary points we simply equate this derivative to 0 and solve for \(t\).</p>
+<p style="margin-left: 30px">\(\frac{{@3*t^2 - bb@}}{{@aa*2*t@}} = 0\)</p>
+<p style="margin-left: 30px">\({@3*t^2 - bb@} = 0\)</p>
+<p style="margin-left: 30px">\({@t^2@} = \frac{{@bb@}}{3} = {@bb/3@}\)</p>
+<p style="margin-left: 30px">\(t = \pm {@sqrt(bb/3)@}\)</p>
+
+<br>
+
+<p>Considering the positive case first, we obtain the coordinates for the first stationary point.</p>
+<p style="margin-left: 30px">\(\begin{align*}
+    x &= {@aa@}({@sqrt(bb/3)@})^2      & y &= {@sqrt(bb/3)@}^3 - {@bb@} {@sqrt(bb/3)@} \\
+    &= {@ratsimp(aa*sqrt(bb/3)^2)@}    & &= {@bb/3@} {@sqrt(bb/3)@} - {@bb@} {@sqrt(bb/3)@} \\
+    &                                                         & &= {@(bb/3-bb)@} {@sqrt(bb/3)@}
+\end{align*}\)</p>
+
+<br>
+
+<p>Similarly, the negative case gives us the second stationary point.</p>
+<p style="margin-left: 30px">\(\begin{align*}
+    x &= {@aa@} (-{@sqrt(bb/3)@})^2    & y &= (-{@sqrt(bb/3)@})^3 - {@bb@} (-{@sqrt(bb/3)@}) \\
+    &= {@ratsimp(aa*sqrt(bb/3)^2)@}     & &= {@-bb/3@} {@sqrt(bb/3)@} + {@bb@} {@sqrt(bb/3)@} \\
+    &                                                          & &= {@(-bb/3+bb)@} {@sqrt(bb/3)@}
+\end{align*}\)</p>
+
+<br>
+
+<p>Therefore, the stationary points are at \( ({@ratsimp(aa*sqrt(bb/3)^2)@}, {@(bb/3-bb)@} {@sqrt(bb/3)@}) \) and \( ({@ratsimp(aa*sqrt(bb/3)^2)@}, {@(-bb/3+bb)@} {@sqrt(bb/3)@}) \)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>aa:rand(8)+2;
+bb:rand([6,9,15,18,21,24]);
+xx:aa*t^2;
+yy:t^3-bb*t;
+tax:ratsimp(aa*sqrt(bb/3)^2);
+tay1:(-bb/3+bb)*sqrt(bb/3);
+tay2:(bb/3-bb)*sqrt(bb/3);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>The function: \(x={@xx@}\), \(y = {@yy@}\).</p>
+<p>Stationary Point 1: \( \left({@tax@}, {@tay1@}\right) \)</p>  
+<p>Stationary Point 2: \( \left({@tax@}, {@tay2@}\right) \)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>tax</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>tay1</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>tax</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>tay2</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/* Node 1: Checks for the correct x coordinate of the stationary point */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>tax</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct y coordinate of the stationary point */
+/*Node 2: Checks for the correct y coordinate of the stationary point */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>tay1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>tay2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/* Node 1: Checks if the student first x coordinate of the student is the same as the the second x cooredinate */
+/* Node 2: Checks for the correct x coordinate of the stationary point */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ans4</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>The points are not the same, they are distinct.<br></p>]]></text>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>tax</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks if the points of the x coordinates are distinct.*/
+/*Node 2: Checks for the correct y coordinate of the stationary point.*/
+/*Node 3: Checks for the correct y coordinate of the stationary point.*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>ans2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>The points are not the same, they are distinct.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>tay2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt4-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>tay1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1505688418</deployedseed>
+    <deployedseed>1351478968</deployedseed>
+    <deployedseed>1163092991</deployedseed>
+    <deployedseed>34971117</deployedseed>
+    <deployedseed>1912830539</deployedseed>
+    <deployedseed>1249662810</deployedseed>
+    <deployedseed>995595649</deployedseed>
+    <deployedseed>1925785685</deployedseed>
+    <deployedseed>1959330178</deployedseed>
+    <deployedseed>1726827759</deployedseed>
+    <deployedseed>102697514</deployedseed>
+    <deployedseed>1956927577</deployedseed>
+    <deployedseed>2112210930</deployedseed>
+    <deployedseed>506301167</deployedseed>
+    <deployedseed>714276680</deployedseed>
+    <deployedseed>1248801300</deployedseed>
+    <deployedseed>2059009388</deployedseed>
+    <deployedseed>1815378142</deployedseed>
+    <deployedseed>990661612</deployedseed>
+    <deployedseed>1365371651</deployedseed>
+    <deployedseed>1418760090</deployedseed>
+    <deployedseed>268275339</deployedseed>
+    <deployedseed>1651931237</deployedseed>
+    <deployedseed>143763782</deployedseed>
+    <deployedseed>323336336</deployedseed>
+    <deployedseed>793374216</deployedseed>
+    <deployedseed>798465383</deployedseed>
+    <deployedseed>1889286408</deployedseed>
+    <deployedseed>1215111150</deployedseed>
+    <deployedseed>887311583</deployedseed>
+    <deployedseed>1727041725</deployedseed>
+    <deployedseed>1506428300</deployedseed>
+    <deployedseed>683021818</deployedseed>
+    <deployedseed>1422155863</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>tax</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>tay1</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>tax</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>tay2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

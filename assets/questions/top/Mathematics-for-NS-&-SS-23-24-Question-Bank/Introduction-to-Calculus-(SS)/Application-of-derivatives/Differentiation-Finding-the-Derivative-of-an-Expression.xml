@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Differentiation: Finding the Derivative of an Expression</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Find \(\displaystyle \frac{dy}{dx}\) for \({@expr@}\)</p>
+<p><b>Step 1:</b> Differentiate both sides with respect to \(x\), yields to.</p>
+<br> ( [[input:ans1]] ) \( \cdot \displaystyle \frac{dy}{dx} +\) [[input:ans1s]] [[feedback:prt1]]
+<br> [[validation:ans1]]     [[validation:ans1s]] 
+
+<p><b>Step 2:</b> The final step is to deduce \(\displaystyle \frac{dy}{dx}\).</p>
+<br>\(\displaystyle \frac{dy}{dx}=\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3>Worked solution</h3>
+<p> Recall the following derivations of functions</p>
+<div>
+    <table width="250" cellspacing="1" cellpadding="0" border="1">
+ <colgroup>
+            <col>
+            <col>
+    </colgroup>
+        <tbody>
+  <tr>
+    <th>Functions</th>
+    <th>Derivative formulas</th>
+  </tr>
+  <tr>
+    <td>\( \sqrt{f} \)</td>
+    <td>\(\displaystyle \frac{f'}{2f}\)</td>
+  </tr>
+  <tr>
+    <td>\( \ln f\)</td>
+    <td>\( \displaystyle \frac{f'}{f} \)</td>
+  </tr>
+  <tr>
+    <td>\((f + g)' \)</td>
+    <td>\(f' + g'\)</td>
+  </tr>
+  <tr>
+    <td>\(\displaystyle \frac{f}{g} \)</td>
+    <td>\(\displaystyle \frac{f'g - g'f}{g^2} \)</td>
+  </tr>
+ <tr>
+    <td>\(\alpha f\)</td>
+    <td>\(\alpha f'\)</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+<p></p>
+<p>Let's find \(\displaystyle \frac{dy}{dx}\) for \({@expr@}\)</p>
+<p>The first step is to differentiate both sides with respect to \(x\).</p>
+<p>Remember that the key to this is to always think of \(y\) as a function of \(x\), or \(y=y(x)\)</p>
+
+<p>\(
+\begin{align}
+\displaystyle \frac{d}{dx} ({@aa*y^bb+cc*x^dd@}) & = & \displaystyle \frac{d}{dx} ({@ee*x^gg, simp@}) \\
+\displaystyle \frac{d}{dy} ({@aa*y^bb@}) \cdot \displaystyle \frac{dy}{dx} + \displaystyle \frac{d}{dx} ({@cc*x^dd@}) & = & \displaystyle \frac{d}{dx} ({@ee*x^gg, simp@})\\
+\displaystyle {@diff(aa*y^bb,y)@} \cdot \displaystyle \frac{dy}{dx} + {@diff(cc*x^dd,x)@} & = & \displaystyle {@diff(ee*x^gg,x)@} \\
+\displaystyle {@diff(aa*y^bb,y)@} \cdot \displaystyle \frac{dy}{dx}  & = & \displaystyle {@diff(ee*x^gg-cc*x^dd,x)@} \\
+\displaystyle \frac{dy}{dx}  & = & \displaystyle {@ta_2@}\\
+\end{align}
+\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*Defining randomised coefficients needed for the function*/
+aa: rand_with_prohib(-7,7,[0]);
+bb: rand(5)+1;
+cc: rand_with_prohib(-7,7,[0]);
+dd: rand(9)+1;
+ee: rand_with_prohib(-5,5,[0]);
+gg: rand(5)+1;
+ /*expression of function to be differentiated*/
+expr: aa*y^bb+cc*x^dd=ee*x^gg;
+/*Differentiation steps*/
+ta_numerator: diff(ee*x^gg-cc*x^dd,x);
+ta_denominator:  diff(aa*y^bb,y);
+
+/*Model answers*/
+ta_1: diff(aa*y^bb,y);
+ta_1s: diff(cc*x^dd,x)=diff(ee*x^gg,x);
+
+ta_2: ta_numerator/ta_denominator;
+
+/*possible mistakes*/
+ta_1s1: diff(aa*y^bb,x);
+ta_1s2: diff(cc*x^dd,y)=diff(ee*x^gg,y);
+ta_2_m: (ta_numerator/ta_denominator)+c;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p> \(\displaystyle \frac{dy}{dx}\) for \({@expr@}\)</p>
+<p> Differenting with respect to \(x\), yields to.</p>
+<br> \( {@ta_1@} \cdot \displaystyle \frac{dy}{dx} +{@ta_1s@} \)
+
+<p>Deducing \(\displaystyle \frac{dy}{dx}\).</p>
+<br>\(\displaystyle \frac{dy}{dx}={@ta_2@} \)]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta_1</tans>
+      <boxsize>8</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans1s</name>
+      <type>algebraic</type>
+      <tans>ta_1s</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>? = ?</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta_2</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*node 1 checks for correct answer*/
+/*node 2 mistake:Finding the derivative with respect to x.*/
+mistake_2n:ta_1s1;
+/*node 3 mistake:Finding the derivative with respect to y.*/
+mistake_3:ta_1s2;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta_1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>mistake_2n</sans>
+        <tans>ta_1s1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You seem to have differentiated with respect to y instead of x which should not be the case</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>mistake_3</sans>
+        <tans>ta_1s2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You seem to have differentiated with respect to y instead of x which should not be the case</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*node 1 checks for correct answer*/
+/*node 2 mistake:Adding a constant of intergration*/
+mistake_2:ta2_m;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta_2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>mistake_2</sans>
+        <tans>ta2_m</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You seem to have added a constant of integration which should not be the case, Remember we are differentiating not integrating.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>833172589</deployedseed>
+    <deployedseed>312669656</deployedseed>
+    <deployedseed>1534673774</deployedseed>
+    <deployedseed>1187537531</deployedseed>
+    <deployedseed>765823316</deployedseed>
+    <deployedseed>1323537166</deployedseed>
+    <deployedseed>117917209</deployedseed>
+    <deployedseed>1138866769</deployedseed>
+    <deployedseed>533685933</deployedseed>
+    <deployedseed>117605088</deployedseed>
+    <deployedseed>1256611855</deployedseed>
+    <deployedseed>48314538</deployedseed>
+    <deployedseed>1022964512</deployedseed>
+    <deployedseed>1344481764</deployedseed>
+    <deployedseed>1699089740</deployedseed>
+    <deployedseed>1728043450</deployedseed>
+    <deployedseed>1788014833</deployedseed>
+    <deployedseed>591577646</deployedseed>
+    <deployedseed>1206805174</deployedseed>
+    <deployedseed>1087216634</deployedseed>
+    <deployedseed>174996938</deployedseed>
+    <deployedseed>314386789</deployedseed>
+    <deployedseed>874049443</deployedseed>
+    <deployedseed>1157090582</deployedseed>
+    <deployedseed>1346824764</deployedseed>
+    <deployedseed>1263844926</deployedseed>
+    <deployedseed>1283717677</deployedseed>
+    <deployedseed>1777352774</deployedseed>
+    <deployedseed>1932965942</deployedseed>
+    <deployedseed>643841695</deployedseed>
+    <deployedseed>1705308992</deployedseed>
+    <deployedseed>1795441133</deployedseed>
+    <deployedseed>823935457</deployedseed>
+    <deployedseed>978868868</deployedseed>
+    <deployedseed>1135157220</deployedseed>
+    <deployedseed>166669017</deployedseed>
+    <deployedseed>734683454</deployedseed>
+    <deployedseed>1104611357</deployedseed>
+    <deployedseed>2128546983</deployedseed>
+    <deployedseed>348171777</deployedseed>
+    <deployedseed>1417505700</deployedseed>
+    <deployedseed>535863799</deployedseed>
+    <deployedseed>986985473</deployedseed>
+    <deployedseed>674162840</deployedseed>
+    <deployedseed>754728081</deployedseed>
+    <deployedseed>1855577657</deployedseed>
+    <deployedseed>330548539</deployedseed>
+    <deployedseed>1248898506</deployedseed>
+    <deployedseed>1917035286</deployedseed>
+    <deployedseed>1624247489</deployedseed>
+    <deployedseed>1606214490</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta_1</value>
+      </testinput>
+      <testinput>
+        <name>ans1s</name>
+        <value>ta_1s</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta_2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

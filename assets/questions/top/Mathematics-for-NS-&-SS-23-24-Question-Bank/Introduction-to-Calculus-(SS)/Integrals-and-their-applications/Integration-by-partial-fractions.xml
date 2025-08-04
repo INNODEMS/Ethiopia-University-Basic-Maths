@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Integration by partial fractions</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Find \(\displaystyle \int{@expr_6@}dx\)</p>
+<p>[[input:ans1]] [[validation:ans1]]</p>
+<p>[[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked solution</h3>
+
+<p>In order to find the integral of the expression \(\textstyle {@expr_6@}\), we need to proceed as follows:</p>
+
+<p>Applying the long division to the expression we obtain,</p>
+<p style="margin-left:30px">\(\begin{align*}
+\displaystyle{@expr_6@} &= {@expr_1@}+{@expr_5@} \\
+\displaystyle &= {@expr_1@}+\frac{{@num_expr_5@}}{({@f_5*x+f_3@})({@f_5*x+f_4@})}
+\end{align*}\)</p>
+
+<br>
+
+<p>Next we need to write the proper fraction in its partial fraction decomposition. To do this, we can write it in the required from with unknown constants \(A\) and \(B\):</p>
+<p style="margin-left:30px">\(\displaystyle{@expr_5@}\)  \(={@num_expr_5@}\displaystyle \left (\frac{A}{{@f_5*x+f_3@}}+\frac{B}{{@f_5*x+f_4@}}\right )\)</p>
+
+<p>Once we solve for the constants \(A\) and \(B\), we can determine the integral. Beforehand we can write the answer in terms of the constants.</p>
+<p style="margin-left:30px">\(\begin{align*}
+\displaystyle \int{@expr_6@}dx 
+
+&= \int \left ({@expr_1@}\right )dx \hspace{3px} {@if num_expr_5<0 then "-" else "+"@} \hspace{3px} {@abs(num_expr_5)@} \int \left (\frac{A}{{@f_5*x+f_3@}}+\frac{B}{{@f_5*x+f_4@}}\right )dx \\
+
+&= \displaystyle {@expr_7@}+{@num_expr_5@} \left (\frac{A}{{{@f_5@}}} \ln\left |{@f_5*x+f_3@} \right | + \frac{B}{{{@f_5@}}} \ln\left |{@f_5*x+f_4@} \right | \right )+c
+\end{align*}\)</p>
+
+<br>
+
+<p>Now, we proceed by solving,</p>
+<p style="margin-left:30px">\(\displaystyle\frac{{@expr_5_1@}}{({@f_5*x+f_3@})({@f_5*x+f_4@})}=\frac{A}{{@f_5*x+f_3@}}+\frac{B}{{@f_5*x+f_4@}} \hspace{20px} \text{equation (i)}\)</p>
+
+<p>Multiplying each member of the equation \(\text{(i)}\) by \({@f_5*x+f_3@},\) we have,</p>
+<p style="margin-left:30px">\(\displaystyle \frac{{@expr_5_1@}}{{@f_5*x+f_4@}}=A+B \cdot\left( \frac{{@f_5*x+f_3@}}{{@f_5*x+f_4@}} \right )\) \(\qquad\) equation \((ii)\)</p>
+
+<p>For \(x={@value_x@},\) the equation \(\text{(ii)}\) becomes \(\frac{{@expr_5_1@}}{{@f_5*value_x+f_4@}}=A \implies A={@expr_5_1/(f_5*value_x+f_4)@}\)</p>
+
+<br>
+
+<p>Multiplying each member of the equation \(\text{(i)}\) by \({@f_5*x+f_4@}\), we have,</p>
+<p style="margin-left:30px">\(\displaystyle \frac{{@expr_5_1@}}{{@f_5*x+f_3@}}=A \cdot\left( \frac{{@f_5*x+f_4@}}{{@f_5*x+f_3@}} \right )+B\)</p>
+<p>For \(x={@value_x1@},B={@expr_5_1/(f_5*value_x1+f_3)@}\)</p>
+
+<br>
+
+<p>Therefore, the values of \(A={@expr_5_1/(f_5*value_x+f_4)@}\) and \(B={@expr_5_1/(f_5*value_x1+f_3)@}\). Hence,</p>
+
+<p style="margin-left:30px">\(\begin{align*}
+\displaystyle \int{@expr_6@}dx 
+
+&= {@expr_7@} + {@num_expr_5/f_5@} \left ({@expr_5_1/(f_5*value_x+f_4)@} \ln\left |{@f_5*x+f_3@} \right | +{@expr_5_1/(f_5*value_x1+f_3)@} \ln\left |{@f_5*x+f_4@} \right | \right )+c \\
+
+\displaystyle &={@expr_7@}+{@(num_expr_5/f_5)/(f_5*value_x+f_4)@} \left (\ln\left |{@f_5*x+f_3@}\right | -\ln\left |{@f_5*x+f_4@} \right | \right ) +c \\
+
+\displaystyle &= {@ta_1@}
+\end{align*}\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>f_1:rand(5)+1;
+A:rand(8)+1;
+B:-A;
+f_3:rand_with_prohib(-5,5,[0]);/*a*/
+f_4:rand_with_prohib(-5,10,[0,f_3]);/*b*/
+f_5:rand(4)+2;
+coef_x:rand(2)+1;
+expr_1:(x-f_1);
+expr_2:(A/(f_5*x+f_3));
+expr_3:(B/(f_5*x+f_4));
+expr_4:expr_1+coef_x*(expr_2+expr_3);
+expr_5:ratsimp(expand(coef_x*(expr_2+expr_3)));
+
+expr_6:ratsimp(expand(expr_4));/*Original equation*/
+expr_7:int(expr_1,x);
+num_expr_5:num(expr_5);
+expr_5_1:num_expr_5*(1/num_expr_5);
+den_expr_5:denom(expr_5);
+value_x:rhs(solve((f_5*x+f_3),x)[1]);
+value_x1:rhs(solve((f_5*x+f_4),x)[1]);
+ta_1:int(expr_6,x)+c;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>Integral: \(\displaystyle \int{@expr_6@}dx\)</p>
+<p>answer: \({@ta_1@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta_1</tans>
+      <boxsize>20</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>Int</answertest>
+        <sans>ans1</sans>
+        <tans>ta_1</tans>
+        <testoptions>x</testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>572634857</deployedseed>
+    <deployedseed>1261516987</deployedseed>
+    <deployedseed>102760133</deployedseed>
+    <deployedseed>574951940</deployedseed>
+    <deployedseed>2061968599</deployedseed>
+    <deployedseed>1036620466</deployedseed>
+    <deployedseed>664914447</deployedseed>
+    <deployedseed>1064222282</deployedseed>
+    <deployedseed>2026889942</deployedseed>
+    <deployedseed>322417516</deployedseed>
+    <deployedseed>1860053406</deployedseed>
+    <deployedseed>879115046</deployedseed>
+    <deployedseed>2103587587</deployedseed>
+    <deployedseed>1425440965</deployedseed>
+    <deployedseed>859184801</deployedseed>
+    <deployedseed>1822849663</deployedseed>
+    <deployedseed>231555246</deployedseed>
+    <deployedseed>482157931</deployedseed>
+    <deployedseed>1454681127</deployedseed>
+    <deployedseed>2115321730</deployedseed>
+    <deployedseed>163354919</deployedseed>
+    <deployedseed>193895289</deployedseed>
+    <deployedseed>334827195</deployedseed>
+    <deployedseed>700249235</deployedseed>
+    <deployedseed>2118715254</deployedseed>
+    <deployedseed>1105852420</deployedseed>
+    <deployedseed>1277858215</deployedseed>
+    <deployedseed>1253978300</deployedseed>
+    <deployedseed>683696257</deployedseed>
+    <deployedseed>455608048</deployedseed>
+    <deployedseed>1339603269</deployedseed>
+    <deployedseed>127188493</deployedseed>
+    <deployedseed>1344159343</deployedseed>
+    <deployedseed>142232149</deployedseed>
+    <deployedseed>1047135420</deployedseed>
+    <deployedseed>2131848472</deployedseed>
+    <deployedseed>290102114</deployedseed>
+    <deployedseed>1027163465</deployedseed>
+    <deployedseed>388113039</deployedseed>
+    <deployedseed>184059364</deployedseed>
+    <deployedseed>2048374784</deployedseed>
+    <deployedseed>2008178175</deployedseed>
+    <deployedseed>879086852</deployedseed>
+    <deployedseed>205186961</deployedseed>
+    <deployedseed>1793906492</deployedseed>
+    <deployedseed>1026141607</deployedseed>
+    <deployedseed>876672872</deployedseed>
+    <deployedseed>187081905</deployedseed>
+    <deployedseed>1801108680</deployedseed>
+    <deployedseed>2078419829</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta_1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

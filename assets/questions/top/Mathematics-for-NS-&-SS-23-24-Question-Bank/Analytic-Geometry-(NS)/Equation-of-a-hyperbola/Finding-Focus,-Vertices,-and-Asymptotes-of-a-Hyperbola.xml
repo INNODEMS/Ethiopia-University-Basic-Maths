@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Finding Focus, Vertices, and Asymptotes of a Hyperbola</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<br> Find the foci, vertices, and asymptotes of hyperbola \( {@expr@} \).
+
+<br> a) Focus 
+<br>\( F_{1}=\)  [[input:ans1]]  \( F_{2}=\)  [[input:ans2]]   <br>\(\qquad\) [[validation:ans1]] [[validation:ans2]]  [[feedback:prtA]]
+
+<br> b) Vertices
+<br> \( A_{1}=\)  [[input:ans3]]  \( A_{2}=\)  [[input:ans4]]   <br>\(\qquad\)[[validation:ans3]] [[validation:ans4]]  [[feedback:prtB]]
+
+<br> c) Asymptotes: 
+<br> \( l_{1}=\)  [[input:ans5]] \( l_{2}=\)  [[input:ans6]]  
+<br> \(\qquad\) [[validation:ans5]] [[validation:ans6]]  [[feedback:prtC]]]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<br><b>Worked solution</b>
+<br><b>Recall:</b> Summary of Standard Equations of Hyperbola
+<br> <table border="1" width="60%">
+        <tr>
+            <td width="40%">Equation</td>
+            <td>Centre</td>
+            <td>Vertices</td>
+            <td width="30%">Foci</td>
+        </tr>
+        <tr>
+            <td>\(\displaystyle \frac{{(x-h)^2}}{{a^2}} - \frac{{(y-k)^2}}{{b^2}} = 1\)</td>
+            <td>\((h, k)\)</td>
+            <td>\((h \pm a, k)\)</td>
+            <td>\((h \pm \sqrt{{a^2 + b^2}}, k)\)</td>
+        </tr>
+        <tr>
+            <td>\(\displaystyle \frac{{(y-k)^2}}{{a^2}} - \frac{{(x-h)^2}}{{b^2}} = 1\)</td>
+            <td>\((h, k)\)</td>
+            <td>\((h, k \pm a)\)</td>
+            <td>\((h, k \pm \sqrt{{a^2 + b^2}})\)</td>
+        </tr>
+    </table>
+
+<br>We need to write  \({@expr@} \) in standard form \(\displaystyle \implies  \frac{(x-h)^2}{a^2}- \frac{(y-k)^2}{b^2}=1.\)
+<br> Rearrange the eqn as follows;
+<br>{@hyper2_2@}
+<br>
+<br> Use completing square method to factories the equation.
+<br>\(\displaystyle {@lhs(hyper2_1)@}=  {@rhs(hyper2_2)@}- {@val_b^2@}({@h^2@}) + {@val_a^2@}({@k^2@}) \)
+<br>
+<br>{@hyper2@}
+<br>
+<br>\(\displaystyle{@hyper1@}\)
+<br>
+<br> Note: \(\displaystyle  h= {@h@},   k= {@k@},   a= {@val_a@},   b = {@val_b@}\) and \(c =\sqrt(a^2+b^2)= {@c@}\)
+
+<br>
+<br>From here,
+<br>
+<br> a) Focus : \( (h \pm c, k) \implies  ({@focus1_x@}, {@focus1_y@})\) and   \(({@focus2_x@}, {@focus2_y@}) \)
+<br>
+<br> b) Vertices: \( (h \pm a, k) \implies  ({@ver1_x@}, {@ver1_y@})\) and   \( ({@ver2_x@}, {@ver2_y@}) \)
+<br>
+<br> c) Asymptotes: \( y-k=\pm {@(b/a)@} \cdot (x-h) \);
+<br>
+<br> Which simplifies to;
+<br> \( \displaystyle l_{1}: {@l1@} \Leftrightarrow {@l1_expd@} \)
+<br> \(\displaystyle  l_{2}: {@l2@} \Leftrightarrow {@l2_expd@} \)]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*Value on center h, k */
+h:  rand_with_prohib(-5,5,[0]);
+k: rand_with_prohib(-5,5,[0]);
+/*values of a and b*/
+aa: rand_with_step(2,8,2);
+val_a: sqrt(aa); /*value of a*/
+bb: rand_with_step(1,8,2); /*value of b^2*/
+val_b: sqrt(bb); /*value of b*/
+/*Equation of hyperbola*/
+hyper1: ((x-h)^2/(val_a^2))-((y-k)^2/(val_b^2))=1;
+hyper2_1:val_b^2*(x^2-2*x*h+h^2)-val_a^2*(y^2-2*y*k+k^2)=val_a^2*val_b^2;
+hyper2_2:val_b^2*x^2-val_b^2*2*x*h -val_a^2*y^2+val_a^2*2*y*k =val_a^2*val_b^2- val_b^2*h^2+val_a^2*k^2;
+hyper2: val_b^2*(x-h)^2-val_a^2*(y-k)^2=val_a^2*val_b^2;
+
+hyper3: val_b^2*(x-h)^2-val_a^2*(y-k)^2-val_a^2*val_b^2=0
+den_ab: denom(val_a^2*val_b^2);
+expr: expand(den_ab*hyper3); /*Expression of the equation*/
+
+/*Value of c*/
+cc: val_a^2+val_b^2; /*value of c^2*/
+c: sqrt(cc);
+
+/*Randomising coordinates of focus*/
+focus1_x: h-c;
+focus1_y: k;
+focus2_x: h+c;
+focus2_y: k;
+
+
+/*Defining vertices*/
+ver1_x: h+val_a;
+ver1_y: k;
+
+ver2_x: h-val_a;
+ver2_y: k;
+/*asymptotes*/
+l1: y-k=(val_b/val_a)*(x-h);
+l1_expd: expand((y-k)-(val_b/val_a)*(x-h)=0); /*First asymptote*/
+l2: y-k=-(val_b/val_a)*(x-h);
+l2_expd: expand((y-k)+(val_b/val_a)*(x-h)=0);  /*Second asymptote*/
+
+/*Model answer*/
+ta1: matrix([focus1_x],[focus1_y]); /*foci F1*/
+ta2: matrix([focus2_x],[focus2_y]); /*foci F2*/
+ta3: matrix([ver1_x],[ver1_y]);
+ta4: matrix([ver2_x],[ver2_y]);
+ta5: l1_expd;
+ta6: l2_expd;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<br> \( (H): {@expr@} \)
+<br> a) Focus : \( F_{1} (h-c, k) \implies  F_{1}({@focus1_x@}, {@focus1_y@})\) and
+<br> \( \qquad \qquad \)   \( F_{2}  (h+c, k)  \implies  F_{2} ({@focus2_x@}, {@focus2_y@}) \)
+
+<br> b) Vertices: \( A_{1} (h+a, k) \implies  A_{1}({@ver1_x@}, {@ver1_y@})\) and
+<br> \( \qquad \qquad \)   \( A_{2}  (h-a, k)  \implies  A_{2} ({@ver2_x@}, {@ver2_y@}) \)
+
+<br> c)\(l_{1}: {@l1@} \Leftrightarrow {@l1_expd@} \) and
+<br> \(l_{2}: {@l2@} \Leftrightarrow {@l2_expd@} \)]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>(</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>ta1</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>ta2</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>matrix</type>
+      <tans>ta3</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>matrix</type>
+      <tans>ta4</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans5</name>
+      <type>algebraic</type>
+      <tans>ta5</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans6</name>
+      <type>algebraic</type>
+      <tans>ta6</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prtA</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node1: Check the correct answer aternatively*/
+alt_ans1: is(ans1=ta1 and ans2=ta2);
+/*Node 2: alternative answer*/
+alt_ans2: is(ans1=ta2 and ans2=ta1);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>alt_ans1</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtA-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prtA-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>alt_ans2</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtA-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtA-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prtB</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 3: Check answer*/
+alt_ans3: is(ans3=ta3 and ans4=ta4);
+/*Node 4: Alternative answer*/
+alt_ans4: is(ans3=ta4 and ans4=ta3);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>alt_ans3</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtB-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prtB-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>alt_ans4</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtB-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtB-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prtC</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node1: Check the correct answer aternatively*/
+alt_ans5: is(ans5=ta5 and ans6=ta6);
+/*Node 2: alternative answer*/
+alt_ans6: is(ans5=ta6 and ans6=ta5);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>alt_ans5</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtC-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prtC-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>alt_ans6</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtC-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtC-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1549516166</deployedseed>
+    <deployedseed>1576060020</deployedseed>
+    <deployedseed>82015967</deployedseed>
+    <deployedseed>1696915892</deployedseed>
+    <deployedseed>1677972194</deployedseed>
+    <deployedseed>191691874</deployedseed>
+    <deployedseed>2090950305</deployedseed>
+    <deployedseed>2126151964</deployedseed>
+    <deployedseed>2007911217</deployedseed>
+    <deployedseed>1362045211</deployedseed>
+    <deployedseed>1546196288</deployedseed>
+    <deployedseed>330943954</deployedseed>
+    <deployedseed>1288646306</deployedseed>
+    <deployedseed>1830136264</deployedseed>
+    <deployedseed>737776989</deployedseed>
+    <deployedseed>1100439667</deployedseed>
+    <deployedseed>209751818</deployedseed>
+    <deployedseed>916655217</deployedseed>
+    <deployedseed>841493397</deployedseed>
+    <deployedseed>1652481402</deployedseed>
+    <deployedseed>1467638291</deployedseed>
+    <deployedseed>588349070</deployedseed>
+    <deployedseed>205729478</deployedseed>
+    <deployedseed>1930301914</deployedseed>
+    <deployedseed>1193071635</deployedseed>
+    <deployedseed>611494834</deployedseed>
+    <deployedseed>1854254246</deployedseed>
+    <deployedseed>967781345</deployedseed>
+    <deployedseed>457274240</deployedseed>
+    <deployedseed>712117743</deployedseed>
+    <deployedseed>1998299241</deployedseed>
+    <deployedseed>257254357</deployedseed>
+    <deployedseed>1210446066</deployedseed>
+    <deployedseed>886130832</deployedseed>
+    <deployedseed>444045288</deployedseed>
+    <deployedseed>759235418</deployedseed>
+    <deployedseed>1744142081</deployedseed>
+    <deployedseed>605819904</deployedseed>
+    <deployedseed>1090245839</deployedseed>
+    <deployedseed>477999584</deployedseed>
+    <deployedseed>1664362155</deployedseed>
+    <deployedseed>1084785886</deployedseed>
+    <deployedseed>1750802987</deployedseed>
+    <deployedseed>1664784685</deployedseed>
+    <deployedseed>402748131</deployedseed>
+    <deployedseed>255141561</deployedseed>
+    <deployedseed>848095224</deployedseed>
+    <deployedseed>907701826</deployedseed>
+    <deployedseed>1143094482</deployedseed>
+    <deployedseed>783010729</deployedseed>
+    <deployedseed>590589983</deployedseed>
+    <deployedseed>1091513107</deployedseed>
+    <deployedseed>1137189133</deployedseed>
+    <deployedseed>939806565</deployedseed>
+    <deployedseed>1397814182</deployedseed>
+    <deployedseed>704084551</deployedseed>
+    <deployedseed>1851926601</deployedseed>
+    <deployedseed>349960827</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>ta5</value>
+      </testinput>
+      <testinput>
+        <name>ans6</name>
+        <value>ta6</value>
+      </testinput>
+      <expected>
+        <name>prtA</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prtA-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prtB</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prtB-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prtC</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prtC-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>
