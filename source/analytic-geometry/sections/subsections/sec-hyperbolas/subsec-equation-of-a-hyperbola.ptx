@@ -1,160 +1,399 @@
-<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-equation-of-a-hyperbola" class="anchor">
-<title>Equation of a hyperbola</title>
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-equation-of-a-hyperbola" >
+    <title>Equation of a hyperbola</title>
+        <p>
+            We are now ready to derive equation of a hyperbola. But, for simplicity, we consider first the equation of a standard hyperbola with center at origin. A standard hyperbola is the one whose principal axis (or transverse axis) is parallel to either of the coordinate axes.
+        </p>
+        <p>
+            <alert>I. Equation of a standard hyperbola with center at origin.</alert></p>
+        <p>
+            There are two possible situations, namely, when the transverse axis lies on <em>x</em>-axis (called horizontal hyperbola) and when the transverse axis lies on <em>y</em>-axis (called vertical hyperbola). We first consider a horizontal hyperbola with center C(0,0), vertices V′(−<em>a</em>, 0), V (<em>a</em>, 0) and foci
+        </p>
+        <p>
+            F′(−<em>c</em>, 0), F (<em>c</em>, 0).
+        </p>
+        <p><image source="/media/png72/imageC2351.png" />
+        </p>
+        <p>
+            Notice that <em><m>c^2</m></em> − <em><m>a^2</m></em> &gt; 0 as <em>c</em> &gt; <em>a</em> . Hence, we can put <image source="/media/png72/imageC2353.png" /> for some positive <em>b</em>. That is, <image source="/media/png72/imageC2354.png" /> so that <em>a</em>, <em>b, c</em> are sides of a right triangle (see, Figure 4.25). The line segment BB′ perpendicular to the transverse axis at C and with endpoints B(0,<em>b</em>) and B′(0,−<em>b</em>) is called <alert>conjugate axis</alert> of the hyperbola. Observe that the midpoint of the conjugate axis is C and its length is |BB′<alert>|</alert> = 2<em>b</em><alert>.</alert> ( <em>b</em> will play important role in equation of the hyperbola and its graph).
+        </p>
+        <p>
+            Now, for any point P(<em>x,y</em>) on the hyperbola it holds that <alert>|</alert>PF′<alert>| − |</alert>PF<alert>| =</alert> 2<em>a</em> <alert>.</alert>
+        </p>
+        <p>
+            That is, <image source="/media/png72/imageC2355.png" />
+        </p>
+        <p>
+            or <image source="/media/png72/imageC2356.png" />
+        </p>
+        <p>
+            Squaring both sides we get</p>
+        <p><image source="/media/png72/imageC2357.png" />
+        </p>
+        <p>
+            which simplifies to <image source="/media/png72/imageC2358.png" />
+        </p>
+        <p>
+            Again squaring both sides and rearranging, we get <image source="/media/png72/imageC2359.png" />.
+        </p>
+        <p>
+            Recall that we set <image source="/media/png72/imageC2353.png" />. So, using this in the above equation and dividing both sides by <em><m>a^2b^2</m></em>, the equation becomes
+        </p>
+           <sidebyside>
+            <image source="/media/png72/imageC2360.png" />
+                <p>
+                    (Equation of horizontal hyperbola with center C(0,0)<alert>,</alert>
+                    vertices (±<em>a</em>, 0), foci (±<em>c</em>, 0), where <em>c</em><m>2</m> = <em>a</em><m>2</m> + <em>b</em><m>2</m> )
+                </p>
+           </sidebyside>
+           
+        <p>
+          Note that this hyperbola has no <em>y</em>-intercept because if <em>x</em> = 0, then −<em><m>y^2</m></em> = <em><m>b^2</m></em> which is not possible. The hyperbola is symmetric with respect to both <em>x</em>-and <em>y</em>- axes.
+        </p>
+        <p>
+            Also, from this equation we get</p>
+        <p>
+            <image source="/media/png72/imageC2361.png" /> implies that <image source="/media/png72/imageC2362.png" /> . So, <image source="/media/png72/imageC2363.png" /><alert>.</alert>
+        </p>
+        <p>Therefore, we have <em>x</em> ≥ <em>a</em> or <em>x</em> ≤ − <em>a</em>. This means that the hyperbola consists of two parts, called its <em>branches</em>. Moreover, if we solve for <em>y</em> from the equation we get <image source="/media/png72/imageC2364.png" /> as <em>x</em> → ∞.
+        </p>
+        <p>
+            This means the hyperbola will approach (but never reaches) the line <image source="/media/png72/imageC2365.png" /> as <em>x</em> gets larger and larger. That is, the lines <image source="/media/png72/imageC2365.png" /> are the <alert>asymptotes</alert> of the hyperbola.
+        </p>
+        <p>
+            In sketching a hyperbola, it is best to draw the rectangle formed by the line <em>y</em> = ±<em>b</em> and <em>x</em> = ±<em>a</em> and the to draw the asymptotes which are along the diagonals of the rectangle (as shown by the dashed lines in Figure 4.25). The hyperbola lies outside the rectangle and inside the asymptotes. It opens around the foci.
+        </p>
+        
+        <example>
+            <statement>
+                <p>
+                    Find the foci and equation of the hyperbola with vertices V′(−3, 0) and V(3, 0) and passing through P(5, 16/3).
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    It is horizontal hyperbola with center (0,0) and <em>c</em> = 5. In addition, as P(5, 16/3) is on the hyperbola we have that <alert>|</alert>PF′<alert>| − |</alert>PF<alert>| =</alert> 2<em>a</em><alert>.</alert> That is,               
+                 </p>
+                <p>
+                    <image source="/media/png72/imageC2366.png" />
+                </p>
+                <p>
+                    ⇒ <em>a</em> =3. (So, its vertices are (−3, 0) and (3, 0) ).    
+                </p>
+                <p>
+                    Now, using the relationship <image source="/media/png72/imageC2367.png" />, we get <image source="/media/png72/imageC2368.png" />.
+                </p>
+                <p>
+                    Therefore, the equation of the hyperbola is <image source="/media/png72/imageC2369.png" />.
+                </p>
+                <p>
+                    You may find the asymptotes and sketch the hyperbola.
+                </p>
+        
+                <p>
+                    For a vertical hyperbola with center at origin (i.e., when transverse axis lies on <em>y</em>-axis), by reversing the role of <em>x</em> and <em>y</em> we obtain the following equation which is illustrated in Figure 4.26.
+                </p>
+                <sidebyside>
+                    <p> <image source="/media/png72/imageC2370.png" /> </p>
+                    <p>
+                        ( Equation of vertical hyperbola with center C(0,0)<alert>,</alert>foci (0, ±<em><m>c^2</m></em>), vertices (0, ±<em>a</em>), where <em>c</em>
+                        = <em><m>a^2</m></em> + <em><m>b^2</m></em>and asymptotes <em>y</em> = ±(<em>a</em><alert>/</alert><em>b</em>)<em>x</em> )
+                    </p>
+                </sidebyside>
+                <p>
+                    <alert>Note</alert>:
+                    <ul>
+                        <li>
+                            <p>
+                                • For a vertical hyperbola, the coefficient of <em><m>y^2</m></em>is positive and that of <em><m>x^2</m></em> is negative.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <em><m>a^2</m></em>is always the denominator of the positive term.
+                            </p>
+                        </li>  
+                    </ul> 
+                </p>  
+                <p><image source="/media/png72/imageC2371.png" /></p>
+            </solution>
+        </example>
+        <example>
+            <statement>
+                <p>
+                     Find the foci and equation of the hyperbola with vertices V′(0,−1) and V(0, 1) and an asymptote <em>y</em> =2<em>x</em>.             
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    It is a vertical hyperbola with center C(0,0) and <em>a</em> = |CV| = 1. Since an asymptote of such vertical hyperbola is <em>y</em> = (<em>a</em>/<em>b</em>)<em>x</em> and the slope of the given asymptote is 2, we have <em>a</em>/<em>b</em> =2 ⇒ 1/<em>b</em> =2 ⇒ <em>b</em> = 1/2. Thus, <em><m>c^2</m></em> = <em><m>a^2</m></em>+<em><m>b^2</m></em> = 1 + 1/4 = 5/4 .
+                </p>
+                <p>
+                    So, the foci are <image source="/media/png72/imageC2373.png" /> and the equation of the hyperbola is <em><m>y^2</m></em> − 4<em><m>x^2</m></em> = 1.
+                </p>
+                <p>
+                    (You may sketch the hyperbola)
+                </p>
+            </solution>
+        </example>
+        <p>
+            <alert>(II)</alert> <alert>Equation of shifted sec-hyperbolas:</alert>
+        </p>
+        <p>
+            The center of a horizontal or vertical hyperbola may be not at origin but at some other point C(<em>h,k</em>) as shown in Figure 4.27. In this case, we form the equation of the sec-hyperbolas by using the translation of the <em>xy</em>-coordinate system that shifts its origin to the point C(<em>h</em>, <em>k</em>). As discussed in Section 4.4, the effect of this translation is just replacing <em>x</em> and <em>y</em> by <em>x</em>−<em>h</em> and <em>y</em>−<em>k</em>, respectively, in the equation of the desired hyperbola.
+        </p>
+        <p><image source="/media/png72/imageC2374.png" /></p>
+        <p>
+            Therefore, the standard equation of a horizontal hyperbola (transverse axis parallel to <em>x</em>-axis) with center C(<em>h,k</em>), length of transverse axis =2<em>a,</em> and length of conjugate axis =2<em>b</em> is
+        </p>
 
-<p>We are now ready to derive equation of a hyperbola. But, for simplicity, we consider first the equation of a standard hyperbola with center at origin. A standard hyperbola is the one whose principal axis (or transverse axis) is parallel to either of the coordinate axes.</p>
-<p><alert>I. Equation of a standard hyperbola with center at origin.</alert></p>
-<p>There are two possible situations, namely, when the transverse axis lies on <em>x</em>-axis (called horizontal hyperbola) and when the transverse axis lies on <em>y</em>-axis (called vertical hyperbola). We first consider a horizontal hyperbola with center C(0,0), vertices V′(−<em>a</em>, 0), V (<em>a</em>, 0) and foci</p>
-<p>F′(−<em>c</em>, 0), F (<em>c</em>, 0).</p>
-<p><image source="/media/png72/imageC2351.png" /></p>
-<p>Notice that <em>c</em><sup>2</sup> − <em>a</em><sup>2</sup> &gt; 0 as <em>c</em> &gt; <em>a</em> . Hence, we can put <image source="/media/png72/imageC2353.png" /> for some positive <em>b</em>. That is, <image source="/media/png72/imageC2354.png" /> so that <em>a</em>, <em>b, c</em> are sides of a right triangle (see, Figure 4.25). The line segment BB′ perpendicular to the transverse axis at C and with endpoints B(0,<em>b</em>) and B′(0,−<em>b</em>) is called <alert>conjugate axis</alert> of the hyperbola. Observe that the midpoint of the conjugate axis is C and its length is |BB′<alert>|</alert> = 2<em>b</em><alert>.</alert> ( <em>b</em> will play important role in equation of the hyperbola and its graph).</p>
-<p>Now, for any point P(<em>x,y</em>) on the hyperbola it holds that <alert>|</alert>PF′<alert>| − |</alert>PF<alert>| =</alert> 2<em>a</em> <alert>.</alert></p>
-<p>That is, <image source="/media/png72/imageC2355.png" /></p>
-<p>or <image source="/media/png72/imageC2356.png" /></p>
-<p>Squaring both sides we get</p>
-<p><image source="/media/png72/imageC2357.png" /></p>
-<p>which simplifies to <image source="/media/png72/imageC2358.png" /></p>
-<p>Again squaring both sides and rearranging, we get <image source="/media/png72/imageC2359.png" />.</p>
-<p>Recall that we set <image source="/media/png72/imageC2353.png" />. So, using this in the above equation and dividing both sides by <em>a</em><sup>2</sup><em>b</em><sup>2</sup>, the equation becomes</p>
-<table>
-<tabular>
-<row>
-<cell><image source="/media/png72/imageC2360.png" /></cell>
-<cell><p>(Equation of horizontal hyperbola with center C(0,0)<alert>,</alert></p>
-<p>vertices (±<em>a</em>, 0), foci (±<em>c</em>, 0), where <em>c</em><sup>2</sup> = <em>a</em><sup>2</sup> + <em>b</em><sup>2</sup> )</p></cell>
-</row>
-</tabular>
-</table>
-<p>Note that this hyperbola has no <em>y</em>-intercept because if <em>x</em> = 0, then −<em>y</em><sup>2</sup> = <em>b</em><sup>2</sup> which is not possible. The hyperbola is symmetric with respect to both <em>x</em>-and <em>y</em>- axes.</p>
-<p>Also, from this equation we get</p>
-<p><image source="/media/png72/imageC2361.png" /> implies that <image source="/media/png72/imageC2362.png" /> . So, <image source="/media/png72/imageC2363.png" /><alert>.</alert></p>
-<p>Therefore, we have <em>x</em> ≥ <em>a</em> or <em>x</em> ≤ − <em>a</em>. This means that the hyperbola consists of two parts, called its <em>branches</em>. Moreover, if we solve for <em>y</em> from the equation we get <image source="/media/png72/imageC2364.png" /> as <em>x</em> → ∞.</p>
-<p>This means the hyperbola will approach (but never reaches) the line <image source="/media/png72/imageC2365.png" /> as <em>x</em> gets larger and larger. That is, the lines <image source="/media/png72/imageC2365.png" /> are the <alert>asymptotes</alert> of the hyperbola.</p>
-<p>In sketching a hyperbola, it is best to draw the rectangle formed by the line <em>y</em> = ±<em>b</em> and <em>x</em> = ±<em>a</em> and the to draw the asymptotes which are along the diagonals of the rectangle (as shown by the dashed lines in Figure 4.25). The hyperbola lies outside the rectangle and inside the asymptotes. It opens around the foci.</p>
-<p><alert>Example 4.21</alert>: Find an equation of the hyperbola whose foci are F′(−5, 0) and F(5, 0) and contains point P(5, 16/3).</p>
-<p><alert>Solution:</alert> It is horizontal hyperbola with center (0,0) and <em>c</em> = 5. In addition, as P(5, 16/3) is on the hyperbola we have that <alert>|</alert>PF′<alert>| − |</alert>PF<alert>| =</alert> 2<em>a</em><alert>.</alert> That is,</p>
-<p><image source="/media/png72/imageC2366.png" /></p>
-<p>⇒ <em>a</em> =3. (So, its vertices are (−3, 0) and (3, 0) ).</p>
-<p>Now, using the relationship <image source="/media/png72/imageC2367.png" />, we get <image source="/media/png72/imageC2368.png" />.</p>
-<p>Therefore, the equation of the hyperbola is <image source="/media/png72/imageC2369.png" />.</p>
-<p>You may find the asymptotes and sketch the hyperbola.</p>
-<p>For a vertical hyperbola with center at origin (i.e., when transverse axis lies on <em>y</em>-axis), by reversing the role of <em>x</em> and <em>y</em> we obtain the following equation which is illustrated in Figure 4.26.</p>
-<table>
-<tabular>
-<row>
-<cell><image source="/media/png72/imageC2370.png" /></cell>
-<cell><p>( Equation of vertical hyperbola with center C(0,0)<alert>,</alert></p>
-<p>foci (0, ±<em>c</em>), vertices (0, ±<em>a</em>), where <em>c</em><sup>2</sup> = <em>a</em><sup>2</sup> + <em>b</em><sup>2</sup></p>
-<p>and asymptotes <em>y</em> = ±(<em>a</em><alert>/</alert><em>b</em>)<em>x</em> )</p></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Note</alert>: • For a vertical hyperbola, the coefficient of <em>y</em><sup>2</sup> is positive and that of <em>x</em><sup>2</sup> is negative .</p>
+    <tabular>
+        <row>
+            <cell><image source="/media/png72/imageC2378.png" /></cell>
+            <cell><p>Center: C(<em>h,k</em>),</p>
+                <p>
+                    Vertices: V′ (<em>h–a,k</em>), V(<em>h+a, k</em>),
+                </p>
+                <p>
+                    Foci : F′(<em>h–c, k</em>), F(<em>h</em>+<em>c</em>, <em>k</em>), where <em><m>c^2</m></em>= <em><m>a^2</m></em> +<em><m>b^2</m></em>
+                </p>
+                <p>
+                    Asymptotes: <image source="/media/png72/imageC2379.png" />
+                </p>
+            </cell>
+        </row>
+    </tabular>
+        <p>
+            Similarly, the standard equation of a vertical hyperbola (transverse axis parallel to <em>y</em>-axis) with center C(<em>h,k</em>), length of transverse axis =2<em>a,</em> and length of conjugate axis =2<em>b</em> is
+        </p>
+    <tabular>
+        <row>
+            <cell><image source="/media/png72/imageC2380.png" /></cell>
+            <cell><p>
+                Center: C(<em>h,k</em>),
+            </p>
+            <p>
+                Vertices: V′ (<em>h,k–a</em>), V(<em>h, k+a</em>),
+            </p>
+            <p>
+                Foci : F′(<em>h, k–c</em>), F(<em>h, k</em>+<em>c</em>), where <em><m>c^2</m></em> = <em><m>a^2</m></em> +<em><m>b^2</m></em></p>
+            <p>
+                Asymptotes: <image source="/media/png72/imageC2381.png" /></p></cell>
+        </row>
+    </tabular>
+    <example>
+        <statement>
+            <p>
+                Find the foci, vertices and the asymptotes of the hyperbola whose equation is
+            </p>
+            <p>
+                4(<em>x</em>+1)<m>^2</m> − (<em>y</em>−2)<m>^2</m> = 4
+            </p>
+            <p>
+                and sketch the hyperbola.
+            </p>
+        </statement>
+    
+        <solution>
+            <p>
+                Dividing both sides of the equation by 4 yields</p>
+            <p><image source="/media/png72/imageC2382.png" />.</p>
+            <p>
+                This is equation of a hyperbola with center C(−1, 2). Note that the '<em><m>y^2</m></em>-term' is positive indicates that the hyperbola is horizontal (principal axis <em>y=</em>2), <em>a</em>=1, <em>b</em>=2, and <em><m>c^2</m></em>= <em><m>a^2</m></em>+<em><m>b^2</m></em> ⇒ <image source="/media/png72/imageC2383.png" />. As a result the foci are at <image source="/media/png72/imageC2384.png" /> and <image source="/media/png72/imageC2385.png" />, vertices are at (−2,2) and (0,2) and the asymptotes are the lines <em>y−</em>2<em>=</em>±2(<em>x</em>+1), that is, <em>y=</em>2<em>x+</em>4 and <em>y=−</em>2<em>x</em>. Consequently, the hyperbola is sketched as in Figure 4.28.
+            </p>
+            <p><image source="/media/png72/imageC2386.png" /></p>
+            </solution>
+    </example>
+    <example>
+        <statement>
+            <p>
+            Find the foci of the conic <image source="/media/png72/imageC2390.png" /> and sketch its graph.
+                
+            </p>
+        </statement>
+        <solution>
 
-<p>• <em>a</em><sup>2</sup> is always the denominator of the positive term.</p>
+        <p>
+            Group the <em>x</em>-terms and <em>y</em>-terms of the equation and complete their squares:
+        </p>
 
-<p><image source="/media/png72/imageC2371.png" /></p>
-<p><alert>Example 4.22</alert>: Find the foci and equation of the hyperbola with vertices V′(0,−1) and V(0, 1) and an asymptote <em>y</em> =2<em>x</em>.</p>
-<p><alert>Solution:</alert> It is a vertical hyperbola with center C(0,0) and <em>a</em> = |CV| = 1. Since an asymptote of such vertical hyperbola is <em>y</em> = (<em>a</em>/<em>b</em>)<em>x</em> and the slope of the given asymptote is 2, we have <em>a</em>/<em>b</em> =2 ⇒ 1/<em>b</em> =2 ⇒ <em>b</em> = 1/2. Thus, <em>c</em><sup>2</sup> = <em>a</em><sup>2</sup> +<em>b</em><sup>2</sup> = 1 + 1/4 = 5/4 .</p>
-<p>So, the foci are <image source="/media/png72/imageC2373.png" /> and the equation of the hyperbola is <em>y</em><sup>2</sup> − 4<em>x</em><sup>2</sup> = 1.</p>
-<p>(You may sketch the hyperbola)</p>
-<p><alert>(II)</alert> <alert>Equation of shifted sec-hyperbolas:</alert></p>
-<p>The center of a horizontal or vertical hyperbola may be not at origin but at some other point C(<em>h,k</em>) as shown in Figure 4.27. In this case, we form the equation of the sec-hyperbolas by using the translation of the <em>xy</em>-coordinate system that shifts its origin to the point C(<em>h</em>, <em>k</em>). As discussed in Section 4.4, the effect of this translation is just replacing <em>x</em> and <em>y</em> by <em>x</em>−<em>h</em> and <em>y</em>−<em>k</em>, respectively, in the equation of the desired hyperbola.</p>
-<p><image source="/media/png72/imageC2374.png" /></p>
-<p>Therefore, the standard equation of a horizontal hyperbola (transverse axis parallel to <em>x</em>-axis) with center C(<em>h,k</em>), length of transverse axis =2<em>a,</em> and length of conjugate axis =2<em>b</em> is</p>
-<table>
-<tabular>
-<row>
-<cell><image source="/media/png72/imageC2378.png" /></cell>
-<cell><p>Center: C(<em>h,k</em>),</p>
-<p>Vertices: V′ (<em>h–a,k</em>), V(<em>h+a, k</em>),</p>
-<p>Foci : F′(<em>h–c, k</em>), F(<em>h</em>+<em>c</em>, <em>k</em>), where <em>c</em><sup>2</sup> = <em>a</em><sup>2</sup> +<em>b</em><sup>2</sup></p>
-<p>Asymptotes: <image source="/media/png72/imageC2379.png" /></p></cell>
-</row>
-</tabular>
-</table>
-<p>Similarly, the standard equation of a vertical hyperbola (transverse axis parallel to <em>y</em>-axis) with center C(<em>h,k</em>), length of transverse axis =2<em>a,</em> and length of conjugate axis =2<em>b</em> is</p>
-<table>
-<tabular>
-<row>
-<cell><image source="/media/png72/imageC2380.png" /></cell>
-<cell><p>Center: C(<em>h,k</em>),</p>
-<p>Vertices: V′ (<em>h,k–a</em>), V(<em>h, k+a</em>),</p>
-<p>Foci : F′(<em>h, k–c</em>), F(<em>h, k</em>+<em>c</em>), where <em>c</em><sup>2</sup> = <em>a</em><sup>2</sup> +<em>b</em><sup>2</sup></p>
-<p>Asymptotes: <image source="/media/png72/imageC2381.png" /></p></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 4.23</alert>: Find the foci, vertices and the asymptotes of the hyperbola whose equation is</p>
-<p>4(<em>x</em>+1)<sup>2</sup> − (<em>y</em>−2)<sup>2</sup> = 4</p>
-<p>and sketch the hyperbola.</p>
-<p><alert>Solution:</alert> Dividing both sides of the equation by 4 yields</p>
-<p><image source="/media/png72/imageC2382.png" />.</p>
-<p>This is equation of a hyperbola with center C(−1, 2). Note that the '<em>x<sup>2</sup></em>-term' is positive indicates that the hyperbola is horizontal (principal axis <em>y=</em>2), <em>a</em>=1, <em>b</em>=2, and <em>c</em><sup>2</sup>= <em>a</em><sup>2</sup>+<em>b</em><sup>2</sup> ⇒ <image source="/media/png72/imageC2383.png" />. As a result the foci are at <image source="/media/png72/imageC2384.png" /> and <image source="/media/png72/imageC2385.png" />, vertices are at (−2,2) and (0,2) and the asymptotes are the lines <em>y−</em>2<em>=</em>±2(<em>x</em>+1), that is, <em>y=</em>2<em>x+</em>4 and <em>y=−</em>2<em>x</em>. Consequently, the hyperbola is sketched as in Figure 4.28.</p>
-<p><image source="/media/png72/imageC2386.png" /></p>
-<p><alert>Example 4.24</alert>: Find the foci of the conic <image source="/media/png72/imageC2390.png" /> and sketch its graph.</p>
-<p><alert>Solution:</alert> Group the <em>x</em>-terms and <em>y</em>-terms of the equation and complete their squares:</p>
+        <p>
+            ⇒ <image source="/media/png72/imageC2391.png" /> (Multiply both sides by −1)
+        </p>
+        <p>
+            ⇒ <image source="/media/png72/imageC2392.png" />
+        </p>
+        <p>
+            ⇒ <image source="/media/png72/imageC2393.png" />
+        </p>
+        <p>
+            ⇒ <image source="/media/png72/imageC2394.png" />
+        </p>
+        <p>
+            ⇒ <image source="/media/png72/imageC2395.png" /> (Next, divide each by 36)
+        </p>
+        <p>
+            ⇒ <image source="/media/png72/imageC2396.png" />
+        </p>
 
-<p>⇒ <image source="/media/png72/imageC2391.png" /> (Multiply both sides by −1)</p>
-<p>⇒ <image source="/media/png72/imageC2392.png" /></p>
-<p>⇒ <image source="/media/png72/imageC2393.png" /></p>
-<p>⇒ <image source="/media/png72/imageC2394.png" /></p>
-<p>⇒ <image source="/media/png72/imageC2395.png" /> (Next, divide each by 36)</p>
-<p>⇒ <image source="/media/png72/imageC2396.png" /></p>
+        <p>
+            This is standard equation of a hyperbola whose transverse axis is parallel to the y-axis (as its '<em><m>b^2</m></em> term' is positive) with center C (4,1), <em><m>a^2</m></em>=9 and <em><m>y^2</m></em>=4 . ⇒ <image source="/media/png72/imageC2397.png" />. Thus, foci are F′<image source="/media/png72/imageC2398.png" /> and F<image source="/media/png72/imageC2399.png" />, and vertices (4, 1±3), i.e,, V′(4<em>,–</em>2) and V(4<em>,</em> 4). Moreover, the asymptotes are <image source="/media/png72/imageC2400.png" />. Hence, the asymptotes are</p>
+        <p>
+            <em><alert><m>l_1</m></alert></em>: <image source="/media/png72/imageC2401.png" /> and <em><alert><m>l_2</m></alert></em> <image source="/media/png72/imageC2402.png" />. The hyperbola is sketched in Figure 4.29</p>
+        <p><image source="/media/png72/imageC2396.png" /></p>
+           
+        </solution>
+    </example>
+    <example>
+        <statement>
+            <p>
+                Determine the locus or type of the conic section given by the equation <image source="/media/png72/imageC275.png" />
+            </p>
+            <p>
+                <image source="/media/png72/imageC2403.png" />.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                Grouping the <em>x</em>-terms and <em>y</em>-terms of the equation and completing their squares yield
+            </p>
+            <p>
+                <image source="/media/png72/imageC2404.png" />
+            </p>
+            <p>
+                ⇒ <image source="/media/png72/imageC2405.png" />
+            </p>
+            <p>
+                ⇒ <image source="/media/png72/imageC2406.png" /> = <image source="/media/png72/imageC2407.png" />
+            </p>
+            <p>
+                This represents pair of two lines intersecting at (2, 1), namely, <em>y</em> = <em>x</em>−1 and <em>y</em> = −<em>x</em>+3.
+            </p>
 
-<p>This is standard equation of a hyperbola whose transverse axis is parallel to the y-axis (as its '<em>y</em><sup>2</sup> term' is positive) with center C (4,1), <em>a</em><sup>2</sup>=9 and <em>b</em><sup>2</sup>=4 . ⇒ <image source="/media/png72/imageC2397.png" />. Thus, foci are F′<image source="/media/png72/imageC2398.png" /> and F<image source="/media/png72/imageC2399.png" />, and vertices (4, 1±3), i.e,, V′(4<em>,–</em>2) and V(4<em>,</em> 4). Moreover, the asymptotes are <image source="/media/png72/imageC2400.png" />. Hence, the asymptotes are</p>
-<p><em><alert>l</alert></em><sub>1</sub>: <image source="/media/png72/imageC2401.png" /> and <em><alert>l</alert></em><sub>2</sub>: <image source="/media/png72/imageC2402.png" />. The hyperbola is sketched in Figure 4.29</p>
-<p><image source="/media/png72/imageC2396.png" /></p>
-<p><alert>Example 4.25</alert>: Determine the locus or type of the conic section given by the equation <image source="/media/png72/imageC275.png" /></p>
-<p><image source="/media/png72/imageC2403.png" />.</p>
-<p><alert>Solution</alert>: Grouping the <em>x</em>-terms and <em>y</em>-terms of the equation and completing their squares yield</p>
-<p><image source="/media/png72/imageC2404.png" /></p>
-<p>⇒ <image source="/media/png72/imageC2405.png" /></p>
-<p>⇒ <image source="/media/png72/imageC2406.png" /> = <image source="/media/png72/imageC2407.png" /></p>
-<p>This represents pair of two lines intersecting at (2, 1), namely, <em>y</em> = <em>x</em>−1 and <em>y</em> = −<em>x</em>+3.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Remark:</alert> Consider the equation: A<em>x</em><sup>2</sup> + C<em>y</em><sup>2</sup> + D<em>x</em> + E<em>y</em> + F = 0 when AC &lt; 0;</p>
-<p>(i.e., A and C have opposite signs). Then, by completing the squares of x-terms and y-terms you can convert the equation to the following form:</p>
-<p><image source="/media/png72/imageC2332.png" />.</p>
-<p>Now, letting <image source="/media/png72/imageC2408.png" /> you can conclude the following:</p>
-<ul>
-<li>
-<p>If ∆ ≠ 0, the equation represents a hyperbola with center <image source="/media/png72/imageC2333.png" />.</p>
-</li>
-<li>
-<p>If ∆ = 0, the equation becomes <image source="/media/png72/imageC2409.png" /> which are two lines intersecting at <image source="/media/png72/imageC2333.png" />. In this case, it is called <alert>degenerate</alert> hyperbola.</p>
-</li>
-</ul></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Exercise 4.5.2</alert></p>
-<table>
-<tabular>
-<row>
-<cell><p>For questions 1 to 9, find an equation of the hyperbola having the given properties and sketch its graph.</p>
-<p>1. Center at the origin, a focus at (5, 0), and a vertex at (3, 0)</p>
-<p>2. Center at the origin, a focus at (0,−5), and a vertex at (0, −3).</p>
-<p>3. Center at the origin, <em><alert>x</alert></em>-intercepts ±3, an asymptote <em>y</em> = 2<em>x</em>.</p>
-<p>4. Center at the origin, a vertex at (2, 0) , and passing through <image source="/media/png72/imageC2410.png" />.</p>
-<p>5. Center at (4, 2), a vertex at (7, 2) , and an asymptote 3<em>y</em> = 4<em>x</em>−10.</p>
-<p>6. Foci at (–2, –1) and F<sub>2</sub>(–2, 9), length of transverse axis 6.</p>
-<p>7. Foci at (1, 3) and (7, 3), and vertices at (2,3) and (6, 3).</p>
-<p>8. Vertices at (±3, 0), and asymptotes <em>y</em> = ±2<em>x</em></p>
-<p>9. Eccentricity e=1<alert>.</alert>5, endpoints of transversal axis at <image source="/media/png72/imageC2411.png" /> and <image source="/media/png72/imageC2412.png" />.</p>
-<p>For questions 10 to 17 find the center, foci, vertices and asymptotes of the hyperbola having the given equation and sketch its graph.</p>
-<p>10. <image source="/media/png72/imageC2413.png" /> 14. <image source="/media/png72/imageC2414.png" /></p>
-<p>11. <image source="/media/png72/imageC2415.png" /> 15. <image source="/media/png72/imageC2416.png" /></p>
-<p>12. <image source="/media/png72/imageC2417.png" /> 16. <image source="/media/png72/imageC2418.png" /></p>
-<p>13. <image source="/media/png72/imageC2419.png" /> 17. <image source="/media/png72/imageC2420.png" /></p>
-<p>18. Find an equation of hyperbola whose major axis is parallel to the x-axis, has a focus at <image source="/media/png72/imageC2421.png" /> and its vertices are at the endpoints of a diameter of the circle <image source="/media/png72/imageC2422.png" />.</p>
-<p>19. A satellite moves along a hyperbolic curve whose horizontal transverse axis is 24 km and an asymptote <image source="/media/png72/imageC2423.png" />. Then what is the eccentricity of the hyperbola?</p>
-<p>20 Two regions A and B are separated by a sea. The shores are roughly in a shape of hyperbolic curves with asymptotes <image source="/media/png72/imageC2424.png" /> and a focus at (30,0) taking a coordinate system with origin at the center of the hyperbola. What is the shortest distance between the regions in kms?</p>
-<p>21. Determine the type of curve represented by the equation</p>
-<p><image source="/media/png72/imageC2425.png" /></p>
-<p>In each of the following cases: ( a) <image source="/media/png72/imageC2426.png" />, (b) 0 &lt; <em>k</em> &lt; 16, (c) <image source="/media/png72/imageC2427.png" /></p></cell>
-</row>
-</tabular>
-</table>
+        </solution>
+    </example>
+            <tabular>
+                <row>
+                    <cell><p><alert>
+                        Remark:</alert> Consider the equation: A<em><m>x^2</m></em> + C<em><m>y^2</m></em> + D<em>x</em> + E<em>y</em> + F = 0 when AC &lt; 0;
+                    </p>
+                        <p>
+                            (i.e., A and C have opposite signs). Then, by completing the squares of x-terms and y-terms you can convert the equation to the following form:
+                        </p>
+                        <p><image source="/media/png72/imageC2332.png" />.</p>
+                        <p>
+                            Now, letting <image source="/media/png72/imageC2408.png" /> you can conclude the following:
+                        </p>
+                        <ul>
+                        <li>
+                        <p>
+                            If ∆ ≠ 0, the equation represents a hyperbola with center <image source="/media/png72/imageC2333.png" />.
+                        </p>
+                        </li>
+                        <li>
+                        <p>
+                            If ∆ = 0, the equation becomes <image source="/media/png72/imageC2409.png" /> which are two lines intersecting at <image source="/media/png72/imageC2333.png" />. In this case, it is called <alert>degenerate</alert> hyperbola.
+                        </p>
+                        </li>
+                        </ul>
+                    </cell>
+                </row>
+        </tabular>
+       <exercise>
+        <statement>
+            <p>
+                
+            </p>
+            <tabular>
+                <row>
+                    <cell>
+                        <p>
+                            For questions 1 to 9, find an equation of the hyperbola having the given properties and sketch its graph.
+                        </p>
+                        <p>
+                            1. Center at the origin, a focus at (5, 0), and a vertex at (3, 0)
+                        </p>
+                        <p>
+                            2. Center at the origin, a focus at (0,−5), and a vertex at (0, −3).
+                        </p>
+                        <p>
+                            3. Center at the origin, <em><alert>x</alert></em>-intercepts ±3, an asymptote <em>y</em> = 2<em>x</em>
+                            .</p>
+                        <p>
+                            4. Center at the origin, a vertex at (2, 0) , and passing through <image source="/media/png72/imageC2410.png" />.
+                        </p>
+                        <p>
+                            5. Center at (4, 2), a vertex at (7, 2) , and an asymptote 3<em>y</em> = 4<em>x</em>−10.
+                        </p>
+                        <p>
+                            6. Foci at (–2, –1) and F<sub>2</sub>(–2, 9), length of transverse axis 6.
+                        </p>
+                        <p>
+                            7. Foci at (1, 3) and (7, 3), and vertices at (2,3) and (6, 3).
+                        </p>
+                        <p>
+                            8. Vertices at (±3, 0), and asymptotes <em>y</em> = ±2<em>x</em>
+                        </p>
+                        <p>
+                            9. Eccentricity e=1<alert>.</alert>5, endpoints of transversal axis at <image source="/media/png72/imageC2411.png" /> and <image source="/media/png72/imageC2412.png" />.</p>
+                        <p>
+                            For questions 10 to 17 find the center, foci, vertices and asymptotes of the hyperbola having the given equation and sketch its graph.
+                        </p>
+                        <sidebyside>
+                            <p>
+                                10. <image source="/media/png72/imageC2413.png" /> 
+                            </p
+                            >
+                            <p>
+                                14. <image source="/media/png72/imageC2414.png" />
+                            </p>
+                        </sidebyside>
+                        <sidebyside>
+                            <p>
+                                11. <image source="/media/png72/imageC2415.png" />
+                            </p>
+                            <p>
+                                15. <image source="/media/png72/imageC2416.png" />
+                            </p>
+                        </sidebyside>
+                        <sidebyside>
+                            <p>
+                                12. <image source="/media/png72/imageC2417.png" />
+                            </p>
+                            <p>
+                                16. <image source="/media/png72/imageC2418.png" />
+                            </p>
+                        </sidebyside>
+                        <sidebyside>
+                            <p>
+                                13. <image source="/media/png72/imageC2419.png" />
+                            </p>
+                            <p>
+                                17. <image source="/media/png72/imageC2420.png" />
+                            </p>
+                        </sidebyside>
+                      
+                        <p>
+                            18. Find an equation of hyperbola whose major axis is parallel to the x-axis, has a focus at <image source="/media/png72/imageC2421.png" /> and its vertices are at the endpoints of a diameter of the circle <image source="/media/png72/imageC2422.png" />.
+                        </p>
+                        <p>
+                            19. A satellite moves along a hyperbolic curve whose horizontal transverse axis is 24 km and an asymptote <image source="/media/png72/imageC2423.png" />. Then what is the eccentricity of the hyperbola?
+                        </p>
+                        <p>
+                            20 Two regions A and B are separated by a sea. The shores are roughly in a shape of hyperbolic curves with asymptotes <image source="/media/png72/imageC2424.png" /> and a focus at (30,0) taking a coordinate system with origin at the center of the hyperbola. What is the shortest distance between the regions in kms?
+                        </p>
+                        <p>
+                            21. Determine the type of curve represented by the equation
+                        </p>
+                        <p><image source="/media/png72/imageC2425.png" />
+                        </p>
+                        <p>
+                            In each of the following cases: ( a) <image source="/media/png72/imageC2426.png" />, (b) 0 &lt; <em>k</em> &lt; 16, (c) <image source="/media/png72/imageC2427.png" />
+                        </p>
+                    </cell>
+                </row>
+                    </tabular>
+
+        </statement>
+       </exercise>
+        
 </subsection>
