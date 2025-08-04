@@ -1,46 +1,185 @@
 <subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-intersection-of-a-circle-with" class="anchor">
-<title>Intersection of a circle with a line and tangent line to a circle</title>
+    <title>Intersection of a circle with a line and tangent line to a circle</title>
 
-<p>The number of intersection points of a given line and a circle is at most two; that is, either no intersection point, or only one intersection point, or two intersection points. For instance, in Figure 4.9, the line <em><alert>l</alert></em><sub>1</sub> has no intersection with the circle, <em><alert>l</alert></em><sub>2</sub> has two intersection points with the circle, namely, Q<sub>1</sub> and Q<sub>2</sub>, and <em><alert>l</alert></em><sub>3</sub> has only one intersection point with the circle, namely, P.</p>
-<p>A line which intersects a circle at one and only one point is called a <alert>tangent line</alert> to the circle. In this case, the intersection point is called the <alert>point of tangency</alert>. Thus, <em><alert>l</alert></em><sub>3</sub> a tangent line to the circle in Figure 4.9 and P is the point of tangency.</p>
-<p>In Figure 4.9, observe that every point on <em><alert>l</alert></em><sub>1</sub> are outside of the circle. Hence, <em>d</em>(C,Q) &gt; <em>r</em> for every point Q on <em><alert>l</alert></em><sub>1</sub>. Consequently, <em>d</em>(C, <em><alert>l</alert></em><sub>1</sub>) &gt; <em>r</em>. On the other hand, there is a point on <em><alert>l</alert></em><sub>2</sub> which is inside the circle. Hence, <em>d</em>(C, <em><alert>l</alert></em><sub>2</sub>) &lt; <em>r</em>.</p>
-<p>For the tangent line <em><alert>l</alert></em><sub>3,</sub> the point of tangency P is on the circle implies that <em><alert>|</alert></em>CP<alert>|</alert> = <em>r</em> and P is the point on <em><alert>l</alert></em><sub>3</sub> closest to C. Therefore, <em>d</em>(C, <em><alert>l</alert></em><sub>3</sub>) = <em><alert>|</alert></em>CP<alert>|</alert> = <em>r</em>. This shows also that CP⊥ <em><alert>l</alert></em><sub>3</sub>.</p>
+    <p>
+        The number of intersection points of a given line and a circle is at most two;
+        that is, either no intersection point, or only one intersection point, 
+        or two intersection points. For instance, 
+        in Figure 4.9, the line <m>l_1</m> has no intersection with the circle, 
+        <m>l_2 </m> has two intersection points with the circle, namely, <m>Q_1</m> and <m>Q_2</m>, 
+        and <m>l_3</m> has only one intersection point with the circle, namely, P.
+    </p>
+    <p>
+        A line which intersects a circle at one and only one point is called a <alert>tangent line</alert> to the circle. 
+        In this case, the intersection point is called the <alert>point of tangency</alert>. 
+        Thus, <m>l_3 </m> a tangent line to the circle in Figure 4.9 and P is the point of tangency.
+    </p>
+    <figure xml:id="intersection-of-a-circle">
+        <caption>Figure 4.9: Intersection of a line and circle</caption>
+        <image source="/intersection-of-circles.png" width="70%">
+            <shortdescription></shortdescription>
+        </image>
+    </figure>
+    <p>
+        In Figure 4.9, observe that every point on <m> l_1</m> are outside of the circle. 
+        Hence, <em>d</em>(C,Q) &gt; <em>r</em> for every point Q on <m>l_1</m>. 
+        Consequently, <m>d(C, l_1) &gt; r</m>. 
+        On the other hand, there is a point on <m>l_2</m> which is inside the circle. 
+        Hence, <m>d(C, l_2) &lt; r</m>
+    </p>
+    <p>
+        For the tangent line <m>l_3 </m> the point of tangency P is on the circle implies that <m>|CP| = r</m> and P is the point on <m>l_3 </m>closest to C. 
+        Therefore, <m>d(C, l) = |CP|= r</m>. 
+        This shows also that CP⊥ <m>l_3</m>.
 
-<p>In general, given a circle of radius <em>r</em> with center C(<em>h</em>,<em>k</em>) and a line <em><alert>l</alert></em> , by computing the distance <em>d</em>(C, <em><alert>l</alert></em>) between C and <em><alert>l</alert></em> we can conclude the following.</p>
+    </p>
+    <p>
+        In general, given a circle of radius <em>r</em> with center C(<em>h</em>,<em>k</em>) and a line <em><alert>l</alert></em> , 
+        by computing the distance <em>d</em>(C, <em><alert>l</alert></em>) between C and <em><alert>l</alert></em> we can conclude the following.
+    </p>
+    <p>
+        <ol marker="(i)">
+            <li>
+                <p>
+                    If <em>d</em>(C, <em><alert>l</alert></em>) &gt; <em>r</em>, 
+                    then the line does not intersect with the circle.
+                </p>
+            </li>
+            <li>
+                <p>
+                    If <em>d</em>(C, <em><alert>l</alert></em>) &lt; <em>r</em>,
+                    then the line is a secant of the circle; 
+                    that is, they have two intersection points.
+                </p>
+            </li>
+            <li>
+                <p>
+                    If <em>d</em>(C, <em><alert>l</alert></em>) = <em>r</em>, then <em><alert>l</alert></em> is a tangent line to the circle. 
+                    The point of tangency is the point P on the line (and on the circle) such that CP <alert>⊥ <em>l</em></alert> <alert>.</alert> 
+                    This means the product of the slopes of <em><alert>l</alert></em> and CP must be <m>-1</m>.
+                </p>
+            </li>
+        </ol>
+    </p>
+    <example>
+        <statement>
+            <p>
+                Write the equation of the circle tangent to the <em><alert>x</alert></em>-axis at <m>(6,0)</m> whose center is on the line <m>x-2y = 0</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                The circle in the question is as in Figure 4.10.
+            </p>
+            <image source="/example1.png " width="70%">
+                <shortdescription>Figure 4.10</shortdescription>
+            </image>
+            <p>
+                Let C(<em>h, k</em>) be the center of the circle.
+                (<em>h, k</em>) is on the line <m>y =(1/2)x ⇒ k =(1/2)h</m> ; and
+                the circle is tangent to x-axis at P<m>(6,0) ⇒ </m>CP should be perpendicular to the x-axis.
+            </p>
+            <p>
+            <m> ⇒ h = 6 ⇒ k= 3</m> and the radius is <em>r</em> <m>= |CP| = k-0 =3</m>.
+            </p>
+            <p>
+                Hence, the circle is centered at <m>(6, 3)</m> with radius <em>r</em> <m>=3</m>.
+                Therefore, the equation of the circle is <m>(x - 6)^2 + (y-3)^2 = 9</m> .
+            </p>
+        </solution>
+    </example>
+    <example>
+        <statement>
+            <p>
+                Suppose the line <em>y=x</em> is tangent to a circle at point P<m>(2,2)</m>. 
+                If the center of the circle is on the <em><alert>x</alert></em>-axis,
+                then what is the equation of the circle?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                The circle in the question is as in Figure 4.11.
+            </p>
+            <figure xml:id="intersection-of-a-circle">
+                <caption>Figure 4.11</caption>
+                <image source="/example2.png" width="70%">
+                    <shortdescription></shortdescription>
+                </image>
+            </figure>
+            <p>
+                Let the center of the circle be C(<em>h</em>,0). 
+                We need to find <em>h</em>. The slope of the line <em><alert>l</alert></em> : <em>y=x</em> is <m>1</m> and <em><alert>l</alert></em> is perpendicular to CP. 
+                Hence the slope of CP is <m>-1</m>.
+            </p>
+            <p>
+                So, the slope of CP <m>= \frac{2-0}{2-h} = -1 ⇒ h-2=2</m> or <m>h=4</m>.
+            </p>
+            <p>
+                <m>⇒ </m>The center of the circle is C<m>(4,0)</m>; and <m> r^2 = |CP|^2 = (2-0)^2 + (2 - 4)^2 = 4+4= 8.</m>
+            </p>
+            <p>
+                Therefore, the equation of the circle is <m>(x - 4)^2 + y^2= r^2 = 8</m>.
+            </p>
+        </solution>
+    </example>
+    <exercises xml:id="exercises-intersection-of-a-circle">
+        <title>Exercise</title>
+        <exercise>
+            <statement>
+                <p>
+                    Find the equation of the line tangent to the circle with the center at <m>(-1, 1)</m> and point of tangency at <m>(-1, 3)</m>.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    The center of a circle is on the line <m>y =2x</m> and the line <m>x=1</m> is tangent to the circle at <m>(1, 6)</m>. 
+                    Find the center and radius of the circle.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Suppose two lines <m>y = x</m> and <m>y = x - 4</m> are tangent to a circle at <m>(2,2)</m> and <m>(4,0)</m>, respectively.
+                    Find the equation of the circle.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Find an equation of the line tangent to the circle <m>x^2 + y^2 - 2x +2y = 2</m> at <m>(1,1)</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Find equation of the line through (<m>\sqrt(32),0</m>) and tangent to the circle with equation <m>x^2 + y^2 = 16</m>.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Suppose P(<m>1,2</m>) and Q(<m>3, 0</m>) are the endpoints of a diameter of a circle and <em>L</em> is the line tangent to the circle at Q.
+                    <ol>
+                        <li>
+                            Show that R(<m>5, 2</m>) is on <em>L</em>.
+                        </li>
+                        <li>
+                            Find the area of ∆PQR, when R is the point given in (a).
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+        
+        
+        
+    </exercises>
 
-<p>(i). If <em>d</em>(C, <em><alert>l</alert></em>) &gt; <em>r</em>, then the line does not intersect with the circle.</p>
-<p>(ii) If <em>d</em>(C, <em><alert>l</alert></em>) &lt; <em>r</em>, then the line is a secant of the circle; that is, they have two intersection points.</p>
-<p>(iii) If <em>d</em>(C, <em><alert>l</alert></em>) = <em>r</em>, then <em><alert>l</alert></em> is a tangent line to the circle. The point of tangency is the point P on the line (and on the circle) such that CP <alert>⊥ <em>l</em></alert> <alert>.</alert> This means the product of the slopes of <em><alert>l</alert></em> and CP must be −1.</p>
-<p><alert>Example 4.12</alert> Write the equation of the circle tangent to the <em><alert>x</alert></em>-axis at (6,0) whose center is on the line <em>x</em> −2y = 0.</p>
 
-<p><alert>Solution:</alert> The circle in the question is as in Figure 4.10.</p>
-
-<p>Let C(<em>h, k</em>) be the center of the circle. (<em>h, k</em>) is on the line <em>y</em> =(1/2)<em>x</em> ⇒ <em>k</em> =(1/2)<em>h</em> ; and</p>
-<p>the circle is tangent to x-axis at P(6,0) ⇒ CP should be perpendicular to the x-axis.</p>
-<p>⇒ <em>h</em> = 6 ⇒ <em>k</em>= 3 and the radius is <em>r</em> = |CP| = <em>k</em>−0 =3.</p>
-
-<p>Hence, the circle is centered at (6, 3) with radius <em>r</em> =3. Therefore, the equation of the circle is (<em>x –</em> 6)<sup>2</sup> + (<em>y</em>−3)<sup>2</sup> <em>=</em> 9 .</p>
-<p><alert>Example 4.13</alert> Suppose the line <em>y=x</em> is tangent to a circle at point P(2,2). If the center of the circle is on the <em><alert>x</alert></em>-axis, then what is the equation of the circle?</p>
-<p><alert>Solution:</alert> The circle in the question is as in Figure 4.11.</p>
-
-<p>Let the center of the circle be C(<em>h</em>,0). We need to find <em>h</em>. The slope of the line <em><alert>l</alert></em> : <em>y=x</em> is 1 and <em><alert>l</alert></em> is perpendicular to CP. Hence the slope of CP is –1.</p>
-<p>So, the slope of CP = <image source="/media/png72/imageC2273.png" /> <image source="/media/png72/imageC2274.png" /></p>
-<p>⇒ The center of the circle is C(4,0); and <em>r</em><sup>2</sup> = |CP|<sup>2</sup> = (2– 0)<sup>2</sup> + (2– 4)<sup>2</sup> = 4+4= 8.</p>
-<p>Therefore, the equation of the circle is (<em>x</em> – 4)<sup>2</sup> + <em>y</em><sup>2</sup>= <em>r</em><sup>2</sup> = 8.</p>
-<p><alert>Exercise 4.2.3</alert></p>
-<table>
-<tabular>
-<row>
-<cell><p>1. Find the equation of the line tangent to the circle with the center at (−1, 1) and point of tangency at (−1, 3).</p>
-<p>2. The center of a circle is on the line <em>y</em> =2<em>x</em> and the line <em>x=</em>1 is tangent to the circle at (1, 6). Find the center and radius of the circle.</p>
-<p>3.. Suppose two lines <image source="/media/png72/imageC2275.png" /> and <image source="/media/png72/imageC2276.png" /> are tangent to a circle at (2, 2) and (4, 0), respectively. Find equation of the circle.</p>
-<p>4. Find an equation of the line tangent to the circle <image source="/media/png72/imageC2277.png" /> at (1,1).</p>
-<p>5. Find equation of the line through <image source="/media/png72/imageC2278.png" />and tangent to the circle with equation</p>
-<p><image source="/media/png72/imageC2279.png" />.</p>
-<p>6. Suppose P(1,2) and Q(3, 0) are the endpoints of a diameter of a circle and <em>L</em> is the line tangent to the circle at Q.</p>
-<p>(a) Show that R(5, 2) is on <em>L.</em></p>
-<p>(b) Find the area of ∆PQR, when R is the point given in (a).</p></cell>
-</row>
-</tabular>
-</table>
 </subsection>

@@ -1,155 +1,455 @@
 <subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-equation-of-an-ellipse" class="anchor">
 <title>Equation of an Ellipse</title>
 
-<p>In order to obtain the simplest equation for an ellipse, we place the ellipse at standard position. An ellipse is said to be at standard position when its center is at the origin and its major axis lies on either the <em><alert>x</alert></em>-axis or <alert>y</alert>-axis.</p>
-<p><alert>I. Equation of an ellipse at standard</alert> <alert>position</alert>:</p>
-<p>There are two possible situations, namely, when the major axis lies on <em>x</em>-axis (called horizontal ellipse) and when the major axis lies on <em>y</em>-axis (called vertical ellipse). We first consider a horizontal ellipse as in Figure 4.19</p>
-<p>Let the center of the ellipse be at the origin, C(0,0) and foci at F′(−<em>c</em>,0), F (<em>c</em>,0) and vertices at</p>
-<p>(−<em>a</em>,0) and (<em>a</em>,0) (see Figure 4.19). Then, a point P(<em>x,y</em>) is on the ellipse iff</p>
-<p>|PF′| + |PF| = 2<em>a</em> .</p>
-<p>That is, <image source="/media/png72/imageC2307.png" /></p>
-<p>or <image source="/media/png72/imageC2308.png" /></p>
-<p>Squaring both sides we get</p>
-<p><image source="/media/png72/imageC2309.png" /></p>
-<p>which simplifies to <image source="/media/png72/imageC2310.png" /></p>
-<p>Again squaring both sides, we get <image source="/media/png72/imageC2311.png" /></p>
-<p>which becomes <image source="/media/png72/imageC2312.png" /></p>
-<p>Now recalling that <image source="/media/png72/imageC2313.png" /> and dividing both sides by <em>a</em><sup>2</sup><em>b</em><sup>2</sup>, the equation becomes</p>
-<table>
-<tabular>
-<row>
-<cell><image source="/media/png72/imageC2314.png" /></cell>
-<cell><p>(Equation of horizontal ellipse at <alert>standard position,</alert></p>
-<p>vertices (±<em>a</em>, 0), foci (±<em>c</em>, 0), where <em>c</em><sup>2</sup> = <em>a</em><sup>2</sup>− <em>b</em><sup>2</sup> )</p></cell>
-</row>
-</tabular>
-</table>
-<p>For a vertical ellipse at standard position, the same procedure gives the equation</p>
-<table>
-<tabular>
-<row>
-<cell><image source="/media/png72/imageC2315.png" /></cell>
-<cell><p>(Equation of vertical ellipse at <alert>standard position,</alert></p>
-<p>vertices (0, ±<em>a</em>), foci (0, ±<em>c</em> ), where <em>c</em><sup>2</sup> = <em>a</em><sup>2</sup>− <em>b</em><sup>2</sup> )</p></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Note</alert>: Notice that here, for vertical ellipse, the larger denominator <em>a</em><sup>2</sup> is under <em>y</em><sup>2</sup>.</p>
-<p><alert>Example 4.18:</alert> Locate the vertices and foci of 16<em>x</em><sup>2</sup> + 9<em>y</em><sup>2</sup> =144 and sketch its graph.</p>
-<p><alert>Solution</alert>: Dividing both sides of the equation by 144, we get:</p>
-<p><image source="/media/png72/imageC2316.png" /> or <image source="/media/png72/imageC2317.png" />.</p>
-<p>This is equation of a vertical ellipse at standard position with <em>a=</em>4, so vertices at (0, ±4), and</p>
-<p><em>b=</em>3; i.e., endpoints of the minor axis at (±3, 0). Since <em>c</em><sup>2</sup> = <em>a</em><sup>2</sup>−<em>b</em><sup>2</sup> =7 ⇒ <image source="/media/png72/imageC2318.png" />, the foci are <image source="/media/png72/imageC2319.png" />. The graph is sketched in Figure 4.20.</p>
-<p><image source="/media/png72/imageC2320.png" /></p>
-<p><alert>(II)</alert> <alert>Equation of shifted Ellipses:</alert></p>
-<p>When an ellipse is not at standard position but with center at a point C(<em>h,k</em>), then we can still obtain its equation by considering translation of the <em>xy</em>-axes in such a way that its origin translated to the point C(<em>h</em>,<em>k</em>). This result in a new <em>X</em><alert>′</alert><em>Y</em><alert>′</alert> coordinate system whose origin O′ is at C(<em>h,k</em>) so that the ellipse is at standard position relative to the <em>X</em><alert>′</alert><em>Y</em><alert>′</alert> system( see, Figure 4.21)</p>
-<p>Consequently, the equation of the horizontal and vertical ellipses relative to the new <em>X</em><alert>′</alert><em>Y</em><alert>′</alert> coordinate system with (<em>x</em>′, <em>y</em>′) coordinate points are</p>
-<p><image source="/media/png72/imageC2322.png" /> and <image source="/media/png72/imageC2323.png" />, . . . . . . . . (I).</p>
-<p>respectively. Since the origin of the new coordinate system is at the point (<em>h,k</em>) of the <em>xy</em>-coordinate system, the relationship between a point (<em>x,y</em>) of the <em><alert>xy</alert></em>-coordinate system and (<em>x</em>′<em>,y</em>′) of the new coordinate system is given by (<em>x, y</em>) = (<em>x</em>′<em>,y</em>′) + (<em>h, k</em>). That is,</p>
-<p><em>x</em>′ <em>= x − h,</em> and <em>y</em>′ = <em>y − k .</em></p>
-<p>Thus, in the original <em>xy</em>-coordinate system the equations of the horizontal and vertical ellipses with center C(<em>h, k</em>), lengths of major axis = 2<em>a</em> and minor axis = 2<em>b</em> are, respectively, given by</p>
-<table>
-<tabular>
-<row>
-<cell><image source="/media/png72/imageC2324.png" /></cell>
-<cell>(Standard equation of horizontal ellipse with center C(<em>h,k</em>) )</cell>
-</row>
-</tabular>
-</table>
-<p>and</p>
-<table>
-<tabular>
-<row>
-<cell><image source="/media/png72/imageC2325.png" /></cell>
-<cell>(Standard equation of vertical ellipse with center C(<em>h,k</em>) )</cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 4.19:</alert> The endpoints of the major axis of an ellipse are at (−3,4) and (7,4) and its eccentricity is 0.6. Find the equation of the ellipse and its foci.</p>
-<p><alert>Solution</alert>: The given vertices are at V′(−3,4) and V(7,4) implies that 2<em>a</em> = <alert>|</alert>V′V<alert>| =</alert> 10 ⇒ <em>a</em> = 5;</p>
-<p>and the center C(<em>h,k</em>) is the midpoint of V′V ⇒ <image source="/media/png72/imageC2326.png" />. Moreover, eccentricity = <em>c</em>/<em>a</em> = 0.6 ⇒ <em>c</em> = 5×0.6 = 3. Hence, <em>b</em><sup>2</sup> = <em>a</em><sup>2</sup> − <em>c</em><sup>2</sup> = 25−9 = 16. Note that the major axis V'V is horizontal. Therefore, using the standard equation of a horizontal ellipse, the equation of the ellipse is</p>
-<p><image source="/media/png72/imageC2327.png" />.</p>
-<table>
-<tabular>
-<row>
-<cell><p>Now, as the center (<em>h,k</em>) = (2,4), <em>c</em>=3 and V′V is horizontal, the foci are at (<em>h</em> ± <em>c</em>, <em>k</em>) = (2 ± 3, 4).</p>
-<p>That is, the foci are at F<alert>′</alert>(−1, 4) and F(5, 4).</p>
-<p>Moreover, the endpoints of major axis are at</p>
-<p>(<em>h</em>, <em>k</em>± <em>b</em>) = (2, 4± 4) ⇒ B′=(2,0) and B=(2,8).</p>
-<p>The graph of the ellipse is sketched in Figure 4.22.</p></cell>
-<cell></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 4.20</alert>: Find the center, foci and vertices of <image source="/media/png72/imageC2328.png" /> and sketch its graph</p>
-<p><alert>Solution</alert>: Group the x-terms of the equation and complete the square:</p>
-<p><image source="/media/png72/imageC2329.png" /></p>
-<p>⇒ 4(<em>x</em><sup>2</sup>+2<em>x</em>+1) + <em>y</em> <sup>2</sup>= 4 (divide both sides by 4)</p>
-<p>⇒ <image source="/media/png72/imageC2330.png" /></p>
-<p>This is equation of a vertical ellipse (major axis parallel to the y-axis), center C=(<em>h,k</em>) = (–1,0),</p>
-<table>
-<tabular>
-<row>
-<cell><p><em>a</em> =2, <em>b</em>=1. ⇒ <image source="/media/png72/imageC2331.png" /></p>
-<p>Thus, foci : F′(–1, –√3 ) and F(–1, √3 ) ,</p>
-<p>Vertices: V = (–1<em>,</em> 2), V′= (–1<em>, –</em>2);</p>
-<p>Endpoints of minor axis: B=(0,0), B′=(–2,0);</p>
-<p>The graph of the ellipse is sketched in</p>
-<p>Figure 4.23.</p></cell>
-<cell></cell>
-</row>
-</tabular>
-</table>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Remark:</alert> Consider the equation: A<em>x</em><sup>2</sup> + C<em>y</em><sup>2</sup> + D<em>x</em> + E<em>y</em> + F = 0,</p>
-<p>when A and C have the same sign. So, without lose of generality, let A &gt;0 and C &gt;0.</p>
-<p>By completing the squares you can show that this equation is equivalent to</p>
-<p><image source="/media/png72/imageC2332.png" />.</p>
-<p>From this you can conclude that the given equation represents:-</p>
-<ul>
-<li>
-<p>an ellipse with center <image source="/media/png72/imageC2333.png" /> if D<sup>2</sup>C + E<sup>2</sup>A − 4ACF &gt; 0.</p>
-</li>
-<li>
-<p>If D<sup>2</sup>C + E<sup>2</sup>A − 4ACF = 0, the equation is satisfied by the point <image source="/media/png72/imageC2333.png" /> only. In this case, the locus of the equation is called a <alert>point-ellipse</alert> (degenerate ellipse).</p>
-</li>
-<li>
-<p>If D<sup>2</sup>C + E<sup>2</sup>A − 4ACF &lt; 0 , then the equation has no locus.</p>
-</li>
-</ul></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Exercise 4.4.2</alert></p>
-<table>
-<tabular>
-<row header="yes">
-<cell><p>For questions 1 to 13, find an equation of the ellipse with the given properties and sketch its graph.</p>
-<p>1. Foci at (± 2, 0) and a vertex at (5, 0)</p>
-<p>2. A focus at (0, −3) and vertices at (0, ±5)</p>
-<p>3. Foci at (2, 3) , (2,7) and a vertex at (2, 0)</p>
-<p>4. Foci at (0, −1) , (8,−1) and a vertex at (9, −1)</p>
-<p>5. Center at (6,1) , one focus at (3,1) and one vertex at (10, 1)</p>
-<p>6. Foci at (2, ±1) and the length of the major axis is 4.</p>
-<p>7. Foci at (2, 0), (2, 6) and the length of the minor axis is 5.</p>
-<p>8. The distance between its foci is <image source="/media/png72/imageC2334.png" /> and the endpoints of its minor axis are (–1, –2) and (3,–2).</p>
-<p>9. Vertices at (±5, 0) and the ellipse passes through (−3, 4).</p>
-<p>10. Center at (1, 4), a vertex at (10, 4) , and one of the endpoints of the minor axis is (1, 2).</p>
-<p>11. The ellipse passes through (−1, 1) and <image source="/media/png72/imageC2335.png" /> with center at origin.</p>
-<p>12. The endpoints of the major axis are (3, −4) and (3, 4) , and the ellipse passes through the origin</p>
-<p>13. The endpoints of the minor axis are (3, −2) and (3, 2) , and the ellipse passes through the origin</p>
-<p>For questions 14 to 22 find the center, foci and vertices of the ellipse having the given equation and sketch its graph.</p>
-<p>14. <image source="/media/png72/imageC2336.png" /> 17. <image source="/media/png72/imageC2337.png" /> 20. <image source="/media/png72/imageC2338.png" /></p>
-<p>15. <image source="/media/png72/imageC2339.png" /> 18. <image source="/media/png72/imageC2340.png" /> 21. <image source="/media/png72/imageC2341.png" /></p>
-<p>16. <image source="/media/png72/imageC2342.png" /> 19. <image source="/media/png72/imageC2343.png" /> 22. <image source="/media/png72/imageC2344.png" /></p></cell>
-</row>
+<introduction>
+    <p>
+    In order to obtain the simplest equation for an ellipse, we place the ellipse at standard position. 
+    An ellipse is said to be at standard position when its center is at the origin and its major axis lies on either the <em><alert>x</alert></em>-axis or <alert>y</alert>-axis.
+</p>
+</introduction>
+<subsubsection xml:id="subsubsec-equation-of-an-ellipse-at-standard-position">
+    <title>Equation of an ellipse at standard position</title>
+    <p>
+        There are two possible situations, namely, when the major axis lies on <em>x</em>-axis (called horizontal ellipse) and when the major axis lies on <em>y</em>-axis (called vertical ellipse).
+         We first consider a horizontal ellipse as in Figure 4.19
+    </p>
+    <figure xml:id="horizontal-ellipse">
+        <caption>Figure 4.19: Horizontal ellipse at standard position</caption>
+        <image source="/equation-of-ellipse.png " width="70%">
+            <shortdescription></shortdescription>
+        </image>
+    </figure>
+    <p>
+        Let the center of the ellipse be at the origin, C(0,0) and foci at F′(−<em>c</em>,0), F (<em>c</em>,0) and vertices at
+        (−<em>a</em>,0) and (<em>a</em>,0) (see Figure 4.19). Then, a point P(<em>x,y</em>) is on the ellipse iff
+    </p>
+    <p>
+        |PF′| + |PF| = 2<em>a</em> .
+    </p>
+    <p>
+        That is, <m>\sqrt((x+c)^2+ y^2)+ \sqrt((x-c)^2 + y^2) = 2a </m>
+    </p>
+    <p>
+        or <m>\sqrt((x-c)^2 + y^2) = 2a - \sqrt((x+c)^2 + y^2)</m>
+    </p>
+    <p>
+        Squaring both sides we get
+    </p>
+    <p>
+        <m>x^2 - 2cx + c^2 + y^2 = 4a^2 - 4a\sqrt((x+c)^2 + y^2) + x^2 + 2cx+ c^2 + y^2</m>
+    </p>
+    <p>
+        which simplifies to <m>a\sqrt((x+c)^2 + y^2) = a^2 + cx</m>
+    </p>
+    <p>
+        Again squaring both sides, we get <m>a^2(x^2+2cx+c^2+y^2) a^4 + 2a^2cx+c^2x^2</m>
+    </p>
+    <p>
+        Which becomes <m>(a^2-c^2)x^2 + a^2y^2 = a^2(a^2-c^2)</m>
+    </p>
+    <p>
+        Now recalling that <m>b^2 = a^2 - c^2</m> and dividing both sides by <m>a^2b^2</m>, the equation becomes
+    </p>
+    <tabular>
+        <row>
+        <cell><m>\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1</m></cell>
+        <cell><p>(Equation of horizontal ellipse at <alert>standard position,</alert></p>
+        <p>vertices (±<em>a</em>, 0), foci (±<em>c</em>, 0), where <m>c^2 = a^2 - b^2</m>) </p></cell>
+        </row>
+    </tabular>
+    <p>
+        For a vertical ellipse at standard position, the same procedure gives the equation
+    </p>
+    <tabular>
+        <row>
+        <cell><m>\frac{x^2}{b^2} + \frac{y^2}{a^2} = 1</m></cell>
+        <cell><p>(Equation of vertical ellipse at <alert>standard position,</alert></p>
+        <p>vertices (0,±<em>a</em>), foci (0,±<em>c</em>), where <m>c^2 = a^2 - b^2</m>) </p></cell>
+        </row>
+    </tabular>
+    <p>
+        <alert>Note</alert>: Notice that here, for vertical ellipse, the larger denominator <m>a^2</m> is under <m>y^2</m>.
+    </p>
+    <example>
+        <statement>
+            <p>
+                Locate the vertices and foci of <m>16x^2+9y^2 =144</m> and sketch its graph.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                Dividing both sides of the equation by 144, we get:
+            </p>
+            <p>
+                <m>\frac{x^2}{9} + \frac{y^2}{16} = 1</m> or <m>\frac{x^2}{3^2} + \frac{y^2}{4^2} = 1</m>
+            </p>
+            <p>
+                This is equation of a vertical ellipse at standard position with <em>a=</em>4, so vertices at (0, ±4), and
+                 <em>b=</em>3; i.e., endpoints of the minor axis at <m>(±3, 0)</m>. 
+                 Since <m>c^2= a^2-b^2 =7 ⇒ c = \sqrt(7)</m>, the foci are <m>(0,±\sqrt(7))</m>.
+                 The graph is sketched in Figure 4.20.
+            </p>
+            <figure xml:id="figure-ellipse">
+                <caption>Figure 4.20: <m>16x^2 + 9y^2</m></caption>
+                <image source="/figure-4.20.png " width="70%">
+                    <shortdescription></shortdescription>
+                </image>
+            </figure>
+        </solution>
+    </example>
+    
+    
+</subsubsection>
+<subsubsection xml:id="subsubsec-equation-of-shifted-ellipses">
+    <title>Equation of shifted Ellipses</title>
+    <p>
+        When an ellipse is not at standard position but with center at a point C(<em>h,k</em>), then we can still obtain its equation by considering translation of the <em>xy</em>-axes in such a way that its origin translated to the point C(<em>h</em>,<em>k</em>). 
+        This result in a new <em>X</em><alert>′</alert><em>Y</em><alert>′</alert> coordinate system whose origin O′ is at C(<em>h,k</em>) so that the ellipse is at standard position relative to the <em>X</em><alert>′</alert><em>Y</em><alert>′</alert> system( see, Figure 4.21)
+    </p>
+    <figure xml:id="equation-of-shifted-ellipses">
+        <caption>Fig.4.21</caption>
+        <sidebyside>
+            <image source="/figure-a.png " width="70%">
+                <shortdescription>(a) horizontal ellipse, center C(h,k)</shortdescription>
+            </image>
+            <image source="/figure-b.png " width="70%">
+                <shortdescription>(b) vertical ellipse, center C(h,k)</shortdescription>
+            </image>
+        </sidebyside>
+    </figure>
+    <p>
+        Consequently, the equation of the horizontal and vertical ellipses relative to the new <em>X</em><alert>′</alert><em>Y</em><alert>′</alert> coordinate system with (<em>x</em>′, <em>y</em>′) coordinate points are
+    </p>
+    <p>
+        <m>\frac{x^{'2}}{a^2} + \frac{y^{'2}}{b^2} = 1</m> and <m>\frac{x^{'2}}{b^2} + \frac{y^{'2}}{a^2} = 1</m>, .........(I) respectively.
+    </p>
+    <p>
+        Since the origin of the new coordinate system is at the point (<em>h,k</em>) of the <em>xy</em>-coordinate system, the relationship between a point (<em>x,y</em>) of the <em><alert>xy</alert></em>-coordinate system and (<em>x</em>′<em>,y</em>′) of the new coordinate system is given by (<em>x, y</em>) = (<em>x</em>′<em>,y</em>′) + (<em>h, k</em>). That is,
+    </p>
+    <p>
+        <m>x' = x-h,</m> and <m>y' = y-k</m>
+    </p>
+    <p>
+        Thus, in the original <em>xy</em>-coordinate system the equations of the horizontal and vertical ellipses with center C(<em>h, k</em>), lengths of major axis = 2<em>a</em> and minor axis = 2<em>b</em> are, respectively, given by
+    </p>
+    <tabular>
+        <row>
+        <cell><m>\frac{(x-h)^2}{a^2} + \frac{(y-k)^2}{b^2} = 1</m></cell>
+        <cell>(Standard equation of horizontal ellipse with center C(<em>h,k</em>) )</cell>
+        </row>
+    </tabular>
+    <p>
+        and
+    </p>
+    <tabular>
+        <row>
+        <cell><m>\frac{(x-h)^2}{b^2} + \frac{(y-k)^2}{a^2} = 1</m></cell>
+        <cell>(Standard equation of vertical ellipse with center C(<em>h,k</em>) )</cell>
+        </row>
+    </tabular>
+    <example>
+        <statement>
+            <p>
+                The endpoints of the major axis of an ellipse are at <m>(−3,4)</m> and <m>(7,4)</m> and its eccentricity is <m>0.6</m>. 
+                Find the equation of the ellipse and its foci.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                The given vertices are at <m>V′(-3,4)</m> and <m>V(7,4)</m> implies that <m>2a = |V′V| = 10 ⇒ a = 5</m>;
+                and the center C(<em>h,k</em>) is the midpoint of <m>V′V ⇒ (h,k) = (\frac{-3+7}{2}, \frac{4+4}{2}) = (2,4) </m>. 
+                Moreover, eccentricity <m>= \frac{c}{a} = 0.6 ⇒ c= 5 \times 0.6 = 3</m>. 
+                Hence, <m>b^2 = a^2-c^2 = 25 - 9 = 16</m>. Note that the major axis V'V is horizontal. 
+                Therefore, using the standard equation of a horizontal ellipse, the equation of the ellipse is
+            </p>
+            <p>
+                <m>\frac{(x-2)^2}{25} + \frac{(y-4)^2}{16} = 1</m>
+            </p>
+            <p>
+                Now, as the center (<em>h,k</em>) = <m>(2,4)</m>, <em>c</em>=3 and V′V is horizontal, the foci are at (<em>h</em> ± <em>c</em>, <em>k</em>) = <m>(2 ± 3, 4)</m>.
+            </p>
+            <p>
+                That is, the foci are at F<alert>′</alert>(-1, 4) and F(5, 4).
+            </p>
+            <p>
+                Moreover, the endpoints of major axis are at <m>(h,k±b) =(2, 4± 4) ⇒ B′=(2,0)</m> and <m>B=(2,8). </m>
+            </p>
+            <p>
+                The graph of the ellipse is sketched in Figure 4.22.
+            </p>
+            <figure xml:id="equation-of-an-ellipse">
+                <caption>Figure 4.22</caption>
+                <image source="/example-ellipse.png" width="70%">
+                    <shortdescription></shortdescription>
+                </image>
+            </figure>
+        </solution>
+    </example>
+    <example>
+        <statement>
+            <p>
+                Find the center, foci and vertices of <m>4(x^2+2x)+y^2 = 0</m> and sketch its graph
+            </p>
+        </statement>
+        <solution>
+            <p>
+                Group the x-terms of the equation and complete the square:
+            </p>
+            <p>
+                <m>4(x^2+2x)+y^2 = 0</m>
+            </p>
+            <p>
+                <m> ⇒ 4(x^2 +2x+1)+y^2= 4</m> (divide both sides by 4)
+            </p>
+            <p>
+                <m>⇒ (x+1)^2 + \frac{y^2}{4} = 1 </m>
+            </p>
+            <p>
+                This is equation of a vertical ellipse (major axis parallel to the y-axis), center C=(<em>h,k</em>) = <m>(-1,0)</m>,
+            </p>
+            <p>
+                <m>a=2, b=1 ⇒ c^2 = a^2 - b^2 = 4-1  ⇒ c = \sqrt(3)</m>
+            </p>
+            <p>
+               Thus, foci : F′<m>(-1, -\sqrt(3) )</m> and F<m>(-1, \sqrt(3) )</m> , 
+            </p>
+            <p>
+                Vertices: V = <m>(-1,2)</m>, V′= <m>(-1,-2)</m>;
+            </p>
+            <p>
+                Endpoints of minor axis: B=<m>(0,0)</m>, B′=<m>(–2,0)</m>;
+            </p>
+            <p>
+                The graph of the ellipse is sketched in Figure 4.23.
+            </p>
+            <figure xml:id="equation-of-an-ellipse">
+                <caption>Figure 4.23: <m>4x^2+y^2+8x=0</m></caption>
+                <image source="/figure-4.23.png " width="70%">
+                    <shortdescription></shortdescription>
+                </image>
+            </figure>
+        </solution>
+    </example>
+    <remark>
+        <p>
+             Consider the equation: <m>Ax^2 + Cy^2 + Dx + Ey + F = 0</m>,
+        </p>
+        <p>
+            when A and C have the same sign. 
+            So, without lose of generality, let A &gt;0 and C &gt;0.
+        </p>
+        <p>
+            By completing the squares you can show that this equation is equivalent to
+        </p>
+        <p>
+            <m>A(x+ \frac{D}{2A})^2 + C(y+\frac{E}{2C}^2)= \frac{D^2C+E^2A-4ACF}{4AC}</m>
+        </p>
+        <p>
+            From this you can conclude that the given equation represents:-
+        </p>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        an ellipse with center <m>(-frac{D}{2A}, -\frac{E}{2C})</m> if <m>D^2C+E^2A - 4ACF &gt; 0</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If <m>D^2C + E^2A - 4ACF = 0</m>,the equation is satisfied by the point <m>(-frac{D}{2A}, -\frac{E}{2C})</m> only. 
+                        In this case, the locus of the equation is called a <alert>point-ellipse</alert> (degenerate ellipse).
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If <m>D^2C+E^2A-4ACF &lt; 0 </m>, then the equation has no locus.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </remark>
+    <exercises xml:id="equation-of-an-ellipse">
+        <title>Exercise </title>
+        <introduction>
+            <p>
+                For questions 1 to 13, find an equation of the ellipse with the given properties and sketch its graph.
+            </p>
+        </introduction>
+        <exercise>
+            <statement>
+                <p>
+                    Foci at <m>(± 2, 0)</m> and a vertex at <m>(5, 0)</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                     A focus at <m>(0, -3)</m> and vertices at <m>(0, ±5)</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Foci at <m>(2, 3) , (2,7)</m> and a vertex at <m>(2, 0)</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Foci at <m>(0, -1) , (8,-1)</m> and a vertex at <m>(9, -1)</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Center at <m>(6,1)</m> , one focus at <m>(3,1)</m> and one vertex at <m>(10, 1)</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Foci at <m>(2, ±1)</m> and the length of the major axis is <m>4</m>.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Foci at <m>(2, 0), (2, 6)</m> and the length of the minor axis is <m>5</m>.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    The distance between its foci is <m>2\sqrt(5)</m> and the endpoints of its minor axis are <m>(-1, -2)</m> and <m>(3,-2)</m>.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Vertices at <m>(±5, 0)</m> and the ellipse passes through <m>(-3, 4)</m>.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Center at <m>(1, 4)</m>, a vertex at <m>(10, 4)</m> , and one of the endpoints of the minor axis is <m>(1, 2)</m>.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    The ellipse passes through <m>(-1, 1)</m> and <m>(\frac{1}{2},-2)</m> with center at origin.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    The endpoints of the major axis are <m>(3, -4)</m> and <m>(3, 4)</m> , and the ellipse passes through the origin
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    The endpoints of the minor axis are <m>(3, -2)</m> and <m>(3, 2)</m> , and the ellipse passes through the origin
+                </p>
+                <p>
+                    For questions 14 to 22 find the center, foci and vertices of the ellipse having the given equation and sketch its graph.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\frac{x^2}{9} + \frac{y^2}{5} = 1</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>5x^2+ y^2=25</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>x^2+9y^2=9</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\frac{(x-2)^2}{9} + \frac{(y+3)^2}{16} = 1</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>(x+1)^2+2(y+2)^2 = 3</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>x^ 2 +9y^2-2x+ 18y + 1 = 0</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>9 x^2 + 4 y^2 - 18x = 27</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>x^2+2y^2-6x + 4y = -7</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>4x^2+y^2+2x -10y=6</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Consider the equation <m>2x^2+4y^2+8x-16y+F = 0</m>.
+                     Find all values of <em>F</em> such that the graph of the equation
 
-<row>
-<cell><p>23. Consider the equation <image source="/media/png72/imageC2345.png" />. Find all values of <em>F</em> such that the graph of the equation</p>
-<p>(a) is an ellipse. (b) is a point. (c) consists of no points at all.</p></cell>
-</row>
-</tabular>
-</table>
+                </p>
+                <p>
+                    (a) is an ellipse. (b) is a point. (c) consists of no points at all.
+                </p>
+            </statement>
+        </exercise>
+        
+        
+        
+    </exercises>
+
+    
+</subsubsection>
+
 </subsection>

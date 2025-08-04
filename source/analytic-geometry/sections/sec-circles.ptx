@@ -1,41 +1,58 @@
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-circles" class="anchor"><title>Circles</title>
-<introduction>
-<table>
-<tabular>
-<row>
-<cell><p>By the end of this section, you should</p>
-<ul>
-<li>
-<p>know the geometric definition of a circle.</p>
-</li>
-<li>
-<p>be able to identify whether a given point is on, inside or outside a circle.</p>
-</li>
-<li>
-<p>be able to construct equation of a circle.</p>
-</li>
-<li>
-<p>be able to identify equations that represent circles</p>
-</li>
-<li>
-<p>be able to find the center and radius of a circle and sketch its graph if its equation is given.</p>
-</li>
-<li>
-<p>be able to identify whether a given circle and a line intersect at two points, one points or never intersect at all.</p>
-</li>
-<li>
-<p>know the properties of a tangent line to a circle.</p>
-</li>
-<li>
-<p>be able to find equation of a tangent line to a circle.</p>
-</li>
-</ul></cell>
-</row>
-</tabular>
-</table>
-</introduction>
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-circles">
+    <title>Circles</title>
+    <introduction>
 
-<xi:include href="subsections/sec-circles/subsec-definition-of-a-circle.ptx" />
-<xi:include href="subsections/sec-circles/subsec-equation-of-a-circle.ptx" />
-<xi:include href="subsections/sec-circles/subsec-intersection-of-a-circle-with.ptx" />
+        <p>
+            By the end of this section, you should
+        </p>
+
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        know the geometric definition of a circle.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        be able to identify whether a given point is on, inside or outside a circle.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        be able to construct equation of a circle.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        be able to identify equations that represent circles
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        be able to find the center and radius of a circle and sketch its graph if its equation is given.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        be able to identify whether a given circle and a line intersect at two points, one points or never intersect at all.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        know the properties of a tangent line to a circle.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        be able to find equation of a tangent line to a circle.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </introduction>
+
+    <xi:include href="subsections/sec-circles/subsec-definition-of-a-circle.ptx" />
+    <xi:include href="subsections/sec-circles/subsec-equation-of-a-circle.ptx" />
+    <xi:include href="subsections/sec-circles/subsec-intersection-of-a-circle-with.ptx" />
 </section>
