@@ -1,4 +1,4 @@
-<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-equation-of-parabolas" >
+<subsection xml:id="subsec-equation-of-parabolas" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Equation of Parabolas</title>
         <p>
             <alert>I: Equation of a parabola whose axis is parallel to the <em>y</em>-axis</alert>:
@@ -21,19 +21,16 @@
         <p>
             <m>\sqrt{(x-h)^2\, +\, (y-k-p)^2 } = y \,-\,k\,+\,p</m>
         </p>
-
-        </figure>
         
         <p>
             Upon simplification, this becomes 
         </p>
         <sidebyside>
-            <figure xml:id="standard equation of a vertical parabola">
+            <figure xml:id="standard-equation-of-a-vertical-parabola">
                 <caption>standard equation</caption>
                 <image source="/focal-length.png" width="40%">
                 <shortdescription>focal length of a parabola</shortdescription>
-            </image>
-            
+            </image>            
             </figure>
             <p>
                 <ul>
@@ -56,7 +53,7 @@
         </p>
         
        <sidebyside>
-            <figure xml:id="directrix y=-p">
+            <figure xml:id="directrix-y-p">
              <caption>parabola with directrix y = -p</caption>
             <image source="/imagec3-parabola.png" width="50%">
                 <shortdescription>directrix y=-p</shortdescription>
@@ -75,7 +72,7 @@
          </ul>
        </sidebyside>
         <sidebyside>
-            <figure xml:id="directrix y=-p-1">
+            <figure xml:id="directrix-y-p-1">
                 <caption>parabola with directrix y = -p</caption>
                     <image source="/imagec2-parabola.png">
                         <shortdescription></shortdescription>
@@ -98,7 +95,7 @@
                 In particular, if the vertex of a vertical parabola is at origin, i.e., (<em>h, k</em>) =(0,0) and opens downward, then its equation is
         </p>
         <sidebyside>
-            <figure xml:id="directrix y=p">
+            <figure xml:id="directrixp">
                 <caption>parabola with directrix y=p</caption>
                 <image source="assets/imagec1-parabola.png">
                     <shortdescription></shortdescription>
@@ -117,8 +114,8 @@
         </statement>
         <solution>
             <p>
-                The given equation, <m>x^2\,=\,y</m>, is the standard equation of the parabola with vertex at origin <m>(0,0)</m> and <m>4<em>p</em> =1</m> ⇒ its focal length is <m>p</m> = <m>\frac{1}{4}</m>.
-                Since the parabola opens upward, its focus is <em>p</em> units above its vertex ⇒ its focus is at F(0,<m>\frac{1}{4}</m>); and its directrix is horizontal line <em>p</em> units below its vertex ⇒ its directrix is <m><em>y</em></m> = <m>\frac{-1}{4}</m>. You may sketch this parabola.
+                The given equation, <m>x^2\,=\,y</m>, is the standard equation of the parabola with vertex at origin <m>(0,0)</m> and <m>4p =1</m> ⇒ its focal length is <m>p</m> = <m>\frac{1}{4}</m>.
+                Since the parabola opens upward, its focus is <em>p</em> units above its vertex ⇒ its focus is at F(0,<m>\frac{1}{4}</m>); and its directrix is horizontal line <em>p</em> units below its vertex ⇒ its directrix is <m>y</m> = <m>\frac{-1}{4}</m>. You may sketch this parabola.
             </p>
         </solution>
        </example>
@@ -127,7 +124,7 @@
        <example>
         <statement>
             <p>
-                If a parabola opens upward and the endpoints of its latus rectum are at <m><em>A</em>(−4, 1)</m> and <m><em>B</em>(2, 1)</m>, then find the equation of the parabola, its directrix and sketch it.  
+                If a parabola opens upward and the endpoints of its latus rectum are at <m>A(−4, 1)</m> and <m>B(2, 1)</m>, then find the equation of the parabola, its directrix and sketch it.  
             </p>
         </statement>
         <solution>
@@ -150,7 +147,7 @@
                     </md>
             </p>
              <p>
-               And its directrix is horizontal line <em>p</em> units below its vertex, which is <m><em>y</em> = \frac{−1}{2} −\frac{3}{2} = −2</m>.
+               And its directrix is horizontal line <em>p</em> units below its vertex, which is <m>y = \frac{−1}{2} −\frac{3}{2} = −2</m>.
             </p>
             <p>
                 The parabola is sketch in the Figure 4.14 .
@@ -206,7 +203,7 @@
             </statement>
             <solution>
                 <p>
-                    The equation is  <m>y^2 = -10x </m>; and comparing this with the above equation, it is an equation of a parabola whose vertex is at (0,0), axis of symmetry is the x-axis, open to the left and <m>4<em>p</em>=10</m>, i.e., <m><em>p</em>= 5/2</m>. Thus, the focus is F<m>=(–5/2,0)</m> and its directrix is <em>x</em> <m>=5/2.</m> Its graph is sketched in Figure 4.16.
+                    The equation is  <m>y^2 = -10x </m>; and comparing this with the above equation, it is an equation of a parabola whose vertex is at (0,0), axis of symmetry is the x-axis, open to the left and <m>4p=10</m>, i.e., <m>p= 5/2</m>. Thus, the focus is F<m>=(–5/2,0)</m> and its directrix is <em>x</em> <m>=5/2.</m> Its graph is sketched in Figure 4.16.
                 </p>
                 <image source="assets/image-e1-parabola.png" width="50%">
                     <shortdescription></shortdescription>
@@ -226,7 +223,7 @@
                 </p>
                 <p>
                     ⇒ <md>
-                        <mrow>y^2+4y+<alert>2^2</alert> = \amp -8x+4+<alert>4</alert></mrow>
+                        <mrow>y^2+4y+2^2 = \amp -8x+4+ 4</mrow>
                     </md>
                 </p>
                 <p>
@@ -257,11 +254,9 @@
                    
                 may represent a parabola whose axis is parallel to the <em><alert>y</alert></em>-axis or parallel to the <em><alert>x</alert></em>-axis, respectively. The vertex, focal length and focus for such sec-parabolas can be identified after converting the equations into one of the standard forms by completing the square.
             </p>
-
-                    <p>
         </remark>
                
-        <exercises>
+        <exercise>
             <statement>
                 <p>
                     For questions 1 to 8, find an equation of the parabola with the given properties and sketch its graph.
@@ -351,7 +346,7 @@
                     18. Find an equation of the parabola that has a vertical axis, its vertex at <m>(1, 0)</m> and passing through <m>(0,1).</m>
                 </p>
                 <p>
-                    19. The vertex and endpoints of the latus rectum of the parabola <image source="/media/png72/imageC2300.png" />forms a triangle. Find the area of the triangle.
+                    19. The vertex and endpoints of the latus rectum of the parabola <m>x^2 = 36y</m> forms a triangle. Find the area of the triangle.
                 </p>
                 <p>
                     20. P<m>(4, 6)</m> is a point on a parabola whose focus is at <m>(0, 2) </m> and directrix is parallel to <em>x</em>-axis. 
@@ -372,7 +367,7 @@
                     <shortdescription></shortdescription>
                 </image>
             </statement>   
-       </exercises> 
+       </exercise> 
        <remark>
         <p>
             

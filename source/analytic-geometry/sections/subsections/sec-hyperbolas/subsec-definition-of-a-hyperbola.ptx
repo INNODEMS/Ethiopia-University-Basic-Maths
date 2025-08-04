@@ -1,59 +1,61 @@
-<subsection  xml:id="subsec-definition-of-a-hyperbola" >
+<subsection  xml:id="subsec-definition-of-a-hyperbola" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Definition of a hyperbola</title>
-    <tabular>
-        <row>
-            <cell><alert>Definition 4.5</alert>: Let F and F<alert>′</alert> be two fixed points in the plane. A <alert>hyperbola</alert> is the set of all points in the plane such that the difference of the distance of each point from F and F<alert>′</alert> is constant. We shall denote the constant by 2<em>a</em>, for some <em>a</em> &gt; 0. That is, a point P is on the hyperbola if and only if |PF<alert>′</alert>| – |PF| = 2<em>a</em> (or |PF|– |PF<alert>′</alert>| = 2<em>a</em> , whichever is positive) . The two fixed points F and F<alert>′</alert> are called the foci of the hyperbola.</cell>
-        </row>
-    </tabular>
-        <p>
-            Figure 4.24 illustrates the definition of hyperbola. Notice that the definition of hyperbola is similar to that of an ellipse, the only change is that the sum of distances has become the difference of distances. Here, for the difference of any two unequal values, we take the higher value minus the smaller so that <em>a</em> &gt; 0 in the definition. The following terminologies, notations and relationships are also important with regard to a hyperbola. Refer to Figure 4.24 for the following discussion.
-        </p>
-        <p>
-            <ul>
-                <li>
-                    <p>
-                        The line through the two foci F<alert>′</alert> and F is called the <alert>principal axis</alert> of the hyperbola. The point on the principal axis at halfway between the two foci, that is, the midpoint of F′F, is called the <alert>center</alert> of the hyperbola and represented by C. We denote the distance between the two foci by 2<em>c</em>. That is, <alert>|</alert>F<alert>′</alert>F<alert>|</alert> = 2<em>c</em> or <alert>|</alert>CF<alert>|</alert> = <em>c</em> = <alert>|</alert>CF<alert>′|</alert>. Noting also that |PF<alert>′</alert>| &lt; <alert>|</alert>F<alert>′</alert>F<alert>|</alert> + |PF| in ∆ PF<alert>′</alert>F and |PF<alert>′</alert>| – |PF| = 2<em>a</em> , you can show that <em>a</em> &lt; <em>c</em>.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        The points V<alert>′</alert> and V where the hyperbola crosses the principal axis are called <alert>vertices</alert> of the hyperbola. The line segment V<alert>′</alert>V is called the <alert>transverse axis</alert> of the hyperbola. So, as V<alert>′</alert> and V are on the hyperbola, the definition requires that <alert>|</alert>V′F<alert>|</alert> – <alert>|</alert>V′F′<alert>|</alert> = <alert>|</alert>VF<alert>′</alert>| – |VF|. From this, you can obtain that |V′F′| = |VF|. Consequently,
-                    
-
-                        <ol marker="(i)">
-                            <li>
-                                <p>
-                                    C is the midpoint of also V′V; that is, <alert>|</alert>CV<alert>′ |</alert> = |CV<alert>| .</alert>
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    |V<alert>′</alert>V| = |V<alert>′</alert>F| − |VF<alert>|</alert> = |V<alert>′</alert>F| − |V′F′| = 2<em>a</em> . (The length of the transverse axis is 2<em>a</em>)
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    <alert>|</alert>V<alert>′</alert>C<alert>|</alert> = <em>a</em> = |CV<alert>|</alert> (This follows from (i) and (ii). )
-                                </p>
-                            </li>
-                        </ol>
-                    </p>    
-                </li>
-                <li>
-                    <p>
-                        The <alert>eccentricity <em>e </em></alert> of a hyperbola is defined to be the ratio of the distance between its foci to the length of its transverse axis. That is, similar to the definition of eccentricity of an ellipse, the eccentricity of a hyperbola is
-                    </p>
-                    <p><image source="/media/png72/imageC2346.png" /> (But here, <em>e</em> &gt; 1 because <em>c</em> &gt; <em>a</em> )</p>
-                </li>
-            </ul>
-        </p>
-        <exercise>
-            <statement>
+    <definition xml:id="def-definition-of-a-hyperbola">
+        <statement>
+            <p>
+                Let F and F<term>′</term> be two fixed points in the plane. A <term>hyperbola</term> is the set of all points in the plane such that the difference of the distance of each point from F and F<term>′</term> is constant. We shall denote the constant by 2<m>a</m>, for some <m>a</m> > 0. That is, a point P is on the hyperbola if and only if |PF<term>′</term>| – |PF| = 2<m>a</m> (or |PF|– |PF<term>′</term>| = 2<m>a</m> , whichever is positive). The two fixed points F and F<term>′</term> are called the foci of the hyperbola.
+            </p>
+        </statement>
+    </definition>
+    <image source="assets/hyperbola-definition.png">
+    </image>
+    <p>
+        Figure 4.24 illustrates the definition of hyperbola. Notice that the definition of hyperbola is similar to that of an ellipse, the only change is that the sum of distances has become the difference of distances. Here, for the difference of any two unequal values, we take the higher value minus the smaller so that <m>a</m> > 0 in the definition. The following terminologies, notations and relationships are also important with regard to a hyperbola. Refer to Figure 4.24 for the following discussion.
+    </p>
+    <p>
+        <ul>
+            <li>
                 <p>
-                    
+                    The line through the two foci F<term>′</term> and F is called the <term>principal axis</term> of the hyperbola. The point on the principal axis at halfway between the two foci, that is, the midpoint of F′F, is called the <term>center</term> of the hyperbola and represented by C. We denote the distance between the two foci by 2<m>c</m>. That is, <term>|</term>F<term>′</term>F<term>|</term> = 2<m>c</m> or <term>|</term>CF<term>|</term> = <m>c</m> = <term>|</term>CF<term>′|</term>. Noting also that |PF<term>′</term>| < <term>|</term>F<term>′</term>F<term>|</term> + |PF| in ∆ PF<term>′</term>F and |PF<term>′</term>| – |PF| = 2<m>a</m>, you can show that <m>a</m> < <m>c</m>.
                 </p>
-            </statement>
-        </exercise>
+            </li>
+            <li>
+                <p>
+                    The points V<term>′</term> and V where the hyperbola crosses the principal axis are called <term>vertices</term> of the hyperbola. The line segment V<term>′</term>V is called the <term>transverse axis</term> of the hyperbola. So, as V<term>′</term> and V are on the hyperbola, the definition requires that <term>|</term>V′F<term>|</term> – <term>|</term>V′F′<term>|</term> = <term>|</term>VF<term>′</term>| – |VF|. From this, you can obtain that |V′F′| = |VF|. Consequently:
+                    <ol marker="(i)">
+                        <li>
+                            <p>
+                                C is the midpoint of also V′V; that is, <term>|</term>CV<term>′ |</term> = |CV<term>|</term>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                |V<term>′</term>V| = |V<term>′</term>F| − |VF<term>|</term> = |V<term>′</term>F| − |V′F′| = 2<m>a</m>. (The length of the transverse axis is 2<m>a</m>)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <term>|</term>V<term>′</term>C<term>|</term> = <m>a</m> = |CV<term>|</term> (This follows from (i) and (ii).)
+                            </p>
+                        </li>
+                    </ol>
+                </p>    
+            </li>
+            <li>
+                <p>
+                    The <term>eccentricity <m>e </m></term> of a hyperbola is defined to be the ratio of the distance between its foci to the length of its transverse axis. That is, similar to the definition of eccentricity of an ellipse, the eccentricity of a hyperbola is
+                </p>
+                <p><m> e =  {\frac|F'F|}{|V'V}| = \frac{C}{a}</m>(But here, <m>e</m> > 1 because <m>c</m> > <m>a</m>)</p>
+            </li>
+        </ul>
+    </p>
+    <exercise>
+        <statement>
+            <p>
+                
+            </p>
+        </statement>
+    </exercise>
     <tabular>
         <row>
             <cell>
@@ -64,21 +66,21 @@
                     <ol>
                         <li>
                             <p>
-                            Suppose C is the center, F<alert>′</alert> and F are the foci, and V<alert>′</alert> and V are the vertices of the hyperbola, as in Figure 4.24, with |CV| = <em>a</em> and |CF| = <em>c</em>. Then, show that each of the followings hold. 
+                                Suppose C is the center, F<term>′</term> and F are the foci, and V<term>′</term> and V are the vertices of the hyperbola, as in Figure 4.24, with |CV| = <m>a</m> and |CF| = <m>c</m>. Then, show that each of the followings hold. 
                             </p>
                             <p>
                                 <ol marker="(a)">
                                     <li>
                                         <p>
-                                            If P is any point on the hyperbola, then |PF| – |PF<alert>′</alert>| = ±2<em>a</em>.
+                                            If P is any point on the hyperbola, then |PF| – |PF<term>′</term>| = ±2<m>a</m>.
                                         </p>
                                         <p>
-                                            (Note: Taking that |PF| – |PF<alert>′</alert>| = <em>k</em>, a constant, show that <em>k</em>=±2<em>a</em> .)
+                                            (Note: Taking that |PF| – |PF<term>′</term>| = <m>k</m>, a constant, show that <m>k</m> = ±2<m>a</m>.)
                                         </p>
                                     </li>
                                     <li>
                                         <p>
-                                            (b) <em>a</em> &gt; <em>c</em> .
+                                            <m>a</m>&gt;<m>c</m>.
                                         </p>
                                     </li>
                                 </ol>
@@ -112,12 +114,11 @@
                                         <p>
                                             Determine whether each of the following points is on the hyperbola or not:
                                             <ol marker="(i)">
-                                                <li >
+                                                <li>
                                                     <p> 
-                                                        (−2, 3) (ii) (−2, −3) (iii) (2, −3) (iv) (3, 4) (v) <image source="/media/png72/imageC2347.png" /> 
+                                                        (−2, 3) (ii) (−2, −3) (iii) (2, −3) (iv) (3, 4) (v) <m>(\sqrt{13},6)</m> 
                                                     </p>
                                                 </li>
-                                                
                                             </ol>
                                         </p> 
                                     </li>                            
@@ -136,7 +137,7 @@
                                                         <ol marker="(i)">
                                                             <li>
                                                                 <p>
-                                                                    (0, 3) (ii) (2, 3) (iii) <image source="/media/png72/imageC2348.png" /> (iv) <image source="/media/png72/imageC2349.png" />
+                                                                    (0, 3) (ii) (2, 3) (iii) <m>(\sqrt{5},-3)</m> (iv) <m>(3,\sqrt{5})</m> 
                                                                 </p>
                                                             </li>
                                                         </ol>

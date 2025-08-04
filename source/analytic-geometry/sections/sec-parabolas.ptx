@@ -1,49 +1,46 @@
-<section  xml:id="sec-parabolas">
+<section  xml:id="sec-parabolas" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Parabolas</title>
-      <objectives>
-        <title>Objectives of a parabola</title>
-         <introduction>
+    <p>
+        <term>Objectives</term>
+    </p>
+    <p>
+        By the end of this section, you should:
+    </p>
+    <p>
+    
+    <ul>
+        <li>
             <p>
-                By the end of this section, you should:
+                Know the geometric definition of a parabola.
             </p>
+        </li>
+        <li>
             <p>
-            
-            <ul>
-                <li>
-                    <p>
-                        Know the geometric definition of a parabola.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Know the meaning of vertex, focus, directrix, and axis of a parabola.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Be able to find equation of a parabola whose axis is horizontal or vertical.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Be able to identify equations representing sec-parabolas.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Be able to find the vertex, focus, and directrix of a parabola and sketch the parabola.
-                    </p>
-                </li>
-            </ul>
-           </p>   
-        </introduction>       
-        </objectives>
-
+                Know the meaning of vertex, focus, directrix, and axis of a parabola.
+            </p>
+        </li>
+        <li>
+            <p>
+                
+            </p>
+        </li>
+        <li>
+            <p>
+                Be able to find equation of a parabola whose axis is horizontal or vertical.
+            </p>
+        </li>
+        <li>
+            <p>
+                Be able to identify equations representing sec-parabolas.
+            </p>
+        </li>
+        <li>
+            <p>
+                Be able to find the vertex, focus, and directrix of a parabola and sketch the parabola.
+            </p>
+        </li>
+    </ul>
+    </p>
     <xi:include href="subsections/sec-parabolas/subsec-definition-of-a-parabola.ptx" />
     <xi:include href="subsections/sec-parabolas/subsec-equation-of-parabolas.ptx" />
 </section>

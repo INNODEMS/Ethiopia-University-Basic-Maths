@@ -1,11 +1,5 @@
-<section xml:id="sec-hyperbolas">
+<section xml:id="sec-hyperbolas" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Hyperbolas</title>
-    <introduction>
-
-        <tabular>
-            <col width="40%"></col>
-        <row>
-        <cell>
             <p>By the end of this section, you should</p>
             <p>
                 <ul>
@@ -27,12 +21,6 @@
                 </ul>
                 
             </p>
-        </cell>
-        </row>
-        </tabular>
-
-        </introduction>
-
         <xi:include href="subsections/sec-hyperbolas/subsec-definition-of-a-hyperbola.ptx" />
         <xi:include href="subsections/sec-hyperbolas/subsec-equation-of-a-hyperbola.ptx" />
 </section>
