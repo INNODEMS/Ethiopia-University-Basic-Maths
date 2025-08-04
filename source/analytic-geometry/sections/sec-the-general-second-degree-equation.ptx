@@ -1,37 +1,36 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-the-general-second-degree-equation">
 <title>The General Second Degree Equation </title>
 <introduction>
-<table>
-<tabular>
-<row>
-<cell><p>By the end of this section, you should</p>
-<ul>
-<li>
-<p>know the general form of second degree equation representing conic sections whose lines of symmetry are not necessarily parallel to the coordinate axes.</p>
-</li>
-<li>
-<p>know the rotation formula for rotating the coordinate axes.</p>
-</li>
-<li>
-<p>be able to find equivalent equation of a conic section under rotation of the reference axes.</p>
-</li>
-<li>
-<p>be able to apply the rotation formula to find a suitable coordinate system in which a given general second degree equation is converted to a simpler standard form.</p>
-</li>
-<li>
-<p>be able to convert a given general second degree equation to an equivalent simpler standard form of equation of a conic section.</p>
-</li>
-<li>
-<p>be able to identify a conic section that a given general second degree equation represents and sketch the corresponding conic section.</p>
-</li>
-</ul></cell>
-</row>
-</tabular>
-</table>
-<p>In the previous sections we have seen that, except in degenerate cases, the graph of the equation</p>
-<p>A<em>x</em><sup>2</sup> + C<em>y</em><sup>2</sup> + D<em>x</em> + E<em>y</em> + F = 0</p>
-<p>is a circle, parabola, ellipse or hyperbola. The construction of these equations was based on the assumption that the axis of symmetry of a conic section is parallel to one of the coordinate axes. The assumption seems to be quite restrictive because the axis of symmetry for a parabola, ellipse, or hyperbola can be any oblique line as indicated in their corresponding definitions (See Figures 4.12, 4.18 and 4.24).</p>
-<p>However, the reason why we have assumed that is not only for simplicity but there is always a coordinate system whose one of the axes is parallel to a desired line of symmetry. In particular, we can rotate the axes of our <em>xy</em><alert>-</alert>coordinate system, whenever needed, so as to form a new <em>x</em>'<em>y</em>'-coordinate system such that either the x'- axis or y'-axis is parallel to the desired line of symmetry. Toward this end, let us review the notion of rotation of axes.</p>
+    <p>By the end of this section, you should:</p>
+    <p>
+        <ul>
+            <li>
+                <p>know the general form of second degree equation representing conic sections whose lines of symmetry are not necessarily parallel to the coordinate axes.</p>
+            </li>
+            <li>
+                <p>know the rotation formula for rotating the coordinate axes.</p>
+            </li>
+            <li>
+                <p>be able to find equivalent equation of a conic section under rotation of the reference axes.</p>
+            </li>
+            <li>
+                <p>be able to apply the rotation formula to find a suitable coordinate system in which a given general second degree equation is converted to a simpler standard form.</p>
+            </li>
+            <li>
+                <p>be able to convert a given general second degree equation to an equivalent simpler standard form of equation of a conic section.</p>
+            </li>
+            <li>
+                <p>be able to identify a conic section that a given general second degree equation represents and sketch the corresponding conic section.</p>
+            </li>
+        </ul>
+    </p>
+
+
+
+    <p>In the previous sections we have seen that, except in degenerate cases, the graph of the equation</p>
+    <p>A<m>x_2</m> + C<m>y_2</m> + D<m>x</m> + E<em>y</em> + F = 0</p>
+    <p>is a circle, parabola, ellipse or hyperbola. The construction of these equations was based on the assumption that the axis of symmetry of a conic section is parallel to one of the coordinate axes. The assumption seems to be quite restrictive because the axis of symmetry for a parabola, ellipse, or hyperbola can be any oblique line as indicated in their corresponding definitions.</p>
+    <p>However, the reason why we have assumed that is not only for simplicity but there is always a coordinate system whose one of the axes is parallel to a desired line of symmetry. In particular, we can rotate the axes of our <em>xy</em><alert>-</alert>coordinate system, whenever needed, so as to form a new <em>x</em>'<em>y</em>'-coordinate system such that either the x'- axis or y'-axis is parallel to the desired line of symmetry. Toward this end, let us review the notion of rotation of axes.</p>
 
 
 </introduction>

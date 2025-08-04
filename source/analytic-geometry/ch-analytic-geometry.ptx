@@ -1,35 +1,54 @@
 
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="analytic-geometry"><title>Analytic Geometry </title>
 <introduction>
-<table>
-<tabular>
-<row>
-<cell><p>The main topics of study in analytic geometry are straight lines and conic sections. Accordingly, by the end of this chapter you must</p>
-<ul>
-<li>
-<p>be able to derive basic equations that are representing straight lines, circles, parabolas, ellipses, and hyperbola.</p>
-</li>
-<li>
-<p>know the main (important) properties of each of these five geometric objects.</p>
-</li>
-<li>
-<p>be able to identify equations of straight lines, circles, parabolas, ellipses, hyperbolas and sketch their graphs.</p>
-</li>
-</ul>
-<p>More specific objectives are given in each section.</p></cell>
-</row>
-</tabular>
-</table>
-<p>The major part of this chapter is <alert>conic sections</alert>. Conic sections are <alert>circles</alert>, <alert>parabolas, ellipse</alert>s and <alert>hyperbolas</alert>. They are called conic sections because they are generated when a plane cuts a right circular double cone. Depending on how the plane cuts the cone the intersection forms a curve called a circle, an ellipse, a parabola or a hyperbola (See, Figure 4.1).</p>
-<p>We will see that a conic section is described by a second degree equation in <em>x</em> and <em>y</em> of the form</p>
-<p>,</p>
-<p>when A, C, D, E and F are constant real numbers. In the analysis of such equations we will frequently need the method of completing the square. Recall that completing the square is the method of converting an equation of the form</p>
+    <p> The main topics of study in analytic geometry are straight lines and conic sections. Accordingly, by the end of this chapter you must</p>
+    <p>
+        <ul>
+            <li>
+                <p>
+                    be able to derive basic equations that are representing straight lines, circles, parabolas, ellipses, and hyperbola.
+                </p>
+            </li>
+            <li>
+                <p>
+                    know the main (important) properties of each of these five geometric objects.
+                </p>
+            </li>
+            <li>
+                <p>
+                    be able to identify equations of straight lines, circles, parabolas, ellipses, hyperbolas and sketch their graphs.
+                </p>
+            </li>
+        </ul>
+    </p>
 
-<p><em>x</em><sup>2</sup> + <em>ax</em> = <em>b</em> to (<em>x</em>+ <em>h</em>)<sup>2</sup> = <em>c</em> (<em>Can you establish the relationships between</em> <em>a</em>,<em>b</em> <em>and</em> <em>h</em>,<em>c</em> ?)</p>
+    <p>
+        More specific objectives are given in each section.
+    </p>
+    <p>
 
-<p>To do this :- <em>Add</em> <em>to both sides of the former equation</em>.</p>
-<p>- <em>Then complete the square of the resulting expression to get the later form.</em></p>
-<p>Here recall that: and .</p>
+        The major part of this chapter is <alert>conic sections</alert>. Conic sections are <alert>circles</alert>, <alert>parabolas, ellipse</alert>s and <alert>hyperbolas</alert>.
+     They are called conic sections because they are generated when a plane cuts a right circular double cone. Depending on how the plane cuts the cone
+      the intersection forms a curve called a circle, an ellipse, a parabola or a hyperbola (See, Figure 4.1).
+    </p>
+    <p>
+        We will see that a conic section is described by a second degree equation in <em>x</em> and <em>y</em> of the form
+    </p>
+    <p>
+        when A, C, D, E and F are constant real numbers. In the analysis of such equations we will frequently need the method of completing the square.
+        Recall that completing the square is the method of converting an equation of the form
+    </p>
+    <p>
+        To do this :- <em>Add</em> <em>to both sides of the former equation</em>.
+    </p>
+    <p>
+        - Then complete the square of the resulting expression to get the later form.
+    </p>
+    <p>
+        Here recall that: and .
+    </p>
+
+
 
 </introduction>
 

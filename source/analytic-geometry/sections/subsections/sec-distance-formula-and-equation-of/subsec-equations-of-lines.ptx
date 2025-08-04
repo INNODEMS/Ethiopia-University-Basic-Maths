@@ -1,126 +1,453 @@
-<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-equations-of-lines" class="anchor"><title>Equations of lines</title>
-<p>An equation of a line <em><alert>l</alert></em> is an equation which must be satisfied by the coordinates (<em>x</em>, <em>y</em>) of every point on the line. A line can be vertical, horizontal or oblique. The equation of a vertical line that intersects the <em>x</em>-axis at (<em>a</em>, 0) is <em>x=a</em> because the <em>x</em>-coordinate of every point on the line is <em>a</em>. Similarly, the equation of a horizontal line that intersects the <em>y</em>-axis at (0, <em>b</em>) is <em>y=b</em> because the <em>y</em>-coordinate of every point on the line is <em>b</em>.</p>
-<p>An oblique line is a straight line which is neither vertical nor horizontal. To find equation of an oblique line we use its slope which is the measure of the steepness of the line. In particular, the slope of a line is defined as follows.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 4.1.</alert> The <alert>slope</alert> of a non-vertical line that passes through the points</p>
-<p>P<sub>1</sub>(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>) and P<sub>2</sub>(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>) is</p>
-<p>The slope of a vertical line is not defined. Note that the slope of horizontal line is 0.</p></cell>
-</row>
-</tabular>
-</table>
-<p>Thus the slope of a line <em><alert>l</alert></em> is the ratio of the change in <em>y</em>, ∆<em>y</em>, to the change in <em>x</em>, ∆<em>x</em> (see Figure 4.4). Hence, slope is the rate of change of <em>y</em> with respect <em>x</em>. The slope depends also on the angle of inclination of the line. Note that the angle of inclination <em>θ</em> is the angle between <em>x</em>-axis and the line (measured counterclockwise from the direction of positive <em>x</em>-axis to the line). Observe that</p>
-<p>Therefore, if <em>θ</em> is the angle of inclination of a line, then its slope is <em>m</em> = tan<em>θ</em>.</p>
-<p>Now let us find an equation of the line that passes through a point P<sub>1</sub>(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>) and has slope <em>m</em>. A point P(<em>x</em>, <em>y</em>) with <em>x</em>≠<em>x</em><sub>1</sub> lies on this line if and only if the slope of the line though P<sub>1</sub> and P is <em>m</em>; that is</p>
-<p>This leads to the following equation of the line:</p>
-<table>
-<tabular>
-<row>
-<cell></cell>
-<cell>( called point-slope form of equation of a line).</cell>
-</row>
-</tabular>
-</table>
-<p>In general, depending on the given information, you can show that the equations of oblique lines can be obtained using the following formulas.</p>
-<table>
-<tabular>
-<row header="yes">
-<cell><alert>Given Information</alert></cell>
-<cell><alert>X Formula for Equation of the Line</alert></cell>
-</row>
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-equations-of-lines">
+    <title>Equations of lines</title>
+    <p>An equation of a line <em><alert>l</alert></em> is an equation which must be satisfied by the coordinates (<em>x</em>, <em>y</em>) of every point on the line. A line can be vertical, horizontal or oblique. The equation of a vertical line that intersects the <em>x</em>-axis at (<em>a</em>, 0) is <em>x=a</em> because the <em>x</em>-coordinate of every point on the line is <em>a</em>. Similarly, the equation of a horizontal line that intersects the <em>y</em>-axis at (0, <em>b</em>) is <em>y=b</em> because the <em>y</em>-coordinate of every point on the line is <em>b</em>.</p>
+    <p>An oblique line is a straight line which is neither vertical nor horizontal. To find equation of an oblique line we use its slope which is the measure of the steepness of the line. In particular, the slope of a line is defined as follows.</p>
+    <definition xml:id="def-">
+        <statement>
+            <p>
+                The <alert>slope</alert> of a non-vertical line that passes through the points
+            </p>
+            <p>
+                <m>P_1</m>(<m>x_1</m>, <m>y_1</m>) and <m>P_2</m>(<m>x_2</m>, <m>y_2</m>) is 
+            </p>
+            <p>
+                <me>
+                    m=\frac{\Delta y}{\Delta x }=\frac{y_{2}-y_{1}}{x_{2}-x_{1}}
+                </me>
+                
+            </p>
+            <p>
+                The slope of a vertical line is not defined. Note that the slope of horizontal line is 0.
+            </p>
+        </statement>
+    </definition>
 
-<row>
-<cell>
-<p>Slope <em>m</em> and its <em>y</em>-intercept (0,<em>b</em>)</p>
-</cell>
-<cell>V Slope-Intercept-Form: <em>y = mx</em> + <em>b</em></cell>
-</row>
-<row>
-<cell>Slope <em>m</em> and a point (<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>) on <em><alert>l</alert></em></cell>
-<cell><p>B Point-Slope-Form: <em>y – y</em><sub>1</sub>= <em>m</em>(<em>x –x</em><sub>1</sub>)</p>
-<p>Or <em>y</em> = <em>m</em>(<em>x –x</em><sub>1</sub>) <em>+ y</em><sub>1</sub></p></cell>
-</row>
-<row>
-<cell>Two points (<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>) and (<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>) on <em><alert>l</alert></em></cell>
-<cell>Two-Point Form:</cell>
-</row>
-<row>
-<cell><em>x</em>-intercept (<em>a</em>,0) and <em>y</em>-intercept (0,<em>b</em>)</cell>
-<cell>Intercept Form:</cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 4.3:</alert> Find an equation of the line <alert><em>l</em></alert> if</p>
-<p>(i) the line passes through (3, −2) and its angle of inclination is 135°.</p>
-<p>(ii) the line passes through the points (1, 2) and (4, −2)</p>
-<p><alert>Solution:</alert> (i) The slope of <em><alert>l</alert></em> is <em>m</em>= tan(135°) = −1; and it passes through point (3, −2). Thus, using the point-slope form with <em>x</em><sub>1</sub>= 3 and <em>y</em><sub>1</sub>= −2, we obtain the equation of the line as</p>
-<p><em>y –</em> (−2)= <em>−</em>1(<em>x –</em>3) which simplifies to <em>y =</em> −<em>x +</em> 1.</p>
-<p>(ii) Given the line passes through (1, 2) and (4, −2) , the slope of the line is</p>
-<p>.</p>
-<p>So, using the point-slope form with <em>x</em><sub>1</sub>= 1 and <em>y</em><sub>1</sub>= 2, we obtain the equation of the line as</p>
-<p>which simplifies to 4<em>x</em> + 3<em>y</em> =10.</p>
-<p>(Note that it is possible to use the two-point form to find the equation of this line)</p>
-<p><alert>General Form</alert>: In general, the equation of a straight line can be written as</p>
-<p><em>ax</em> + <em>by</em> + <em>c</em> = 0,</p>
-<p>for constants <em>a</em>, <em>b</em>, <em>c</em> with <em>a</em> and <em>b</em> not both zero. Indeed, if <em>a</em>=0 the line is a horizontal line given by <em>y</em> = −<em>c/b</em>, if <em>b</em>=0 the line is a vertical line given by <em>x</em> = −<em>c/a</em>, and if both <em>a</em>, <em>b≠</em> 0 it is the oblique line given by <em>y</em> = –(<em>a/b)x</em> − <em>c/b</em> with slope <em>m</em> = –<em>a/b</em> and <em>y</em>-intercept −<em>c/b</em> .</p>
-<p><alert>Parallel and Perpendicular lines:</alert> slopes can be used to check whether lines are parallel, perpendicular or not. In particular, let <em><alert>l</alert></em><sub>1</sub> and <em><alert>l</alert></em><sub>2</sub> be non-vertical lines with slope <em>m</em><sub>1</sub> and <em>m</em><sub>2</sub>, respectively. Then,</p>
-<p>. (i) <em><alert>l</alert></em><sub>1</sub> and <em><alert>l</alert></em><sub>2</sub> are parallel, denoted by <em><alert>l</alert></em><sub>1</sub> || <em><alert>l</alert></em><sub>2,</sub> iff <em>m</em><sub>1</sub> = <em>m</em><sub>2</sub>.</p>
 
-<p>(ii) <em><alert>l</alert></em><sub>1</sub> and <em><alert>l</alert></em><sub>2</sub> are perpendicular, denoted by <em><alert>l</alert></em><sub>1</sub>⊥ <em><alert>l</alert></em><sub>2</sub> , iff <em>m</em><sub>1</sub><em>m</em><sub>2</sub>= −1 (or )</p>
+    <p>Thus the slope of a line <em><alert>l</alert></em> is the ratio of the change in <em>y</em>, ∆<em>y</em>, to the change in <em>x</em>, ∆<em>x</em> (see Figure 4.4). Hence, slope is the rate of change of <em>y</em> with respect <em>x</em>. The slope depends also on the angle of inclination of the line. Note that the angle of inclination <em>θ</em> is the angle between <em>x</em>-axis and the line (measured counterclockwise from the direction of positive <em>x</em>-axis to the line). Observe that</p>
+    <p>
+        <me>
+            tan \theta =\frac{\Delta y}{\Delta x}
+        </me>
+        
+    </p>
+    <p>Therefore, if <em>θ</em> is the angle of inclination of a line, then its slope is <em>m</em> = tan<em>θ</em>.</p>
+    <p>Now let us find an equation of the line that passes through a point <m>P_1</m>(<m>x_1</m>, <m>y_1</m>) and has slope <em>m</em>. A point P(<em>x</em>, <em>y</em>) with <em>x</em>≠<m>x_1</m> lies on this line if and only if the slope of the line though <m>P_1</m> and P is <em>m</em>; that is</p>
+    <p>
+        <me>
+            \frac{y-y_{1}}{x-x_{1}} = m
+        </me>
+        
+    </p>
+    <p>This leads to the following equation of the line:</p>
+    <p>
+        <me>
+            y-y_{1}=m\left ( x-x_{1} \right ) \, \text{( called point-slope form of equation of a line).}
+        </me>
+        
+    </p>
 
-<p>Moreover, if <alert><em>l</em><sub>1</sub></alert> and <alert><em>l</em><sub>2</sub></alert> are both vertical lines then they are parallel. However, if one of them is horizontal and the other is vertical, then they are perpendicular.</p>
-<p><alert>Example 4.4:</alert> Find an equation of the line through the point (3,2) that is parallel to the line</p>
-<p>2<em>x</em> + 3<em>y</em> +5=0.</p>
-<p><alert>Solution:</alert> The given line can be written in the form which is the slope-intercept form; that is, it has slope <em>m</em> = −2/3. So, as parallel lines have the same slope, the required line has slope −2/3. Therefore, its equation in point-slope form is which can be simplified to 2<em>x</em> + 3<em>y</em> =12.</p>
-<p><alert>Example 4.5:</alert> Show that the lines 2<em>x</em> + 3<em>y</em> +5=0 and 3<em>x</em>−2<em>y −</em> 4 = 0 are perpendicular.</p>
-<p><alert>Solution:</alert> The equations can be written as and from which we can see that <em>m</em><sub>1</sub>= −2/3 and <em>m</em><sub>2</sub>= 3/2 . Since <em>m</em><sub>1</sub><em>m</em><sub>2</sub>= −1, the lines are perpendicular.</p>
-<p><alert>Exercise 4.1.2</alert></p>
-<table>
-<tabular>
-<row header="yes">
-<cell><p>1. Find the slope and equation of the line determined by the following pair of points. Also find the <em>y-</em> and <em>x-</em> intercepts, if any, and draw each line.</p>
-<p>(a) (0, 2) and (3, 2) (e) The origin and (1,2) (i) (−1, 3) and (1, 6 )</p>
-<p>(b) (2, 0) and (2, 3) (f) The origin and (1,−3) (j) (−3, −2) and (2, −2)</p>
-<p>(c) The origin and (1,0) (g) (1,2) and (3, 4) (k) (0, 3) and (3, 0)</p>
-<p>(d) The origin and (−1, 0) (h) (−2, −3), (2, 5) (l) (−1, 0) and (0, 2)</p>
-<p>2. Find the slope and equation of the line whose angle of inclination is <em>θ</em> and passes through the point P, if</p>
-<p>(a) <em>θ</em> = , P = (1,1). (d) <em>θ</em> = 0, P = (0, 1).</p>
-<p>(b) <em>θ</em> = , P = (0,1). (e) <em>θ</em> = , P = (1, 3).</p>
-<p>(c) <em>θ</em> = , P = (0,1). (f) <em>θ</em> = , P = (1,−3).</p>
-<p>3. Find the <em><alert>x</alert></em>-and <em><alert>y</alert></em>-intercepts and slope of the line given by , and draw the line.</p>
-<p>4. Draw the triangle with vertices A(−2,4), B(1,−1) and C(6,2) and find the following.</p>
-<p>(a) Equations of the sides.</p>
-<p>(b) Equations of the medians.</p>
-<p>(c) Equations of the perpendicular bisectors of the sides.</p>
+    <p>In general, depending on the given information, you can show that the equations of oblique lines can be obtained using the following formulas.</p>
+    <tabular >
+        <col width="100%"/>
+        <row>
+            <cell><p><alert>Given Information</alert></p></cell>
+            <cell><p><alert>X Formula for Equation of the Line</alert></p></cell>
+        </row>
+        <row>
+            <cell><p>Slope <em>m</em> and its <em>y</em>-intercept (0,<em>b</em>)</p></cell>
+            <cell><p>V Slope-Intercept-Form: <em>y = mx</em> + <em>b</em></p></cell>
+        </row>
+        <row>
+            <cell><p>Slope <m>m</m> and a point (<m>x_1</m>, <m>y_1</m>) on <em><alert>l</alert></em></p></cell>
+            <cell><p>Point-Slope-Form: <m>y – y_1</m>= <m>m</m>(<m>x –x_1</m>) Or <em>y</em> = <em>m</em>(<m>x –x_1</m>) <m>+ y_1</m></p></cell>
+        </row>
+        <row>
+            <cell><p>Two points (<m>x_1</m>, <m>y_1</m>) and (<m>x_2</m>, <m>y_2</m>) on <em><alert>l</alert></em></p></cell>
+            <cell><p>Two-Point Form: <m>y-y_{1}=\frac{y_{2}-y_{1}}{x_{2}-x_{1}}\left ( x-x_{1} \right )</m></p></cell>
+        </row>
+        <row>
+            <cell><p><em>x</em>-intercept (<em>a</em>,0) and <em>y</em>-intercept (0,<em>b</em>)</p></cell>
+            <cell><p>Intercept Form: <m>\frac{x}{a}+\frac{y}{b}=1</m></p></cell>
+        </row>
+    </tabular>
 
-<p>(d) Equation of the lines through the vertices parallel to the opposite sides.</p>
 
-<p>5. Find the equation of the line that passes through (2, −1) and perpendicular to 3<em>x</em> + 4<em>y</em> = 6.</p>
-<p>6. Suppose and are perpendicular lines intersecting at (−1, 2). If the angle of inclination of is 45°, then find an equation of .</p>
-<p>7. Determine which of the following pair of lines are parallel, perpendicular or neither.</p>
-<p>(a) 2<em>x</em> − <em>y</em> + 1 = 0 and 2<em>x</em> + 4<em>y</em> = 3 (d) <em>y</em> = 3<em>x</em> +2 and 3<em>x</em> + <em>y</em> = 2</p>
-<p>(b) 3<em>x</em> −6 <em>y</em> +1 = 0 and <em>x</em> − 2<em>y</em> = 3 (e) 2<em>x</em> − 3<em>y</em> = 5 and 3<em>x</em> + 2<em>y</em> − 3= 0</p>
-<p>(c) 2<em>x</em> +5<em>y</em> +3 = 0 and 5<em>x</em> + 3<em>y</em> +2 =0 (f) and 2<em>x</em> +3<em>y</em> −6 = 0</p>
-<p>8. Let <em>L</em><sub>1</sub> be the line passing through P(<em>a, b</em>) and Q(<em>b, a</em>) such that <em>a</em>≠<em>b</em> . Find an equation of the line <em>L</em><sub>2</sub> in terms of <em>a</em> and <em>b</em> if</p>
-<p>(a) <em>L</em><sub>2</sub> passes through P and perpendicular to <em>L</em><sub>1</sub> .</p>
-<p>(b) <em>L</em><sub>2</sub> passes through and parallel to <em>L</em><sub>1</sub> .</p>
-<p>9. Let <em>L</em><sub>1</sub> and <em>L</em><sub>2</sub> be given by 2<em>x</em> + 3<em>y</em> −4= 0 and <em>x</em> +3<em>y</em> −5= 0, respectively. A third line <em>L</em><sub>3</sub> is perpendicular to <em>L</em><sub>1</sub>. Find an equation of <em>L</em><sub>3</sub> if the three lines intersect at the same point.</p>
-<p>10. Determine the value(s) of <em>k</em> for which the line</p>
-<p>(a) is parallel to the <em>x</em>-axis.</p>
-<p>(b) is parallel to the <em>y</em>-axis.</p>
-<p>(c) passes through the origin</p>
-<p>(d) passes through the point (1,1).</p>
-<p>In each case write the equation of the line.</p></cell>
-</row>
+    <example>
+        <statement>
+            <p>
+                Find an equation of the line <alert><em>l</em></alert> if
+            </p>
+            <p>
+                <ol marker="(i)">
+                    <li>
+                        <p>
+                            the line passes through (3, −2) and its angle of inclination is 135°.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            the line passes through the points (1, 2) and (4, −2)
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <ol marker="(i)">
+                    <li>
+                        <p>
+                            The slope of <em><alert>l</alert></em> is <em>m</em>= tan(135°) = −1; and it passes through point (3, −2). Thus, using the point-slope form with <m>x_1</m>= 3 and <m>y_1</m>= −2, we obtain the equation of the line as
+                        </p>
+                        <p>
+                            <em>y –</em> (−2)= <em>−</em>1(<em>x –</em>3) which simplifies to <em>y =</em> −<em>x +</em> 1.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Given the line passes through (1, 2) and (4, −2) , the slope of the line is
+                        </p>
+                        <p>
+                            <me>
+                                m=\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\frac{-2-2}{4-1}=\frac{-4}{3}
+                            </me>
+                            
+                        </p>
+                        <p>
+                            So, using the point-slope form with <m>x_1</m>= 1 and <m>y_1</m>= 2, we obtain the equation of the line as
+                        </p>
+                        <p>
+                            <m>y-2=\frac{-4}{3}\left ( x-1 \right )</m> which simplifies to 4<em>x</em> + 3<em>y</em> =10.
+                        </p>
+                        <p>
+                            (Note that it is possible to use the two-point form to find the equation of this line)
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </example>
 
-<row>
-<cell><p>11. Determine the values of <em>a</em> and <em>b</em> for which the two lines and</p>
-<p>(a) have exactly one intersection point.</p>
-<p>(b) are distinct parallel lines.</p>
-<p>(c) coincide.</p>
-<p>(d) are perpendicular.</p></cell>
-</row>
-</tabular>
-</table>
+    <p>
+        <m>\textbf{General Form:}</m>  In general, the equation of a straight line can be written as
+    </p>
+    <p>
+        <me>
+            ax + by + c = 0,
+        </me>    
+    </p>
+    <p>
+        for constants <em>a</em>, <em>b</em>, <em>c</em> with <em>a</em> and <em>b</em> not both zero. Indeed, if <em>a</em>=0 the line is a horizontal line given by <em>y</em> = −<em>c/b</em>, if <em>b</em>=0 the line is a vertical line given by <em>x</em> = −<em>c/a</em>, and if both <em>a</em>, <em>b≠</em> 0 it is the oblique line given by <em>y</em> = –(<em>a/b)x</em> − <em>c/b</em> with slope <em>m</em> = –<em>a/b</em> and <em>y</em>-intercept −<em>c/b</em> .
+    </p>
+    <p>
+        <alert>Parallel and Perpendicular lines:</alert> slopes can be used to check whether lines are parallel, perpendicular or not. In particular, let <m>I_1</m> and <m>l_2</m> be non-vertical lines with slope <m>m_1</m> and <m>m_2</m>, respectively. Then,
+    </p>
+    <p>
+        <ol marker="(i)">
+            <li>
+                <p>
+                    <m>I_1</m> and <m>I_2</m> are parallel by <m>I_1</m> || <m>I_2</m> iff <m>m_1</m> = <m>m_2</m>.
+
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>I_1</m> and <m>I_2</m> are perpendicular, denoted by <m>I_1</m> | <m>I_2</m> iff <m>m_1</m><m>m_2</m>
+                    (or <m>m_{2}= -\frac{1}{m_{1}}</m>)
+                </p>
+            </li>
+        </ol>
+    </p>
+    <p>
+        Moreover, if <m>I_1</m> and <m>I_2</m> are are both vertical lines then they are parallel. However, if one of them is horizontal and the other is vertical, then they are perpendicular.
+    </p>
+    <example>
+        <statement>
+            <p>
+                Find an equation of the line through the point (3,2) that is parallel to the line
+            </p>
+            <p>
+                <m>2x +3y =12</m>
+            </p>
+        </statement>
+        <solution>
+            <p>
+                The given line can be written in the form <m>y= \frac{-2}{3}x-\frac{5}{3}</m>
+                which is the slope-intercept form; that is, it has slope <m>m= -\frac{2}{3}</m>
+                So, as parallel lines have the same slope, the required line has slope <m>-\frac{2}{3}</m>
+                Therefore, its equation in point-slope form is <m>y-2=\frac{-2}{3}\left ( x-3 \right )</m>
+                which can be simplified to <m>2x+3y=12</m>
+            </p>
+        </solution>
+    </example>
+    <example>
+        <statement>
+            <p>
+                Show that the lines  <m>2x + 3y + 5=0</m> and <m>3x-2y-4=0</m> are perpendicular.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                The equations can be written as <m>y=\frac{-2}{3}x-\frac{5}{3}</m> and <m>y=\frac{3}{2}x-2</m> from which we can see that
+                <m> m_{1}=-\frac{2}{3}</m> and <m> m_{2}=\frac{3}{2}</m>. Since <m>m_1m_2=-1</m>, the lines are perpendicular.
+            </p>
+        </solution>
+    </example>
+
+    <exercises xml:id="exercises-equations-of-lines">
+        <exercise>
+            <statement>
+                <p>
+                    Find the slope and equation of the line determined by the following pair of points. Also find the <em>y-</em> and <em>x-</em> intercepts, if any, and draw each line.
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                (0, 2) and (3, 2)
+                            </p>
+                        </li>
+                        <li><p>(2, 0) and (2, 3) </p></li>
+                        <li><p>The origin and (1,0)</p></li>
+                        <li><p>The origin and (−1, 0)</p></li>
+                        <li><p>The origin and (1,2)</p></li>
+                        <li><p>The origin and (1,−3)</p></li>
+                        <li><p>(1,2) and (3, 4)</p></li>
+                        <li><p>(−2, −3), (2, 5)</p></li>
+                        <li><p>(−1, 3) and (1, 6 )</p></li>
+                        <li><p>(−3, −2) and (2, −2)</p></li>
+                        <li><p>(0, 3) and (3, 0)</p></li>
+                        <li><p>(−1, 0) and (0, 2)</p></li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Find the slope and equation of the line whose angle of inclination is <em>θ</em> and passes through the point P, if
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                <m>\theta = \frac{1}{4}\pi </m>,  P = (1,1).
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\theta = \frac{1}{4}\pi </m> ,P = (0,1).
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\theta = \frac{3}{4}\pi </m>,P = (0,1).
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\theta = 0</m>,P = (0, 1).
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\theta = \frac{1}{3}\pi </m>, P = (1, 3).
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\theta = \frac{1}{3}\pi </m>, P = (1,−3).
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Find the <em><alert>x</alert></em>-and <em><alert>y</alert></em>-intercepts and slope of the line given by <m>\frac{x}{2}-\frac{y}{3}=1</m> , and draw the line.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Draw the triangle with vertices A(−2,4), B(1,−1) and C(6,2) and find the following.
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                Equations of the sides.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Equations of the medians.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Equations of the perpendicular bisectors of the sides.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Equation of the lines through the vertices parallel to the opposite sides.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Find the equation of the line that passes through (2, −1) and perpendicular to 3<em>x</em> + 4<em>y</em> = 6.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Determine which of the following pair of lines are parallel, perpendicular or neither.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Suppose <m>l_1</m> and <m>l_2</m> are perpendicular lines intersecting at (−1, 2). If the angle of inclination of <m>l_1</m> is 45°, then find an equation of <m>l_2</m> .
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Determine which of the following pair are parallel, perpendicular or neither.
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                2<em>x</em> − <em>y</em> + 1 = 0 and 2<em>x</em> + 4<em>y</em> = 3
+                            </p>
+                        </li>
+                        <li><p> 3<em>x</em> −6 <em>y</em> +1 = 0 and <em>x</em> − 2<em>y</em> = 3</p></li>
+                        <li><p> 2<em>x</em> +5<em>y</em> +3 = 0 and 5<em>x</em> + 3<em>y</em> +2 =0 </p></li>
+                        <li><p><em>y</em> = 3<em>x</em> +2 and 3<em>x</em> + <em>y</em> = 2</p></li>
+                        <li><p> 2<em>x</em> − 3<em>y</em> = 5 and 3<em>x</em> + 2<em>y</em> − 3= 0</p></li>
+                        <li><p> <m>\frac{x}{2}-\frac{y}{3}=1</m>  and 2<em>x</em> +3<em>y</em> −6 = 0</p></li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Let <m>L_1</m>  be the line passing through P(<em>a, b</em>) and Q(<em>b, a</em>) such that 
+                    <em>a</em>≠<em>b</em>. Find an equation of the line <m>L_2</m> in terms of <em>a</em> and <em>b</em> if
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                <m>L_2</m> passes through P and perpendicular to <m>L_1</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>L_2</m> passes through (a,a) and parallel to <m>L_1</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Let <m>L_1</m> and <m>L_2</m>  be given by 2<em>x</em> + 3<em>y</em> −4= 0 and <em>x</em> +3<em>y</em> −5= 0, respectively.
+                    A third line <m>L_3</m> is perpendicular to <m>L_1</m>.
+                    Find an equation of <m>L3</m> if the three lines intersect at the same point.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Dertermine the values(s) of <m>k</m> which the line
+                </p>
+                <p>
+                    <me>
+                        \left ( k+2 \right )x+\left (k ^{2}-9 \right )y+3k^{2}-8k+5=0
+                    </me>
+                    
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                is parallel to the <em>x</em>-axis.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                is parallel to the <em>y</em>-axis.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                passes through the origin
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                passes through the point (1,1).
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    In each case write the equation of the line.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Determine the values of <em>a</em> and <em>b</em> for which the two lines <m>ax-2y=1</m> and <m>6x-4y=b</m>
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                have exactly one intersection point.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                are distinct parallel lines.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                coincide.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                are perpendicular.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+
+
+
+
 </subsection>

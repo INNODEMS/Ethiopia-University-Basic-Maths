@@ -1,58 +1,269 @@
-<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-distance-between-a-point-and" class="anchor"><title>Distance between a point and a line</title>
-<p>Suppose a line <em><alert>l</alert></em> and a point P(<em>x,y</em>) not on the line are given. The distance from P to <em><alert>l</alert></em>, <em>d</em>(P, <em><alert>l</alert></em>), is defined as the perpendicular distance between P and <em><alert>l</alert></em> . That is,</p>
-<p><em>d</em>(P, <em><alert>l</alert></em>) = <alert>|</alert>PQ<alert>|</alert>, where Q is the point on <em><alert>l</alert></em> such that PQ⊥ <em><alert>l</alert></em>. (See Figure 4.5)</p>
-<p>If P is on <em><alert>l</alert></em>, then <em>d</em>(P, <em><alert>l</alert></em>) = 0. Moreover, given a point P(<em>h,k</em>) observe that</p>
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-distance-between-a-point-and" >
+    <title>Distance between a point and a line</title>
+    <p>Suppose a line <em><alert>l</alert></em> and a point P(<em>x,y</em>) not on the line are given. The distance from P to <em><alert>l</alert></em>, <em>d</em>(P, <em><alert>l</alert></em>), 
+        is defined as the perpendicular distance between P and <em><alert>l</alert></em> . That is,</p>
+    <p><em>d</em>(P, <em><alert>l</alert></em>) = <alert>|</alert>PQ<alert>|</alert>, where Q is the point on <em><alert>l</alert></em> such that PQ⊥ <em><alert>l</alert></em>. (See Figure 4.5)</p>
 
-<p>(i) if the line <em><alert>l</alert></em> is a horizontal line <em>y=b</em>, then <em>d</em>(P, <em><alert>l</alert></em>) = <alert>|</alert><em>k – b</em><alert>|</alert>.</p>
+    <p>If P is on <em><alert>l</alert></em>, then <em>d</em>(P, <em><alert>l</alert></em>) = 0. Moreover, given a point P(<em>h,k</em>) observe that</p>
+    <p>
+        <ol marker="(i)">
+            <li>
+                <p>
+                    if the line <em><alert>l</alert></em> is a horizontal line <em>y=b</em>, then <em>d</em>(P, <em><alert>l</alert></em>) = <alert>|</alert><em>k – b</em><alert>|</alert>.
+                </p>
+            </li>
+            <li>
+                <p>
+                    if the line <em><alert>l</alert></em> is a vertical line <em>x=a</em>, then <em>d</em>(P, <em><alert>l</alert></em>) = <alert>|</alert><em>h – a</em><alert>|</alert>
+                </p>
+            </li>
+        </ol>
+    </p>
 
-<p>(ii) if the line <em><alert>l</alert></em> is a vertical line <em>x=a</em>, then <em>d</em>(P, <em><alert>l</alert></em>) = <alert>|</alert><em>h – a</em><alert>|</alert></p>
-<p>In general, however, to find the distance between a point P(<em>x</em><sub>0</sub><em>, y</em><sub>0</sub>) and an arbitrary line <em><alert>l</alert></em> given by <em>ax</em> + <em>by</em> +<em>c</em> = 0, we have to first get a point Q on <em><alert>l</alert></em> such that PQ⊥ <em><alert>l</alert></em> and then compute <alert>|</alert>PQ<alert>|</alert>. This yields the formula given in the following Theorem.</p>
-<table>
-<tabular>
-<row>
-<cell><alert>Theorem 4.2:</alert> The distance between a point P(<em>x</em><sub>0</sub><em>, y</em><sub>0</sub>) and a line <em>L</em>: <em>ax</em> + <em>by</em> +<em>c</em> = 0 is given by</cell>
-</row>
-</tabular>
-</table>
-<p>In particular, if we take (<em>x</em><sub>0</sub><em>,y</em><sub>0</sub>)=(0,0) in this formula, we obtain the distance between the origin O(0,0) and a line <em>L</em> : <em>ax</em> + <em>by</em> +<em>c</em> = 0 which is given by</p>
-<table>
-<tabular>
-<row>
-<cell></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 4.6:</alert> Show that the origin and P(6,4) are equidistant from the line <em>L</em>: <em>y</em> = – (3/2)<em>x+</em>13/2.</p>
-<p><alert>Solution</alert>: By equidistant we mean equal distance. So, we need to show <em>d</em>(O, <em>L</em>) = <em>d</em>(P, <em>L</em>).</p>
-<p>To use the above formula, we first write the equation of the line <em>L</em> in the general form which is 3<em>x</em> + 2<em>y</em> –13 = 0. Thus, <em>a</em> =3, <em>b</em> =2 and <em>c</em> = –13.</p>
-<p>⇒</p>
-<p>and</p>
-<p>Therefore, <em>d</em>(O, <em>L</em>) = <em>d</em>(P, L) = .</p>
-<p>Thus, O(0,0) and P(6,4) are equidistant from the given line <em>L</em>.</p>
-<p><alert>Exercise 4.1.3</alert></p>
-<table>
-<tabular>
-<row>
-<cell><p>1. Find the distance between the line <em>L</em> given by <em>y</em> = 2<em>x</em> +3 and each of the following points.</p>
-<p>(a) The origin (b) (2, 3) (c) (1, 5) (d) ( −1, −1)</p>
-<p>2. Suppose <em>L</em> is the line through (1, 2) and (3, 2). What is the distance between <em>L</em> and</p>
-<p>(a) The origin (b) (2, −3) (c) (<em>a</em>, 0) (d) (<em>a</em>, <em>b</em>) (e) (<em>a</em>, 2)</p>
-<p>3. Suppose <em>L</em> is the vertical line that crosses the <em><alert>x</alert></em>-axis at (5, 0). Find <em>d</em>(P, <em>L</em>), when P is</p>
-<p>(a) The origin (b) (2, −4) (c) (0, <em>b</em>) (d) (5, <em>b</em>) (e) (<em>a</em>, <em>b</em>)</p>
-<p>4. Suppose <em>L</em> is the line that passes through (0, −3) and (4, 0). Find the distance between <em>L</em> and each of the following points.</p>
-<p>(a) The origin (b) (1, 4) (c) (−1, 0) (d) (8, 3)</p>
-<p>(e) (0, 1) (f) (4, −2) (g) (1, −9/4) (h) (7, −4)</p>
-<p>5. The vertices of ∆ABC are given below. Find the length of the side BC, the height of the altitude from vertex A to BC, and the area of the triangle when its vertices are</p>
-<p>(a) A(3, 4), B(2, 1), and C(6, 1).</p>
-<p>(b) A(3, 4), B(1, 1), and C(5, 2).</p>
-<p>6. Consider the quadrilateral whose vertices are A(1,2), B(2,6), C(6,8) and D(5,4). Then,</p>
-<p>(a) Show that the quadrilateral is a parallelogram.</p>
-<p>(b) How long is the side AD?</p>
-<p>(c) What is the height of the altitude of the quadrilateral from vertex A to the side AD.</p>
-<p>(d) Determine the area of the quadrilateral.</p></cell>
-</row>
-</tabular>
-</table>
-<p>
-</p>
+    <p>In general, however, to find the distance between a point P(<m>x_0</m><m>, y_0</m>) 
+        and an arbitrary line <em><alert>l</alert></em> given by <em>ax</em> + <em>by</em> +<em>c</em> = 0,
+        we have to first get a point Q on <em><alert>l</alert></em> such that PQ⊥ <em><alert>l</alert></em> 
+        and then compute <alert>|</alert>PQ<alert>|</alert>. This yields the formula given in the following Theorem.
+    </p>
+    <theorem xml:id="thm-distance_between_a_point">
+        <statement>
+            <p>
+                The distance between a point P(<m>x_0</m><m>, y_0</m>) and a line <em>L</em>: <em>ax</em> + <em>by</em> +<em>c</em> = 0 is given by
+            </p>
+            <p>
+                <me>
+                    d\left ( P,L \right )=\frac{\left | ax_{0}+by_{0}+c\right |}{\sqrt{a^{2}+b^{2}}}
+                </me>
+                
+            </p>
+        </statement>
+    </theorem>
+    <p>
+        In particular, if we take (<m>x_0</m><m>,y_0</m>)=(0,0) in this formula, we obtain the distance between the origin O(0,0) and a line <em>L</em> : <em>ax</em> + <em>by</em> +<em>c</em> = 0 which is given by
+    </p>
+    <p>
+        <me>
+            d\left ( O,L \right )=\frac{\left | c\right |}{\sqrt{a^{2}+b^{2}}}
+        </me>
+        
+    </p>
+    <example>
+        <statement>
+            <p>
+                Show that the origin and P(6,4) are equidistant from the line <m>L:y=-\frac{3}{2}x+\frac{13}{2}</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                By equidistant we mean equal distance. So, we need to show 
+                <em>d</em>(O, <em>L</em>) = <em>d</em>(P, <em>L</em>).
+            </p>
+            <p>
+                To use the above formula, we first write the equation of the line <em>L</em> in the 
+                general form which is 3<em>x</em> + 2<em>y</em> –13 = 0. Thus, <em>a</em> =3, <em>b</em> =2 and <em>c</em> = –13.
+            </p>
+            <p>
+                <me>
+                    d\left ( O,L \right )=\frac{\left | c\right |}{\sqrt{a^{2}+b^{2}}} = \frac{\left | -13\right |}{\sqrt{9+4}} = \frac{13}{\sqrt{13}}
+                </me>
+                
+            </p>
+            <p>
+                and <me>
+                    d\left ( P,L \right )=\frac{\left | 3\times6+\times4-13\right |}{\sqrt{3^{2}+2^{2}}}  = \frac{13}{\sqrt{13}}
+                </me>
+                
+            </p>
+            <p>
+                Therefore, <em>d</em>(O, <em>L</em>) = <em>d</em>(P, L) = <m>= \frac{13}{\sqrt{13}}</m>
+            </p>
+            <p>
+                Thus, O(0,0) and P(6,4) are equidistant from the given line <em>L</em>.
+            </p>
+        </solution>
+    </example>
+
+    <exercises xml:id="exercises-distance_between_a_point">
+        <exercise>
+            <statement>
+                <p>
+                    Find the distance between the line <em>L</em> given by <em>y</em> = 2<em>x</em> +3 and each of the following points.
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                The origin 
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (2, 3)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (1, 5)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                ( −1, −1)
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Suppose <em>L</em> is the line through (1, 2) and (3, 2). What is the distance between <em>L</em> and
+                </p>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                The origin
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (2, −3)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (<em>a</em>, 0)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (<em>a</em>, <em>b</em>)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (<em>a</em>, 2)
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Suppose <em>L</em> is the vertical line that crosses the <em><alert>x</alert></em>-axis at (5, 0). Find <em>d</em>(P, <em>L</em>), when P is
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                The origin
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (2, −4)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (0, <em>b</em>)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (5, <em>b</em>) 
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                (<em>a</em>, <em>b</em>)
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Suppose <em>L</em> is the line that passes through (0, −3) and (4, 0). Find the distance between <em>L</em> and each of the following points
+                </p>
+                <p>
+                    <ol>
+                        <li><p>The origin</p></li>
+                        <li><p>(1, 4)</p></li>
+                        <li><p>(−1, 0)</p></li>
+                        <li><p>(8, 3)</p></li>
+                        <li><p>(0,1)</p></li>
+                        <li><p>(4, −2)</p></li>
+                        <li><p><m>(1, −\frac{9}{4})</m></p></li>
+                        <li><p>(7, −4)</p></li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    The vertices of ∆ABC are given below. Find the length of the side BC, 
+                    the height of the altitude from vertex A to BC, and the area of the triangle when its vertices are
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                A(3, 4), B(2, 1), and C(6, 1)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                A(3, 4), B(1, 1), and C(5, 2)
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Consider the quadrilateral whose vertices are A(1,2), B(2,6), C(6,8) and D(5,4). Then,
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                Show that the quadrilateral is a parallelogram.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                How long is the side AD?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                What is the height of the altitude of the quadrilateral from vertex A to the side AD.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Determine the area of the quadrilateral.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+
+
+
+
+
+
 </subsection>

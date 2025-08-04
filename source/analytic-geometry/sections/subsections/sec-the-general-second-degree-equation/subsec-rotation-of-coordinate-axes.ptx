@@ -1,80 +1,313 @@
 <subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-rotation-of-coordinate-axes">
-<title>Rotation of Coordinate Axes </title>
-<p>A rotation of the <em>x</em> and <em>y</em> coordinate axes by an angle <em>θ</em> about the origin O(0,0) creates a new <em>x</em>'<em>y</em>'-coordinate system whose <em>x</em>'-axis is the line obtained by rotating the <em>x</em>-axis by angle <em>θ</em> about O and <alert><em>y</em>'</alert>-axis is the line obtained by rotating the <em><alert>y</alert></em>-axis in the same way. This makes a point P to have two sets of coordinates denoted by (<em>x</em>,<em>y</em>) and (<em>x</em>′,<em>y</em>′) relative to the <em>xy</em><alert>-</alert> and <em>x</em>′<em>y</em>′-coordinate axes, respectively.(See Figure 4.30).</p>
-<p>The angle <em>θ</em> considered in the above discussion is called the angle of rotation. Our aim is to find the relationships between the coordinates (<em>x</em>,<em>y</em>) and the coordinates (<em>x</em>′,<em>y</em>′) of the same point P.</p>
-<p>To find this relationships, let P(<em>x,y</em>) be any point in <em>xy</em>-plane, <em>θ</em> be an angle of rotation (i.e., <em>θ</em> is angle between <em>x</em> and <em>x</em>' axes ) and <em>φ</em> be the angle between OP and <alert><em>x</em>'</alert>-axis (See Figure 4.31).</p>
-<table>
-<tabular>
-<row header="yes">
-<cell><p>So, letting <alert>|</alert>OP<alert>|</alert> = <em>r</em> observe that</p>
-<p><image source="/media/png72/imageC2428.png" /> . . . . . . . (1)</p>
-<p>and</p>
-<p><image source="/media/png72/imageC2429.png" /> . . . . (2)</p>
-<p>Then, using the trigonometric identities</p>
-<p><image source="/media/png72/imageC2430.png" /></p>
-<p>and (1), the equations in (2) become</p></cell>
-<cell></cell>
-<cell></cell>
-<cell></cell>
-</row>
+    <title>Rotation of Coordinate Axes </title>
+    <p>A rotation of the <em>x</em> and <em>y</em> coordinate axes by an angle <em>θ</em> about the origin O(0,0) creates a new <em>x</em>'<em>y</em>'-coordinate system whose <em>x</em>'-axis is the line obtained by rotating the <em>x</em>-axis by angle <em>θ</em> about O and <alert><em>y</em>'</alert>-axis is the line obtained by rotating the <em><alert>y</alert></em>-axis in the same way. This makes a point P to have two sets of coordinates denoted by (<em>x</em>,<em>y</em>) and (<em>x</em>′,<em>y</em>′) relative to the <em>xy</em><alert>-</alert> and <em>x</em>′<em>y</em>′-coordinate axes, respectively.(See Figure 4.30).</p>
+    <p>The angle <em>θ</em> considered in the above discussion is called the angle of rotation. Our aim is to find the relationships between the coordinates (<em>x</em>,<em>y</em>) and the coordinates (<em>x</em>′,<em>y</em>′) of the same point P.</p>
+    <p>To find this relationships, let P(<em>x,y</em>) be any point in <em>xy</em>-plane, <em>θ</em> be an angle of rotation (i.e., <em>θ</em> is angle between <em>x</em> and <em>x</em>' axes ) and <em>φ</em> be the angle between OP and <alert><em>x</em>'</alert>-axis (See Figure 4.31).</p>
+    <p>
+        So, letting <alert>|</alert>OP<alert>|</alert> = <em>r</em> observe that
+    </p>
+    <p>
+        <m>x'=rcos\left ( \theta  \right )</m>, <m>y'=rsin\left ( \theta  \right )</m> .....(1)
+    </p>
+    <p>
+        and
+    </p>
+    <p>
+        <m>x'=rcos\left ( \theta +\phi   \right )</m>, <m>y'=rsin\left ( \theta +\phi   \right )</m> .....(2)
+    </p>
+    <p>
+        Then, using the trigonometric identities
+    </p>
+    <p>
+        <m>cos\left ( \theta +\phi   \right )=cos\theta cos\phi -sin\theta sin\phi </m>
+    </p>
+    <p>
+        <m>sin\left ( \theta +\phi   \right )=sin\theta cos\phi -cos\theta sin\phi </m>
+    </p>
+    <p>
+        and (1), the equations in (2) become
+    </p>
+    <p>
+        <m>
+            \begin{align}
+            x &amp; = x'cos\theta -y'sin\theta  \\
+            y &amp; = x'sin\theta -y'cos\theta 
+            \end{align}
+        </m>
+    </p>
+    <p>
+        Moreover, these equations can be solved for <em>x</em>′ and <em>y</em>′ in terms of <em>x</em> and <em>y</em> to obtain
+    </p>
+    <p>
+        <m>
+            \begin{align}
+            x' &amp; = xcos\theta +ysin\theta  \\
+            y &amp; = ysin\theta +ycos\theta 
+            \end{align}
+        </m>
+    </p>
+    <p>
+        The Equations (3) and (4) are called <alert>rotation formulas</alert>. 
+        It follows that if the angle of rotation <em>θ</em> is given, then Equation (3) can be used to 
+        determine the <em>x</em> and <em>y</em> coordinates of a point P if we know its <em>x</em>′ and <em>y</em>′ coordinates.
+        Similarly, Equation (4) can be used to determine the <em>x</em>′ and <em>y</em>′ coordinates of P 
+        if we know its <em>x</em> and <em>y</em> coordinates.
+    </p>
 
-<row>
-<cell></cell>
-<cell><image source="/media/png72/imageC2431.png" /></cell>
-<cell>. . . (3)</cell>
-<cell></cell>
-</row>
-</tabular>
-</table>
-<p>Moreover, these equations can be solved for <em>x</em>′ and <em>y</em>′ in terms of <em>x</em> and <em>y</em> to obtain</p>
-<table>
-<tabular>
-<row>
-<cell><image source="/media/png72/imageC2432.png" /></cell>
-<cell>. . . (4)</cell>
-</row>
-</tabular>
-</table>
-<p>The Equations (3) and (4) are called <alert>rotation formulas</alert>. It follows that if the angle of rotation <em>θ</em> is given, then Equation (3) can be used to determine the <em>x</em> and <em>y</em> coordinates of a point P if we know its <em>x</em>′ and <em>y</em>′ coordinates. Similarly, Equation (4) can be used to determine the <em>x</em>′ and <em>y</em>′ coordinates of P if we know its <em>x</em> and <em>y</em> coordinates.</p>
-<p><alert>Example 4.26</alert>: Suppose the <alert><em>x</em></alert> and <alert><em>y</em></alert> coordinate axes are rotated by π/4 about the origin.</p>
-<p>(a) Find the coordinates of P(1, 2) relative to the new <em><alert>x</alert></em>' and <em><alert>y</alert></em>' axes.</p>
-<p>(b) Find the equation of the curve <em>xy</em> = 1 relative to the new <em>x</em>'<em>y</em>'-coordinate system and sketch its graph.</p>
-<p><alert>Solution</alert>: The given information about P and the curve are relative to the <em>xy</em>-coordinate system and we need to express them in terms of <em>x</em>' and <em>y</em>' coordinates relative to the new <em>x</em>′<em>y</em>′-coordinate system obtained under the rotation of the original axes by <em>θ</em> = π/4 rad about the origin. Thus, we use <image source="/media/png72/imageC2433.png" /> in the relevant rotation formula to obtain the following.</p>
-<p>(a) Since P(1,2) has the coordinates <em>x</em>=1 and <em>y</em>=2, its <em>x</em>' and <em>y</em>' coordinates are, using formula (4)</p>
-<p><image source="/media/png72/imageC2434.png" /></p>
-<p>Therefore, the coordinates of P relative to the new <em><alert>x</alert></em>' and <em><alert>y</alert></em>' axes are <image source="/media/png72/imageC2435.png" />.</p>
-<p>(b) We need to express <em>x</em> and <em>y</em> in the equation <em>xy</em> =1 in terms of <em>x</em>' and <em>y</em>' using the rotation formula (3). So, again since <image source="/media/png72/imageC2433.png" />, we obtain from formula (3):</p>
-<p><image source="/media/png72/imageC2436.png" /></p>
-<p>Therefore, <em>xy</em> =1 ⇒ <image source="/media/png72/imageC2437.png" /></p>
-<p>⇒ <image source="/media/png72/imageC2438.png" /></p>
-<p>⇒ <image source="/media/png72/imageC2439.png" /></p>
-<p>Note that this is an equation of a hyperbola with center at origin vertices <image source="/media/png72/imageC2440.png" /> and <image source="/media/png72/imageC2441.png" /> in the <em>x</em>'<em>y</em>'-coordinate system with principal axis on <em><alert>x</alert></em>'-axis. Since the <alert><em>x</em></alert> and <alert>y</alert>- axes were rotated though an angle of π/4 to obtain <em><alert>x</alert></em>' and <em><alert>y</alert></em>'-axes, the hyperbola can be sketched as in Figure 4.32. (You may use Formula (3) to show that the vertices <image source="/media/png72/imageC2440.png" /> and <image source="/media/png72/imageC2441.png" /> are <image source="/media/png72/imageC2442.png" /> and <image source="/media/png72/imageC2443.png" />, respectively, relative to the <em><alert>x</alert></em> and <em><alert>y</alert></em>-axes).</p>
-<p><alert>Example 4.27</alert>: Find an equation of the ellipse whose center is the origin, vertices are (−4,−3) and (4, 3), and length of minor axis is 6.</p>
-<p><alert>Solution</alert>: The position of the ellipse is as shown in Figure 4.33.</p>
-<p>To apply the standard equation of ellipse we use the <em>x</em>'<em>y</em>'-coordinate system such that the <alert><em>x</em>'</alert>-axis coincide with the major axis of the ellipse. Therefore, the equation of the ellipse relative to the <em>x</em>'<em>y</em>' system is</p>
-<p><image source="/media/png72/imageC2444.png" />.</p>
-<p>Moreover, from the given information, <em>a</em><sup>2</sup> = |OV|<sup>2</sup> = 3<sup>2</sup>+4<sup>2</sup> =25; and</p>
-<p>length of minor axis = 2<em>b</em> = 6 ⇒ <em>b</em>= 3. So, <em>b</em><sup>2</sup>= 9 .</p>
-<p>Hence, the equation of the ellipse relative to the <em>x</em>'<em>y</em>' -coordinate system is</p>
-<p><image source="/media/png72/imageC2445.png" /> or <image source="/media/png72/imageC2446.png" /> . . . . . . . . . (1)</p>
-<p>Now we use the rotation formula to express the equation relative to our <em>xy</em>-coordinate system.</p>
-<p>So, let <em>θ</em> the angle between <em><alert>x</alert></em>-axis and <em><alert>x</alert></em>'-axis. Then, observe that</p>
-<p>cos<em>θ</em> = 4/5 and sin<em>θ</em> = 3/5.</p>
-<p>Thus, using rotation formula (4) we get:</p>
-<p><image source="/media/png72/imageC2447.png" /></p>
-<p>Now we substitute these for <em>x</em>′ and <em>y</em>′ in (1) to obtain</p>
-<p><image source="/media/png72/imageC2448.png" /></p>
-<p>And simplifying this we get</p>
-<p>369<em>x</em><sup>2</sup> − 384<em>xy</em> + 481<em>y</em><sup>2</sup> − 5625 = 0</p>
-<p>which is the equation of the ellipse in the <em>xy</em>- coordinate system.</p>
-<p><alert>Exercise 4.6.1</alert></p>
-<table>
-<tabular>
-<row>
-<cell><p>1. Suppose the <em><alert>xy</alert></em>-coordinate axes are rotated 60° counterclockwise about the origin to obtain the new <em><alert>x</alert></em>'<em><alert>y</alert></em>'-coordinate system.</p>
-<p>(a) If each of the following are coordinates of points relative to the <em>xy</em>-system, find the coordinates of the points relative to the <alert><em>x</em>′<em>y</em>′</alert>- system.</p>
-<p>(i) (5, 0) (ii) (1, 4) (iii) (0, 1) (iv) (−1/2, 5/2) (v) (−2, −1)</p>
-<p>(b) Find the equation of the following lines and conics relative to the new <alert><em>x</em>′<em>y</em>′</alert>- system.</p>
+    <example>
+        <statement>
+            <p>
+                Suppose the <alert><em>x</em></alert> and <alert><em>y</em></alert> coordinate axes are rotated by π/4 about the origin.
+            </p>
+            <p>
+                <ol marker="(a)">
+                    <li>
+                        <p>
+                            Find the coordinates of P(1, 2) relative to the new <em><alert>x</alert></em>' and <em><alert>y</alert></em>' axes.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Find the equation of the curve <em>xy</em> = 1 relative to the new <em>x</em>'<em>y</em>'-coordinate system and sketch its graph
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        <solution>
+            <p>
+                The given information about P and the curve are relative to the <em>xy</em>-coordinate system 
+                and we need to express them in terms of <em>x</em>' and <em>y</em>' coordinates relative to the new <em>x</em>′<em>y</em>′-coordinate 
+                system obtained under the rotation of the original axes by <em>θ</em> = π/4 rad about the origin. 
+                Thus, we use <m>cos\frac{\pi}{4}=sin\frac{\pi}{4}= \frac{\sqrt{2}}{2}</m> in the relevant rotation formula to obtain the following.
+            </p>
+            <p>
+                <ol marker="(a)">
+                    <li>
+                        <p>
+                            Since P(1,2) has the coordinates <em>x</em>=1 and <em>y</em>=2, its <em>x</em>' and <em>y</em>' coordinates are,
+                            using formula 
+                        </p>
+                        <p>
+                            <me>
+                                x'=\frac{\sqrt{2}}{2}\left ( 1 \right )+\frac{\sqrt{2}}{2}\left ( 2 \right )=\frac{3\sqrt{2}}{2}
+                            </me>
+                            
+                        </p>
+                        <p>
+                            <me>
+                                y'=\frac{\sqrt{2}}{2}\left ( 1 \right )+\frac{\sqrt{2}}{2}\left ( 2 \right )=\frac{\sqrt{2}}{2}
+                            </me>
+                            
+                        </p>
+                        <p>
+                            Therefore, the coordinates of P relative to the new <em><alert>x</alert></em>' and <em><alert>y</alert></em>' axes are
+                            <m>(\frac{3\sqrt{2}}{2},\frac{\sqrt{2}}{2})</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            We need to express <em>x</em> and <em>y</em> in the equation <em>xy</em> =1 in terms of <em>x</em>' and <em>y</em>'
+                            using the rotation formula (3). So, again since <m>cos\left ( \frac{\pi}{4} \right )=sin\left ( \frac{\pi}{4} \right )=\frac{\sqrt{2}}{2}</m>
+                            ,we obtain the formulam(3)
+                        </p>
+                        <p>
+                            <me>
+                                x=\frac{\sqrt{2}}{2}x'-\frac{\sqrt{2}}{2}y'
+                            </me>
+                            
+                        </p>
+                        <p>
+                            and <me>
+                                y=\frac{\sqrt{2}}{2}x'+\frac{\sqrt{2}}{2}y'
+                            </me>
+                            
+                        </p>
+                        <p>
+                            Therefore, xy=1
+                        </p>
+                        <p>
+                            <me>
+                                \left(\frac{\sqrt{2}}{2}x'-\frac{\sqrt{2}}{2}y'\right )\left ( \frac{\sqrt{2}}{2}x'+\frac{\sqrt{2}}{2}y' \right )=1
+                            </me>
+                            
+                        </p>
+                        <p>
+                            <me>
+                                \left(\frac{\sqrt{2}}{2}x'\right )^{2}-\left ( \frac{\sqrt{2}}{2}y' \right )^{2}=1
+                            </me>
+                            
+                        </p>
+                        <p>
+                            <me>
+                                \frac{x'^{2}}{2}-\frac{y'^{2}}{2}=1
+                            </me>
+                            
+                        </p>
+                        <p>
+                            Note that this is an equation of a hyperbola with center at origin vertices
+                            <m>\left ( -\sqrt{2} ,0\right )</m> and <m>\left ( \sqrt{2} ,0\right )</m>
+                            in the <em>x</em>'<em>y</em>'-coordinate system with principal axis on <em><alert>x</alert></em>'-axis.
+                            Since the <alert><em>x</em></alert> and <alert>y</alert>- axes were rotated though an 
+                            angle of π/4 to obtain <em><alert>x</alert></em>' and <em><alert>y</alert></em>'-axes, 
+                            the hyperbola can be sketched as in Figure 4.32. (You may use Formula (3) to show that the vertices
+                            <m>\left ( -\sqrt{2} ,0\right )</m> and <m>\left ( \sqrt{2} ,0\right )</m> are (-1,1) and (1,1),
+                            respectively, relative to the <em><alert>x</alert></em> and <em><alert>y</alert></em>-axes).
+                        </p>
+                    </li>
+                </ol>
+            </p>
+
+        </solution>
+    </example>
+    <example>
+        <statement>
+            <p>
+                Find an equation of the ellipse whose center is the origin,
+                vertices are (−4,−3) and (4, 3), and length of minor axis is 6.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                The position of the ellipse is as shown in Figure 4.33.
+            </p>
+            <p>
+                
+            </p>
+            <p>
+                To apply the standard equation of ellipse we use the <em>x</em>'<em>y</em>'-coordinate system 
+                such that the <alert><em>x</em>'</alert>-axis coincide with the major axis of the ellipse. 
+                Therefore, the equation of the ellipse relative to the <em>x</em>'<em>y</em>' system is
+            </p>
+            <p>
+                <m>\frac{x'^{2}}{a^{2}}=\frac{y'^{2}}{b'^{2}}=1</m>
+            </p>
+            <p>
+                Moreover, from the given information, <m>a_2</m> = <m>|OV|_2</m> =<m> 3_2</m>+ <m>4_2</m> =25; and
+            </p>
+            <p>
+                length of minor axis = 2<em>b</em> = 6 ⇒ <em>b</em>= 3. So, <m>b_2</m>= 9 .
+            </p>
+            <p>
+                Hence, the equation of the ellipse relative to the <em>x</em>'<em>y</em>' -coordinate system is
+            </p>
+            <p>
+                <me>
+                    \frac{x'^{2}}{25}=\frac{y'^{2}}{9}=1 \text{or} 9x'^{2}+25y'^{2}=225 ......(1)
+                </me>
+                
+            </p>
+            <p>
+                Now we use the rotation formula to express the equation relative to our <em>xy</em>-coordinate system.
+            </p>
+            <p>
+                So, let <em>θ</em> the angle between <em><alert>x</alert></em>-axis and <em><alert>x</alert></em>'-axis. Then, observe that
+            </p>
+            <p>
+                <me>
+                    cos\theta=\frac{4}{5} \text{and} sin\theta=\frac{3}{5}
+                </me>
+                
+            </p>
+            <p>
+                Thus, using rotation formula (4) we get:
+            </p>
+            <p>
+                <me>
+                    x'=xcos\theta+ysin\theta = \frac{4}{5}x + \frac{3}{5}y
+                </me>
+                <me>
+                    y'=xsin\theta+ycos\theta = \frac{-3}{5}x + \frac{4}{5}y
+                </me>   
+            </p>
+            <p>
+                Now we substitute these for <em>x</em>′ and <em>y</em>′ in (1) to obtain
+            </p>
+            <p>
+                <me>
+                    9\left ( \frac{4}{5}x+\frac{3}{5}y \right )^{2}+25\left ( \frac{-3}{5}x+\frac{4}{5}y \right )^{2} =225
+                </me>
+                
+            </p>
+            <p>
+                And simplifying this we get
+            </p>
+            <p>
+                <me>
+                    369x^2 - 384xy + 481y^2 - 5625 = 0
+                </me>
+                
+            </p>
+            <p>
+                which is the equation of the ellipse in the <em>xy</em>- coordinate system.
+            </p>
+        </solution>
+
+    </example>
+
+
+    <exercises xml:id="exercises-rotation-of-coordinate-axes">
+        <exercise>
+            <statement>
+                <p>
+                    Suppose the <em><alert>xy</alert></em>-coordinate axes are rotated 60° counterclockwise about the origin to obtain the new <em><alert>x</alert></em>'<em><alert>y</alert></em>'-coordinate system.
+                </p>
+                <p>
+                    <ol marker="(a)">
+                        <li>
+                            <p>
+                                If each of the following are coordinates of points relative to the <em>xy</em>-system, find the coordinates of the points relative to the <alert><em>x</em>′<em>y</em>′</alert>- system.
+                                <ol marker="(i)">
+                                    <li>
+                                        <p>
+                                            (5, 0)
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            (1, 4)
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            (0, 1)
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            (−1/2, 5/2)
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            (−2, −1)
+                                        </p>
+                                    </li>
+                                </ol>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Find the equation of the following lines and conics relative to the new <alert><em>x</em>′<em>y</em>′</alert>- system.
+                            </p>
+                            <p>
+                                <ol marker="(1)">
+                                    <li>
+                                        <p>
+                                            
+                                        </p>
+                                    </li>
+                                </ol>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+
+<!-- 
+<p>(b) </p>
 <p>(i) <em>x</em> =5 (iv) (<em>x</em> −1)<sup>2</sup> + <em>y</em><sup>2</sup> = 4 (vii) <em>x</em><sup>2</sup> + 4<em>y</em><sup>2</sup> − 4<em>x</em> = 0</p>
 <p>(ii) <em>x</em> −2<em>y</em> = 1 (v) <em>x</em><sup>2</sup> − 4<em>y</em> = 1 (viii) <em>x</em><sup>2</sup> − 4<em>y</em><sup>2</sup> = 1</p>
 <p>(iii) <em>x</em> <sup>2</sup> + <em>y</em><sup>2</sup> = 1 (vi) 4<em>x</em><sup>2</sup> + (<em>y−</em>2)<sup>2</sup> = 4 (ix) −<em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> −2<em>y</em> = 0</p>
@@ -82,6 +315,6 @@
 <p>(a) (0, 2) (b) (−2, 4) (c) (1, −3) (d) <image source="/media/png72/imageC2449.png" /></p></cell>
 </row>
 </tabular>
-</table>
+</table> -->
 </subsection>
 
