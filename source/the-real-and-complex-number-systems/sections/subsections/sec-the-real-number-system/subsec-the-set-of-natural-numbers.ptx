@@ -1,194 +1,554 @@
-<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-the-set-of-natural-numbers" class="anchor"><title>The set of natural numbers</title>
+<subsection xml:id="subsec-the-set-of-natural-numbers">
+    <title>The set of natural numbers</title>
+    <introduction>
+        <p>
+            The history of numbers indicated that the first set of numbers used by the ancient human beings 
+            for counting purpose was the set of natural (counting) numbers.
+        </p>
+        <definition xml:id="def-natural-numbers">
+            <statement>
+                <p>
+                    The set of natural numbers is denoted by <m>\mathbf{N}</m> and is described 
+                    as <m>\mathbf{N} = \left\{ \ 1\ ,\ 2,\ 3,\ \ldots\  \right\}</m>
+                </p>
+            </statement>
+        </definition>
+    </introduction>
+    <subsubsection xml:id="subsubsec-operations-on-the-set-of-natural-numbers">
+        <title>Operations on the set of natural numbers</title>
+            <p>
+                <m>\textbf{i) Addition } (+)</m>
+            </p>
+            <p> If two natural numbers <em>a</em> &amp; <em>b</em> are added using the operation
+                “+”, then the sum <em>a</em>+<em>b</em> is also a natural number. 
+                If the sum of the two natural numbers <em>a</em> &amp; <em>b</em> is denoted 
+                by <em>c</em>, then we can write the operation as: <em>c</em> = <em>a</em>+<em>b</em>, 
+                where <em>c</em> is called the sum and <em>a</em> &amp; <em>b</em> are called terms.
+            </p>
+            <p>
+                Example: 3+8 = 11, here 11 is the sum whereas 3 &amp; 8 are terms.
+            </p>
+            <p>
+                <m>\textbf{ii) Multiplication }(\times)</m>
+            </p>
+            <p>
+                If two natural numbers <em>a</em> &amp; <em>b</em> are multiplied using the operation “<m></m>”, 
+                then the product <em>a</em><m></m><em>b</em> is also a natural number. 
+                If the product of the two natural numbers <em>a</em> &amp; <em>b</em> is denoted by <em>c</em>, 
+                then we can write the operation as: <em>c</em> = <em>a</em><m></m><em>b</em>, where <em>c</em> is called 
+                the product and <em>a</em> &amp; <em>b</em> are called factors.
+            </p>
+            <example>
+                <statement>
+                    <p>
+                        <m> 3+4 = 12</m>, here <m>12</m> is the product whereas <m>3</m> &amp; <m>4</m> are factors.
+                    </p>
+                </statement>
+            </example>
+            <p>
+                <m>\textbf{Properties of addition and multiplication on the set of natural numbers}</m>
+            </p>
+            <p>
+                i. For any two natural numbers <em>a</em> &amp; <em>b</em>, the sum <em>a</em>+<em>b</em> is also a natural number. 
+                For instance in the above example, <m>3</m> and <m>8</m> are natural numbers, their sum <m>11</m> is also a natural number.
+                In general, we say that the set of natural numbers is closed under addition.
+            </p>
+            <p>
+                ii. For any two natural numbers <em>a</em> &amp; <em>b</em>, <em>a</em> + <em>b</em> = <em>b</em> + <em>a</em>.
+            </p>
+            <example>
+                <statement>
+                    <p>
+                        <m>3+8 = 8+3 = 11</m>. In general, we say that addition is commutative on the set of natural numbers.
+                    </p>
+                </statement>
+            </example>
+            <p>
+                iii. For any three natural numbers <em>a</em>, <em>b</em> &amp; <em>c</em>, (<em>a</em>+<em>b</em>)+<em>c</em> = <em>a</em> +(<em>b</em>+<em>c</em>).
+            </p>
+            <example>
+                <statement>
+                    <p>
+                        (3+8)+6 = 3+(8+6) = 17. In general, we say that addition is associative on the set of natural numbers.
+                    </p>
+                </statement>
+            </example>
+            <p>
+                iv. For any two natural numbers <em>a</em> &amp; <em>b</em>, the product <em>a</em><m>\times</m><em>b</em> is also a natural number. 
+                For instance in the above example, <m>3</m> and <m>4</m> are natural numbers, their product <m>12</m> is also a natural number. 
+                In general, we say that the set of natural numbers is closed under multiplication.
+            </p>
+            <p>
+                v. For any two natural numbers <em>a</em> &amp; <em>b</em>, <em>a</em><m>\times</m><em>b</em> = <em>b</em><m>\times</m><em>a</em>.
+            </p>
+            <example>
+                <statement>
+                    <p>
+                        3<m>\times</m>4 = 4<m>\times</m>3 = 12. In general, we say that multiplication is commutative on the set of natural numbers.
+                    </p>
+                </statement>
+            </example>
+            <p>
+                vi. For any three natural numbers <em>a</em>, <em>b</em> &amp; <em>c</em>, (<em>a</em><m>\times</m><em>b</em>) <m>\times</m><em>c</em> = <em>a</em><m>\times</m> (<em>b</em><m>\times</m><em>c</em>).
+            </p>
+            <example>
+                <statement>
+                    <p>
+                        (2<m>\times</m>4) <m>\times</m>5 = 2<m>\times</m> (4<m>\times</m>5) = 40. In general, we say that multiplication is associative on the set of natural numbers.
+                    </p>
+                </statement>
+            </example>
+            <p>
+                vii. For any natural number <em>a</em>, it holds that <em>a</em><m>\times</m>1 = 1<m>\times</m><em>a</em> = <em>a</em>.
+            </p>
+            <example>
+                <statement>
+                    <p>
+                        6<m>\times</m>1 = 1<m>\times</m>6 = 6. In general, we say that multiplication has an identity element on the set of natural numbers and <m>1</m> is the identity element.
+                    </p>
+                </statement>
+            </example>
+            <p>
+                For any three natural numbers <em>a</em>, <em>b</em> &amp; <em>c</em>, <em>a</em><m>\times</m><alert>(</alert><em>b</em>+<em>c</em>) = (<em>a</em><m>\times</m><em>b</em>)+(<em>a</em><m>\times</m><em>c</em>).
+            </p>
+            <example>
+                <statement>
+                    <p>
+                        3<m>\times</m>(5+7) = (3<m>\times</m>5)+ (3<m>\times</m>7) <m>=</m> 36. 
+                        In general, we say that multiplication is distributive over addition on the set of natural numbers.
+                    </p>
+                </statement>
+            </example>
+            <note>
+                <p>
+                    Consider two numbers <em>a</em> and <em>b</em>, we say <em>a</em> is greater than <em>b</em> denoted by <em>a</em> &gt; <em>b</em> if <em>a</em> – <em>b</em> is positive.
+                </p>
+            </note>
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-oder-relation-N">
+        <title>Order Relation in <m>\mathbf{N}</m> </title>
+        <p>
+            <ol marker="i) ">
+                <li>
+                    <p>
+                        Transitive property:
+                    </p>
+                    <p>
+                        For any three natural numbers <em>a</em>, <em>b</em> &amp; <em>c</em>, <m>a &gt; b\  \land \ b &gt; c\  \Rightarrow a &gt; c</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Addition property:
+                    </p>
+                    <p>
+                        For any three natural numbers <em>a</em>, <em>b</em> &amp; <em>c</em>, <m>a &gt; b\  \Rightarrow \ a + c &gt; b + c</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Multiplication property:
+                    </p>
+                    <p>
+                        For any three natural numbers <em>a</em>, <em>b</em> and <em>c</em>, <m>a &gt; b\  \Rightarrow \ \text{ac} &gt; \text{bc}</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Law of trichotomy
+                    </p>
+                    <p>
+                        For any two natural numbers <em>a</em> &amp; <em>b</em> we have <m>a &gt; b\ \text{or}\ a &lt; b\ \text{or}\ a = b</m>.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-factors-of-a-number">
+        <title>Factors of a number</title>
+        <definition xml:id="def-factors-of-a-number">
+            <statement>
+                <p>
+                    If <m>a,\ b,\ c\  \in \mathbf{N}</m> such that <m>\text{ab} = c</m>, then <em>a</em> &amp; <em>b</em> are factors (divisors) of <em>c</em> and <em>c</em> is called product (multiple) of <em>a</em> &amp; <em>b</em>.
+                </p>
+            </statement>
+        </definition>
+        <example>
+            <statement>
+                <p>
+                    Find the factors of <m>15</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Factors of 15 are 1, 3, 5, 15. <m>\text{Or}\ \text{we}\ \text{can}\ \text{write}\ \text{it}\ \text{as}:\ F_{\text{15}} = \left\{ \ 1,\ 3,\ 5,\ \text{15}\  \right\}</m>
+                </p>
+            </solution>
+        </example>
+        <definition xml:id="def-a">
+            <statement>
+                <p>
+                    A number <m>a \in \mathbf{N}</m>is said to be
+                    <ol marker="i. ">
+                        <li>
+                            <p>
+                                <alert>Even</alert> if it is divisible by <m>2</m>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <alert>Odd</alert> if it is not divisible by <m>2</m>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <alert>Prime</alert> if it has only two factors (<m>1</m> and itself).
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <alert>Composite</alert>: if it has three or more factors.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </definition>
+        <example>
+            <statement>
+                <p>
+                    <m>2, 4, 6, . . .</m> are even numbers
+                </p>
+            </statement>
+        </example>
+        <example>
+            <statement>
+                <p>
+                    <m>1, 3, 5, . . .</m> are odd numbers
+                </p>
+            </statement>
+        </example>
+        <example>
+            <statement>
+                <p>
+                    <m>2, 3, 5, . . .</m> are prime numbers
+                </p>
+            </statement>
+        </example>
+        <example>
+            <statement>
+                <p>
+                   <m> 4, 6, 8, 9, . . .</m> are composite numbers
+                </p>
+            </statement>
+        </example>
+        <remark>
+            <p>
+                <m>1</m> is neither prime nor composite.
+            </p>
+        </remark>
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-prime-factorization">
+        <title>Prime Factorization</title>
+        <definition xml:id="def-prime-factorization">
+            <statement>
+                <p>
+                    Prime factorization of a composite number is the product of all its prime factors.
+                </p>
+            </statement>
+        </definition>
+        <example>
+            <statement>
+                <p>
+                    <ol marker="a)" cols="3">
+                        <li>
+                            <p>
+                                <m>6 = 2 \times 3</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\text{30} = 2 \times 3 \times 5</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\text{12} = 2 \times 2 \times 3 = 2^{2} \times 3</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>8 = 2 \times 2 \times 2 = 2^{3}</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>\text{180} = 2^{2} \times 3^{2} \times 5</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </example>
+        <tabular top="medium" bottom="medium" right="medium" left="medium">
+            <col width="100%"></col>
+            <row header="yes">
+                <cell><p>Fundamental Theorem of Arithmetic:</p></cell>
+            </row>
+            <row>
+                <cell>
+                    <p>
+                        Every composite number can be expressed as a product of its prime factors.
+                        This factorization is unique except the order of the factors.
+                    </p>
+                </cell>
+            </row>
+        </tabular>
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-greatest-common-factor">
+        <title>Greatest Common Factor (GCF)</title>
+        <definition xml:id="def-gcd">
+            <statement>
+                <p>
+                    The greatest common factor (GCF) of two numbers <em>a</em> &amp; <em>b</em> is denoted by GCF (<em>a</em>, <em>b</em>) 
+                    and is the greatest number which is a factor of each of the given number.
+                </p>
+            </statement>
+        </definition>
+        <note>
+            <p>
+                Note: If the GCF of two numbers is 1, then the numbers are called relatively prime.
+            </p>
+        </note>
+        <example>
+            <statement>
+                <p>
+                    Consider the two numbers <m>24</m> and <m>60</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Now, <m>F_24 = {1,2,3,4,6,8,12,24}</m> and <m>F_60 = {1,2,3,4,6,10,15,20,30,60}</m>
+                </p>
+                <p>
+                    Next, <m>F_24 \cap F_60 = {1,2,3,4,6,12}</m> from which <m>12</m> is greatest
+                </p>
+                <p>Therefore, GCF<m>(24, 60) = 12</m>.</p>
+                <p>
+                    This method of finding the GCF of two or more numbers is usually lengthy and time consuming. 
+                    Hence an alternative method (Prime factorization method) is provided as below:
+                </p>
+                <p>Step 1: Find the prime factorization of each of the natural numbers</p>
+                <p>
+                    Step 2: Form the GCF of the given numbers as the product of every factor that 
+                    appears in each of the prime factorization but take the least number of times it appears.
+                </p>
+            </solution>
+        </example>
+        <example>
+            <statement>
+                <p>
+                    Consider the two numbers <m>24</m> and <m>60</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Step 1: 
+                    <md>
+                        <mrow>24  \amp = 2^3 \times 3 </mrow>
+                        <mrow>80 \amp = 2^2 \times 3 \times 5 </mrow>
+                    </md>
+                </p>
+                <p>
+                    Step 2: The factors that appear in both cases are 2 and 3, but take the numbers with the least number of times.
+                </p>
+            </solution>
+        </example>
+        <example>
+            <statement>
+                <p>
+                    Consider the three numbers <m>20, 80</m> and <m>450</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Step 1: 
+                    <md>
+                        <mrow>20  \amp = 2^2 \times 5 </mrow>
+                        <mrow>80 \amp = 2^4 \times 5 </mrow>
+                        <mrow>450 \amp= 2 \times 3^2 \times 5^2 </mrow>
+                    </md>
+                </p>
+                <p>
+                    Step 2: The factors that appear in all cases are 2 and 5, but take the numbers with the least number of times.
+                </p>
+                <p>
+                    <m>\therefore GCF(20,80,450) = 2 \times 5 = 10</m>
+                </p>
+            </solution>
+        </example>
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-lcm">
+        <title>Least Common Multiple (LCM)</title>
+        <definition xml:id="def-lcm">
+            <statement>
+                <p>
+                    The least common multiple (LCM) of two numbers <em>a</em> 
+                    &amp; <em>b</em> is denoted by LCM (<em>a</em>, <em>b</em>) 
+                    and is the least number which is a multiple of each of the 
+                    given number.
+                </p>
+            </statement>
+        </definition>
+        <example>
+            <statement>
+                <p>
+                    Consider the two numbers 18 and 24.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Now, <m>M_18 = {18,36,54,72,90,108,126,144, \,...}</m> and <m>M_24 = {24,48,72,96,120,144,\, ...}</m>
+                </p>
+                <p>
+                    Next, <m>M_18 \cap M_24 = {72,144,\, ...}</m> from which <m>72</m> is <alert>least</alert>
+                </p>
+                <p>Therefore, LCM (18, 24) = 72.</p>
+                <p>This method of finding the LCM of two or more numbers is usually lengthy and time consuming. Hence an alternative method (Prime factorization method) is provided as below:</p>
+                <p>Step 1: Find the prime factorization of each of the natural numbers</p>
+                <p>Step 2: Form the LCM of the given numbers as the product of every factor that appears in any of the prime factorization but take the highest number of times it appears.</p>
+            </solution>
+        </example>
+        <example>
+            <statement>
+                <p>
+                    Consider the two numbers <m>18</m> and <m>24</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Step 1: 
+                    <md>
+                        <mrow>18  \amp = 2 \times 3^2 </mrow>
+                        <mrow>24 \amp = 2^3 \times 3 </mrow>
+                    </md>
+                </p>
+                <p>Step 2: The factors that appear in any case are 2 and 3, but take the numbers with the highest number of times.</p>
 
-<p>The history of numbers indicated that the first set of numbers used by the ancient human beings for counting purpose was the set of natural (counting) numbers.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 2.1.1</alert></p>
-<p>The set of natural numbers is denoted by <alert>N</alert> and is described as <alert>N</alert> =<m>\left\{ \ 1\ ,\ 2,\ 3,\ \ldots\  \right\}</m></p></cell>
-</row>
-</tabular>
-</table>
-<h4 id="operations-on-the-set-of-natural-numbers">Operations on the set of natural numbers</h4>
-<p><alert>i) Addition (+)</alert></p>
-<p>If two natural numbers <em>a</em> &amp; <em>b</em> are added using the operation “+”, then the sum <em>a</em>+<em>b</em> is also a natural number. If the sum of the two natural numbers <em>a</em> &amp; <em>b</em> is denoted by <em>c</em>, then we can write the operation as: <em>c</em> = <em>a</em>+<em>b</em>, where <em>c</em> is called the sum and <em>a</em> &amp; <em>b</em> are called terms.</p>
-<p>Example: 3+8 = 11, here 11 is the sum whereas 3 &amp; 8 are terms.</p>
-<p><alert>ii) Multiplication (</alert><m></m><alert>)</alert></p>
-<p>If two natural numbers <em>a</em> &amp; <em>b</em> are multiplied using the operation “<m></m>”, then the product <em>a</em><m></m><em>b</em> is also a natural number. If the product of the two natural numbers <em>a</em> &amp; <em>b</em> is denoted by <em>c</em>, then we can write the operation as: <em>c</em> = <em>a</em><m></m><em>b</em>, where <em>c</em> is called the product and <em>a</em> &amp; <em>b</em> are called factors.</p>
-<p><alert>Example 2.1.3</alert>: 3<m></m>4 = 12, here 12 is the product whereas 3 &amp; 4 are factors.</p>
-<p><alert>Properties of addition and multiplication on the set of natural numbers</alert></p>
-<p>i. For any two natural numbers <em>a</em> &amp; <em>b</em>, the sum <em>a</em>+<em>b</em> is also a natural number. For instance in the</p>
-<p>above example, 3 and 8 are natural numbers, their sum 11 is also a natural number. In general, we</p>
-<p>say that the set of natural numbers is closed under addition.</p>
-<p>ii. For any two natural numbers <em>a</em> &amp; <em>b</em>, <em>a</em> + <em>b</em> = <em>b</em> + <em>a</em>.</p>
-<p><alert>Example 2.1.1</alert>: 3+8 = 8+3 = 11. In general, we say that addition is commutative on the set of natural numbers.</p>
-<p>iii. For any three natural numbers <em>a</em>, <em>b</em> &amp; <em>c</em>, (<em>a</em>+<em>b</em>)+<em>c</em> = <em>a</em> +(<em>b</em>+<em>c</em>).</p>
-<p><alert>Example 2.1.2</alert>: (3+8)+6 = 3+(8+6) = 17. In general, we say that addition is associative on the set of natural numbers.</p>
-<p>iv. For any two natural numbers <em>a</em> &amp; <em>b</em>, the product <em>a</em><m></m><em>b</em> is also a natural number. For instance in the above example, 3 and 4 are natural numbers, their product 12 is also a natural number. In general, we say that the set of natural numbers is closed under multiplication.</p>
-<p>v. For any two natural numbers <em>a</em> &amp; <em>b</em>, <em>a</em><m></m><em>b</em> = <em>b</em><m></m><em>a</em>.</p>
-<p><alert>Example 2.1.4</alert>: 3<m></m>4 = 4<m></m>3 = 12. In general, we say that multiplication is commutative on the set of natural numbers.</p>
-<p>vi. For any three natural numbers <em>a</em>, <em>b</em> &amp; <em>c</em>, (<em>a</em><m></m><em>b</em>) <m></m><em>c</em> = <em>a</em><m></m> (<em>b</em><m></m><em>c</em>).</p>
-<p><alert>Example 2.1.5</alert>: (2<m></m>4) <m></m>5 = 2<m></m> (4<m></m>5) = 40. In general, we say that multiplication is associative on the set of natural numbers.</p>
-<p>vi. For any natural number <em>a</em>, it holds that <em>a</em><m></m>1 = 1<m></m><em>a</em> = <em>a</em>.</p>
-<p><alert>Example 2.1.6</alert>: 6<m></m>1 = 1<m></m>6 = 6. In general, we say that multiplication has an identity element on the set of natural numbers and 1 is the identity element.</p>
-<p>vii. For any three natural numbers <em>a</em>, <em>b</em> &amp; <em>c</em>, <em>a</em><m></m><alert>(</alert><em>b</em><alert>+</alert><em>c</em>) = (<em>a</em><m></m><em>b</em>)+(<em>a</em><m></m><em>c</em>).</p>
-<p><alert>Example 2.1.7</alert>: 3<m></m>(5+7) = (3<m></m>5)+ (3<m></m>7) = 36. In general, we say that multiplication is distributive over addition on the set of natural numbers.</p>
-<table>
-<tabular>
-<row>
-<cell>Note: Consider two numbers <em>a</em> and <em>b</em>, we say <em>a</em> is greater than <em>b</em> denoted by <em>a</em><m></m>b if <em>a</em> – <em>b</em> is positive.</cell>
-</row>
-</tabular>
-</table>
-<ol type="1">
-<li><p><alert>Order Relation in N</alert></p></li>
-</ol>
-<p>i) <alert>Transitive property</alert>:</p>
-<p>For any three natural numbers <em>a</em>, <em>b</em> &amp; <em>c</em>, <m>a &gt; b\  \land \ b &gt; c\  \Rightarrow a &gt; c</m></p>
-<p>ii) <alert>Addition property:</alert></p>
-<p>For any three natural numbers <em>a</em>, <em>b</em> &amp; <em>c</em>, <m>a &gt; b\  \Rightarrow \ a + c &gt; b + c</m></p>
-<p>iii) <alert>Multiplication property</alert>:</p>
-<p>For any three natural numbers <em>a</em>, <em>b</em> and <em>c</em>, <m>a &gt; b\  \Rightarrow \ \text{ac} &gt; \text{bc}</m></p>
-<p>iv) <alert>Law of trichotomy</alert></p>
-<p>For any two natural numbers <em>a</em> &amp; <em>b</em> we have <m>a &gt; b\ \text{or}\ a &lt; b\ \text{or}\ a = b</m>.</p>
-<ol start="2" type="1">
-<li><p><alert>Factors of a number</alert></p></li>
-</ol>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 2.2</alert></p>
-<p>If <m>a,\ b,\ c\  \in N</m> such that <m>\text{ab} = c</m>, then <em>a</em> &amp; <em>b</em> are factors (divisors) of <em>c</em> and <em>c</em> is called product (multiple) of <em>a</em> &amp; <em>b</em>.</p></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 2.8</alert>: Find the factors of 15.</p>
-<p>Solution: Factors of 15 are 1, 3, 5, 15. <m>\text{Or}\ \text{we}\ \text{can}\ \text{write}\ \text{it}\ \text{as}:\ F_{\text{15}} = \left\{ \ 1,\ 3,\ 5,\ \text{15}\  \right\}</m></p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 2.3</alert> A number <m>a \in N</m>is said to be</p>
-<p>i. <alert>Even</alert> if it is divisible by 2.</p>
-<p>ii. <alert>Odd</alert> if it is not divisible by 2.</p>
-<p>iii. <alert>Prime</alert> if it has only two factors (1 and itself).</p>
-<p>iv. <alert>Composite</alert>: if it has three or more factors.</p></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 2.9</alert>: 2, 4, 6, . . . are even numbers</p>
-<p><alert>Example 2.10</alert>: 1, 3, 5, . . . are odd numbers</p>
-<p><alert>Example 2.11</alert>: 2, 3, 5, . . . are prime numbers</p>
-<p><alert>Example 2.12</alert>: 4, 6, 8, 9, . . . are composite numbers</p>
-<table>
-<tabular>
-<row>
-<cell>Remark: 1 is neither prime nor composite.</cell>
-</row>
-</tabular>
-</table>
-<ol start="3" type="1">
-<li><p><alert>Prime Factorization</alert></p></li>
-</ol>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 2.4</alert></p>
-<p>Prime factorization of a composite number is the product of all its prime factors.</p></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 2.9</alert>:</p>
-<p><m>a)\ 6 = 2 \times 3</m> <m>b)\ \text{30} = 2 \times 3 \times 5</m> <m>c)\ \text{12} = 2 \times 2 \times 3 = 2^{2} \times 3</m> <m>d)\ 8 = 2 \times 2 \times 2 = 2^{3}</m> <m>e)\ \text{180} = 2^{2} \times 3^{2} \times 5</m></p>
-<table>
-<tabular>
-<row header="yes">
-<cell><alert>Fundamental Theorem of Arithmetic:</alert></cell>
-</row>
+                <p>
+                    <m>\therefore GCF(18,24) = 2^3 \times 3^2 = 72</m>
+                </p>
+            </solution>
+        </example>
+        <example>
+            <statement>
+                <p>
+                    Consider the three numbers 20, 80 and 450.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Step 1: 
+                    <md>
+                        <mrow>20  \amp = 2^2 \times 5 </mrow>
+                        <mrow>80 \amp = 2^4 \times 5 </mrow>
+                        <mrow>450 \amp= 2 \times 3^2 \times 5^2 </mrow>
+                    </md>
+                </p>
+                <p>
+                    Step 2: The factors that appear in any cases are 2 , 3 and 5, but take the numbers with the highest number of times.
+                </p>
+                <p>
+                    <m>\therefore GCF(20,80,450) = 2^4 \times 3^2 \times 5^2 = 3600</m>
+                </p>
+            </solution>
+        </example>
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-well-ordering-principle-in-the-set-of-natural-numbers">
+        <title>Well ordering Principle in the set of natural numbers</title>
+        <proposition xml:id="prop-non-empty-set">
+            <statement>
+                <p>
+                    <alert>E</alert>very non-empty subset of the set of natural numbers has smallest (least) element.
+                </p>
+            </statement>
+        </proposition>
+        <example>
+            <statement>
+                <p>
+                    <m>\ A = \left\{ \ 2\ ,\ 3,\ 4,\ \cdots\  \right\}\  \subseteq \ N\text{.}\ \text{smallest}\ \text{element}\ \text{of}\ A = 2\text{.}</m>
+                </p>
+            </statement>
+        </example>
+        <note>
+            <p>
+                The set of counting numbers including zero is called the set of whole numbers and is denoted by <alert>W</alert>. 
+                i.e <alert>W</alert> = <m>\left\{ \ 0,\ 1\ ,\ 2,\ 3,\ \ldots\  \right\}</m>
+            </p>
+        </note>
+    </subsubsection>
+    <subsubsection xml:id="subsubsec-principle-of-mathematical-induction">
+        <title>Principle of Mathematical Induction</title>
+        
+        <p>
+            Mathematical induction is one of the most important techniques used to prove in mathematics.
+            It is used to check conjectures about the outcome of processes that occur repeatedly according to definite patterns.
+            We will introduce the technique with examples.
+        </p>
+        <tabular top="medium" bottom="medium" right="medium" left="medium">
+            <col width="100%"></col>
+            <row>
+                <cell>
+                    <p>For a given assertion involving a natural number <m>n</m>, if</p>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <p>
+                        <ol marker="i. ">
+                            <li>
+                                <p>
+                                    the assertion is true for <m>n = 1</m> (usually).
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    it is true for <m>n = k+1</m>, whenever it is true for <m>n = k</m> (<m>k \ge 1</m>), 
+                                    then the assertion is true for every natural number <m>n</m>.
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </cell>
+            </row>
+        </tabular>
 
-<row>
-<cell>Every composite number can be expressed as a product of its prime factors. This factorization is unique except the order of the factors.</cell>
-</row>
-</tabular>
-</table>
-<ol start="4" type="1">
-<li><p><alert>Greatest Common Factor (GCF)</alert></p></li>
-</ol>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 2.5</alert></p>
-<p>The greatest common factor (GCF) of two numbers <em>a</em> &amp; <em>b</em> is denoted by GCF (<em>a</em>, <em>b</em>) and is the greatest number which is a factor of each of the given number.</p></cell>
-</row>
-</tabular>
-</table>
-<p>Note: If the GCF of two numbers is 1, then the numbers are called relatively prime.</p>
-<p><alert>Example 2.10</alert>: Consider the two numbers 24 and 60.</p>
-<p>Therefore, GCF(24, 60) = 12.</p>
-<p>This method of finding the GCF of two or more numbers is usually lengthy and time consuming. Hence an alternative method (Prime factorization method) is provided as below:</p>
-<p>Step 1: Find the prime factorization of each of the natural numbers</p>
-<p>Step 2: Form the GCF of the given numbers as the product of every factor that appears in each of the prime factorization but take the least number of times it appears.</p>
-<p><alert>Example 2.11</alert>: Consider the two numbers 24 and 60.</p>
-<p>Step 2: The factors that appear in both cases are 2 and 3, but take the numbers with the least number of times.</p>
-<p><alert>Example 2.12</alert>: Consider the three numbers 20, 80 and 450.</p>
-<p>Step 2: The factors that appear in all cases are 2 and 5, but take the numbers with the least number of times.</p>
-<ol start="5" type="1">
-<li><p><alert>Least Common Multiple (LCM)</alert></p></li>
-</ol>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 2.6</alert></p>
-<p>The least common multiple (LCM) of two numbers <em>a</em> &amp; <em>b</em> is denoted by LCM (<em>a</em>, <em>b</em>) and is the least number which is a multiple of each of the given number.</p></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 2.13</alert>: Consider the two numbers 18 and 24.</p>
-<p>Therefore, LCM (18, 24) = 72.</p>
-<p>This method of finding the LCM of two or more numbers is usually lengthy and time consuming. Hence an alternative method (Prime factorization method) is provided as below:</p>
-<p>Step 1: Find the prime factorization of each of the natural numbers</p>
-<p>Step 2: Form the LCM of the given numbers as the product of every factor that appears in any of the prime factorization but take the highest number of times it appears.</p>
-<p><alert>Example 2.14</alert>: Consider the two numbers 18 and 24.</p>
-<p>Step 2: The factors that appear in any case are 2 and 3, but take the numbers with the highest number of times.</p>
-<p><alert>Example 2.15</alert>: Consider the three numbers 20, 80 and 450.</p>
-<p>Step 2: The factors that appear in any cases are 2 , 3 and 5, but take the numbers with the highest number of times.</p>
-<ol start="6" type="1">
-<li><p><alert>Well ordering Principle in the set of natural numbers</alert></p></li>
-</ol>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Proposition 2.7</alert></p>
-<p><alert>E</alert>very non-empty subset of the set of natural numbers has smallest (least) element.</p></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 2.16</alert> <m>\ A = \left\{ \ 2\ ,\ 3,\ 4,\ \cdots\  \right\}\  \subseteq \ N\text{.}\ \text{smallest}\ \text{element}\ \text{of}\ A = 2\text{.}</m></p>
-<p><alert>Note</alert>: The set of counting numbers including zero is called the set of whole numbers and is denoted by <alert>W</alert>. i.e <alert>W</alert> = <m>\left\{ \ 0,\ 1\ ,\ 2,\ 3,\ \ldots\  \right\}</m></p>
-<table>
-<tabular>
-<row>
-<cell><h4 id="principle-of-mathematical-induction">Principle of Mathematical Induction</h4></cell>
-</row>
-</tabular>
-</table>
-<p>Mathematical induction is one of the most important techniques used to prove in mathematics. It is used to check conjectures about the outcome of processes that occur repeatedly according to definite patterns. We will introduce the technique with examples.</p>
-<table>
-<tabular>
-<row>
-<cell><p>For a given assertion involving a natural number n, if</p>
-<p>i. the assertion is true for n = 1 (usually).</p>
-<p>ii. it is true for n = k+1, whenever it is true for n = k (k<m></m>1), then the assertion is true for every natural number n.</p></cell>
-</row>
-</tabular>
-</table>
-<p>The method is used to prove different propositions involving positive integers using three steps:</p>
-<p>Step1: Prove that <m>T_{k}</m> (usually<m>T_{1}</m>) holds true.</p>
-<p>Step 2: Assume that <m>T_{k}</m> for k = n is true.</p>
-<p>Step 3: Show that <m>T_{k}</m> is true for k = n+1.</p>
-<p><alert>Example 2.17</alert> Show that <m>\ 1 + 3 + 5 + \cdots + (2n - 1) = n^{2}\text{.}</m></p>
-<p><alert>Proof:</alert></p>
-<p><alert>Example 2.18</alert> Show that<m>\ 1 + 2 + 3 + \cdots + (n) = \frac{n\ (n + 1)}{2}\text{.}</m></p>
-<p><alert>Proof:</alert></p>
-<p><alert>Example 2.19</alert> Show that<m>\ 5^{n} + 6^{n} &lt; 9^{n}\ \text{for}\ n \geq 2\text{.}\ </m></p>
-<p><alert>Proof:</alert></p>
+        <p>The method is used to prove different propositions involving positive integers using three steps:</p>
+        <p>Step1: Prove that <m>T_{k}</m> (usually<m>T_{1}</m>) holds true.</p>
+        <p>Step 2: Assume that <m>T_{k}</m> for <m>k = n</m> is true.</p>
+        <p>Step 3: Show that <m>T_{k}</m> is true for <m>k = n+1</m>.</p>
+
+        <example>
+            <statement>
+                <p>
+                    Show that <m> 1 + 3 + 5 + \cdots + (2n - 1) = n^{2}\text{.}</m>
+                </p>
+            </statement>
+        </example>
+        <example>
+            <statement>
+                <p>
+                    Show that <m> 1 + 2 + 3 + \cdots + (n) = \frac{n (n + 1)}{2}\text{.}</m>
+                </p>
+            </statement>
+        </example>
+        <example>
+            <statement>
+                <p>
+                    Show that <m> 5^{n} + 6^{n} &lt; 9^{n}\ \text{for}\ n \geq 2\text{.} </m>
+                </p>
+            </statement>
+        </example>
+    </subsubsection>
+
 </subsection>

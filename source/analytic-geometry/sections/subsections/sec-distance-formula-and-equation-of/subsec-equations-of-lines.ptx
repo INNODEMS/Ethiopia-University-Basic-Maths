@@ -1,3 +1,4 @@
+
 <subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-equations-of-lines">
     <title>Equations of lines</title>
     <p>An equation of a line <em><alert>l</alert></em> is an equation which must be satisfied by the coordinates (<em>x</em>, <em>y</em>) of every point on the line. A line can be vertical, horizontal or oblique. The equation of a vertical line that intersects the <em>x</em>-axis at (<em>a</em>, 0) is <em>x=a</em> because the <em>x</em>-coordinate of every point on the line is <em>a</em>. Similarly, the equation of a horizontal line that intersects the <em>y</em>-axis at (0, <em>b</em>) is <em>y=b</em> because the <em>y</em>-coordinate of every point on the line is <em>b</em>.</p>
@@ -446,6 +447,7 @@
             </statement>
         </exercise>
     </exercises>
+
 
 
 

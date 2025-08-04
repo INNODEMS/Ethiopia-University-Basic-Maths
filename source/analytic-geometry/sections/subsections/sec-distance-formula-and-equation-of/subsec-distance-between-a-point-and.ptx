@@ -1,3 +1,4 @@
+
 <subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-distance-between-a-point-and" >
     <title>Distance between a point and a line</title>
     <p>Suppose a line <em><alert>l</alert></em> and a point P(<em>x,y</em>) not on the line are given. The distance from P to <em><alert>l</alert></em>, <em>d</em>(P, <em><alert>l</alert></em>), 
@@ -260,6 +261,7 @@
             </statement>
         </exercise>
     </exercises>
+
 
 
 

@@ -2,905 +2,533 @@
 <title>Definition and basic properties of logarithmic, exponential, trigonometric and hyperbolic functions and their graphs</title>
 <introduction>
 <p>After completing this section, the student should be able to:</p>
-<ul>
-<li><p>define exponential, logarithmic, trigonometric and hyperbolic functions</p></li>
-<li><p>understand the relationship of the exponential and logarithmic functions</p></li>
-<li><p>define the hyperbolic functions and be familiar with their properties</p></li>
-<li><p>sketch the graph of exponential, logarithmic, trigonometric and hyperbolic functions</p></li>
-<li><p>use basic properties of logarithmic, exponential, hyperbolic and trigonometric functions to solve problems</p></li>
-</ul>
-<ul>
-<li><p><alert>Exponents and radicals</alert></p></li>
-</ul>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.14:</alert> For a natural number <m>n</m> and a real number <m>x</m>, the power <m>x^{n}</m>, read “ the <m>n^{\text{th}}</m> power of <m>x</m>” or “<m>x</m> raised to <m>n</m>”, is defined as follows:</p>
-<p><m>x^{n} = \underset{n\ \text{factors}\ \text{each}\ \text{equal}\ \text{to}\ x}{\overset{x \cdot x \cdot \cdots \cdot x}{\underbrace{}}}</m></p>
-<p>In the symbol<m>x^{n}</m>, <m>x</m> is called the base and <m>n</m> is called the exponent.</p></cell>
-</row>
-</tabular>
-</table>
+
+<p>
+    <ul>
+    <li><p>define exponential, logarithmic, trigonometric and hyperbolic functions</p></li>
+    <li><p>understand the relationship of the exponential and logarithmic functions</p></li>
+    <li><p>define the hyperbolic functions and be familiar with their properties</p></li>
+    <li><p>sketch the graph of exponential, logarithmic, trigonometric and hyperbolic functions</p></li>
+    <li><p>use basic properties of logarithmic, exponential, hyperbolic and trigonometric functions to solve problems</p></li>
+    </ul>
+</p>
+<p>
+    <ul>
+
+
+    <li><p><m>\textbf{Exponents and radicals}</m></p></li>
+    </ul>
+</p>
+<definition xml:id="def-exponents-and-radicals">
+    <statement>
+        <p><term>For a natural number</term> <m>n</m> <term>and a real number</term> <m>x</m>, <term>the power</term> <m>x^{n}</m>, <term>read “ the</term> <m>n^{\text{th}}</m> <term>power of</term> <m>x</m>” or “<m>x</m> r<term>raised to</term> <m>n</m>”, <term>is defined as follows:</term></p>
+        <p><me>x^{n} = \underset{n\ \text{factors}\ \text{each}\ \text{equal}\ \text{to}\ x}{\overset{x \cdot x \cdot \cdots \cdot x}{\underbrace{}}}</me></p>
+        <p><term>In the symbol</term>  <m>x^{n}</m>, <m>x</m> <term>is called the base and</term> <m>n</m> <term>is called the exponent.</term></p>
+    </statement>
+</definition>
+
+
+
 <p>For example, <m>2^{5} = 2 \times 2 \times 2 \times 2 \times 2 = \text{32}</m>.</p>
-<p>Based of the definition of <m>x^{n}</m>, <m>n</m> must be a natural number. It does not make sense for <m>n</m> to be negative or zero. However, we can extend the definition of exponents to include 0 and negative exponents.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.15: (Zero and Negative Exponents)</alert></p>
-<p><em>Definition of zero Exponent Definition of Negative Exponent</em></p>
-<p><m>x^{0} = 1\ (x \neq 0)</m> <m>x^{- n} = \frac{1}{x^{n}}\ \left( x \neq 0 \right)</m></p>
-<p>Note: <m>0^{0}</m> is undefined.</p></cell>
-</row>
-</tabular>
-</table>
+<p>Based of the definition of <m>x^{n}</m>, <m>n</m> must be a natural number. It does
+    not make sense for <m>n</m> to be negative or zero. However, we can extend the definition of exponents to include 0 and negative exponents.
+</p>
+
+<definition xml:id="def-zero-and-negative-exponents">
+    <statement>
+        <p><m>\textbf{Zero and Negative Exponents)}</m></p>
+        <p><m>\textit{Definition of zero Exponent   Definition of Negative Exponent}</m></p>
+        <p><m>x^{0} = 1\ (x \neq 0)</m> <m>x^{- n} = \frac{1}{x^{n}}\ \left( x \neq 0 \right)</m></p>
+        <p>Note: <m>0^{0}</m> is undefined.</p>
+    </statement>
+</definition>
+
+
 <p>As a result of the above definition, we have <m>\frac{1}{x^{- n}} = x^{n}</m>. We have the following rules of exponents for integer exponents:</p>
-<table>
-<tabular>
-<row header="yes">
-<cell><alert>Rules for Integer Exponents</alert></cell>
+
+<tabular  left="medium" right="medium" top="medium">
+<row header="yes" halign="left">
+ <cell><alert>Rules for Integer Exponents</alert></cell>
 </row>
 
-<row>
-<cell><ol type="1">
-<li><p><m>x^{n} \cdot x^{m} = x^{n + m}</m> 4. <m>(\text{xy})^{n} = x^{n}y^{n}</m></p></li>
-<li><p><m>(x^{n})^{m} = x^{\text{nm}}</m> 5. <m>\frac{x^{n}}{x^{m}} = x^{n - m}</m></p></li>
-<li></li>
-</ol></cell>
+<row bottom="medium">
+    <cell><p><ol marker="1.">
+    <li><p><m>x^{n} \cdot x^{m} = x^{n + m}</m>  <m>\qquad \qquad \, \text{4.}(\text{xy})^{n} = x^{n}y^{n}</m></p></li>
+    <li><p><m>(x^{n})^{m} = x^{\text{nm}}</m>  <m>\qquad \qquad \, \text{5.}\frac{x^{n}}{x^{m}} = x^{n - m}</m></p></li>
+    <li><p><m> \left ( \frac{x}{y} \right )^n=\frac{x^n}{y^n} \, (y \neq 0)</m></p></li>
+    </ol></p></cell>
 </row>
 </tabular>
-</table>
+
 <p>Next we extend the definition of exponents even further to include rational number exponents. To do this, we assume that we want the rules for integer exponents also to apply to rational exponents and then use the rules to show us to define a rational exponent. For example, how do we define <m>a^{\frac{1}{2}}</m>? Consider <m>9^{\frac{1}{2}}</m>.</p>
 <p>If we apply rule 2 and square <m>9^{\frac{1}{2}}</m>, we get <m>\left( 9^{\frac{1}{2}} \right)^{2} = 9^{\frac{1}{2}} = 9</m>. Thus, <m>9^{\frac{1}{2}}</m> is a number that, when squared, yields 9. There are two possible answers: 3 and – 3, since squaring either number will yield 9. To avoid ambiguity, we define <m>a^{\frac{1}{2}}</m>(called the principal square root of <m>a</m>) as the non-negative quantity that, when squared, yield <m>a</m>. Thus, <m>9^{\frac{1}{2}} = 3</m>.</p>
 <p>We will arrive at the definition of <m>a^{\frac{1}{3}}</m> in the same way as we did for <m>a^{\frac{1}{2}}</m>. For example, if we cube <m>8^{\frac{1}{3}}</m>, we get <m>\left( 8^{\frac{1}{3}} \right)^{3} = 8^{\frac{3}{3}} = 8</m>. Thus, <m>8^{\frac{1}{3}}</m> is the number that, when cubed, yields 8. Since <m>2^{3} = 8</m> we have <m></m>. Similarly, <m>\left( - \text{27} \right)^{\frac{1}{3}} = - 3</m>. Thus, we define <m>a^{\frac{1}{3}}</m>(called the cube root of <m>a</m>) as the quantity that, when cubed yields <m>a</m>.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.16: (Rational Exponent</alert> <m>a^{\frac{1}{n}}</m><alert>)</alert></p>
-<p>If <m>n</m> is an odd positive integer, then <m>a^{\frac{1}{n}} = b</m> if and only if <m>b^{n} = a</m></p>
-<p>If <m>n</m> is an even positive integer and <m>a \geq 0</m>, then <m>a^{\frac{1}{n}} = \left| b \right|</m> if and only if <m>b^{n} = a</m></p></cell>
-</row>
-</tabular>
-</table>
+
+<definition xml:id="def-rational-exponent">
+    <statement>
+        <p><m>\textbf{(Rational Exponent}</m> <m>a^{\frac{1}{n}}</m><m>)</m></p>
+    <p>If <m>n</m> is an odd positive integer, then <m>a^{\frac{1}{n}} = b</m> if and only if <m>b^{n} = a</m></p>
+    <p>If <m>n</m> is an even positive integer and <m>a \geq 0</m>, then <m>a^{\frac{1}{n}} = \left| b \right|</m> if and only if <m>b^{n} = a</m></p>
+    </statement>
+</definition>
+
+
 <p>We call <m>a^{\frac{1}{n}}</m> the principal <m>n^{\text{th}}</m> root of <m>a</m>. Hence, <m>a^{\frac{1}{n}}</m> is the real number (nonnegative when <m>n</m> is even) that, when raised to the <m>n^{\text{th}}</m> power, yields <m>a</m>. Therefore,</p>
-<p><m>\left( \text{16} \right)^{\frac{1}{2}} = 4</m> since <m>4^{2} = \text{16}</m></p>
-<p><m>\left( - \text{125} \right)^{\frac{1}{3}} = - 5</m> since <m>( - 5)^{3} = - \text{125}</m></p>
-<p><m>\left( \frac{1}{\text{81}} \right)^{\frac{1}{4}} = \frac{1}{3}</m> since <m>\left( \frac{1}{3} \right)^{4} = \frac{1}{\text{81}}</m></p>
-<p><m>\text{27}^{\frac{1}{3}} = 3</m> since <m>3^{3} = \text{27}</m></p>
-<p><m>\left( - \text{16} \right)^{\frac{1}{4}}</m> is not a real number</p>
+<p><me>\left( \text{16} \right)^{\frac{1}{2}} = 4 \,  \text{since} 4^{2} = \text{16}</me></p>
+<p><me>\left( - \text{125} \right)^{\frac{1}{3}} = - 5 \,  \text{since} ( - 5)^{3} = - \text{125}</me></p>
+<p><me>\left( \frac{1}{\text{81}} \right)^{\frac{1}{4}} = \frac{1}{3} \,  \text{since} \left( \frac{1}{3} \right)^{4} = \frac{1}{\text{81}}</me></p>
+<p><me>\text{27}^{\frac{1}{3}} = 3\, \text{since} \,3^{3} = \text{27}</me></p>
+<p><me>\left( - \text{16} \right)^{\frac{1}{4}} \,\text{is not a real number}</me></p>
 <p>Thus far, we have defined <m>a^{\frac{1}{n}}</m>, where <m>n</m> is a natural number. With the help of the second rule for exponent, we can define the expression <m>a^{\frac{m}{n}}</m>, where <m>m</m> and <m>n</m> are natural numbers and <m>\frac{m}{n}</m> is reduced to lowest terms.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.17: (Rational Exponent</alert> <m>a^{\frac{m}{n}}</m><alert>)</alert></p>
-<p>If <m>a^{\frac{1}{n}}</m> is a real number, then <m>a^{\frac{m}{n}} = \left( a^{\frac{1}{n}} \right)^{m}</m>(i.e. the <m>n^{\text{th}}</m> root of a raised to the <m>m^{\text{th}}</m> power)</p></cell>
-</row>
-</tabular>
-</table>
+
+<definition xml:id="def-rational-exponent-2">
+    <statement>
+        <p><m>\textbf{Definition 3.17: (Rational Exponent}</m> <m>a^{\frac{m}{n}}</m><m>)</m></p>
+       <p>If <m>a^{\frac{1}{n}}</m> is a real number, then <m>a^{\frac{m}{n}} = \left( a^{\frac{1}{n}} \right)^{m}</m>(i.e. the <m>n^{\text{th}}</m> root of a raised to the <m>m^{\text{th}}</m> power)</p>
+    </statement>
+</definition>
+
+
+
 <p>We can also define negative rational exponents:</p>
-<table>
-<tabular>
-<row>
-<cell><m>a^{- \frac{m}{n}} = \frac{1}{a^{\frac{m}{n}}}\ \left( a \neq 0 \right)</m></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 3.29</alert>: Evaluate the following</p>
-<ol type="a">
-<li><p><m>\text{27}^{\frac{2}{3}}</m> b) <m>\text{36}^{- \frac{1}{2}}</m> c) <m>( - \text{32})^{- \frac{3}{5}}</m></p></li>
-</ol>
-<p><alert>Solution</alert>: We have</p>
-<ol type="a">
-<li></li>
-<li></li>
-<li></li>
-</ol>
+<p>
+    <me>
+        \huge{a^{- \frac{m}{n}} = \frac{1}{a^{\frac{m}{n}}}\ \left( a \neq 0 \right)}
+    </me>
+    
+</p>
+
+
+
+<example>
+    <statement>
+        <p>
+        Evaluate the following
+        </p>
+        <p>
+        <ol marker="a)">
+        <li><p><m>\text{27}^{\frac{2}{3}}</m>  <m> \qquad \qquad \text{b)}\,\text{36}^{- \frac{1}{2}}</m>  <m>\qquad \qquad\text{c)}\,( - \text{32})^{- \frac{3}{5}}</m></p></li>
+        </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            We have
+        </p>
+        <p>
+            <ol marker="a)">
+                <li>
+                    <p>
+                        <m>27^\frac{2}{3}=\left ( 27^\frac{1}{3} \right )^2=3^2=9</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>36^{\frac{-1}{2}}=\frac{1}{36^\frac{1}{2}}=\frac{1}{6}</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>(-32)^{-\frac{3}{5}}=\frac{1}{\left (-32)^\frac{1}{5} \right)^3}=\frac{1}{(-2)^3}=-\frac{1}{8}
+
+                        </m>
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</example>
+
+
+
+
 <p>Radical notation is an alternative way of writing an expression with rational exponents. We define for real number <m>a</m>, the <m>n^{\text{th}}</m> root of <m>a</m> as follows:</p>
-<table>
-<tabular>
-<row>
-<cell><alert>Definition 3.18 (</alert><m>n^{\text{th}}</m> <alert>root of</alert> <m>a</m><alert>):</alert> <m>\sqrt[n]{a}</m>= <m>a^{\frac{1}{n}}</m>, where <m>n</m> is a positive integer.</cell>
-</row>
-</tabular>
-</table>
+<definition xml:id="def-n-th-root">
+    <statement>
+        <p>
+            <alert>(</alert><m>n^{\text{th}}</m> <alert>root of</alert> <m>a</m><alert>):</alert> <m>\sqrt[n]{a}</m>= <m>a^{\frac{1}{n}}</m>, where <m>n</m> is a positive integer.
+        </p>
+    </statement>
+</definition>
+
+
 <p>The number <m>\sqrt[n]{a}</m> is also called the principal <m>n^{\text{th}}</m> root of <m>a</m>. If the <m>n^{\text{th}}</m> root of <m>a</m> exists, we have:</p>
-<table>
-<tabular>
-<row>
-<cell><p>For <m>a</m> a real number and <m>n</m> a positive integer,</p>
-<p><m>\sqrt[n]{a^{n}} = \begin{matrix}
-\left\{ \left| a \right|,\ \text{if}\ n\ \text{is}\ \text{even} \middle| \right.\  \\
-\end{matrix}</m></p></cell>
-</row>
-</tabular>
-</table>
-<p>For example, <m>\sqrt[3]{5^{3}} = 5</m> and <m>\sqrt[4]{( - 3)^{4}} = 3</m>.</p>
-<ul>
-<li><p><alert>Exponential Functions</alert></p></li>
-</ul>
+<p>
+    <me>
+        \text{For} a \text{a real number and a positive integer,}
+    </me>
+    
+</p>
+<p>
+    <me>
+        n\sqrt{a^n}=\left\{\begin{matrix}
+        |a| \quad \text{ if n is even}\\ 
+        \\
+        a, \quad \text{if n is odd} \\
+        \end{matrix}\right.
+    </me>
+    
+</p>
+<p>
+    For example, <m>3\sqrt{5^3}=5 \, \text{and}\, 4\sqrt{(-3)^4}=3</m>.
+</p>
+<p>
+    <ul>
+        <li><p><m>\textbf{Exponential Functions}</m></p></li>
+    </ul>
+</p>
 <p>In the previous sections we examined functions of the form <m>f(x) = x^{n}</m>, where <m>n</m> is a constant. How is this function different from <m>f(x) = n^{x}</m>.</p>
-<table>
-<tabular>
-<row>
-<cell><alert>Definition 3.19:</alert> A function of the form <m>y = f(x) = b^{x}</m>, where <m>b &gt; 0</m> and <m>b \neq 1</m>, is called an exponential function.</cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 3.30</alert>: The functions <m>f(x) = 2^{x}</m>, <m>g(x) = 3^{x}</m> and <m>h(x) = \left( \frac{1}{2} \right)^{x}</m> are examples of exponential functions.</p>
-<p>As usual the first question raised when we encounter a new function is its domain. Since rational exponents are well defined, we know that any rational number will be in the domain of an exponential function. For example, let <m>f(x) = 3^{x}</m>. Then as <m>x</m> takes on the rational values <m>x = 4,\ </m> – 2 , <m>\frac{1}{2}</m> and <m>\frac{4}{5}</m>, we have</p>
-<p><m>f(4) = 3^{4} = 3 \cdot 3 \cdot 3 \cdot 3 = \text{81}</m> <m>f( - 2) = 3^{- 2} = \frac{1}{3^{2}} = \frac{1}{9}</m></p>
-<p><m>f(\frac{1}{2}) = 3^{\frac{1}{2}} = \sqrt{3}</m> <m>f(\frac{4}{5}) = 3^{\frac{4}{5}} = \sqrt[5]{3^{4}} = \sqrt[5]{\text{81}}</m></p>
-<p>Note that even though we do not know the exact values of <m>\sqrt{3}</m> and <m>\sqrt[5]{\text{81}}</m>, we do know exactly what they mean. However, what about <m>f(x)</m> for irrational values of <m>x</m>? For instance, <m>f(\sqrt{2}) = 3^{\sqrt{2}} = ?</m></p>
-<p>We have not defined the meaning of irrational exponents. In fact, a precise formal definition of <m>b^{x}</m> where <m>x</m> is irrational requires the ideas of calculus. However, we can get an idea of what <m>3^{\sqrt{2}}</m> should be by using successive rational approximations to <m>\sqrt{2}</m>. For example, we have</p>
-<p><m>1\text{.}\text{414} &lt; \sqrt{2} &lt; 1\text{.}\text{415}</m></p>
-<p>Thus, it would seem reasonable to expect that <m>3^{1\text{.}\text{414}} &lt; 3^{\sqrt{2}} &lt; 3^{1\text{.}\text{415}}</m>. Since 1.414 and 1.415 are rational numbers, <m>3^{1\text{.}\text{414}}</m> and <m>3^{1\text{.}\text{415}}</m> are well defined, even though we cannot compute their values by hand. Using a calculator, we get <m>4\text{.}\text{7276950} &lt; 3^{\sqrt{2}} &lt; 4\text{.}\text{7328918}</m>. If we use better approximations to <m>\sqrt{2}</m>, we get <m>3^{1\text{.}\text{4142}} &lt; 3^{\sqrt{2}} &lt; 3</m>. Using a calculator again, we get <m>4\text{.}\text{7287339} &lt; 3^{\sqrt{2}} &lt; 4\text{.}\text{7292535}</m>. Computing <m>3^{\sqrt{2}}</m>directly on a calculator gives <m>3^{\sqrt{2}} \approx 4\text{.}\text{7288044}</m>. This numerical evidence suggests that as <m>x</m> approaches <m>\sqrt{2}</m>, the values of <m>3^{x}</m> approach a unique real number that we designate by <m>3^{\sqrt{2}}</m>, and so we will accept without proof, the fact that the domain of the exponential function is the set of real numbers.</p>
-<table>
-<tabular>
-<row>
-<cell>The exponential function <m>y = b^{x}</m>, where <m>b &gt; 0</m> and <m>b \neq 1</m>, is defined for all real values of <m>x</m>. In addition all the rules for rational exponents hold for real number exponents as well.</cell>
-</row>
-</tabular>
-</table>
-<p>Before we state some general facts about exponential functions , let’s see if we can determine what the graph of an exponential function will look like.</p>
-<p><alert>Example 3.31</alert>:</p>
-<ol type="1">
-<li><p>Sketch the graph of the function <m>y = 2^{x}</m> and identify its domain and range.</p></li>
-</ol>
-<p><alert>Solution</alert>: To aid in our analysis, we set up a short table of values to give us a frame of</p>
-<p>reference.</p>
-<table>
-<tabular>
-<row>
-<cell></cell>
-<cell></cell>
-</row>
-<row>
-<cell></cell>
-<cell></cell>
-</row>
-<row>
-<cell></cell>
-<cell></cell>
-</row>
-<row>
-<cell>0</cell>
-<cell></cell>
-</row>
-<row>
-<cell>1</cell>
-<cell></cell>
-</row>
-<row>
-<cell>2</cell>
-<cell></cell>
-</row>
-<row>
-<cell>3</cell>
-<cell></cell>
-</row>
-</tabular>
-</table>
-<p><alert><br />
-</alert></p>
-<p>With these points in hand, we draw a smooth curve through the points obtaining the graph appearing above. Observe that the domain of <m>y = 2^{x}</m> is <m>\text{IR}</m>, the graph has no <m>x -</m>intercepts, as</p>
-<p><m>x \rightarrow + \infty</m>, the <m>y</m> values are increasing very rapidly, whereas as <m>x \rightarrow - \infty</m>, the <m>y</m>values are getting closer and closer to 0. Thus, <m>x - \text{axis}</m> is a horizontal asymptote, the <m>y -</m>intercept is 1 and the range of <m>y = 2^{x}</m> is the set of positive real numbers.</p>
-<ol start="2" type="1">
-<li><p>Sketch the graph of <m>y = f(x) = \left( \frac{1}{2} \right)^{x}</m>.</p></li>
-</ol>
-<p><alert>Solution</alert>: It would be instructive to compute a table of values as we did in example 1 above (you are urged to do so). However, we will take a different approach. We note that <m>y = f(x) = \left( \frac{1}{2} \right)^{x} = \frac{1}{2^{x}} = 2^{- x}</m>. If <m>f(x) = 2^{x}</m>, then <m>f( - x) = 2^{- x}</m>. Thus by the graphing principle for <m>f( - x)</m>, we can obtain the graph of <m>y = 2^{- x}</m> by reflecting the graph of <m>y = 2^{x}</m> about the <m>y - \text{axis}</m>.</p>
-<p><image source="/./media/png72/image74.png" style="width:2.94722in;height:1.80972in" /></p>
-<p>Here again the <m>x - \text{axis}</m> is a horizontal asymptote, there is no <m>x -</m>intercept, 1 is <m>y -</m>intercept and the range is the set of positive real numbers. However, the graph is now decreasing rather than increasing.</p>
-<p>The following box summarizes the important facts about exponential functions and their graphs.</p>
-<table>
-<tabular>
-<row header="yes">
-<cell><alert>The Exponential function</alert> <m>y = f(x) = b^{x}</m></cell>
-</row>
 
-<row>
-<cell><ol type="1">
-<li><p>The domain of the exponential function is the set of real numbers</p></li>
-<li><p>The range of the exponential function is the set of positive real numbers</p></li>
-<li><p>The graph of <m>y = b^{x}</m> exhibits exponential growth if <m>b &gt; 1</m> or exponential decay if <m>0 &lt; b &lt; 1</m>.</p></li>
-<li><p>The <m>y -</m>intercept is 1.</p></li>
-<li><p>The <m>x -</m>intercept is a horizontal asymptote</p></li>
-<li><p>The exponential function is 1 – 1. Algebraically if <m>b^{x} = b^{y}</m>, then <m>x = y</m></p></li>
-</ol></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 3.32</alert>: Sketch the graph of each of the following. Find the domain, range, intercepts, and asymptotes.</p>
-<ol type="a">
-<li><p><m>y = 3^{x} + 1</m> b) <m>y = 3^{x + 1}</m> c) <m>y = - 9^{- x} + 3</m></p></li>
-</ol>
-<p><alert>Solution</alert>:</p>
-<ol type="a">
-<li><p>To get the graph of <m>y = 3^{x} + 1</m>. We start with the graph of <m>y = 3^{x}</m>, which is the basic exponential growth graph, and shift it up 1 unit.</p></li>
-</ol>
-<table>
-<tabular>
-<row>
-<cell></cell>
-<cell><p>From the graph we see that</p>
-<ul>
-<li></li>
-<li></li>
-<li><p>The <m>y -</m>intercept is 2</p></li>
-<li><p>The line <m>y = 1</m> is a horizontal asymptote</p></li>
-</ul></cell>
-</row>
-</tabular>
-</table>
-<ol start="2" type="a">
-<li><p>To get the graph of <m>y = 3^{x + 1}</m>, we start with the graph of <m>y = 3^{x}</m>, and shift 1 unit to the left.</p></li>
-</ol>
-<table>
-<tabular>
-<row>
-<cell></cell>
-<cell><p>From the graph we see that</p>
-<ul>
-<li></li>
-<li></li>
-<li><p>The <m>y -</m>intercept is 3</p></li>
-<li><p>The line <m>y = 0</m> is a horizontal asymptote</p></li>
-</ul></cell>
-</row>
-</tabular>
-</table>
-<ol start="3" type="a">
-<li><p>To get the graph of <m>y = - 9^{- x} + 3</m>, we start with the basic exponential decay <m>y = 9^{- x}</m>. We then reflect it with respect to the <m>x - \text{axis}</m>, which gives the graph of <m>y = - 9^{- x}</m>. Finally, we shift this graph up 3 units to get the required graph of <m>y = - 9^{- x} + 3</m>.</p></li>
-</ol>
-<p>From the graph of <m>y = - 9^{- x} + 3</m>, we can see that <m>\text{Dom}(h) = \Re</m>, <m>\text{Range}(h) = ( - \infty,3)</m>, the line <m>y = 3</m> is a horizontal asymptote, 2 is the <m>y -</m>intercept and <m>x = - \frac{1}{2}</m> is the <m>x -</m>intercept.</p>
-<p><alert>Remark</alert>: When the base <m>b</m> of the exponential function <m>f(x) = b^{x}</m> equals to the number <m>e</m>, where <m>e = 2\text{.}\text{7182}\cdots</m>, we call the exponential function the natural exponential function.</p>
-<ul>
-<li><p><alert>Logarithmic Functions</alert></p></li>
-</ul>
-<p>In the previous subsection we noted that the exponential function <m>f(x) = b^{x}</m> (where <m>b &gt; 0</m> and <m>b \neq 1</m>) is one to one. Thus, the exponential function has an inverse function. What is the inverse of <m>f(x) = b^{x}</m>?</p>
-<p>To find the inverse of <m>f(x) = b^{x}</m>, let’s review the process for finding an inverse function by comparing the process for the polynomial function <m>y = x^{3}</m> and the exponential function <m>y = 3^{x}</m>. Keep in mind that <m>x</m> is our independent variable and <m>y</m> is the dependent variable and so whenever possible we want a function solved explicitly for <m>y</m>.</p>
-<table>
-<tabular>
-<row header="yes">
-<cell><alert>To find the inverse of</alert> <m>y = x^{3}</m></cell>
-<cell><alert>To find the inverse of</alert> <m>y = 3^{x}</m></cell>
-</row>
+<definition xml:id="def-exponential-function">
+    <statement>
+        <p>
+            A function of the form <m>y = f(x) = b^{x}</m>, where <m>b &gt; 0</m> and <m>b \neq 1</m>, is called an exponential function.
+        </p>
+    </statement>
+</definition>
 
-<row>
-<cell><p><m>y = x^{3}</m> Interchange <m>x</m> and <m>y</m></p>
-<p><m>x = y^{3}</m> solve for <m>y</m></p></cell>
-<cell><p><m>y = 3^{x}</m> Interchange <m>x</m> and <m>y</m></p>
-<p><m>x = 3^{y}</m> solve for <m>y</m></p></cell>
-</row>
-</tabular>
-</table>
-<p>There is no algebraic procedure we can use to solve <m>x = 3^{y}</m> for <m>y</m>. By introducing radical notations we could express the inverse of <m>y = x^{3}</m> explicitly in the form <m>y = \sqrt[3]{x}</m>. In words, <m>y^{3} = x</m> and <m>y = \sqrt[3]{x}</m> both mean exactly the same thing: <m>y</m> is the number whose cube is <m>x</m>. Similarly, if we want to express <m>x = 3^{y}</m> explicitly as a function of <m>x</m>, we need to invent a special notation for this. The key idea is to take the equation <m>x = 3^{y}</m> and express it verbally.</p>
-<table>
-<tabular>
-<row>
-<cell><m>x = 3^{y}</m> means <image source="/./media/png72/image76.png" style="width:0.15625in;height:0.1875in" /> is the exponent to which 3 must be raised to yield <image source="/./media/png72/image78.png" style="width:0.14583in;height:0.15625in" /></cell>
-</row>
-</tabular>
-</table>
-<p>We introduce the following notation, which expresses this idea in a much more compact form.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.20:</alert> For <image source="/media/png72/imageC1639.png" /> and <image source="/media/png72/imageC1640.png" />, we write <image source="/media/png72/imageC1641.png" /> to mean <image source="/media/png72/imageC1642.png" /> is the exponent to which <image source="/media/png72/imageC1643.png" /> must be raised to yield <image source="/media/png72/imageC1644.png" />. In other words,</p>
-<p><image source="/media/png72/imageC1645.png" /></p></cell>
-</row>
-</tabular>
-</table>
-<p>We read <image source="/media/png72/imageC1646.png" /> as “<image source="/media/png72/imageC1647.png" /> equals the logarithm of <image source="/media/png72/imageC1648.png" /> to the base <image source="/media/png72/imageC1649.png" />”.</p>
-<table>
-<tabular>
-<row>
-<cell>REMEMBER: <image source="/media/png72/imageC1650.png" /> is an alternative way of writing <image source="/media/png72/imageC1651.png" /></cell>
-</row>
-</tabular>
-</table>
-<p>When an expression is written in the form <image source="/media/png72/imageC1652.png" />, it is said to be in exponential form. When an expression is written in the form <image source="/media/png72/imageC1653.png" />, it is said to be in logarithmic form. The table below illustrates the equivalence of the exponential and logarithmic forms.</p>
-<table>
-<tabular>
-<row header="yes">
-<cell>Exponential form</cell>
-<cell>Logarithmic form</cell>
-</row>
+<example>
+    <p> The functions <m>f(x) = 2^{x}</m>, <m>g(x) = 3^{x}</m> and <m>h(x) = \left( \frac{1}{2} \right)^{x}</m> are examples of exponential functions.</p>
+    <p>As usual the first question raised when we encounter a new function is its domain. Since rational exponents are well defined, we know that any rational number will be in the domain of an exponential function. For example, let <m>f(x) = 3^{x}</m>. Then as <m>x</m> takes on the rational values <m>x = 4,\ </m> – 2 , <m>\frac{1}{2}</m> and <m>\frac{4}{5}</m>, we have</p>
+    <p><m>f(4) = 3^{4} = 3 \cdot 3 \cdot 3 \cdot 3 = \text{81}</m> <m>f( - 2) = 3^{- 2} = \frac{1}{3^{2}} = \frac{1}{9}</m></p>
+    <p><m>f(\frac{1}{2}) = 3^{\frac{1}{2}} = \sqrt{3}</m> <m>f(\frac{4}{5}) = 3^{\frac{4}{5}} = \sqrt[5]{3^{4}} = \sqrt[5]{\text{81}}</m></p>
+    <p>Note that even though we do not know the exact values of <m>\sqrt{3}</m> and <m>\sqrt[5]{\text{81}}</m>, we do know exactly what they mean. However, what about <m>f(x)</m> for irrational values of <m>x</m>? For instance, <m>f(\sqrt{2}) = 3^{\sqrt{2}} = ?</m></p>
+    <p>We have not defined the meaning of irrational exponents. In fact, a precise formal definition of <m>b^{x}</m> where <m>x</m> is irrational requires the ideas of calculus. However, we can get an idea of what <m>3^{\sqrt{2}}</m> should be by using successive rational approximations to <m>\sqrt{2}</m>. For example, we have</p>
+    <p><m>1\text{.}\text{414} &lt; \sqrt{2} &lt; 1\text{.}\text{415}</m></p>
+    <p>Thus, it would seem reasonable to expect that <m>3^{1\text{.}\text{414}} &lt; 3^{\sqrt{2}} &lt; 3^{1\text{.}\text{415}}</m>. Since 1.414 and 1.415 are rational numbers, <m>3^{1\text{.}\text{414}}</m> and <m>3^{1\text{.}\text{415}}</m> are well defined, even though we cannot compute their values by hand. Using a calculator, we get <m>4\text{.}\text{7276950} &lt; 3^{\sqrt{2}} &lt; 4\text{.}\text{7328918}</m>. If we use better approximations to <m>\sqrt{2}</m>, we get <m>3^{1\text{.}\text{4142}} &lt; 3^{\sqrt{2}} &lt; 3</m>. Using a calculator again, we get <m>4\text{.}\text{7287339} &lt; 3^{\sqrt{2}} &lt; 4\text{.}\text{7292535}</m>. Computing <m>3^{\sqrt{2}}</m>directly on a calculator gives <m>3^{\sqrt{2}} \approx 4\text{.}\text{7288044}</m>. This numerical evidence suggests that as <m>x</m> approaches <m>\sqrt{2}</m>, the values of <m>3^{x}</m> approach a unique real number that we designate by <m>3^{\sqrt{2}}</m>, and so we will accept without proof, the fact that the domain of the exponential function is the set of real numbers.</p>
+    
+    <tabular left="medium" right="medium" top="medium" bottom="medium">
+        <row>
+        <cell>The exponential function <m>y = b^{x}</m>, where <m>b &gt; 0</m> and <m>b \neq 1</m>, 
+            is defined for all real values of <m>x</m>. In addition all the rules 
+            for rational exponents hold for real number exponents as well.</cell>
+        </row>
+    </tabular>
 
-<row>
-<cell><p><image source="/media/png72/imageC1654.png" /></p>
-<p><image source="/media/png72/imageC1655.png" /></p>
-<p><image source="/media/png72/imageC1656.png" /></p>
-<p><image source="/media/png72/imageC1657.png" /></p>
-<p><image source="/media/png72/imageC1658.png" /></p></cell>
-<cell><p><image source="/media/png72/imageC1659.png" /></p>
-<p><image source="/media/png72/imageC1660.png" /></p>
-<p><image source="/media/png72/imageC1661.png" /></p>
-<p><image source="/media/png72/imageC1662.png" /></p>
-<p><image source="/media/png72/imageC1663.png" /></p></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 3.33</alert>:</p>
-<ol type="1">
-<li><p>Write each of the following in exponential form.</p></li>
-</ol>
-<ol type="a">
-<li><p><image source="/media/png72/imageC1664.png" /> b) <image source="/media/png72/imageC1665.png" /></p></li>
-</ol>
-<p><alert>Solution</alert>: We have a) <image source="/media/png72/imageC1666.png" /> means <image source="/media/png72/imageC1667.png" /> and b) <image source="/media/png72/imageC1668.png" /> means <image source="/media/png72/imageC1669.png" /></p>
-<ol start="2" type="1">
-<li><p>Write each of the following in logarithmic form.</p></li>
-</ol>
-<ol type="a">
-<li><p><image source="/media/png72/imageC1670.png" /> b) <image source="/media/png72/imageC1671.png" /></p></li>
-</ol>
+    <p>Before we state some general facts about exponential functions , let’s see 
+        if we can determine what the graph of an exponential function will look like.</p>
 
-<p><alert>Solution</alert>: We have a)<image source="/media/png72/imageC1672.png" /> means <image source="/media/png72/imageC1673.png" /></p>
-<p>b) <image source="/media/png72/imageC1674.png" /> means<image source="/media/png72/imageC1675.png" /></p>
+</example>
 
-<ol start="3" type="1">
-<li><p>Evaluate each of the following.</p></li>
-</ol>
-<ol type="a">
-<li><p><image source="/media/png72/imageC1676.png" /> b) <image source="/media/png72/imageC1677.png" /></p></li>
-</ol>
+<example>
+    <statement>
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        Sketch the graph of the function <m>y = 2^{x}</m> and identify its domain and range.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Sketch the graph of <m>y = f(x) = \left( \frac{1}{2} \right)^{x}</m>.
+                    </p>
+                </li>
+            </ol>
+        </p>
+        
+    </statement>
+    <solution>
+        <p>
+            <ol>
+                <li>
+                    <sidebyside>
+                    <tabular halign="left" valign="top" left="medium" right="medium" top="medium" bottom="medium"> 
+                        <row header="yes" >
+                            <cell><m>x</m></cell>
+                            <cell><m>y</m></cell>
+                        </row>
 
-<p><alert>Solution</alert>:</p>
+                        <row>
+                            <cell>-3</cell>
+                            <cell><m>2^{-3} = \frac{1}{8}</m></cell>
+                        </row>
+                        <row>
+                            <cell><m>-2</m></cell>
+                            <cell><m>2^{-2} = \frac{1}{4}</m></cell>
+                        </row>
+                        <row>
+                            <cell><m>-1</m></cell>
+                            <cell><m>2^{-1} = \frac{1}{2}</m></cell>
+                        </row>
+                        <row>
+                            <cell><m>0</m></cell>
+                            <cell><m>2^{0} = 1</m></cell>
+                        </row>
+                        <row>
+                            <cell><m>1</m></cell>
+                            <cell><m>2^{1} = 2</m></cell>
+                        </row>
+                        <row>
+                            <cell><m>2</m></cell>
+                            <cell><m>2^{2} = 4</m></cell>
+                        </row>
+                        <row>
+                            <cell><m>3</m></cell>
+                            <cell><m>2^{3} = 8</m></cell>
+                        </row>
+                    </tabular>
+                        <image width="50%">
+                        <latex-image label="funct">
+                            \begin{tikzpicture}
+                                \begin{axis}[very thick,
+                                        axis lines = middle,
+                                        xmin = -2.5, xmax = 3,
+                                        ymin = -2, ymax = 4.5,
+                                        xtick = {1},   xticklabels = {$1$},
+                                        ytick = {1,2}, yticklabels = {$1$,$2$},
+                                        xlabel = {$x$}, ylabel = {$y$},
+                                        clip = false
+                                        ]
+                                        % y = 2^x
+                                        \addplot[very thick, domain=-2:2.5, samples=140] {2^x};
 
-<ol type="a">
-<li><p>To evaluate <image source="/media/png72/imageC1678.png" />, we let <image source="/media/png72/imageC1679.png" />, and then rewrite the equation in exponential form, <image source="/media/png72/imageC1680.png" />. Now, if we can express both sides in terms of the same base, we can solve the resulting exponential equation, as follows:</p></li>
-</ol>
+                                        % Point (1,2)
+                                        \addplot[only marks, mark=*] coordinates {(1,2)};
 
-<p>Let <image source="/media/png72/imageC1681.png" /> Rewrite in exponential form</p>
-<p><image source="/media/png72/imageC1682.png" /> Express both sides in terms of the same base</p>
+                                        % Dotted guide lines
+                                        \draw[very thick, dotted] (axis cs:1,0) -- (axis cs:1,2) -- (axis cs:0,2);
 
-<p><image source="/media/png72/imageC1683.png" /> Since the exponential function is 1 – 1</p>
-<p><image source="/media/png72/imageC1684.png" /></p>
-<p>Therefore, <image source="/media/png72/imageC1685.png" />.</p>
-<ol start="2" type="a">
-<li><p>We apply the same procedure as in part (a).</p></li>
-</ol>
+                                        % Labels
+                                        \node [below] at (axis cs:-0.1,0){\textbf{O}};
+                                        \node at (axis cs:1.3,2) {$(1,2)$};
+                                        \node at (axis cs:2.2,3.6) {$y = 2^{x}$};
+                                    \end{axis}
+                            \end{tikzpicture}
+                        </latex-image>  
+                        </image>
+                    </sidebyside>
+                    <p>With these points in hand, we draw a smooth curve through the points obtaining the graph appearing above. Observe that the domain of <m>y = 2^{x}</m> is <m>\text{IR}</m>, the graph has no <m>x -</m>intercepts, as</p>
+                    <p><m>x \rightarrow + \infty</m>, the <m>y</m> values are increasing very rapidly, whereas as <m>x \rightarrow - \infty</m>, the <m>y</m>values are getting closer and closer to 0. Thus, <m>x - \text{axis}</m> is a horizontal asymptote, the <m>y -</m>intercept is 1 and the range of <m>y = 2^{x}</m> is the set of positive real numbers.</p>
 
-<p>Let <image source="/media/png72/imageC1686.png" /> Rewrite in exponential form</p>
-<p><image source="/media/png72/imageC1687.png" /> Express both sides in terms of the same base</p>
+                </li>
+                <li>
+                    
+                    <p>It would be instructive to compute a table of values as we did in example 1 above (you are urged to do so). 
+                        However, we will take a different approach. We note that <m>y = f(x) = \left( \frac{1}{2} \right)^{x} = \frac{1}{2^{x}} = 2^{- x}</m>. If <m>f(x) = 2^{x}</m>, then <m>f( - x) = 2^{- x}</m>. Thus by the graphing principle for <m>f( - x)</m>, we can obtain the graph of <m>y = 2^{- x}</m> by reflecting the graph of <m>y = 2^{x}</m> about the <m>y - \text{axis}</m>.
 
-<p><image source="/media/png72/imageC1688.png" /> Since the exponential function is 1 – 1</p>
-<p><image source="/media/png72/imageC1689.png" /></p>
-<p>Therefore, <image source="/media/png72/imageC1690.png" />.</p>
-<p>As was pointed out at the beginning of this subsection, logarithm notation was invented to express the inverse of the exponential function. Thus, <image source="/media/png72/imageC1691.png" /> is a function of <image source="/media/png72/imageC1692.png" />. We usually write <image source="/media/png72/imageC1693.png" /> rather than writing <image source="/media/png72/imageC1694.png" /> and use parenthesis only when needed to clarify the input to the log function. For example,</p>
-<p>If <image source="/media/png72/imageC1695.png" />, then <image source="/media/png72/imageC1696.png" />, whereas if <image source="/media/png72/imageC1697.png" />, then <image source="/media/png72/imageC1698.png" />, which is undefined.</p>
-<p><alert>Example 3.34</alert>: Given <image source="/media/png72/imageC1699.png" /> , find</p>
-<ol type="a">
-<li><p><image source="/media/png72/imageC1700.png" /> b) <image source="/media/png72/imageC1701.png" /> c) <image source="/media/png72/imageC1702.png" /> d) <image source="/media/png72/imageC1703.png" /></p></li>
-</ol>
-<p><alert>Solution</alert>:</p>
-<ol type="a">
-<li><p><image source="/media/png72/imageC1704.png" /> (since <image source="/media/png72/imageC1705.png" />)</p></li>
-<li><p><image source="/media/png72/imageC1706.png" /> (since <image source="/media/png72/imageC1707.png" />)</p></li>
-<li><p><image source="/media/png72/imageC1708.png" /> is not defined (what power of 5 will yield 0?). We say that 0 is not in the domain of <image source="/media/png72/imageC1709.png" />.</p></li>
-<li><p><image source="/media/png72/imageC1710.png" /> is not defined (what power of 5 will yield -125?). We say that -125 is not in the domain of <image source="/media/png72/imageC1711.png" />.</p></li>
-</ol>
-<p>Acknowledging that the logarithmic and exponential functions are inverses, we can derive a great deal of information about the logarithmic function and its graph from the exponential function and its graph.</p>
-<p><alert>Example 3.35</alert>: Sketch the graph of the following functions. Find the domain and range of each.</p>
-<ol type="a">
-<li><p><image source="/media/png72/imageC1712.png" /> b) <image source="/media/png72/imageC1713.png" /></p></li>
-</ol>
-<p><alert>Solution</alert>: a) Since <image source="/media/png72/imageC1714.png" /> is the inverse of <image source="/media/png72/imageC1715.png" />, we can obtain the graph of <image source="/media/png72/imageC1716.png" /> by reflecting the graph of <image source="/media/png72/imageC1717.png" /> about the line <image source="/media/png72/imageC1718.png" />, as shown below.</p>
-<ol start="2" type="a">
-<li><p><image source="/media/png72/imageC1560.png" />To get the graph of <image source="/media/png72/imageC1720.png" />, we reflect the graph of <image source="/media/png72/imageC1721.png" /> about the line <image source="/media/png72/imageC1722.png" />as shown below.</p></li>
-</ol>
-<p>Taking note of the features of the two graphs we have the following important informations about the graph of the log function:</p>
-<table>
-<tabular>
-<row header="yes">
-<cell><alert>The Logarithmic Function</alert> <image source="/media/png72/imageC1723.png" /></cell>
-</row>
+                    </p>
+                    <image width="50%">
+                    <latex-image label="funct2">
+                        \begin{tikzpicture}[&gt;=stealth]
+                             % Axes -------------------------------------------------
+                            \draw[very thick,-&gt;] (-3,0) -- (3,0)  node[right] {$x$};
+                            \draw[very thick ,-&gt;] (0,-0.5) -- (0,4.5) node[above] {$y$};
 
-<row>
-<cell><ol type="1">
-<li><p>Its domain is the set of positive real numbers</p></li>
-<li><p>Its range is the set of real numbers.</p></li>
-<li><p>Its graph exhibits logarithmic growth if <image source="/media/png72/imageC1724.png" /> and logarithmic decay if <image source="/media/png72/imageC1725.png" />.</p></li>
-<li><p>The <image source="/media/png72/imageC1726.png" /> intercept is 1. There is no <image source="/media/png72/imageC1727.png" />intercept.</p></li>
-<li><p>The <image source="/media/png72/imageC1728.png" /> is a vertical asymptote.</p></li>
-</ol></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 3.36</alert>:</p>
-<ol type="1">
-<li><p>Sketch the graph of <image source="/media/png72/imageC1729.png" />. Find the domain, range, asymptote and intercepts.</p></li>
-</ol>
-<p><alert>Solution</alert>: We can obtain the graph of <image source="/media/png72/imageC1730.png" /> by applying the graphing principle to shift the basic logarithmic growth graph 2 units to the right and 1 unit up.</p>
-<p>We have <image source="/media/png72/imageC1731.png" />, <image source="/media/png72/imageC1732.png" /> and the graph has the line <image source="/media/png72/imageC1733.png" /> as a vertical asymptote. To find the intercept, we set <image source="/media/png72/imageC1734.png" /> and solve for <image source="/media/png72/imageC1735.png" />. Setting <image source="/media/png72/imageC1736.png" /> and solving for <image source="/media/png72/imageC1737.png" />, we will obtain <image source="/media/png72/imageC1738.png" />. Thus, the <image source="/media/png72/imageC1739.png" />intercept is <image source="/media/png72/imageC1740.png" />.</p>
-<ol start="2" type="1">
-<li><p>Find the inverse function for</p></li>
-</ol>
-<ol type="a">
-<li><p><image source="/media/png72/imageC1741.png" /> b) <image source="/media/png72/imageC1742.png" /></p></li>
-</ol>
+                            % Curve y = 2^x ---------------------------------------
+                            \draw[very thick, smooth, samples=140, domain=-2.5:2.5, variable=\x]
+                                    plot ({-\x},{exp(\x*ln(2))});
 
-<p><alert>Solution</alert>: Following the procedure for finding an inverse function, we have</p>
+                            % Point (1,2) and dotted guides -----------------------
+                            \fill (-1,2) circle (2pt);
+                            \draw[dotted] (-1,0) -- (-1,2) -- (0,2);
 
-<table>
-<tabular>
-<row>
-<cell><p>(a) <image source="/media/png72/imageC1743.png" /> Interchange <image source="/media/png72/imageC1744.png" /> and <image source="/media/png72/imageC1745.png" /></p>
-<p><image source="/media/png72/imageC1746.png" /> solve explicitly for <image source="/media/png72/imageC1747.png" /></p>
-<p><image source="/media/png72/imageC1748.png" /> Write in logarithmic form</p>
-<p><image source="/media/png72/imageC1749.png" /></p>
-<p>Thus, <image source="/media/png72/imageC1750.png" /></p></cell>
-<cell><p>(b) <image source="/media/png72/imageC1751.png" /> Interchange <image source="/media/png72/imageC1744.png" /> and <image source="/media/png72/imageC1745.png" /></p>
-<p><image source="/media/png72/imageC1752.png" /> Write in logarithmic form</p>
-<p><image source="/media/png72/imageC1753.png" /> solve explicitly for <image source="/media/png72/imageC1747.png" /></p>
-<p><image source="/media/png72/imageC1754.png" /></p>
-<p>Thus, <image source="/media/png72/imageC1755.png" /></p></cell>
-</row>
-</tabular>
-</table>
-<p>The following table contains the basic properties of logarithm:</p>
-<table>
-<tabular>
-<row header="yes">
-<cell><alert>Properties of logarithm</alert></cell>
-</row>
+                            % Tick marks and labels ---------------------------------
+                            \draw (1,0.12) -- (1,-0.12) node[below] {$1$};
+                            \draw (-1,0.12) -- (-1,-0.12) node[below] {$1$};
+                            \draw (0.12,1) -- (-0.12,1) node[left]  {$1$};
+                            \draw (0.12,2) -- (-0.12,2) node[left]  {$2$};
+                            \node[below left] at (0,0) {O};
 
-<row>
-<cell><p>Assume that <image source="/media/png72/imageC1756.png" /> and <image source="/media/png72/imageC1757.png" /> are positive and <image source="/media/png72/imageC1758.png" />. Then</p>
-<ol type="1">
-<li><p><image source="/media/png72/imageC1759.png" /></p></li>
-</ol>
-<p>In words, logarithm of a product is equal to the sum of the logs of the factors.</p>
-<ol start="2" type="1">
-<li><p><image source="/media/png72/imageC1760.png" /></p></li>
-</ol>
-<p>In words, the log of a quotient is the log of the numerator minus the log of the denominator.</p>
-<ol start="3" type="1">
-<li><p><image source="/media/png72/imageC1761.png" /></p></li>
-</ol>
-<p>In words, the log of a power is the exponent times the log.</p>
-<ol start="4" type="1">
-<li><p><image source="/media/png72/imageC1762.png" /></p></li>
-<li><p><image source="/media/png72/imageC1763.png" /></p></li>
-<li><p>if <em>a</em> is positive and .</p></li>
-</ol></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 3.37</alert>:</p>
-<ol type="1">
-<li><p>Express in terms of simpler logarithms.</p></li>
-</ol>
-<ol type="a">
-<li><p><image source="/media/png72/imageC1766.png" /> b) <image source="/media/png72/imageC1767.png" /> c) <image source="/media/png72/imageC1768.png" /></p></li>
-</ol>
+                            % Extra text ------------------------------------------
+                            \node[left] at (-1,2) {$(-1,2)$};
+                            \node[left] at (-2.2,{exp(2.2*ln(2))}) {$y =(\frac{1}{2}) ^{x}$};
+                        \end{tikzpicture}
+                    </latex-image>
+                        
+                    </image>
+                    <p>Here again the <m>x - \text{axis}</m> is a horizontal asymptote, there is no <m>x -</m>intercept, 1 is <m>y -</m>intercept and the range is the set of positive real numbers. However, the graph is now decreasing rather than increasing.</p>
+                    <p>The following box summarizes the important facts about exponential functions and their graphs.</p>
+                    <tabular left="medium" right="medium" top="medium" bottom="medium">
+                    <row header="yes">
+                    <cell><alert>The Exponential function</alert> <m>y = f(x) = b^{x}</m></cell>
+                    </row>
 
-<p><alert>Solution</alert>:</p>
+                    <row>
+                        <cell>
+                            <p>
+                                
+                            <ol marker="1.">
+                                <li><p>The domain of the exponential function is the set of real numbers</p></li>
+                                <li><p>The range of the exponential function is the set of positive real numbers</p></li>
+                                <li><p>The graph of <m>y = b^{x}</m> exhibits exponential growth if <m>b &gt; 1</m> or exponential decay if <m>0 &lt; b &lt; 1</m>.</p></li>
+                                <li><p>The <m>y -</m>intercept is 1.</p></li>
+                                <li><p>The <m>x -</m>intercept is a horizontal asymptote</p></li>
+                                <li><p>The exponential function is 1 – 1. Algebraically if <m>b^{x} = b^{y}</m>, then <m>x = y</m></p></li>
+                            </ol>
+                          </p>
+                      </cell>
+                    </row>
+                    </tabular>
+                    
+                        
+                    
+                </li>
+            </ol>
+        </p>
+        
+            
+    
+        
+        
+    </solution>
+</example>
+<example>
+    <statement>
+        <p> Sketch the graph of each of the following. Find the domain, range, intercepts, and asymptotes.</p>
+        <p>
+            a) <m>y = 3^{x} + 1</m>  <m> \qquad \qquad \text{b)}\,y = 3^{x + 1}</m> <m>\qquad \qquad \text{c)}\,y = - 9^{- x} + 3</m>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <ol marker="a)">
+                <li>
+                    <p>To get the graph of <m>y = 3^{x} + 1</m>. We start with the graph of <m>y = 3^{x}</m>, which is the basic exponential growth graph, and shift it up 1 unit.</p>
+                    <sidebyside>
+                        <image width="50%">
+                        <latex-image label="funct3">
+                            \begin{tikzpicture}
+                                % Axes -------------------------------------------------
+                                \draw[very thick,-&gt;] (-4,0) -- (5,0) node[right] {$x$};
+                                \draw[very thick,-&gt;] (0,-0.5) -- (0,11) node[above] {$y$};
 
-<ol type="a">
-<li><p><image source="/media/png72/imageC1769.png" /></p></li>
-<li><p>Examining the properties of logarithms, we can see that they deal with log of a product, quotient and power. Thus, <image source="/media/png72/imageC1770.png" /> which is the log of a sum cannot be simplified using log properties.</p></li>
-<li><p>We have</p></li>
-</ol>
+                                % Curve y = 3^x + 1 -----------------------------------
+                                \draw[thick, smooth, samples=140, domain=-2:2.2, variable=\x]
+                                        plot ({\x},{exp(\x*ln(3)) + 1});
 
-<p><image source="/media/png72/imageC1771.png" />=<image source="/media/png72/imageC1772.png" />.</p>
+                                % Horizontal asymptote y=1 ----------------------------
+                                \draw[dashed] (-4,1) -- (3,1);
+                                \node[above] at (3,1) {$y=1$};
 
-<ol start="2" type="1">
-<li><p>Show that <image source="/media/png72/imageC1773.png" />.</p></li>
-</ol>
-<p><alert>Solution</alert>: We have <image source="/media/png72/imageC1774.png" />.</p>
-<p>The logarithmic function was introduced without stressing the particular base chosen. However, there are two bases of special importance in science and mathematics, namely, <image source="/media/png72/imageC1775.png" /> and <image source="/media/png72/imageC1776.png" />.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.21: (Common Logarithm)</alert></p>
-<p><image source="/media/png72/imageC1777.png" /> is called the common logarithm function. We write <image source="/media/png72/imageC1778.png" />.</p></cell>
-</row>
-</tabular>
-</table>
-<p>The inverse of the natural exponential function is called the natural logarithmic function and has its own special notation.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.22: (Natural Logarithm)</alert></p>
-<p><image source="/media/png72/imageC1779.png" /> is called the natural logarithmic function. We write <image source="/media/png72/imageC1780.png" />.</p></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 3.38</alert>:</p>
-<ol type="1">
-<li><p>Evaluate <image source="/media/png72/imageC1781.png" /></p></li>
-</ol>
-<p><alert>Solution</alert>: Let <image source="/media/png72/imageC1782.png" />. Then, <image source="/media/png72/imageC1783.png" />.</p>
-<ol start="2" type="1">
-<li><p>Find the inverse function of <image source="/media/png72/imageC1784.png" />.</p></li>
-</ol>
-<p><alert>Solution</alert>: Let <image source="/media/png72/imageC1785.png" /> Interchange <image source="/media/png72/imageC1786.png" /> and <image source="/media/png72/imageC1787.png" /></p>
-<p><image source="/media/png72/imageC1788.png" /> Solve for <image source="/media/png72/imageC1789.png" /></p>
-<p><image source="/media/png72/imageC1790.png" /> Rewrite in logarithmic form</p>
-<p><image source="/media/png72/imageC1791.png" /></p>
-<p>Thus, <image source="/media/png72/imageC1792.png" />.</p>
-<ul>
-<li><p><alert>Trigonometric functions and their graphs</alert></p></li>
-</ul>
-<p>For the functions we have encountered so far, namely polynomial, rational and exponential functions, as the independent variable goes to infinity the graph of each of these three functions either goes to infinity(very quickly) for exponential functions or approaches a finite horizontal asymptote. None of these functions can model the regular periodic patterns that play an important role in the social, biological, and physical sciences: business cycles, agricultural seasons, heart rhythms, and hormone level fluctuations, and tides and planetary motions. The basic functions for studying regular periodic behaviour are the trigonometric functions. The domain of the trigonometric functions is more naturally the set of all geometric angles.</p>
-<p><alert>Angle Measurement</alert></p>
-<p>An angle is the figure formed by two half-lines or rays with a common end point. The common end point is called the vertex of the angle.</p>
-<p>In forming the angle, one side remains fixed and the other side rotates. The fixed side is called the initial side and the side that rotates is called the terminal side. If the terminal side rotates in a counter clockwise direction, we call the angle positive angle, and if the terminal side rotates in a clockwise direction, we call the angle negative angle.</p>
-<p><image source="/media/imageC1793.png" style="width:0.70903in;height:0.17847in" /><image source="/media/imageC1794.png" style="width:0.89514in;height:0.19861in" /></p>
-<p><image source="/media/imageC1793.png" style="width:0.7125in;height:0.18333in" /><image source="/media/imageC1794.png" style="width:0.89583in;height:0.2in" /></p>
-<p>What attribute of an angle are we trying to measure when we measure the size of an angle? A moment of thought will lead us to the conclusion that when we measure an angle we are trying to answer the question: Through what part of a complete rotation has the terminal side rotated?</p>
-<p>We will use degree (°) as the unit of measurement for angles. Recall that the measure of a full round angle (full circle) is 360°, straight angle is 180°, and right angle is 90°.</p>
-<p>An alternative unit of measure for angles which will indicate their size is the radian measure. To see the connection between the degree measure and radian measure of an angle, let us consider an angle <image source="/media/png72/imageC1795.png" /> and draw a circle of radius <image source="/media/png72/imageC1796.png" /> with the vertex of <image source="/media/png72/imageC1797.png" /> at its center <image source="/media/png72/imageC1798.png" />. Let <image source="/media/png72/imageC1799.png" /> represent the length of the arc of the circle intercepted by <image source="/media/png72/imageC1800.png" />(as shown below).</p>
-<p><image source="/media/png72/imageC1801.png" /></p>
-<p>Basic geometry tells us that the central angle <image source="/media/png72/imageC1802.png" /> will be the same fractional part of one complete rotation as <image source="/media/png72/imageC1803.png" /> will be of the circumference of the circle. For example, if <image source="/media/png72/imageC1804.png" /> is <image source="/media/png72/imageC1805.png" /> of a complete rotation, then <image source="/media/png72/imageC1806.png" /> will be <image source="/media/png72/imageC1807.png" /> of the circumference of the circle. In other words, we can set up the following proportion:</p>
-<p><image source="/media/png72/imageC1808.png" /></p>
-<p>Thus, we have the following conversion formula:</p>
-<table>
-<tabular>
-<row>
-<cell><image source="/media/png72/imageC1809.png" /></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 3.39</alert>:</p>
-<ol type="1">
-<li><p>Convert each of the following radian measures to degrees.</p></li>
-</ol>
-<ol type="a">
-<li><p><image source="/media/png72/imageC1810.png" /> b) <image source="/media/png72/imageC1811.png" /></p></li>
-</ol>
-<p><alert>Solution</alert>: a) By the conversion formula, we have <image source="/media/png72/imageC1812.png" />, which implies that <image source="/media/png72/imageC1813.png" />.</p>
-<ol start="2" type="a">
-<li><p>Again using the conversion formula, we get <image source="/media/png72/imageC1814.png" />, which implies that <image source="/media/png72/imageC1815.png" />.</p></li>
-</ol>
-<ol start="2" type="1">
-<li><p>Convert to radian measures</p></li>
-</ol>
-<p>a) <image source="/media/png72/imageC1816.png" /> b) <image source="/media/png72/imageC1817.png" /></p>
+                                % Dotted guide lines to (2,10) ------------------------
+                                \draw[very thick,dashed, gray] (2,0) -- (2,10);
+                                \draw[very thick,dashed, gray] (0,10) -- (2,10);
 
-<p><alert>Solution</alert>: a) Let <image source="/media/png72/imageC1818.png" /> represent the radian measure of <image source="/media/png72/imageC1819.png" />. Using the conversion formula, we obtain: <image source="/media/png72/imageC1820.png" />, which implies that <image source="/media/png72/imageC1821.png" />.</p>
+                                % Tick marks and labels ---------------------------------
+                                \draw (1,0.15) -- (1,-0.15) node[below] {$1$};
+                                \draw (2,0.15) -- (2,-0.15) node[below] {$2$};
 
-<p>b) Rather than using the conversion formula, we notice that <image source="/media/png72/imageC1822.png" />. In part (a) we found that <image source="/media/png72/imageC1823.png" />, and so we have <image source="/media/png72/imageC1824.png" />.</p>
-<p>To define the trigonometric functions, we will view all angles in the context of a Cartesian coordinate system: that is, given an angle <image source="/media/png72/imageC1825.png" />, we begin by putting <image source="/media/png72/imageC1826.png" /> in standard position, meaning that the vertex of <image source="/media/png72/imageC1827.png" /> is placed at the origin and initial side of <image source="/media/png72/imageC1828.png" /> is placed along the positive <image source="/media/png72/imageC1829.png" />. Thus the location of the terminal side of <image source="/media/png72/imageC1830.png" /> will, of course, depend on the size of <image source="/media/png72/imageC1831.png" />.</p>
-<p>We then locate a point( other than the origin) on the terminal side of <image source="/media/png72/imageC1832.png" /> and identify its coordinates <image source="/media/png72/imageC1833.png" /> and its distance to the origin, dented by <image source="/media/png72/imageC1834.png" />. Then, <image source="/media/png72/imageC1835.png" /> is positive.</p>
-<p>With <image source="/media/png72/imageC1836.png" /> in standard position, we define the six trigonometric functions of <image source="/media/png72/imageC1837.png" />as follows:</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.23</alert></p>
-<p><alert><span class="underline">Name of function</span></alert> <alert><span class="underline">Abbreviation</span></alert> <alert><span class="underline">Definition</span></alert></p>
-<p>Sine <image source="/media/png72/imageC1838.png" /> <image source="/media/png72/imageC1839.png" /> <image source="/media/png72/imageC1840.png" /></p>
-<p>Cosine <image source="/media/png72/imageC1841.png" /> <image source="/media/png72/imageC1842.png" /> <image source="/media/png72/imageC1843.png" /></p>
-<p>Tangent <image source="/media/png72/imageC1844.png" /> <image source="/media/png72/imageC1845.png" /> <image source="/media/png72/imageC1846.png" /></p>
-<p>Cosecant <image source="/media/png72/imageC1847.png" /> <image source="/media/png72/imageC1848.png" /> <image source="/media/png72/imageC1849.png" /></p>
-<p>Secant <image source="/media/png72/imageC1850.png" /> <image source="/media/png72/imageC1851.png" /> <image source="/media/png72/imageC1852.png" /></p>
-<p>Cotangent <image source="/media/png72/imageC1853.png" /> <image source="/media/png72/imageC1854.png" /> <image source="/media/png72/imageC1855.png" /></p></cell>
-</row>
-</tabular>
-</table>
-<p>Recall that the radian measure of an angle is defined as <image source="/media/png72/imageC1856.png" />, where <image source="/media/png72/imageC1857.png" /> is angle in radians</p>
-<p><image source="/media/png72/imageC1858.png" /> is the length of the arc intercepted by <image source="/media/png72/imageC1859.png" /> and <image source="/media/png72/imageC1860.png" /> is the length of the radius. Since <image source="/media/png72/imageC1861.png" /> and <image source="/media/png72/imageC1862.png" /> are both lengths, the quotient <image source="/media/png72/imageC1863.png" /> is a pure number without any units attached. Thus, any angle can be interpreted as a real number. Conversely, any real number can be interpreted as an angle. Thus, we can describe the domains of the trigonometric functions in the frame work of the real number systems. If we let <image source="/media/png72/imageC1864.png" />, the domain consists of all real numbers <image source="/media/png72/imageC1865.png" /> for which <image source="/media/png72/imageC1866.png" /> is defined. Since <image source="/media/png72/imageC1867.png" /> and <image source="/media/png72/imageC1868.png" /> is never equal to zero, the domain for <image source="/media/png72/imageC1869.png" /> is the set of all real numbers. Similarly, the domain of <image source="/media/png72/imageC1870.png" /> is also the set of all real numbers.</p>
-<ul>
-<li><p><alert>The graph of</alert> <image source="/media/png72/imageC1871.png" /></p></li>
-</ul>
-<p>To analyze <image source="/media/png72/imageC1872.png" />, we keep in mind that once we choose a real number <image source="/media/png72/imageC1873.png" />, we draw the angle, in standard position, that corresponds to <image source="/media/png72/imageC1874.png" />. To simplify our analysis, we choose the point <image source="/media/png72/imageC1875.png" /> on the terminal side so that <image source="/media/png72/imageC1876.png" />. That is, <image source="/media/png72/imageC1877.png" /> is a point on the unit circle <image source="/media/png72/imageC1878.png" />. Note that <image source="/media/png72/imageC1879.png" />.</p>
-<p>As the terminal side of <image source="/media/png72/imageC1880.png" /> moves through the first quadrant, <image source="/media/png72/imageC1881.png" /> increases from 0 (when <image source="/media/png72/imageC1882.png" />) to 1(when <image source="/media/png72/imageC1883.png" />). Thus, as <image source="/media/png72/imageC1884.png" /> increases from 0 to <image source="/media/png72/imageC1885.png" />, <image source="/media/png72/imageC1886.png" /> steadily increases from 0 to 1.</p>
-<p>As <image source="/media/png72/imageC1887.png" /> increases from <image source="/media/png72/imageC1888.png" /> to <image source="/media/png72/imageC1889.png" />, <image source="/media/png72/imageC1890.png" /> decreases form 1 to 0. A similar analysis reveals that as <image source="/media/png72/imageC1891.png" /> increases from <image source="/media/png72/imageC1892.png" /> to <image source="/media/png72/imageC1893.png" />, <image source="/media/png72/imageC1894.png" /> decreases from 0 to – 1; and as <image source="/media/png72/imageC1895.png" /> increases from <image source="/media/png72/imageC1896.png" /> to <image source="/media/png72/imageC1897.png" />, <image source="/media/png72/imageC1898.png" /> increases from – 1 to 0.</p>
-<p><image source="/media/imageC1899.png" style="width:2.58194in;height:1.68542in" />Based on this analysis, we have the graph of <image source="/media/png72/imageC1900.png" /> in the interval <image source="/media/png72/imageC1901.png" /> as show below.</p>
-<p><image source="/media/png72/imageC1902.png" /></p>
-<p><image source="/media/png72/imageC1903.png" /></p>
-<p>Since the values of <image source="/media/png72/imageC1904.png" /> depend only on the position of the terminal side, adding or subtracting multiples of <image source="/media/png72/imageC1905.png" /> to <image source="/media/png72/imageC1906.png" /> will leave the value of <image source="/media/png72/imageC1907.png" /> unchanged. Thus, the values of <image source="/media/png72/imageC1908.png" /> will repeat every <image source="/media/png72/imageC1909.png" />units. The complete graph of <image source="/media/png72/imageC1910.png" /> appears below.</p>
-<p><image source="/media/imageC1911.png" style="width:4.44583in;height:1.05in" /></p>
-<p>The graph of <image source="/media/png72/imageC1912.png" />, which is called the basic sine curve.</p>
-<ul>
-<li><p><alert>The graph of</alert> <image source="/media/png72/imageC1913.png" /></p></li>
-</ul>
-<p>Applying the same type of analysis to <image source="/media/png72/imageC1914.png" />, we will able to get a good idea of what its graph looks like. The figure below shows the angle corresponding to <image source="/media/png72/imageC1915.png" />as it increases through quadrant I, II, III and IV.</p>
-<p>Keeping in mind that <image source="/media/png72/imageC1916.png" />, we have the following:</p>
-<ol type="1">
-<li><p>As <image source="/media/png72/imageC1917.png" /> increases from 0 to <image source="/media/png72/imageC1918.png" />, <image source="/media/png72/imageC1919.png" /> decreases from 1 to 0.</p></li>
-<li><p>As <image source="/media/png72/imageC1917.png" /> increases from <image source="/media/png72/imageC1918.png" /> to <image source="/media/png72/imageC1920.png" />, <image source="/media/png72/imageC1921.png" /> decreases from 0 to – 1.</p></li>
-<li><p>As <image source="/media/png72/imageC1917.png" /> increases from <image source="/media/png72/imageC1922.png" /> to <image source="/media/png72/imageC1923.png" />, <image source="/media/png72/imageC1921.png" /> increases from – 1 to 0.</p></li>
-<li><p>As <image source="/media/png72/imageC1917.png" /> increases from <image source="/media/png72/imageC1924.png" /> to <image source="/media/png72/imageC1925.png" />, <image source="/media/png72/imageC1921.png" /> increases from 0 to 1.</p></li>
-</ol>
-<p>Based on this analysis, we have the graph of <image source="/media/png72/imageC1926.png" /> as shown below:</p>
-<p><image source="/media/imageC1927.png" style="width:4.42083in;height:0.93333in" /></p>
-<ul>
-<li><p><alert>The graph of</alert> <image source="/media/png72/imageC1928.png" /></p></li>
-</ul>
-<p>Since <image source="/media/png72/imageC1929.png" /> is undefined whenever <image source="/media/png72/imageC1930.png" />, <image source="/media/png72/imageC1931.png" /> is undefined whenever the terminal side of the angle corresponding to <image source="/media/png72/imageC1932.png" /> falls on the <image source="/media/png72/imageC1933.png" />. This happens for <image source="/media/png72/imageC1934.png" />, to which we can add or subtract any multiple of <image source="/media/png72/imageC1935.png" /> that will again bring the terminal side back to the <image source="/media/png72/imageC1936.png" />. Thus, domain of <image source="/media/png72/imageC1937.png" /> is <image source="/media/png72/imageC1938.png" />, where <image source="/media/png72/imageC1939.png" /> is an integer.</p>
-<ol start="5" type="1">
-<li><p>As<image source="/media/png72/imageC1940.png" /> increases from 0 to <image source="/media/png72/imageC1941.png" />, <image source="/media/png72/imageC1942.png" /> decreases from 1 to 0 and <image source="/media/png72/imageC1943.png" /> increases from 0 to 1; therefore, <image source="/media/png72/imageC1944.png" /> increases from 0 to <image source="/media/png72/imageC1945.png" />.</p></li>
-<li><p>As <image source="/media/png72/imageC1946.png" /> increases from <image source="/media/png72/imageC1947.png" /> to <image source="/media/png72/imageC1948.png" />, <image source="/media/png72/imageC1949.png" /> decreases from 0 to – 1 and <image source="/media/png72/imageC1950.png" /> decreases from 1 to 0; therefore, <image source="/media/png72/imageC1951.png" /> increases from <image source="/media/png72/imageC1952.png" /> to 0.</p></li>
-<li><p>As <image source="/media/png72/imageC1953.png" /> increases from <image source="/media/png72/imageC1954.png" /> to <image source="/media/png72/imageC1955.png" />, <image source="/media/png72/imageC1956.png" /> increases from – 1 to 0 and <image source="/media/png72/imageC1957.png" /> decreases from 0 to – 1; therefore, <image source="/media/png72/imageC1958.png" /> increases from 0 to <image source="/media/png72/imageC1959.png" />.</p></li>
-<li><p>As <image source="/media/png72/imageC1960.png" /> increases from <image source="/media/png72/imageC1961.png" /> to <image source="/media/png72/imageC1962.png" />, <image source="/media/png72/imageC1963.png" /> increases from <image source="/media/png72/imageC1964.png" /> to 1 and <image source="/media/png72/imageC1965.png" /> increases from – 1 to 0; therefore, <image source="/media/png72/imageC1966.png" /> increases from <image source="/media/png72/imageC1967.png" /> to 0.</p></li>
-</ol>
-<p>You may want to add some more specific values to this analysis. In any case, we get the following as the graph of the tangent function.</p>
+                                \draw (0.15,1) -- (-0.15,1) node[left] {$1$};
+                                
+                                \draw (0.15,2) -- (-0.15,2) node[left] {$2$};
+                                \draw (0.15,10) -- (-0.15,10) node[left] {$10$};
 
-<p><image source="/media/imageC1968.png" style="width:4.81597in;height:1.81389in" /></p>
+                                % Origin label
+                                \node[below left] at (0,0) {O};
 
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.24: (Periodic Function)</alert></p>
-<p>A function is called periodic if there exists a number such that for all in the domain of . The smallest such number iscalled the period of the function</p></cell>
-</row>
-</tabular>
-</table>
-<p>A periodic function keeps repeating the same set of <image source="/media/png72/imageC1975.png" />over and over again. The graph of a periodic function shows the same basic segment of its graph being repeated. In the case of sine and cosine functions, the period is <image source="/media/png72/imageC1976.png" />. The period of the tangent function is <image source="/media/png72/imageC1977.png" />.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.25: (Amplitude of a periodic function)</alert></p>
-<p>The amplitude of a periodic function <image source="/media/png72/imageC1978.png" /> is</p>
-<p><image source="/media/png72/imageC1979.png" />maximum value of <image source="/media/png72/imageC1980.png" />minimum value of <image source="/media/png72/imageC1981.png" /></p></cell>
-</row>
-</tabular>
-</table>
-<p>Thus, the amplitude of the basic sine and cosine function is 1.</p>
-<p>The portion of the graph of a sine or cosine function over one period is called a complete cycle of the graph. In other words, the minimal portion of a sine or cosine graph that keeps repeating itself is called a complete cycle of the graph.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 3.26: (Frequency of a periodic function)</alert></p>
-<p>The number of complete cycles a sine or cosine graph makes on an interval of length equal to <image source="/media/png72/imageC1982.png" /> is called its frequency.</p></cell>
-</row>
-</tabular>
-</table>
-<p>The frequency of the basic sine curve <image source="/media/png72/imageC1983.png" /> and the basic cosine curve <image source="/media/png72/imageC1984.png" />is 1, because each graph makes 1 complete cycle in the interval <image source="/media/png72/imageC1985.png" />.</p>
-<p>If a sine function has period of <image source="/media/png72/imageC1986.png" />(see the figure below), then the number of complete cycles its graph will make in an interval of length <image source="/media/png72/imageC1987.png" /> is <image source="/media/png72/imageC1988.png" />.</p>
-<p>A sine graph of period and frequency 4</p>
-<p>Thus if a sine function has a period of <image source="/media/png72/imageC1990.png" />, its frequency is 4 and its graph will make 4 complete cycles in an interval of length <image source="/media/png72/imageC1991.png" />.</p>
-<p><alert>Example 3.40</alert>: Sketch the graph of <image source="/media/png72/imageC1992.png" /> and find its amplitude, period and frequency.</p>
-<p><alert>Solution</alert>: We can obtain this graph by applying our knowledge of the basic sine graph. For the basic curve, we have</p>
-<p><image source="/media/png72/imageC1993.png" /> <image source="/media/png72/imageC1994.png" /> <image source="/media/png72/imageC1995.png" /> <image source="/media/png72/imageC1996.png" /> <image source="/media/png72/imageC1997.png" /></p>
-<p>These quadrantal values serve as guide points, which help us draw the graph. To obtain similar guide points for <image source="/media/png72/imageC1998.png" />, we ask for what values of <image source="/media/png72/imageC1999.png" /> is</p>
-<p><image source="/media/png72/imageC2000.png" /> <image source="/media/png72/imageC2001.png" /> <image source="/media/png72/imageC2002.png" /> <image source="/media/png72/imageC2003.png" /> <image source="/media/png72/imageC2004.png" /></p>
-<p>and we get</p>
-<p><image source="/media/png72/imageC2005.png" /> <image source="/media/png72/imageC2006.png" /> <image source="/media/png72/imageC2007.png" /> <image source="/media/png72/imageC2008.png" /> <image source="/media/png72/imageC2009.png" /></p>
-<p>Thus, <image source="/media/png72/imageC2010.png" /> will have the values 0, 1, 0, <image source="/media/png72/imageC2011.png" />, 0 at <image source="/media/png72/imageC2012.png" />and <image source="/media/png72/imageC2013.png" />, respectively. The graph of <image source="/media/png72/imageC2014.png" /> will thus complete one cycle in the interval <image source="/media/png72/imageC2015.png" />, and will repeat the same values in the interval <image source="/media/png72/imageC2016.png" />.</p>
-<p>From this graph we see that <image source="/media/png72/imageC2017.png" />has an amplitude of 1, a period <image source="/media/png72/imageC2018.png" />, and a frequency of 2.</p>
-<p>For convenience we summarize our discussion on the domains of the trigonometric functions in the table.</p>
-<table>
-<tabular>
-<row>
-<cell><ol type="1">
-<li><p><image source="/media/png72/imageC2019.png" /></p></li>
-<li><p><image source="/media/png72/imageC2020.png" /></p></li>
-<li><p><image source="/media/png72/imageC2021.png" /></p></li>
-<li><p><image source="/media/png72/imageC2022.png" /></p></li>
-<li><p><image source="/media/png72/imageC2023.png" /></p></li>
-<li><p><image source="/media/png72/imageC2024.png" /></p></li>
-</ol></cell>
-<cell><p>Domain = All real numbers</p>
-<p>Domain = All real numbers</p>
-<p>Domain =<image source="/media/png72/imageC2025.png" /></p>
-<p>Domain = {<image source="/media/png72/imageC2026.png" />}</p>
-<p>Domain = <image source="/media/png72/imageC2027.png" /></p>
-<p>Domain = <image source="/media/png72/imageC2028.png" /></p>
-<p>where <image source="/media/png72/imageC2029.png" /> is an integer</p></cell>
-</row>
-</tabular>
-</table>
-<p>In the course of our discussion of the trigonometric functions, we have discussed two types of trigonometric relationships: the reciprocal and quotient relationships. These relationships are examples of trigonometric identities. In the table below we list identities that are satisfied by the trigonometric functions.</p>
-<table>
-<tabular>
-<row header="yes">
-<cell><p><alert>The reciprocal Identities</alert> 1.</p>
-<p>2.</p>
-<p>3.</p>
-<p><alert>The quotient Identities</alert> 4.</p>
-<p>5.</p></cell>
-</row>
+                                % Label for function
+                                
+                                \node[right] at (2.2,{exp(2.1*ln(3)) + 1}) {$y=3^{x}+1$};
+                            \end{tikzpicture}
+                        </latex-image>
+                        </image>
+                        
+                        <tabular>
+                        <row>
+                        <cell></cell>
+                        <cell><p>From the graph we see that</p>
+                        <p>
+                            <ul>
+                                <li><em>Dom( f )</em><m> = \Re</m></li>
+                                <li><em>Range( f )</em><m> = (1, \infty)</m></li>
+                                <li><p>The <m>y -</m>intercept is 2</p></li>
+                                <li><p>The line <m>y = 1</m> is a horizontal asymptote</p></li>
+                            </ul>
+                        </p></cell>
+                        </row>
+                        </tabular>
+                        
+                    </sidebyside>
+                </li>
+                <li>
+                    <p>To get the graph of <m>y = 3^{x + 1}</m>, we start with the graph of <m>y = 3^{x}</m>, and shift 1 unit to the left.</p>
+                    <sidebyside>
+                        <image>
+                        <latex-image>
+                            \begin{tikzpicture}
+                                % Axes -------------------------------------------------
+                                \draw[very thick,-&gt;] (-4,0) -- (2.5,0) node[right] {$x$};
+                                \draw[very thick,-&gt;] (0,-2) -- (0,10) node[above] {$y$};
 
-<row>
-<cell><p><alert>The Pythagorean Identities</alert> 6. <image source="/media/png72/imageC2035.png" style="width:1.225in;height:0.225in" /></p>
+                                % Curve y = 3^{x+1} -----------------------------------
+                                \draw[very thick, smooth, samples=140, domain=-4:1.1, variable=\x]
+                                        plot ({\x},{exp((\x+1)*ln(3))});
 
-<p>7.<image source="/media/png72/imageC2036.png" style="width:1.21667in;height:0.225in" /></p>
-<p>8.<image source="/media/png72/imageC2037.png" style="width:1.225in;height:0.225in" /></p>
+                                % Dotted guide lines to (1,9) -------------------------
+                                \draw[very thick,dashed, gray] (1,0) -- (1,9);
+                                \draw[very thick,dashed, gray] (0,9) -- (1,9);
 
-<p><alert>The addition formula</alert> 9. (a)</p>
-<p>(b)</p>
-<p>10. (a)</p>
-<p>(b)</p>
-<p>11. (a)</p>
-<p>(b)</p>
-<p><alert>The double angle formula</alert> 12.</p>
-<p>13.</p>
-<p>14.</p>
-<p><alert>The half-angle formula</alert> 15.</p>
-<p>16.</p>
-<p>17.</p></cell>
-</row>
-</tabular>
-</table>
-<ul>
-<li><p><alert>Hyperbolic functions and their graphs</alert></p></li>
-</ul>
-<p>The hyperbolic functions are certain combinations of exponential functions, that occur in various applications, with properties similar to those of the trigonometric functions. Among many other applications they are used to describe the formation of satellite rings around the planets, to describe the shape of a rope hanging from two points, and have application in relativity theory. The two basic hyperbolic functions are the hyperbolic sine and hyperbolic cosine functions. They are defined as follows:</p>
-<table>
-<tabular>
-<row header="yes">
-<cell><alert>Definition 3.27</alert>:</cell>
-<cell></cell>
-</row>
+                                % Tick marks and  labels ---------------------------------
+                                \draw (1,0.15) -- (1,-0.15) node[below] {$1$};
 
-<row>
-<cell><ol type="1">
-<li><p>The <alert>hyperbolic sine</alert> function is defined by:</p></li>
-</ol>
-<p><image source="/media/png72/imageC2050.png" /></p>
-<p>The domain of <image source="/media/png72/imageC2051.png" /> is <image source="/media/png72/imageC2052.png" />.</p></cell>
-<cell><ol start="2" type="1">
-<li><p>The <alert>hyperbolic cosine</alert> function is defined by:</p></li>
-</ol>
-<p><image source="/media/png72/imageC2053.png" /></p>
-<p>The domain of <image source="/media/png72/imageC2054.png" /> is also <image source="/media/png72/imageC2055.png" /></p></cell>
-</row>
-</tabular>
-</table>
+                                \draw (0.15,1) -- (-0.15,1);
+                                \node[left] at (0,1) {$1$};
 
-<p><alert>Remark</alert>:</p>
-<p>1. <image source="/media/png72/imageC2056.png" /> is pronounced <image source="/media/png72/imageC2057.png" /> and <image source="/media/png72/imageC2058.png" /> is pronounced as<image source="/media/png72/imageC2059.png" />.</p>
-<p>2. Since <image source="/media/png72/imageC2060.png" /> for all <image source="/media/png72/imageC2061.png" />, we see that <image source="/media/png72/imageC2062.png" /> for every <image source="/media/png72/imageC2063.png" />.</p>
-<p>3. If <image source="/media/png72/imageC2064.png" />, then <image source="/media/png72/imageC2065.png" />. Thus, <image source="/media/png72/imageC2066.png" /> is an even</p>
-<p>function.</p>
-<p>4. <image source="/media/png72/imageC2067.png" /> is an odd function.</p>
-<p>3. In contrast to sine and cosine, the hyperbolic functions are not periodic.</p>
+                                \draw (0.15,3) -- (-0.15,3);
+                                
 
-<p><alert>Example 3.28</alert>: Using the above definitions, show that</p>
-<ol type="1">
-<li><p><image source="/media/png72/imageC2068.png" /></p></li>
-<li></li>
-<li><p><image source="/media/png72/imageC2070.png" /></p></li>
-</ol>
+                                \draw (0.15,9) -- (-0.15,9);
+                                \node[left] at (0,9) {$9$};
 
-<p><alert>Solution</alert>:</p>
+                                % Origin label
+                                \node[below left] at (0,0) {O};
 
-<ol type="1">
-<li><p>We have</p></li>
-</ol>
+                                % Label for function
+                                \node[right] at (1.7,{exp((2)*ln(3))}) {$y=3^{x+1}$};
+                            \end{tikzpicture}
+                        </latex-image>
+                        </image>
+                        <tabular>
+                        <row>
+                        <cell></cell>
+                        <cell><p>From the graph we see that</p>
+                        <p>
+                            <ul>
+                            <li><em>Dom( f )</em><m> = \Re</m></li>
+                            <li><em>Range( f )</em><m> = (0, \infty)</m></li>
+                            <li><p>The <m>y -</m>intercept is 3</p></li>
+                            <li><p>The line <m>y = 0</m> is a horizontal asymptote</p></li>
+                            </ul>
+                        </p></cell>
+                        </row>
+                        </tabular>
+                        
+                    </sidebyside>
+                </li>
+                <li>
+                    <p>To get the graph of <m>y = - 9^{- x} + 3</m>, we start with the basic exponential decay <m>y = 9^{- x}</m>. We then reflect it with respect to the <m>x - \text{axis}</m>, which gives the graph of <m>y = - 9^{- x}</m>. Finally, we shift this graph up 3 units to get the required graph of <m>y = - 9^{- x} + 3</m>.</p>
 
-<p><image source="/media/png72/imageC2071.png" /></p>
+                    <p>From the graph of <m>y = - 9^{- x} + 3</m>, we can see that <m>\text{Dom}(h) = \Re</m>, <m>\text{Range}(h) = ( - \infty,3)</m>, the line <m>y = 3</m> is a horizontal asymptote, 2 is the <m>y -</m>intercept and <m>x = - \frac{1}{2}</m> is the <m>x -</m>intercept.</p>
+                    <p><m>\textbf{Remark}</m>: When the base <m>b</m> of the exponential function <m>f(x) = b^{x}</m> equals to the number <m>e</m>, where <m>e = 2\text{.}\text{7182}\cdots</m>, we call the exponential function the natural exponential function.</p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</example>
 
-<ol start="2" type="1">
-<li><p><image source="/media/png72/imageC2072.png" /></p></li>
-</ol>
 
-<p><image source="/media/png72/imageC2073.png" /><image source="/media/png72/imageC2074.png" /></p>
-<p><image source="/media/png72/imageC2075.png" /></p>
-<p><image source="/media/png72/imageC2076.png" /></p>
 
-<ol start="3" type="1">
-<li><p>Left as an exercise.</p></li>
-</ol>
-<ul>
-<li><p><alert>The graph of</alert> <image source="/media/png72/imageC2077.png" /></p></li>
-</ul>
-<p>Since <image source="/media/png72/imageC2078.png" /> is an even function, its graph is symmetric about the <image source="/media/png72/imageC2079.png" />. Its <image source="/media/png72/imageC2080.png" />intercept is <image source="/media/png72/imageC2081.png" />, because <image source="/media/png72/imageC2082.png" />. As <image source="/media/png72/imageC2083.png" /> tends to infinity, <image source="/media/png72/imageC2084.png" /> tends to infinity because <image source="/media/png72/imageC2085.png" /> goes to infinity and <image source="/media/png72/imageC2086.png" /> approaches to 0. When <image source="/media/png72/imageC2087.png" /> is a large negative number <image source="/media/png72/imageC2088.png" /> acts like <image source="/media/png72/imageC2089.png" />, because <image source="/media/png72/imageC2090.png" /> gets close to 0. Thus the graph of <image source="/media/png72/imageC2091.png" />looks like:</p>
-<p><image source="/media/imageC2092.png" style="width:2.5875in;height:2.00833in" /></p>
-<p>This graph can also be obtained by geometrically adding the two curves <image source="/media/png72/imageC2093.png" /> and <image source="/media/png72/imageC2094.png" />, and taking half of each resulting <image source="/media/png72/imageC2095.png" />. Observe that range of <image source="/media/png72/imageC2096.png" /> is <image source="/media/png72/imageC2097.png" />.</p>
-<ul>
-<li><p><alert>The graph of</alert> <image source="/media/png72/imageC2098.png" /></p></li>
-</ul>
-<p>Since <image source="/media/png72/imageC2099.png" /> is an odd function, its graph is symmetric about the origin. The graph passes through the origin because <image source="/media/png72/imageC2100.png" />. As <image source="/media/png72/imageC2101.png" /> gets large <image source="/media/png72/imageC2102.png" /> acts like <image source="/media/png72/imageC2103.png" /> and when <image source="/media/png72/imageC2104.png" /> is a large negative number, <image source="/media/png72/imageC2105.png" /> acts like <image source="/media/png72/imageC2106.png" />. Thus, the graph of <image source="/media/png72/imageC2107.png" /> looks like:</p>
 
-<p><image source="/media/imageC2108.png" style="width:2.83958in;height:2.5in" /></p>
 
-<p>The remaining four hyperbolic functions are defined in terms of <image source="/media/png72/imageC2109.png" /> and <image source="/media/png72/imageC2110.png" /> by</p>
-<p>analogy with trigonometry.</p>
-<table>
-<tabular>
-<row>
-<cell><p><image source="/media/png72/imageC2111.png" /> (The domain of <image source="/media/png72/imageC2112.png" /> is <image source="/media/png72/imageC2113.png" />.</p>
-<p><image source="/media/png72/imageC2114.png" /> (The domain of <image source="/media/png72/imageC2115.png" /> is <image source="/media/png72/imageC2116.png" />)</p>
-<p><image source="/media/png72/imageC2117.png" /> (The domain of <image source="/media/png72/imageC2118.png" />is <image source="/media/png72/imageC2119.png" />)</p>
-<p><image source="/media/png72/imageC2120.png" /> (The domain of <image source="/media/png72/imageC2121.png" /> is <image source="/media/png72/imageC2116.png" />)</p></cell>
-</row>
-</tabular>
-</table>
-<p>You may sketch the graphs of these four hyperbolic functions (see exercise 19).</p>
-<p>The trigonometric terminology and notation for the hyperbolic functions stem from the fact that they satisfy a list of identities that much resemble the familiar trigonometric identities, apart from an occasional difference of sign.</p>
-<table>
-<tabular>
-<row>
-<cell><p><image source="/media/png72/imageC2122.png" /> (1)</p>
-<p><image source="/media/png72/imageC2123.png" /> (2)</p>
-<p><image source="/media/png72/imageC2124.png" /> (3)</p>
-<p><image source="/media/png72/imageC2125.png" /> (4)</p>
-<p><image source="/media/png72/imageC2126.png" /> (5)</p></cell>
-</row>
-</tabular>
-</table>
-<p>The trigonometric functions are sometimes called circular functions because the point <image source="/media/png72/imageC2127.png" /> lies on the circle <image source="/media/png72/imageC2128.png" /> for all <image source="/media/png72/imageC2129.png" />. Similarly, identity (1) tells us that the point <image source="/media/png72/imageC2130.png" /> lies on the hyperbola , and this is the reason for the name hyperbolic functions.</p>
-<p><alert>Exercise 3.5</alert></p>
-<ol type="1">
-<li><p>Find the domain of the given function.</p></li>
-</ol>
-<ol type="a">
-<li><p><image source="/media/png72/imageC2132.png" /> b) <image source="/media/png72/imageC2133.png" /> c) <image source="/media/png72/imageC2134.png" /> d) <image source="/media/png72/imageC2135.png" /></p></li>
-</ol>
-<ol start="2" type="1">
-<li><p>Sketch the graph of the given function. Identify the domain, range, intercepts, and asymptotes.</p></li>
-</ol>
-<ol type="a">
-<li><p><image source="/media/png72/imageC2136.png" /> b) <image source="/media/png72/imageC2137.png" /> c) <image source="/media/png72/imageC2138.png" /> d) <image source="/media/png72/imageC2139.png" /></p></li>
-</ol>
-<ol start="3" type="1">
-<li><p>Solve the given exponential equation.</p></li>
-</ol>
-<ol type="a">
-<li><p><image source="/media/png72/imageC2140.png" /> b) <image source="/media/png72/imageC2141.png" /> c) <image source="/media/png72/imageC2142.png" /> d) <image source="/media/png72/imageC2143.png" /></p></li>
-</ol>
-<ol start="4" type="1">
-<li><p>Let <image source="/media/png72/imageC2144.png" />. Show that <image source="/media/png72/imageC2145.png" />.</p></li>
-<li><p>Let <image source="/media/png72/imageC2146.png" />. Show that <image source="/media/png72/imageC2147.png" />.</p></li>
-<li><p>Let <image source="/media/png72/imageC2148.png" />. Show that <image source="/media/png72/imageC2149.png" />.</p></li>
-<li><p>Evaluate the given logarithmic expression (where it is defined).</p></li>
-</ol>
-<ol type="a">
-<li><p><image source="/media/png72/imageC2150.png" /> c) <image source="/media/png72/imageC2151.png" /> e) <image source="/media/png72/imageC2152.png" /></p></li>
-<li><p><image source="/media/png72/imageC2153.png" /> d) <image source="/media/png72/imageC2154.png" /> f) <image source="/media/png72/imageC2155.png" /></p></li>
-</ol>
-<ol start="8" type="1">
-<li><p>If <image source="/media/png72/imageC2156.png" />, find <image source="/media/png72/imageC2157.png" /> and the domain of <image source="/media/png72/imageC2158.png" />.</p></li>
-<li><p>If <image source="/media/png72/imageC2159.png" />, find <image source="/media/png72/imageC2160.png" /> and the domain of <image source="/media/png72/imageC2161.png" />.</p></li>
-<li><p>Show that <image source="/media/png72/imageC2162.png" /></p></li>
-<li><p>Sketch the graph of the given function and identify the domain, range, intercepts and asymptotes.</p></li>
-</ol>
-<ol type="a">
-<li><p><image source="/media/png72/imageC2163.png" /> b) <image source="/media/png72/imageC2164.png" /> c) <image source="/media/png72/imageC2165.png" /> d) <image source="/media/png72/imageC2166.png" /></p></li>
-</ol>
-<ol start="12" type="1">
-<li><p>Find the inverse of <image source="/media/png72/imageC2167.png" />.</p></li>
-<li><p>Let <image source="/media/png72/imageC2168.png" />. Find a function so that <image source="/media/png72/imageC2169.png" />.</p></li>
-<li><p>Convert the given angle from radians to degrees</p></li>
-</ol>
-<ol type="a">
-<li><p><image source="/media/png72/imageC2170.png" /> b) <image source="/media/png72/imageC2171.png" /> c) <image source="/media/png72/imageC2172.png" /></p></li>
-</ol>
-<ol start="15" type="1">
-<li><p>Convert the given angle from degrees to radians</p></li>
-</ol>
-<ol type="a">
-<li><p><image source="/media/png72/imageC2173.png" /> b) <image source="/media/png72/imageC2174.png" /> c) <image source="/media/png72/imageC2175.png" /></p></li>
-</ol>
-<ol start="16" type="1">
-<li><p>Sketch the graph of</p></li>
-</ol>
-<ol type="a">
-<li><p><image source="/media/png72/imageC2176.png" /> c) <image source="/media/png72/imageC2177.png" /> e) <image source="/media/png72/imageC2178.png" /></p></li>
-<li><p><image source="/media/png72/imageC2179.png" /> d) <image source="/media/png72/imageC2180.png" /> f) <image source="/media/png72/imageC2181.png" /></p></li>
-</ol>
-<ol start="17" type="1">
-<li><p>Verify the following identities:</p></li>
-</ol>
-<ol type="a">
-<li><p><image source="/media/png72/imageC2182.png" /></p></li>
-<li><p><image source="/media/png72/imageC2183.png" /></p></li>
-</ol>
-<ol start="18" type="1">
-<li><p>Given <image source="/media/png72/imageC2184.png" /> and <image source="/media/png72/imageC2185.png" />, find <image source="/media/png72/imageC2186.png" />.</p></li>
-<li><p>Sketch the graphs of</p></li>
-</ol>
-<ol type="a">
-<li><p>c)</p></li>
-<li><p>d)</p></li>
-</ol>
-<ol start="20" type="1">
-<li><p>Prove the identities (2) and (3).</p></li>
-<li><p>Find the exact numerical value of</p></li>
-</ol>
-<ol type="a">
-<li><p><image source="/media/png72/imageC2191.png" /> b) <image source="/media/png72/imageC2192.png" /> c) <image source="/media/png72/imageC2193.png" /></p></li>
-</ol>
-<ol start="22" type="1">
-<li><p>Prove the following identities:</p></li>
-</ol>
-<ol type="a">
-<li><p><image source="/media/png72/imageC2194.png" /></p></li>
-<li><p><image source="/media/png72/imageC2195.png" /></p></li>
-</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </introduction>
 
 </section>

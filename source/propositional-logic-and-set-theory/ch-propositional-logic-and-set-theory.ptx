@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xml:id="propositional-logic-and-set-theory" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Propositional Logic and Set Theory</title>
@@ -25,27 +26,5 @@
     <xi:include href="sections/set-theory.ptx" />
     <xi:include href="sections/description-of-sets.ptx" />
 </chapter>
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml-id="propositional-logic-and-set-theory"><title>Propositional Logic and Set Theory</title>
-<introduction>
-<p>In this chapter, we study the basic concepts of propositional logic and some part of set theory. In the first part, we deal about propositional logic, logical connectives, quantifiers and arguments. In the second part, we turn our attention to set theory and discus about description of sets and operations of sets.</p>
-<p>Main Objectives of this Chapter</p>
-<p>At the end of this chapter, students will be able to:-</p>
-<ul>
-<li><p>Know the basic concepts of mathematical logic.</p></li>
-<li><p>Know methods and procedures in combining the validity of statements.</p></li>
-<li><p>Understand the concept of quantifiers.</p></li>
-<li><p>Know basic facts about argument and validity.</p></li>
-<li><p>Understand the concept of set.</p></li>
-<li><p>Apply rules of operations on sets to find the result.</p></li>
-<li><p>Show set operations using Venn diagrams.</p>
-</li>
-</ul>
 
-</introduction>
 
-<xi:include href="sections/sec-propositional-logic.ptx" />
-<xi:include href="sections/sec-open-propositions-and-quantifiers.ptx" />
-<xi:include href="sections/sec-argument-and-validity.ptx" />
-<xi:include href="sections/sec-set-theory.ptx" />
-<xi:include href="sections/sec-description-of-sets.ptx" />
-</chapter>
