@@ -166,6 +166,9 @@
         <p>
             A parabola whose axis is parallel to <em><alert>x</alert></em>-axis is called <alert>horizontal parabola</alert>. Such parabola opens either to the right or to the left as shown in Figure 4.15 (a) and (b), respectively.
         </p>
+        <image source="/equation-two.png" width="50%">
+            <shortdescription>horizontal parabola</shortdescription>
+        </image>
         <p>
             The equations of such sec-parabolas can be obtained by interchanging the role of <em>x</em> and <em>y</em> in the equations of the sec-parabolas discussed previously. These equations are stated below. In both cases, let the vertex of the parabola be at V(<em>h,k</em>).
         
@@ -176,7 +179,7 @@
                     <p>
                         If a horizontal parabola <alert>opens to</alert> <alert>the right (</alert>as in Fig.4.15(a) ), then its focus is to the right of V at F(<em>h+p, k</em>), its directrix is <em>x =h−p</em>, and its equation is
                     </p>
-                     <image source="/media/png72/imageC2289.png">
+                     <image source="/media/png72/imageC2289.png" width="50%">
                        <shortdescription></shortdescription>
                      </image>
                 </li>
@@ -198,51 +201,67 @@
         <example>
             <statement>
                 <p>
-                    Find the focus and directrix of the parabola
-                </p>
-                     <image source="/media/png72/imageC2291.png">
-                        <shortdescription></shortdescription>
-                     </image>
-                <p>
-                    and sketch its graph.
+                    Find the focus and directrix of the parabola <m>y^2 = +10x = 0</m> and sketch its graph.
                 </p>
             </statement>
             <solution>
                 <p>
-                    The equation is <image source="/media/png72/imageC2292.png" />; and comparing this with the above equation, it is an equation of a parabola whose vertex is at (0,0), axis of symmetry is the x-axis, open to the left and 4<em>p</em>=10, i.e., <em>p</em>=5/2. Thus, the focus is F=(–5/2,0) and its directrix is <em>x</em> =5/2. Its graph is sketched in Figure 4.16.
+                    The equation is  <m>y^2 = -10x </m>; and comparing this with the above equation, it is an equation of a parabola whose vertex is at (0,0), axis of symmetry is the x-axis, open to the left and <m>4<em>p</em>=10</m>, i.e., <m><em>p</em>= 5/2</m>. Thus, the focus is F<m>=(–5/2,0)</m> and its directrix is <em>x</em> <m>=5/2.</m> Its graph is sketched in Figure 4.16.
                 </p>
-                <p>
-                    ⇒ <em>y</em><m>y^2</m>+ 4<em>y+</em><alert><m>2^2</m></alert> = –8<em>x</em> +4+<alert>4</alert>
-                </p>
-                <p>
-                    ⇒ (<em>y</em> <m>2)^2</m> = –8<em>x</em> +8
-                </p>
-                <p>
-                    ⇒ (<em>y</em> + <m>2)^2</m> = –8(<em>x</em> –1)
-                </p>
-                <p>
-                    This is equation of a parabola with vertex at (<em>h, k</em>)=(1,–2), open to the left and focal length <em>p</em>, where 4<em>p=</em>8 ⇒ <em>p=</em>2. Therefore, its focus is
-                </p>
-                <p>
-                    F= (<em>h</em>–<em>p, k</em>) = (–1, –2), and directrix <em>x</em>=<em>h</em>+<em>p</em> =3. The parabola is sketched in Figure 4.17.
-                </p>
+                <image source="assets/image-e1-parabola.png" width="50%">
+                    <shortdescription></shortdescription>
+                </image>
             </solution>
         </example>
-                <tabular>
-            <row>
-                <cell>
-                    <p>
-                        <alert>Remark:-</alert> An equation given as: A<em></em><m>x^2</m> + D<em>x</em> + E<em>y</em> + F = 0</p>
-                    <p>
-                        or C<em></em><m>y^2</m> + D<em>x</em> + E<em>y</em> + F = 0</p>
+        <example>
+            <statement>
+                <p>
+                   ind the focus and directrix of the parabola <m>y^2 +4y +8x-4=0</m> and sketch it.
+                </p>
+            </statement>
+            <solution>
+
+                <p>
+                    The equation is  <m>y^2 +4y = –8x +4</m>. (Now complete the square of y-terms)
+                </p>
+                <p>
+                    ⇒ <md>
+                        <mrow>y^2+4y+<alert>2^2</alert> = \amp -8x+4+<alert>4</alert></mrow>
+                    </md>
+                </p>
+                <p>
+                    ⇒ <m>(y+2)^2 = –8x +8</m>
+                </p>
+                <p>
+                    ⇒ <m>(y + 2)^2 = –8(x –1)</m>
+                </p>
+                <p>
+                    This is equation of a parabola with vertex at (<em>h, k</em>)<m>=(1,–2),</m> open to the left and focal length <em>p</em>, where <m>4p=8</m> ⇒ <m>p=2</m>. Therefore, its focus is
+                </p>
+                <p>
+                    F<m>= (h–p, k) = (–1, –2)</m>, and directrix<m>x=h+p =3</m>. The parabola is sketched in Figure 4.17.
+                </p>
+                <image source="/parabola-equation2.png" width="50%">
+                    <shortdescription></shortdescription>
+                </image>
+            </solution>
+        </example>
+        <remark>
+            <p>
+                An equation given as: A<em></em><m>x^2</m> + D<em>x</em> + E<em>y</em> + F = 0
+            </p>
+            <p>
+                or C<em></em><m>y^2</m> + D<em>x</em> + E<em>y</em> + F = 0
+            </p>
+            <p>
+                   
+                may represent a parabola whose axis is parallel to the <em><alert>y</alert></em>-axis or parallel to the <em><alert>x</alert></em>-axis, respectively. The vertex, focal length and focus for such sec-parabolas can be identified after converting the equations into one of the standard forms by completing the square.
+            </p>
 
                     <p>
-                        may represent a parabola whose axis is parallel to the <em><alert>y</alert></em>-axis or parallel to the <em><alert>x</alert></em>-axis, respectively. The vertex, focal length and focus for such sec-parabolas can be identified after converting the equations into one of the standard forms by completing the square.
-                    </p>
-                </cell>
-            </row>
-        </tabular>
-        <exercise>
+        </remark>
+               
+        <exercises>
             <statement>
                 <p>
                     For questions 1 to 8, find an equation of the parabola with the given properties and sketch its graph.
@@ -251,35 +270,35 @@
                         <li>
                             <sidebyside>
                                 <p>
-                                    1.Focus (0, 1) and directrix <em>y</em> = −1. 
+                                    1.Focus<m>(0, 1)</m> and directrix <em>y</em><m>= −1.</m> 
                                 </p>
                                 <p>
-                                    5. Vertex (3, 2 ) and Focus (3, 3).
-                                </p>
-                            </sidebyside>
-                            <sidebyside>
-                                <p>
-                                    2. Focus (−1, 2) and directrix <em>y</em> = -2.
-                                </p>
-                                <p>
-                                    6. Vertex (5, −2 ) and Focus (−5, −2). 
+                                    5. Vertex<m>(3, 2 )</m> and Focus<m>(3, 3)</m>.
                                 </p>
                             </sidebyside>
                             <sidebyside>
                                 <p>
-                                      3. Focus (3/2, 0) and directrix <em>x</em> = −3/2. 
+                                    2. Focus<m>(−1, 2) </m>and directrix <em>y</em> <m> = -2.</m>
+                                </p>
+                                <p>
+                                    6. Vertex<m>(5, −2 )</m> and Focus<m>(−5, −2).</m> 
+                                </p>
+                            </sidebyside>
+                            <sidebyside>
+                                <p>
+                                      3. Focus<m> (3/2, 0)</m> and directrix <em>x</em><m>= −3/2.</m> 
                                     
                                 </p>
                                 <p>
-                                    7. Vertex (1, 0) and directrix <em>x</em> = −2.
+                                    7. Vertex<m>(1, 0)</m> and directrix <em>x</em><m>= −2.</m>
                                 </p>
                             </sidebyside>
                             <sidebyside>
                                 <p>
-                                    4. Focus (−1, −2) and directrix <em>x</em> = 0.
+                                    4. Focus <m>(−1, −2)</m> and directrix <em>x</em> <m>= 0.</m>
                                 </p>
                                 <p>
-                                    8. Vertex (0, 2) and directrix <em>y</em> = 4.
+                                    8. Vertex <m>(0, 2)</m> and directrix <em>y</em> <m>= 4.</m>
                                 </p>
                             </sidebyside>
                         </li>
@@ -290,47 +309,55 @@
                 </p>
                 <sidebyside>
                 
-                        9.<image source="/media/png72/imageC2293.png " />
+                        <p>
+                            9. <m>y=2x^2</m>
+                        </p>
                     
                 
-                        12. <image source="/media/png72/imageC2294.png" />
-                    
+                        <p>
+                            12. <m>x+y^2=0</m>
+                        </p>
                 
-                        15. <image source="/media/png72/imageC2295.png" />
+                        <p>
+                            15.<m> y^2 +8x+6y+5=0</m>
+                        </p>
                     
                         
                 </sidebyside>
                 <sidebyside>
                     <p>
-                       10. <image source="/media/png72/imageC2296.png" /> 
+                       10. <m>8x^2=-y</m> 
                     </p>
                     <p>
-                        13. <image source="/media/png72/imageC2297.png" />
+                        13.<m> x-1=(y+2)^2  </m>
                     </p>
                     <p>
-                        16. <em></em><m>y^2</m> – 2<em>y</em> – 4<em>x</em> + 9<em>=</em> 0
+                        16. <m>y^2 – 2y – 4x + 9= 0</m>
                     </p>
                 </sidebyside>
                 <sidebyside>
                     <p>
-                        11. 4<em>x</em> − <em><m>y^2</m></em>= 0
+                        11. <m>4x − y^2= 0</m>
                     </p>
                     <p>
-                        14. <image source="/media/png72/imageC2298.png" />
+                        14. <m>(x+4)^2 = 8y -24</m>
                     </p>
                     <p>
-                        17. <image source="/media/png72/imageC2299.png" />
+                        17. <m>-4x^2 +4x -\frac{1}{2}y=1</m>
                     </p>
                 </sidebyside>
                
                 <p>
-                    18. Find an equation of the parabola that has a vertical axis, its vertex at (1, 0) and passing through (0,1).
+                    18. Find an equation of the parabola that has a vertical axis, its vertex at <m>(1, 0)</m> and passing through <m>(0,1).</m>
                 </p>
                 <p>
                     19. The vertex and endpoints of the latus rectum of the parabola <image source="/media/png72/imageC2300.png" />forms a triangle. Find the area of the triangle.
                 </p>
                 <p>
-                    20. P(4, 6) is a point on a parabola whose focus is at (0, 2) and directrix is parallel to <em>x</em>-axis. (a) Find an equation of the parabola, its vertex and directrix.
+                    20. P<m>(4, 6)</m> is a point on a parabola whose focus is at <m>(0, 2) </m> and directrix is parallel to <em>x</em>-axis. 
+                </p>    
+                <p>
+                    (a) Find an equation of the parabola, its vertex and directrix.
                 </p>
                 <p>
                     (b) Determine the distance from P to the directrix.
@@ -341,8 +368,11 @@
                 <p>
                     22. A cross-section of a parabolic reflector is shown in the figure below. A bulb is located at the focus and the opening at the focus, AB, is 12 cm. What is the diameter of the opening, CD, 8 cm from the vertex?
                 </p>
+                <image source="assets/exercis_par.png" width="50%">
+                    <shortdescription></shortdescription>
+                </image>
             </statement>   
-       </exercise> 
+       </exercises> 
        <remark>
         <p>
             

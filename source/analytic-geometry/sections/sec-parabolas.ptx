@@ -1,10 +1,8 @@
-
-<?xml version="1.0" encoding="UTF-8"?>
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-parabolas">
+<section  xml:id="sec-parabolas">
     <title>Parabolas</title>
       <objectives>
         <title>Objectives of a parabola</title>
-        <introduction>
+         <introduction>
             <p>
                 By the end of this section, you should:
             </p>
@@ -46,6 +44,6 @@
         </introduction>       
         </objectives>
 
-<xi:include href="subsections/sec-parabolas/subsec-definition-of-a-parabola.ptx" />
-<xi:include href="subsections/sec-parabolas/subsec-equation-of-parabolas.ptx" />
+    <xi:include href="subsections/sec-parabolas/subsec-definition-of-a-parabola.ptx" />
+    <xi:include href="subsections/sec-parabolas/subsec-equation-of-parabolas.ptx" />
 </section>

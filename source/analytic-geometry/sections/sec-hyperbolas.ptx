@@ -1,33 +1,38 @@
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-hyperbolas">
-<title>Hyperbolas</title>
-<introduction>
-<table>
-<tabular>
-<row>
-<cell><p>By the end of this section, you should</p>
-<ul>
-<li>
-<p>know the geometric definition of a hyperbola.</p>
-</li>
-<li>
-<p>know the meaning of the center, vertices, foci and transverse axis of a hyperbola.</p>
-</li>
-<li>
-<p>be able to find equation of a hyperbola whose transverse axis is horizontal or vertical.</p>
-</li>
-<li>
-<p>be able to identify equations representing sec-hyperbolas.</p>
-</li>
-<li>
-<p>be able to find the center, vertices, foci, and asymptotes of a hyperbola and sketch the hyperbola.</p>
-</li>
-</ul></cell>
-</row>
-</tabular>
-</table>
+<section xml:id="sec-hyperbolas">
+    <title>Hyperbolas</title>
+    <introduction>
 
-</introduction>
+        <tabular>
+            <col width="40%"></col>
+        <row>
+        <cell>
+            <p>By the end of this section, you should</p>
+            <p>
+                <ul>
+                    <li>
+                        <p>know the geometric definition of a hyperbola.</p>
+                    </li>
+                    <li>
+                        <p>know the meaning of the center, vertices, foci and transverse axis of a hyperbola.</p>
+                    </li>
+                    <li>
+                        <p>be able to find equation of a hyperbola whose transverse axis is horizontal or vertical.</p>
+                    </li>
+                    <li>
+                        <p>be able to identify equations representing sec-hyperbolas.</p>
+                    </li>
+                    <li>
+                        <p>be able to find the center, vertices, foci, and asymptotes of a hyperbola and sketch the hyperbola.</p>
+                    </li>
+                </ul>
+                
+            </p>
+        </cell>
+        </row>
+        </tabular>
 
-<xi:include href="subsections/sec-hyperbolas/subsec-definition-of-a-hyperbola.ptx" />
-<xi:include href="subsections/sec-hyperbolas/subsec-equation-of-a-hyperbola.ptx" />
+        </introduction>
+
+        <xi:include href="subsections/sec-hyperbolas/subsec-definition-of-a-hyperbola.ptx" />
+        <xi:include href="subsections/sec-hyperbolas/subsec-equation-of-a-hyperbola.ptx" />
 </section>

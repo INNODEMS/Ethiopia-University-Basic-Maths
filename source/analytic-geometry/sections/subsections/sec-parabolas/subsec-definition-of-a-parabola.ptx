@@ -52,7 +52,7 @@
     <p>
         If P(<em>x,y</em>) is any point on the parabola, then by the definition, the distance of P from the directrix is equal to the distance between P and the focus F. This is used to determine an equation of a parabola. To do this, we consider first the cases when the axis of the parabola is parallel to one of the coordinate axes.
     </p>
-    <exercises xml:id="exercises-$1">
+    <exercises xml:id="exercises-definition-of-a-parabola">
         <exercise xml:id="exercise-4.3.1">
             <statement>
                 <p>
