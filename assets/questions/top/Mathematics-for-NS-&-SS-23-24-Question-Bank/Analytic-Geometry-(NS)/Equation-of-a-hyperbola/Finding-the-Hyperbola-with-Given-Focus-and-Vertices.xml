@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Finding the Hyperbola with Given Focus and Vertices</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<br> Find the hyperbola with focus \( F_{1} ({@focus1_x@}, {@focus1_y@})\) and  \( F_{2} ({@focus2_x@}, {@focus2_y@})\) and vertices \( A_{1}({@ver1_x@}, {@ver1_y@}), A_{2}({@ver2_x@}, {@ver2_y@}) \).
+<br>[[input:ans1]] [[validation:ans1]] [[feedback:prt1]]]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3> Worked solution</h3>
+<p>To find the hyperbola with focus \( F_{1} ({@focus1_x@}, {@focus1_y@})\) and  \( F_{2} ({@focus2_x@}, {@focus2_y@})\) and vertices \( A_{1}({@ver1_x@}, {@ver1_y@}), A_{2}({@ver2_x@}, {@ver2_y@}) \). we proceed as follows:</p>
+<p> The equation of a hyperbola in standard form follows:</p>
+ <p>\[  \displaystyle \frac{(x-h)^2}{a^2} - \frac{(y-k)^2}{b^2} = 1\]</p>
+<p> Here the center is \((h, k)\) and the vertices are \( (h \pm a, k) \)</p>
+<p> In addtion if \(F_{1} (x_{F_{1}}, y_{F_{1}})\) and \(F_{2} (x_{F_{2}}, y_{F_{2}}) \) are the focus, and \( A_{1} (x_{A_{1}}, y_{A_{1}})\), \( A_{2} (x_{A_{2}}, y_{A_{2}})\) are vertices.</p>
+<p>let \(F_{1}F_{2}=2\cdot c\) and \(A_{1}A_{2}=2\cdot a\) . Then we have the following relations:</p>
+<p>\(
+(1) \left\{ \begin{array}{r}
+a^2+b^2= c^2\\ 
+2 \cdot a= A_{1} A_{2} 
+\end{array}\right. \) 
+ and \( (2) \left\{ \begin{array}{r}
+h=  \displaystyle \frac{x_{F_{1}}+x_{F_{2}}}{2}\\ 
+k=  \displaystyle \frac{y_{F_{1}}+y_{F_{2}}}{2}
+\end{array}\right. \) </p>
+<p> In this case, focus \( F_{1} ({@focus1_x@}, {@focus1_y@})\) and  \( F_{1} ({@focus2_x@}, {@focus2_y@})\) and vertices \( A_{1}({@ver1_x@}, {@ver1_y@}), A_{2}({@ver2_x@}, {@ver2_y@}) \). </p>
+<p>Using the information above we have</p>
+<p> \(2 \cdot a =|x_{A_{1}}-x_{A_{2}}|=|({@ver1_x@})-({@ver2_x@})|={@aa@} \implies a =  \displaystyle {@val_a@}\).</p>
+<p> \(2 \cdot c =|x_{F_{1}}-x_{F_{2}}|=|({@focus1_x@})-({@focus2_x@})|={@cc@} \implies c =  \displaystyle {@c@}\).</p>
+<p> \( b=  \displaystyle {@val_b@} \)</p>
+<p> Using the system (2), we get 
+\( \left\{ \begin{array}{r}
+h=  \displaystyle \frac{({@focus1_x@})+({@focus2_x@})}{2} = {@h@} \\ 
+k=  \displaystyle \frac{({@focus1_y@})+({@focus2_y@})}{2} = {@k@}
+\end{array}\right. \) </p>
+<p> Therefore, the equation of the hyperbola is:</p>
+<p> \(  \displaystyle \frac{(x-({@h@}))^2}{@val_a^2@} - \frac{(y-({@k@}))^2}{@val_b^2@} = 1\)</p>
+<p> \(  \displaystyle {@hyper2@} \)</p>
+<p> \( {@ta1@} \)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*Randomising coordinates of focus*/
+coef: rand_with_step(1,5,1);
+focus2_x: rand_with_prohib(-7,7,[0]);
+focus1_x: focus2_x+2*(coef+1);
+focus1_y: rand_with_step(-5,5,1);
+focus2_y:  rand_with_prohib(-7,7,[0,focus1_y]);
+
+/*Defining vertices*/
+ver1_x: rand_with_prohib(-5,5,[0]);
+ver1_y: (focus1_y+focus2_y)/2;
+
+ver2_x:  2*coef+ver1_x;
+
+ver2_y: (focus1_y+focus2_y)/2;
+
+/*compute F1F2*/
+cc: abs(focus1_x-focus2_x);
+c: cc/2;
+/*Solve system 1 to get values of a and b*/
+aa: abs(ver1_x-ver2_x);
+val_a: abs(ver1_x-ver2_x)/2; /*value of a*/
+
+expr1: solve(val_a^2+b^2=c^2,b);
+expr2: expr1[1];
+val_b: abs(rhs(expr2)); /*value of b*/
+/*Value on center h, k */
+h:  (focus1_x+focus2_x)/2;
+k: (focus1_y+focus2_y)/2;
+/*Equation of hyperbola*/
+hyper1: ((x-(h))^2/(val_a^2))-((y-(k))^2/(val_b^2))=1;
+hyper2: val_b^2*(x-h)^2-val_a^2*(y-k)^2=val_a^2*val_b^2;
+hyper3: val_b^2*(x-h)^2-val_a^2*(y-k)^2-val_a^2*val_b^2=0
+den_ab: denom(val_a^2*val_b^2);
+ta1: expand(den_ab*hyper3);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p> Focus \( F_{1} ({@focus1_x@}, {@focus1_y@})\) and  \( F_{2} ({@focus2_x@}, {@focus2_y@})\) and vertices \( A_{1}({@ver1_x@}, {@ver1_y@}), A_{2}({@ver2_x@}, {@ver2_y@}) \).</p>
+<p>Equation of a parabola: \( {@ta1@} \)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Check correct answer*/
+/*Node 2: Alternative of correct answer*/
+feedback1:  ((x-h)^2/val_a^2)-((y-k)^2/val_b^2)=1;
+/*Node 3: Interchanged h vs k only*/
+mistake1: ((x-k)^2/val_a^2)-((y-h)^2/val_b^2)=1;
+/*Node 4: Interchanged values of \(a\) and \( b\)*/
+mistake2:  ((x-h)^2/val_b^2)-((y-k)^2/val_a^2)=1;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>feedback1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text>You interchanged les coordinates of the centre during your computation.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text>You interchanged the values of \(a\) and \( b\)</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1030483297</deployedseed>
+    <deployedseed>1520818972</deployedseed>
+    <deployedseed>612643816</deployedseed>
+    <deployedseed>1701906198</deployedseed>
+    <deployedseed>91726601</deployedseed>
+    <deployedseed>1258828043</deployedseed>
+    <deployedseed>1439981111</deployedseed>
+    <deployedseed>1034897833</deployedseed>
+    <deployedseed>2109983319</deployedseed>
+    <deployedseed>1777722321</deployedseed>
+    <deployedseed>866665404</deployedseed>
+    <deployedseed>1965447407</deployedseed>
+    <deployedseed>272100567</deployedseed>
+    <deployedseed>514307409</deployedseed>
+    <deployedseed>1484751464</deployedseed>
+    <deployedseed>1842230389</deployedseed>
+    <deployedseed>732503777</deployedseed>
+    <deployedseed>1562121318</deployedseed>
+    <deployedseed>557579321</deployedseed>
+    <deployedseed>207705650</deployedseed>
+    <deployedseed>1269178688</deployedseed>
+    <deployedseed>963575428</deployedseed>
+    <deployedseed>1015075150</deployedseed>
+    <deployedseed>1286353491</deployedseed>
+    <deployedseed>587725751</deployedseed>
+    <deployedseed>1665022041</deployedseed>
+    <deployedseed>1707036802</deployedseed>
+    <deployedseed>1825378439</deployedseed>
+    <deployedseed>148625949</deployedseed>
+    <deployedseed>867362500</deployedseed>
+    <deployedseed>1296821422</deployedseed>
+    <deployedseed>991234539</deployedseed>
+    <deployedseed>357733270</deployedseed>
+    <deployedseed>1462928241</deployedseed>
+    <deployedseed>60667213</deployedseed>
+    <deployedseed>248571355</deployedseed>
+    <deployedseed>746741956</deployedseed>
+    <deployedseed>2015571263</deployedseed>
+    <deployedseed>1781188212</deployedseed>
+    <deployedseed>890549725</deployedseed>
+    <deployedseed>2080461220</deployedseed>
+    <deployedseed>410680210</deployedseed>
+    <deployedseed>665461936</deployedseed>
+    <deployedseed>297614903</deployedseed>
+    <deployedseed>1283872452</deployedseed>
+    <deployedseed>223331974</deployedseed>
+    <deployedseed>592576420</deployedseed>
+    <deployedseed>2069269635</deployedseed>
+    <deployedseed>1290998852</deployedseed>
+    <deployedseed>1817261835</deployedseed>
+    <deployedseed>1062377622</deployedseed>
+    <deployedseed>1861999228</deployedseed>
+    <deployedseed>561056180</deployedseed>
+    <deployedseed>416578984</deployedseed>
+    <deployedseed>638154452</deployedseed>
+    <deployedseed>1035405035</deployedseed>
+    <deployedseed>1889286849</deployedseed>
+    <deployedseed>1374471633</deployedseed>
+    <deployedseed>764430133</deployedseed>
+    <deployedseed>675210148</deployedseed>
+    <deployedseed>1448504883</deployedseed>
+    <deployedseed>1222435365</deployedseed>
+    <deployedseed>633913808</deployedseed>
+    <deployedseed>1916882155</deployedseed>
+    <deployedseed>992570745</deployedseed>
+    <deployedseed>27844149</deployedseed>
+    <deployedseed>1676671084</deployedseed>
+    <deployedseed>1357349574</deployedseed>
+    <deployedseed>906457738</deployedseed>
+    <deployedseed>579000906</deployedseed>
+    <deployedseed>843116459</deployedseed>
+    <deployedseed>2114337922</deployedseed>
+    <deployedseed>454109434</deployedseed>
+    <deployedseed>747476934</deployedseed>
+    <deployedseed>1588308808</deployedseed>
+    <deployedseed>333666017</deployedseed>
+    <deployedseed>1722019510</deployedseed>
+    <deployedseed>814345371</deployedseed>
+    <deployedseed>5157943</deployedseed>
+    <deployedseed>1741661166</deployedseed>
+    <deployedseed>1704506000</deployedseed>
+    <deployedseed>608773494</deployedseed>
+    <deployedseed>1876969645</deployedseed>
+    <deployedseed>1463801611</deployedseed>
+    <deployedseed>458442178</deployedseed>
+    <deployedseed>602880201</deployedseed>
+    <deployedseed>919018975</deployedseed>
+    <deployedseed>1323800485</deployedseed>
+    <deployedseed>1107965605</deployedseed>
+    <deployedseed>2117016644</deployedseed>
+    <deployedseed>831289303</deployedseed>
+    <deployedseed>1384615278</deployedseed>
+    <deployedseed>393402588</deployedseed>
+    <deployedseed>302312267</deployedseed>
+    <deployedseed>100961578</deployedseed>
+    <deployedseed>1099529138</deployedseed>
+    <deployedseed>236594878</deployedseed>
+    <deployedseed>569030988</deployedseed>
+    <deployedseed>477035414</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

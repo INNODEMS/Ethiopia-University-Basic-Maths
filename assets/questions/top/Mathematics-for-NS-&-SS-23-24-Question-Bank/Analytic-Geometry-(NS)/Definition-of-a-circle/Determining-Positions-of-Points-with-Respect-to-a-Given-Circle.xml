@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Determining Positions of Points with Respect to a Given Circle</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Consider a circle of radius \({@radius@}\) whose center is at \(O({@c_x@},{@c_y@})\). Determine whether each of the following points is on the circle, inside the circle or outside the circle by first calculating the distance.</p>
+<p>1. \(P_1({@p_1_x@},{@p_1_y@}) \)</p>
+<p>Distance \(=\) [[input:ans1]][[validation:ans1]][[feedback:prt1]]</p>
+<p>The point \(P_1\) lies [[input:ans2]] [[validation:ans2]][[feedback:prt2]] </p>
+<p>2. \(P_2({@p_2_x@},{@p_2_y@}) \)</p>
+<p>Distance \(=\) [[input:ans3]] [[validation:ans3]][[feedback:prt3]]</p>
+<p>The point \(P_2\) lies [[input:ans4]] [[validation:ans4]][[feedback:prt4]] </p>
+<p>3. \(P_3({@p_3_x@},{@p_3_y@}) \)</p>
+<p>Distance \(=\) [[input:ans5]] [[validation:ans5]][[feedback:prt5]]</p>
+<p>The point \(P_3\) lies [[input:ans6]] [[validation:ans6]][[feedback:prt6]] </p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3>Worked Solution</h3>
+<p>To determine whether each point is on the circle, inside the circle, or outside the circle, we can use the distance formula between each point and the center of the circle. If the distance between the point and the center is equal to the radius, the point lies on the circle. If it's less than the radius, the point is inside the circle, and if it's greater than the radius, the point is outside the circle.</p>
+<p>Let's calculate the distance for each point:</p>
+<p>1. Point \( P_1({@p_1_x@},{@p_1_y@}) \)</p>
+<p> \( \begin{align} \text{Distance} \displaystyle & =\sqrt{(x_2-x_1)^2+(y_2-y_1)^2 } \\ &=\sqrt{({@p_1_x@}-({@c_x@}))^2+({@p_1_y@}-({@c_y@}))^2 } \\
+&=\sqrt{({@p_1_x-c_x@})^2+({@p_1_y-c_y@})^2 } \\
+&=\sqrt{ {@(p_1_x-c_x)^2@}+{@(p_1_y-c_y)^2@} } \\
+&= \sqrt{ {@(p_1_x-c_x)^2+(p_1_y-c_y)^2@} } [[ if test='integerp(sqrt((p_1_x-c_x)^2+(p_1_y-c_y)^2))' ]]
+\\ &= { {@sqrt((p_1_x-c_x)^2+(p_1_y-c_y)^2)@} }
+[[/ if]]   \end{align} \) </p>
+[[ if test='ta1=radius' ]]
+<p>Since the distance \({@ta1@}\) is equal to the radius \( {@radius@} \) , point \(P_1\) lies on the circle.
+[[ elif test='ta1>radius' ]]</p>
+ <p>Since the distance \({@ta1@}\) is greater than the radius \( {@radius@} \) , point \(P_1\) lies outside the circle.</p>
+[[ else ]]
+<p>Since the distance \({@ta1@}\) is less than the radius \( {@radius@} \) , point \(P_1\) lies  inside the circle.</p>
+[[/ if]] 
+<p>2. Point \( P_2({@p_2_x@},{@p_2_y@}) \)</p>
+<p> \( \begin{align} \text{Distance} \displaystyle & =\sqrt{(x_2-x_1)^2+(y_2-y_1)^2 } \\ &=\sqrt{({@p_2_x@}-({@c_x@}))^2+({@p_2_y@}-({@c_y@}))^2 } \\
+&=\sqrt{({@p_2_x-c_x@})^2+({@p_2_y-c_y@})^2 } \\
+&=\sqrt{ {@(p_2_x-c_x)^2@}+{@(p_2_y-c_y)^2@} } \\
+&= \sqrt{ {@(p_2_x-c_x)^2+(p_2_y-c_y)^2@} } [[ if test='integerp(sqrt((p_2_x-c_x)^2+(p_2_y-c_y)^2))' ]]
+\\ &= { {@sqrt((p_2_x-c_x)^2+(p_2_y-c_y)^2)@} }
+[[/ if]]   \end{align} \) </p>
+[[ if test='ta2=radius' ]]
+<p>Since the distance \({@ta2@}\) is equal to the radius \( {@radius@} \) , point \(P_2\) lies on the circle.</p>
+[[ elif test='ta2>radius' ]]
+<p>Since the distance \({@ta2@}\) is greater than the radius \( {@radius@} \) , point \(P_2\) lies outside the circle.</p>
+[[ else ]]
+<p>Since the distance \({@ta2@}\) is less than the radius \( {@radius@} \) , point \(P_2\) lies  inside the circle.</p>
+[[/ if]] 
+<p>3. Point \( P_3({@p_3_x@},{@p_3_y@}) \)</p>
+<p> \( \begin{align} \text{Distance} \displaystyle & =\sqrt{(x_2-x_1)^2+(y_2-y_1)^2 } \\ &=\sqrt{({@p_3_x@}-({@c_x@}))^2+({@p_3_y@}-({@c_y@}))^2 } \\
+&=\sqrt{({@p_3_x-c_x@})^2+({@p_3_y-c_y@})^2 } \\
+&=\sqrt{ {@(p_3_x-c_x)^2@}+{@(p_3_y-c_y)^2@} } \\
+&= \sqrt{ {@(p_3_x-c_x)^2+(p_3_y-c_y)^2@} } [[ if test='integerp(sqrt((p_3_x-c_x)^2+(p_3_y-c_y)^2))' ]]
+\\ &= { {@sqrt((p_3_x-c_x)^2+(p_3_y-c_y)^2)@} }
+[[/ if]]   \end{align} \) </p>
+[[ if test='ta3=radius' ]]
+<p>Since the distance \({@ta3@}\) is equal to the radius \( {@radius@} \) , point \(P_3\) lies on the circle.</p>
+[[ elif test='ta3>radius' ]]
+ <p>Since the distance \({@ta3@}\) is greater than the radius \( {@radius@} \) , point \(P_3\) lies outside the circle.</p>
+[[ else ]]
+<p>Since the distance \({@ta3@}\) is less than the radius \( {@radius@} \) , point \(P_3\) lies  inside the circle.</p>
+[[/ if]]]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[/*Question variables*/
+radius: rand([5, 13, 10, 17, 15, 20, 25]);  /*Radius of the circle*/
+c_x:rand_with_step(-5,5,1); /* The value of x at the center */
+c_y:rand_with_step(-5,5,1); /* The value of y at the center */
+a: rand([3, 5, 6, 8, 9, 12, 15]); 
+b: a; 
+while b = a do b: rand([3, 5, 6, 8, 9, 12, 15]); 
+b;
+c: a; 
+while c = a or c = b do c: rand([3, 5, 6, 8, 9, 12, 15]); 
+c;
+aa:a;
+bb:b;
+cc:c;
+a1:if aa=3 then 4 else if aa=5 then 12 else if aa=6 then 8 else if aa=8 then 15 else if aa=9 then 12 else if aa=12 then 16 else 20;
+b1:if bb=3 then 4 else if bb=5 then 12 else if bb=6 then 8 else if bb=8 then 15 else if bb=9 then 12 else if bb=12 then 16 else 20;
+c1:if cc=3 then 4 else if cc=5 then 12 else if cc=6 then 8 else if cc=8 then 15 else if cc=9 then 12 else if cc=12 then 16 else 20;
+p_1_x:c_x+aa; /* The value of x at point p1 */
+p_1_y:c_y+a1; /* The value of y at point p1 */
+p_2_x:c_x+bb; /* The value of x at point p2 */
+p_2_y:c_y+b1; /* The value of y at point p2 */
+p_3_x:c_x+cc; /* The value of x at point p3 */
+p_3_y:c_y+c1; /* The value of y at point p3 */
+/*Model answers*/
+ta1:sqrt((p_1_x-c_x)^2+(p_1_y-c_y)^2); /* Distance from point p1 to the center of the circle */
+ta_1:if ta1>radius then random_permutation ([["inside the circle",false],["outside the circle",true],["on the circle",false]]) elseif ta1<radius then random_permutation ([["inside the circle",true],["outside the circle",false],["on the circle",false]]) else random_permutation ([["inside the circle",false],["outside the circle",false],["on the circle",true]]);
+ta2:sqrt((p_2_x-c_x)^2+(p_2_y-c_y)^2); /* Distance from point p2 to the center of the circle */
+ta_2:if ta2>radius then random_permutation ([["inside the circle",false],["outside the circle",true],["on the circle",false]]) elseif ta2<radius then random_permutation ([["inside the circle",true],["outside the circle",false],["on the circle",false]]) else random_permutation ([["inside the circle",false],["outside the circle",false],["on the circle",true]]);
+ta3:sqrt((p_3_x-c_x)^2+(p_3_y-c_y)^2); /* Distance from point p3 to the center of the circle */
+ta_3:if ta3>radius then random_permutation ([["inside the circle",false],["outside the circle",true],["on the circle",false]]) elseif ta3<radius then random_permutation ([["inside the circle",true],["outside the circle",false],["on the circle",false]]) else random_permutation ([["inside the circle",false],["outside the circle",false],["on the circle",true]]);]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>A circle of radius \({@radius@}\) whose center is at \(C({@c_x@},{@c_y@})\).</p>
+<p>1. \(P_1({@p_1_x@},{@p_1_y@}) \)</p>
+<p>Distance \(={@ta1@}\)</p>
+<p>The point \(P_1\) lie \({@mcq_correct(ta_1)[1]@}\) </p>
+<p>2. \(P_2({@p_2_x@},{@p_2_y@}) \)</p>
+<p>Distance \(={@ta2@}\) </p>
+<p>The point \(P_2\) lie \({@mcq_correct(ta_2)[1]@}\) </p>
+<p>3. \(P_3({@p_3_x@},{@p_3_y@}) \)</p>
+<p>Distance \(={@ta3@}\) </p>
+<p>The point \(P_3\) lie \({@mcq_correct(ta_3)[1]@}\) </p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>radio</type>
+      <tans>ta_1</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options>nonotanswered</options>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>radio</type>
+      <tans>ta_2</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options>nonotanswered</options>
+    </input>
+    <input>
+      <name>ans5</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans6</name>
+      <type>radio</type>
+      <tans>ta_3</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options>nonotanswered</options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>mcq_correct(ta_1)[1]</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>mcq_correct(ta_2)[1]</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt5</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans5</sans>
+        <tans>ta3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt5-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt5-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt6</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans6</sans>
+        <tans>mcq_correct(ta_3)[1]</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt6-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt6-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>8408827</deployedseed>
+    <deployedseed>739816636</deployedseed>
+    <deployedseed>532468424</deployedseed>
+    <deployedseed>1353737623</deployedseed>
+    <deployedseed>324593342</deployedseed>
+    <deployedseed>1501343077</deployedseed>
+    <deployedseed>1863196987</deployedseed>
+    <deployedseed>1836472412</deployedseed>
+    <deployedseed>657711232</deployedseed>
+    <deployedseed>1579617707</deployedseed>
+    <deployedseed>1633337302</deployedseed>
+    <deployedseed>304359058</deployedseed>
+    <deployedseed>1962829875</deployedseed>
+    <deployedseed>1651472431</deployedseed>
+    <deployedseed>1190862832</deployedseed>
+    <deployedseed>2026383904</deployedseed>
+    <deployedseed>1844338618</deployedseed>
+    <deployedseed>1673136943</deployedseed>
+    <deployedseed>817510796</deployedseed>
+    <deployedseed>685551157</deployedseed>
+    <deployedseed>969389259</deployedseed>
+    <deployedseed>1558522280</deployedseed>
+    <deployedseed>647177123</deployedseed>
+    <deployedseed>83092303</deployedseed>
+    <deployedseed>14676239</deployedseed>
+    <deployedseed>784575526</deployedseed>
+    <deployedseed>771706194</deployedseed>
+    <deployedseed>809972256</deployedseed>
+    <deployedseed>1588799862</deployedseed>
+    <deployedseed>1529629002</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>first(mcq_correct(ta_1))</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>first(mcq_correct(ta_2))</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans6</name>
+        <value>first(mcq_correct(ta_3))</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt5</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt5-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt6</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt6-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

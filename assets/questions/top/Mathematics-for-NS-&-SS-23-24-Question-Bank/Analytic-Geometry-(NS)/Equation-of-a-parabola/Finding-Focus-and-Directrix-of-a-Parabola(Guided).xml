@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Finding Focus and Directrix of a Parabola(Guided)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Our aim is to find the focus and directrix of the parabola \({@parabola@}\)</p>
+
+<br>
+
+<p>(a) Rewrite the parabola in the form \((x+a)^{2} = c (y+b) \) , where \(a, b\) and \(c\) are constants to be determined.</p>
+<p style="margin-left: 30px">[[input:ans1]] [[validation:ans1]]</p>
+<p>[[feedback:prt1]]</p>
+
+<br>
+
+<p>(b) Recall that, in general, the parabola \((x-x_{0})^{2} = 4 p (y - y_{0}) \) has focus \(F(x_{0}, y_{0}+p)\) and directrix \(y = y_{0}-p\).
+<br>Find the focus and directrix of the parabola in part (a).
+
+<p style="margin-left: 30px">Focus: &emsp; \( F \big( \) [[input:ans2]] [[validation:ans2]] \(,\) [[input:ans3]] [[validation:ans3]]\( \big)\)</p>
+<p>[[feedback:prtA]]</p>
+<p style="margin-left: 30px">Directrix: &emsp; [[input:ans4]] [[validation:ans4]]</p>
+<p>[[feedback:prt4]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked solution</h3>
+
+<p>(a) We are required to rewrite the parabola in the form \((x-a)^2 = c(y-b)\).
+<br>To do this, we should "complete the square" with the \(x\) terms and then collect the \(y\) term and constants on the right hand side.</p>
+<p style="margin-left: 30px">\(\begin{align*}
+{@parabola@} 
+&\Rightarrow ({@expr1@}) + ({@expr2@})= 0 \\ 
+&\Rightarrow {@(x-aa)^2@} = {@ev(-expr2,simp)@} \\ 
+&\Rightarrow {@(x-aa)^2@} = {@4*pp@}({@y-cc@}) 
+\end{align*}\)</p>
+
+<br>
+
+<p>(b) We now want to determine the the focus and directrix of this parabola.
+<br>Relating the parabola in part (a) to the general form given, we have that,</p>
+
+<p style="margin-left: 30px">\(x_0 = {@aa@}, &emsp; y_0 = {@cc@} &emsp; p = \frac{{@4*pp@}}{4} = {@pp@}\)</p>
+
+<p>Therefore, we can use the general formulae given to find the focus and directrix,</p>
+<p style="margin-left: 30px">Focus: &emsp; \( F(x_{0}, y_{0}+p) = ({@aa@},{@cc+pp@}) \)</p>
+<p style="margin-left: 30px">Directrix: &emsp; \( y = y_{0}-p = {@cc-pp@} \)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*Defining parabola equation*/
+aa: rand_with_prohib(-5,5,[0]); /*value of y0*/
+pp: rand_with_prohib(-4,4,[0]); /*value of pp*/
+cc: rand_with_prohib(-5,5,[0]); /*value of x0*/
+parabola: expand((x-aa)^2-4*pp*(y-cc))=0;
+
+/*Coordinates of the focus*/
+ta2:  aa; /*abscissa*/
+ta3: cc+pp; /*ordinate*/
+/*Directrix*/
+ta4: y=cc-pp;
+
+/*Worked solution*/
+expr1: expand((x-aa)^2);
+expr2: expand((x-aa)^2-4*pp*(y-cc))-expr1;
+ta1: (x-aa)^2=4*pp*(y-cc);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>The focus and directrix of the parabola \({@parabola@}\)</p>
+<p>(a) The parabola is written as: {@ta1@} </p>
+<p>(b) Focus: \(F ({@ta2@}, {@ta3@})\) 
+<br>Directrix: \({@ta4@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>ta4</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>EqualComAss</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer is a correct equation for the parabola.
+<br>However, you have not given your answer in the required form.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node1: Check correct answer*/
+/*Node 2: Mistake using variable y*/
+mistake: x=cc-pp;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>ta4</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>mistake</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer is almost correct, you have determined the correct constant of the directrix equation.
+<br>However, the directrix should be an equation for \(y\), whereas you have used the variable \(x\).</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prtA</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks fully correct answer */
+/*Node 1: Checks if the first part of the answer is correct */
+/*Node 2: Checks if the second part of the answer is correct */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>[ans2,ans3]</sans>
+        <tans>[ta2,ta3]</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtA-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prtA-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>2</truenextnode>
+        <trueanswernote>prtA-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prtA-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>The \(x\)-coordinate of your answer is not correct.</p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtA-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtA-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>The \(y\)-coordinate of your answer is not correct.</p>]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1770217832</deployedseed>
+    <deployedseed>1212417508</deployedseed>
+    <deployedseed>273006696</deployedseed>
+    <deployedseed>1934878313</deployedseed>
+    <deployedseed>1585431373</deployedseed>
+    <deployedseed>298162009</deployedseed>
+    <deployedseed>979235223</deployedseed>
+    <deployedseed>721082845</deployedseed>
+    <deployedseed>190523470</deployedseed>
+    <deployedseed>234566510</deployedseed>
+    <deployedseed>1946142443</deployedseed>
+    <deployedseed>1905829064</deployedseed>
+    <deployedseed>1122367921</deployedseed>
+    <deployedseed>807364590</deployedseed>
+    <deployedseed>1015596534</deployedseed>
+    <deployedseed>1154318929</deployedseed>
+    <deployedseed>1648179626</deployedseed>
+    <deployedseed>1950399778</deployedseed>
+    <deployedseed>1597522617</deployedseed>
+    <deployedseed>1621668848</deployedseed>
+    <deployedseed>791719280</deployedseed>
+    <deployedseed>254880531</deployedseed>
+    <deployedseed>582307284</deployedseed>
+    <deployedseed>1659671494</deployedseed>
+    <deployedseed>1981304055</deployedseed>
+    <deployedseed>766401757</deployedseed>
+    <deployedseed>19743454</deployedseed>
+    <deployedseed>1058468903</deployedseed>
+    <deployedseed>109492628</deployedseed>
+    <deployedseed>1811895308</deployedseed>
+    <deployedseed>1239571720</deployedseed>
+    <deployedseed>1810224890</deployedseed>
+    <deployedseed>277210463</deployedseed>
+    <deployedseed>764252827</deployedseed>
+    <deployedseed>575483363</deployedseed>
+    <deployedseed>1149952641</deployedseed>
+    <deployedseed>514216231</deployedseed>
+    <deployedseed>687113104</deployedseed>
+    <deployedseed>2109204251</deployedseed>
+    <deployedseed>2054517230</deployedseed>
+    <deployedseed>1808609037</deployedseed>
+    <deployedseed>1259206463</deployedseed>
+    <deployedseed>1246916630</deployedseed>
+    <deployedseed>1587101576</deployedseed>
+    <deployedseed>1413152346</deployedseed>
+    <deployedseed>290447136</deployedseed>
+    <deployedseed>473133487</deployedseed>
+    <deployedseed>960885193</deployedseed>
+    <deployedseed>628709316</deployedseed>
+    <deployedseed>1830604163</deployedseed>
+    <deployedseed>339985167</deployedseed>
+    <deployedseed>534003964</deployedseed>
+    <deployedseed>1543128052</deployedseed>
+    <deployedseed>913831573</deployedseed>
+    <deployedseed>1754476091</deployedseed>
+    <deployedseed>1024143659</deployedseed>
+    <deployedseed>174205432</deployedseed>
+    <deployedseed>33794331</deployedseed>
+    <deployedseed>287719882</deployedseed>
+    <deployedseed>1877207774</deployedseed>
+    <deployedseed>375461786</deployedseed>
+    <deployedseed>1388417586</deployedseed>
+    <deployedseed>1386245433</deployedseed>
+    <deployedseed>1476338349</deployedseed>
+    <deployedseed>1362712937</deployedseed>
+    <deployedseed>1679959104</deployedseed>
+    <deployedseed>1592187857</deployedseed>
+    <deployedseed>1336457092</deployedseed>
+    <deployedseed>1208615343</deployedseed>
+    <deployedseed>102764774</deployedseed>
+    <deployedseed>1267734591</deployedseed>
+    <deployedseed>618437003</deployedseed>
+    <deployedseed>1182152571</deployedseed>
+    <deployedseed>2122812311</deployedseed>
+    <deployedseed>1227922121</deployedseed>
+    <deployedseed>431953153</deployedseed>
+    <deployedseed>1155856130</deployedseed>
+    <deployedseed>94965182</deployedseed>
+    <deployedseed>987820959</deployedseed>
+    <deployedseed>226079441</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prtA</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prtA-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

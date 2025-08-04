@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Finding Equations and Graphs of Conic Sections with Specific Properties</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Find an equation of the conic section having the given properties and identify its graph.</p>
+<p>Given the center at the origin, foci at \(({@foci1[1]@},{@foci1[2]@})\) and \(({@foci2[1]@},{@foci2[2]@})\) , and length of major axis {@major_axis_length@}.</p>
+<p>a. Write the equation of the conic section in standard form.</p>
+<p>\( \qquad \)[[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</p>
+<p>b. Deduce the type of the conic section.</p>
+<p>[[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3>Worked Solution</h3>
+<p>To find the equation of the ellipse with the given properties, we can use the standard form of the equation for an ellipse with its center at the origin:</p>
+
+<p>\( \displaystyle \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1,\)</p>
+<p>where \(a\) is the semi-major axis length and \(b\) is the semi-minor axis length.</p>
+
+<p>We are given that the length of the major axis is \({@major_axis_length@}\), which means \(2a = {@major_axis_length@}\), so \(a = {@a@}\).</p>
+
+<p>Since the foci are at \(({@foci1[1]@},{@foci1[2]@})\) and \(({@foci2[1]@},{@foci2[2]@})\) the distance between the foci is \( \displaystyle 2c = \sqrt{({@foci2[1]@} {@if foci1[1]<0 then "+" else "-"@} {@abs(foci1[1])@})^2 + ({@foci2[2]@}  {@if foci1[2]<0 then "+" else "-"@} {@abs(foci1[2])@})^2)}={@focal_distance@}\), so \(c = {@c@}\).</p>
+
+<p>We can use the relationship between \(a\), \(b\), and \(c\) for an ellipse: \(c^2 = a^2 - b^2\), to find \(b\):</p>
+
+<p>\({@c@}^2={@a@}^2-b^2\)</p>
+<p>\({@c^2@}={@a^2@}-b^2\)</p>
+<p>\(b^2 = {@a^2@}-{@c^2@} \)</p>
+<p>\(b^2 = {@(a^2 - c^2)@}\)</p>
+<p>\(b = {@b@}\)</p>
+
+<p>Now we can substitute the values of \(a\) and \(b\) into the standard equation of the ellipse:</p>
+
+<p>\( \displaystyle \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1,\)</p>
+<p>\( \displaystyle {@eq@} \)</p>
+<p>Here is a sketch of the above equation</p>
+<p>
+[[jsxgraph]]
+    var board = JXG.JSXGraph.initBoard(divid, {
+      boundingbox: [-10,15, 10, -15],
+      showCopyright: false,
+      showNavigation:false,
+      axis: true
+    });
+    board.suspendUpdate();
+
+    var a = Math.sqrt({#(a)#}); // Semi-major axis length
+    var b = Math.sqrt({#(b^2)#});  // Semi-minor axis length
+    var nColE = '#FF00FF';
+
+    var ellipse = board.create('curve', [
+      function(t) {
+        return a * Math.cos(t);
+      },
+      function(t) {
+        return b * Math.sin(t);
+      },
+      0, 2 * Math.PI
+    ], {
+      strokeColor: nColE
+    });
+
+    board.unsuspendUpdate();
+
+[[/jsxgraph]]
+</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[/* Define the major axis length */
+coef:rand_with_step(2,16,2);
+const:(rand(9)+1)^2;
+major_axis_length: coef * sqrt(const);
+/* Calculate the semi-major axis length */
+a: major_axis_length / 2;  
+/* Given foci coordinates */
+x_cord:rand(5)+1;
+y_cord:rand(7)+3;
+foci1: [-x_cord, y_cord];
+foci2: [x_cord, y_cord];  
+/* Calculate focal distance */
+focal_distance: sqrt((foci2[1] - foci1[1])^2 + (foci2[2] - foci1[2])^2);
+/* Calculate the semi-minor axis length */
+c: focal_distance / 2;
+b: sqrt(a^2 - c^2);   
+/* Print the equation of the ellipse */
+eq: x^2 / a^2 + y^2 / b^2=1;
+
+
+/*Graphing code*/
+x1:a;
+y1:
+
+/*Model answers*/
+ta1:eq;
+ta2:random_permutation([["Ellipse",true],["Hyperbola",false],["Circle",false],["Parabola",false]]);]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>Given the center at the origin, foci at \(({@foci1[1]@},{@foci1[2]@})\) and \(({@foci2[1]@},{@foci2[2]@})\) , and length of major axis {@major_axis_length@}.</p>
+<p>a. Write the equation of the conic section in standard form.</p>
+<br>{@ta1@}
+<br>{@mcq_correct(ta2)[1]@}
+<p>
+[[jsxgraph]]
+    var board = JXG.JSXGraph.initBoard(divid, {
+      boundingbox: [-10,15, 10, -15],
+      showCopyright: false,
+      showNavigation: true,
+      axis: true
+    });
+    board.suspendUpdate();
+
+    var a = Math.sqrt({#(a)#}); // Semi-major axis length
+    var b = Math.sqrt({#(b^2)#});  // Semi-minor axis length
+    var nColE = '#FF00FF';
+
+    var ellipse = board.create('curve', [
+      function(t) {
+        return a * Math.cos(t);
+      },
+      function(t) {
+        return b * Math.sin(t);
+      },
+      0, 2 * Math.PI
+    ], {
+      strokeColor: nColE
+    });
+
+    board.unsuspendUpdate();
+
+[[/jsxgraph]]
+</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>radio</type>
+      <tans>ta2</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options>nonotanswered</options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1 checks for correct answer in terms of standard form*/ 
+/*Node 2 checks for incorrect std form of equation*/
+incorrect_standard_eqn: b^2*x^2 + a^2*y^2 =1*(a^2*b^2);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>EqualComAss</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text>Well done! your equation is in standard form.</text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>incorrect_standard_eqn</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your equation \({@ans1@}\) is algebraically correct, but it is not in standard form.
+<p>Recall that the equation of an ellipse in standard form is:</p>
+<p>\[ \displaystyle  \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1\]</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>mcq_correct(ta2)[1]</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>588824157</deployedseed>
+    <deployedseed>935549393</deployedseed>
+    <deployedseed>579747008</deployedseed>
+    <deployedseed>2109954423</deployedseed>
+    <deployedseed>131157403</deployedseed>
+    <deployedseed>1732744702</deployedseed>
+    <deployedseed>1552729698</deployedseed>
+    <deployedseed>488773141</deployedseed>
+    <deployedseed>614531059</deployedseed>
+    <deployedseed>691297557</deployedseed>
+    <deployedseed>420812906</deployedseed>
+    <deployedseed>193009094</deployedseed>
+    <deployedseed>1146540983</deployedseed>
+    <deployedseed>1549333746</deployedseed>
+    <deployedseed>2129858142</deployedseed>
+    <deployedseed>423319636</deployedseed>
+    <deployedseed>161691177</deployedseed>
+    <deployedseed>1694414202</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>first(mcq_correct(ta2))</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

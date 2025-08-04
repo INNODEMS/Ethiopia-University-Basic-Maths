@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Equation of a Circle with Given Center and Radius</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Find an equation of the circle with radius \({@radius@}\) and center \( ( {@c_x@}\, ,\, {@c_y@} ) \) . </p>
+<p>[[input:ans1]] [[validation:ans1]][[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked Solution</h3>
+<p>The equation of a circle with center \( (h\, , \, k) \) and radius \( r \) is given by:</p>
+<p>\( (x-h)^2+(y-k)^2=r^2 \)</p>
+<p>In this case, the center is \( ( {@c_x@}\, ,\, {@c_y@} ) \) and the radius is \({@radius@}\). Plugging these values into the equation, we get:</p>
+<p>\( \begin{align}
+(x-({@c_x@}))^2+(y-({@c_y@}))^2 & = {@radius@}^2 \\
+{@(x-c_x)^2@}+{@(y-c_y)^2@} & = {@radius^2@}\\
+\end{align}\)</p>
+Therefore, the equation of the circle with radius \({@radius@}\) and center  \( ({@c_x@}, {@c_y@}) \) is \(  {@(x-c_x)^2@}+{@(y-c_y)^2@}= {@radius^2@} \), which can be also written \({@ta_al@}\).]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*Question variables*/
+radius:rand(7)+3;
+c_x:rand_with_step(-5,5,1);
+c_y:rand_with_step(-5,5,1);
+ta:(x-c_x)^2+(y-c_y)^2=radius^2;
+ta_al: expand((x-c_x)^2+(y-c_y)^2-radius^2=0);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>The equation of a circle with radius \({@radius@}\) and center \( ( {@c_x@}\, ,\, {@c_y@} ) \) is .</p>
+<p>\( {@ta@} \)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */
+/*Node 2: Wrong substitution of the center coordinates into the equation of a circle formula.*/
+mistake2:(c_x-h)^2+(c_y-k)^2;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You seem to have wrongly substituted the center coordinates into the equation of a circle formula. Check the worked solution below</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>737815674</deployedseed>
+    <deployedseed>1112761942</deployedseed>
+    <deployedseed>515702125</deployedseed>
+    <deployedseed>1706206168</deployedseed>
+    <deployedseed>2132429928</deployedseed>
+    <deployedseed>1672638280</deployedseed>
+    <deployedseed>477529684</deployedseed>
+    <deployedseed>205668607</deployedseed>
+    <deployedseed>46249780</deployedseed>
+    <deployedseed>1253357603</deployedseed>
+    <deployedseed>532313517</deployedseed>
+    <deployedseed>1260319413</deployedseed>
+    <deployedseed>2004553577</deployedseed>
+    <deployedseed>524117593</deployedseed>
+    <deployedseed>1397997544</deployedseed>
+    <deployedseed>1151042506</deployedseed>
+    <deployedseed>190812399</deployedseed>
+    <deployedseed>216650263</deployedseed>
+    <deployedseed>1186429171</deployedseed>
+    <deployedseed>1255884484</deployedseed>
+    <deployedseed>2082310495</deployedseed>
+    <deployedseed>1348314322</deployedseed>
+    <deployedseed>288343551</deployedseed>
+    <deployedseed>948658519</deployedseed>
+    <deployedseed>1319824248</deployedseed>
+    <deployedseed>383406210</deployedseed>
+    <deployedseed>2035140740</deployedseed>
+    <deployedseed>1810899722</deployedseed>
+    <deployedseed>1286331841</deployedseed>
+    <deployedseed>52541293</deployedseed>
+    <deployedseed>498113282</deployedseed>
+    <deployedseed>50331408</deployedseed>
+    <deployedseed>724103639</deployedseed>
+    <deployedseed>700700421</deployedseed>
+    <deployedseed>377602177</deployedseed>
+    <deployedseed>891083285</deployedseed>
+    <deployedseed>1162472182</deployedseed>
+    <deployedseed>1485748128</deployedseed>
+    <deployedseed>740135223</deployedseed>
+    <deployedseed>1702344658</deployedseed>
+    <deployedseed>1802586544</deployedseed>
+    <deployedseed>1919911826</deployedseed>
+    <deployedseed>1252123313</deployedseed>
+    <deployedseed>1666552391</deployedseed>
+    <deployedseed>266507397</deployedseed>
+    <deployedseed>56415556</deployedseed>
+    <deployedseed>953418759</deployedseed>
+    <deployedseed>1675577491</deployedseed>
+    <deployedseed>279700053</deployedseed>
+    <deployedseed>520285874</deployedseed>
+    <deployedseed>628528183</deployedseed>
+    <deployedseed>1585402414</deployedseed>
+    <deployedseed>770262067</deployedseed>
+    <deployedseed>1312459589</deployedseed>
+    <deployedseed>1222102414</deployedseed>
+    <deployedseed>496664655</deployedseed>
+    <deployedseed>758002984</deployedseed>
+    <deployedseed>1415386685</deployedseed>
+    <deployedseed>589405133</deployedseed>
+    <deployedseed>1834843856</deployedseed>
+    <deployedseed>311813894</deployedseed>
+    <deployedseed>1591339869</deployedseed>
+    <deployedseed>1004506906</deployedseed>
+    <deployedseed>1433979739</deployedseed>
+    <deployedseed>110025187</deployedseed>
+    <deployedseed>817774351</deployedseed>
+    <deployedseed>144552865</deployedseed>
+    <deployedseed>288880962</deployedseed>
+    <deployedseed>1039725843</deployedseed>
+    <deployedseed>749754638</deployedseed>
+    <deployedseed>77334027</deployedseed>
+    <deployedseed>951412552</deployedseed>
+    <deployedseed>282889037</deployedseed>
+    <deployedseed>383517439</deployedseed>
+    <deployedseed>353113672</deployedseed>
+    <deployedseed>434980539</deployedseed>
+    <deployedseed>1187188732</deployedseed>
+    <deployedseed>745800344</deployedseed>
+    <deployedseed>641496045</deployedseed>
+    <deployedseed>1941068664</deployedseed>
+    <deployedseed>1086294361</deployedseed>
+    <deployedseed>27696501</deployedseed>
+    <deployedseed>1406110392</deployedseed>
+    <deployedseed>522541149</deployedseed>
+    <deployedseed>1725601556</deployedseed>
+    <deployedseed>1143288873</deployedseed>
+    <deployedseed>1676830794</deployedseed>
+    <deployedseed>1489050843</deployedseed>
+    <deployedseed>1468642073</deployedseed>
+    <deployedseed>894483422</deployedseed>
+    <deployedseed>1394404882</deployedseed>
+    <deployedseed>1187801537</deployedseed>
+    <deployedseed>857380668</deployedseed>
+    <deployedseed>1589736611</deployedseed>
+    <deployedseed>185923058</deployedseed>
+    <deployedseed>1094346756</deployedseed>
+    <deployedseed>1780471228</deployedseed>
+    <deployedseed>390845476</deployedseed>
+    <deployedseed>1217462094</deployedseed>
+    <deployedseed>88974131</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

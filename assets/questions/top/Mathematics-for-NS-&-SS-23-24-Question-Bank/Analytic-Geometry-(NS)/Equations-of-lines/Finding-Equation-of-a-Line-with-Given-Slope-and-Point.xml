@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Finding Equation of a Line with Given Slope and Point</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Find an equation of the line that has a slope of {@slope@} and passes through the point ({@x_cor@},{@y_cor@}).</p>
+<p>[[input:ans1]] [[validation:ans1]][[feedback:prt1]]</p>
+<p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<p><b><h3>Worked solution</h3></b></p> 
+<p>Find an equation of the line that has a slope of {@slope@} and passes through the point ({@x_cor@},{@y_cor@}).</p>
+<p>We recall that the general form of the line equation is \(y-y_1=m(x-x_1) \) where \(m\)  is the slope.</p>
+<p> Substituting {@y_cor@} for \(y_1 \), {@x_cor@} for \(x_1 \), and \({@slope@}\) for \(m\) we get;</p>
+<p>\( \begin{align}
+y{@if y_cor<0 then "+" else "-"@}{@abs(y_cor)@} & ={@slope@}(x{@if x_cor<0 then "+" else "-"@}{@abs(x_cor)@}) \\
+{@y-y_cor@} &={@expand(slope*(x-x_cor))@}\\
+y & = {@expand(slope*(x-x_cor)+y_cor)@} 
+\end{align}\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*Question variables*/
+slope: rand_with_prohib(-5,5,[0]);
+x_cor: rand_with_step(-5,5,1);
+y_cor:rand_with_step(-5,5,1);
+
+/*Worked solution*/
+eqn1:y-y_cor=slope*(x-x_cor);
+eqn2: y=expand(slope*(x-x_cor)+y_cor);
+ta:solve(eqn1,y)[1];</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>slope \(={@slope@}\)</p>
+<p>points: \(({@x_cor@},{@y_cor@})\)</p>
+<p>equation of the line :\({@y-y_cor@}={@slope@}({@x-x_cor@}) \)]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 2: Permutation of x1 and y1 during the comutation*/
+mistake1: y=expand(slope*(x-y_cor)+x_cor);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1/2</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You interchanged the values of \(x_{1}={@x_cor@}\) and \(y_{1}={@y_cor@}\) in the formula of the equation of the given line during your computation</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1927221910</deployedseed>
+    <deployedseed>1284095120</deployedseed>
+    <deployedseed>134767110</deployedseed>
+    <deployedseed>1509815683</deployedseed>
+    <deployedseed>192421947</deployedseed>
+    <deployedseed>461692857</deployedseed>
+    <deployedseed>149808191</deployedseed>
+    <deployedseed>1590976572</deployedseed>
+    <deployedseed>1753345576</deployedseed>
+    <deployedseed>1454903713</deployedseed>
+    <deployedseed>432621161</deployedseed>
+    <deployedseed>204547282</deployedseed>
+    <deployedseed>56776003</deployedseed>
+    <deployedseed>1140561990</deployedseed>
+    <deployedseed>450702398</deployedseed>
+    <deployedseed>344191295</deployedseed>
+    <deployedseed>648720485</deployedseed>
+    <deployedseed>981250432</deployedseed>
+    <deployedseed>1345120176</deployedseed>
+    <deployedseed>106113648</deployedseed>
+    <deployedseed>2125219377</deployedseed>
+    <deployedseed>1799013692</deployedseed>
+    <deployedseed>1821944810</deployedseed>
+    <deployedseed>1430249073</deployedseed>
+    <deployedseed>1092833897</deployedseed>
+    <deployedseed>1477140160</deployedseed>
+    <deployedseed>1629771636</deployedseed>
+    <deployedseed>249676957</deployedseed>
+    <deployedseed>830623890</deployedseed>
+    <deployedseed>1093918599</deployedseed>
+    <deployedseed>232335688</deployedseed>
+    <deployedseed>1572276930</deployedseed>
+    <deployedseed>143500300</deployedseed>
+    <deployedseed>1154647781</deployedseed>
+    <deployedseed>351307872</deployedseed>
+    <deployedseed>1664276434</deployedseed>
+    <deployedseed>1365968771</deployedseed>
+    <deployedseed>2017963117</deployedseed>
+    <deployedseed>1996882385</deployedseed>
+    <deployedseed>869307756</deployedseed>
+    <deployedseed>167620096</deployedseed>
+    <deployedseed>2088513366</deployedseed>
+    <deployedseed>578904191</deployedseed>
+    <deployedseed>1939489320</deployedseed>
+    <deployedseed>91797809</deployedseed>
+    <deployedseed>2142956807</deployedseed>
+    <deployedseed>884705366</deployedseed>
+    <deployedseed>11860031</deployedseed>
+    <deployedseed>299657259</deployedseed>
+    <deployedseed>1201331293</deployedseed>
+    <deployedseed>215770606</deployedseed>
+    <deployedseed>947238080</deployedseed>
+    <deployedseed>237971046</deployedseed>
+    <deployedseed>1878130574</deployedseed>
+    <deployedseed>1384918394</deployedseed>
+    <deployedseed>473964591</deployedseed>
+    <deployedseed>1013368659</deployedseed>
+    <deployedseed>2007432367</deployedseed>
+    <deployedseed>2013588595</deployedseed>
+    <deployedseed>1960835512</deployedseed>
+    <deployedseed>83976238</deployedseed>
+    <deployedseed>1869681979</deployedseed>
+    <deployedseed>1587258938</deployedseed>
+    <deployedseed>2029153581</deployedseed>
+    <deployedseed>1102894805</deployedseed>
+    <deployedseed>672885399</deployedseed>
+    <deployedseed>409307622</deployedseed>
+    <deployedseed>1281609986</deployedseed>
+    <deployedseed>1750257292</deployedseed>
+    <deployedseed>249292372</deployedseed>
+    <deployedseed>1953793263</deployedseed>
+    <deployedseed>1451821894</deployedseed>
+    <deployedseed>383272320</deployedseed>
+    <deployedseed>219138801</deployedseed>
+    <deployedseed>466163032</deployedseed>
+    <deployedseed>1307103685</deployedseed>
+    <deployedseed>2085151759</deployedseed>
+    <deployedseed>1329757231</deployedseed>
+    <deployedseed>279427800</deployedseed>
+    <deployedseed>839006663</deployedseed>
+    <deployedseed>547752547</deployedseed>
+    <deployedseed>31238745</deployedseed>
+    <deployedseed>575836022</deployedseed>
+    <deployedseed>2113836741</deployedseed>
+    <deployedseed>700127908</deployedseed>
+    <deployedseed>1713499945</deployedseed>
+    <deployedseed>1749348271</deployedseed>
+    <deployedseed>910954886</deployedseed>
+    <deployedseed>293443724</deployedseed>
+    <deployedseed>2097387589</deployedseed>
+    <deployedseed>2044561033</deployedseed>
+    <deployedseed>1764450120</deployedseed>
+    <deployedseed>2057714244</deployedseed>
+    <deployedseed>1248621361</deployedseed>
+    <deployedseed>1989493177</deployedseed>
+    <deployedseed>958861414</deployedseed>
+    <deployedseed>170462013</deployedseed>
+    <deployedseed>60156371</deployedseed>
+    <deployedseed>548625369</deployedseed>
+    <deployedseed>408054852</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

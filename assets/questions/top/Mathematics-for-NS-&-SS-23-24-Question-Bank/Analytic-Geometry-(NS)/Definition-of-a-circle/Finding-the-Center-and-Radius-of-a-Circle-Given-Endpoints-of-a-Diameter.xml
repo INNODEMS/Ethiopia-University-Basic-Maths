@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Finding the Center and Radius of a Circle Given Endpoints of a Diameter</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Find the center and radius of a circle with \(A({@x_1@}, {@y_1@})\) and \(B({@x_2@}, {@y_2@})\) as endpoints of its diameter.</p>
+<p> <b>Note:</b> Give your answer in \(2\) decimal places where necessary</p>
+<p> Centre \(=\) [[input:ans1]][[validation:ans1]][[feedback:prt1]] </p>
+<p> Radius \(=\) [[input:ans2]] units [[validation:ans2]][[feedback:prt2]]  </p>
+<p></p>
+<p>Note: For the centre coordinates, enter your values inside the parenthesis \( \left( a, b \right) \)</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3>Worked Solution</h3>
+<p>Let's apply these steps to the given endpoints \(A({@x_1@},{@y_1@})\) and \(B({@x_2@},{@y_2@})\):</p>
+<p><strong>Step 1:</strong> Find the midpoint (center) of the diameter \( \displaystyle M= \left(\frac{{x_1 + x_2}}{2}, \frac{{y_1 + y_2}}{2}\right)\) </p>
+<p>\(\begin{align}
+\text{Midpoint (M)} & =  \left(\frac{{({@x_1@}) + ({@x_2@})}}{2}, \frac{{({@y_1@}) + ({@y_2@})}}{2}\right) \\
+& = \left(\frac{{{@x_1+ x_2@}}}{2}, \frac{{{@y_1+ y_2@}}}{2}\right) \\
+& = \left({@(x_1+ x_2)/2@},{@(y_1 + y_2)/2@} \right)
+\end{align}\)</p>
+<p><strong>Step 2:</strong> Find the distance (radius) from one of the endpoints to the center. </p>
+<p>The distance formula gives us the radius \(R\) as:</p>
+\[R = \sqrt{{(x_2 - x_1)^2 + (y_2 - y_1)^2}}\]
+<p>Here we can use the points \(A({@x_1@},{@y_1@})\) and center \( C\left({@(x_1+ x_2)/2@},{@(y_1 + y_2)/2@} \right) \) to find the radius \(R\). (Note: You can also use \(B({@x_2@},{@y_2@})\)):
+</p>
+<p>\( \displaystyle \begin{align}\text{Radius (R)} & =\sqrt{{(({@x_2@}) - ({@(x_1+ x_2)/2@}))^2 + (({@y_2@}) - ({@(y_1 + y_2)/2@}))^2}} \\
+& = \sqrt{{({@x_2 - ((x_1+ x_2)/2)@})^2 + ({@y_2 - ((y_1 + y_2)/2)@})^2}} \\
+& = \sqrt{{@(x_2 - ((x_1+ x_2)/2))^2 + (y_2 - ((y_1 + y_2)/2))^2@}} \\
+& = {@ratsimp(sqrt((x_2 - ((x_1+ x_2)/2))^2 + (y_2 - ((y_1 + y_2)/2))^2))@}
+\end{align} \)</p>
+<p>So, the radius of the circle is \({@ratsimp(sqrt((x_2 - ((x_1+ x_2)/2))^2 + (y_2 - ((y_1 + y_2)/2))^2))@} \) units</p>
+<p>Therefore, the center of the circle is \( C [{@(x_1+ x_2)/2@},{@(y_1 + y_2)/2@} ] \) and the radius is \({@ratsimp(sqrt((x_2 - ((x_1+ x_2)/2))^2 + (y_2 - ((y_1 + y_2)/2))^2))@}\) units.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*Question Variables*/
+x_1:rand_with_step(-5,5,1); /*The value of x at endpoint A*/
+y_1:rand_with_step(-5,5,1); /*The value of y at endpoint A*/
+x_2:rand_with_prohib(-5,5,[x_1]); /*The value of x at endpoint B*/
+y_2:y_1; /*The value of y at endpoint B*/
+ta1_1:(x_1+x_2)/2;
+ta2_1:(y_1+y_2)/2;
+ta1_2:decimalplaces((x_1+x_2)/2,2);
+ta2_2:decimalplaces((y_1+y_2)/2,2);
+ta1:[ta1_1,ta2_1];
+ta1a:[ta1_2,ta2_2];
+ta2:sqrt((ta1_1-x_1)^2+(ta2_1-y_1)^2);
+ta2a:decimalplaces(sqrt((ta1_1-x_1)^2+(ta2_1-y_1)^2),2);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>Finding the center and radius of a circle with \(A({@x_1@}, {@y_1@})\) and \(B({@x_2@}, {@y_2@})\) as endpoints of its diameter.</p>
+<p> Centre \(={@ta1@}\) </p>
+<p> Radius \(={@ta2@}\) </p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>6</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>[ ? ,  ?]</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */
+/*Node 2: Mistake: Swapping the coordinates of the center point.*/
+mistake2: [ta2_1,ta1_1];
+/*Node 3: Checks for the correct answer in decimal form*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake2</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Be careful not to swap the coordinates of the center point. The center of the circle can be found by taking the average of the x-coordinates and the average of the y-coordinates of the endpoints of the diameter.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>NumDecPlaces</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions>2</testoptions>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */
+/*Node 2: mistake: Failing to square the differences when calculating the Distance */
+mistake2:sqrt((ta1_1-x_1)+(ta2_1-y_1));
+/*Node 3: mistake: Giving the radius as zero */
+mistake3: 0;
+/*Node 4: mistake: Using the distance between A and B as the radius instead of finding the correct radius*/
+mistake4: (sqrt((ta1_1-x_1)^2+(ta2_1-y_1)^2))*2;
+/*Node 5: mistake: Making a sign error in the calculation of the radius.i.e subtracting where addition needs to be done*/
+mistake5:sqrt((ta1_1-x_1)^2-(ta2_1-y_1)^2);
+/*Node 6: Checks for the correct answer in decimal form */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>5</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>mistake2</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You seem to have failed to square the differences when calculating the Distance .
+Check the worked solution below.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>mistake3</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>The radius of a circle cannot be zero; it must be a positive value.Try again </p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prt2-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>mistake4</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>4</falsenextnode>
+        <falseanswernote>prt2-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>4</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>mistake5</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-5-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Pay attention to the signs when calculating the radius. Make sure to use the correct mathematical operation (addition or subtraction) based on the formula for finding the distance between two points</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-5-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>5</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2a</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-6-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-6-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1321285175</deployedseed>
+    <deployedseed>2103037030</deployedseed>
+    <deployedseed>1565314750</deployedseed>
+    <deployedseed>759227565</deployedseed>
+    <deployedseed>1450326208</deployedseed>
+    <deployedseed>909195231</deployedseed>
+    <deployedseed>1747515012</deployedseed>
+    <deployedseed>1583556043</deployedseed>
+    <deployedseed>1772451748</deployedseed>
+    <deployedseed>759722271</deployedseed>
+    <deployedseed>1281716420</deployedseed>
+    <deployedseed>1280129141</deployedseed>
+    <deployedseed>1326846295</deployedseed>
+    <deployedseed>2033468365</deployedseed>
+    <deployedseed>385591872</deployedseed>
+    <deployedseed>266575066</deployedseed>
+    <deployedseed>1054284119</deployedseed>
+    <deployedseed>376707875</deployedseed>
+    <deployedseed>169777034</deployedseed>
+    <deployedseed>540566832</deployedseed>
+    <deployedseed>1171788230</deployedseed>
+    <deployedseed>1808315528</deployedseed>
+    <deployedseed>41728822</deployedseed>
+    <deployedseed>1652602075</deployedseed>
+    <deployedseed>715834249</deployedseed>
+    <deployedseed>1642552509</deployedseed>
+    <deployedseed>912353214</deployedseed>
+    <deployedseed>961756473</deployedseed>
+    <deployedseed>1604147240</deployedseed>
+    <deployedseed>823250052</deployedseed>
+    <deployedseed>858703707</deployedseed>
+    <deployedseed>813369643</deployedseed>
+    <deployedseed>319857585</deployedseed>
+    <deployedseed>1729326571</deployedseed>
+    <deployedseed>1527698153</deployedseed>
+    <deployedseed>2054331051</deployedseed>
+    <deployedseed>1760820871</deployedseed>
+    <deployedseed>2131347061</deployedseed>
+    <deployedseed>1808942032</deployedseed>
+    <deployedseed>3191122</deployedseed>
+    <deployedseed>2075727468</deployedseed>
+    <deployedseed>88737193</deployedseed>
+    <deployedseed>1282669723</deployedseed>
+    <deployedseed>605197555</deployedseed>
+    <deployedseed>1608556749</deployedseed>
+    <deployedseed>1394952115</deployedseed>
+    <deployedseed>2121034664</deployedseed>
+    <deployedseed>2127920526</deployedseed>
+    <deployedseed>979262539</deployedseed>
+    <deployedseed>1411756166</deployedseed>
+    <deployedseed>756732779</deployedseed>
+    <deployedseed>2146018533</deployedseed>
+    <deployedseed>1278410301</deployedseed>
+    <deployedseed>1590974849</deployedseed>
+    <deployedseed>1866921853</deployedseed>
+    <deployedseed>1041816146</deployedseed>
+    <deployedseed>239709188</deployedseed>
+    <deployedseed>236644114</deployedseed>
+    <deployedseed>659010716</deployedseed>
+    <deployedseed>606359946</deployedseed>
+    <deployedseed>1240390795</deployedseed>
+    <deployedseed>733577585</deployedseed>
+    <deployedseed>2058760331</deployedseed>
+    <deployedseed>2093645051</deployedseed>
+    <deployedseed>327706133</deployedseed>
+    <deployedseed>350894876</deployedseed>
+    <deployedseed>1622698800</deployedseed>
+    <deployedseed>1597418413</deployedseed>
+    <deployedseed>1686342862</deployedseed>
+    <deployedseed>1125133157</deployedseed>
+    <deployedseed>1646449321</deployedseed>
+    <deployedseed>95936243</deployedseed>
+    <deployedseed>1351947844</deployedseed>
+    <deployedseed>1790680661</deployedseed>
+    <deployedseed>72005198</deployedseed>
+    <deployedseed>1478232569</deployedseed>
+    <deployedseed>1141525198</deployedseed>
+    <deployedseed>796244346</deployedseed>
+    <deployedseed>846850403</deployedseed>
+    <deployedseed>1400068983</deployedseed>
+    <deployedseed>1466047133</deployedseed>
+    <deployedseed>1097072540</deployedseed>
+    <deployedseed>1539133990</deployedseed>
+    <deployedseed>397637067</deployedseed>
+    <deployedseed>769431130</deployedseed>
+    <deployedseed>1272646635</deployedseed>
+    <deployedseed>458963379</deployedseed>
+    <deployedseed>1706188228</deployedseed>
+    <deployedseed>664919709</deployedseed>
+    <deployedseed>463579430</deployedseed>
+    <deployedseed>1064784690</deployedseed>
+    <deployedseed>1744263874</deployedseed>
+    <deployedseed>1046440830</deployedseed>
+    <deployedseed>664108883</deployedseed>
+    <deployedseed>1488185267</deployedseed>
+    <deployedseed>1941187704</deployedseed>
+    <deployedseed>1693514136</deployedseed>
+    <deployedseed>435164003</deployedseed>
+    <deployedseed>682276301</deployedseed>
+    <deployedseed>1334044098</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

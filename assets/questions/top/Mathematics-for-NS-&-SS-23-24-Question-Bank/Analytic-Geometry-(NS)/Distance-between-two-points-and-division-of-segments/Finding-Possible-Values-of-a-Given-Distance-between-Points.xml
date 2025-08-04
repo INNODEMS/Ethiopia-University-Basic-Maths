@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Finding Possible Values of a Given Distance between Points</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Given that the distance between points \(P\) and \(Q\) with coordinates \(({@x_cord_1@},a)\) and \(({@x_cord_2@},{@y_cord_2@})\) respectively is \({@dist@}\) units, find the possible values of \(a\). 
+<em>Note: Give your answers in exact form. In the case of one solution, repeat the same solution in the two inputs.</em></p>
+<p>\(a=\)[[input:ans1]] [[validation:ans1]] or \(a=\)[[input:ans2]] [[validation:ans2]][[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3><b>Worked Solution</b></h3>
+<p>We recall the formula of the distance given by \(PQ= \displaystyle \sqrt{(x_{q}-x_{p})^{2}+(y_{q}-y_{p})^{2}} \). Since \(PQ={@dist@}\), we have;</p>
+<p>\( \begin{align}
+\sqrt{({@x_cord_2@}-{@x_cord_1@})^2+({@y_cord_2@}-{@y_cord_1@})^2} &={@dist@}\\
+({@x_cord_2-x_cord_1@})^2+({@y_cord_2@}-{@y_cord_1@})^2 &={@dist^2@}\\
+({@y_cord_2@}-{@y_cord_1@})^2 & ={@dist^2-(x_cord_2-x_cord_1)^2@}
+\end{align}
+\)</p>
+[[ if test='discr_a1>0' ]]
+<p>\({@y_cord_2@}-{@y_cord_1@}= \sqrt{{@dist^2-(x_cord_2-x_cord_1)^2@}}\) or \({@y_cord_2@}-{@y_cord_1@}= -\sqrt{{@dist^2-(x_cord_2-x_cord_1)^2@}}\)</p>
+<p>\(a={@ta2@}\) or \(a={@ta3@}\)</p>
+[[ elif test='discr_a1=0' ]]
+<p>\({@y_cord_2@}-{@y_cord_1@}=\sqrt{{@dist^2-(x_cord_2-x_cord_1)^2@}}\)</p>
+<p>\(a={@ta1@}\)</p>
+[[ else ]]
+The system has no solution
+[[/ if]]]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[/*Question Variables*/
+x_cord_1:rand(3)+1;
+x_cord_2:-x_cord_1;
+y_cord_1:a;
+y_cord_2:rand(5)+5;
+dist:rand(6)+6;
+a1:sqrt((x_cord_2-x_cord_1)^2+(y_cord_2-y_cord_1)^2)=dist;
+a1_sq:a1^2;
+a1_exp:expand(a1_sq);
+a1_expr:a1_exp-dist^2;
+pol:y_cord_1^2-2*y_cord_2*y_cord_1+(x_cord_2-x_cord_1)^2+y_cord_2^2-dist^2=0;
+discr_a1:(2*y_cord_2)^2-4*((x_cord_2-x_cord_1)^2+y_cord_2^2-dist^2);
+bb1:-2*y_cord_2;
+aa1:1;
+cc1:(x_cord_2-x_cord_1)^2+y_cord_2^2-dist^2;
+
+/*Model Answers*/
+ta1:ratsimp(-bb1/2);
+ta2:ratsimp((-bb1-sqrt(discr_a1))/2);
+ta3:ratsimp((-bb1+sqrt(discr_a1))/2);
+ta4:none;
+ta_1:if discr_a1=0 then ta1 else (if discr_a1>0 then ta2 else none);
+ta_2:if discr_a1=0 then ta1 else (if discr_a1>0 then ta3 else none);
+ta:if discr_a1=0 then ta1 else (if discr_a1>0 then ta2 nounor ta3 else none);]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>\(P({@x_cord_1@},{@y_cord_1@})\), \(Q ({@x_cord_2@},{@y_cord_2@})\) </p>
+<p>\(a={@ta_1@}\) or \(a={@ta_2@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta_1</tans>
+      <boxsize>9</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options>allowempty</options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta_2</tans>
+      <boxsize>9</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text><![CDATA[no_solution:is (discr_a1<0);
+two_solutions::is (discr_a1>0);
+one_solution:is (discr_a1=0);
+/*Node 3: Check if disc=0. If true go to node 4. If false go to node 5*/
+/*Node 4: check if the first answer given is there is a unique solution and it is x then go to node 6*/
+/*Node 6: check if the second answer given is there is a unique solution and it is x then go to node*/
+/*Node 5: Check if first of the two possible values is correct as the first teacher answer if true go to node 9 if false go to node 8.*/
+/* Node 8: Check if first of the two possible values is correct as the second teacher answer. If true go to node 9 if false also go to node 9.*/
+/*Node 9: Check if second of the two possible values is correct as the first teacher answer. If true stop if false go to node 10.*/
+/*Node 10: Check if second of the two possible values is correct as the second teacher answer.*/]]></text>
+      </feedbackvariables>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>one_solution</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>3</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>4</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta_1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>5</truenextnode>
+        <trueanswernote>prt1-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>5</falsenextnode>
+        <falseanswernote>prt1-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>4</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta_1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>8</truenextnode>
+        <trueanswernote>prt1-5-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>7</falsenextnode>
+        <falseanswernote>prt1-5-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>5</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta_2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-6-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-6-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>7</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta_2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>8</truenextnode>
+        <trueanswernote>prt1-8-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>8</falsenextnode>
+        <falseanswernote>prt1-8-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>8</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta_1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-9-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>9</falsenextnode>
+        <falseanswernote>prt1-9-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>9</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta_2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-10-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-10-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>645627645</deployedseed>
+    <deployedseed>86600640</deployedseed>
+    <deployedseed>1484041423</deployedseed>
+    <deployedseed>1337696668</deployedseed>
+    <deployedseed>649315010</deployedseed>
+    <deployedseed>1123202611</deployedseed>
+    <deployedseed>371805360</deployedseed>
+    <deployedseed>724601632</deployedseed>
+    <deployedseed>524033205</deployedseed>
+    <deployedseed>1491198764</deployedseed>
+    <deployedseed>139306185</deployedseed>
+    <deployedseed>1002118775</deployedseed>
+    <deployedseed>2780813</deployedseed>
+    <deployedseed>593349340</deployedseed>
+    <deployedseed>1772793560</deployedseed>
+    <deployedseed>330326865</deployedseed>
+    <deployedseed>1253316793</deployedseed>
+    <deployedseed>1072465889</deployedseed>
+    <deployedseed>1832585386</deployedseed>
+    <deployedseed>546779861</deployedseed>
+    <deployedseed>169825559</deployedseed>
+    <deployedseed>1634847359</deployedseed>
+    <deployedseed>9416768</deployedseed>
+    <deployedseed>690945374</deployedseed>
+    <deployedseed>329289978</deployedseed>
+    <deployedseed>1472409622</deployedseed>
+    <deployedseed>1009410209</deployedseed>
+    <deployedseed>1805189904</deployedseed>
+    <deployedseed>893528609</deployedseed>
+    <deployedseed>1367374393</deployedseed>
+    <deployedseed>1708314987</deployedseed>
+    <deployedseed>1493724925</deployedseed>
+    <deployedseed>141382488</deployedseed>
+    <deployedseed>1881981170</deployedseed>
+    <deployedseed>1159652923</deployedseed>
+    <deployedseed>944460478</deployedseed>
+    <deployedseed>1273660469</deployedseed>
+    <deployedseed>1953258884</deployedseed>
+    <deployedseed>2051636950</deployedseed>
+    <deployedseed>1070255041</deployedseed>
+    <deployedseed>621144871</deployedseed>
+    <deployedseed>582837590</deployedseed>
+    <deployedseed>414197086</deployedseed>
+    <deployedseed>1566326946</deployedseed>
+    <deployedseed>1960440980</deployedseed>
+    <deployedseed>1459829047</deployedseed>
+    <deployedseed>111106132</deployedseed>
+    <deployedseed>484066682</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta_1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta_2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-10-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

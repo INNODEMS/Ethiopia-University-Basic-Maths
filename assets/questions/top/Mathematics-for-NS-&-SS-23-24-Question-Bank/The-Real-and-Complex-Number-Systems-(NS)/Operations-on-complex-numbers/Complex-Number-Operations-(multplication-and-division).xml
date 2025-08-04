@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Complex Number Operations (multplication and division)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p> Given the complex numbers z = {@z@} and w = {@w@}, evaluate and write in the form \(a+bi\), where \(a\) and \(b\) are real numbers. </p>
+<p><em> Note: To write the complex number \({@%i@}\) type  <code>%i</code>, and 
+\(\sqrt{a}\) type <code>sqrt(a)</code></em></p>
+<p><b>(i)</b> \(z\times w = \)  [[input:ans3]] [[validation:ans3]][[feedback:prt3]]</p>
+<p><b>(ii)</b>\( \displaystyle \frac{z}{w} = \) [[input:ans4]] [[validation:ans4]][[feedback:prt4]]</li>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked Solution</h3>
+<p>Given complex numbers:  \(z={@z@}\) and  \(w={@w@}\).</p>
+
+<br><b>(i)</b><b> \( z \times w \)</b>
+<p>   \( z \times w = ({@z@}) \times ({@w@}) \)</p>
+  <p> Using FOIL method for multiplication: \((a+b)×(c+d)=ac+ad+bc+bd\)</p>
+ <p>  \(z \times w = {@ta3@}\)</p>
+   <p>So, \( z \times w \) in the form \( a + bi \) is \( {@ta3@} \).</p>
+
+<br><b>(ii)</b><b> \( \displaystyle \frac{z}{w}\)</b>
+<p>To find the division of complex numbers \(\displaystyle  \frac{z}{w} \) where \( z = {@z@} \) and \( w = {@w@} \), you can follow these steps:</p>
+<p>1. Express \( z \) and \( w \) in the form \( a + bi \), where \( a \) is the real part and \( b \) is the imaginary part of the complex number.</p>
+
+<p>2. Use the formula for division of complex numbers: \( \displaystyle  \frac{z}{w} = \frac{a + bi}{c + di} = \frac{(a + bi)(c - di)}{c^2 + d^2}, w \neq 0 \), where \( c \) and \( d \) are the real and imaginary parts of (\( w \)).</p>
+
+<p>Applying this to our problem:</p>
+
+<p>Given \( z = {@z@} \) and \( w = {@w@}\), let's calculate \( \displaystyle \frac{z}{w} \):</p>
+
+<p>Step 1: Express \( z \) and \( w \) in the form \( a + bi \):<br>
+\(  \displaystyle z = {@z@} \) (So, \( a = {@a@} \) and \( b = {@b@} \))<br>
+\(  \displaystyle w ={@w@} \) (So, \( c = {@c@} \) and \( d = {@d@} \))</p>
+
+<p>Step 2: Use the division formula:<br>
+\( \displaystyle \frac{z}{w} = \frac{({@z@})({@w@})}{({@c@})^2 + ({@d@})^2} \)</p>
+
+<p>Now, perform the multiplication in the numerator:<br>
+\( \displaystyle \frac{z}{w} = \frac{{@z*conjugate(w)@}}{{@c^2@}+ {@d^2@}} \\
+  \displaystyle\frac{z}{w} ={@realpart(ta4)@}{@if imagpart(ta4)<0 then "-" else "+"@}{@abs(imagpart(ta4))@}{@%i@} 
+\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>a: rand(20); 
+b: 5-rand(20); 
+c: rand(15); 
+d: 3-rand(10);
+z: a+b*%i; 
+w: c+d*%i;
+addzw: z+w;
+ta1: addzw;
+subzw: z-w;
+ta2: subzw;
+prodzw: ratsimp(z*w);
+ta3: prodzw;
+divz1:ratsimp(z*conjugate(w)/(c^2+d^2));
+ta4: divz1;
+ta4f: realpart(ta4)+imagpart(ta4)*%i;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p> Given the complex numbers z = {@z@} and w = {@w@}, </p>
+<p><b>(i)</b> \(z\times w = {@ta3@}\)  </p>
+<p><b>(ii)</b>\( \displaystyle \frac{z}{w} ={@ta4@} \) </li>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<p>Correct answer, well done.</p>]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<p>Incorrect answer.</p>]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>9</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>ta4f</tans>
+      <boxsize>9</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>ta4f</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1465205372</deployedseed>
+    <deployedseed>2027968813</deployedseed>
+    <deployedseed>771647625</deployedseed>
+    <deployedseed>835522529</deployedseed>
+    <deployedseed>1679644908</deployedseed>
+    <deployedseed>1410014578</deployedseed>
+    <deployedseed>978680352</deployedseed>
+    <deployedseed>1750677084</deployedseed>
+    <deployedseed>1711711585</deployedseed>
+    <deployedseed>1845386216</deployedseed>
+    <deployedseed>1285079161</deployedseed>
+    <deployedseed>1865719403</deployedseed>
+    <deployedseed>1367970145</deployedseed>
+    <deployedseed>1353833554</deployedseed>
+    <deployedseed>1362074397</deployedseed>
+    <deployedseed>395425621</deployedseed>
+    <deployedseed>2130680333</deployedseed>
+    <deployedseed>762869877</deployedseed>
+    <deployedseed>1959706979</deployedseed>
+    <deployedseed>598944666</deployedseed>
+    <deployedseed>397435285</deployedseed>
+    <deployedseed>644717157</deployedseed>
+    <deployedseed>1545511710</deployedseed>
+    <deployedseed>34888531</deployedseed>
+    <deployedseed>208452657</deployedseed>
+    <deployedseed>1729309609</deployedseed>
+    <deployedseed>1262618251</deployedseed>
+    <deployedseed>419216924</deployedseed>
+    <deployedseed>494103277</deployedseed>
+    <deployedseed>223075666</deployedseed>
+    <deployedseed>1207316023</deployedseed>
+    <deployedseed>69533595</deployedseed>
+    <deployedseed>1471209892</deployedseed>
+    <deployedseed>1209695612</deployedseed>
+    <deployedseed>1535099554</deployedseed>
+    <deployedseed>1709466054</deployedseed>
+    <deployedseed>1132556958</deployedseed>
+    <deployedseed>1523661678</deployedseed>
+    <deployedseed>1270171847</deployedseed>
+    <deployedseed>1939841818</deployedseed>
+    <deployedseed>576939210</deployedseed>
+    <deployedseed>795433428</deployedseed>
+    <deployedseed>458931843</deployedseed>
+    <deployedseed>1618608834</deployedseed>
+    <deployedseed>558534571</deployedseed>
+    <deployedseed>1105355762</deployedseed>
+    <deployedseed>811233886</deployedseed>
+    <deployedseed>8191866</deployedseed>
+    <deployedseed>893305637</deployedseed>
+    <deployedseed>1265754092</deployedseed>
+    <deployedseed>1279627302</deployedseed>
+    <deployedseed>1243484153</deployedseed>
+    <deployedseed>1468703669</deployedseed>
+    <deployedseed>2041875286</deployedseed>
+    <deployedseed>1736711789</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>
