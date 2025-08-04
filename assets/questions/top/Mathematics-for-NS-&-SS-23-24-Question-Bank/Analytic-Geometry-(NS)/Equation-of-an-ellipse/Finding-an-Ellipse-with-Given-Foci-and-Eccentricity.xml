@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Finding an Ellipse with Given Foci and Eccentricity</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<br> Find the ellipse with foci \( F_{1} ({@focus1_x@}, {@focus1_y@})\) and  \( F_{2} ({@focus2_x@}, {@focus2_y@})\) and eccentricity \( e={@e@} \).
+<br>[[input:ans1]] [[validation:ans1]] [[feedback:prt1]]]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3>Worked solution</h3>
+<br> Find the ellipse with foci \( F_{1} ({@focus1_x@}, {@focus1_y@})\) and  \( F_{2} ({@focus2_x@}, {@focus2_y@})\) and eccentricity \( e= {@e@}  \).
+<br> The equation of an ellipse in standard form follows:
+ <br>\[ \displaystyle \frac{(x-h)^2}{a^2} + \frac{(y-k)^2}{b^2} = 1\]
+<br> Here the center is \((h, k)\). 
+<br> In addtion if \(F_{1} (x_{F_{1}}, y_{F_{1}})\) and \(F_{2} (x_{F_{2}}, y_{F_{2}}) \) are the foci, and \( e \)  the eccenticity, let \(F_{1}F_{2}=2\cdot c\)
+<br> We suppose that \(F_{1}F_{2} \) is computed along \( x-axis\), that is,  \( a > b\).
+<br>Then we have the following relations:
+<br>\(
+(1) \left\{ \begin{array}{r}
+e= \displaystyle \frac{c}{a}\\ 
+a^2=b^2 + c^2
+\end{array}\right. \) 
+ and \( (2) \left\{ \begin{array}{r}
+h= \displaystyle \frac{x_{F_{1}}+x_{F_{2}}}{2}\\ 
+k= \displaystyle \frac{y_{F_{1}}+y_{F_{2}}}{2}
+\end{array}\right. \) 
+<br> In this case, foci are \( F_{1} ({@focus1_x@}, {@focus1_y@})\) and  \( F_{2} ({@focus2_x@}, {@focus2_y@})\), and eccentricity \( e= \displaystyle {@e@}  \).
+<br>Using the information above we have;
+<br> \(2 \cdot c =|x_{F_{1}}-x_{F_{2}}|=|({@focus1_x@})-({@focus2_x@})|={@cc@} \implies c = \displaystyle {@c@}\), and \( e  =\displaystyle {@e@} \)
+<br> The system (1) becomes: <br>\(
+(1) \left\{ \begin{array}{r}
+b^2=  a^2 - c^2\\ 
+ a=  \displaystyle  \frac{c}{e}
+\end{array}\right. \implies 
+\left\{ \begin{array}{r}
+a= \displaystyle {@val_a@}\\ 
+b=\displaystyle  {@val_b@}
+\end{array}\right.\) 
+<br> Using the system (2), we get 
+\( \left\{ \begin{array}{r}
+h= \displaystyle \frac{({@focus1_x@})+({@focus2_x@})}{2} = {@h@} \\ 
+k=\displaystyle  \frac{({@focus1_y@})+({@focus2_y@})}{2} = {@k@}
+\end{array}\right. \) 
+<br> Therefore, the equation of the ellipse is:
+<br> \( \displaystyle \frac{(x-({@h@}))^2}{@val_a^2@} + \frac{(y-({@k@}))^2}{@val_b^2@} = 1\)
+<br> \( \displaystyle \Leftrightarrow {@hyper2@} \)
+<br> \( \displaystyle \Leftrightarrow  {@ta1@} \)]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*Randomising coordinates of focus*/
+focus1_x: rand_with_prohib(-5,5,[0]);
+focus1_y: rand_with_prohib(-5,5,[0]);
+focus2_x: 2*(rand(5)+1)+focus1_x;
+focus2_y: 2*(rand(5)+1)+focus1_y;
+
+/*compute F1F2*/
+cc: abs(focus1_x-focus2_x);
+c: cc/2;
+
+/*Define value of b and a*/
+coef1: c/2;
+coef2: (coef1+rand(3)+1)^2-coef1^2;
+val_b: sqrt(4*coef2);  /*value of b*/
+val_a: abs(sqrt(val_b^2+c^2));  /*value of a*/
+
+/*Defining eccentricity*/
+e: c/val_a;
+
+/*Value on center h, k */
+h:  (focus1_x+focus2_x)/2;
+k: (focus1_y+focus2_y)/2;
+/*Equation of hyperbola*/
+hyper1: ((x-h)^2/val_a^2)+((y-k)^2/val_b^2)=1;
+hyper2: val_b^2*(x-h)^2+val_a^2*(y-k)^2=val_a^2*val_b^2;
+hyper3: val_b^2*(x-h)^2+val_a^2*(y-k)^2-val_a^2*val_b^2=0
+den_ab: denom(val_a^2*val_b^2);
+ta1: expand(den_ab*hyper3);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p> Foci: \( F_{1} ({@focus1_x@}, {@focus1_y@})\) and  \( F_{2} ({@focus2_x@}, {@focus2_y@})\)</p> 
+<p> eccentricity \( e={@e@}  \). </p>
+<p> Answer: \({@ta1@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: check the correct answer*/
+/*Node 2: interchanged center (h,k) by (k,h) */
+mistake1: ((x-k)^2/val_a^2)+((y-h)^2/val_b^2)=1;
+/*Node 3: Interchanged a vs b while other components of the formula are correct */
+mistake2: ((x-h)^2/val_b^2)+((y-k)^2/val_a^2)=1;
+/*Node 4: Interchanged both center (h,k) by (k,h), and  a vs b during the computation*/
+mistake3:  ((x-k)^2/val_b^2)+((y-h)^2/val_a^2)=1;
+/*Node 5: Keeping all components in formula correct but use the sign negative instead +*/
+mistake4: ((x-h)^2/val_a^2)-((y-k)^2/val_b^2)=1;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text>You interchanged the centre \( (h,k) \) by \( (k,h) \) when applying the formula during your computation. Check the worked solution.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text>You interchanged the value of \(a\) against the value of \(b\) during your computation while other components in the formula are correct.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text>You interchanged the value of \(a\) against the value of \(b\), and the center \((h,k)\) with \((k,h)\)  during your computation.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>4</falsenextnode>
+        <falseanswernote>prt1-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>4</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake4</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-5-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<br> Keeping all components in formula correct but use the sign negative instead +.
+<br> The correct equation of the ellipse in standard form follows:
+ <br>\[ \frac{(x-h)^2}{a^2} + \frac{(y-k)^2}{b^2} = 1\]
+<br> Check the worked solution.]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-5-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1842802622</deployedseed>
+    <deployedseed>819129091</deployedseed>
+    <deployedseed>1113177826</deployedseed>
+    <deployedseed>647722542</deployedseed>
+    <deployedseed>1046486143</deployedseed>
+    <deployedseed>1922443321</deployedseed>
+    <deployedseed>1620720112</deployedseed>
+    <deployedseed>1802410208</deployedseed>
+    <deployedseed>1411869273</deployedseed>
+    <deployedseed>1391810408</deployedseed>
+    <deployedseed>1952386223</deployedseed>
+    <deployedseed>1024896303</deployedseed>
+    <deployedseed>148502349</deployedseed>
+    <deployedseed>730560455</deployedseed>
+    <deployedseed>104489211</deployedseed>
+    <deployedseed>1209978692</deployedseed>
+    <deployedseed>1996039380</deployedseed>
+    <deployedseed>48181149</deployedseed>
+    <deployedseed>28685227</deployedseed>
+    <deployedseed>404220295</deployedseed>
+    <deployedseed>1456005262</deployedseed>
+    <deployedseed>1725111623</deployedseed>
+    <deployedseed>1358315336</deployedseed>
+    <deployedseed>35789014</deployedseed>
+    <deployedseed>448788375</deployedseed>
+    <deployedseed>410450767</deployedseed>
+    <deployedseed>890841226</deployedseed>
+    <deployedseed>29644016</deployedseed>
+    <deployedseed>43463311</deployedseed>
+    <deployedseed>1172231377</deployedseed>
+    <deployedseed>266750161</deployedseed>
+    <deployedseed>1140161853</deployedseed>
+    <deployedseed>7917645</deployedseed>
+    <deployedseed>1355405096</deployedseed>
+    <deployedseed>1077575046</deployedseed>
+    <deployedseed>806731821</deployedseed>
+    <deployedseed>773772599</deployedseed>
+    <deployedseed>519607242</deployedseed>
+    <deployedseed>2141410379</deployedseed>
+    <deployedseed>575178004</deployedseed>
+    <deployedseed>1055117666</deployedseed>
+    <deployedseed>2042710463</deployedseed>
+    <deployedseed>983558992</deployedseed>
+    <deployedseed>1997120223</deployedseed>
+    <deployedseed>1109277151</deployedseed>
+    <deployedseed>1676303692</deployedseed>
+    <deployedseed>1560582224</deployedseed>
+    <deployedseed>641614474</deployedseed>
+    <deployedseed>2089724192</deployedseed>
+    <deployedseed>110787871</deployedseed>
+    <deployedseed>1555258820</deployedseed>
+    <deployedseed>111570316</deployedseed>
+    <deployedseed>1184140698</deployedseed>
+    <deployedseed>504620915</deployedseed>
+    <deployedseed>1153795635</deployedseed>
+    <deployedseed>451260527</deployedseed>
+    <deployedseed>1841326372</deployedseed>
+    <deployedseed>124987645</deployedseed>
+    <deployedseed>945754476</deployedseed>
+    <deployedseed>1485289391</deployedseed>
+    <deployedseed>1802980012</deployedseed>
+    <deployedseed>2073574773</deployedseed>
+    <deployedseed>685091585</deployedseed>
+    <deployedseed>2068349484</deployedseed>
+    <deployedseed>731168858</deployedseed>
+    <deployedseed>1649915254</deployedseed>
+    <deployedseed>1628229306</deployedseed>
+    <deployedseed>1955276083</deployedseed>
+    <deployedseed>1094979870</deployedseed>
+    <deployedseed>408505755</deployedseed>
+    <deployedseed>1066055373</deployedseed>
+    <deployedseed>848288841</deployedseed>
+    <deployedseed>1847644178</deployedseed>
+    <deployedseed>857957149</deployedseed>
+    <deployedseed>155032217</deployedseed>
+    <deployedseed>1954428697</deployedseed>
+    <deployedseed>1263957049</deployedseed>
+    <deployedseed>82409137</deployedseed>
+    <deployedseed>150632229</deployedseed>
+    <deployedseed>356844536</deployedseed>
+    <deployedseed>182010781</deployedseed>
+    <deployedseed>93914181</deployedseed>
+    <deployedseed>1473012451</deployedseed>
+    <deployedseed>43962149</deployedseed>
+    <deployedseed>881310723</deployedseed>
+    <deployedseed>418064304</deployedseed>
+    <deployedseed>2055560410</deployedseed>
+    <deployedseed>1143909526</deployedseed>
+    <deployedseed>1378420708</deployedseed>
+    <deployedseed>1789218124</deployedseed>
+    <deployedseed>912512897</deployedseed>
+    <deployedseed>1550487069</deployedseed>
+    <deployedseed>1481241243</deployedseed>
+    <deployedseed>882322058</deployedseed>
+    <deployedseed>695242874</deployedseed>
+    <deployedseed>1512032789</deployedseed>
+    <deployedseed>1709749716</deployedseed>
+    <deployedseed>896324290</deployedseed>
+    <deployedseed>1720664479</deployedseed>
+    <deployedseed>1830138148</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

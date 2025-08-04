@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Sketching: Hyperbola_Asymptote</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<br> 1. Determine the asymptote equations of the hyperbola \(\displaystyle {@expr_equ@}\). 
+<br> \( l_{1}:\)  [[input:ans1]]  [[validation:ans1]] and  \( l_{2}:\)  [[input:ans2]]  [[validation:ans2]]  [[feedback:prtA]]
+<br> 2. Give the coordinates of its vertices and foci.
+<br> Hint: For instance, coordinates \((2,4)\) is typing as \([2,4] \) and \( \sqrt{7} \) is typed as <b>\( sqrt{7}\)</b>.
+<br> a. Vertices
+<br> \( V_{1}=\)  [[input:ans3]]  [[validation:ans3]] and  \( V_{2}=\)  [[input:ans4]]  [[validation:ans4]]  [[feedback:prtB]]
+<br> b. Foci 
+<br>\( F_{1}=\)  [[input:ans5]]  [[validation:ans5]]  \( F_{2}=\)  [[input:ans6]]  [[validation:ans6]]  [[feedback:prtC]]
+<br> 3. Sketch the hyperbola with equation \({@expr_equ@}\) by using the sliders "a", "b" and "c", and draw its asymptotes using sliders "d", "e" and "f".
+<p></p>
+<center>
+[[jsxgraph width="600px" height="600px" input-ref-ansa='ansaRef'
+ input-ref-ansb='ansbRef'
+ input-ref-ansc='anscRef'
+ input-ref-ansd='ansdRef'
+ input-ref-ansf='ansfRef']]
+var brd = JXG.JSXGraph.initBoard(divid, {
+            boundingbox: [-8, 8, 8, -8],
+            axis: true,
+            showCopyright: false,
+            showNavigation: false
+        });
+
+        var a = brd.create('slider', [[1, -5], [6, -5],[{#a_left#},{#a_init#},{#a_right#}]], { name: 'a', snapWidth: {#snap_a#} });
+ var b = brd.create('slider', [[1, -7], [6, -7],[{#b_left#},{#b_init#},{#b_right#}]], { name: 'b', snapWidth: {#snap_b#} });
+        var c = brd.create('slider', [[1, -6], [6, -6],[{#c_left#},{#c_init#},{#c_right#}]], { name: 'c', snapWidth: {#snap_c#} });
+       var d = brd.create('slider', [[-7, -5], [-2, -5],[{#d_left#},{#d_init#},{#d_right#}]], { name: 'd', snapWidth: {#snap_d#} });
+        var f = brd.create('slider', [[-7, -6], [-2, -6],[{#f_left#},{#f_init#},{#f_right#}]], { name: 'f', snapWidth: {#snap_f#} });
+        var func1 = brd.create('functiongraph', [function (x) {
+            return Math.sqrt((a.Value() * x * x + c.Value()) / b.Value());
+        }]);
+        var func2 = brd.create('functiongraph', [function (x) {
+            return -Math.sqrt((a.Value() * x * x + c.Value()) / b.Value());
+        }]);
+
+        var func3 = brd.create('functiongraph', [function (x) {
+            return d.Value() * x ;
+        }]);
+        var func4 = brd.create('functiongraph', [function (x) {
+            return f.Value() * x;
+        }]);
+        stack_jxg.bind_slider(ansaRef,a); 
+        stack_jxg.bind_slider(ansbRef,b); 
+        stack_jxg.bind_slider(anscRef,c); 
+       stack_jxg.bind_slider(ansdRef,d); 
+        stack_jxg.bind_slider(ansfRef,f); 
+board.Update();
+[[/jsxgraph]]
+</centre>
+<p style="visibility:hidden">[[input:ansa]] [[validation:ansa]] </p>
+<p style="visibility:hidden">[[input:ansb]] [[validation:ansb]] </p>
+<p style="visibility:hidden">[[input:ansc]] [[validation:ansc]] </p>
+<p>[[feedback:prtD]] </p>
+<p style="visibility:hidden">[[input:ansd]] [[validation:ansd]] </p>
+<p style="visibility:hidden">[[input:ansf]] [[validation:ansf]] </p>
+<p>[[feedback:prtE]] </p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><h3>Worked solution</h3></p>
+<br> 1. Determine the asymptote equations of the hyperbola \({@expr_equ@}\). 
+<br> The equation \(\displaystyle {@expr_equ@}\) is equivalent to \(\displaystyle \frac{@b^2*y^2@}{@c^2@}-\frac{@a^2*x^2@}{@c^2@}=1\).
+<br> Therefore, the equation of the hyperbola is  \( \displaystyle \frac{y^2}{@c^2/b^2@}-\frac{@x^2@}{@c^2/a^2@}=1\).
+<br> This implies the centre is \(C(0,0)\), \(a=\displaystyle {@aa@}, b=\displaystyle {@bb@}\).
+<br> Asymptotes of the hyperbola are \(y=\displaystyle \pm \frac{a}{b}x\). That is, \(y=\displaystyle \pm \frac{@a/b@}{@b@}x\).
+<br> In other words; \(y=\displaystyle {@a/b@} x \) and \(y=\displaystyle {@-a/b@} x \). 
+<br> 2. Give the coordinates of its vertices and foci.
+<br> The vertices of the hyperbola are \(\displaystyle V_{1}(0,{@-aa@}) \), and \(\displaystyle V_{2}(0,{@aa@}) \).
+<br> From the relation \( c^{2}=a^{2} + b^{2}\), you get \( c =\displaystyle {@cc@}\).
+<br> Hence the foci are \(\displaystyle F_{1}(h, k-c)\) and \(\displaystyle F_{2}(h, k+c)\), which implies  \(\displaystyle F_{1}(0, {@-cc@})\) and \(\displaystyle F_{2}(0, {@cc@})\).
+<br> 3. Sketch the hyperbola with equation \({@expr_equ@}\) and draw its asymptotes. 
+<center>
+[[jsxgraph]]
+var brd = JXG.JSXGraph.initBoard(divid, {
+            boundingbox: [-8, 8, 8, -8],
+            axis: true,
+            showCopyright: false,
+            showNavigation: false
+        });
+  var a = brd.create('slider', [[1, -5], [6, -5],[{#a_left#},{#a_cor#},{#a_right#}]], { name: 'a', snapWidth: {#snap_a#} });
+ var b = brd.create('slider', [[1, -7], [6, -7],[{#b_left#},{#b_cor#},{#b_right#}]], { name: 'b', snapWidth: {#snap_b#} });
+        var c = brd.create('slider', [[1, -6], [6, -6],[{#c_left#},{#c_cor#},{#c_right#}]], { name: 'c', snapWidth: {#snap_c#} });
+       var d = brd.create('slider', [[-7, -5], [-2, -5],[{#d_left#},{#d_cor#},{#d_right#}]], { name: 'd', snapWidth: {#snap_d#} });
+        var f = brd.create('slider', [[-7, -6], [-2, -6],[{#f_left#},{#f_cor#},{#f_right#}]], { name: 'f', snapWidth: {#snap_f#} });
+
+        var func1 = brd.create('functiongraph', [function (x) {
+            return Math.sqrt((a.Value() * x * x + c.Value()) / b.Value());
+        }]);
+        var func2 = brd.create('functiongraph', [function (x) {
+            return -Math.sqrt((a.Value() * x * x + c.Value()) / b.Value());
+        }]);
+
+        var func3 = brd.create('functiongraph', [function (x) {
+            return d.Value() * x;
+        }]);
+        var func4 = brd.create('functiongraph', [function (x) {
+            return f.Value() * x;
+        }]);
+[[/jsxgraph]]
+</centre>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*Equation of the hyperbola*/
+a: rand([2,4,3,5]);
+b1: rand([5,4]);
+b2: rand([5]);
+b: if a=3 then b1 else (if a=4 then b2 else (if a=2 then b1 else (if a=5 then 8)));
+c: rand([12,10,11,9,13]);
+expr_equ: -a^2*x^2+b^2*y^2=c^2;
+aa: c/b;
+bb: c/a;
+cc: sqrt(aa^2+bb^2);
+/*Asymptotes*/
+ta1: y= (a/b)*x;
+ta2: y= - (a/b)*x;
+
+/*Vertices*/
+ta3: [0,-aa];
+ta4: [0,aa];
+/*Foci*/
+ta5: [0,-cc];
+ta6: [0,cc];
+
+/*jsxgraph*/
+
+/*Define the range of sliders a,b,c,d,e,f*/
+a_left: if a=3 then 3 else (if a=4 then 8 else (if a=2 then 0 else (if a=5 then 10)));
+a_right: if a=3 then 18 else (if a=4 then 28 else (if a=2 then 10 else (if a=5 then 35)));
+
+b_left: if b=4 then 4 else (if b=5 then 10 else (if b=8 then 52));
+b_right: if b=4 then 24 else (if b=5 then 35 else (if b=8 then 72));
+
+c_left: if c=12 then 108 else (if c=10 then 70 else (if c=11 then 88 else (if c=9 then 54 else 143)));
+c_right: if c=12 then 168 else (if c=10 then 120 else (if c=11 then 143 else (if c=9 then 99 else 208)));
+
+d_left: if (a=3 and b=4) then -1/4 else (if a=3 and b=5 then 4/10 else (if a=4 and b=5 then 5/10 else (if a=2 and b=4 then 2/10 else (if a=2 and b=5 then 2/10 else (if a=5 and b=8 then 325/1000))))); 
+d_right: if (a=3 and b=4) then 1 else (if a=3 and b=5 then 9/10 else (if a=4 and b=5 then 1 else (if a=2 and b=4 then 7/10 else (if a=2 and b=5 then 7/10 else (if a=5 and b=8 then 825/1000))))); 
+
+f_left: if (a=3 and b=4) then -1 else (if (a=3 and b=5) then -8/10 else (if a=4 and b=5 then -1 else (if a=2 and b=4 then -7/10 else (if a=2 and b=5 then -7/10 else (if a=5 and b=8 then -825/1000))))); 
+f_right: if (a=3 and b=4) then 0 else (if (a=3 and b=5) then -3/10 else (if a=4 and b=5 then -5/10 else (if a=2 and b=4 then -2/10 else (if a=2 and b=5 then -2/10 else (if a=5 and b=8 then -325/1000))))); 
+
+
+/*Correct values of a and b*/
+a_cor: a^2; 
+b_cor: b^2;
+c_cor: c^2;
+d_cor: a/b;
+f_cor: -a/b;
+
+/*Design Snapwidth*/
+snap_a: a;
+snap_b: if b=4 then 4 else (if b=5 then 5 else (if b=8 then 4));  
+snap_c: c;  
+snap_d: if a=3 and b=4 then 1/4 else (if a=3 and b=5 then 1/10 else (if a=4 and b=5 then 1/10 else (if a=2 and b=4 then 1/10 else (if a=2 and b=5 then 1/10 else (if a=5 and b=8 then 1/10)))));    
+snap_f: snap_d;  
+
+/*Values of parameters by default*/
+a_init: a^2+snap_a; 
+b_init: b^2+snap_b;
+c_init: c^2+snap_c;
+d_init: a/b+snap_d; 
+e_init: 1/2;
+f_init: -a/b+snap_f;
+g_init: 3/4;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<br> 1. Determine the asymptote equations of the hyperbola \({@expr_equ@}\): \( l_{1}: {@ta1@}\) and  \( l_{2}: {@ta2@}\) 
+<br> 2. a. Vertices \( V_{1}={@ta3@}\)   and  \( V_{2}={@ta4@}\) 
+<br> b. Foci  \( F_{1}={@ta5@}\) and  \( F_{2}={@ta6@}\)]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i> Your answer is partially correct.</span>]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>(</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>8</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>[?,?]</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>ta4</tans>
+      <boxsize>8</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>[?,?]</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans5</name>
+      <type>algebraic</type>
+      <tans>ta5</tans>
+      <boxsize>8</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>[?,?]</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans6</name>
+      <type>algebraic</type>
+      <tans>ta6</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>[?,?]</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ansa</name>
+      <type>algebraic</type>
+      <tans>a_cor</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ansb</name>
+      <type>algebraic</type>
+      <tans>b_cor</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ansc</name>
+      <type>algebraic</type>
+      <tans>c_cor</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ansd</name>
+      <type>algebraic</type>
+      <tans>float(d_cor)</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ansf</name>
+      <type>algebraic</type>
+      <tans>float(f_cor)</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prtA</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks both answers 1 and 2 are true*/
+is_asym1: is(ans1=ta1 and ans2=ta2);
+/*Node 2: Checks the alternatives answers w.r.t to node1*/
+is_asym2: is(ans1=ta2 and ans2=ta1);
+/*Node 3: Only one answer is true among them*/
+is_one_asymp1: is(ans1=ta1 or ans1= ta2) and is(ans2 # ta1 and ans2 # ta2);
+/*Node 4: Only one answer is true among them, alternative way*/
+is_one_asymp2: is(ans2=ta1 or ans2= ta2) and is(ans1 # ta1 and ans1 # ta2);
+/*Node 5: Both answers are not correct*/
+is_both_asymp: is(ans1 # ta1 and ans1 # ta2) and is(ans2 # ta1 and ans2 # ta2);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>is_asym1</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtA-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prtA-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>is_asym2</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtA-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prtA-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>is_one_asymp1</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtA-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text>The following entry; {@ans2@} is not correct.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prtA-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>is_one_asymp2</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtA-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text>The following entry; {@ans1@} is not correct.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>4</falsenextnode>
+        <falseanswernote>prtA-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>4</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>is_both_asymp</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtA-5-T</trueanswernote>
+        <truefeedback format="html">
+          <text>Following entries; {@ans1@} and {@ans2@} are not correct.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtA-5-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prtB</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks both answers 3 and 4 are true*/
+is_vertic1: is(ans3=ta3 and ans4=ta4);
+/*Node 2: Checks the alternatives answers w.r.t to node1*/
+is_vertic2: is(ans3=ta4 and ans4=ta3);
+/*Node 3: Only one answer is true among them*/
+is_one_vertic1: is(ans3=ta3 or ans3= ta4) and is(ans4 # ta3 and ans4 # ta4);
+/*Node 4: Only one answer is true among them, alternative way*/
+is_one_vertic2: is(ans4=ta3 or ans4= ta4) and is(ans3 # ta3 and ans3 # ta4);
+/*Node 5: Both answers are not correct*/
+is_both_vertic: is(ans3 # ta3 and ans3 # ta4) and is(ans4 # ta3 and ans4 # ta4);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>is_vertic1</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtB-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prtB-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>is_vertic2</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtB-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prtB-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>is_one_vertic1</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtB-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text>The following entry; {@ans4@} is not correct.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prtB-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>is_one_vertic2</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtB-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text>The following entry; {@ans3@} is not correct.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>4</falsenextnode>
+        <falseanswernote>prtB-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>4</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>is_both_vertic</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtB-5-T</trueanswernote>
+        <truefeedback format="html">
+          <text>Following entries; {@ans3@} and {@ans4@} are not correct.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtB-5-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prtC</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks both answers 5 and 6 are true*/
+is_foci1: is(ans5=ta5 and ans6=ta6);
+/*Node 2: Checks the alternatives answers w.r.t to node1*/
+is_foci2: is(ans5=ta6 and ans6=ta5);
+/*Node 3: Only one answer is true among them*/
+is_one_foci1: is(ans5=ta5 or ans5= ta6) and is(ans6 # ta5 and ans6 # ta6);
+/*Node 4: Only one answer is true among them, alternative way*/
+is_one_foci2: is(ans6=ta5 or ans6= ta6) and is(ans5 # ta5 and ans5 # ta6);
+/*Node 5: Both answers are not correct*/
+is_both_foci: is(ans5 # ta5 and ans5 # ta6) and is(ans6 # ta5 and ans6 # ta6);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>is_foci1</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtC-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prtC-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>is_foci2</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtC-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prtC-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>is_one_foci1</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtC-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text>The following entry; {@ans6@} is not correct.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prtC-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>is_one_foci2</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtC-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text>The following entry; {@ans5@} is not correct.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>4</falsenextnode>
+        <falseanswernote>prtC-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>4</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>is_both_foci</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtC-5-T</trueanswernote>
+        <truefeedback format="html">
+          <text>Both of your following entries; {@ans5@} and {@ans6@} are not correct.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtC-5-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prtD</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>NumAbsolute</answertest>
+        <sans>ansa</sans>
+        <tans>a_cor</tans>
+        <testoptions>0.1</testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.25</truescore>
+        <truepenalty/>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prtD-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Congratulations for  choosing \(a={@ansa@}\), well done</p>]]></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prtD-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>You chose \(a={@ansa@}\), which is not correct</p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>NumAbsolute</answertest>
+        <sans>ansb</sans>
+        <tans>b_cor</tans>
+        <testoptions>0.1</testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>2</truenextnode>
+        <trueanswernote>prtD-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Congratulations for  choosing \(b={@ansb@}\), well done</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prtD-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>You chose \(b={@ansb@}\), which is not correct</p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>NumAbsolute</answertest>
+        <sans>ansc</sans>
+        <tans>c_cor</tans>
+        <testoptions>0.1</testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtD-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Congratulations for  choosing \(c={@ansc@}\), well done</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtD-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>You chose \(c={@ansc@}\), which is not correct</p>]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prtE</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>NumAbsolute</answertest>
+        <sans>ansd</sans>
+        <tans>d_cor</tans>
+        <testoptions>0.02</testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>2</truenextnode>
+        <trueanswernote>prtE-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Congratulations for  choosing \(d={@ansd@}\), well done</p>]]></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prtE-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>You chose \(d={@ansd@}\), which is not correct</p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>NumAbsolute</answertest>
+        <sans>ansf</sans>
+        <tans>f_cor</tans>
+        <testoptions>0.02</testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtE-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Congratulations for  choosing \(f={@ansf@}\), well done</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtE-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>You chose \(f={@ansf@}\), which is not correct</p>]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>905665726</deployedseed>
+    <deployedseed>2049855262</deployedseed>
+    <deployedseed>881644257</deployedseed>
+    <deployedseed>885617917</deployedseed>
+    <deployedseed>84600754</deployedseed>
+    <deployedseed>2044690253</deployedseed>
+    <deployedseed>1135785685</deployedseed>
+    <deployedseed>1650237307</deployedseed>
+    <deployedseed>1546219520</deployedseed>
+    <deployedseed>1062015202</deployedseed>
+    <deployedseed>498052342</deployedseed>
+    <deployedseed>196221115</deployedseed>
+    <deployedseed>1995035453</deployedseed>
+    <deployedseed>1423254473</deployedseed>
+    <deployedseed>704841388</deployedseed>
+    <deployedseed>1223884100</deployedseed>
+    <deployedseed>1645320990</deployedseed>
+    <deployedseed>1989916295</deployedseed>
+    <deployedseed>603692604</deployedseed>
+    <deployedseed>1731410082</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>ta5</value>
+      </testinput>
+      <testinput>
+        <name>ans6</name>
+        <value>ta6</value>
+      </testinput>
+      <testinput>
+        <name>ansa</name>
+        <value>a_cor</value>
+      </testinput>
+      <testinput>
+        <name>ansb</name>
+        <value>b_cor</value>
+      </testinput>
+      <testinput>
+        <name>ansc</name>
+        <value>c_cor</value>
+      </testinput>
+      <testinput>
+        <name>ansd</name>
+        <value>float(d_cor)</value>
+      </testinput>
+      <testinput>
+        <name>ansf</name>
+        <value>float(f_cor)</value>
+      </testinput>
+      <expected>
+        <name>prtA</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prtA-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prtB</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prtB-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prtC</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prtC-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prtD</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prtD-3-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prtE</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prtE-3-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

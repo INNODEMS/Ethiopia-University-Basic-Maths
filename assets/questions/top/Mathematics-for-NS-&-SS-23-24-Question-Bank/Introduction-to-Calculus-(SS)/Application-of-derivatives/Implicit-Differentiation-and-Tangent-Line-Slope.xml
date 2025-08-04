@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Implicit Differentiation and Tangent Line Slope</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p>Use implicit differentiation to find the slope of the tangent line to the curve</p><p>\[{@LHS@} = {@RHS@}\]</p><p>at the point \( ({@aa@},{@bb@} ) \) Give your answer as a fraction fully simplified.</p><p>Gradient = [[input:ans1]] [[validation:ans1]][[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked Solution</h3>
+<p>Let's start by differentiating the left-hand-side of the equation implicitly:</p><p>\({@LHS@}\)</p><p>Differentiating gives us \({@coef1*(x^2+y^2)@}\cdot (2x+2y\cdot y')\)</p><p></p><p style="margin-left: 30px">\( = ({@coef1*x^2+coef1*y^2@})\cdot (2x+2y\cdot y')\)</p><p></p><p style="margin-left: 30px">\( = ({@coef1*x^2+coef1*y^2@})\cdot 2x+ ({@coef1*x^2+coef1*y^2@}) \cdot 2y\cdot y'\)</p><p style="margin-left: 30px">\( = {@coef1*x^2*2*x+coef1*y^2*2*x@}+ ({@coef1*x^2*2*y+coef1*y^2*2*y@}) \cdot y'\)</p><br><br>Substituting the values \( ({@aa@},{@bb@} ) \) gives us&nbsp;\( {@coef1*2@}\cdot {@aa@}^3+{@coef1*2@}\cdot {@aa@} \cdot {@bb@}^2+ ({@coef1*2@}\cdot {@aa@}^2 \cdot {@bb@} +{@coef1*2@} \cdot {@bb@}^3) \cdot y'\)<br><p></p><p style="margin-left: 30px">\(= {@coef1*2*aa^3@}+{@coef1*2*aa*bb^2@}+ ({@coef1*2*aa^2*bb@} +{@coef1*2*bb^3@}) \cdot y'\)</p><br><p></p><p style="margin-left: 30px">\(= {@coef1*2*aa^3+coef1*2*aa*bb^2@}+{@coef1*2*aa^2*bb+coef1*2*bb^3@} \cdot y'\)</p><br>Lets now differentiate the right-hand-side:</p><p></p><p style="margin-left: 30px">\({@RHS@}\)</p><p>Differentiating gives us \({@coef2@}\cdot (2x - 2y\cdot y')\)</p><p style="margin-left: 30px">\(= {@coef2*2*x@} - {@coef2 *2*y@}\cdot y'\)</p><p></p><p>Substituting the values \( ({@aa@},{@bb@} ) \) gives us \({@coef2*2@}\cdot {@aa@} - {@coef2*2@}\cdot {@bb@} \cdot y'\)<br></p><p style="margin-left: 30px">\( = {@coef2*2*aa@} - {@coef2*2*bb@} \cdot y'\)<br></p><p>Equating both sides and solving for \(y'\) we get</p><p style="margin-left: 30px">\({@coef1*2*aa^3+coef1*2*aa*bb^2@}+{@coef1*2*aa^2*bb+coef1*2*bb^3@} \cdot y' = {@coef2*2*aa@} - {@coef2*2*bb@} \cdot y'\)</p><p style="margin-left: 30px">\({@coef2*2*bb@} \cdot y'+{@coef1*2*aa^2*bb+coef1*2*bb^3@} \cdot y' = {@coef2*2*aa@} - {@coef1*2*aa^3+coef1*2*aa*bb^2@}\)<br></p><p style="margin-left: 30px">\({@coef2*2*bb+coef1*2*aa^2*bb+coef1*2*bb^3@} \cdot y' = {@coef2*2*aa-coef1*2*aa^3-coef1*2*aa*bb^2@}\)<br></p><p></p>
+
+<p style="margin-left: 30px">\( y' = {@(coef2*2*aa-coef1*2*aa^3-coef1*2*aa*bb^2)/(coef2*2*bb+coef1*2*aa^2*bb+coef1*2*bb^3)@}\)</p>
+
+<br><br><br><br><p></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>aa:rand([5,8]);
+bb:rand([2,3,4]);
+cc:gcd(aa^2-bb^2,(aa^2+bb^2)^2);
+coef1:(aa^2-bb^2)/cc;
+coef2:(aa^2+bb^2)^2/cc;
+LHS:coef1*(x^2+y^2)^2;
+RHS:coef2*(x^2-y^2);
+ta:(coef2*2*aa-coef1*2*aa^3-coef1*2*aa*bb^2)/(coef2*2*bb+coef1*2*aa^2*bb+coef1*2*bb^3);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>The curve</p><p>\[{@LHS@} = {@RHS@}\]</p>
+<p>The slope of the tangent line to the curve at the point \( ({@aa@},{@bb@} )={@ta@} \)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1770652224</deployedseed>
+    <deployedseed>1097570785</deployedseed>
+    <deployedseed>1777931103</deployedseed>
+    <deployedseed>405813904</deployedseed>
+    <deployedseed>37195103</deployedseed>
+    <deployedseed>657869199</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

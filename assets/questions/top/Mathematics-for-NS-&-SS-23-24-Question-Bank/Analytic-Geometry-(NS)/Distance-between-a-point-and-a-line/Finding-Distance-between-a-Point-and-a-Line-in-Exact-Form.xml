@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Finding Distance between a Point and a Line in Exact Form</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Find the distance, \(d\), between the point \(P({@point_x@},{@point_y@})\) and the line \(l : {@line_eq@}\).
+<br>Give your answer in exact form.</p>
+<p>\(d=\) [[input:ans1]] [[validation:ans1]]</p>
+<p>[[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked solution</h3>
+
+<p> To find the distance \(d\) between the point \(P({@point_x@},{@point_y@})\) and the line \(l : {@line_eq@}\), we can use the formula for the distance between a point and a line.</p>
+
+<p>The distance between a general point, \((x_1, y_1)\) and a line \(ax + by + c = 0\), is given by,</p>
+
+<p style="margin-left:30px">\(\displaystyle d = \frac{|a x_1 + b y_1 + c|}{\sqrt{a^2 + b^2}}\)</p>
+
+<br>
+
+<p> In this case, the given point is \(P({@point_x@},{@point_y@})\), and the equation of the line is given as \(l : {@line_eq@}\). </p>
+<p>So, to determine the distance \(d\),</p>
+
+<ol>
+  <li> Identify the values of \(a\), \(b\), and \(c\) from the equation of the line:
+    \(a = {@coef_x@}\),
+    \(b = {@coef_y@}\),
+    \(c = -{@constant@}\). </li>
+  <li> Identify the coordinates of the point \(P({@point_x@},{@point_y@})\):
+    \(x_1 = {@point_x@}\),
+    \(y_1 = {@point_y@}\). </li>
+  <li> Substitute the values into the distance formula: </li>
+</ol>
+
+<p style="margin-left:60px">\(\displaystyle d = \frac{|{@coef_x@} \cdot {@point_x@} + {@coef_y@} \cdot {@point_y@} - {@constant@}|}{\sqrt{{@coef_x@}^2 + {@coef_y@}^2}} \)</p>
+
+<br>
+
+<p>Then, simplifying,</p>
+<p style="margin-left:30px">\(\displaystyle d = \frac{|{@soln1@}|}{\sqrt{{@coef_x^2@} + {@coef_y^2@}}} = {@ta1@}\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*Question Variables*/
+coef_x:rand(5)+2;
+coef_y:rand(6)+coef_x+7;
+constant:coef_x+rand(2);
+point_x: rand(2)+2;
+y_value: (coef_x*point_x+constant)/coef_y; /*Given point_x, we always have the point on the line*/
+point_y: rand_with_prohib(3,9,[y_value]);
+line_eq:coef_x*x+coef_y*y-constant=0;
+/*worked solution variables*/
+soln1:coef_x*point_x+coef_y*point_y-constant;
+soln2:sqrt((coef_x)^2+(coef_y)^2);
+ta1:soln1/soln2;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>Distance between \(P({@point_x@},{@point_y@})\) and  \(ℓ:{@line_eq@}: {@ta1@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>onum</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>8</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*node 1:checks for the correct answer*/
+
+/*node 2:Failing to find the square root of the sum of A^2+B^2 in the denominator of the formulae of finding the distance by using it as shown below \frac{\left | Ah+Bk+C \right |}{\sqrt{A^2+B^2}}*/
+mistake_1:((coef_x*point_x+coef_y*point_y-constant)/((coef_x)^2+(coef_y)^2));
+
+/*node 3:Failing to square A and B in the denominator of the formula And using as shown below \frac{\left | Ah+Bk+C \right |}{\sqrt{A^2+B^2}}*/
+mistake_2:((coef_x*point_x+coef_y*point_y-constant)/(sqrt(coef_x+coef_y)));</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake_1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>In the formula for the distance between a point and a line, you appear to have calculated the numerator correctly but not the denominator. 
+<br>You have not taken the <b>square root</b> of the sum of the squares of the coefficients of \(x\) and \(y\) in the equation of the line.
+<br>Recall that the distance between a general point, \((x_1, y_1)\) and a line \(ax + by + c = 0\), is given by,</p>
+<p style="margin-left:30px">\(\displaystyle d = \frac{|a x_1 + b y_1 + c|}{\sqrt{a^2 + b^2}}\)</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake_2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>In the formula for the distance between a point and a line, you appear to have calculated the numerator correctly but not the denominator. 
+<br>You have not taken the square root of the sum of the <b>squares</b> of the coefficients of \(x\) and \(y\) in the equation of the line.
+<br>Recall that the distance between a general point, \((x_1, y_1)\) and a line \(ax + by + c = 0\), is given by,</p>
+<p style="margin-left:30px">\(\displaystyle d = \frac{|a x_1 + b y_1 + c|}{\sqrt{a^2 + b^2}}\)</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1242222439</deployedseed>
+    <deployedseed>1519269348</deployedseed>
+    <deployedseed>464900677</deployedseed>
+    <deployedseed>1767545129</deployedseed>
+    <deployedseed>640829832</deployedseed>
+    <deployedseed>1294668759</deployedseed>
+    <deployedseed>189221096</deployedseed>
+    <deployedseed>1939465715</deployedseed>
+    <deployedseed>1142119655</deployedseed>
+    <deployedseed>1738103297</deployedseed>
+    <deployedseed>1796729828</deployedseed>
+    <deployedseed>1462761881</deployedseed>
+    <deployedseed>1862573590</deployedseed>
+    <deployedseed>1888077031</deployedseed>
+    <deployedseed>1807739370</deployedseed>
+    <deployedseed>218789230</deployedseed>
+    <deployedseed>950069688</deployedseed>
+    <deployedseed>1609455188</deployedseed>
+    <deployedseed>1712667152</deployedseed>
+    <deployedseed>1870072797</deployedseed>
+    <deployedseed>1908716986</deployedseed>
+    <deployedseed>2122704957</deployedseed>
+    <deployedseed>1550036025</deployedseed>
+    <deployedseed>1521176951</deployedseed>
+    <deployedseed>428191564</deployedseed>
+    <deployedseed>42208108</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>
