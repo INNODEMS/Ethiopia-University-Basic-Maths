@@ -1,12 +1,17 @@
 <subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-definition-of-a-parabola" >
     <title>Definition of a Parabola</title>
+     <definition xml:id="def-definition-of-a-parabola">
+        <statement>
+            <p>
+                Let L be a fixed line and F be a fixed point not on the line, both lying on the
+                plane. A parabola is a set of points equidistant from L and F. The line L is called the
+                directrix and the fixed point F is called the focus of the parabola.
      
-     <p>
-        <m>\textbf{Definition 4.3: }</m>Let L be a fixed line and F be a fixed point not on the line, both lying on the
-        plane. A parabola is a set of points equidistant from L and F. The line L is called the
-        directrix and the fixed point F is called the focus of the parabola.
-     </p>
-     <p>
+            </p>
+        </statement>
+     </definition>
+     <sidebyside>
+        <p>
         This definition is illustrated by Figure 4.12.
     <ul>
         <li>
@@ -36,16 +41,21 @@
         </li>
     </ul>
     </p>
+    <image source="/figure-4-12.png">
+        <shortdescription>Parabola illustration</shortdescription>
+    </image>
+     </sidebyside>
+     
     <p>
         Letting <alert>|</alert>VF <alert>| =</alert> <em>p</em><alert>,</alert> you may show that <alert>|</alert>BB<alert>′|</alert> = 4<em>p</em>; i.e., focal width is 4 times focal length.
     </p>
     <p>
         If P(<em>x,y</em>) is any point on the parabola, then by the definition, the distance of P from the directrix is equal to the distance between P and the focus F. This is used to determine an equation of a parabola. To do this, we consider first the cases when the axis of the parabola is parallel to one of the coordinate axes.
     </p>
-    <p>
-        <alert>Exercise 4.3.1</alert>
-    </p>
-    <p>
+    <exercises xml:id="exercises-$1">
+        <exercise xml:id="exercise-4.3.1">
+            <statement>
+                <p>
         Use the definition of parabola and the given information to answer or solve each of the following problems.
     </p>
     <p>
@@ -82,7 +92,7 @@
                                 (d) Determine whether each of the following point is on the parabola or not.
                             </p>
                             <p>
-                                <m> (i) (4, 4) (ii) (2, 2) (iii) (-4, 4) (iv) (4, -4) (v) (1, \frac{1}{4})</m>
+                                 (i) (4, 4)   (ii) (2, 2)    (iii) (-4, 4)    (iv) (4, -4)    (v) (1, <m>\frac{1}{4})</m>
                             </p>
                             <p>
                                 (Note: By the definition, a point is on the parabola iff its distances from the focus and from the directrix are equal. )
@@ -117,7 +127,7 @@
                                 Determine whether each of the following point is on the parabola or not.
                             </p>
                             <p>
-                                <m> (i) (1, 0) (ii) (3, 0) (iii) (8, 9) (iv) (8, -7) (v) (8, 8)</m>
+                                 (i) (1, 0)    (ii) (3, 0)    (iii) (8, 9)    (iv) (8, -7)    (v) (8, 8)
                             </p>
                         </li>
                     </ol>
@@ -125,4 +135,7 @@
             </li>
         </ol>
     </p>
+            </statement>
+        </exercise>
+    </exercises>
 </subsection>

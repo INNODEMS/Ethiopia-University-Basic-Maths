@@ -1,13 +1,19 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-parabolas">
     <title>Parabolas</title>
-      <introduction>
-        <p>
-            By the end of this section, you should:
+      <objectives>
+        <title>Objectives of a parabola</title>
+        <introduction>
+            <p>
+                By the end of this section, you should:
+            </p>
+            <p>
+            
             <ul>
                 <li>
                     <p>
-                         Know he geometric definition of a parabola.
+                        Know the geometric definition of a parabola.
                     </p>
                 </li>
                 <li>
@@ -36,9 +42,9 @@
                     </p>
                 </li>
             </ul>
-        </p>    
-
-</introduction>
+           </p>   
+        </introduction>       
+        </objectives>
 
 <xi:include href="subsections/sec-parabolas/subsec-definition-of-a-parabola.ptx" />
 <xi:include href="subsections/sec-parabolas/subsec-equation-of-parabolas.ptx" />

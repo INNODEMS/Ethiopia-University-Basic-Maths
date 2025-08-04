@@ -33,10 +33,10 @@
 
 </introduction>
 
-<xi:include href="sections/sec-distance-formula-and-equation-of.ptx" />
-<xi:include href="sections/sec-circles.ptx" />
+<!-- <xi:include href="sections/sec-distance-formula-and-equation-of.ptx" /> -->
+<!-- <xi:include href="sections/sec-circles.ptx" /> -->
 <xi:include href="sections/sec-parabolas.ptx" />
-<xi:include href="sections/sec-ellipses.ptx" />
+<!-- <xi:include href="sections/sec-ellipses.ptx" /> -->
 <xi:include href="sections/sec-hyperbolas.ptx" />
-<xi:include href="sections/sec-the-general-second-degree-equation.ptx" />
+<!-- <xi:include href="sections/sec-the-general-second-degree-equation.ptx" /> -->
 </chapter>
