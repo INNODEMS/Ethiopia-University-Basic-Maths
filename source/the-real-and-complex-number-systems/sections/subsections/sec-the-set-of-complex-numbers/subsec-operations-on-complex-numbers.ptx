@@ -1,5 +1,38 @@
 <subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-operations-on-complex-numbers">
 <title>Operations on Complex numbers</title>
-<p><alert>Example 2.46</alert><m>\ \text{If}\ z_{1} = 2 + 3i\ \text{and}\ z_{2} = 4 + i,\ \text{then}\ \text{find}\ a)\ z_{1} + z_{2}\ b)\ z_{1} - z_{2}\ c)\ z_{1}\text{.}\ z_{2}\ d)\ \frac{z_{1}}{z_{2}}</m></p>
-</subsection>
+<p><alert>Example 2.46</alert><m>\ \text{Let}\ z_{1} = a + ib\ \text{and}\ z_{2} = c + id,\ \text{be}\ \text{any}\ \text{two}\ \text{complex}\ \text{numbers},\ \text{then}</m></p>
+<p>
+    <m>\ i)\ z_{1} + z_{2} = (a + c) + i (b + d )</m>
+</p>
+<p>
+    <m>\ ii)\ z_{1} - z_{2} = (a - c) + i (b - d )</m>
+</p>
+<p>
+    <m>\ iii)\ z_{1}\text{.}\ z_{2} = (a + ib) \text{.} (c + id) = a(c + id ) + ib(c + id ) = ac + iad + ibc - bd = (ac - bd ) + i (ad + bc)</m>
+</p>
+<p>
+    <m>\ iv)\ \frac{z_{1}}{z_{2}} = \frac{(a + ib)}{(c + id )} \text{,} \ z_2 \neq 0</m>.
+</p>
 
+<example>
+    <statement>
+        <p>
+            If<m>\ z_{1} = 2 + 3i</m> and <m>\ z_{2} = 4 + i</m>, then find <m>a)\ z_{1} + z_{2} \ b)\ \ z_{1} - z_{2}\ \ c)\ z_{1}\text{.}\ z_{2}\ \ d)\ \frac{z_{1}}{z_{2}}</m>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <m>a )\ z_{1} + z_{2}\ = 6 + 4i</m>
+        </p>
+        <p>
+            <m>b )\ \ z_{1} - z_{2}\ \ = - 2 + 2i</m>
+        </p>
+        <p>
+            <m>c )\ z_{1}\text{.}\ z_{2}\ \ = (2 + 3i )\text{.} (4 + i ) = 8 + 2i + 12i - 3 = 5 + 14i</m>
+        </p>
+        <p>
+            <m>d)\ \frac{z_{1}}{z_{2}} = \frac{2 + 3i}{4 + i}</m>
+        </p>
+    </solution>
+</example>
+</subsection>

@@ -1,19 +1,88 @@
 <subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-conjugate-of-a-complex-number">
 <title>Conjugate of a complex number</title>
-<table>
-<tabular>
-<row header="yes">
-<cell><alert>Definition 2.13</alert></cell>
-</row>
+<definition xml:id="def-">
+    <statement>
+        <p>
+            The conjugate of a complex number z = x+iy is denoted by <m>\ \overline{z}</m> and is defined as <m>\ \overline{z}</m> = x-iy. It can be represented by the point (x, -y) which is the reflection of the point (x, y) about the x-axis.
+        </p>
+    </statement>
+</definition>
 
-<row>
-<cell>The conjugate of a complex number z = x+iy is denoted by <m>\ \overline{z}</m> and is defined as <m>\ \overline{z}</m> = x-iy. It can be represented by the point (x, -y) which is the reflection of the point (x, y) about the x-axis.</cell>
-</row>
-</tabular>
-</table>
-<p><image source="/./media/image40.png" style="width:3.89444in;height:2.31736in" /></p>
-<p><alert>Example 2.47:</alert> Find the conjugate of the complex number z = 2+9i.</p>
-<p><alert>Properties of Conjugate</alert></p>
-<p>The others are left for the reader.</p>
+<image source="/./media/image40.png" width="60%" />
+
+<example>
+    <statement>
+        <p>
+            Find the conjugate of the complex number <m>z = 2+9i</m>.
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <m>\ \ \ \ \ \ z = 2+9i</m>
+        </p>
+        <p>
+            <m> \Rightarrow \overline{z} = 2-9i</m>.
+        </p>
+    </solution>
+</example>
+
+<p>
+    <me>
+        \textbf{Properties of Conjugate}
+    </me>
+</p>
+<p>
+    <m> a. \overline{\overline{z}} = z</m>
+</p>
+<p>
+    <m> b. z + \overline{z} = 2x =2Re{(z)} = 2  \left (\frac{z + \overline{z}}{2} \right )</m>
+</p>
+<p>
+    <m> c. z - \overline{z} = 2iy = 2Im{(z)}</m>
+</p>
+<p>
+    <m> d. \overline{z_1 + z_2} = \overline{z_1} + \overline{z_2}</m>
+</p>
+<p>
+    <m> e. \overline{z_1 - z_2} = \overline{z_1} - \overline{z_2}</m>
+</p>
+<p>
+    <m> f. \overline{z_1 \cdot z_2} = \overline{z_1} \cdot \overline{z_2}</m>
+</p>
+<p>
+    <m> g. \overline{({\frac{z_1}{z_2}})} = \frac{\overline{z_1}}{\overline{z_2}}</m>
+</p>
+<p>
+    
+</p>
+<p>
+    proof : a) let <m>z = x + iy</m>
+</p>
+<p>
+    <m>\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \Rightarrow \overline{z} = x - iy</m>
+</p>
+<p>
+    <m>\ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \Rightarrow \overline{\overline{z}} = x + iy = z</m>
+</p>
+<p>
+    <m>\ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \therefore \ \overline{\overline{z}} = z</m>.
+</p>
+<p>
+    <m> \ \ \ \ \ \ \ \ \ \ \ \ \ d) \ \text{Let} \ z_{1} = x_{1} + iy_{1} </m> &amp; <m> z_{2} = x_{2} + iy_{2}</m>
+</p>
+<p>
+    <m>\ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \Rightarrow \overline{z_{1}} = x_{1} - iy_{1} \ \ \ </m> &amp; <m> \ \ z_{2} = x_{2} - iy_{2}</m>
+</p>
+<p>
+    Now <m> \overline{z_1 + z_2} = \overline{(x_{1} + iy_{1}) + (x_{2} + iy_{2})} = \overline{(x_{1} + x_{2}) + i(y_{1} + y_{2})} = (x_{1} + x_{2}) + i(y_{1} + y_{2})</m>
+</p>
+<p>
+    <m>\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ = x_{1} - iy_{1} + x_{2} - iy_{2}</m>
+</p>
+<p>
+    <m>\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ = \overline{z_1} + \overline{z_2}</m>
+</p>
+<p>
+    The others are left for the reader.
+</p>
 </subsection>
-

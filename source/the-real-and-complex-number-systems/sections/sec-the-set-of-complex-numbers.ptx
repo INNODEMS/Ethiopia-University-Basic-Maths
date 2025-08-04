@@ -1,30 +1,49 @@
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-the-set-of-complex-numbers" class="anchor"><title>The set of complex numbers</title>
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-the-set-of-complex-numbers"><title>The set of complex numbers</title>
 <introduction>
 
 <p>The positive integers (natural numbers) were invented to count things. The negative integers were introduced to count money when we owed more than we had. The rational numbers were invented for measuring quantities. Since quantities like voltage, length and time can be measured using fractions, they can be measured using the rational numbers.</p>
 <p>The real numbers were invented for wholly mathematical reasons: it was found that there were lengths such as the diagonal of the unit square which, in principle, couldn't be measured by the rational numbers, instead they can be measured using real numbers.</p>
 <p>The complex numbers were invented for purely mathematical reasons, just like the real numbers and were intended to make things neat and tidy in solving equations. They were regarded with deep suspicion by the more conservative folk for a century. Complex numbers are points in the plane, together with a rule telling you how to multiply them. They are two-dimensional, whereas the real numbers are one dimensional.</p>
 <p>Equations of the form <m>x^{2} + 1 = 0</m>has no solution on the set of real numbers. Therefore, the set of complex numbers permits us to solve such equations.</p>
-<table>
-<tabular>
-<row>
-<cell><p><alert>Definition 2.12</alert></p>
-<p>The set of complex numbers is denoted by ℂ and is described by ℂ<m>= \left\{ \ \frac{z}{z} = x + \text{iy},\ x,\ y \in \Re\ \text{and}\ i^{2} = - 1\  \right\}</m>.</p></cell>
-</row>
-</tabular>
-</table>
-<p>Note: If x = 0, the number is called purely imaginary and if y = 0, the number is called purely real.</p>
-<p>Complex numbers can be defined as an order pair (x, y) of real numbers that can be interpreted as points in the complex plane (z- plane) with coordinates x and y.</p>
-<p><alert>Example 2.43:</alert> <m>\ \text{Find}\ \text{the}\ \text{real}\  \land \ \text{imaginary}\ \text{part}\ \text{of}\ \text{the}\ \text{following}\ \text{complex}\ \text{numbers}:</m></p>
+<definition xml:id="def-the-set-of-complex-numbers">
+    <statement>
+        <p>
+            The set of complex numbers is denoted by <m>\mathbb{C}</m> and is described by <m>\mathbb{C} = \left\{ \ \frac{z}{z} = x + \text{iy},\ x,\ y \in \Re\ \text{and}\ i^{2} = - 1\  \right\}</m>.
+        </p>
+    </statement>
+</definition>
+
+<p>Note: If <m>x = 0</m>, the number is called purely imaginary and if <m>y = 0</m>, the number is called purely real.</p>
+<p>Complex numbers can be defined as an order pair <m>(x, y)</m> of real numbers that can be interpreted as points in the complex plane (z- plane) with coordinates <m>x</m> and <m>y</m>.</p>
+
+<example>
+    <statement>
+        <p>
+            Find the real <m>\&amp;</m> imaginary part of the following complex numbers :
+        </p>
+        <p>
+            <m>\ \text{(a)}\ \text{z} = 3 + 7i</m>
+        </p>
+        <p>
+            Solution: real part <m>= 3</m> &amp; imaginary part <m>= 7</m>
+        </p>
+        <p>
+            <m>\ \text{(b)}\ \text{z} = 1 - i</m>
+        </p>
+        <p>
+            Solution: real part <m>= 1</m> &amp; imaginary part <m>= -1</m>
+        </p>
+    </statement>
+</example>
 
 </introduction>
 
 <xi:include href="subsections/sec-the-set-of-complex-numbers/subsec-plotting-complex-numbers.ptx" />
 <xi:include href="subsections/sec-the-set-of-complex-numbers/subsec-operations-on-complex-numbers.ptx" />
 <xi:include href="subsections/sec-the-set-of-complex-numbers/subsec-conjugate-of-a-complex-number.ptx" />
-<xi:include href="subsections/sec-the-set-of-complex-numbers/subsec-modulus-(norm)-of-a-complex.ptx" />
+<xi:include href="subsections/sec-the-set-of-complex-numbers/subsec-modulus-norm-of-a-complex.ptx" />
 <xi:include href="subsections/sec-the-set-of-complex-numbers/subsec-additive-and-multiplicative-inverses.ptx" />
-<xi:include href="subsections/sec-the-set-of-complex-numbers/subsec-argument-(amplitude)-of-a-complex.ptx" />
+<xi:include href="subsections/sec-the-set-of-complex-numbers/subsec-argument-amplitude-of-a-complex.ptx" />
 <xi:include href="subsections/sec-the-set-of-complex-numbers/subsec-polar-form-of-a-complex.ptx" />
 <xi:include href="subsections/sec-the-set-of-complex-numbers/subsec-extraction-of-roots.ptx" />
 </section>
