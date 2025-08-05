@@ -3,14 +3,87 @@
 <definition xml:id="def-modulus-of-a-complex-number">
     <statement>
         <p>
-            The modulus of a complex number z = x+iy is a non-negative real number denoted by |z| and is defined as |z| = <m>\sqrt{x^{2} + y^{2}}</m>. Geometrically, the number |z| represents the distnce between the point (x, y) and the origin.
+            The modulus of a complex number z = x+iy is a non-negative real number denoted by <m> \left |z \right |</m> and is defined as <m> \left |z \right |</m> = <m>\sqrt{x^{2} + y^{2}}</m>. Geometrically, the number <m> \left |z \right |</m> represents the distnce between the point (x, y) and the origin.
         </p>
     </statement>
 </definition>
 
 <image source="/./media/image41.png" width="60%" />
-<p><alert>Example 2.48:</alert> Find the modulus of the complex number z = 3 – 4i.</p>
-<p><alert>Properties of modulus</alert></p>
+<example>
+    <statement>
+        <p>
+            Find the modulus of the complex number <m>z = 3 - 4i</m>.
+        </p>
+    </statement>
+    <solution>
+        <p>
+            The modulus of the complex number <m>z = 3 - 4i</m> 
+        </p>
+        <p>
+            <m>|z| = \sqrt{(3)^{2} + (-4)^{2}} = \sqrt{9 + 16} = \sqrt{25} = 5</m>.
+        </p>
+    </solution>
+</example>
+<p>
+    <me>\textbf{Properties of modulus}</me>
+</p>
+<p>
+    a. <m> \left |z \right |</m> = <m> \left |\overline{z} \right |</m>
+</p>
+<p>
+    b. <m> \left | z^{2} \right | = z \cdot \overline{z}</m>
+</p>
+<p>
+    c. <m> \left |z_{1} \cdot z_{2} \right | = \left |z_{1} \right | \cdot \left |z_{2} \right |</m>
+</p>
+<p>
+    d. <m> \left | \frac{z_{1}}{z_{2}} \right | = \frac{\left |z_{1} \right |}{\left |z_{2} \right |}\ \ \ \ \ \ \ \ </m> (if <m>z_{2} \neq 0</m>)
+</p>
+<p>
+    e. <m> \left |z_{1} + z_{2} \right | \leq \left |z_{1} \right | + \left |z_{2} \right | \ldots \ldots\ldots\ldots\ldots</m> triangle inequality
+</p>
+<p>
+    f. <m> \left |z_{1} - z_{2} \right | \geq \left |z_{1} \right | - \left |z_{2} \right |</m>
+</p>
+<p>
+    proof <m>(a) \ \ \text{let} \ \ \ z = x + iy \ \ \ \ \text{from} \ \ \ \text{which} \ \ \ \ \ \overline{z} = x - iy</m>
+</p>
+<p>
+    <m> \ \ \ \ \ \ \ \ \ \ \ \ \ \ \Rightarrow \left |z \right | = \sqrt{x^{2} + y^{2}} \ \ \ \ \ \ \ \ \ \ \ \Rightarrow \left |\overline{z} \right | = \sqrt{x^{2} + y^{2}}</m>
+</p>
+<p>
+    <m> \ \ \ \ \ \ \ \ \ \ \ \ \ \ \therefore \left |z \right | = \left |\overline{z} \right |</m>
+</p>
+<p>
+    
+</p>
+<p>
+    proof <m>(b) \ \ \text{let} \ \ \ z = x + iy \ \ \ \ \text{from} \ \ \ \text{which} \ \ \ \ \ \overline{z} = x - iy</m>
+</p>
+<p>
+    <m> \ \ \ \ \ \ \ \ \ \ \ \ \ \ \Rightarrow \left |z \right |^{2} = x^{2} + y^{2}</m>
+</p>
+<p>
+    Now <m>\ \ \ \ z\cdot\overline{z} = (x - iy) \cdot (x - iy) = x^{2} + y^{2}</m>
+</p>
+<p>
+    <m> \ \ \ \ \ \ \ \ \ \ \ \ \ \therefore \left |z \right |^{2} = z \cdot \overline{z}</m>
+</p>
+<p>
+    proof <m>(c) \ \ \ \left |z_{1} \cdot z_{2} \right |^{2} = (z_{1} \cdot z_{2})(\overline{{z_{1}} \cdot z_{2}}) = (z_{1} \cdot z_{2})(\overline{z_{1}} \cdot \overline{z_{2}}) = z_{1} \cdot \overline{z_{1}} \cdot z_{2} \cdot \overline{z_{2}}</m>
+</p>
+<p>
+    <m> \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ = \left |z_{1} \right |^{2} \cdot \left |z_{2} \right |^{2}</m>
+</p>
+<p>
+    <m> \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ = (\left |z_{1} \right | \cdot \left |z_{2} \right |)^{2} \cdots\cdots\cdots\cdots\cdots from \ \ (b)</m>
+</p>
+<p>
+    <m> \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \Rightarrow \left |z_{1} \cdot z_{2} \right | = \left |z_{1} \right | \cdot \left |z_{2} \right |</m>
+</p>
+<p>
+    proof <m>(d) \ \ \ \left | \frac{z_{1}}{z_{2}} \right | = \sqrt{\frac{z_{1} \cdot \overline{z_{1}}}{z_{2} \cdot \overline{z_{2}}}} = \sqrt{\frac{\left |z_{1} \right |^{2}}{\left |z_{2} \right |^{2}}} = \frac{\left |z_{1} \right |}{\left |z_{2} \right |}</m> (if <m>z_{2} \neq 0</m>)
+</p>
 <p>The others are left for the reader.</p>
 
 <exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Modulus-(norm)-of-a-complex-number/Modulus-and-Argument-of-a-Complex-Number.xml" /></exercise>

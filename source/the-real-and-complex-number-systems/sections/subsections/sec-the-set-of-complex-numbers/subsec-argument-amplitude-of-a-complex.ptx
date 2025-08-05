@@ -1,20 +1,95 @@
 <subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-argument-amplitude-of-a-complex">
 <title>Argument (Amplitude) of a complex number</title>
-<table>
-<tabular>
-<row header="yes">
-<cell><alert>Definition 2.15</alert></cell>
-</row>
+<definition xml:id="def-argument-amplitude-of-a-complex">
+    <statement>
+        <p>
+            Argument of a complex number <m>z = x+iy</m> is the angle formed by the complex number <m>z = x+iy</m> with the positive x-axis. The argument of a complex number <m>z = x+iy</m> is deonted by <m>\textbf{argz}</m> and is given by arg(z) = <m>\text{tan}^{- 1}(\frac{y}{x})\text{.}</m>
+        </p>
+        <p>
+            The particular argument of <m>z</m> that lies in the range <m>- \pi &lt; \theta \leq \pi</m> is called the principal argument of <m>z</m> and is dented by Argz.
+        </p>
+    </statement>
+</definition>
+<p>
+    Notes : <m>i) Argz \ \ \in \left ( -\pi , \pi \right ]</m>.
+</p>
+<p>
+    <m> \ \ \ \ \ \ \ \ \ \ \ \ ii) \text{If} \ 0 \leq \ \text{Argz} \ \leq \pi,</m> move counter clock wise direction, if not move the other direction.
+</p>
+<example>
+    <statement>
+        <p>
+            Find the argument of the following complex numbers:
+        </p>
+        <p>
+            <ol marker="a)">
+                <li>
+                    <p>
+                        <m>z = 1 + i</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>z = - 2 + 2 \sqrt{3i}</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>z = - \sqrt{3} - i</m>
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <m>a) \ \ z = 1 + i</m>
+        </p>
+        <p>
+            <m>\text{Arg}z = \text{tan}^{- 1}\left(\frac{1}{1}\right) = \text{tan}^{- 1}\left(1 \right) = \frac{\pi}{4}</m>
+        </p>
+        <p>
+            <m>b) \ \ z = - 2 + 2 \sqrt{3}i</m>
+        </p>
+        <p>
+            <m>\text{Arg}z = \text{tan}^{- 1}\left(\frac{2 \sqrt{3}}{-2}\right) = \text{tan}^{- 1}(-\sqrt{3}) = \frac{2 \pi}{3}</m>
+        </p>
+        <p>
+            <m>c) \ \ z = - \sqrt{3} - i</m>
+        </p>
+        <p>
+            <m>\text{Arg}z = \text{tan}^{- 1}\left(\frac{-1}{-\sqrt{3}}\right) = \text{tan}^{- 1}\left(\frac{1}{\sqrt{3}}\right) = \frac{-5 \pi}{6}</m>
+        </p>
+    </solution>
+</example>
 
-<row>
-<cell><p>Argument of a complex number z = x+iy is the angle formed by the complex number z = x+iy with the positive x-axis. The argument of a complex number z = x+iy is deonted by <alert>argz</alert> and is given by arg(z) = <m>\text{tan}^{- 1}(yx)\text{.}</m></p>
-<p>The particular argument of z that lies in the range <m>- \pi &lt; \theta \leq \pi</m> is called the principal argument of z and is dented by Argz.</p></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 2.50</alert>: Find the principal argument of the following complex numbers:</p>
-<p><alert>Properties of Arguments</alert></p>
-<p><alert>Example 2.51</alert>: Find the principal argument of <m>\ a)\ (1 + i)\ ( - 1 - i)\ b)\ (\frac{- 2 + 2i}{1 - i})</m></p>
+<p>
+    <me>
+        \textbf{Properties of Arguments}
+    </me>
+</p>
+<p>
+    <m>i) \ \ \text{Arg}(z_{1} \cdot z_{2}) = \text{Arg}z_{1} \ + \ \text{Arg}z_{2}</m>
+</p>
+<p>
+    <m>ii) \ \ \text{Arg}\left(\frac{z_{1}}{z_{2}}\right) = \text{Arg}z_{1} \ - \ \text{arg}z_{2}</m>
+</p>
+
+<example>
+    <statement>
+        <p>
+            Find the principal argument of <m>\ a)\ (1 + i)\ ( - 1 - i)\ \ \ \ b)\ (\frac{- 2 + 2i}{1 - i})</m>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <m>a) \ \ \text{Arg} \ (1 + i)(-1 - i) = \text{Arg} \ (1 + i) + \text{Arg} \ (-1 - i) = \frac{\pi}{4} + (\frac{-3 \pi}{4}) = \underline{\underline{\frac{-\pi}{2}}} </m>
+        </p>
+        <p>
+            <m>b) \ \ \text{Arg} \left(\frac{- 2 + 2i}{1 - i}\right) = \text{Arg}(-2 + 2i) - \text{Arg}(1 - i) = (\frac{3 \pi}{4}) - (-\frac{\pi}{4}) = \frac{4 \pi}{4} = \underline{\underline{\pi}}</m>
+        </p>
+    </solution>
+</example>
 
 <exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Argument-(amplitude)-of-a-complex-number/Modulus-and-Argument-of-a-Complex-Number.xml" /></exercise>
 <exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Argument-(amplitude)-of-a-complex-number/Modulus-and-Argument-of-Complex-Numbers-and-Their-Conjugates.xml" /></exercise>

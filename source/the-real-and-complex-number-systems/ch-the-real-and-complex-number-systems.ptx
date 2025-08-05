@@ -28,6 +28,6 @@
         </ul>
     </objectives>
 
-    <xi:include href="sections/sec-the-real-number-system.ptx" />
+    <!-- <xi:include href="sections/sec-the-real-number-system.ptx" /> -->
     <xi:include href="sections/sec-the-set-of-complex-numbers.ptx" />
 </chapter>

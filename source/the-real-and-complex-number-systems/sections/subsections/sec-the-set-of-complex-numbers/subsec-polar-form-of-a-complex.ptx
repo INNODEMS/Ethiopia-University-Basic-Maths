@@ -1,34 +1,73 @@
 <subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-polar-form-of-a-complex">
 <title> Polar form of a complex number</title>
-<table>
-<tabular>
-<row header="yes">
-<cell><alert>Definition 2.16</alert></cell>
-</row>
+<definition xml:id="def-polar-form-of-a-complex">
+    <statement>
+        <p>
+            Let <m>r</m> and <m>\theta</m> be polar coordinates of the point (x, y) of the complex number <m>z = x+iy</m>. Since x = <m>r\text{cos}\theta</m>and y = <m>r\text{sin}\theta</m>, then the complex number can be written as : <m>\underline{\underline{\ z = r(\text{cos}\theta + i\text{sin}\theta)}}</m> which is called polar form, where <m>r</m> is modulus of <m>z</m> and <m>\ \theta\ </m>is principal argument of <m>z</m>.
+        </p>
+    </statement>
+</definition>
 
-<row>
-<cell>Let r and <m>\theta</m>be polar coordinates of the point (x, y) of the complex number z = x+iy. Since x = <m>r\text{cos}\theta</m>and y = <m>r\text{sin}\theta</m>, then the complex number can be written as : <m>\underline{\underline{\ z = r(\text{cos}\theta + i\text{sin}\theta)}}</m> which is called polar form, where r is modulus of z and <m>\ \theta\ </m>is principal argument of z.</cell>
-</row>
-</tabular>
-</table>
-<p><alert>Example 2.52</alert>: Express the following complex numbers in polar form:</p>
-<p><m>\begin{matrix}
-a)\ z = 1 + i\  \\
-\ \text{solution}:\ r = \sqrt{2}\ \text{and}\ \theta = \text{tan}^{- 1}(1) = \pi 4\text{.}\ \text{Thus},\ z = \sqrt{2}(\text{cos}\pi 4 + i\text{sin}\pi 4)\text{.} \\
-\end{matrix}</m></p>
-<p><m>\begin{matrix}
-b)\ z = 3 - 3i\  \\
-\text{solution}:\ r = \sqrt{\text{18}}\ \text{and}\ \theta = \text{tan}^{- 1}( - 1) = - \pi 4\text{.}\  \\
-\text{Thus},\ z = \sqrt{\text{18}}(\text{cos} - \pi 4 + i\text{sin} - \pi 4) = \sqrt{\text{18}}(\text{cos}\pi 4 - i\text{sin}\pi 4)\text{.} \\
-\end{matrix}</m></p>
-<table>
-<tabular>
-<row>
-<cell><alert>Multiplication and division in polar forms</alert></cell>
-</row>
-</tabular>
-</table>
-<p><alert>Proof:</alert></p>
+<example>
+    <statement>
+        <p>
+            Express the following complex numbers in polar form:
+        </p>
+        <p>
+            <m>a)\ z = 1 + i </m>
+        </p>
+        <p>
+            <m>\text{solution}:\ r = \sqrt{2}\ \text{and}\ \theta = \text{tan}^{- 1}(1) = \frac{\pi}{4} \text{.}</m>
+        </p>
+        <p>
+            <m>\ \text{Thus},\ z = \sqrt{2}(\text{cos} \frac{\pi}{4} + i\text{sin} \frac{\pi}{4})\text{.}</m>
+        </p>
+        <p>
+            <m>b)\ z = 3 - 3i\ \text{solution}:\ r = \sqrt{18}\ \text{and}\ \theta = \text{tan}^{- 1}( - 1) = - \frac{\pi}{4}\text{.}</m>
+        </p>
+        <p>
+            <m>\text{solution}: \ r = \sqrt{\text{18}}\ \text{and}\ \theta = \text{tan}^{- 1}( - 1) = - \pi 4\text{.}\  \\</m>
+        </p>
+        <p>
+            <m>\text{Thus},\ z = \sqrt{\text{18}}(\text{cos} - \frac{\pi}{4} + i\text{sin} - \frac{\pi}{4}) = \sqrt{\text{18}}(\text{cos}\frac{\pi}{4} - i\text{sin}\frac{\pi}{4})\text{.} \\</m>
+        </p>
+    </statement>
+</example>
+
+<p>
+    <me>\textbf{Multiplication and division in polar forms}</me>
+</p>
+<p>
+    <m>\text{If} \ z_{1}\ = r_{1}(\text{cos}\theta_{1} + i\text{sin}\theta_{1}) \ \ \ \text{and} \ \ \ \ z_{2} = r_{2}(\text{cos}\theta_{2} + i\text{sin}\theta_{2}), \text{then}</m>
+</p>
+<p>
+    <m>a) \ \ z_{1} \cdot z_{2} = r_{1} \cdot r_{2}(\text{cos}(\theta_{1} + \theta_{2}) + i\text{sin}(\theta_{1} + \theta_{2}))</m>
+</p>
+<p>
+    <m>b) \ \ \frac{z_{1}}{z_{2}} = \frac{r_{1}} {r_{2}}(\text{cos}(\theta_{1} - \theta_{2}) + i\text{sin}(\theta_{1} - \theta_{2}))</m>.
+</p>
+<p>
+    <m>\textbf{Proof:}</m>
+</p>
+<p>
+    <m>z_{1} \cdot z_{2} = r_{1}(\text{cos}\theta_{1} + i\text{sin}\theta_{1}) \cdot r_{2}(\text{cos}\theta_{2} + i\text{sin}\theta_{2})</m>
+</p>
+<p>
+    <m> \ \ \ \ \ \ \ \ \ \ \ = r_{1} \cdot r_{2} \left [ \text{cos}\theta_{1}(\text{cos}\theta_{2} + i\text{sin}\theta_{2}) + i\text{sin}\theta_{1}(\text{cos}\theta_{2} + i\text{sin}\theta_{2}) \right ]</m>
+</p>
+<p>
+    <m> \ \ \ \ \ \ \ \ \ \ \ = r_{1} \cdot r_{2} \left [ \text{cos}\theta_{1}\text{cos}\theta_{2} + i\text{cos}\theta_{1}\text{sin}\theta_{2} + i\text{sin}\theta_{1}\text{cos}\theta_{2} - \text{sin}\theta_{1}\text{sin}\theta_{2} \right ]</m>
+</p>
+<p>
+    <m> \ \ \ \ \ \ \ \ \ \ \ = r_{1} \cdot r_{2} \left [ \text{cos}\theta_{1}\text{cos}\theta_{2} - \text{sin}\theta_{1}\text{sin}\theta_{2} + i(\text{cos}\theta_{1}\text{sin}\theta_{2} + \text{sin}\theta_{1}\text{cos}\theta_{2}) \right ]</m>
+</p>
+<p>
+    <m> \ \ \ \ \ \ \ \ \ \ \ = \underline{\underline{ r_{1} \cdot r_{2} \left [ \text{cos}(\theta_{1} + \theta_{2}) + i \ \text{sin}(\theta_{1} + \theta_{2})\right ]}}</m>
+</p>
+<p>
+    <m>\text{Thus,} \ z_{1} \cdot z_{2} = r_{1} \cdot r_{2}(\text{cos}(\theta_{1} + \theta_{2}) + i \ \text{sin}(\theta_{1} + \theta_{2}))</m>
+</p>
+
 <p><alert>Example 2.53:</alert> <m>\ \text{If}\ z_{1} = 6\ (\text{cos}\pi 2\  + i\text{sin}\pi 2)\ \text{and}\ z_{2} = 2\ (\text{cos}\pi 3\  + i\text{sin}\pi 3),\ \text{then}\ \text{find}\ </m></p>
 <p><m></m> <m>\ a)\ z\ _{1}\text{.}\ z_{2}\ b)\ \frac{z_{1}}{z_{2}}</m></p>
 <ul>

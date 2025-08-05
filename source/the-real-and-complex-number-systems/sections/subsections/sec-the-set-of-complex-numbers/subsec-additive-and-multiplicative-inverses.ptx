@@ -1,18 +1,126 @@
 <subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-additive-and-multiplicative-inverses">
 <title>Additive and multiplicative inverses</title>
 <p>Let z = <em>x</em>+i<em>y</em> be a complex number, then</p>
-<p><alert>Example 2.49</alert>: Find the additive and the multiplicative inverse of z = 3+4i.</p>
-<table>
-<tabular>
-<row>
-<cell><alert>Exercise 2.3</alert></cell>
-</row>
-</tabular>
-</table>
-<table>
-<tabular>
-<row>
-<cell><ol type="1">
+<p>
+    <ol marker="i)">
+        <li>
+            <p>
+                its additive inverse denoted by <m>(- z )</m> is given by : <m>-z = - ( x + iy) = - x - iy</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+                its multiplicative inverse denoted by <m>z ^{-1}</m> is given by : <m>z^{-1} = \frac{1}{x + iy} = \frac{x}{x^{2} + y^{2}} - \frac{iy}{x^{2} + y^{2}}</m>.
+            </p>
+        </li>
+    </ol>
+</p>
+<example>
+    <statement>
+        <p>
+            Find the additive and multiplicative inverses of the complex number <m>z = 3 + 4i</m>.
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <m>z = 3 + 4i</m>.
+        </p>
+        <p>
+            <m>i) -z = -3 - 4i</m>
+        </p>
+        <p>
+            <m>ii) z^{-1} = \frac{1}{3 + 4i} = \frac{1}{3 + 4i} \cdot \frac{3 - 4i}{3 - 4i} = \frac{3}{25} - \frac{4i}{25}</m>.
+        </p>
+    </solution>
+</example>
+
+<exercise>
+    <statement>
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        Verify that
+                    </p>
+                    <p>
+                        <ol marker="a)">
+                            <li>
+                                <p>
+                                    <m>(\sqrt{2} - i) - i (1 - \sqrt{2i}) = -2i</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>(2, -3)(-2, 1) = (-1, 8)</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>(3, 1)(3, -1)(\frac{1}{5}, \frac{1}{10}) = (2, 1)</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>(2 + 3i)^2 - (3i - 6) = 1+9i</m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Show that
+                    </p>
+                    <p>
+                        <ol marker="a)">
+                            <li>
+                                <p>
+                                    <m>Re(iz) = -Im(z)</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>Im(iz) = Re(z)</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>(z + 1)^{2} = z^{2} + 2z + 1</m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Do the following operations and simplify your answer.
+                    </p>
+                    <p>
+                        <ol marker="a)">
+                            <li>
+                                <p>
+                                    <m>\frac{1 + 2i}{3 - 4i} + \frac{2 - i}{5i}</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>\frac{5i}{(1 - i)(2 - i)(3 - i)}</m>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>(1 - i)^{3}</m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+</exercise>
+
+<!-- <cell><ol type="1">
 <li><p>Verify that</p></li>
 <li><p>Show that</p></li>
 <li><p>Do the following operations and simplify your answer.</p></li>
@@ -25,7 +133,7 @@
 </ol></cell>
 </row>
 </tabular>
-</table>
+</table> -->
 
 <exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Additive-and-multiplicative-inverses/Additive-and-multiplicative-inverses.xml" /></exercise>
 <exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Additive-and-multiplicative-inverses/Complex-Number-Operations-in-Trigonometric-Form.xml" /></exercise>
