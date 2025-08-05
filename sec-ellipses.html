@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette: leaves                       *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Ellipses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="BASIC MATHEMATICS FOR NATURAL SCIENCES">
+<meta property="book:author" content="">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.9.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.879b99e54406967d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="basic-maths-for-natural-sciences.html"><span class="title">BASIC MATHEMATICS FOR NATURAL SCIENCES</span> <span class="subtitle">UNDERGRADUATE STUDENT TEXTBOOK</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-parabolas.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="analytic-geometry.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-hyperbolas.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="basic-maths-for-natural-sciences-4.html" class="internal"><span class="codenumber">1</span> <span class="title">Propositional Logic and Set Theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="propositional-logic.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Propositional Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="propositional-logic.html#definition-and-examples-of-propositions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Definition and examples of propositions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="propositional-logic.html#logical-connectives" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Logical connectives</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="propositional-logic.html#exercises-logical-connectives" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="propositional-logic.html#compound-or-complex-propositions" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Compound (or complex) propositions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="propositional-logic.html#tautology-and-contradiction" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Tautology and contradiction</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="propositional-logic.html#exercises-tautology-and-contradiction" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="open-propositions-and-quantifiers.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Open propositions and quantifiers</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="open-propositions-and-quantifiers.html#exercises-open-propositions-and-quantifiers" class="internal"><span class="codenumber">1.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-argument-and-validity.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Argument and Validity</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-set-theory.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Set theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set-theory.html#subsec-the-concept-of-a-set" class="internal"><span class="codenumber">1.4.1</span> <span class="title">The concept of a set</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-set-theory.html#subsec-description-of-sets" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Description of Sets</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-set-theory.html#exercises-description-of-sets" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-set-theory.html#subsec-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Set Operations and Venn diagrams</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-set-theory.html#exercises-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-description-of-sets.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Description of sets</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-description-of-sets.html#subsec-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Set Operations and Venn diagrams</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="the-real-and-complex-number-systems.html" class="internal"><span class="codenumber">2</span> <span class="title">The Real and Complex Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html" class="internal"><span class="codenumber">2.1</span> <span class="title">The real number System</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The set of natural numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Operations on the set of natural numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-oder-relation-N" class="internal"><span class="codenumber">2.1.1.2</span> <span class="title">Order Relation in <span class="process-math">\(\mathbf{N}\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-factors-of-a-number" class="internal"><span class="codenumber">2.1.1.3</span> <span class="title">Factors of a number</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-prime-factorization" class="internal"><span class="codenumber">2.1.1.4</span> <span class="title">Prime Factorization</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-greatest-common-factor" class="internal"><span class="codenumber">2.1.1.5</span> <span class="title">Greatest Common Factor (GCF)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-lcm" class="internal"><span class="codenumber">2.1.1.6</span> <span class="title">Least Common Multiple (LCM)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-well-ordering-principle-in-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1.7</span> <span class="title">Well ordering Principle in the set of natural numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-principle-of-mathematical-induction" class="internal"><span class="codenumber">2.1.1.8</span> <span class="title">Principle of Mathematical Induction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-integers" class="internal"><span class="codenumber">2.1.2</span> <span class="title">The set of Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers" class="internal"><span class="codenumber">2.1.2.1</span> <span class="title">Operations on the set of integers</span></a></div></li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-z" class="internal"><span class="codenumber">2.1.2.2</span> <span class="title">Order Relation in Z</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-real-number-system.html#exercises-sets-of-integers" class="internal"><span class="codenumber">2.1.2.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-rational-numbers" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The set of rational numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-rational-numbers" class="internal"><span class="codenumber">2.1.3.1</span> <span class="title">Operations on the set of rational numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-q" class="internal"><span class="codenumber">2.1.3.2</span> <span class="title">Order Relation in Q</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-decimal-representation-of-rational-numbers" class="internal"><span class="codenumber">2.1.3.3</span> <span class="title">Decimal representation of rational numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-fraction-form-of-decimal-numbers" class="internal"><span class="codenumber">2.1.3.4</span> <span class="title">Fraction form of decimal numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-non-terminating-and-non-periodic-decimals" class="internal"><span class="codenumber">2.1.3.5</span> <span class="title">Non-terminating and non-periodic decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-real-numbers" class="internal"><span class="codenumber">2.1.4</span> <span class="title">The set of real numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-real-numbers" class="internal"><span class="codenumber">2.1.4.1</span> <span class="title">Operations on the set of real numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-the-real-number-and-the-number-line" class="internal"><span class="codenumber">2.1.4.2</span> <span class="title">The real number and the number line</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-r" class="internal"><span class="codenumber">2.1.4.3</span> <span class="title">Order Relation in R</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-intervals" class="internal"><span class="codenumber">2.1.4.4</span> <span class="title">Intervals</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-upper-bounds-and-lower-bounds" class="internal"><span class="codenumber">2.1.4.5</span> <span class="title">Upper bounds and lower bounds</span></a></div></li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-completeness-property-of-real-number" class="internal"><span class="codenumber">2.1.4.6</span> <span class="title">Completeness property of real number (R)</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-real-number-system.html#exercises-real-number" class="internal"><span class="codenumber">2.1.4.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The set of complex numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-plotting-complex-numbers" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Plotting complex numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-operations-on-complex-numbers" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Operations on Complex numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-conjugate-of-a-complex-number" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Conjugate of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-modulus-norm-of-a-complex" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Modulus (Norm) of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-additive-and-multiplicative-inverses" class="internal"><span class="codenumber">2.2.5</span> <span class="title">Additive and multiplicative inverses</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-argument-amplitude-of-a-complex" class="internal"><span class="codenumber">2.2.6</span> <span class="title">Argument (Amplitude) of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex" class="internal"><span class="codenumber">2.2.7</span> <span class="title">Polar form of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-extraction-of-roots" class="internal"><span class="codenumber">2.2.8</span> <span class="title">Extraction of roots</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="basic-maths-for-natural-sciences-6.html" class="internal"><span class="codenumber">3</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-review-of-relations-and-functions.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Review of relations and functions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-review-of-relations-and-functions.html#exercises-Review-of-relations-and-functions" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-real-valued-functions-and-their.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Real Valued functions and their properties</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-real-valued-functions-and-their.html#exercises-Real-Valued-functions-and-their-properties" class="internal"><span class="codenumber">3.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-types-of-functions-and-inverse.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Types of functions and inverse of a function</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-polynomials-zeros-of-polynomials-rational.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Polynomials, zeros of polynomials, rational functions and their graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-definition-and-basic-properties-of.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Definition and basic properties of logarithmic, exponential, trigonometric and hyperbolic functions and their graphs</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions" class="internal"><span class="codenumber">3.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="analytic-geometry.html" class="internal"><span class="codenumber">4</span> <span class="title">Analytic Geometry</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Distance Formula and Equation of Lines</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-distance-between-two-points-and" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Distance between two points and division of segments</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#exercises-distance-between-two-points-and" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-equations-of-lines" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Equations of lines</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#exercises-equations-of-lines" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-distance-between-a-point-and" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Distance between a point and a line</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#exercises-distance_between_a_point" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-circles.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Circles</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-definition-of-a-circle" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Definition of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-equation-of-a-circle" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Equation of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-intersection-of-a-circle-with" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Intersection of a circle with a line and tangent line to a circle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-parabolas.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Parabolas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-parabolas.html#subsec-definition-of-a-parabola" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Definition of a Parabola</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-parabolas.html#exercises-definition-of-a-parabola" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-parabolas.html#subsec-equation-of-parabolas" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Equation of Parabolas</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-parabolas.html#subsec-equation-of-parabolas-26" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-ellipses.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Ellipses</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ellipses.html#subsec-definition-of-an-ellipse" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Definition of an Ellipse</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ellipses.html#subsec-equation-of-an-ellipse" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Equation of an Ellipse</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyperbolas.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Hyperbolas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-hyperbolas.html#subsec-definition-of-a-hyperbola" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Definition of a hyperbola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-hyperbolas.html#subsec-equation-of-a-hyperbola" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Equation of a hyperbola</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html" class="internal"><span class="codenumber">4.6</span> <span class="title">The General Second Degree Equation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#subsec-rotation-of-coordinate-axes" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Rotation of Coordinate Axes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#exercises-rotation-of-coordinate-axes" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#subsec-analysis-of-the-general-second" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Analysis of the General Second Degree Equations</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="basic-maths-for-natural-sciences-8.html" class="internal"><span class="codenumber">5</span> <span class="title">References</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-ellipses"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Ellipses</span>
+</h2>
+<section class="introduction" id="sec-ellipses-2"><figure class="table table-like" id="sec-ellipses-2-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.4.1"><a href="#sec-ellipses-2-1" title="Copy heading and permalink for Table 4.4.1" aria-label="Copy heading and permalink for Table 4.4.1">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120"><div class="para" id="sec-ellipses-2-1-1-1-1-1">By the end of this section, you should<div class="autopermalink" data-description="Paragraph"><a href="#sec-ellipses-2-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></td></tr></table></div></figure></section><section class="subsection" id="subsec-definition-of-an-ellipse"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Definition of an Ellipse</span>
+</h3>
+<figure class="table table-like" id="subsec-definition-of-an-ellipse-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.4.2"><a href="#subsec-definition-of-an-ellipse-2" title="Copy heading and permalink for Table 4.4.2" aria-label="Copy heading and permalink for Table 4.4.2">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">
+<em class="alert">Definition 4.4</em>: Let F and F<em class="alert">′</em> be two fixed points in the plane. An <em class="alert">ellipse</em> is the locus or set of all points in the plane such that the sum of the distances from each point to F and F<em class="alert">′</em> is constant. That is, a point P is on the ellipse if and only if |PF|+ |PF<em class="alert">′</em>| = constant. (See Figure 4.18).</td></tr></table></div></figure><div class="para" id="subsec-definition-of-an-ellipse-3">The two fixed points, F and F<em class="alert">′</em>, are called <em class="alert">foci</em> (singular- <em class="alert">focus</em>) of the ellipse.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-4">Note also the following terminologies and relationships about ellipse.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="subsec-definition-of-an-ellipse-5">
+<li id="subsec-definition-of-an-ellipse-5-1">
+<div class="para" id="subsec-definition-of-an-ellipse-5-1-1">The midpoint C between the foci F<em class="alert">′</em> and F is called the <em class="alert">center</em> of the ellipse.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-definition-of-an-ellipse-5-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-definition-of-an-ellipse-5-2">
+<div class="para" id="subsec-definition-of-an-ellipse-5-2-1">The longest diameter (longest chord) V<em class="alert">′</em>V through F<em class="alert">′</em> and F is called the <em class="alert">major axis</em> of the ellipse; and the chord BB<em class="alert">′</em> through C which is perpendicular to V<em class="alert">′</em>V is called <em class="alert">minor axis</em>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-definition-of-an-ellipse-5-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-definition-of-an-ellipse-5-3">
+<div class="para" id="subsec-definition-of-an-ellipse-5-3-1">The endpoints of the major axis, V′ and V, are called the <em class="alert">vertices</em> of the ellipse.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-definition-of-an-ellipse-5-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<ul class="disc" id="subsec-definition-of-an-ellipse-6"><li id="subsec-definition-of-an-ellipse-6-1">
+<div class="para" id="subsec-definition-of-an-ellipse-6-1-1">From the definition, |V′F′| + |V′F| = |VF′| + |VF| ⇒ |V′F′| = |VF| ⇒ |CV′| = |CV|. Hence, C is the midpoint of V<em class="alert">′</em>V. We denote the length of the major axis by 2<em class="emphasis">a</em>. That is, |CV| = <em class="emphasis">a</em>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-definition-of-an-ellipse-6-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li></ul>
+<div class="para" id="subsec-definition-of-an-ellipse-7">⇒ |VF′| + |VF| = |V′V| = 2<em class="emphasis">a</em>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-8">⇒ |PF′| + |PF| = 2<em class="emphasis">a,</em> for any point P on the ellipse.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="subsec-definition-of-an-ellipse-9">
+<li id="subsec-definition-of-an-ellipse-9-1">
+<div class="para" id="subsec-definition-of-an-ellipse-9-1-1">We let <em class="alert">|</em>BC<em class="alert">|</em> = <em class="emphasis">b</em>. (You can show that C is the midpoint of BB<em class="alert">′</em>. So, |B′C| = <em class="emphasis">b.</em> )<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-definition-of-an-ellipse-9-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-definition-of-an-ellipse-9-2">
+<div class="para" id="subsec-definition-of-an-ellipse-9-2-1">The distance from the center C to a focus F (or F<em class="alert">′</em>) is denoted by <em class="emphasis">c</em>, i.e., |CF| = <em class="emphasis">c</em> = |CF<em class="alert">′</em>|.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-definition-of-an-ellipse-9-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-definition-of-an-ellipse-9-3">
+<div class="para" id="subsec-definition-of-an-ellipse-9-3-1">Now, since |BF<em class="alert">′</em>|+ |BF| = 2<em class="emphasis">a</em> and BC is a perpendicular bisector of F<em class="alert">′</em>F, we obtain that<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-9-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-definition-of-an-ellipse-9-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="subsec-definition-of-an-ellipse-10">|BF<em class="alert">′</em>| = |BF|= <em class="emphasis">a</em> . Hence, using the Pythagoras Theorem on ∆BCF, we obtain<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-11">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2301.png" class="contained"></div> or <em class="emphasis">b</em>2 = <em class="emphasis">a</em>2− <em class="emphasis">c</em>2.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-12">(<em class="alert">Note:</em> <em class="emphasis">a</em> ≥ <em class="emphasis">b</em>. If <em class="emphasis">a=b</em>, the ellipse would be a circle with radius <em class="emphasis">r =a =b</em> ).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="subsec-definition-of-an-ellipse-13"><li id="subsec-definition-of-an-ellipse-13-1">
+<div class="para" id="subsec-definition-of-an-ellipse-13-1-1">The ratio of the distance between the two foci to the length of the major axis is called the <em class="alert">eccentricity</em> of the ellipse, and denoted by e. That is,<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-definition-of-an-ellipse-13-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li></ul>
+<div class="para" id="subsec-definition-of-an-ellipse-14">e = <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2302.png" class="contained"></div>. (Note that 0 &lt; e &lt; 1 because 0 &lt; <em class="emphasis">c</em> &lt; <em class="emphasis">a</em> )<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-15">
+<em class="alert">Exercise 4.4.1</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-definition-of-an-ellipse-16"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.4.3"><a href="#subsec-definition-of-an-ellipse-16" title="Copy heading and permalink for Table 4.4.3" aria-label="Copy heading and permalink for Table 4.4.3">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-1">Use the definition of ellipse and the given information to answer or solve each of the following problems.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-2">1. Suppose F<em class="alert">′</em> and F are the foci of an ellipse and B<em class="alert">′</em> and B are the endpoints of the minor axis of the ellipse, as in Figure 4.18. Then, show that each of the followings hold.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-3">(a) ∆BF<em class="alert">′</em>F is isosceles triangle.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-4">(b) The quadrilateral BF<em class="alert">′</em>B<em class="alert">′</em>F is a rhombus.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-5">(c) FF<em class="alert">′</em> is perpendicular bisector of BB<em class="alert">′</em> ; and also BB<em class="alert">′</em> is perpendicular bisector of FF<em class="alert">′.</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-6">(d) If the length of the major axis is 2<em class="emphasis">a</em>, length of minor axis is |BB<em class="alert">′</em>| = 2<em class="emphasis">b</em>, and |F<em class="alert">′</em>F|=2<em class="emphasis">c</em>, for some positive <em class="emphasis">a</em>, <em class="emphasis">b</em>, <em class="emphasis">c</em>, then<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-7">(i) |BF| = <em class="emphasis">a</em> (ii) <em class="emphasis">a</em>2 = <em class="emphasis">b</em>2 + <em class="emphasis">c</em>2<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-8">2. Suppose the vertices of an ellipse are (±2, 0) and its foci are (±1, 0).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-9">(a) Where is the center of the ellipse?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-10">(b) Find the endpoints of its minor axis.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-11">(c) Find the lengths of the major and minor axes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-12">(d) Determine whether each of the following points is on the ellipse or not.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-13">(i) (1, 3/2) (ii) (3/2, −1) (iii) (−1, 3/2) (iv) (−1, −3/2) (v) (1, 1)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-14">(Note: By the definition, a point is on the ellipse iff the sum of its distances to the two foci is 2<em class="emphasis">a</em> )<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-15">3. Suppose the endpoints of the major axis of an ellipse are (0, ±2) and the end points of its minor axis are (±1, 0).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-16">(a) Where is the center of the ellipse?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-17">(b) Find the coordinates of the foci.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-18">(c) Determine whether each of the following points is on the ellipse or not.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-19">(i) <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2303.png" class="contained"></div> (ii) <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2304.png" class="contained"></div> (iii) <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2305.png" class="contained"></div> (iv) <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2306.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-an-ellipse-16-1-1-1-20">4. Suppose the endpoints of the minor axis of an ellipse are (1, ±3) and its eccentricity is 0.8. Find the coordinates of (a) the center, (b) the foci , (c) the vertices of the ellipse.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-an-ellipse-16-1-1-1-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td></tr></table></div></figure><details id="subsec-definition-of-an-ellipse-17" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-an-ellipse%2FProperties-of-an-Ellipse-Center%2C-Foci%2C-and-Point-Verification.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-ellipses%2Fsubsec-definition-of-an-ellipse.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-definition-of-an-ellipse-17-3"><summary class="ptx-footnote__number" title="Footnote 4.4.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="subsec-definition-of-an-ellipse-17-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-an-ellipse%2FProperties-of-an-Ellipse-Center%2C-Foci%2C-and-Point-Verification.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-ellipses%2Fsubsec-definition-of-an-ellipse.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.4.4"><a href="#subsec-definition-of-an-ellipse-17" title="Copy heading and permalink for Checkpoint 4.4.4" aria-label="Copy heading and permalink for Checkpoint 4.4.4">🔗</a></div></article></details><details id="subsec-definition-of-an-ellipse-18" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-an-ellipse%2FLocating-Center%2C-Foci%2C-and-Vertices-of-an-Ellipse-with-Given-Minor-Axis-and-Eccentricity.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-ellipses%2Fsubsec-definition-of-an-ellipse.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-definition-of-an-ellipse-18-3"><summary class="ptx-footnote__number" title="Footnote 4.4.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="subsec-definition-of-an-ellipse-18-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-an-ellipse%2FLocating-Center%2C-Foci%2C-and-Vertices-of-an-Ellipse-with-Given-Minor-Axis-and-Eccentricity.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-ellipses%2Fsubsec-definition-of-an-ellipse.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.4.5"><a href="#subsec-definition-of-an-ellipse-18" title="Copy heading and permalink for Checkpoint 4.4.5" aria-label="Copy heading and permalink for Checkpoint 4.4.5">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 4.4.1: Definition of an Ellipse"><a href="#subsec-definition-of-an-ellipse" title="Copy heading and permalink for Subsection 4.4.1: Definition of an Ellipse" aria-label="Copy heading and permalink for Subsection 4.4.1: Definition of an Ellipse">🔗</a></div></section><section class="subsection" id="subsec-equation-of-an-ellipse"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Equation of an Ellipse</span>
+</h3>
+<div class="para" id="subsec-equation-of-an-ellipse-2">In order to obtain the simplest equation for an ellipse, we place the ellipse at standard position. An ellipse is said to be at standard position when its center is at the origin and its major axis lies on either the <em class="emphasis"><em class="alert">x</em></em>-axis or <em class="alert">y</em>-axis.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-3">
+<em class="alert">I. Equation of an ellipse at standard</em> <em class="alert">position</em>:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-4">There are two possible situations, namely, when the major axis lies on <em class="emphasis">x</em>-axis (called horizontal ellipse) and when the major axis lies on <em class="emphasis">y</em>-axis (called vertical ellipse). We first consider a horizontal ellipse as in Figure 4.19<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-5">Let the center of the ellipse be at the origin, C(0,0) and foci at F′(−<em class="emphasis">c</em>,0), F (<em class="emphasis">c</em>,0) and vertices at<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-6">(−<em class="emphasis">a</em>,0) and (<em class="emphasis">a</em>,0) (see Figure 4.19). Then, a point P(<em class="emphasis">x,y</em>) is on the ellipse iff<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-7">|PF′| + |PF| = 2<em class="emphasis">a</em> .<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-8">That is, <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2307.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-9">or <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2308.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-10">Squaring both sides we get<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-11">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2309.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-12">which simplifies to <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2310.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-13">Again squaring both sides, we get <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2311.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-14">which becomes <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2312.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-15">Now recalling that <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2313.png" class="contained"></div> and dividing both sides by <em class="emphasis">a</em>2<em class="emphasis">b</em>2, the equation becomes<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-equation-of-an-ellipse-16"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.4.6"><a href="#subsec-equation-of-an-ellipse-16" title="Copy heading and permalink for Table 4.4.6" aria-label="Copy heading and permalink for Table 4.4.6">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr>
+<td class="l m b0 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2314.png" class="contained"></div></td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-equation-of-an-ellipse-16-1-1-2-1">(Equation of horizontal ellipse at <em class="alert">standard position,</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-16-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-16-1-1-2-2">vertices (±<em class="emphasis">a</em>, 0), foci (±<em class="emphasis">c</em>, 0), where <em class="emphasis">c</em>2 = <em class="emphasis">a</em>2− <em class="emphasis">b</em>2 )<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-16-1-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr></table></div></figure><div class="para" id="subsec-equation-of-an-ellipse-17">For a vertical ellipse at standard position, the same procedure gives the equation<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-equation-of-an-ellipse-18"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.4.7"><a href="#subsec-equation-of-an-ellipse-18" title="Copy heading and permalink for Table 4.4.7" aria-label="Copy heading and permalink for Table 4.4.7">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr>
+<td class="l m b0 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2315.png" class="contained"></div></td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-equation-of-an-ellipse-18-1-1-2-1">(Equation of vertical ellipse at <em class="alert">standard position,</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-18-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-18-1-1-2-2">vertices (0, ±<em class="emphasis">a</em>), foci (0, ±<em class="emphasis">c</em> ), where <em class="emphasis">c</em>2 = <em class="emphasis">a</em>2− <em class="emphasis">b</em>2 )<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-18-1-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr></table></div></figure><div class="para" id="subsec-equation-of-an-ellipse-19">
+<em class="alert">Note</em>: Notice that here, for vertical ellipse, the larger denominator <em class="emphasis">a</em>2 is under <em class="emphasis">y</em>2.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-20">
+<em class="alert">Example 4.18:</em> Locate the vertices and foci of 16<em class="emphasis">x</em>2 + 9<em class="emphasis">y</em>2 =144 and sketch its graph.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-21">
+<em class="alert">Solution</em>: Dividing both sides of the equation by 144, we get:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-22">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2316.png" class="contained"></div> or <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2317.png" class="contained"></div>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-23">This is equation of a vertical ellipse at standard position with <em class="emphasis">a=</em>4, so vertices at (0, ±4), and<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-24">
+<em class="emphasis">b=</em>3; i.e., endpoints of the minor axis at (±3, 0). Since <em class="emphasis">c</em>2 = <em class="emphasis">a</em>2−<em class="emphasis">b</em>2 =7 ⇒ <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2318.png" class="contained"></div>, the foci are <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2319.png" class="contained"></div>. The graph is sketched in Figure 4.20.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-25">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2320.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-26">
+<em class="alert">(II)</em> <em class="alert">Equation of shifted Ellipses:</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-27">When an ellipse is not at standard position but with center at a point C(<em class="emphasis">h,k</em>), then we can still obtain its equation by considering translation of the <em class="emphasis">xy</em>-axes in such a way that its origin translated to the point C(<em class="emphasis">h</em>,<em class="emphasis">k</em>). This result in a new <em class="emphasis">X</em><em class="alert">′</em><em class="emphasis">Y</em><em class="alert">′</em> coordinate system whose origin O′ is at C(<em class="emphasis">h,k</em>) so that the ellipse is at standard position relative to the <em class="emphasis">X</em><em class="alert">′</em><em class="emphasis">Y</em><em class="alert">′</em> system( see, Figure 4.21)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-28">Consequently, the equation of the horizontal and vertical ellipses relative to the new <em class="emphasis">X</em><em class="alert">′</em><em class="emphasis">Y</em><em class="alert">′</em> coordinate system with (<em class="emphasis">x</em>′, <em class="emphasis">y</em>′) coordinate points are<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-29">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2322.png" class="contained"></div> and <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2323.png" class="contained"></div>, . . . . . . . . (I).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-30">respectively. Since the origin of the new coordinate system is at the point (<em class="emphasis">h,k</em>) of the <em class="emphasis">xy</em>-coordinate system, the relationship between a point (<em class="emphasis">x,y</em>) of the <em class="emphasis"><em class="alert">xy</em></em>-coordinate system and (<em class="emphasis">x</em>′<em class="emphasis">,y</em>′) of the new coordinate system is given by (<em class="emphasis">x, y</em>) = (<em class="emphasis">x</em>′<em class="emphasis">,y</em>′) + (<em class="emphasis">h, k</em>). That is,<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-31">
+<em class="emphasis">x</em>′ <em class="emphasis">= x − h,</em> and <em class="emphasis">y</em>′ = <em class="emphasis">y − k .</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-32">Thus, in the original <em class="emphasis">xy</em>-coordinate system the equations of the horizontal and vertical ellipses with center C(<em class="emphasis">h, k</em>), lengths of major axis = 2<em class="emphasis">a</em> and minor axis = 2<em class="emphasis">b</em> are, respectively, given by<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-equation-of-an-ellipse-33"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.4.8"><a href="#subsec-equation-of-an-ellipse-33" title="Copy heading and permalink for Table 4.4.8" aria-label="Copy heading and permalink for Table 4.4.8">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr>
+<td class="l m b0 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2324.png" class="contained"></div></td>
+<td class="l m b0 r0 l0 t0 lines">(Standard equation of horizontal ellipse with center C(<em class="emphasis">h,k</em>) )</td>
+</tr></table></div></figure><div class="para" id="subsec-equation-of-an-ellipse-34">and<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-34" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-equation-of-an-ellipse-35"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.4.9"><a href="#subsec-equation-of-an-ellipse-35" title="Copy heading and permalink for Table 4.4.9" aria-label="Copy heading and permalink for Table 4.4.9">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr>
+<td class="l m b0 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2325.png" class="contained"></div></td>
+<td class="l m b0 r0 l0 t0 lines">(Standard equation of vertical ellipse with center C(<em class="emphasis">h,k</em>) )</td>
+</tr></table></div></figure><div class="para" id="subsec-equation-of-an-ellipse-36">
+<em class="alert">Example 4.19:</em> The endpoints of the major axis of an ellipse are at (−3,4) and (7,4) and its eccentricity is 0.6. Find the equation of the ellipse and its foci.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-36" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-37">
+<em class="alert">Solution</em>: The given vertices are at V′(−3,4) and V(7,4) implies that 2<em class="emphasis">a</em> = <em class="alert">|</em>V′V<em class="alert">| =</em> 10 ⇒ <em class="emphasis">a</em> = 5;<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-37" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-38">and the center C(<em class="emphasis">h,k</em>) is the midpoint of V′V ⇒ <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2326.png" class="contained"></div>. Moreover, eccentricity = <em class="emphasis">c</em>/<em class="emphasis">a</em> = 0.6 ⇒ <em class="emphasis">c</em> = 5×0.6 = 3. Hence, <em class="emphasis">b</em>2 = <em class="emphasis">a</em>2 − <em class="emphasis">c</em>2 = 25−9 = 16. Note that the major axis V’V is horizontal. Therefore, using the standard equation of a horizontal ellipse, the equation of the ellipse is<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-38" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-39">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2327.png" class="contained"></div>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-39" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-equation-of-an-ellipse-40"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.4.10"><a href="#subsec-equation-of-an-ellipse-40" title="Copy heading and permalink for Table 4.4.10" aria-label="Copy heading and permalink for Table 4.4.10">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-equation-of-an-ellipse-40-1-1-1-1">Now, as the center (<em class="emphasis">h,k</em>) = (2,4), <em class="emphasis">c</em>=3 and V′V is horizontal, the foci are at (<em class="emphasis">h</em> ± <em class="emphasis">c</em>, <em class="emphasis">k</em>) = (2 ± 3, 4).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-40-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-40-1-1-1-2">That is, the foci are at F<em class="alert">′</em>(−1, 4) and F(5, 4).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-40-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-40-1-1-1-3">Moreover, the endpoints of major axis are at<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-40-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-40-1-1-1-4">(<em class="emphasis">h</em>, <em class="emphasis">k</em>± <em class="emphasis">b</em>) = (2, 4± 4) ⇒ B′=(2,0) and B=(2,8).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-40-1-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-40-1-1-1-5">The graph of the ellipse is sketched in Figure 4.22.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-40-1-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr></table></div></figure><div class="para" id="subsec-equation-of-an-ellipse-41">
+<em class="alert">Example 4.20</em>: Find the center, foci and vertices of <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2328.png" class="contained"></div> and sketch its graph<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-41" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-42">
+<em class="alert">Solution</em>: Group the x-terms of the equation and complete the square:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-42" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-43">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2329.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-43" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-44">⇒ 4(<em class="emphasis">x</em>2+2<em class="emphasis">x</em>+1) + <em class="emphasis">y</em> 2= 4 (divide both sides by 4)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-44" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-45">⇒ <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2330.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-45" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-46">This is equation of a vertical ellipse (major axis parallel to the y-axis), center C=(<em class="emphasis">h,k</em>) = (–1,0),<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-46" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-equation-of-an-ellipse-47"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.4.11"><a href="#subsec-equation-of-an-ellipse-47" title="Copy heading and permalink for Table 4.4.11" aria-label="Copy heading and permalink for Table 4.4.11">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-equation-of-an-ellipse-47-1-1-1-1">
+<em class="emphasis">a</em> =2, <em class="emphasis">b</em>=1. ⇒ <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2331.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-47-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-47-1-1-1-2">Thus, foci : F′(–1, –√3 ) and F(–1, √3 ) ,<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-47-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-47-1-1-1-3">Vertices: V = (–1<em class="emphasis">,</em> 2), V′= (–1<em class="emphasis">, –</em>2);<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-47-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-47-1-1-1-4">Endpoints of minor axis: B=(0,0), B′=(–2,0);<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-47-1-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-47-1-1-1-5">The graph of the ellipse is sketched in<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-47-1-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-47-1-1-1-6">Figure 4.23.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-47-1-1-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr></table></div></figure><figure class="table table-like" id="subsec-equation-of-an-ellipse-48"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.4.12"><a href="#subsec-equation-of-an-ellipse-48" title="Copy heading and permalink for Table 4.4.12" aria-label="Copy heading and permalink for Table 4.4.12">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-equation-of-an-ellipse-48-1-1-1-1">
+<em class="alert">Remark:</em> Consider the equation: A<em class="emphasis">x</em>2 + C<em class="emphasis">y</em>2 + D<em class="emphasis">x</em> + E<em class="emphasis">y</em> + F = 0,<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-48-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-48-1-1-1-2">when A and C have the same sign. So, without lose of generality, let A &gt;0 and C &gt;0.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-48-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-48-1-1-1-3">By completing the squares you can show that this equation is equivalent to<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-48-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-48-1-1-1-4">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2332.png" class="contained"></div>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-48-1-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-48-1-1-1-5">From this you can conclude that the given equation represents:-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-48-1-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td></tr></table></div></figure><div class="para" id="subsec-equation-of-an-ellipse-49">
+<em class="alert">Exercise 4.4.2</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-49" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-equation-of-an-ellipse-50"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.4.13"><a href="#subsec-equation-of-an-ellipse-50" title="Copy heading and permalink for Table 4.4.13" aria-label="Copy heading and permalink for Table 4.4.13">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal"><th scope="col" class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-1">For questions 1 to 13, find an equation of the ellipse with the given properties and sketch its graph.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-2">1. Foci at (± 2, 0) and a vertex at (5, 0)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-3">2. A focus at (0, −3) and vertices at (0, ±5)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-4">3. Foci at (2, 3) , (2,7) and a vertex at (2, 0)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-5">4. Foci at (0, −1) , (8,−1) and a vertex at (9, −1)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-6">5. Center at (6,1) , one focus at (3,1) and one vertex at (10, 1)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-7">6. Foci at (2, ±1) and the length of the major axis is 4.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-8">7. Foci at (2, 0), (2, 6) and the length of the minor axis is 5.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-9">8. The distance between its foci is <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2334.png" class="contained"></div> and the endpoints of its minor axis are (–1, –2) and (3,–2).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-10">9. Vertices at (±5, 0) and the ellipse passes through (−3, 4).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-11">10. Center at (1, 4), a vertex at (10, 4) , and one of the endpoints of the minor axis is (1, 2).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-12">11. The ellipse passes through (−1, 1) and <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2335.png" class="contained"></div> with center at origin.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-13">12. The endpoints of the major axis are (3, −4) and (3, 4) , and the ellipse passes through the origin<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-14">13. The endpoints of the minor axis are (3, −2) and (3, 2) , and the ellipse passes through the origin<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-15">For questions 14 to 22 find the center, foci and vertices of the ellipse having the given equation and sketch its graph.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-16">14. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2336.png" class="contained"></div> 17. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2337.png" class="contained"></div> 20. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2338.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-17">15. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2339.png" class="contained"></div> 18. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2340.png" class="contained"></div> 21. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2341.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-1-1-18">16. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2342.png" class="contained"></div> 19. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2343.png" class="contained"></div> 22. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2344.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-1-1-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</th></tr>
+<tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-2-1-1">23. Consider the equation <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2345.png" class="contained"></div>. Find all values of <em class="emphasis">F</em> such that the graph of the equation<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-an-ellipse-50-1-2-1-2">(a) is an ellipse. (b) is a point. (c) consists of no points at all.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-an-ellipse-50-1-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td></tr>
+</table></div></figure><details id="subsec-equation-of-an-ellipse-51" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-an-ellipse%2FFinding-an-Ellipse-with-Given-Foci-and-Eccentricity.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-ellipses%2Fsubsec-equation-of-an-ellipse.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-equation-of-an-ellipse-51-3"><summary class="ptx-footnote__number" title="Footnote 4.4.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="subsec-equation-of-an-ellipse-51-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-an-ellipse%2FFinding-an-Ellipse-with-Given-Foci-and-Eccentricity.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-ellipses%2Fsubsec-equation-of-an-ellipse.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.4.14"><a href="#subsec-equation-of-an-ellipse-51" title="Copy heading and permalink for Checkpoint 4.4.14" aria-label="Copy heading and permalink for Checkpoint 4.4.14">🔗</a></div></article></details><details id="subsec-equation-of-an-ellipse-52" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-an-ellipse%2FEquation-of-an-Ellipse-with-Given-Foci-and-Major-Axis.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-ellipses%2Fsubsec-equation-of-an-ellipse.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-equation-of-an-ellipse-52-3"><summary class="ptx-footnote__number" title="Footnote 4.4.4"><sup> 4 </sup></summary><div class="ptx-footnote__contents" id="subsec-equation-of-an-ellipse-52-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-an-ellipse%2FEquation-of-an-Ellipse-with-Given-Foci-and-Major-Axis.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-ellipses%2Fsubsec-equation-of-an-ellipse.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.4.15"><a href="#subsec-equation-of-an-ellipse-52" title="Copy heading and permalink for Checkpoint 4.4.15" aria-label="Copy heading and permalink for Checkpoint 4.4.15">🔗</a></div></article></details><details id="subsec-equation-of-an-ellipse-53" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-an-ellipse%2FEllipse-Focus-and-Eccentricity-Calculation.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-ellipses%2Fsubsec-equation-of-an-ellipse.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-equation-of-an-ellipse-53-3"><summary class="ptx-footnote__number" title="Footnote 4.4.5"><sup> 5 </sup></summary><div class="ptx-footnote__contents" id="subsec-equation-of-an-ellipse-53-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-an-ellipse%2FEllipse-Focus-and-Eccentricity-Calculation.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-ellipses%2Fsubsec-equation-of-an-ellipse.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.4.16"><a href="#subsec-equation-of-an-ellipse-53" title="Copy heading and permalink for Checkpoint 4.4.16" aria-label="Copy heading and permalink for Checkpoint 4.4.16">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 4.4.2: Equation of an Ellipse"><a href="#subsec-equation-of-an-ellipse" title="Copy heading and permalink for Subsection 4.4.2: Equation of an Ellipse" aria-label="Copy heading and permalink for Subsection 4.4.2: Equation of an Ellipse">🔗</a></div></section><div class="autopermalink" data-description="Section 4.4: Ellipses"><a href="#sec-ellipses" title="Copy heading and permalink for Section 4.4: Ellipses" aria-label="Copy heading and permalink for Section 4.4: Ellipses">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-parabolas.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-hyperbolas.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

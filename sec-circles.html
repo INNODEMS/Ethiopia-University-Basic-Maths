@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette: leaves                       *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Circles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="BASIC MATHEMATICS FOR NATURAL SCIENCES">
+<meta property="book:author" content="">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.9.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.879b99e54406967d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="basic-maths-for-natural-sciences.html"><span class="title">BASIC MATHEMATICS FOR NATURAL SCIENCES</span> <span class="subtitle">UNDERGRADUATE STUDENT TEXTBOOK</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-distance-formula-and-equation-of.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="analytic-geometry.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-parabolas.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="basic-maths-for-natural-sciences-4.html" class="internal"><span class="codenumber">1</span> <span class="title">Propositional Logic and Set Theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="propositional-logic.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Propositional Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="propositional-logic.html#definition-and-examples-of-propositions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Definition and examples of propositions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="propositional-logic.html#logical-connectives" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Logical connectives</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="propositional-logic.html#exercises-logical-connectives" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="propositional-logic.html#compound-or-complex-propositions" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Compound (or complex) propositions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="propositional-logic.html#tautology-and-contradiction" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Tautology and contradiction</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="propositional-logic.html#exercises-tautology-and-contradiction" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="open-propositions-and-quantifiers.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Open propositions and quantifiers</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="open-propositions-and-quantifiers.html#exercises-open-propositions-and-quantifiers" class="internal"><span class="codenumber">1.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-argument-and-validity.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Argument and Validity</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-set-theory.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Set theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set-theory.html#subsec-the-concept-of-a-set" class="internal"><span class="codenumber">1.4.1</span> <span class="title">The concept of a set</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-set-theory.html#subsec-description-of-sets" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Description of Sets</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-set-theory.html#exercises-description-of-sets" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-set-theory.html#subsec-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Set Operations and Venn diagrams</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-set-theory.html#exercises-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-description-of-sets.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Description of sets</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-description-of-sets.html#subsec-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Set Operations and Venn diagrams</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="the-real-and-complex-number-systems.html" class="internal"><span class="codenumber">2</span> <span class="title">The Real and Complex Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html" class="internal"><span class="codenumber">2.1</span> <span class="title">The real number System</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The set of natural numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Operations on the set of natural numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-oder-relation-N" class="internal"><span class="codenumber">2.1.1.2</span> <span class="title">Order Relation in <span class="process-math">\(\mathbf{N}\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-factors-of-a-number" class="internal"><span class="codenumber">2.1.1.3</span> <span class="title">Factors of a number</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-prime-factorization" class="internal"><span class="codenumber">2.1.1.4</span> <span class="title">Prime Factorization</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-greatest-common-factor" class="internal"><span class="codenumber">2.1.1.5</span> <span class="title">Greatest Common Factor (GCF)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-lcm" class="internal"><span class="codenumber">2.1.1.6</span> <span class="title">Least Common Multiple (LCM)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-well-ordering-principle-in-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1.7</span> <span class="title">Well ordering Principle in the set of natural numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-principle-of-mathematical-induction" class="internal"><span class="codenumber">2.1.1.8</span> <span class="title">Principle of Mathematical Induction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-integers" class="internal"><span class="codenumber">2.1.2</span> <span class="title">The set of Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers" class="internal"><span class="codenumber">2.1.2.1</span> <span class="title">Operations on the set of integers</span></a></div></li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-z" class="internal"><span class="codenumber">2.1.2.2</span> <span class="title">Order Relation in Z</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-real-number-system.html#exercises-sets-of-integers" class="internal"><span class="codenumber">2.1.2.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-rational-numbers" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The set of rational numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-rational-numbers" class="internal"><span class="codenumber">2.1.3.1</span> <span class="title">Operations on the set of rational numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-q" class="internal"><span class="codenumber">2.1.3.2</span> <span class="title">Order Relation in Q</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-decimal-representation-of-rational-numbers" class="internal"><span class="codenumber">2.1.3.3</span> <span class="title">Decimal representation of rational numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-fraction-form-of-decimal-numbers" class="internal"><span class="codenumber">2.1.3.4</span> <span class="title">Fraction form of decimal numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-non-terminating-and-non-periodic-decimals" class="internal"><span class="codenumber">2.1.3.5</span> <span class="title">Non-terminating and non-periodic decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-real-numbers" class="internal"><span class="codenumber">2.1.4</span> <span class="title">The set of real numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-real-numbers" class="internal"><span class="codenumber">2.1.4.1</span> <span class="title">Operations on the set of real numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-the-real-number-and-the-number-line" class="internal"><span class="codenumber">2.1.4.2</span> <span class="title">The real number and the number line</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-r" class="internal"><span class="codenumber">2.1.4.3</span> <span class="title">Order Relation in R</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-intervals" class="internal"><span class="codenumber">2.1.4.4</span> <span class="title">Intervals</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-upper-bounds-and-lower-bounds" class="internal"><span class="codenumber">2.1.4.5</span> <span class="title">Upper bounds and lower bounds</span></a></div></li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-completeness-property-of-real-number" class="internal"><span class="codenumber">2.1.4.6</span> <span class="title">Completeness property of real number (R)</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-real-number-system.html#exercises-real-number" class="internal"><span class="codenumber">2.1.4.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The set of complex numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-plotting-complex-numbers" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Plotting complex numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-operations-on-complex-numbers" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Operations on Complex numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-conjugate-of-a-complex-number" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Conjugate of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-modulus-norm-of-a-complex" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Modulus (Norm) of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-additive-and-multiplicative-inverses" class="internal"><span class="codenumber">2.2.5</span> <span class="title">Additive and multiplicative inverses</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-argument-amplitude-of-a-complex" class="internal"><span class="codenumber">2.2.6</span> <span class="title">Argument (Amplitude) of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex" class="internal"><span class="codenumber">2.2.7</span> <span class="title">Polar form of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-extraction-of-roots" class="internal"><span class="codenumber">2.2.8</span> <span class="title">Extraction of roots</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="basic-maths-for-natural-sciences-6.html" class="internal"><span class="codenumber">3</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-review-of-relations-and-functions.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Review of relations and functions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-review-of-relations-and-functions.html#exercises-Review-of-relations-and-functions" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-real-valued-functions-and-their.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Real Valued functions and their properties</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-real-valued-functions-and-their.html#exercises-Real-Valued-functions-and-their-properties" class="internal"><span class="codenumber">3.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-types-of-functions-and-inverse.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Types of functions and inverse of a function</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-polynomials-zeros-of-polynomials-rational.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Polynomials, zeros of polynomials, rational functions and their graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-definition-and-basic-properties-of.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Definition and basic properties of logarithmic, exponential, trigonometric and hyperbolic functions and their graphs</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions" class="internal"><span class="codenumber">3.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="analytic-geometry.html" class="internal"><span class="codenumber">4</span> <span class="title">Analytic Geometry</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Distance Formula and Equation of Lines</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-distance-between-two-points-and" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Distance between two points and division of segments</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#exercises-distance-between-two-points-and" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-equations-of-lines" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Equations of lines</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#exercises-equations-of-lines" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-distance-between-a-point-and" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Distance between a point and a line</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#exercises-distance_between_a_point" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-circles.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Circles</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-definition-of-a-circle" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Definition of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-equation-of-a-circle" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Equation of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-intersection-of-a-circle-with" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Intersection of a circle with a line and tangent line to a circle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-parabolas.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Parabolas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-parabolas.html#subsec-definition-of-a-parabola" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Definition of a Parabola</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-parabolas.html#exercises-definition-of-a-parabola" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-parabolas.html#subsec-equation-of-parabolas" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Equation of Parabolas</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-parabolas.html#subsec-equation-of-parabolas-26" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ellipses.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Ellipses</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ellipses.html#subsec-definition-of-an-ellipse" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Definition of an Ellipse</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ellipses.html#subsec-equation-of-an-ellipse" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Equation of an Ellipse</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyperbolas.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Hyperbolas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-hyperbolas.html#subsec-definition-of-a-hyperbola" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Definition of a hyperbola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-hyperbolas.html#subsec-equation-of-a-hyperbola" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Equation of a hyperbola</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html" class="internal"><span class="codenumber">4.6</span> <span class="title">The General Second Degree Equation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#subsec-rotation-of-coordinate-axes" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Rotation of Coordinate Axes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#exercises-rotation-of-coordinate-axes" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#subsec-analysis-of-the-general-second" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Analysis of the General Second Degree Equations</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="basic-maths-for-natural-sciences-8.html" class="internal"><span class="codenumber">5</span> <span class="title">References</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-circles"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Circles</span>
+</h2>
+<section class="introduction" id="sec-circles-2"><figure class="table table-like" id="sec-circles-2-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.2.1"><a href="#sec-circles-2-1" title="Copy heading and permalink for Table 4.2.1" aria-label="Copy heading and permalink for Table 4.2.1">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120"><div class="para" id="sec-circles-2-1-1-1-1-1">By the end of this section, you should<div class="autopermalink" data-description="Paragraph"><a href="#sec-circles-2-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></td></tr></table></div></figure></section><section class="subsection" id="subsec-definition-of-a-circle"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Definition of a Circle</span>
+</h3>
+<figure class="table table-like" id="subsec-definition-of-a-circle-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.2.2"><a href="#subsec-definition-of-a-circle-2" title="Copy heading and permalink for Table 4.2.2" aria-label="Copy heading and permalink for Table 4.2.2">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">
+<em class="alert">Definition</em> 4.2. A circle is the locus of points (set of points) in a plane each of which is equidistant from a fixed point in the plane. The fixed point is called the <em class="alert">center</em> of the circle and the constant distance is called its <em class="alert">radius</em>.</td></tr></table></div></figure><div class="para" id="subsec-definition-of-a-circle-3">Definition 4.2 is illustrated by Figure 4.6 in which the center of the circle is denoted by ’’C’’ and its radius is denoted by <em class="emphasis">r</em>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-a-circle-4">Observe that a circle is symmetric with respect its center. Based on the definition, a point P is on the circle if and only if its distance to C is <em class="emphasis">r</em>, that is <em class="alert">|</em>CP<em class="alert">|</em> = <em class="emphasis">r</em>. A point in the plane is said to be inside the circle if its distance to the center C is less than <em class="emphasis">r</em>. Similarly, a point in the plane is said to be outside the circle if its distance to C is greater than <em class="emphasis">r</em>. Moreover, a chord of the circle is a line segment whose endpoints are on the circle. A diameter is a chord of the circle through the center C. Consequently, C is the midpoint of a diameter and the length of a diameter is 2<em class="emphasis">r</em>. For example, AB and QR are diameters of the circle in Figure 4.6.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-a-circle-5">
+<em class="alert">Example 4.7</em>: Consider a circle of radius 5 whose center is at C(2,1). Determine whether each of the following points is on the circle, inside the circle or outside the circle:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-a-circle-6">P1(5, 5), P2(4, 5), P3(−2, 5), P4(−1, −2), P5(2,−4), P6(7, 0).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-a-circle-7">
+<em class="alert">Solution</em>: The distance between a given point P(<em class="emphasis">x</em>,<em class="emphasis">y</em>) and the center C(2,1) is given by<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-a-circle-8">
+<em class="alert">|</em>PC<em class="alert">| =</em> or <em class="alert">.</em> We need to compare <em class="alert">|</em>PC<em class="alert">|</em> with the radius 5. Note that <em class="alert">|</em>PC| =5 ⇔ |PC|2= 25, |PC|&lt; 5 ⇔ |PC|2&lt; 25 ,<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-a-circle-9">and |PC| &gt;5 ⇔ |PC|2 &gt; 25.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-a-circle-10">Thus, P is on the circle if |PC|2 =25, inside the circle if <em class="alert">|</em>PC<em class="alert">|</em>2 &lt; 25 and outside the circle if <em class="alert">|</em>PC<em class="alert">|</em>2 &gt; 25. So, we can use the square distance to answer the question. Thus, as<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-a-circle-11">
+<em class="alert">|</em>P1C<em class="alert">|</em>2 = (5−2)2+(5−1)2 = 25, <em class="alert">|</em>P2C<em class="alert">|</em>2 = (4−2)2+(5−1)2 = 20 and <em class="alert">|</em>P3C<em class="alert">|</em>2 = (<em class="alert">−</em>2−2)2+(5−1)2 = 32,<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-a-circle-12">P1 is on the circle, P2 is inside the circle, and P3 is outside the circle. Similarly, you can show that P4 is inside the circle, P5 is on the circle, and P6 is outside the circle.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-a-circle-13">
+<em class="alert">Exercise 4.2.1</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-definition-of-a-circle-14"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.2.3"><a href="#subsec-definition-of-a-circle-14" title="Copy heading and permalink for Table 4.2.3" aria-label="Copy heading and permalink for Table 4.2.3">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-definition-of-a-circle-14-1-1-1-1">1. Suppose the center of a circle is C(1,−2) and P(7, 6) is a point on the circle. What is the radius of the circle?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-14-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-a-circle-14-1-1-1-2">2. Let A(1, 2) and B(5, −2) are endpoints of a diameter of a circle. Find the center and radius of the circle.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-14-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-a-circle-14-1-1-1-3">3. Consider a circle whose center is the origin and radius is. Determine whether or not the circle contains the following point.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-14-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-a-circle-14-1-1-1-4">(a) (1, 2) (b) (0,0) (c) (d) (3/2, 3/2)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-14-1-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-a-circle-14-1-1-1-5">(e) (5, 0) (f) (−1, −2), (g) (h) (5/2, 5/2)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-14-1-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-a-circle-14-1-1-1-6">4. Consider a circle of radius 5 whose center is at C(−3,4). Determine whether each of the following points is on the circle, inside the circle or outside the circle:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-14-1-1-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-a-circle-14-1-1-1-7">(a) (0, 9) (b) (0,0) (c) (1,6) (d) (1, 0)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-14-1-1-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-definition-of-a-circle-14-1-1-1-8">(e) (−7, 1) (f) (−1, −1), (g) (2,4) (h) (5/2, 5/2)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-definition-of-a-circle-14-1-1-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td></tr></table></div></figure><details id="subsec-definition-of-a-circle-15" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-a-circle%2FDetermining-Positions-of-Points-with-Respect-to-a-Given-Circle.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-definition-of-a-circle.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-definition-of-a-circle-15-3"><summary class="ptx-footnote__number" title="Footnote 4.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="subsec-definition-of-a-circle-15-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-a-circle%2FDetermining-Positions-of-Points-with-Respect-to-a-Given-Circle.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-definition-of-a-circle.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.2.4"><a href="#subsec-definition-of-a-circle-15" title="Copy heading and permalink for Checkpoint 4.2.4" aria-label="Copy heading and permalink for Checkpoint 4.2.4">🔗</a></div></article></details><details id="subsec-definition-of-a-circle-16" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-a-circle%2FFinding-the-Center-and-Radius-of-a-Circle-Given-Endpoints-of-a-Diameter.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-definition-of-a-circle.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-definition-of-a-circle-16-3"><summary class="ptx-footnote__number" title="Footnote 4.2.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="subsec-definition-of-a-circle-16-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-a-circle%2FFinding-the-Center-and-Radius-of-a-Circle-Given-Endpoints-of-a-Diameter.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-definition-of-a-circle.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.2.5"><a href="#subsec-definition-of-a-circle-16" title="Copy heading and permalink for Checkpoint 4.2.5" aria-label="Copy heading and permalink for Checkpoint 4.2.5">🔗</a></div></article></details><details id="subsec-definition-of-a-circle-17" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-a-circle%2FFinding-the-Radius-of-a-Circle-with-Given-Center-and-Point-on-the-Circumference.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-definition-of-a-circle.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-definition-of-a-circle-17-3"><summary class="ptx-footnote__number" title="Footnote 4.2.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="subsec-definition-of-a-circle-17-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-a-circle%2FFinding-the-Radius-of-a-Circle-with-Given-Center-and-Point-on-the-Circumference.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-definition-of-a-circle.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.2.6"><a href="#subsec-definition-of-a-circle-17" title="Copy heading and permalink for Checkpoint 4.2.6" aria-label="Copy heading and permalink for Checkpoint 4.2.6">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 4.2.1: Definition of a Circle"><a href="#subsec-definition-of-a-circle" title="Copy heading and permalink for Subsection 4.2.1: Definition of a Circle" aria-label="Copy heading and permalink for Subsection 4.2.1: Definition of a Circle">🔗</a></div></section><section class="subsection" id="subsec-equation-of-a-circle"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Equation of a Circle</span>
+</h3>
+<div class="para" id="subsec-equation-of-a-circle-2">We now construct an equation that the coordinates (<em class="emphasis">x</em>,<em class="emphasis">y</em>) of the points on the circle should satisfy. So, let P(<em class="emphasis">x,y</em>) be any point on a circle of radius <em class="emphasis">r</em> and center C(<em class="emphasis">h,k</em>) (see, Figure 4.7). Then, the definition of a circle requires that<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-3">
+<em class="alert">|</em>CP<em class="alert">|</em> = <em class="emphasis">r</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-4">⇒<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-5">or<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-equation-of-a-circle-6"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.2.7"><a href="#subsec-equation-of-a-circle-6" title="Copy heading and permalink for Table 4.2.7" aria-label="Copy heading and permalink for Table 4.2.7">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr>
+<td class="l m b0 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2254.png" class="contained"></div></td>
+<td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-equation-of-a-circle-6-1-1-2-1">(Standard equation of a circle with<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-6-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-6-1-1-2-2">center (<em class="emphasis">h</em>,k) and radius <em class="emphasis">r.</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-6-1-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td>
+</tr></table></div></figure><div class="para" id="subsec-equation-of-a-circle-7">In particular, if the center is at origin, i.e., (<em class="emphasis">h,k</em>) = (0,0), the equation is<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-equation-of-a-circle-8"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.2.8"><a href="#subsec-equation-of-a-circle-8" title="Copy heading and permalink for Table 4.2.8" aria-label="Copy heading and permalink for Table 4.2.8">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr>
+<td class="l m b0 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2255.png" class="contained"></div></td>
+<td class="l m b0 r0 l0 t0 lines">(Standard Equation of a circle of radius <em class="emphasis">r</em> centered at origin)</td>
+</tr></table></div></figure><div class="para" id="subsec-equation-of-a-circle-9">
+<em class="alert">Example 4.8</em>: Find an equation of the circle with radius 4 and center (−2, 1).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-10">
+<em class="alert">Solution</em>: Using the standard equation of a circle in which the center (<em class="emphasis">h, k</em>) <em class="emphasis">=</em> (−2, 1) and radius <em class="emphasis">r =</em> 4 we obtain the equation<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-11">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2256.png" class="contained"></div>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-12">
+<em class="alert">Example 4.9</em>: Find the equation of a circle with endpoints of a diameter at P(–2, 0) and Q(4, 2).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-13">
+<em class="alert">Solution</em>: The center of the circle C(<em class="emphasis">h,k</em>) is the mid-point of the diameter. Hence, <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2257.png" class="contained"></div>. Also, for its radius <em class="emphasis">r</em>, <em class="emphasis">r</em>2 = <em class="alert">|</em>CP<em class="alert">|</em>2=(1+2)2+(1 – 0)2=10.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-14">Thus, the equation of the circle is (<em class="emphasis">x – h</em>)2+(<em class="emphasis">y –k</em>)2 <em class="emphasis">=</em> <em class="emphasis">r</em>2 . That is,<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-15">(<em class="emphasis">x –</em> 1)2+(<em class="emphasis">y –</em>1)2 <em class="emphasis">=</em> 10 .<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-16">
+<em class="alert">Example 4.10</em>: Suppose P(−2,4) and Q(5,3) are points on a circle whose center is on <em class="emphasis">x</em>-axis. Find the equation of the circle.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-17">
+<em class="alert">Solution</em>: We need to obtain the center C and radius <em class="emphasis">r</em> of the circle to construct its equation. As the center is on <em class="emphasis">x</em>-axis, its second coordinate is 0. Therefore, let C(<em class="emphasis">h</em>,0) be the center of the circle. Note that |PC|2 = |QC|2 = <em class="emphasis">r</em>2 as both P and Q are on the circle. So, from the first equality we get (−2−<em class="emphasis">h</em>)2 + 42 = (5−<em class="emphasis">h</em>)2 + 32 . Solving this for <em class="emphasis">h</em> we get <em class="emphasis">h=</em>1. Hence, the center is at C(1, 0) and <em class="emphasis">r</em>2 = |QC|2 = (5−1)2 + 32 =25. Therefore, the equation of the circle is<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-18">(<em class="emphasis">x</em>−1)2 + <em class="emphasis">y</em>2 =25.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-19">
+<em class="alert">Example 4.11:</em> Determine whether the given equation represents a circle. If it does, identify its center and radius and sketch its graph.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-20">(a) <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2258.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-21">(b) <em class="emphasis">x</em>2 + <em class="emphasis">y</em>2 + 2<em class="emphasis">x</em> − 6<em class="emphasis">y</em> +10 = 0<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-22">(c) <em class="emphasis">x</em>2 + <em class="emphasis">y</em>2 + 2<em class="emphasis">x</em> − 6<em class="emphasis">y</em> + 11 = 0<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-23">
+<em class="alert">Solution</em>: We need to rewrite each equation in standard form to identify its center and radius. We do this by completing the square on the x-terms and y-terms of the equation as follows:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-24">(a) <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2259.png" class="contained"></div> (Grouping x-terms and y-terms)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-25">⇔ <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2260.png" class="contained"></div> (Adding 12 and 32 to both sides)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-26">⇔ ( <em class="emphasis">x</em> + 1)2 + (<em class="emphasis">y</em> – 3)2 = 3.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-27">Comparing this with the standard equation of circle this is equation of a circle with center (<em class="emphasis">h</em>, <em class="emphasis">k</em>) = (–1, 3) and radius <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2261.png" class="contained"></div>. The graph of the circle is sketched in Figure 4.8<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-28">(b) Following the same steps as in (a), you can see that <em class="emphasis">x</em>2 + <em class="emphasis">y</em>2 + 2<em class="emphasis">x</em> − 6<em class="emphasis">y</em> +10 = 0 is equivalent to ( <em class="emphasis">x</em> + 1)2 + (<em class="emphasis">y</em> – 3)2 = 0.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-29">This is satisfied by the point (−1, 3) only. The locus of this equation is considered as a point-circle, circle of zero radius (sometimes called degenerated circle).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-30">(c) Again following the same steps as in (a), you can see that <em class="emphasis">x</em>2 + <em class="emphasis">y</em>2 + 2<em class="emphasis">x</em> − 6<em class="emphasis">y</em> +11 = 0 is equivalent to ( <em class="emphasis">x</em> + 1)2 + (<em class="emphasis">y</em> – 3)2 = −1.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-31">Note that this does not represent a circle; in fact it has no locus at all (Why? ).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-equation-of-a-circle-32"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.2.9"><a href="#subsec-equation-of-a-circle-32" title="Copy heading and permalink for Table 4.2.9" aria-label="Copy heading and permalink for Table 4.2.9">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-equation-of-a-circle-32-1-1-1-1">
+<em class="alert">Remark:</em> Consider an equation of the form<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-32-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-32-1-1-1-2">
+<em class="emphasis">x</em>2 + <em class="emphasis">y</em>2 + D<em class="emphasis">x</em> + E<em class="emphasis">y</em> + F = 0.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-32-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-32-1-1-1-3">By completing the square you can show the following:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-32-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-32-1-1-1-5">center <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2262.png" class="contained"></div> and radius <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2263.png" class="contained"></div>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-32-1-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td></tr></table></div></figure><div class="para" id="subsec-equation-of-a-circle-33">
+<em class="alert">Exercise 4.2.2</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-equation-of-a-circle-34"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.2.10"><a href="#subsec-equation-of-a-circle-34" title="Copy heading and permalink for Table 4.2.10" aria-label="Copy heading and permalink for Table 4.2.10">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal"><th scope="col" class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-equation-of-a-circle-34-1-1-1-1">1. Determine whether each of the following points is inside, outside or on the circle with equation <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2264.png" class="contained"></div>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-34-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-34-1-1-1-2">(a) (−1, 2), (b) (3/2, 2) (c) <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2265.png" class="contained"></div> (d) (−1, 3/2 )<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-34-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-34-1-1-1-3">2. Find an equation of the circle whose endpoints of a diameter are (0, −3) and (3, 3).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-34-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-34-1-1-1-4">3. Determine an equation of a circle whose center is on <em class="emphasis">y</em>-axis and radius is 2.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-34-1-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-34-1-1-1-5">4. Find an equation of the circle passing through (1, 0) and (0, 1) which has its center on the line 2<em class="emphasis">x</em> + 2<em class="emphasis">y</em> =5.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-34-1-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-34-1-1-1-6">5. Find the value(s) of <em class="emphasis">k</em> for which the equation 2<em class="emphasis">x</em>2 + 2<em class="emphasis">y</em>2 <em class="emphasis">+</em> 6<em class="emphasis">x –</em> 4<em class="emphasis">y + k =</em> 0 represent a circle.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-34-1-1-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-34-1-1-1-7">6. An equation of a circle is <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2266.png" class="contained"></div>. If the radius of the circle is 2, .then what is the coordinates of its center?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-34-1-1-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-34-1-1-1-8">7. Find equation of the circle passing through (0,0), (4, 0) and (2, 2).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-34-1-1-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-34-1-1-1-9">8. Find equation of the circle inscribed in the triangle with vertices (−7, −10), (−7, 15), and (5,−1).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-34-1-1-1-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-34-1-1-1-10">9. In each of the following, check whether or not the given equation represents a circle. If the equation represents a circle, then identify its center and the length of its diameter.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-34-1-1-1-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-34-1-1-1-11">(a) <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2267.png" class="contained"></div> (d) <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2268.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-34-1-1-1-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-34-1-1-1-12">(b) <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2269.png" class="contained"></div> (e) <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2270.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-34-1-1-1-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-equation-of-a-circle-34-1-1-1-13">(c) <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2271.png" class="contained"></div> (f) <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2272.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-equation-of-a-circle-34-1-1-1-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</th></tr>
+<tr><td class="l m b0 r0 l0 t0 lines">10. Show that <em class="emphasis">x</em>2 + <em class="emphasis">y</em>2 + D<em class="emphasis">x</em> + E<em class="emphasis">y</em> + F = 0 represents a circle of positive radius iff D2 + E2 − 4F &gt; 0.</td></tr>
+</table></div></figure><details id="subsec-equation-of-a-circle-35" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-circle%2FFinding-the-Standard-Form-of-Circle-Equation-with-Given-Center-and-Point.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-equation-of-a-circle.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-equation-of-a-circle-35-3"><summary class="ptx-footnote__number" title="Footnote 4.2.4"><sup> 4 </sup></summary><div class="ptx-footnote__contents" id="subsec-equation-of-a-circle-35-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-circle%2FFinding-the-Standard-Form-of-Circle-Equation-with-Given-Center-and-Point.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-equation-of-a-circle.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.2.11"><a href="#subsec-equation-of-a-circle-35" title="Copy heading and permalink for Checkpoint 4.2.11" aria-label="Copy heading and permalink for Checkpoint 4.2.11">🔗</a></div></article></details><details id="subsec-equation-of-a-circle-36" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-circle%2FCircle-Equation-with-Center-on-a-Given-Line.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-equation-of-a-circle.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-equation-of-a-circle-36-3"><summary class="ptx-footnote__number" title="Footnote 4.2.5"><sup> 5 </sup></summary><div class="ptx-footnote__contents" id="subsec-equation-of-a-circle-36-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-circle%2FCircle-Equation-with-Center-on-a-Given-Line.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-equation-of-a-circle.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.2.12"><a href="#subsec-equation-of-a-circle-36" title="Copy heading and permalink for Checkpoint 4.2.12" aria-label="Copy heading and permalink for Checkpoint 4.2.12">🔗</a></div></article></details><details id="subsec-equation-of-a-circle-37" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-circle%2FEquation-of-a-Circle-with-Given-Center-and-Radius.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-equation-of-a-circle.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-equation-of-a-circle-37-3"><summary class="ptx-footnote__number" title="Footnote 4.2.6"><sup> 6 </sup></summary><div class="ptx-footnote__contents" id="subsec-equation-of-a-circle-37-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-circle%2FEquation-of-a-Circle-with-Given-Center-and-Radius.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-equation-of-a-circle.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.2.13"><a href="#subsec-equation-of-a-circle-37" title="Copy heading and permalink for Checkpoint 4.2.13" aria-label="Copy heading and permalink for Checkpoint 4.2.13">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 4.2.2: Equation of a Circle"><a href="#subsec-equation-of-a-circle" title="Copy heading and permalink for Subsection 4.2.2: Equation of a Circle" aria-label="Copy heading and permalink for Subsection 4.2.2: Equation of a Circle">🔗</a></div></section><section class="subsection" id="subsec-intersection-of-a-circle-with"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Intersection of a circle with a line and tangent line to a circle</span>
+</h3>
+<div class="para" id="subsec-intersection-of-a-circle-with-2">The number of intersection points of a given line and a circle is at most two; that is, either no intersection point, or only one intersection point, or two intersection points. For instance, in Figure 4.9, the line <em class="emphasis"><em class="alert">l</em></em>1 has no intersection with the circle, <em class="emphasis"><em class="alert">l</em></em>2 has two intersection points with the circle, namely, Q1 and Q2, and <em class="emphasis"><em class="alert">l</em></em>3 has only one intersection point with the circle, namely, P.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-3">A line which intersects a circle at one and only one point is called a <em class="alert">tangent line</em> to the circle. In this case, the intersection point is called the <em class="alert">point of tangency</em>. Thus, <em class="emphasis"><em class="alert">l</em></em>3 a tangent line to the circle in Figure 4.9 and P is the point of tangency.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-4">In Figure 4.9, observe that every point on <em class="emphasis"><em class="alert">l</em></em>1 are outside of the circle. Hence, <em class="emphasis">d</em>(C,Q) &gt; <em class="emphasis">r</em> for every point Q on <em class="emphasis"><em class="alert">l</em></em>1. Consequently, <em class="emphasis">d</em>(C, <em class="emphasis"><em class="alert">l</em></em>1) &gt; <em class="emphasis">r</em>. On the other hand, there is a point on <em class="emphasis"><em class="alert">l</em></em>2 which is inside the circle. Hence, <em class="emphasis">d</em>(C, <em class="emphasis"><em class="alert">l</em></em>2) &lt; <em class="emphasis">r</em>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-5">For the tangent line <em class="emphasis"><em class="alert">l</em></em>3, the point of tangency P is on the circle implies that <em class="emphasis"><em class="alert">|</em></em>CP<em class="alert">|</em> = <em class="emphasis">r</em> and P is the point on <em class="emphasis"><em class="alert">l</em></em>3 closest to C. Therefore, <em class="emphasis">d</em>(C, <em class="emphasis"><em class="alert">l</em></em>3) = <em class="emphasis"><em class="alert">|</em></em>CP<em class="alert">|</em> = <em class="emphasis">r</em>. This shows also that CP⊥ <em class="emphasis"><em class="alert">l</em></em>3.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-6">In general, given a circle of radius <em class="emphasis">r</em> with center C(<em class="emphasis">h</em>,<em class="emphasis">k</em>) and a line <em class="emphasis"><em class="alert">l</em></em> , by computing the distance <em class="emphasis">d</em>(C, <em class="emphasis"><em class="alert">l</em></em>) between C and <em class="emphasis"><em class="alert">l</em></em> we can conclude the following.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-7">(i). If <em class="emphasis">d</em>(C, <em class="emphasis"><em class="alert">l</em></em>) &gt; <em class="emphasis">r</em>, then the line does not intersect with the circle.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-8">(ii) If <em class="emphasis">d</em>(C, <em class="emphasis"><em class="alert">l</em></em>) &lt; <em class="emphasis">r</em>, then the line is a secant of the circle; that is, they have two intersection points.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-9">(iii) If <em class="emphasis">d</em>(C, <em class="emphasis"><em class="alert">l</em></em>) = <em class="emphasis">r</em>, then <em class="emphasis"><em class="alert">l</em></em> is a tangent line to the circle. The point of tangency is the point P on the line (and on the circle) such that CP <em class="alert">⊥ <em class="emphasis">l</em></em> <em class="alert">.</em> This means the product of the slopes of <em class="emphasis"><em class="alert">l</em></em> and CP must be −1.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-10">
+<em class="alert">Example 4.12</em> Write the equation of the circle tangent to the <em class="emphasis"><em class="alert">x</em></em>-axis at (6,0) whose center is on the line <em class="emphasis">x</em> −2y = 0.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-11">
+<em class="alert">Solution:</em> The circle in the question is as in Figure 4.10.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-12">Let C(<em class="emphasis">h, k</em>) be the center of the circle. (<em class="emphasis">h, k</em>) is on the line <em class="emphasis">y</em> =(1/2)<em class="emphasis">x</em> ⇒ <em class="emphasis">k</em> =(1/2)<em class="emphasis">h</em> ; and<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-13">the circle is tangent to x-axis at P(6,0) ⇒ CP should be perpendicular to the x-axis.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-14">⇒ <em class="emphasis">h</em> = 6 ⇒ <em class="emphasis">k</em>= 3 and the radius is <em class="emphasis">r</em> = |CP| = <em class="emphasis">k</em>−0 =3.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-15">Hence, the circle is centered at (6, 3) with radius <em class="emphasis">r</em> =3. Therefore, the equation of the circle is (<em class="emphasis">x –</em> 6)2 + (<em class="emphasis">y</em>−3)2 <em class="emphasis">=</em> 9 .<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-16">
+<em class="alert">Example 4.13</em> Suppose the line <em class="emphasis">y=x</em> is tangent to a circle at point P(2,2). If the center of the circle is on the <em class="emphasis"><em class="alert">x</em></em>-axis, then what is the equation of the circle?<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-17">
+<em class="alert">Solution:</em> The circle in the question is as in Figure 4.11.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-18">Let the center of the circle be C(<em class="emphasis">h</em>,0). We need to find <em class="emphasis">h</em>. The slope of the line <em class="emphasis"><em class="alert">l</em></em> : <em class="emphasis">y=x</em> is 1 and <em class="emphasis"><em class="alert">l</em></em> is perpendicular to CP. Hence the slope of CP is –1.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-19">So, the slope of CP = <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2273.png" class="contained"></div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2274.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-20">⇒ The center of the circle is C(4,0); and <em class="emphasis">r</em>2 = |CP|2 = (2– 0)2 + (2– 4)2 = 4+4= 8.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-21">Therefore, the equation of the circle is (<em class="emphasis">x</em> – 4)2 + <em class="emphasis">y</em>2= <em class="emphasis">r</em>2 = 8.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-22">
+<em class="alert">Exercise 4.2.3</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-intersection-of-a-circle-with-23"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.2.14"><a href="#subsec-intersection-of-a-circle-with-23" title="Copy heading and permalink for Table 4.2.14" aria-label="Copy heading and permalink for Table 4.2.14">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-intersection-of-a-circle-with-23-1-1-1-1">1. Find the equation of the line tangent to the circle with the center at (−1, 1) and point of tangency at (−1, 3).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-23-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-23-1-1-1-2">2. The center of a circle is on the line <em class="emphasis">y</em> =2<em class="emphasis">x</em> and the line <em class="emphasis">x=</em>1 is tangent to the circle at (1, 6). Find the center and radius of the circle.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-23-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-23-1-1-1-3">3.. Suppose two lines <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2275.png" class="contained"></div> and <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2276.png" class="contained"></div> are tangent to a circle at (2, 2) and (4, 0), respectively. Find equation of the circle.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-23-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-23-1-1-1-4">4. Find an equation of the line tangent to the circle <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2277.png" class="contained"></div> at (1,1).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-23-1-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-23-1-1-1-5">5. Find equation of the line through <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2278.png" class="contained"></div>and tangent to the circle with equation<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-23-1-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-23-1-1-1-6">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//media/png72/imageC2279.png" class="contained"></div>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-23-1-1-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-23-1-1-1-7">6. Suppose P(1,2) and Q(3, 0) are the endpoints of a diameter of a circle and <em class="emphasis">L</em> is the line tangent to the circle at Q.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-23-1-1-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-23-1-1-1-8">(a) Show that R(5, 2) is on <em class="emphasis">L.</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-23-1-1-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-intersection-of-a-circle-with-23-1-1-1-9">(b) Find the area of ∆PQR, when R is the point given in (a).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intersection-of-a-circle-with-23-1-1-1-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td></tr></table></div></figure><details id="subsec-intersection-of-a-circle-with-24" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FIntersection-of-a-circle-with-a-line-and-tangent-line-to-a-circle%2FFinding-Points-of-Intersection-between-a-Circle-and-a-Line.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-intersection-of-a-circle-with.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-intersection-of-a-circle-with-24-3"><summary class="ptx-footnote__number" title="Footnote 4.2.7"><sup> 7 </sup></summary><div class="ptx-footnote__contents" id="subsec-intersection-of-a-circle-with-24-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FIntersection-of-a-circle-with-a-line-and-tangent-line-to-a-circle%2FFinding-Points-of-Intersection-between-a-Circle-and-a-Line.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-intersection-of-a-circle-with.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.2.15"><a href="#subsec-intersection-of-a-circle-with-24" title="Copy heading and permalink for Checkpoint 4.2.15" aria-label="Copy heading and permalink for Checkpoint 4.2.15">🔗</a></div></article></details><details id="subsec-intersection-of-a-circle-with-25" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FIntersection-of-a-circle-with-a-line-and-tangent-line-to-a-circle%2FTangent-Line-and-Circle-with-x-axis-Center.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-intersection-of-a-circle-with.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-intersection-of-a-circle-with-25-3"><summary class="ptx-footnote__number" title="Footnote 4.2.8"><sup> 8 </sup></summary><div class="ptx-footnote__contents" id="subsec-intersection-of-a-circle-with-25-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FIntersection-of-a-circle-with-a-line-and-tangent-line-to-a-circle%2FTangent-Line-and-Circle-with-x-axis-Center.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-intersection-of-a-circle-with.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.2.16"><a href="#subsec-intersection-of-a-circle-with-25" title="Copy heading and permalink for Checkpoint 4.2.16" aria-label="Copy heading and permalink for Checkpoint 4.2.16">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 4.2.3: Intersection of a circle with a line and tangent line to a circle"><a href="#subsec-intersection-of-a-circle-with" title="Copy heading and permalink for Subsection 4.2.3: Intersection of a circle with a line and tangent line to a circle" aria-label="Copy heading and permalink for Subsection 4.2.3: Intersection of a circle with a line and tangent line to a circle">🔗</a></div></section><div class="autopermalink" data-description="Section 4.2: Circles"><a href="#sec-circles" title="Copy heading and permalink for Section 4.2: Circles" aria-label="Copy heading and permalink for Section 4.2: Circles">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-distance-formula-and-equation-of.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-parabolas.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

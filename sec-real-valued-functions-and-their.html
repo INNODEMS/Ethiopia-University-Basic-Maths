@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette: leaves                       *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Real Valued functions and their properties</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="BASIC MATHEMATICS FOR NATURAL SCIENCES">
+<meta property="book:author" content="">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.9.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.879b99e54406967d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="basic-maths-for-natural-sciences.html"><span class="title">BASIC MATHEMATICS FOR NATURAL SCIENCES</span> <span class="subtitle">UNDERGRADUATE STUDENT TEXTBOOK</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-review-of-relations-and-functions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="basic-maths-for-natural-sciences-6.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-types-of-functions-and-inverse.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="basic-maths-for-natural-sciences-4.html" class="internal"><span class="codenumber">1</span> <span class="title">Propositional Logic and Set Theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="propositional-logic.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Propositional Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="propositional-logic.html#definition-and-examples-of-propositions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Definition and examples of propositions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="propositional-logic.html#logical-connectives" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Logical connectives</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="propositional-logic.html#exercises-logical-connectives" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="propositional-logic.html#compound-or-complex-propositions" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Compound (or complex) propositions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="propositional-logic.html#tautology-and-contradiction" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Tautology and contradiction</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="propositional-logic.html#exercises-tautology-and-contradiction" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="open-propositions-and-quantifiers.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Open propositions and quantifiers</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="open-propositions-and-quantifiers.html#exercises-open-propositions-and-quantifiers" class="internal"><span class="codenumber">1.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-argument-and-validity.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Argument and Validity</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-set-theory.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Set theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set-theory.html#subsec-the-concept-of-a-set" class="internal"><span class="codenumber">1.4.1</span> <span class="title">The concept of a set</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-set-theory.html#subsec-description-of-sets" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Description of Sets</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-set-theory.html#exercises-description-of-sets" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-set-theory.html#subsec-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Set Operations and Venn diagrams</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-set-theory.html#exercises-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-description-of-sets.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Description of sets</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-description-of-sets.html#subsec-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Set Operations and Venn diagrams</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="the-real-and-complex-number-systems.html" class="internal"><span class="codenumber">2</span> <span class="title">The Real and Complex Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html" class="internal"><span class="codenumber">2.1</span> <span class="title">The real number System</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The set of natural numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Operations on the set of natural numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-oder-relation-N" class="internal"><span class="codenumber">2.1.1.2</span> <span class="title">Order Relation in <span class="process-math">\(\mathbf{N}\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-factors-of-a-number" class="internal"><span class="codenumber">2.1.1.3</span> <span class="title">Factors of a number</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-prime-factorization" class="internal"><span class="codenumber">2.1.1.4</span> <span class="title">Prime Factorization</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-greatest-common-factor" class="internal"><span class="codenumber">2.1.1.5</span> <span class="title">Greatest Common Factor (GCF)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-lcm" class="internal"><span class="codenumber">2.1.1.6</span> <span class="title">Least Common Multiple (LCM)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-well-ordering-principle-in-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1.7</span> <span class="title">Well ordering Principle in the set of natural numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-principle-of-mathematical-induction" class="internal"><span class="codenumber">2.1.1.8</span> <span class="title">Principle of Mathematical Induction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-integers" class="internal"><span class="codenumber">2.1.2</span> <span class="title">The set of Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers" class="internal"><span class="codenumber">2.1.2.1</span> <span class="title">Operations on the set of integers</span></a></div></li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-z" class="internal"><span class="codenumber">2.1.2.2</span> <span class="title">Order Relation in Z</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-real-number-system.html#exercises-sets-of-integers" class="internal"><span class="codenumber">2.1.2.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-rational-numbers" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The set of rational numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-rational-numbers" class="internal"><span class="codenumber">2.1.3.1</span> <span class="title">Operations on the set of rational numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-q" class="internal"><span class="codenumber">2.1.3.2</span> <span class="title">Order Relation in Q</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-decimal-representation-of-rational-numbers" class="internal"><span class="codenumber">2.1.3.3</span> <span class="title">Decimal representation of rational numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-fraction-form-of-decimal-numbers" class="internal"><span class="codenumber">2.1.3.4</span> <span class="title">Fraction form of decimal numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-non-terminating-and-non-periodic-decimals" class="internal"><span class="codenumber">2.1.3.5</span> <span class="title">Non-terminating and non-periodic decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-real-numbers" class="internal"><span class="codenumber">2.1.4</span> <span class="title">The set of real numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-real-numbers" class="internal"><span class="codenumber">2.1.4.1</span> <span class="title">Operations on the set of real numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-the-real-number-and-the-number-line" class="internal"><span class="codenumber">2.1.4.2</span> <span class="title">The real number and the number line</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-r" class="internal"><span class="codenumber">2.1.4.3</span> <span class="title">Order Relation in R</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-intervals" class="internal"><span class="codenumber">2.1.4.4</span> <span class="title">Intervals</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-upper-bounds-and-lower-bounds" class="internal"><span class="codenumber">2.1.4.5</span> <span class="title">Upper bounds and lower bounds</span></a></div></li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-completeness-property-of-real-number" class="internal"><span class="codenumber">2.1.4.6</span> <span class="title">Completeness property of real number (R)</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-real-number-system.html#exercises-real-number" class="internal"><span class="codenumber">2.1.4.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The set of complex numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-plotting-complex-numbers" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Plotting complex numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-operations-on-complex-numbers" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Operations on Complex numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-conjugate-of-a-complex-number" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Conjugate of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-modulus-norm-of-a-complex" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Modulus (Norm) of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-additive-and-multiplicative-inverses" class="internal"><span class="codenumber">2.2.5</span> <span class="title">Additive and multiplicative inverses</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-argument-amplitude-of-a-complex" class="internal"><span class="codenumber">2.2.6</span> <span class="title">Argument (Amplitude) of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex" class="internal"><span class="codenumber">2.2.7</span> <span class="title">Polar form of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-extraction-of-roots" class="internal"><span class="codenumber">2.2.8</span> <span class="title">Extraction of roots</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="basic-maths-for-natural-sciences-6.html" class="internal"><span class="codenumber">3</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-review-of-relations-and-functions.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Review of relations and functions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-review-of-relations-and-functions.html#exercises-Review-of-relations-and-functions" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-real-valued-functions-and-their.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Real Valued functions and their properties</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-real-valued-functions-and-their.html#exercises-Real-Valued-functions-and-their-properties" class="internal"><span class="codenumber">3.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-types-of-functions-and-inverse.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Types of functions and inverse of a function</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-polynomials-zeros-of-polynomials-rational.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Polynomials, zeros of polynomials, rational functions and their graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-definition-and-basic-properties-of.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Definition and basic properties of logarithmic, exponential, trigonometric and hyperbolic functions and their graphs</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions" class="internal"><span class="codenumber">3.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="analytic-geometry.html" class="internal"><span class="codenumber">4</span> <span class="title">Analytic Geometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Distance Formula and Equation of Lines</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-distance-between-two-points-and" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Distance between two points and division of segments</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#exercises-distance-between-two-points-and" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-equations-of-lines" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Equations of lines</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#exercises-equations-of-lines" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-distance-between-a-point-and" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Distance between a point and a line</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#exercises-distance_between_a_point" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-circles.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Circles</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-definition-of-a-circle" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Definition of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-equation-of-a-circle" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Equation of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-intersection-of-a-circle-with" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Intersection of a circle with a line and tangent line to a circle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-parabolas.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Parabolas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-parabolas.html#subsec-definition-of-a-parabola" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Definition of a Parabola</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-parabolas.html#exercises-definition-of-a-parabola" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-parabolas.html#subsec-equation-of-parabolas" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Equation of Parabolas</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-parabolas.html#subsec-equation-of-parabolas-26" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ellipses.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Ellipses</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ellipses.html#subsec-definition-of-an-ellipse" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Definition of an Ellipse</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ellipses.html#subsec-equation-of-an-ellipse" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Equation of an Ellipse</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyperbolas.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Hyperbolas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-hyperbolas.html#subsec-definition-of-a-hyperbola" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Definition of a hyperbola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-hyperbolas.html#subsec-equation-of-a-hyperbola" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Equation of a hyperbola</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html" class="internal"><span class="codenumber">4.6</span> <span class="title">The General Second Degree Equation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#subsec-rotation-of-coordinate-axes" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Rotation of Coordinate Axes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#exercises-rotation-of-coordinate-axes" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#subsec-analysis-of-the-general-second" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Analysis of the General Second Degree Equations</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="basic-maths-for-natural-sciences-8.html" class="internal"><span class="codenumber">5</span> <span class="title">References</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-real-valued-functions-and-their"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Real Valued functions and their properties</span>
+</h2>
+<div class="para" id="sec-real-valued-functions-and-their-2">After completing this section, the student should be able to:<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-real-valued-functions-and-their-3">
+<ul class="disc" id="sec-real-valued-functions-and-their-3-1">
+<li id="sec-real-valued-functions-and-their-3-1-1">
+<div class="para" id="sec-real-valued-functions-and-their-3-1-1-1">perform the four fundamental operations on polynomials<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-real-valued-functions-and-their-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-3-1-2">
+<div class="para" id="sec-real-valued-functions-and-their-3-1-2-1">compose functions to get a new function<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-real-valued-functions-and-their-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-3-1-3">
+<div class="para" id="sec-real-valued-functions-and-their-3-1-3-1">determine the domain of the sum, difference, product and quotient of two functions<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-real-valued-functions-and-their-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-3-1-4">
+<div class="para" id="sec-real-valued-functions-and-their-3-1-4-1">define equality of two functions<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-real-valued-functions-and-their-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-4">Let <span class="process-math">\(f\)</span> be a function from set <span class="process-math">\(A\)</span> to set <span class="process-math">\(B\text{.}\)</span> If <span class="process-math">\(B\)</span> is a subset of the set of real numbers <span class="process-math">\(\Re\text{,}\)</span> then <span class="process-math">\(f\)</span> is called a real valued function, and in particular if <span class="process-math">\(A\)</span> is also a subset of <span class="process-math">\(\Re\text{,}\)</span> then <span class="process-math">\(f:A \rightarrow B\)</span> is called a real function.<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sec-real-valued-functions-and-their-5"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="sec-real-valued-functions-and-their-5-1-1">
+<ol class="decimal" id="sec-real-valued-functions-and-their-5-1-1-1">
+<li id="sec-real-valued-functions-and-their-5-1-1-1-1">
+<div class="para" id="sec-real-valued-functions-and-their-5-1-1-1-1-1">The function <span class="process-math">\(f:\Re \rightarrow \Re\)</span> defined by <span class="process-math">\(f(x) = x^{2} + 3x + 7\text{,}\)</span> <span class="process-math">\(x \in \Re\)</span> is a real function.<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-5-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-real-valued-functions-and-their-5-1-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-5-1-1-1-2">
+<div class="para" id="sec-real-valued-functions-and-their-5-1-1-1-2-1">The function <span class="process-math">\(f:\Re \rightarrow \Re\)</span> defined as <span class="process-math">\(f(x) = \left| x \right|\)</span> is also a real valued function.<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-5-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-real-valued-functions-and-their-5-1-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.2.1"><a href="#sec-real-valued-functions-and-their-5" title="Copy heading and permalink for Example 3.2.1" aria-label="Copy heading and permalink for Example 3.2.1">🔗</a></div></article><div class="para logical" id="sec-real-valued-functions-and-their-6">
+<ul class="disc" id="sec-real-valued-functions-and-their-6-1"><li id="sec-real-valued-functions-and-their-6-1-1">
+<div class="para" id="sec-real-valued-functions-and-their-6-1-1-1">
+<span class="process-math">\(\displaystyle \textbf{Operations on functions}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-6-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-real-valued-functions-and-their-6-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-7">Functions are not numbers. But just as two numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> can be added to produce a new number <span class="process-math">\(a + b\text{,}\)</span> so two functions <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> can be added to produce a new function <span class="process-math">\(f + g\text{.}\)</span> This is just one of the several operations on functions that we will describe in this section.<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-8">Consider functions <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> defined by <span class="process-math">\(f(x) = \frac{x - 3}{2}\)</span> and <span class="process-math">\(g(x) = \sqrt{x}\text{.}\)</span> We can make a new function <span class="process-math">\(f + g\)</span> by having it assign to <span class="process-math">\(x\)</span>the value <span class="process-math">\(\frac{x - 3}{2} + \sqrt{x}\text{,}\)</span> that is,<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-9">
+<span class="process-math">\((f + g)(x) = f(x) + g(x) = \frac{x - 3}{2} + \sqrt{x}\)</span> .<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-sum-difference-product-quotient-of-functions"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="def-sum-difference-product-quotient-of-functions-1-1">Let <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> be two functions. We define the following four functions:<div class="autopermalink" data-description="Paragraph"><a href="#def-sum-difference-product-quotient-of-functions-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="def-sum-difference-product-quotient-of-functions-1-2">
+<ol class="decimal" id="def-sum-difference-product-quotient-of-functions-1-2-1">
+<li id="def-sum-difference-product-quotient-of-functions-1-2-1-1">
+<div class="para" id="def-sum-difference-product-quotient-of-functions-1-2-1-1-1">
+<span class="process-math">\((f + g)(x) = f(x) + g(x) \qquad\)</span> The sum of the two functions<div class="autopermalink" data-description="Paragraph"><a href="#def-sum-difference-product-quotient-of-functions-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#def-sum-difference-product-quotient-of-functions-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="def-sum-difference-product-quotient-of-functions-1-2-1-2">
+<div class="para" id="def-sum-difference-product-quotient-of-functions-1-2-1-2-1">
+<span class="process-math">\((f - g)(x) = f(x) - g(x) \qquad\)</span> The difference of the two functions<div class="autopermalink" data-description="Paragraph"><a href="#def-sum-difference-product-quotient-of-functions-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#def-sum-difference-product-quotient-of-functions-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="def-sum-difference-product-quotient-of-functions-1-2-1-3">
+<div class="para" id="def-sum-difference-product-quotient-of-functions-1-2-1-3-1">
+<span class="process-math">\((f \cdot g)(x) = f(x)g(x) \qquad\)</span> The product of the two functions<div class="autopermalink" data-description="Paragraph"><a href="#def-sum-difference-product-quotient-of-functions-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#def-sum-difference-product-quotient-of-functions-1-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="def-sum-difference-product-quotient-of-functions-1-2-1-4">
+<div class="para" id="def-sum-difference-product-quotient-of-functions-1-2-1-4-1">
+<span class="process-math">\(\left( \frac{f}{g} \right)(x) = \frac{f(x)}{g(x)} \qquad\)</span> The quotient of the two functions (provided <span class="process-math">\(g(x) \neq 0)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-sum-difference-product-quotient-of-functions-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#def-sum-difference-product-quotient-of-functions-1-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-sum-difference-product-quotient-of-functions-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="def-sum-difference-product-quotient-of-functions-1-3">Since an <span class="process-math">\(x -\)</span>value must be an input into both <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{,}\)</span> the domain of <span class="process-math">\((f + g)(x)\)</span> is the set of all <span class="process-math">\(x\)</span> common to the domain of <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{.}\)</span> This is usually written as <span class="process-math">\(\text{Dom}(f + g) = \text{Dom}(f) \cap \text{Dom}(g)\text{.}\)</span> Similar statements hold for the domains of the difference and product of two functions. In the case of the quotient, we must impose the additional restriction that all elements in the domain of <span class="process-math">\(g\)</span> for which <span class="process-math">\(g(x) = 0\)</span> are excluded.<div class="autopermalink" data-description="Paragraph"><a href="#def-sum-difference-product-quotient-of-functions-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 3.2.2"><a href="#def-sum-difference-product-quotient-of-functions" title="Copy heading and permalink for Definition 3.2.2" aria-label="Copy heading and permalink for Definition 3.2.2">🔗</a></div></article><article class="example example-like" id="sec-real-valued-functions-and-their-11"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec-real-valued-functions-and-their-11-1-1">Let <span class="process-math">\(f(x) = 3x^{2} + 2\)</span> and <span class="process-math">\(g(x) = 5x - 4\text{.}\)</span> Find each of the following and its domain<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel top" style="width:100%;"><div class="para logical" id="sec-real-valued-functions-and-their-11-1-2-1">
+<ol class="lower-alpha ol-marker-10" id="sec-real-valued-functions-and-their-11-1-2-1-1">
+<li id="sec-real-valued-functions-and-their-11-1-2-1-1-1">
+<div class="para" id="sec-real-valued-functions-and-their-11-1-2-1-1-1-1">
+<span class="process-math">\(\displaystyle (f + g)(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-11-1-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#sec-real-valued-functions-and-their-11-1-2-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-11-1-2-1-1-2">
+<div class="para" id="sec-real-valued-functions-and-their-11-1-2-1-1-2-1">
+<span class="process-math">\(\displaystyle (f - g)(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-11-1-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#sec-real-valued-functions-and-their-11-1-2-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-11-1-2-1-1-3">
+<div class="para" id="sec-real-valued-functions-and-their-11-1-2-1-1-3-1">
+<span class="process-math">\(\displaystyle (f\text{.}g)(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-11-1-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item c"><a href="#sec-real-valued-functions-and-their-11-1-2-1-1-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-11-1-2-1-1-4">
+<div class="para" id="sec-real-valued-functions-and-their-11-1-2-1-1-4-1">
+<span class="process-math">\(\displaystyle \left( \frac{f}{g} \right)(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-11-1-2-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item d"><a href="#sec-real-valued-functions-and-their-11-1-2-1-1-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-11-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div></div></div>
+<div class="solutions"><details id="sec-real-valued-functions-and-their-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="sec-real-valued-functions-and-their-11-2-1">
+<ol class="lower-alpha ol-marker-10" id="sec-real-valued-functions-and-their-11-2-1-1">
+<li id="sec-real-valued-functions-and-their-11-2-1-1-1">
+<div class="para" id="sec-real-valued-functions-and-their-11-2-1-1-1-1">
+<span class="process-math">\((f + g)(x) = f(x) + g(x) = (3x^{2} + 2) + (5x - 4) =\)</span><span class="process-math">\(3x^{2} + 5x - 2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-11-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#sec-real-valued-functions-and-their-11-2-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-11-2-1-1-2">
+<div class="para" id="sec-real-valued-functions-and-their-11-2-1-1-2-1">
+<span class="process-math">\((f - g)(x) = f(x) - g(x) = (3x^{2} + 2) - (5x - 4) =\)</span><span class="process-math">\(3x^{2} - 5x + 6\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-11-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#sec-real-valued-functions-and-their-11-2-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-11-2-1-1-3">
+<div class="para" id="sec-real-valued-functions-and-their-11-2-1-1-3-1">
+<span class="process-math">\((f \cdot g)(x) = (3x^{2} + 2)(5x - 4) =\)</span><span class="process-math">\(\text{15}x^{3} - \text{12}x^{2} + \text{10}x - 8\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-11-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item c"><a href="#sec-real-valued-functions-and-their-11-2-1-1-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-11-2-1-1-4">
+<div class="para" id="sec-real-valued-functions-and-their-11-2-1-1-4-1">
+<span class="process-math">\(\left( \frac{f}{g} \right)(x) = \frac{f(x)}{g(x)} =\)</span><span class="process-math">\(\frac{3x^{2} + 2}{5x - 4}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-11-2-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item d"><a href="#sec-real-valued-functions-and-their-11-2-1-1-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-11-2-2">We have<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-11-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-11-2-3">
+<span class="process-math">\(\text{Dom}(f + g) = \text{Dom}(f-g) = \text{Dom}(fg) = \text{Dom}(f) \cap \text{Dom}(g)=\Re \cap \Re=\Re\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-11-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-11-2-4">
+<span class="process-math">\(\text{Dom}\left( \frac{f}{g} \right) = [\text{Dom}(f) \cap \text{Dom}(g)]  {\left\{ x: g(x) = 0 \right\}} = \Re  \left\{ \frac{5}{4} \right\}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-11-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.3.1"><a href="#sec-real-valued-functions-and-their-11-2" title="Copy heading and permalink for Solution 3.2.3.1" aria-label="Copy heading and permalink for Solution 3.2.3.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.2.3"><a href="#sec-real-valued-functions-and-their-11" title="Copy heading and permalink for Example 3.2.3" aria-label="Copy heading and permalink for Example 3.2.3">🔗</a></div></article><article class="example example-like" id="sec-real-valued-functions-and-their-12"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec-real-valued-functions-and-their-12-1-1">Let <span class="process-math">\(f(x) = \sqrt[4]{x + 1}\)</span> and <span class="process-math">\(g(x) = \sqrt{9 - x^{2}}\text{,}\)</span> with respective domains <span class="process-math">\(\lbrack - 1,\infty)\)</span> and <span class="process-math">\(\lbrack - 3,3\rbrack\text{.}\)</span> Find formulas for <span class="process-math">\(f + g,\ f - g,\ f \cdot g,\frac{f}{g}\)</span> and <span class="process-math">\(f^{3}\)</span> and give their domains.<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-real-valued-functions-and-their-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines">Formula</th>
+<th scope="col" class="l m b0 r0 l0 t0 lines">Domain</th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\((f + g)(x) = f(x) + g(x) = \sqrt[4]{x + 1} + \sqrt{9 - x^{2}}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\([-1,3]\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\((f - g)(x) = f(x) - g(x) = \sqrt[4]{x + 1} - \sqrt{9 - x^{2}}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\([-1,3]\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\((f \cdot g)(x) = f(x) \cdot g(x) = \sqrt[4]{x + 1} \cdot \sqrt{9 - x^{2}}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\([-1,3]\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\left( \frac{f}{g} \right)(x) = \frac{f(x)}{g(x)} = \frac{\sqrt[4]{x + 1}}{\sqrt{9 - x^{2}}}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\([-1,3]\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(f^{3}(x) = \left( f(x) \right)^{3} = \left( \sqrt[4]{x + 1} \right)^{3} = \left( x + 1 \right)^{\frac{3}{4}}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\lbrack - 1,\infty \rbrack\)</span></td>
+</tr>
+</table></div>
+<div class="para" id="sec-real-valued-functions-and-their-12-2-2">There is yet another way of producing a new function from two given functions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-12-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.4.1"><a href="#sec-real-valued-functions-and-their-12-2" title="Copy heading and permalink for Solution 3.2.4.1" aria-label="Copy heading and permalink for Solution 3.2.4.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.2.4"><a href="#sec-real-valued-functions-and-their-12" title="Copy heading and permalink for Example 3.2.4" aria-label="Copy heading and permalink for Example 3.2.4">🔗</a></div></article><article class="definition definition-like" id="def-Composition-of-functions"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="def-Composition-of-functions-1-1">Given two functions <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{,}\)</span> the composition of the two functions is denoted by <span class="process-math">\(f \circ g\)</span> and is defined by:<div class="autopermalink" data-description="Paragraph"><a href="#def-Composition-of-functions-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="def-Composition-of-functions-1-2">
+<span class="process-math">\((f \circ g)(x) = f\lbrack g(x)\rbrack\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-Composition-of-functions-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="def-Composition-of-functions-1-3">
+<span class="process-math">\((f \circ g)(x)\)</span> is read as <span class="process-math">\(\text{f\}\ \{}\)</span> composed with <span class="process-math">\(g\)</span> of <span class="process-math">\(x\text{\}\ \{}\text{.}\)</span><span class="process-math">\(\)</span>The domain of <span class="process-math">\(f \circ g\)</span> consists of those <span class="process-math">\(x^{'}\)</span>s in the domain of <span class="process-math">\(g\)</span> whose range values are in the domain of <span class="process-math">\(f\text{,}\)</span> i.e. those <span class="process-math">\(x^{'}\)</span>s for which <span class="process-math">\(g(x)\)</span> is in the domain of <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-Composition-of-functions-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 3.2.5"><a href="#def-Composition-of-functions" title="Copy heading and permalink for Definition 3.2.5" aria-label="Copy heading and permalink for Definition 3.2.5">🔗</a></div></article><article class="example example-like" id="sec-real-valued-functions-and-their-14"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec-real-valued-functions-and-their-14-1-1">Suppose <span class="process-math">\(f = \left\{ (2,z),(3,q) \right\}\)</span> and <span class="process-math">\(g = \left\{ (a,2),(b,3),(c,5) \right\}\text{.}\)</span> The function <span class="process-math">\((f \circ g)(x) = f(g(x))\)</span> is found by taking elements in the domain of <span class="process-math">\(g\)</span> and evaluating as follows:<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-real-valued-functions-and-their-14-1-2">
+<span class="process-math">\((f \circ g)(a)=f(g(a))=f(2)=z\text{,}\)</span> <span class="process-math">\((f \circ g)(b)=f(g(b))=f(3)=q\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-14-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-real-valued-functions-and-their-14-1-3">If we attempt to find <span class="process-math">\(f(g(c))\)</span> we get <span class="process-math">\(f(5)\text{,}\)</span> but <span class="process-math">\(5\)</span> is not in the domain of <span class="process-math">\(f(x)\)</span> and so we cannot find <span class="process-math">\((f \circ g)(c)\text{.}\)</span> Hence, <span class="process-math">\(f \circ g = \left\{ (a,z),(b,q) \right\}\text{.}\)</span> The figure below illustrates this situation.<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-14-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sec-real-valued-functions-and-their-14-1-4.svg" role="img" class="contained" alt=""></div>
+<div class="autopermalink" data-description="Example 3.2.6"><a href="#sec-real-valued-functions-and-their-14" title="Copy heading and permalink for Example 3.2.6" aria-label="Copy heading and permalink for Example 3.2.6">🔗</a></div></article><article class="example example-like" id="sec-real-valued-functions-and-their-15"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec-real-valued-functions-and-their-15-1-1">Given <span class="process-math">\(f(x) = 5x^{2} - 3x + 2\)</span> and <span class="process-math">\(g(x) = 4x + 3\text{,}\)</span> find<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="sec-real-valued-functions-and-their-15-1-2">
+<ol class="lower-alpha ol-marker-10" id="sec-real-valued-functions-and-their-15-1-2-1">
+<li id="sec-real-valued-functions-and-their-15-1-2-1-1">
+<div class="para" id="sec-real-valued-functions-and-their-15-1-2-1-1-1">
+<span class="process-math">\(\displaystyle (f \circ g)( - 2)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#sec-real-valued-functions-and-their-15-1-2-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-15-1-2-1-2">
+<div class="para" id="sec-real-valued-functions-and-their-15-1-2-1-2-1">
+<span class="process-math">\(\displaystyle (g \circ f)(2)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#sec-real-valued-functions-and-their-15-1-2-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-15-1-2-1-3">
+<div class="para" id="sec-real-valued-functions-and-their-15-1-2-1-3-1">
+<span class="process-math">\(\displaystyle (f \circ g)(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item c"><a href="#sec-real-valued-functions-and-their-15-1-2-1-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-15-1-2-1-4">
+<div class="para" id="sec-real-valued-functions-and-their-15-1-2-1-4-1">
+<span class="process-math">\(\displaystyle (g \circ f)(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item d"><a href="#sec-real-valued-functions-and-their-15-1-2-1-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-real-valued-functions-and-their-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="sec-real-valued-functions-and-their-15-2-1">
+<ol class="lower-alpha ol-marker-10" id="sec-real-valued-functions-and-their-15-2-1-1">
+<li id="sec-real-valued-functions-and-their-15-2-1-1-1">
+<div class="para" id="sec-real-valued-functions-and-their-15-2-1-1-1-1">
+<span class="process-math">\((f \circ g)( - 2) = f(g( - 2))\)</span>…… First evaluate <span class="process-math">\(g( - 2) = 4( - 2) + 3 = - 5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-15-2-1-1-1-2">
+<span class="process-math">\(= f( - 5)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-2-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-15-2-1-1-1-3">
+<span class="process-math">\(= 5( - 5)^{2} - 3( - 5) + 2 = \text{142}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-2-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#sec-real-valued-functions-and-their-15-2-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-15-2-1-1-2">
+<div class="para" id="sec-real-valued-functions-and-their-15-2-1-1-2-1">
+<span class="process-math">\((g \circ f)(2) = g(f(2))\)</span>…….First evaluate <span class="process-math">\(f(2) = 5(2)^{2} - 3(2) + 2 = \text{16}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-15-2-1-1-2-2">
+<span class="process-math">\(= g(\text{16})\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-2-1-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-15-2-1-1-2-3">
+<span class="process-math">\(= 4(\text{16}) + 3 = \text{67}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-2-1-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#sec-real-valued-functions-and-their-15-2-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-15-2-1-1-3">
+<div class="para" id="sec-real-valued-functions-and-their-15-2-1-1-3-1">
+<span class="process-math">\((f \circ g)(x) = f(g(x))\)</span>……. But <span class="process-math">\(g(x) = 4x + 3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-15-2-1-1-3-2">
+<span class="process-math">\(= f(4x + 3)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-2-1-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-15-2-1-1-3-3">
+<span class="process-math">\(= 5(4x + 3)^{2} - 3(4x + 3) + 2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-2-1-1-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-15-2-1-1-3-4">
+<span class="process-math">\(= \text{80}x^{2} + \text{108}x + \text{38}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-2-1-1-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item c"><a href="#sec-real-valued-functions-and-their-15-2-1-1-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-15-2-1-1-4">
+<div class="para" id="sec-real-valued-functions-and-their-15-2-1-1-4-1">
+<span class="process-math">\((g \circ f)(x) = g(f(x))\)</span>……. But <span class="process-math">\(f(x) = 5x^{2} - 3x + 2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-2-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-15-2-1-1-4-2">
+<span class="process-math">\(= g(5x^{2} - 3x + 2)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-2-1-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-15-2-1-1-4-3">
+<span class="process-math">\(= 4(5x^{2} - 3x + 2) + 3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-2-1-1-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-15-2-1-1-4-4">
+<span class="process-math">\(= \text{20}x^{2} - \text{12}x + \text{11}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-2-1-1-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item d"><a href="#sec-real-valued-functions-and-their-15-2-1-1-4" title="Copy heading and permalink for Item d" aria-label="Copy heading and permalink for Item d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-15-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.7.1"><a href="#sec-real-valued-functions-and-their-15-2" title="Copy heading and permalink for Solution 3.2.7.1" aria-label="Copy heading and permalink for Solution 3.2.7.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.2.7"><a href="#sec-real-valued-functions-and-their-15" title="Copy heading and permalink for Example 3.2.7" aria-label="Copy heading and permalink for Example 3.2.7">🔗</a></div></article><article class="example example-like" id="sec-real-valued-functions-and-their-16"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec-real-valued-functions-and-their-16-1-1">Given <span class="process-math">\(f(x) = \frac{x}{x + 1}\)</span> and <span class="process-math">\(g(x) = \frac{2}{x - 1}\text{,}\)</span> find<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-16-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel top" style="width:100%;"><div class="para logical" id="sec-real-valued-functions-and-their-16-1-2-1">
+<ol class="lower-alpha ol-marker-10" id="sec-real-valued-functions-and-their-16-1-2-1-1">
+<li id="sec-real-valued-functions-and-their-16-1-2-1-1-1">
+<div class="para" id="sec-real-valued-functions-and-their-16-1-2-1-1-1-1">
+<span class="process-math">\((f \circ g)(x)\)</span> and its domain<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-16-1-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#sec-real-valued-functions-and-their-16-1-2-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-16-1-2-1-1-2">
+<div class="para" id="sec-real-valued-functions-and-their-16-1-2-1-1-2-1">
+<span class="process-math">\((g \circ f)(x)\)</span> and its domain<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-16-1-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#sec-real-valued-functions-and-their-16-1-2-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-16-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div></div></div>
+<div class="solutions"><details id="sec-real-valued-functions-and-their-16-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="sec-real-valued-functions-and-their-16-2-1">
+<ol class="lower-alpha ol-marker-10" id="sec-real-valued-functions-and-their-16-2-1-1">
+<li id="sec-real-valued-functions-and-their-16-2-1-1-1">
+<div class="para" id="sec-real-valued-functions-and-their-16-2-1-1-1-1">
+<span class="process-math">\((f \circ g)(x) = f\left( \frac{2}{x - 1} \right) = \frac{\frac{2}{x - 1}}{\frac{2}{x - 1} + 1} = \frac{2}{x + 1}\text{.}\)</span> Thus, <span class="process-math">\(\text{Dom}(f \circ g) = \left\{ x:x \neq \pm 1 \right\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-16-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#sec-real-valued-functions-and-their-16-2-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-16-2-1-1-2">
+<div class="para" id="sec-real-valued-functions-and-their-16-2-1-1-2-1">
+<span class="process-math">\((g \circ f)(x) = g(f(x)) = \frac{2}{\frac{x}{x + 1} - 1} = - 2x - 2\text{.}\)</span> Since <span class="process-math">\(x\)</span> must first be an input into <span class="process-math">\(f(x)\)</span> and so must be in the domain of <span class="process-math">\(f\text{,}\)</span> we see that <span class="process-math">\(\text{Dom}(g \circ f) = \left\{ x:x \neq - 1 \right\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-16-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#sec-real-valued-functions-and-their-16-2-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-16-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.8.1"><a href="#sec-real-valued-functions-and-their-16-2" title="Copy heading and permalink for Solution 3.2.8.1" aria-label="Copy heading and permalink for Solution 3.2.8.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.2.8"><a href="#sec-real-valued-functions-and-their-16" title="Copy heading and permalink for Example 3.2.8" aria-label="Copy heading and permalink for Example 3.2.8">🔗</a></div></article><article class="example example-like" id="sec-real-valued-functions-and-their-17"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec-real-valued-functions-and-their-17-1-1">Let <span class="process-math">\(f(x) = \frac{6x}{x^{2} - 9}\)</span> and <span class="process-math">\(g(x) = \sqrt{3x}\text{.}\)</span> Find <span class="process-math">\((f \circ g)(\text{12})\)</span> and <span class="process-math">\((g \circ f)(x)\)</span> and its domain.<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-17-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-real-valued-functions-and-their-17-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec-real-valued-functions-and-their-17-2-1">We have <span class="process-math">\((f \circ g)(\text{12}) = f(g(\text{12})) = f(\sqrt{\text{36}}) = f(6) = \frac{\text{36}}{\text{27}} = \frac{4}{3}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-17-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-17-2-2">
+<span class="process-math">\((f \circ g)(x) = f(g(x)) = f(\sqrt{3x}) = \frac{6\sqrt{3x}}{(\sqrt{3x})^{2} - 9} = \frac{6\sqrt{3x}}{3x - 9} = \frac{2\sqrt{3x}}{x - 3}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-17-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-17-2-3">The domain of <span class="process-math">\(f \circ g\)</span> is <span class="process-math">\(\lbrack [0,3) \cup (3,\infty)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-17-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-real-valued-functions-and-their-17-2-4">We now explore the meaning of equality of two functions. Let <span class="process-math">\(f:A \rightarrow B\)</span> and <span class="process-math">\(g:A \rightarrow B\)</span> be two functions. Then, <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are subsets of <span class="process-math">\(A \times B\text{.}\)</span> Suppose <span class="process-math">\(f = g\text{.}\)</span> Let <span class="process-math">\(x\)</span> be any element of <span class="process-math">\(A\text{.}\)</span> Then, <span class="process-math">\((x,f(x)) \in f = g\)</span> and thus <span class="process-math">\((x,f(x)) \in g\text{.}\)</span> Since <span class="process-math">\(g\)</span> is a function and <span class="process-math">\((x,f(x)),\)</span><span class="process-math">\((x,g(x)) \in g\text{,}\)</span> we must have <span class="process-math">\(f(x) = g(x)\text{.}\)</span> Conversely, assume that <span class="process-math">\(g(x) = f(x)\)</span> for all <span class="process-math">\(x \in A\text{.}\)</span> Let <span class="process-math">\((x,y) \in f\text{.}\)</span> Then, <span class="process-math">\(y = f(x) = g(x)\text{.}\)</span> Thus, <span class="process-math">\((x,y) \in g\text{,}\)</span> which implies that <span class="process-math">\(f \subseteq g\text{.}\)</span> Similarly, we can show that <span class="process-math">\(g \subseteq f\text{.}\)</span> It now follows that <span class="process-math">\(f = g\text{.}\)</span> Thus two functions <span class="process-math">\(f:A \rightarrow B\)</span> and <span class="process-math">\(g:A \rightarrow B\)</span> are equal if and only if <span class="process-math">\(f(x) = g(x)\)</span> for all <span class="process-math">\(x \in A\text{.}\)</span> In general we have the following definition.<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-17-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.2.9.1"><a href="#sec-real-valued-functions-and-their-17-2" title="Copy heading and permalink for Solution 3.2.9.1" aria-label="Copy heading and permalink for Solution 3.2.9.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 3.2.9"><a href="#sec-real-valued-functions-and-their-17" title="Copy heading and permalink for Example 3.2.9" aria-label="Copy heading and permalink for Example 3.2.9">🔗</a></div></article><article class="definition definition-like" id="def-Equality-of-functions"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="def-Equality-of-functions-1-1">Two functions are said to be equal if and only if the following two conditions hold:<div class="autopermalink" data-description="Paragraph"><a href="#def-Equality-of-functions-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="def-Equality-of-functions-1-2">
+<ol class="lower-roman ol-marker-11" id="def-Equality-of-functions-1-2-1">
+<li id="def-Equality-of-functions-1-2-1-1">
+<div class="para" id="def-Equality-of-functions-1-2-1-1-1">The functions have the same domain;<div class="autopermalink" data-description="Paragraph"><a href="#def-Equality-of-functions-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item i"><a href="#def-Equality-of-functions-1-2-1-1" title="Copy heading and permalink for Item i" aria-label="Copy heading and permalink for Item i">🔗</a></div>
+</li>
+<li id="def-Equality-of-functions-1-2-1-2">
+<div class="para" id="def-Equality-of-functions-1-2-1-2-1">Their functional values are equal at each element of the domain.<div class="autopermalink" data-description="Paragraph"><a href="#def-Equality-of-functions-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item ii"><a href="#def-Equality-of-functions-1-2-1-2" title="Copy heading and permalink for Item ii" aria-label="Copy heading and permalink for Item ii">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-Equality-of-functions-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 3.2.10"><a href="#def-Equality-of-functions" title="Copy heading and permalink for Definition 3.2.10" aria-label="Copy heading and permalink for Definition 3.2.10">🔗</a></div></article><article class="example example-like" id="sec-real-valued-functions-and-their-19"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="sec-real-valued-functions-and-their-19-1-1">
+<ol class="decimal" id="sec-real-valued-functions-and-their-19-1-1-1">
+<li id="sec-real-valued-functions-and-their-19-1-1-1-1">
+<div class="para" id="sec-real-valued-functions-and-their-19-1-1-1-1-1">Let <span class="process-math">\(f:Z \rightarrow Z^{+} \cup \left\{ 0 \right\}\)</span> and <span class="process-math">\(g:Z \rightarrow Z^{+} \cup \left\{ 0 \right\}\)</span> be defined by <span class="process-math">\(f = \left\{ (n,n^{2}):n \in Z \right\}\)</span> and <span class="process-math">\(g = \left\{ (n,\left| n \right|^{2}):n \in Z \right\}\text{.}\)</span> Now, for all <span class="process-math">\(n \in Z\text{,}\)</span> <span class="process-math">\(f(n) = n^{2} = \left| n \right|^{2} = g(n)\text{.}\)</span> Thus, <span class="process-math">\(f = g\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-19-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec-real-valued-functions-and-their-19-1-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec-real-valued-functions-and-their-19-1-1-1-2">
+<div class="para" id="sec-real-valued-functions-and-their-19-1-1-1-2-1">Let <span class="process-math">\(f(x) = \frac{x^{2} - \text{25}}{x - 5},\ x \in \Re\{ 5\text{,}\)</span> and <span class="process-math">\(g(x) = x + 5,\ x \in \Re\text{.}\)</span> The function <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are not equal because <span class="process-math">\(\text{Dom}(f) \neq \text{Dom}(g)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-19-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec-real-valued-functions-and-their-19-1-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-real-valued-functions-and-their-19-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.2.11"><a href="#sec-real-valued-functions-and-their-19" title="Copy heading and permalink for Example 3.2.11" aria-label="Copy heading and permalink for Example 3.2.11">🔗</a></div></article><section class="exercises" id="exercises-Real-Valued-functions-and-their-properties"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="exercises-Real-Valued-functions-and-their-properties-1"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-1-1-1">For <span class="process-math">\(f(x) = x^{2} + x\)</span> and <span class="process-math">\(g(x) = \frac{2}{x + 3}\text{,}\)</span> find each value:<div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel top" style="width:100%;"><div class="para logical" id="exercises-Real-Valued-functions-and-their-properties-1-1-2-1">
+<ol class="lower-alpha ol-marker-10" id="exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1">
+<li id="exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-1">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-1-1">
+<span class="process-math">\(\displaystyle (f - g)(2)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.1.a"><a href="#exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-1" title="Copy heading and permalink for Item 3.2.1.a" aria-label="Copy heading and permalink for Item 3.2.1.a">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-2">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-2-1">
+<span class="process-math">\(\displaystyle \left( \frac{f}{g} \right)(1)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.1.b"><a href="#exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-2" title="Copy heading and permalink for Item 3.2.1.b" aria-label="Copy heading and permalink for Item 3.2.1.b">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-3">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-3-1">
+<span class="process-math">\(\displaystyle g^{2}(3)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.1.c"><a href="#exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-3" title="Copy heading and permalink for Item 3.2.1.c" aria-label="Copy heading and permalink for Item 3.2.1.c">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-4">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-4-1">
+<span class="process-math">\(\displaystyle (f \circ g)(1)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.1.d"><a href="#exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-4" title="Copy heading and permalink for Item 3.2.1.d" aria-label="Copy heading and permalink for Item 3.2.1.d">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-5">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-5-1">
+<span class="process-math">\(\displaystyle (g \circ f)(1)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.1.e"><a href="#exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-5" title="Copy heading and permalink for Item 3.2.1.e" aria-label="Copy heading and permalink for Item 3.2.1.e">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-6">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-6-1">
+<span class="process-math">\(\displaystyle (g \circ g)(3)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.1.f"><a href="#exercises-Real-Valued-functions-and-their-properties-1-1-2-1-1-6" title="Copy heading and permalink for Item 3.2.1.f" aria-label="Copy heading and permalink for Item 3.2.1.f">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div></div></div>
+<div class="autopermalink" data-description="Exercise 3.2.1"><a href="#exercises-Real-Valued-functions-and-their-properties-1" title="Copy heading and permalink for Exercise 3.2.1" aria-label="Copy heading and permalink for Exercise 3.2.1">🔗</a></div></article><article class="exercise exercise-like" id="exercises-Real-Valued-functions-and-their-properties-2"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-2-1-1">If <span class="process-math">\(f(x) = x^{3} + 2\)</span> and <span class="process-math">\(g(x) = \frac{2}{x - 1}\text{,}\)</span> find a formula for each of the following and state its domain.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="exercises-Real-Valued-functions-and-their-properties-2-1-2">
+<ol class="lower-alpha ol-marker-10" id="exercises-Real-Valued-functions-and-their-properties-2-1-2-1">
+<li id="exercises-Real-Valued-functions-and-their-properties-2-1-2-1-1">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-2-1-2-1-1-1">
+<span class="process-math">\(\displaystyle (f + g)(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-2-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.2.a"><a href="#exercises-Real-Valued-functions-and-their-properties-2-1-2-1-1" title="Copy heading and permalink for Item 3.2.2.a" aria-label="Copy heading and permalink for Item 3.2.2.a">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-2-1-2-1-2">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-2-1-2-1-2-1">
+<span class="process-math">\(\displaystyle (f \circ g)(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-2-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.2.b"><a href="#exercises-Real-Valued-functions-and-their-properties-2-1-2-1-2" title="Copy heading and permalink for Item 3.2.2.b" aria-label="Copy heading and permalink for Item 3.2.2.b">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-2-1-2-1-3">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-2-1-2-1-3-1">
+<span class="process-math">\(\displaystyle \left( \frac{g}{f} \right)(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-2-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.2.c"><a href="#exercises-Real-Valued-functions-and-their-properties-2-1-2-1-3" title="Copy heading and permalink for Item 3.2.2.c" aria-label="Copy heading and permalink for Item 3.2.2.c">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-2-1-2-1-4">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-2-1-2-1-4-1">
+<span class="process-math">\(\displaystyle (g \circ f)(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-2-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.2.d"><a href="#exercises-Real-Valued-functions-and-their-properties-2-1-2-1-4" title="Copy heading and permalink for Item 3.2.2.d" aria-label="Copy heading and permalink for Item 3.2.2.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.2"><a href="#exercises-Real-Valued-functions-and-their-properties-2" title="Copy heading and permalink for Exercise 3.2.2" aria-label="Copy heading and permalink for Exercise 3.2.2">🔗</a></div></article><article class="exercise exercise-like" id="exercises-Real-Valued-functions-and-their-properties-3"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-3-1-1">Let <span class="process-math">\(f(x) = x^{2}\)</span> and <span class="process-math">\(g(x) = \sqrt{x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="exercises-Real-Valued-functions-and-their-properties-3-1-2">
+<ol class="lower-alpha lower-alpha-level-1" id="exercises-Real-Valued-functions-and-their-properties-3-1-2-1">
+<li id="exercises-Real-Valued-functions-and-their-properties-3-1-2-1-1">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-3-1-2-1-1-1">Find <span class="process-math">\((f \circ g)(x)\)</span> and its domain.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-3-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.3.a"><a href="#exercises-Real-Valued-functions-and-their-properties-3-1-2-1-1" title="Copy heading and permalink for Item 3.2.3.a" aria-label="Copy heading and permalink for Item 3.2.3.a">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-3-1-2-1-2">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-3-1-2-1-2-1">Find <span class="process-math">\((g \circ f)(x)\)</span> and its domain<div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-3-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.3.b"><a href="#exercises-Real-Valued-functions-and-their-properties-3-1-2-1-2" title="Copy heading and permalink for Item 3.2.3.b" aria-label="Copy heading and permalink for Item 3.2.3.b">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-3-1-2-1-3">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-3-1-2-1-3-1">Are <span class="process-math">\((f \circ g)(x)\)</span> and <span class="process-math">\((g \circ f)(x)\)</span> the same functions? Explain.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-3-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.3.c"><a href="#exercises-Real-Valued-functions-and-their-properties-3-1-2-1-3" title="Copy heading and permalink for Item 3.2.3.c" aria-label="Copy heading and permalink for Item 3.2.3.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.3"><a href="#exercises-Real-Valued-functions-and-their-properties-3" title="Copy heading and permalink for Exercise 3.2.3" aria-label="Copy heading and permalink for Exercise 3.2.3">🔗</a></div></article><article class="exercise exercise-like" id="exercises-Real-Valued-functions-and-their-properties-4"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-4-1-1">Let <span class="process-math">\(f(x) = 5x - 3\text{.}\)</span> Find <span class="process-math">\(g(x)\)</span> so that <span class="process-math">\((f \circ g)(x) = 2x + 7\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.4"><a href="#exercises-Real-Valued-functions-and-their-properties-4" title="Copy heading and permalink for Exercise 3.2.4" aria-label="Copy heading and permalink for Exercise 3.2.4">🔗</a></div></article><article class="exercise exercise-like" id="exercises-Real-Valued-functions-and-their-properties-5"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-5-1-1">Let <span class="process-math">\(f(x) = 2x + 1\text{.}\)</span> Find <span class="process-math">\(g(x)\)</span> so that <span class="process-math">\((f \circ g)(x) = 3x - 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.5"><a href="#exercises-Real-Valued-functions-and-their-properties-5" title="Copy heading and permalink for Exercise 3.2.5" aria-label="Copy heading and permalink for Exercise 3.2.5">🔗</a></div></article><article class="exercise exercise-like" id="exercises-Real-Valued-functions-and-their-properties-6"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-6-1-1">If <span class="process-math">\(f\)</span> is a real function defined by <span class="process-math">\(f(x) = \frac{x - 1}{x + 1}\text{.}\)</span> Show that <span class="process-math">\(f(2x) = \frac{3f(x) + 1}{f(x) + 3}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.6"><a href="#exercises-Real-Valued-functions-and-their-properties-6" title="Copy heading and permalink for Exercise 3.2.6" aria-label="Copy heading and permalink for Exercise 3.2.6">🔗</a></div></article><article class="exercise exercise-like" id="exercises-Real-Valued-functions-and-their-properties-7"><h4 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-7-1-1">Find two functions <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> so that the given function <span class="process-math">\(h(x) = (f \circ g)(x)\text{,}\)</span> where<div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="exercises-Real-Valued-functions-and-their-properties-7-1-2">
+<ol class="lower-alpha ol-marker-10" id="exercises-Real-Valued-functions-and-their-properties-7-1-2-1">
+<li id="exercises-Real-Valued-functions-and-their-properties-7-1-2-1-1">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-7-1-2-1-1-1">
+<span class="process-math">\(\displaystyle h(x) = (x + 3)^{3}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-7-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.7.a"><a href="#exercises-Real-Valued-functions-and-their-properties-7-1-2-1-1" title="Copy heading and permalink for Item 3.2.7.a" aria-label="Copy heading and permalink for Item 3.2.7.a">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-7-1-2-1-2">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-7-1-2-1-2-1">
+<span class="process-math">\(\displaystyle h(x) = \sqrt{5x - 3}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-7-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.7.b"><a href="#exercises-Real-Valued-functions-and-their-properties-7-1-2-1-2" title="Copy heading and permalink for Item 3.2.7.b" aria-label="Copy heading and permalink for Item 3.2.7.b">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-7-1-2-1-3">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-7-1-2-1-3-1">
+<span class="process-math">\(\displaystyle h(x) = \frac{1}{x} + 6\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-7-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.7.c"><a href="#exercises-Real-Valued-functions-and-their-properties-7-1-2-1-3" title="Copy heading and permalink for Item 3.2.7.c" aria-label="Copy heading and permalink for Item 3.2.7.c">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-7-1-2-1-4">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-7-1-2-1-4-1">
+<span class="process-math">\(\displaystyle h(x) = \frac{1}{x + 6}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-7-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.7.d"><a href="#exercises-Real-Valued-functions-and-their-properties-7-1-2-1-4" title="Copy heading and permalink for Item 3.2.7.d" aria-label="Copy heading and permalink for Item 3.2.7.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.7"><a href="#exercises-Real-Valued-functions-and-their-properties-7" title="Copy heading and permalink for Exercise 3.2.7" aria-label="Copy heading and permalink for Exercise 3.2.7">🔗</a></div></article><article class="exercise exercise-like" id="exercises-Real-Valued-functions-and-their-properties-8"><h4 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-8-1-1">Let <span class="process-math">\(f(x) = 4x - 3,\ g(x) = \frac{1}{x}\)</span> and <span class="process-math">\(h(x) = x^{2} - x\text{.}\)</span> Find<div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="exercises-Real-Valued-functions-and-their-properties-8-1-2">
+<ol class="lower-alpha ol-marker-10" id="exercises-Real-Valued-functions-and-their-properties-8-1-2-1">
+<li id="exercises-Real-Valued-functions-and-their-properties-8-1-2-1-1">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-8-1-2-1-1-1">
+<span class="process-math">\(\displaystyle f(5x + 7)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-8-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.8.a"><a href="#exercises-Real-Valued-functions-and-their-properties-8-1-2-1-1" title="Copy heading and permalink for Item 3.2.8.a" aria-label="Copy heading and permalink for Item 3.2.8.a">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-8-1-2-1-2">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-8-1-2-1-2-1">
+<span class="process-math">\(\displaystyle 5f(x) + 7\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-8-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.8.b"><a href="#exercises-Real-Valued-functions-and-their-properties-8-1-2-1-2" title="Copy heading and permalink for Item 3.2.8.b" aria-label="Copy heading and permalink for Item 3.2.8.b">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-8-1-2-1-3">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-8-1-2-1-3-1">
+<span class="process-math">\(\displaystyle f(g(h(3)))\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-8-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.8.c"><a href="#exercises-Real-Valued-functions-and-their-properties-8-1-2-1-3" title="Copy heading and permalink for Item 3.2.8.c" aria-label="Copy heading and permalink for Item 3.2.8.c">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-8-1-2-1-4">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-8-1-2-1-4-1">
+<span class="process-math">\(\displaystyle f(1) \cdot g(2) \cdot h(3)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-8-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.8.d"><a href="#exercises-Real-Valued-functions-and-their-properties-8-1-2-1-4" title="Copy heading and permalink for Item 3.2.8.d" aria-label="Copy heading and permalink for Item 3.2.8.d">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-8-1-2-1-5">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-8-1-2-1-5-1">
+<span class="process-math">\(\displaystyle f(x + a)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-8-1-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.8.e"><a href="#exercises-Real-Valued-functions-and-their-properties-8-1-2-1-5" title="Copy heading and permalink for Item 3.2.8.e" aria-label="Copy heading and permalink for Item 3.2.8.e">🔗</a></div>
+</li>
+<li id="exercises-Real-Valued-functions-and-their-properties-8-1-2-1-6">
+<div class="para" id="exercises-Real-Valued-functions-and-their-properties-8-1-2-1-6-1">
+<span class="process-math">\(\displaystyle f(x) + a\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-8-1-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2.8.f"><a href="#exercises-Real-Valued-functions-and-their-properties-8-1-2-1-6" title="Copy heading and permalink for Item 3.2.8.f" aria-label="Copy heading and permalink for Item 3.2.8.f">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-Real-Valued-functions-and-their-properties-8-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 3.2.8"><a href="#exercises-Real-Valued-functions-and-their-properties-8" title="Copy heading and permalink for Exercise 3.2.8" aria-label="Copy heading and permalink for Exercise 3.2.8">🔗</a></div></article><div class="autopermalink" data-description="Exercises 3.2"><a href="#exercises-Real-Valued-functions-and-their-properties" title="Copy heading and permalink for Exercises 3.2" aria-label="Copy heading and permalink for Exercises 3.2">🔗</a></div></section><details id="sec-real-valued-functions-and-their-21" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReal-valued-functions-and-their-properties%2FDomain-and-Range-of-a-Function_3.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-real-valued-functions-and-their.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="sec-real-valued-functions-and-their-21-3"><summary class="ptx-footnote__number" title="Footnote 3.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-real-valued-functions-and-their-21-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReal-valued-functions-and-their-properties%2FDomain-and-Range-of-a-Function_3.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-real-valued-functions-and-their.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 3.2.12"><a href="#sec-real-valued-functions-and-their-21" title="Copy heading and permalink for Checkpoint 3.2.12" aria-label="Copy heading and permalink for Checkpoint 3.2.12">🔗</a></div></article></details><details id="sec-real-valued-functions-and-their-22" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReal-valued-functions-and-their-properties%2FDomain-and-Range-of-a-Function_2.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-real-valued-functions-and-their.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="sec-real-valued-functions-and-their-22-3"><summary class="ptx-footnote__number" title="Footnote 3.2.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="sec-real-valued-functions-and-their-22-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReal-valued-functions-and-their-properties%2FDomain-and-Range-of-a-Function_2.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-real-valued-functions-and-their.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 3.2.13"><a href="#sec-real-valued-functions-and-their-22" title="Copy heading and permalink for Checkpoint 3.2.13" aria-label="Copy heading and permalink for Checkpoint 3.2.13">🔗</a></div></article></details><details id="sec-real-valued-functions-and-their-23" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReal-valued-functions-and-their-properties%2FDomain-and-Range-of-a-Function.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-real-valued-functions-and-their.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="sec-real-valued-functions-and-their-23-3"><summary class="ptx-footnote__number" title="Footnote 3.2.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="sec-real-valued-functions-and-their-23-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReal-valued-functions-and-their-properties%2FDomain-and-Range-of-a-Function.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-real-valued-functions-and-their.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 3.2.14"><a href="#sec-real-valued-functions-and-their-23" title="Copy heading and permalink for Checkpoint 3.2.14" aria-label="Copy heading and permalink for Checkpoint 3.2.14">🔗</a></div></article></details><details id="sec-real-valued-functions-and-their-24" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.2.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReal-valued-functions-and-their-properties%2FComposition-of-Functions.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-real-valued-functions-and-their.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="sec-real-valued-functions-and-their-24-3"><summary class="ptx-footnote__number" title="Footnote 3.2.4"><sup> 4 </sup></summary><div class="ptx-footnote__contents" id="sec-real-valued-functions-and-their-24-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReal-valued-functions-and-their-properties%2FComposition-of-Functions.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-real-valued-functions-and-their.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 3.2.15"><a href="#sec-real-valued-functions-and-their-24" title="Copy heading and permalink for Checkpoint 3.2.15" aria-label="Copy heading and permalink for Checkpoint 3.2.15">🔗</a></div></article></details><div class="autopermalink" data-description="Section 3.2: Real Valued functions and their properties"><a href="#sec-real-valued-functions-and-their" title="Copy heading and permalink for Section 3.2: Real Valued functions and their properties" aria-label="Copy heading and permalink for Section 3.2: Real Valued functions and their properties">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-review-of-relations-and-functions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-types-of-functions-and-inverse.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

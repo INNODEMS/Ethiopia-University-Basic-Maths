@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN"
+"http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+<svg width="768" height="415"
+	xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+<desc>wmf2svg</desc>
+<line x1="544.660400" y1="329.277069" x2="565.553467" y2="316.154572" 
+	style="stroke-width:6.932738; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:none; stroke:black" />
+<line x1="565.553467" y1="320.255371" x2="595.812378" y2="381.767212" 
+	style="stroke-width:13.865477; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:none; stroke:black" />
+<line x1="598.694153" y1="381.767212" x2="638.318909" y2="198.871948" 
+	style="stroke-width:6.932738; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:none; stroke:black" />
+<line x1="638.318909" y1="198.871948" x2="739.181946" y2="198.871948" 
+	style="stroke-width:6.932738; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:none; stroke:black" />
+<line x1="518.724182" y1="168.526093" x2="762.236389" y2="168.526093" 
+	style="stroke-width:12.324867; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:none; stroke:black" />
+<text x="0" y="0" style="font-family:Times; font-style:normal; font-weight:normal; font-size:183.715424; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 654.168884 372.745483)"
+	>6</text>
+<text x="0" y="0" style="font-family:Times; font-style:normal; font-weight:normal; font-size:183.715424; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 600.855530 141.460876)"
+	>1</text>
+<text x="0" y="0" style="font-family:Times; font-style:normal; font-weight:normal; font-size:183.715424; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 367.429657 325.996460)"
+	>6</text>
+<text x="0" y="0" style="font-family:Times; font-style:normal; font-weight:normal; font-size:314.940735; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 0.000000 247.261276)"
+	>log</text>
+</svg>

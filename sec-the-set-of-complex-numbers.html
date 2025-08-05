@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette: leaves                       *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The set of complex numbers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="BASIC MATHEMATICS FOR NATURAL SCIENCES">
+<meta property="book:author" content="">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.9.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.879b99e54406967d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="basic-maths-for-natural-sciences.html"><span class="title">BASIC MATHEMATICS FOR NATURAL SCIENCES</span> <span class="subtitle">UNDERGRADUATE STUDENT TEXTBOOK</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-the-real-number-system.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="the-real-and-complex-number-systems.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="basic-maths-for-natural-sciences-6.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="basic-maths-for-natural-sciences-4.html" class="internal"><span class="codenumber">1</span> <span class="title">Propositional Logic and Set Theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="propositional-logic.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Propositional Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="propositional-logic.html#definition-and-examples-of-propositions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Definition and examples of propositions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="propositional-logic.html#logical-connectives" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Logical connectives</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="propositional-logic.html#exercises-logical-connectives" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="propositional-logic.html#compound-or-complex-propositions" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Compound (or complex) propositions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="propositional-logic.html#tautology-and-contradiction" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Tautology and contradiction</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="propositional-logic.html#exercises-tautology-and-contradiction" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="open-propositions-and-quantifiers.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Open propositions and quantifiers</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="open-propositions-and-quantifiers.html#exercises-open-propositions-and-quantifiers" class="internal"><span class="codenumber">1.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-argument-and-validity.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Argument and Validity</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-set-theory.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Set theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set-theory.html#subsec-the-concept-of-a-set" class="internal"><span class="codenumber">1.4.1</span> <span class="title">The concept of a set</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-set-theory.html#subsec-description-of-sets" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Description of Sets</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-set-theory.html#exercises-description-of-sets" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-set-theory.html#subsec-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Set Operations and Venn diagrams</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-set-theory.html#exercises-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-description-of-sets.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Description of sets</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-description-of-sets.html#subsec-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Set Operations and Venn diagrams</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="the-real-and-complex-number-systems.html" class="internal"><span class="codenumber">2</span> <span class="title">The Real and Complex Number Systems</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html" class="internal"><span class="codenumber">2.1</span> <span class="title">The real number System</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The set of natural numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Operations on the set of natural numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-oder-relation-N" class="internal"><span class="codenumber">2.1.1.2</span> <span class="title">Order Relation in <span class="process-math">\(\mathbf{N}\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-factors-of-a-number" class="internal"><span class="codenumber">2.1.1.3</span> <span class="title">Factors of a number</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-prime-factorization" class="internal"><span class="codenumber">2.1.1.4</span> <span class="title">Prime Factorization</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-greatest-common-factor" class="internal"><span class="codenumber">2.1.1.5</span> <span class="title">Greatest Common Factor (GCF)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-lcm" class="internal"><span class="codenumber">2.1.1.6</span> <span class="title">Least Common Multiple (LCM)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-well-ordering-principle-in-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1.7</span> <span class="title">Well ordering Principle in the set of natural numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-principle-of-mathematical-induction" class="internal"><span class="codenumber">2.1.1.8</span> <span class="title">Principle of Mathematical Induction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-integers" class="internal"><span class="codenumber">2.1.2</span> <span class="title">The set of Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers" class="internal"><span class="codenumber">2.1.2.1</span> <span class="title">Operations on the set of integers</span></a></div></li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-z" class="internal"><span class="codenumber">2.1.2.2</span> <span class="title">Order Relation in Z</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-real-number-system.html#exercises-sets-of-integers" class="internal"><span class="codenumber">2.1.2.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-rational-numbers" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The set of rational numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-rational-numbers" class="internal"><span class="codenumber">2.1.3.1</span> <span class="title">Operations on the set of rational numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-q" class="internal"><span class="codenumber">2.1.3.2</span> <span class="title">Order Relation in Q</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-decimal-representation-of-rational-numbers" class="internal"><span class="codenumber">2.1.3.3</span> <span class="title">Decimal representation of rational numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-fraction-form-of-decimal-numbers" class="internal"><span class="codenumber">2.1.3.4</span> <span class="title">Fraction form of decimal numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-non-terminating-and-non-periodic-decimals" class="internal"><span class="codenumber">2.1.3.5</span> <span class="title">Non-terminating and non-periodic decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-real-numbers" class="internal"><span class="codenumber">2.1.4</span> <span class="title">The set of real numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-real-numbers" class="internal"><span class="codenumber">2.1.4.1</span> <span class="title">Operations on the set of real numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-the-real-number-and-the-number-line" class="internal"><span class="codenumber">2.1.4.2</span> <span class="title">The real number and the number line</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-r" class="internal"><span class="codenumber">2.1.4.3</span> <span class="title">Order Relation in R</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-intervals" class="internal"><span class="codenumber">2.1.4.4</span> <span class="title">Intervals</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-upper-bounds-and-lower-bounds" class="internal"><span class="codenumber">2.1.4.5</span> <span class="title">Upper bounds and lower bounds</span></a></div></li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-completeness-property-of-real-number" class="internal"><span class="codenumber">2.1.4.6</span> <span class="title">Completeness property of real number (R)</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-real-number-system.html#exercises-real-number" class="internal"><span class="codenumber">2.1.4.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The set of complex numbers</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-plotting-complex-numbers" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Plotting complex numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-operations-on-complex-numbers" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Operations on Complex numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-conjugate-of-a-complex-number" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Conjugate of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-modulus-norm-of-a-complex" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Modulus (Norm) of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-additive-and-multiplicative-inverses" class="internal"><span class="codenumber">2.2.5</span> <span class="title">Additive and multiplicative inverses</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-argument-amplitude-of-a-complex" class="internal"><span class="codenumber">2.2.6</span> <span class="title">Argument (Amplitude) of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex" class="internal"><span class="codenumber">2.2.7</span> <span class="title">Polar form of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-extraction-of-roots" class="internal"><span class="codenumber">2.2.8</span> <span class="title">Extraction of roots</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="basic-maths-for-natural-sciences-6.html" class="internal"><span class="codenumber">3</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-review-of-relations-and-functions.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Review of relations and functions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-review-of-relations-and-functions.html#exercises-Review-of-relations-and-functions" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-real-valued-functions-and-their.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Real Valued functions and their properties</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-real-valued-functions-and-their.html#exercises-Real-Valued-functions-and-their-properties" class="internal"><span class="codenumber">3.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-types-of-functions-and-inverse.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Types of functions and inverse of a function</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-polynomials-zeros-of-polynomials-rational.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Polynomials, zeros of polynomials, rational functions and their graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-definition-and-basic-properties-of.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Definition and basic properties of logarithmic, exponential, trigonometric and hyperbolic functions and their graphs</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions" class="internal"><span class="codenumber">3.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="analytic-geometry.html" class="internal"><span class="codenumber">4</span> <span class="title">Analytic Geometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Distance Formula and Equation of Lines</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-distance-between-two-points-and" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Distance between two points and division of segments</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#exercises-distance-between-two-points-and" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-equations-of-lines" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Equations of lines</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#exercises-equations-of-lines" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-distance-between-a-point-and" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Distance between a point and a line</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#exercises-distance_between_a_point" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-circles.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Circles</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-definition-of-a-circle" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Definition of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-equation-of-a-circle" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Equation of a Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-circles.html#subsec-intersection-of-a-circle-with" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Intersection of a circle with a line and tangent line to a circle</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-parabolas.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Parabolas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-parabolas.html#subsec-definition-of-a-parabola" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Definition of a Parabola</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-parabolas.html#exercises-definition-of-a-parabola" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-parabolas.html#subsec-equation-of-parabolas" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Equation of Parabolas</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-parabolas.html#subsec-equation-of-parabolas-26" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ellipses.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Ellipses</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ellipses.html#subsec-definition-of-an-ellipse" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Definition of an Ellipse</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ellipses.html#subsec-equation-of-an-ellipse" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Equation of an Ellipse</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyperbolas.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Hyperbolas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-hyperbolas.html#subsec-definition-of-a-hyperbola" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Definition of a hyperbola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-hyperbolas.html#subsec-equation-of-a-hyperbola" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Equation of a hyperbola</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html" class="internal"><span class="codenumber">4.6</span> <span class="title">The General Second Degree Equation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#subsec-rotation-of-coordinate-axes" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Rotation of Coordinate Axes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#exercises-rotation-of-coordinate-axes" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#subsec-analysis-of-the-general-second" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Analysis of the General Second Degree Equations</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="basic-maths-for-natural-sciences-8.html" class="internal"><span class="codenumber">5</span> <span class="title">References</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-the-set-of-complex-numbers"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The set of complex numbers</span>
+</h2>
+<section class="introduction" id="sec-the-set-of-complex-numbers-2"><div class="para" id="sec-the-set-of-complex-numbers-2-1">The positive integers (natural numbers) were invented to count things. The negative integers were introduced to count money when we owed more than we had. The rational numbers were invented for measuring quantities. Since quantities like voltage, length and time can be measured using fractions, they can be measured using the rational numbers.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-set-of-complex-numbers-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-the-set-of-complex-numbers-2-2">The real numbers were invented for wholly mathematical reasons: it was found that there were lengths such as the diagonal of the unit square which, in principle, couldn’t be measured by the rational numbers, instead they can be measured using real numbers.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-set-of-complex-numbers-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-the-set-of-complex-numbers-2-3">The complex numbers were invented for purely mathematical reasons, just like the real numbers and were intended to make things neat and tidy in solving equations. They were regarded with deep suspicion by the more conservative folk for a century. Complex numbers are points in the plane, together with a rule telling you how to multiply them. They are two-dimensional, whereas the real numbers are one dimensional.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-set-of-complex-numbers-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-the-set-of-complex-numbers-2-4">Equations of the form <span class="process-math">\(x^{2} + 1 = 0\)</span>has no solution on the set of real numbers. Therefore, the set of complex numbers permits us to solve such equations.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-set-of-complex-numbers-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-the-set-of-complex-numbers"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="def-the-set-of-complex-numbers-1-1">The set of complex numbers is denoted by <span class="process-math">\(\mathbb{C}\)</span> and is described by <span class="process-math">\(\mathbb{C} = \left\{ \ \frac{z}{z} = x + \text{iy},\ x,\ y \in \Re\ \text{and}\ i^{2} = - 1\  \right\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-the-set-of-complex-numbers-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.2.1"><a href="#def-the-set-of-complex-numbers" title="Copy heading and permalink for Definition 2.2.1" aria-label="Copy heading and permalink for Definition 2.2.1">🔗</a></div></article><div class="para" id="sec-the-set-of-complex-numbers-2-6">Note: If <span class="process-math">\(x = 0\text{,}\)</span> the number is called purely imaginary and if <span class="process-math">\(y = 0\text{,}\)</span> the number is called purely real.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-set-of-complex-numbers-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-the-set-of-complex-numbers-2-7">Complex numbers can be defined as an order pair <span class="process-math">\((x, y)\)</span> of real numbers that can be interpreted as points in the complex plane (z- plane) with coordinates <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-the-set-of-complex-numbers-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sec-the-set-of-complex-numbers-2-8"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec-the-set-of-complex-numbers-2-8-1-1">Find the real <span class="process-math">\(\&amp;\)</span> imaginary part of the following complex numbers :<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-set-of-complex-numbers-2-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-the-set-of-complex-numbers-2-8-1-2">
+<span class="process-math">\(\ \text{(a)}\ \text{z} = 3 + 7i\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-the-set-of-complex-numbers-2-8-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-the-set-of-complex-numbers-2-8-1-3">Solution: real part <span class="process-math">\(= 3\)</span> &amp; imaginary part <span class="process-math">\(= 7\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-the-set-of-complex-numbers-2-8-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-the-set-of-complex-numbers-2-8-1-4">
+<span class="process-math">\(\ \text{(b)}\ \text{z} = 1 - i\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-the-set-of-complex-numbers-2-8-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-the-set-of-complex-numbers-2-8-1-5">Solution: real part <span class="process-math">\(= 1\)</span> &amp; imaginary part <span class="process-math">\(= -1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-the-set-of-complex-numbers-2-8-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.2.2"><a href="#sec-the-set-of-complex-numbers-2-8" title="Copy heading and permalink for Example 2.2.2" aria-label="Copy heading and permalink for Example 2.2.2">🔗</a></div></article></section><section class="subsection" id="subsec-plotting-complex-numbers"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Plotting complex numbers</span>
+</h3>
+<div class="para" id="subsec-plotting-complex-numbers-2">Any complex number <span class="process-math">\(z = x + iy \)</span> can be drawn in the complex plane as below :<div class="autopermalink" data-description="Paragraph"><a href="#subsec-plotting-complex-numbers-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external//media/plottingcn.png" class="contained"></div>
+<article class="example example-like" id="subsec-plotting-complex-numbers-4"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-plotting-complex-numbers-4-1-1">Draw the complex number <span class="process-math">\(z = 2+3i\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-plotting-complex-numbers-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-plotting-complex-numbers-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external//media/image39.png" class="contained"></div>
+<div class="autopermalink" data-description="Solution 2.2.3.1"><a href="#subsec-plotting-complex-numbers-4-2" title="Copy heading and permalink for Solution 2.2.3.1" aria-label="Copy heading and permalink for Solution 2.2.3.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.3"><a href="#subsec-plotting-complex-numbers-4" title="Copy heading and permalink for Example 2.2.3" aria-label="Copy heading and permalink for Example 2.2.3">🔗</a></div></article><div class="para logical" id="subsec-plotting-complex-numbers-5">
+<div class="displaymath process-math">
+\begin{equation*}
+\textbf{Equality of Complex numbers}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-plotting-complex-numbers-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-plotting-complex-numbers-6">Two complex numbers <span class="process-math">\(z_1 = a + ib\)</span> and <span class="process-math">\(z_2 = c + id\)</span> are equal iff <span class="process-math">\(a = c \)</span> &amp; <span class="process-math">\(b = d \text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-plotting-complex-numbers-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsec-plotting-complex-numbers-7"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-plotting-complex-numbers-7-1-1">If <span class="process-math">\(z_1 = 2 + ix\)</span> and <span class="process-math">\(z_2 = y + 6i\)</span> are equal, then find the value of <span class="process-math">\(x\)</span> &amp; <span class="process-math">\(y\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-plotting-complex-numbers-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-plotting-complex-numbers-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-plotting-complex-numbers-7-2-1">
+<span class="process-math">\(x = 6\text{,}\)</span> <span class="process-math">\(y = 2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-plotting-complex-numbers-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.2.4.1"><a href="#subsec-plotting-complex-numbers-7-2" title="Copy heading and permalink for Solution 2.2.4.1" aria-label="Copy heading and permalink for Solution 2.2.4.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.4"><a href="#subsec-plotting-complex-numbers-7" title="Copy heading and permalink for Example 2.2.4" aria-label="Copy heading and permalink for Example 2.2.4">🔗</a></div></article><details id="subsec-plotting-complex-numbers-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FPlotting-complex-numbers%2FPlotting-complex-numbers-on-an-Argand-diagram.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-plotting-complex-numbers.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-plotting-complex-numbers-8-3"><summary class="ptx-footnote__number" title="Footnote 2.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="subsec-plotting-complex-numbers-8-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FPlotting-complex-numbers%2FPlotting-complex-numbers-on-an-Argand-diagram.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-plotting-complex-numbers.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.5"><a href="#subsec-plotting-complex-numbers-8" title="Copy heading and permalink for Checkpoint 2.2.5" aria-label="Copy heading and permalink for Checkpoint 2.2.5">🔗</a></div></article></details><details id="subsec-plotting-complex-numbers-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FPlotting-complex-numbers%2FInterpreting-complex-numbers-on-an-Argand-diagram.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-plotting-complex-numbers.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-plotting-complex-numbers-9-3"><summary class="ptx-footnote__number" title="Footnote 2.2.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="subsec-plotting-complex-numbers-9-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FPlotting-complex-numbers%2FInterpreting-complex-numbers-on-an-Argand-diagram.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-plotting-complex-numbers.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.6"><a href="#subsec-plotting-complex-numbers-9" title="Copy heading and permalink for Checkpoint 2.2.6" aria-label="Copy heading and permalink for Checkpoint 2.2.6">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.2.1: Plotting complex numbers"><a href="#subsec-plotting-complex-numbers" title="Copy heading and permalink for Subsection 2.2.1: Plotting complex numbers" aria-label="Copy heading and permalink for Subsection 2.2.1: Plotting complex numbers">🔗</a></div></section><section class="subsection" id="subsec-operations-on-complex-numbers"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Operations on Complex numbers</span>
+</h3>
+<div class="para" id="subsec-operations-on-complex-numbers-2">
+<em class="alert">Example 2.46</em><span class="process-math">\(\ \text{Let}\ z_{1} = a + ib\ \text{and}\ z_{2} = c + id,\ \text{be}\ \text{any}\ \text{two}\ \text{complex}\ \text{numbers},\ \text{then}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-operations-on-complex-numbers-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-operations-on-complex-numbers-3">
+<span class="process-math">\(\ i)\ z_{1} + z_{2} = (a + c) + i (b + d )\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-operations-on-complex-numbers-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-operations-on-complex-numbers-4">
+<span class="process-math">\(\ ii)\ z_{1} - z_{2} = (a - c) + i (b - d )\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-operations-on-complex-numbers-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-operations-on-complex-numbers-5">
+<span class="process-math">\(\ iii)\ z_{1}\text{.}\ z_{2} = (a + ib) \text{.} (c + id) = a(c + id ) + ib(c + id ) = ac + iad + ibc - bd = (ac - bd ) + i (ad + bc)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-operations-on-complex-numbers-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-operations-on-complex-numbers-6">
+<span class="process-math">\(\ iv)\ \frac{z_{1}}{z_{2}} = \frac{(a + ib)}{(c + id )} \text{,} \ z_2 \neq 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-operations-on-complex-numbers-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsec-operations-on-complex-numbers-7"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-operations-on-complex-numbers-7-1-1">If<span class="process-math">\(\ z_{1} = 2 + 3i\)</span> and <span class="process-math">\(\ z_{2} = 4 + i\text{,}\)</span> then find <span class="process-math">\(a)\ z_{1} + z_{2} \ b)\ \ z_{1} - z_{2}\ \ c)\ z_{1}\text{.}\ z_{2}\ \ d)\ \frac{z_{1}}{z_{2}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-operations-on-complex-numbers-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-operations-on-complex-numbers-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-operations-on-complex-numbers-7-2-1">
+<span class="process-math">\(a )\ z_{1} + z_{2}\ = 6 + 4i\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-operations-on-complex-numbers-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-operations-on-complex-numbers-7-2-2">
+<span class="process-math">\(b )\ \ z_{1} - z_{2}\ \ = - 2 + 2i\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-operations-on-complex-numbers-7-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-operations-on-complex-numbers-7-2-3">
+<span class="process-math">\(c )\ z_{1}\text{.}\ z_{2}\ \ = (2 + 3i )\text{.} (4 + i ) = 8 + 2i + 12i - 3 = 5 + 14i\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-operations-on-complex-numbers-7-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-operations-on-complex-numbers-7-2-4">
+<span class="process-math">\(d)\ \frac{z_{1}}{z_{2}} = \frac{2 + 3i}{4 + i}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-operations-on-complex-numbers-7-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.2.7.1"><a href="#subsec-operations-on-complex-numbers-7-2" title="Copy heading and permalink for Solution 2.2.7.1" aria-label="Copy heading and permalink for Solution 2.2.7.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.7"><a href="#subsec-operations-on-complex-numbers-7" title="Copy heading and permalink for Example 2.2.7" aria-label="Copy heading and permalink for Example 2.2.7">🔗</a></div></article><details id="subsec-operations-on-complex-numbers-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FOperations-on-complex-numbers%2FComplex-Number-Operations-%28multplication-and-division%29.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-operations-on-complex-numbers.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-operations-on-complex-numbers-8-3"><summary class="ptx-footnote__number" title="Footnote 2.2.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="subsec-operations-on-complex-numbers-8-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FOperations-on-complex-numbers%2FComplex-Number-Operations-%28multplication-and-division%29.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-operations-on-complex-numbers.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.8"><a href="#subsec-operations-on-complex-numbers-8" title="Copy heading and permalink for Checkpoint 2.2.8" aria-label="Copy heading and permalink for Checkpoint 2.2.8">🔗</a></div></article></details><details id="subsec-operations-on-complex-numbers-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FOperations-on-complex-numbers%2FComplex-Number-Operations.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-operations-on-complex-numbers.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-operations-on-complex-numbers-9-3"><summary class="ptx-footnote__number" title="Footnote 2.2.4"><sup> 4 </sup></summary><div class="ptx-footnote__contents" id="subsec-operations-on-complex-numbers-9-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FOperations-on-complex-numbers%2FComplex-Number-Operations.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-operations-on-complex-numbers.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.9"><a href="#subsec-operations-on-complex-numbers-9" title="Copy heading and permalink for Checkpoint 2.2.9" aria-label="Copy heading and permalink for Checkpoint 2.2.9">🔗</a></div></article></details><details id="subsec-operations-on-complex-numbers-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FOperations-on-complex-numbers%2FExponent-Simplification-and-Writing-in-the-Form-%28a%5En-b%5Em-%29.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-operations-on-complex-numbers.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-operations-on-complex-numbers-10-3"><summary class="ptx-footnote__number" title="Footnote 2.2.5"><sup> 5 </sup></summary><div class="ptx-footnote__contents" id="subsec-operations-on-complex-numbers-10-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FOperations-on-complex-numbers%2FExponent-Simplification-and-Writing-in-the-Form-%28a%5En-b%5Em-%29.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-operations-on-complex-numbers.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.10"><a href="#subsec-operations-on-complex-numbers-10" title="Copy heading and permalink for Checkpoint 2.2.10" aria-label="Copy heading and permalink for Checkpoint 2.2.10">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.2.2: Operations on Complex numbers"><a href="#subsec-operations-on-complex-numbers" title="Copy heading and permalink for Subsection 2.2.2: Operations on Complex numbers" aria-label="Copy heading and permalink for Subsection 2.2.2: Operations on Complex numbers">🔗</a></div></section><section class="subsection" id="subsec-conjugate-of-a-complex-number"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conjugate of a complex number</span>
+</h3>
+<article class="definition definition-like" id="def-"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def--1-1">The conjugate of a complex number z = x+iy is denoted by <span class="process-math">\(\ \overline{z}\)</span> and is defined as <span class="process-math">\(\ \overline{z}\)</span> = x-iy. It can be represented by the point (x, -y) which is the reflection of the point (x, y) about the x-axis.<div class="autopermalink" data-description="Paragraph"><a href="#def--1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.2.11"><a href="#def-" title="Copy heading and permalink for Definition 2.2.11" aria-label="Copy heading and permalink for Definition 2.2.11">🔗</a></div></article><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external//./media/image40.png" class="contained"></div>
+<article class="example example-like" id="subsec-conjugate-of-a-complex-number-4"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-conjugate-of-a-complex-number-4-1-1">Find the conjugate of the complex number <span class="process-math">\(z = 2+9i\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-conjugate-of-a-complex-number-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-conjugate-of-a-complex-number-4-2-1">
+<span class="process-math">\(\ \ \ \ \ \ z = 2+9i\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-4-2-2">
+<span class="process-math">\(\Rightarrow \overline{z} = 2-9i\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.2.12.1"><a href="#subsec-conjugate-of-a-complex-number-4-2" title="Copy heading and permalink for Solution 2.2.12.1" aria-label="Copy heading and permalink for Solution 2.2.12.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 2.2.12"><a href="#subsec-conjugate-of-a-complex-number-4" title="Copy heading and permalink for Example 2.2.12" aria-label="Copy heading and permalink for Example 2.2.12">🔗</a></div></article><div class="para logical" id="subsec-conjugate-of-a-complex-number-5">
+<div class="displaymath process-math">
+\begin{equation*}
+\textbf{Properties of Conjugate}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-6">
+<span class="process-math">\(a. \overline{\overline{z}} = z\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-7">
+<span class="process-math">\(b. z + \overline{z} = 2x =2Re{(z)} = 2  \left (\frac{z + \overline{z}}{2} \right )\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-8">
+<span class="process-math">\(c. z - \overline{z} = 2iy = 2Im{(z)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-9">
+<span class="process-math">\(d. \overline{z_1 + z_2} = \overline{z_1} + \overline{z_2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-10">
+<span class="process-math">\(e. \overline{z_1 - z_2} = \overline{z_1} - \overline{z_2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-11">
+<span class="process-math">\(f. \overline{z_1 \cdot z_2} = \overline{z_1} \cdot \overline{z_2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-12">
+<span class="process-math">\(g. \overline{({\frac{z_1}{z_2}})} = \frac{\overline{z_1}}{\overline{z_2}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-13"><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-14">proof : a) let <span class="process-math">\(z = x + iy\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-15">
+<span class="process-math">\(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \Rightarrow \overline{z} = x - iy\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-16">
+<span class="process-math">\(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \Rightarrow \overline{\overline{z}} = x + iy = z\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-17">
+<span class="process-math">\(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \therefore \ \overline{\overline{z}} = z\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-18">
+<span class="process-math">\(\ \ \ \ \ \ \ \ \ \ \ \ \ d) \ \text{Let} \ z_{1} = x_{1} + iy_{1} \)</span> &amp; <span class="process-math">\(z_{2} = x_{2} + iy_{2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-19">
+<span class="process-math">\(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \Rightarrow \overline{z_{1}} = x_{1} - iy_{1} \ \ \ \)</span> &amp; <span class="process-math">\(\ \ z_{2} = x_{2} - iy_{2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-20">Now <span class="process-math">\(\overline{z_1 + z_2} = \overline{(x_{1} + iy_{1}) + (x_{2} + iy_{2})} = \overline{(x_{1} + x_{2}) + i(y_{1} + y_{2})} = (x_{1} + x_{2}) + i(y_{1} + y_{2})\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-21">
+<span class="process-math">\(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ = x_{1} - iy_{1} + x_{2} - iy_{2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-22">
+<span class="process-math">\(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ = \overline{z_1} + \overline{z_2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-conjugate-of-a-complex-number-23">The others are left for the reader.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-conjugate-of-a-complex-number-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-conjugate-of-a-complex-number-24" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FConjugate-of-a-complex-number%2FOperation-of-complex-number-using-conjugate-property.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-conjugate-of-a-complex-number.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-conjugate-of-a-complex-number-24-3"><summary class="ptx-footnote__number" title="Footnote 2.2.6"><sup> 6 </sup></summary><div class="ptx-footnote__contents" id="subsec-conjugate-of-a-complex-number-24-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FConjugate-of-a-complex-number%2FOperation-of-complex-number-using-conjugate-property.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-conjugate-of-a-complex-number.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.13"><a href="#subsec-conjugate-of-a-complex-number-24" title="Copy heading and permalink for Checkpoint 2.2.13" aria-label="Copy heading and permalink for Checkpoint 2.2.13">🔗</a></div></article></details><details id="subsec-conjugate-of-a-complex-number-25" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FConjugate-of-a-complex-number%2FFinding-conjugate-of-a-complex-number.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-conjugate-of-a-complex-number.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-conjugate-of-a-complex-number-25-3"><summary class="ptx-footnote__number" title="Footnote 2.2.7"><sup> 7 </sup></summary><div class="ptx-footnote__contents" id="subsec-conjugate-of-a-complex-number-25-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FConjugate-of-a-complex-number%2FFinding-conjugate-of-a-complex-number.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-conjugate-of-a-complex-number.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.14"><a href="#subsec-conjugate-of-a-complex-number-25" title="Copy heading and permalink for Checkpoint 2.2.14" aria-label="Copy heading and permalink for Checkpoint 2.2.14">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.2.3: Conjugate of a complex number"><a href="#subsec-conjugate-of-a-complex-number" title="Copy heading and permalink for Subsection 2.2.3: Conjugate of a complex number" aria-label="Copy heading and permalink for Subsection 2.2.3: Conjugate of a complex number">🔗</a></div></section><section class="subsection" id="subsec-modulus-norm-of-a-complex"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Modulus (Norm) of a complex number</span>
+</h3>
+<article class="definition definition-like" id="def-modulus-of-a-complex-number"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="def-modulus-of-a-complex-number-1-1">The modulus of a complex number z = x+iy is a non-negative real number denoted by |z| and is defined as |z| = <span class="process-math">\(\sqrt{x^{2} + y^{2}}\text{.}\)</span> Geometrically, the number |z| represents the distnce between the point (x, y) and the origin.<div class="autopermalink" data-description="Paragraph"><a href="#def-modulus-of-a-complex-number-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.2.15"><a href="#def-modulus-of-a-complex-number" title="Copy heading and permalink for Definition 2.2.15" aria-label="Copy heading and permalink for Definition 2.2.15">🔗</a></div></article><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external//./media/image41.png" class="contained"></div>
+<div class="para" id="subsec-modulus-norm-of-a-complex-4">
+<em class="alert">Example 2.48:</em> Find the modulus of the complex number z = 3 – 4i.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-modulus-norm-of-a-complex-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-modulus-norm-of-a-complex-5">
+<em class="alert">Properties of modulus</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-modulus-norm-of-a-complex-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-modulus-norm-of-a-complex-6">The others are left for the reader.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-modulus-norm-of-a-complex-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-modulus-norm-of-a-complex-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FModulus-%28norm%29-of-a-complex-number%2FModulus-and-Argument-of-a-Complex-Number.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-modulus-norm-of-a-complex.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-modulus-norm-of-a-complex-7-3"><summary class="ptx-footnote__number" title="Footnote 2.2.8"><sup> 8 </sup></summary><div class="ptx-footnote__contents" id="subsec-modulus-norm-of-a-complex-7-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FModulus-%28norm%29-of-a-complex-number%2FModulus-and-Argument-of-a-Complex-Number.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-modulus-norm-of-a-complex.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.16"><a href="#subsec-modulus-norm-of-a-complex-7" title="Copy heading and permalink for Checkpoint 2.2.16" aria-label="Copy heading and permalink for Checkpoint 2.2.16">🔗</a></div></article></details><details id="subsec-modulus-norm-of-a-complex-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FModulus-%28norm%29-of-a-complex-number%2FFinding-the-modulus-of-a-complex-number.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-modulus-norm-of-a-complex.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-modulus-norm-of-a-complex-8-3"><summary class="ptx-footnote__number" title="Footnote 2.2.9"><sup> 9 </sup></summary><div class="ptx-footnote__contents" id="subsec-modulus-norm-of-a-complex-8-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FModulus-%28norm%29-of-a-complex-number%2FFinding-the-modulus-of-a-complex-number.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-modulus-norm-of-a-complex.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.17"><a href="#subsec-modulus-norm-of-a-complex-8" title="Copy heading and permalink for Checkpoint 2.2.17" aria-label="Copy heading and permalink for Checkpoint 2.2.17">🔗</a></div></article></details><details id="subsec-modulus-norm-of-a-complex-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FModulus-%28norm%29-of-a-complex-number%2FModulus-of-complex-numbers.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-modulus-norm-of-a-complex.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-modulus-norm-of-a-complex-9-3"><summary class="ptx-footnote__number" title="Footnote 2.2.10"><sup> 10 </sup></summary><div class="ptx-footnote__contents" id="subsec-modulus-norm-of-a-complex-9-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FModulus-%28norm%29-of-a-complex-number%2FModulus-of-complex-numbers.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-modulus-norm-of-a-complex.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.18"><a href="#subsec-modulus-norm-of-a-complex-9" title="Copy heading and permalink for Checkpoint 2.2.18" aria-label="Copy heading and permalink for Checkpoint 2.2.18">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.2.4: Modulus (Norm) of a complex number"><a href="#subsec-modulus-norm-of-a-complex" title="Copy heading and permalink for Subsection 2.2.4: Modulus (Norm) of a complex number" aria-label="Copy heading and permalink for Subsection 2.2.4: Modulus (Norm) of a complex number">🔗</a></div></section><section class="subsection" id="subsec-additive-and-multiplicative-inverses"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Additive and multiplicative inverses</span>
+</h3>
+<div class="para" id="subsec-additive-and-multiplicative-inverses-2">Let z = <em class="emphasis">x</em>+i<em class="emphasis">y</em> be a complex number, then<div class="autopermalink" data-description="Paragraph"><a href="#subsec-additive-and-multiplicative-inverses-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-additive-and-multiplicative-inverses-3">
+<em class="alert">Example 2.49</em>: Find the additive and the multiplicative inverse of z = 3+4i.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-additive-and-multiplicative-inverses-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-additive-and-multiplicative-inverses-4"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 2.2.19"><a href="#subsec-additive-and-multiplicative-inverses-4" title="Copy heading and permalink for Table 2.2.19" aria-label="Copy heading and permalink for Table 2.2.19">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines"><em class="alert">Exercise 2.3</em></td></tr></table></div></figure><figure class="table table-like" id="subsec-additive-and-multiplicative-inverses-5"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 2.2.20"><a href="#subsec-additive-and-multiplicative-inverses-5" title="Copy heading and permalink for Table 2.2.20" aria-label="Copy heading and permalink for Table 2.2.20">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines"><ol class="decimal" id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1">
+<li id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-1">
+<div class="para" id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-1-1">Verify that<div class="autopermalink" data-description="Paragraph"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-2">
+<div class="para" id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-2-1">Show that<div class="autopermalink" data-description="Paragraph"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-3">
+<div class="para" id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-3-1">Do the following operations and simplify your answer.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-4">
+<div class="para" id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-4-1">Locate the complex numbers z1+z2 and z1-z2, as vectors where<div class="autopermalink" data-description="Paragraph"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-5">
+<div class="para" id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-5-1">Sketch the following set of points determined by the condition given below:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-6">
+<div class="para" id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-6-1">Using properties of conjugate and modulus, show that<div class="autopermalink" data-description="Paragraph"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 6"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+<li id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-7">
+<div class="para" id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-7-1">Show that <span class="process-math">\(( - 1 + i\ )^{7} = 8\ ( - 1 - i)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 7"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-7" title="Copy heading and permalink for Item 7" aria-label="Copy heading and permalink for Item 7">🔗</a></div>
+</li>
+<li id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-8">
+<div class="para" id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-8-1">Using mathematical induction, show that (when n = 2, 3, . . . ,)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 8"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-8" title="Copy heading and permalink for Item 8" aria-label="Copy heading and permalink for Item 8">🔗</a></div>
+</li>
+<li id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-9">
+<div class="para" id="subsec-additive-and-multiplicative-inverses-5-1-1-1-1-9-1">Show that the equation <span class="process-math">\(|z - z_{0}| = r\)</span> which is a circle of radius r centered at <span class="process-math">\(z_{0}\)</span> can be written as <span class="process-math">\(|z|^{2} - 2\text{Re}(z\ \overline{z}) + |z_{0}|^{2} = r^{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 9"><a href="#subsec-additive-and-multiplicative-inverses-5-1-1-1-1-9" title="Copy heading and permalink for Item 9" aria-label="Copy heading and permalink for Item 9">🔗</a></div>
+</li>
+</ol></td></tr></table></div></figure><details id="subsec-additive-and-multiplicative-inverses-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FAdditive-and-multiplicative-inverses%2FAdditive-and-multiplicative-inverses.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-additive-and-multiplicative-inverses.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-additive-and-multiplicative-inverses-6-3"><summary class="ptx-footnote__number" title="Footnote 2.2.11"><sup> 11 </sup></summary><div class="ptx-footnote__contents" id="subsec-additive-and-multiplicative-inverses-6-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FAdditive-and-multiplicative-inverses%2FAdditive-and-multiplicative-inverses.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-additive-and-multiplicative-inverses.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.21"><a href="#subsec-additive-and-multiplicative-inverses-6" title="Copy heading and permalink for Checkpoint 2.2.21" aria-label="Copy heading and permalink for Checkpoint 2.2.21">🔗</a></div></article></details><details id="subsec-additive-and-multiplicative-inverses-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FAdditive-and-multiplicative-inverses%2FComplex-Number-Operations-in-Trigonometric-Form.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-additive-and-multiplicative-inverses.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-additive-and-multiplicative-inverses-7-3"><summary class="ptx-footnote__number" title="Footnote 2.2.12"><sup> 12 </sup></summary><div class="ptx-footnote__contents" id="subsec-additive-and-multiplicative-inverses-7-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FAdditive-and-multiplicative-inverses%2FComplex-Number-Operations-in-Trigonometric-Form.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-additive-and-multiplicative-inverses.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.22"><a href="#subsec-additive-and-multiplicative-inverses-7" title="Copy heading and permalink for Checkpoint 2.2.22" aria-label="Copy heading and permalink for Checkpoint 2.2.22">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.2.5: Additive and multiplicative inverses"><a href="#subsec-additive-and-multiplicative-inverses" title="Copy heading and permalink for Subsection 2.2.5: Additive and multiplicative inverses" aria-label="Copy heading and permalink for Subsection 2.2.5: Additive and multiplicative inverses">🔗</a></div></section><section class="subsection" id="subsec-argument-amplitude-of-a-complex"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Argument (Amplitude) of a complex number</span>
+</h3>
+<figure class="table table-like" id="subsec-argument-amplitude-of-a-complex-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.23<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 2.2.23"><a href="#subsec-argument-amplitude-of-a-complex-2" title="Copy heading and permalink for Table 2.2.23" aria-label="Copy heading and permalink for Table 2.2.23">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal"><th scope="col" class="l m b0 r0 l0 t0 lines"><em class="alert">Definition 2.15</em></th></tr>
+<tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-argument-amplitude-of-a-complex-2-1-2-1-1">Argument of a complex number z = x+iy is the angle formed by the complex number z = x+iy with the positive x-axis. The argument of a complex number z = x+iy is deonted by <em class="alert">argz</em> and is given by arg(z) = <span class="process-math">\(\text{tan}^{- 1}(yx)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-argument-amplitude-of-a-complex-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-argument-amplitude-of-a-complex-2-1-2-1-2">The particular argument of z that lies in the range <span class="process-math">\(- \pi &lt; \theta \leq \pi\)</span> is called the principal argument of z and is dented by Argz.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-argument-amplitude-of-a-complex-2-1-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td></tr>
+</table></div></figure><div class="para" id="subsec-argument-amplitude-of-a-complex-3">
+<em class="alert">Example 2.50</em>: Find the principal argument of the following complex numbers:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-argument-amplitude-of-a-complex-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-argument-amplitude-of-a-complex-4">
+<em class="alert">Properties of Arguments</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-argument-amplitude-of-a-complex-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-argument-amplitude-of-a-complex-5">
+<em class="alert">Example 2.51</em>: Find the principal argument of <span class="process-math">\(\ a)\ (1 + i)\ ( - 1 - i)\ b)\ (\frac{- 2 + 2i}{1 - i})\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-argument-amplitude-of-a-complex-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-argument-amplitude-of-a-complex-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FArgument-%28amplitude%29-of-a-complex-number%2FModulus-and-Argument-of-a-Complex-Number.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-argument-amplitude-of-a-complex.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-argument-amplitude-of-a-complex-6-3"><summary class="ptx-footnote__number" title="Footnote 2.2.13"><sup> 13 </sup></summary><div class="ptx-footnote__contents" id="subsec-argument-amplitude-of-a-complex-6-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FArgument-%28amplitude%29-of-a-complex-number%2FModulus-and-Argument-of-a-Complex-Number.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-argument-amplitude-of-a-complex.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.24"><a href="#subsec-argument-amplitude-of-a-complex-6" title="Copy heading and permalink for Checkpoint 2.2.24" aria-label="Copy heading and permalink for Checkpoint 2.2.24">🔗</a></div></article></details><details id="subsec-argument-amplitude-of-a-complex-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.25</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FArgument-%28amplitude%29-of-a-complex-number%2FModulus-and-Argument-of-Complex-Numbers-and-Their-Conjugates.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-argument-amplitude-of-a-complex.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-argument-amplitude-of-a-complex-7-3"><summary class="ptx-footnote__number" title="Footnote 2.2.14"><sup> 14 </sup></summary><div class="ptx-footnote__contents" id="subsec-argument-amplitude-of-a-complex-7-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FArgument-%28amplitude%29-of-a-complex-number%2FModulus-and-Argument-of-Complex-Numbers-and-Their-Conjugates.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-argument-amplitude-of-a-complex.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.25"><a href="#subsec-argument-amplitude-of-a-complex-7" title="Copy heading and permalink for Checkpoint 2.2.25" aria-label="Copy heading and permalink for Checkpoint 2.2.25">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.2.6: Argument (Amplitude) of a complex number"><a href="#subsec-argument-amplitude-of-a-complex" title="Copy heading and permalink for Subsection 2.2.6: Argument (Amplitude) of a complex number" aria-label="Copy heading and permalink for Subsection 2.2.6: Argument (Amplitude) of a complex number">🔗</a></div></section><section class="subsection" id="subsec-polar-form-of-a-complex"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Polar form of a complex number</span>
+</h3>
+<figure class="table table-like" id="subsec-polar-form-of-a-complex-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.26<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 2.2.26"><a href="#subsec-polar-form-of-a-complex-2" title="Copy heading and permalink for Table 2.2.26" aria-label="Copy heading and permalink for Table 2.2.26">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal"><th scope="col" class="l m b0 r0 l0 t0 lines"><em class="alert">Definition 2.16</em></th></tr>
+<tr><td class="l m b0 r0 l0 t0 lines">Let r and <span class="process-math">\(\theta\)</span>be polar coordinates of the point (x, y) of the complex number z = x+iy. Since x = <span class="process-math">\(r\text{cos}\theta\)</span>and y = <span class="process-math">\(r\text{sin}\theta\text{,}\)</span> then the complex number can be written as : <span class="process-math">\(\underline{\underline{\ z = r(\text{cos}\theta + i\text{sin}\theta)}}\)</span> which is called polar form, where r is modulus of z and <span class="process-math">\(\ \theta\ \)</span>is principal argument of z.</td></tr>
+</table></div></figure><div class="para" id="subsec-polar-form-of-a-complex-3">
+<em class="alert">Example 2.52</em>: Express the following complex numbers in polar form:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-polar-form-of-a-complex-4">
+<span class="process-math">\(\begin{matrix}
+a)\ z = 1 + i\  \\
+\ \text{solution}:\ r = \sqrt{2}\ \text{and}\ \theta = \text{tan}^{- 1}(1) = \pi 4\text{.}\ \text{Thus},\ z = \sqrt{2}(\text{cos}\pi 4 + i\text{sin}\pi 4)\text{.} \\
+\end{matrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-polar-form-of-a-complex-5">
+<span class="process-math">\(\begin{matrix}
+b)\ z = 3 - 3i\  \\
+\text{solution}:\ r = \sqrt{\text{18}}\ \text{and}\ \theta = \text{tan}^{- 1}( - 1) = - \pi 4\text{.}\  \\
+\text{Thus},\ z = \sqrt{\text{18}}(\text{cos} - \pi 4 + i\text{sin} - \pi 4) = \sqrt{\text{18}}(\text{cos}\pi 4 - i\text{sin}\pi 4)\text{.} \\
+\end{matrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-polar-form-of-a-complex-6"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.27<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 2.2.27"><a href="#subsec-polar-form-of-a-complex-6" title="Copy heading and permalink for Table 2.2.27" aria-label="Copy heading and permalink for Table 2.2.27">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines"><em class="alert">Multiplication and division in polar forms</em></td></tr></table></div></figure><div class="para" id="subsec-polar-form-of-a-complex-7">
+<em class="alert">Proof:</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-polar-form-of-a-complex-8">
+<em class="alert">Example 2.53:</em> <span class="process-math">\(\ \text{If}\ z_{1} = 6\ (\text{cos}\pi 2\  + i\text{sin}\pi 2)\ \text{and}\ z_{2} = 2\ (\text{cos}\pi 3\  + i\text{sin}\pi 3),\ \text{then}\ \text{find}\ \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-polar-form-of-a-complex-9">
+<span class="process-math">\(\)</span> <span class="process-math">\(\ a)\ z\ _{1}\text{.}\ z_{2}\ b)\ \frac{z_{1}}{z_{2}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="subsec-polar-form-of-a-complex-10"><li id="subsec-polar-form-of-a-complex-10-1">
+<div class="para" id="subsec-polar-form-of-a-complex-10-1-1">
+<em class="alert">Argument of a product</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-polar-form-of-a-complex-10-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li></ul>
+<figure class="table table-like" id="subsec-polar-form-of-a-complex-11"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.28<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 2.2.28"><a href="#subsec-polar-form-of-a-complex-11" title="Copy heading and permalink for Table 2.2.28" aria-label="Copy heading and permalink for Table 2.2.28">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">The argument of the product of two complex numbers is the sum of their arguments.</td></tr></table></div></figure><div class="para" id="subsec-polar-form-of-a-complex-12">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//./media/image42.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-polar-form-of-a-complex-13">
+<em class="alert">Proof:</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-polar-form-of-a-complex-14">
+<span class="process-math">\(\)</span> <em class="alert">Argument of a quotient</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-polar-form-of-a-complex-15"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.29<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 2.2.29"><a href="#subsec-polar-form-of-a-complex-15" title="Copy heading and permalink for Table 2.2.29" aria-label="Copy heading and permalink for Table 2.2.29">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines">The argument of the quotient of two complex numbers is the difference of their arguments.</td></tr></table></div></figure><div class="para" id="subsec-polar-form-of-a-complex-16">
+<em class="alert">Proof:</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-polar-form-of-a-complex-17">
+<em class="alert">Example 2.54:</em> <span class="process-math">\(\text{arg}(\frac{- 4}{1 + \sqrt{3}\ i}) = \text{arg}( - 4) - \text{arg}(\ 1 + \sqrt{3}\ i) = \pi - \pi 3 = \ 2\pi 3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-polar-form-of-a-complex-18"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.30<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 2.2.30"><a href="#subsec-polar-form-of-a-complex-18" title="Copy heading and permalink for Table 2.2.30" aria-label="Copy heading and permalink for Table 2.2.30">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines"><em class="alert">De Moivre’s Formula</em></td></tr></table></div></figure><div class="para" id="subsec-polar-form-of-a-complex-19">
+<em class="alert">Example 2.55:</em> Express<span class="process-math">\(\ (2 + 2i)^{\text{100}}\)</span> in polar form.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-polar-form-of-a-complex-20">
+<em class="alert">Example 2.56:</em> Express<span class="process-math">\((\sqrt{3} + i)^{\text{60}}\ \)</span> in polar form.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-polar-form-of-a-complex-21"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.31<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 2.2.31"><a href="#subsec-polar-form-of-a-complex-21" title="Copy heading and permalink for Table 2.2.31" aria-label="Copy heading and permalink for Table 2.2.31">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-polar-form-of-a-complex-21-1-1-1-1">
+<em class="alert">Euler’s formula</em><div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-21-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-polar-form-of-a-complex-21-1-1-1-2">The complex number <span class="process-math">\(z = r(\text{cos}\theta + i\text{sin}\theta)\)</span> can be written in exponential form as: <span class="process-math">\(z = \text{re}^{\text{iθ}}\)</span> which is called Euler’s formula.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-21-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td></tr></table></div></figure><div class="para" id="subsec-polar-form-of-a-complex-22">
+<em class="alert">Example 2.57</em>: Express the complex number z = 1+i using Euler’s formula.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-polar-form-of-a-complex-23">
+<span class="process-math">\(\begin{matrix}
+\text{Solution}:\ z = 1 + i \\
+\text{Now}\ r = \sqrt{2}\  \land \ \theta = \pi 4\  \Rightarrow \ z = \text{re}^{\text{iθ}} = \underline{\underline{\sqrt{2}e^{\pi\ i4}}} \\
+\end{matrix}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-polar-form-of-a-complex-24">
+<em class="alert">Example 2.58</em>: Express the complex number <span class="process-math">\(z = 1 + \sqrt{3}\ i\ \)</span> using Euler’s formula.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-polar-form-of-a-complex-25">
+<em class="alert">Example 2.59</em>: Express the complex number <span class="process-math">\(z = (\sqrt{3}\  + i\ )^{7}\)</span> using Euler’s formula.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-polar-form-of-a-complex-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsec-polar-form-of-a-complex-26" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.32</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FPolar-form-of-a-complex-number%2FConverting-Complex-Numbers-Rectangular-to-Polar-Form.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-polar-form-of-a-complex.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-polar-form-of-a-complex-26-3"><summary class="ptx-footnote__number" title="Footnote 2.2.15"><sup> 15 </sup></summary><div class="ptx-footnote__contents" id="subsec-polar-form-of-a-complex-26-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FPolar-form-of-a-complex-number%2FConverting-Complex-Numbers-Rectangular-to-Polar-Form.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-polar-form-of-a-complex.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.32"><a href="#subsec-polar-form-of-a-complex-26" title="Copy heading and permalink for Checkpoint 2.2.32" aria-label="Copy heading and permalink for Checkpoint 2.2.32">🔗</a></div></article></details><details id="subsec-polar-form-of-a-complex-27" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.33</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FPolar-form-of-a-complex-number%2FConversion-to-Polar-Form-Complex-Number-z-%3D-x-%2B-yi.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-polar-form-of-a-complex.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-polar-form-of-a-complex-27-3"><summary class="ptx-footnote__number" title="Footnote 2.2.16"><sup> 16 </sup></summary><div class="ptx-footnote__contents" id="subsec-polar-form-of-a-complex-27-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FPolar-form-of-a-complex-number%2FConversion-to-Polar-Form-Complex-Number-z-%3D-x-%2B-yi.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-polar-form-of-a-complex.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.33"><a href="#subsec-polar-form-of-a-complex-27" title="Copy heading and permalink for Checkpoint 2.2.33" aria-label="Copy heading and permalink for Checkpoint 2.2.33">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.2.7: Polar form of a complex number"><a href="#subsec-polar-form-of-a-complex" title="Copy heading and permalink for Subsection 2.2.7: Polar form of a complex number" aria-label="Copy heading and permalink for Subsection 2.2.7: Polar form of a complex number">🔗</a></div></section><section class="subsection" id="subsec-extraction-of-roots"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.8</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Extraction of roots</span>
+</h3>
+<div class="para" id="subsec-extraction-of-roots-2">
+<em class="alert">Example 2.60</em>: Find the square roots of the complex number <span class="process-math">\(\ z = 1 + \sqrt{3}i\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-extraction-of-roots-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-extraction-of-roots-3">
+<em class="alert">Example 2.61</em>: Find the cube roots of the complex number <span class="process-math">\(\ z = 8\ i\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-extraction-of-roots-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="subsec-extraction-of-roots-4"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.34<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 2.2.34"><a href="#subsec-extraction-of-roots-4" title="Copy heading and permalink for Table 2.2.34" aria-label="Copy heading and permalink for Table 2.2.34">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0 lines"><em class="alert">Exercise 2.4</em></td></tr></table></div></figure><figure class="table table-like" id="subsec-extraction-of-roots-5"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.35<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 2.2.35"><a href="#subsec-extraction-of-roots-5" title="Copy heading and permalink for Table 2.2.35" aria-label="Copy heading and permalink for Table 2.2.35">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b0 r0 l0 t0" style="max-width:120">
+<div class="para" id="subsec-extraction-of-roots-5-1-1-1-1">1. Find the argument of the following complex numbers:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-extraction-of-roots-5-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-extraction-of-roots-5-1-1-1-2">2. Show that <span class="process-math">\(a)\ |e^{\text{iθ}}| = 1\ b)\ \overline{e^{\text{iθ}}\ } = e^{- \text{iθ}}\ \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-extraction-of-roots-5-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-extraction-of-roots-5-1-1-1-3">3. Using mathematical induction, show that <span class="process-math">\(e^{\text{iθ}_{1}}\text{.}\ e^{\text{iθ}_{2}}\text{.}\ \cdots\text{.}\ e^{\text{iθ}_{n}} = e^{i(\theta_{1} + \theta_{n} + \cdots + \theta_{n})}\ ,\ n = 2,\ 3,\ \cdots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-extraction-of-roots-5-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-extraction-of-roots-5-1-1-1-4">4. Show that <span class="process-math">\(a)\ \text{cos}3\theta = \text{cos}^{3}\theta - 3\text{cos}\theta\text{sin}^{2}\theta\ b)\ \text{sin}3\theta = 3\text{cos}^{2}\theta\text{sin}\theta - \text{sin}^{3}\theta\ \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-extraction-of-roots-5-1-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-extraction-of-roots-5-1-1-1-5">5. Show that <span class="process-math">\(1 + z + z^{2} + \cdots + z^{n} = \frac{1 - z^{n + 1}}{1 - z},\ \text{for}\ z \neq 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-extraction-of-roots-5-1-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-extraction-of-roots-5-1-1-1-6">6. Find the square roots of z = 9i<div class="autopermalink" data-description="Paragraph"><a href="#subsec-extraction-of-roots-5-1-1-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-extraction-of-roots-5-1-1-1-7">7. Find the cube roots of z = <span class="process-math">\(-\)</span> 8i<div class="autopermalink" data-description="Paragraph"><a href="#subsec-extraction-of-roots-5-1-1-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-extraction-of-roots-5-1-1-1-8">8. Solve the following equations:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-extraction-of-roots-5-1-1-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-extraction-of-roots-5-1-1-1-9">
+<span class="process-math">\(a)\ z^{32} = 8i\ \)</span> <span class="process-math">\(b)\ z^{2} + 4i = 0\ \)</span> <span class="process-math">\(c)\ z^{2} - 4i = 0\ \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-extraction-of-roots-5-1-1-1-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</td></tr></table></div></figure><details id="subsec-extraction-of-roots-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.36</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FExtraction-of-roots%2FComplex-Root-of-a-Cubic-Equation.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-extraction-of-roots.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-extraction-of-roots-6-3"><summary class="ptx-footnote__number" title="Footnote 2.2.17"><sup> 17 </sup></summary><div class="ptx-footnote__contents" id="subsec-extraction-of-roots-6-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FExtraction-of-roots%2FComplex-Root-of-a-Cubic-Equation.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-extraction-of-roots.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.36"><a href="#subsec-extraction-of-roots-6" title="Copy heading and permalink for Checkpoint 2.2.36" aria-label="Copy heading and permalink for Checkpoint 2.2.36">🔗</a></div></article></details><details id="subsec-extraction-of-roots-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.37</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FExtraction-of-roots%2FEvaluating-Square-Roots-of-Complex-Numbers.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-extraction-of-roots.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-extraction-of-roots-7-3"><summary class="ptx-footnote__number" title="Footnote 2.2.18"><sup> 18 </sup></summary><div class="ptx-footnote__contents" id="subsec-extraction-of-roots-7-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FExtraction-of-roots%2FEvaluating-Square-Roots-of-Complex-Numbers.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-extraction-of-roots.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.37"><a href="#subsec-extraction-of-roots-7" title="Copy heading and permalink for Checkpoint 2.2.37" aria-label="Copy heading and permalink for Checkpoint 2.2.37">🔗</a></div></article></details><details id="subsec-extraction-of-roots-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.38</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FExtraction-of-roots%2FComplex-Number-Evaluating-Fourth-Roots.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-extraction-of-roots.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-extraction-of-roots-8-3"><summary class="ptx-footnote__number" title="Footnote 2.2.19"><sup> 19 </sup></summary><div class="ptx-footnote__contents" id="subsec-extraction-of-roots-8-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FExtraction-of-roots%2FComplex-Number-Evaluating-Fourth-Roots.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-extraction-of-roots.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.38"><a href="#subsec-extraction-of-roots-8" title="Copy heading and permalink for Checkpoint 2.2.38" aria-label="Copy heading and permalink for Checkpoint 2.2.38">🔗</a></div></article></details><details id="subsec-extraction-of-roots-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2.39</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FExtraction-of-roots%2FEvaluating-Cube-Roots-of-Complex-Numbers.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-extraction-of-roots.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-extraction-of-roots-9-3"><summary class="ptx-footnote__number" title="Footnote 2.2.20"><sup> 20 </sup></summary><div class="ptx-footnote__contents" id="subsec-extraction-of-roots-9-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FExtraction-of-roots%2FEvaluating-Cube-Roots-of-Complex-Numbers.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-extraction-of-roots.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 2.2.39"><a href="#subsec-extraction-of-roots-9" title="Copy heading and permalink for Checkpoint 2.2.39" aria-label="Copy heading and permalink for Checkpoint 2.2.39">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 2.2.8: Extraction of roots"><a href="#subsec-extraction-of-roots" title="Copy heading and permalink for Subsection 2.2.8: Extraction of roots" aria-label="Copy heading and permalink for Subsection 2.2.8: Extraction of roots">🔗</a></div></section><div class="autopermalink" data-description="Section 2.2: The set of complex numbers"><a href="#sec-the-set-of-complex-numbers" title="Copy heading and permalink for Section 2.2: The set of complex numbers" aria-label="Copy heading and permalink for Section 2.2: The set of complex numbers">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-the-real-number-system.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="basic-maths-for-natural-sciences-6.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
