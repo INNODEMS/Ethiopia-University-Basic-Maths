@@ -53,7 +53,7 @@
         If P(<em>x,y</em>) is any point on the parabola, then by the definition, the distance of P from the directrix is equal to the distance between P and the focus F. This is used to determine an equation of a parabola. To do this, we consider first the cases when the axis of the parabola is parallel to one of the coordinate axes.
     </p>
     <exercises xml:id="exercises-definition-of-a-parabola">
-        <exercise xml:id="exercise-4.3.1">
+        <exercise >
             <statement>
                 <p>
         Use the definition of parabola and the given information to answer or solve each of the following problems.
@@ -62,12 +62,12 @@
         <ol>
             <li>
                 <p>
-                   Suppose the focal length of a parabola is <em>p</em>, for some <em>p</em> &gt; 0. Then, show that the focal width (length of the latus rectum) of the parabola is 4<em>p</em>.
+                   Suppose the focal length of a parabola is <m>p</m>, for some <em>p</em> &gt; 0. Then, show that the focal width (length of the latus rectum) of the parabola is <m>4p</m>.
                 </p>
             </li>
             <li>
                 <p>
-                   Suppose the vertex of a parabola is the origin and its focus is F(0,1). Then,         
+                   Suppose the vertex of a parabola is the origin and its focus is<m> \text{F}(0,1)</m>. Then,         
                 </p>
                 <p>
                     <ol marker="(a)">
@@ -103,7 +103,7 @@
             </li>
             <li>
                 <p>
-                     Suppose the vertex of a parabola is V(0, 1) and its directrix is the line <em>x</em> = −2. Then,
+                     Suppose the vertex of a parabola is <m>\text{V}(0, 1)</m> and its directrix is the line <m>x = −2</m>. Then,
                 </p>
                 <p>
                     <ol marker="(a)">
@@ -127,7 +127,7 @@
                                 Determine whether each of the following point is on the parabola or not.
                             </p>
                             <p>
-                                 (i) (1, 0)    (ii) (3, 0)    (iii) (8, 9)    (iv) (8, -7)    (v) (8, 8)
+                                 <m>(\text{i}) (1, 0)\,\,\,\,\,\,\,      (\text{ii}) (3, 0)\,\,\,\,\,\,\,      (\text{iii}) (8, 9) \,\,\,\,\,\,\,      (\text{iv}) (8, -7) \,\,\,\,\,\,\,       (\text{v}) (8, 8)</m>
                             </p>
                         </li>
                     </ol>

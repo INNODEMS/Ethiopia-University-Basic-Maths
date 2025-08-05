@@ -1,12 +1,19 @@
 <section  xml:id="sec-parabolas" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Parabolas</title>
-    <p>
-        <term>Objectives</term>
-    </p>
-    <p>
-        By the end of this section, you should:
-    </p>
-    <p>
+    <introduction>
+        <p>
+            <term></term>
+        </p>
+
+    </introduction>
+    <objectives>
+        <title>Objectives</title>
+        <introduction>
+            <p>
+                By the end of this section, you should:
+            </p>
+        </introduction>
+        
     
     <ul>
         <li>
@@ -17,11 +24,6 @@
         <li>
             <p>
                 Know the meaning of vertex, focus, directrix, and axis of a parabola.
-            </p>
-        </li>
-        <li>
-            <p>
-                
             </p>
         </li>
         <li>
@@ -40,7 +42,8 @@
             </p>
         </li>
     </ul>
-    </p>
+</objectives>
+    
     <xi:include href="subsections/sec-parabolas/subsec-definition-of-a-parabola.ptx" />
     <xi:include href="subsections/sec-parabolas/subsec-equation-of-parabolas.ptx" />
 </section>

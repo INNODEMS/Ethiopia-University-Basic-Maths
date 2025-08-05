@@ -26,12 +26,9 @@
             Upon simplification, this becomes 
         </p>
         <sidebyside>
-            <figure xml:id="standard-equation-of-a-vertical-parabola">
-                <caption>standard equation</caption>
-                <image source="/focal-length.png" width="40%">
-                <shortdescription>focal length of a parabola</shortdescription>
-            </image>            
-            </figure>
+            <p>
+                <m>(x -h)^2 = 4p(y - k)</m>
+            </p>
             <p>
                 <ul>
                     <li>
@@ -53,31 +50,26 @@
         </p>
         
        <sidebyside>
-            <figure xml:id="directrix-y-p">
-             <caption>parabola with directrix y = -p</caption>
-            <image source="/imagec3-parabola.png" width="50%">
-                <shortdescription>directrix y=-p</shortdescription>
-            </image>
-        </figure>
+            <p>
+                <m>x^2 = 4py</m>
+            </p>
          <ul>
             <li>
-                <p>
-                   If a vertical parabola with vertex V(<em>h, k</em>) opens downward, then its directrix is above the parabola and its focus lies below the vertex (see Figure 4.13(b). In this case,
-                </p>
-                <p>
-                  the focus is at F(<em>h, k−p</em>), and its directrix is given by <em>y=k+p</em>. Moreover, following the same steps as above , the equation of this parabola becomes
-            
-                </p>
+               <p>
+                ( In this case, its focus is at F(0, p), and its directrix is<m> y = -p </m>.)
+               </p>
             </li>
          </ul>
        </sidebyside>
+        <p>
+            If a vertical parabola with vertex V(<em>h, k</em>) opens downward, then its directrix is above the parabola and its focus lies below the vertex (see Figure 4.13(b). In this case,
+            the focus is at F(<em>h, k−p</em>), and its directrix is given by <em>y=k+p</em>. Moreover, following the same steps as above , the equation of this parabola becomes
+
+        </p>
         <sidebyside>
-            <figure xml:id="directrix-y-p-1">
-                <caption>parabola with directrix y = -p</caption>
-                    <image source="/imagec2-parabola.png">
-                        <shortdescription></shortdescription>
-                    </image>
-            </figure>
+            <p>
+                <m>(x - h)^2 = -4p(y - k)</m>
+            </p>
                 <p>
                     <ul>
                         <li>
@@ -95,13 +87,10 @@
                 In particular, if the vertex of a vertical parabola is at origin, i.e., (<em>h, k</em>) =(0,0) and opens downward, then its equation is
         </p>
         <sidebyside>
-            <figure xml:id="directrixp">
-                <caption>parabola with directrix y=p</caption>
-                <image source="assets/imagec1-parabola.png">
-                    <shortdescription></shortdescription>
-                </image>
-                
-            </figure>
+            <p>
+                <m>x^2 = -4py</m>
+            </p>
+
             <p>
                     ( In this case, its focus is at F(0,−<em>p</em>), and its directrix is <em>y = p</em> )
             </p>
@@ -152,9 +141,9 @@
             <p>
                 The parabola is sketch in the Figure 4.14 .
             </p>
-            <image source="/media/png72/imageC2288.png ">
+             <image source="/imagec002.png"  width ="70%">
                 <shortdescription></shortdescription>
-            </image>
+            </image> 
         </solution>
         </example>
         <p>
@@ -163,7 +152,7 @@
         <p>
             A parabola whose axis is parallel to <em><alert>x</alert></em>-axis is called <alert>horizontal parabola</alert>. Such parabola opens either to the right or to the left as shown in Figure 4.15 (a) and (b), respectively.
         </p>
-        <image source="/equation-two.png" width="50%">
+        <image source="/equation-two.png" width="80%">
             <shortdescription>horizontal parabola</shortdescription>
         </image>
         <p>
@@ -176,17 +165,17 @@
                     <p>
                         If a horizontal parabola <alert>opens to</alert> <alert>the right (</alert>as in Fig.4.15(a) ), then its focus is to the right of V at F(<em>h+p, k</em>), its directrix is <em>x =h−p</em>, and its equation is
                     </p>
-                     <image source="/media/png72/imageC2289.png" width="50%">
-                       <shortdescription></shortdescription>
-                     </image>
+                    <p>
+                        <m>(y - k)^2 = 4p(x - h)</m>
+                    </p>
                 </li>
                 <li>
                     <p>
                         If a parabola <alert>opens to</alert> t<alert>he left (</alert>as in Figure 4.15 (b) ), then its focus is to the left of V at F(<em>h−p,k</em>), its directrix is <em>x=h+p</em> , and its equation is:
                     </p>
-                    <image source="/media/png72/imageC2290.png" width="50%">
-                        <shortdescription></shortdescription>
-                    </image>
+                    <p>
+                        <m>(y - k)^2 = -4p(x - h)</m>
+                    </p>
                 </li>
                 <li>
                     <p>
@@ -205,9 +194,9 @@
                 <p>
                     The equation is  <m>y^2 = -10x </m>; and comparing this with the above equation, it is an equation of a parabola whose vertex is at (0,0), axis of symmetry is the x-axis, open to the left and <m>4p=10</m>, i.e., <m>p= 5/2</m>. Thus, the focus is F<m>=(–5/2,0)</m> and its directrix is <em>x</em> <m>=5/2.</m> Its graph is sketched in Figure 4.16.
                 </p>
-                <image source="assets/image-e1-parabola.png" width="50%">
-                    <shortdescription></shortdescription>
-                </image>
+                <p>
+                    <m></m>
+                </p>
             </solution>
         </example>
         <example>
@@ -363,14 +352,9 @@
                 <p>
                     22. A cross-section of a parabolic reflector is shown in the figure below. A bulb is located at the focus and the opening at the focus, AB, is 12 cm. What is the diameter of the opening, CD, 8 cm from the vertex?
                 </p>
-                <image source="assets/exercis_par.png" width="50%">
+                <!-- <image source="assets/exercis_par.png" width="50%">
                     <shortdescription></shortdescription>
-                </image>
+                </image> -->
             </statement>   
-       </exercise> 
-       <remark>
-        <p>
-            
-        </p>
-       </remark>
+       </exercise>
 </subsection>

@@ -1,7 +1,17 @@
 <section xml:id="sec-hyperbolas" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Hyperbolas</title>
-            <p>By the end of this section, you should</p>
+    <introduction>
+        
+    <p>
+    </p>
+    </introduction>
+    <objectives>
+        <title>Objectives</title>
+        <introduction>
             <p>
+                By the end of this section, you should
+            </p>
+        </introduction>
                 <ul>
                     <li>
                         <p>know the geometric definition of a hyperbola.</p>
@@ -19,8 +29,10 @@
                         <p>be able to find the center, vertices, foci, and asymptotes of a hyperbola and sketch the hyperbola.</p>
                     </li>
                 </ul>
+        
+        
+    </objectives>
                 
-            </p>
         <xi:include href="subsections/sec-hyperbolas/subsec-definition-of-a-hyperbola.ptx" />
         <xi:include href="subsections/sec-hyperbolas/subsec-equation-of-a-hyperbola.ptx" />
 </section>

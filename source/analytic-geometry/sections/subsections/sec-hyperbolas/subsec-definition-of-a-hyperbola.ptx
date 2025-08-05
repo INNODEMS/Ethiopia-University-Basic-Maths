@@ -3,20 +3,20 @@
     <definition xml:id="def-definition-of-a-hyperbola">
         <statement>
             <p>
-                Let F and F<term>′</term> be two fixed points in the plane. A <term>hyperbola</term> is the set of all points in the plane such that the difference of the distance of each point from F and F<term>′</term> is constant. We shall denote the constant by 2<m>a</m>, for some <m>a</m> > 0. That is, a point P is on the hyperbola if and only if |PF<term>′</term>| – |PF| = 2<m>a</m> (or |PF|– |PF<term>′</term>| = 2<m>a</m> , whichever is positive). The two fixed points F and F<term>′</term> are called the foci of the hyperbola.
+                Let F and F<term>′</term> be two fixed points in the plane. A <term>hyperbola</term> is the set of all points in the plane such that the difference of the distance of each point from F and F<term>′</term> is constant. We shall denote the constant by 2<m>a</m>, for some <m>a</m> <m>\</m> 0. That is, a point P is on the hyperbola if and only if |PF<term>′</term>| – |PF| = 2<m>a</m> (or |PF|– |PF<term>′</term>| = 2<m>a</m> , whichever is positive). The two fixed points F and F<term>′</term> are called the foci of the hyperbola.
             </p>
         </statement>
     </definition>
-    <image source="assets/hyperbola-definition.png">
+    <image source="/hyperbola-definition.png" width="50%">
     </image>
     <p>
-        Figure 4.24 illustrates the definition of hyperbola. Notice that the definition of hyperbola is similar to that of an ellipse, the only change is that the sum of distances has become the difference of distances. Here, for the difference of any two unequal values, we take the higher value minus the smaller so that <m>a</m> > 0 in the definition. The following terminologies, notations and relationships are also important with regard to a hyperbola. Refer to Figure 4.24 for the following discussion.
+        Figure 4.24 illustrates the definition of hyperbola. Notice that the definition of hyperbola is similar to that of an ellipse, the only change is that the sum of distances has become the difference of distances. Here, for the difference of any two unequal values, we take the higher value minus the smaller so that <m>&gt;</m> 0 in the definition. The following terminologies, notations and relationships are also important with regard to a hyperbola. Refer to Figure 4.24 for the following discussion.
     </p>
     <p>
         <ul>
             <li>
                 <p>
-                    The line through the two foci F<term>′</term> and F is called the <term>principal axis</term> of the hyperbola. The point on the principal axis at halfway between the two foci, that is, the midpoint of F′F, is called the <term>center</term> of the hyperbola and represented by C. We denote the distance between the two foci by 2<m>c</m>. That is, <term>|</term>F<term>′</term>F<term>|</term> = 2<m>c</m> or <term>|</term>CF<term>|</term> = <m>c</m> = <term>|</term>CF<term>′|</term>. Noting also that |PF<term>′</term>| < <term>|</term>F<term>′</term>F<term>|</term> + |PF| in ∆ PF<term>′</term>F and |PF<term>′</term>| – |PF| = 2<m>a</m>, you can show that <m>a</m> < <m>c</m>.
+                    The line through the two foci F<term>′</term> and F is called the <term>principal axis</term> of the hyperbola. The point on the principal axis at halfway between the two foci, that is, the midpoint of F′F, is called the <term>center</term> of the hyperbola and represented by C. We denote the distance between the two foci by 2<m>c</m>. That is, <term>|</term>F<term>′</term>F<term>|</term> = 2<m>c</m> or <term>|</term>CF<term>|</term> = <m>c</m> = <term>|</term>CF<term>′|</term>. Noting also that |PF<term>′</term>| <term>|</term>F<term>′</term>F<term>|</term> + |PF| in ∆ PF<term>′</term>F and |PF<term>′</term>| – |PF| = 2<m>a</m>, you can show that <m>a</m> <m>c</m>.
                 </p>
             </li>
             <li>
@@ -45,20 +45,13 @@
                 <p>
                     The <term>eccentricity <m>e </m></term> of a hyperbola is defined to be the ratio of the distance between its foci to the length of its transverse axis. That is, similar to the definition of eccentricity of an ellipse, the eccentricity of a hyperbola is
                 </p>
-                <p><m> e =  {\frac|F'F|}{|V'V}| = \frac{C}{a}</m>(But here, <m>e</m> > 1 because <m>c</m> > <m>a</m>)</p>
+                <p><m> e =  |{\frac F'F|}{|V'V}| = \frac{C}{a}</m>(But here, <m>e</m> > 1 because <m>c</m> > <m>a</m>)</p>
             </li>
         </ul>
     </p>
-    <exercise>
+    <exercises xml:id="exercises-definition-of-a-hyperbola">
+    <exercise >
         <statement>
-            <p>
-                
-            </p>
-        </statement>
-    </exercise>
-    <tabular>
-        <row>
-            <cell>
                 <p>
                     Use the definition of hyperbola and the given information to answer or solve each of the following problems.
                 </p>
@@ -151,7 +144,7 @@
                         </li>
                     </ol>
                 </p>
-            </cell>          
-        </row>
-    </tabular>
+    </statement>
+    </exercise>
+    </exercises>
 </subsection>
