@@ -16,12 +16,12 @@
         <ul>
             <li>
                 <p>
-                    The line through the two foci <m>F\textbf{′}</m> and F is called the <m>\textbf{principal axis}</m> of the hyperbola. The point on the principal axis at halfway between the two foci, that is, the midpoint of <m>\text{F′F}</m>, is called the <m>\text{center}</m> of the hyperbola and represented by C. We denote the distance between the two foci by <m>2c</m>. That is, <m>\textbf{|}F\textbf{′}F \textbf{|} = 2c</m> or <m>\textbf{|} \text{CF} \textbf{|} = c =  \textbf{|} \text{CF} \textbf{′|}</m>. Noting also that |PF<term>′</term>| <term>|</term>F<term>′</term>F<term>|</term> + |PF| in ∆ PF<term>′</term>F and |PF<term>′</term>| – |PF| = 2<m>a</m>, you can show that <m>a</m> <m>c</m>.
+                    The line through the two foci <m>F\textbf{′}</m> and F is called the <m>\textbf{principal axis}</m> of the hyperbola. The point on the principal axis at halfway between the two foci, that is, the midpoint of <m>\text{F′F}</m>, is called the <m>\text{center}</m> of the hyperbola and represented by C. We denote the distance between the two foci by <m>2c</m>. That is, <m>\textbf{|}F\textbf{′}F \textbf{|} = 2c</m> or <m>\textbf{|} \text{CF} \textbf{|} = c =  \textbf{|} \text{CF} \textbf{′|}</m>. Noting also that <m>|\text{PF}\textbf{′}| \textbf{|}\text{F} \textbf{′} \text{F} \textbf{|} + |\text{PF}| \text{in} \Delta \text{PF}\textbf{′} \text{F} and |\text{PF} \textbf{′}| – |\text{PF}| = 2a</m>, you can show that <m>a</m> <m>c</m>.
                 </p>
             </li>
             <li>
                 <p>
-                    The points <m>\text{V} \textbf{′}</m> and <m>\text{V}</m> where the hyperbola crosses the principal axis are called <m>\text{vertices}</m> of the hyperbola. The line segment <m>\text{V}′ \text{V}</m>is called the <m>\textbf{transverse axis}</m> of the hyperbola. So, as <m>\text{V} \textbf{′}</m> and <m>\text{V}</m> are on the hyperbola, the definition requires that <m>\textbf{|} \text{V} ′ \text{F}\textbf{|}</m> – <term>|</term>V′F′<term>|</term> = <term>|</term>VF<term>′</term>| – |VF|. From this, you can obtain that |V′F′| = |VF|. Consequently:
+                    The points <m>\text{V} \textbf{′}</m> and <m>\text{V}</m> where the hyperbola crosses the principal axis are called <m>\text{vertices}</m> of the hyperbola. The line segment <m>\text{V}′ \text{V}</m>is called the <m>\textbf{transverse axis}</m> of the hyperbola. So, as <m>\text{V} \textbf{′}</m> and <m>\text{V}</m> are on the hyperbola, the definition requires that <m>\textbf{|} \text{V} ′ \text{F}\textbf{|}</m> – <m>\textbf{|}\text{V′F′}\textbf{|} = \textbf{|}\text{VF}\textbf{′}| – |\text{VF}|.</m> From this, you can obtain that <m>|\text{V′F′}| = |VF|</m>. Consequently:
                     <ol marker="(i)">
                         <li>
                             <p>
@@ -43,7 +43,7 @@
             </li>
             <li>
                 <p>
-                    The <term>eccentricity <m>e </m></term> of a hyperbola is defined to be the ratio of the distance between its foci to the length of its transverse axis. That is, similar to the definition of eccentricity of an ellipse, the eccentricity of a hyperbola is
+                    The <m>\textbf{eccentricity e} </m> of a hyperbola is defined to be the ratio of the distance between its foci to the length of its transverse axis. That is, similar to the definition of eccentricity of an ellipse, the eccentricity of a hyperbola is
                 </p>
                 <p><m> e =  \frac {|F'F|}{|V'V|} = \frac{C}{a}</m>(But here, <m>e &gt; 1</m>  because <m>c &gt; a</m>)</p>
             </li>
@@ -68,7 +68,7 @@
                                     <li>
                                         <p>
 
-                                            If P is any point on the hyperbola, then |PF| – |PF<term>′</term>| = <m>\pm 2a</m>.
+                                            If P is any point on the hyperbola, then <m>|\text{PF}| – |\text{PF}′| = \pm 2a</m>.
                                         </p>
                                         <p>
                                             (Note: Taking that<m> |\text{PF}| – |\text{PF} \textbf{′}| = k</m>, a constant, show that <m>k = \pm 2a</m>.)
