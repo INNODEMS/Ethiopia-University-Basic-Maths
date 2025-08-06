@@ -164,7 +164,7 @@
             <m>p(a) = 0</m>.
         </p>
         <assemblage xml:id="assemblage-division-algorithm">
-            <title>Division Algorithim</title>
+            <title>Division Algorithm</title>
             <p>
                 Let <m>p(x)</m> and <m>d(x)</m> be polynomials with <m>d(x) \neq 0</m>, and with the degree of
                 <m>d(x)</m> less than or equal to the degree of <m>p(x)</m>. Then there are polynomials
@@ -190,6 +190,54 @@
                 <p>
                     Using long division we have:
                 </p>
+                <tabular>
+                    <row>
+                        <cell ></cell>
+                        <cell bottom="medium"></cell>
+                        <cell halign="right" bottom="medium"><m>x^2 - 2x + 4</m></cell>
+                        <cell bottom="medium"></cell>
+                        <cell bottom="medium"></cell>
+                    </row>
+                    <row >
+                        <cell right="medium"><m>x^2 + 2x</m></cell>
+                        <cell colspan="4"><m>x^4 + 0x^3 + 0x^2 + 0x + 1</m></cell>
+                    </row>
+                    <row>
+                        <cell></cell>
+                        <cell halign="left" bottom="minor"><m>- (x^4 + 2x^3)</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell></cell>
+                        <cell halign="left" colspan="2"><m>\quad \qquad -2x^3 - 0x^2</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell></cell>
+                        <cell colspan="2" bottom="minor" halign="left"><m>\quad \quad- (-2x^3 - 4x^2)</m></cell>
+                        <cell></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell></cell>
+                        <cell colspan="3" halign="left"><m>\qquad \qquad \qquad 4x^2 + 0x</m></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell></cell>
+                        <cell colspan="3" halign="left" bottom="minor"><m>\qquad \qquad \qquad -(4x^2 + 8x)</m></cell>
+                        <cell></cell>
+                    </row>
+                    <row>
+                        <cell></cell>
+                        <cell></cell>
+                        <cell colspan="2"><m>\qquad \quad  -8x-1</m></cell>
+                        <cell></cell>
+                    </row>
+                </tabular>
             </solution>
         </example>
         <p>
@@ -205,640 +253,659 @@
             With the aid of the division algorithm, we can derive two important theorems that will allow us to
             recognize the zeros of polynomials.
         </p>
-            <p>
-                If we apply the division algorithm where the divisor, <m>d(x)</m>, is linear
-                (that is of the form <m>x - r</m>), we get
-            </p>
-            <p>
-                <me>\boxed{p(x)=(x-r)q(x)+R}</me>
-            </p>
-            <p>
-                Note that since the divisor is of the first degree, the remainder <m>R</m>, must be a constant. 
-                If we now substitute <m>x = r</m>, into this equation, we get
-            </p>
-            <p>
-                <me>P(r)=(r-r)q(r)+R = 0 \cdot q(r)+R</me>
-            </p>
-            <p>
-                Therefore, <m>p(r) = R</m>.
-            </p>
-            <p>
-                The result we just proved is called the remainder theorem.
-            </p>
-            <theorem xml:id="thm-remainder-theorem">
-               <statement>
-                   <p>
-                      When a polynomial <m>p(x)</m> of degree at least <m>1</m> is divided by <m>x-r</m>, the remainder is
-                     <m>p(r)</m>
-                  </p>
-               </statement>
-           </theorem> 
-            <example>
-                <statement>
-                    <p>
-                        The remainder when <m>P(x) = x^{3} - x^{2} + 3x - 1</m> is divided by
-                        <m>x - 2</m> is <m>p(2) = 9</m>.As a consequence of the remainder theorem, 
-                        if <m>x - r</m> is a factor of <m>p(x)</m>, then the remainder must be <m>0</m>. 
-                        Conversely, if the remainder is 0, then <m>x - r</m>, is a factor of <m>p(x)</m>. 
-                        This is known as the Factor Theorem.
-                    </p>
-                </statement>
-           </example>
-           <theorem xml:id="thm-factor-theorem">
-                <statement>
-                    <p>
-                        <m>x - r</m> is a factor of <m>p(x)</m> if and only if <m>p(r) = 0</m>.
-                    </p>
-                </statement>
-            </theorem>
-            <p>
-                The next theorem, called location theorem, allows us to verify that a zero exists somewhere within
-                an interval of numbers, and can also be used to zoom in closer on a value.
-            </p>
-            <theorem xml:id="thm-location-theorem">
-                <statement>
-                    <p>
-                        Let <m>f</m> be a polynomial function and <m>a</m> and <m>b</m> be real numbers 
-                        such that <m>a &lt; b</m>. If <m>f(a)f(b) &lt; 0</m>, then there is at least one zero
-                        of <m>f</m> between <m>a</m> and <m>b</m>.
-                    </p>
-                </statement>
-            </theorem>
-            <p>
-                The Factor and Remainder theorems establish the intimate relationship between the factors of 
-                a polynomial <m>p(x)</m> and its zeros. Recall that a polynomial of degree <m>n</m> 
-                can have at most <m>n</m> zeros.  Does every polynomial have a zero? Our answer depends on
-                the number system in which we are working. If we restrict ourselves to the set of real number system,
-                then we are already familiar with the fact that the polynomial <m>p(x) = x^{2} + 1</m> has no real zeros.
-                However, this polynomial does have two zeros in the complex number system.(The zeros are <m>i</m> and <m>- i</m>).
-                Carl Friedrich Gauss (<m>1777-1855</m>), in his doctoral dissertation, proved that within the complex number system,
-                every polynomial of degree <m>\geq 1</m> has at least one zero. This fact is usually referred to as the
-                Fundamental theorem of Algebra.
-            </p> 
-            <theorem xml:id="thm-fundamental-theorem-of-algebra">
-                <statement>
-                    <p>
-                        If <m>p(x)</m> is a polynomial of degree <m>n &gt; 0</m> whose coefficients are complex 
-                        numbers,  then <m>p(x)</m> has at least one zero in the complex number system.
-                    </p>
-                </statement>
-            </theorem>
-            <p>
-                Note that since all real numbers are complex numbers, a polynomial with real
-                coefficients also satisfies the Fundamental theorem of Algebra.As an immediate
-                consequence of the Fundamental theorem of Algebra, we have 
-            </p>
-            <theorem xml:id="thm-linear-factorization-theorem">
-                <statement>
-                    <p>
-                        If <m>p(x) = a_{n}x^{n} + a_{n - 1}x^{n - 1} + \cdots + a_{1}x + a_{0}</m>,
-                        where <m>n \geq 1</m> and <m>a_{n} \neq 0</m>, then 
-                        <m>p(x)=a_{n}(x-r_{1})(x-r_{2})\ldots (x-r_{n})</m>, where <m>r_{i}</m> are complex
-                        numbers (possible real not necessarily distinct).
-                    </p>
-                </statement>
-            </theorem>
-            <p>
-                From the linear factorization theorem, it follows that every polynomial of degree 
-                <m>n \geq 1</m> has exactly <m>n</m> zeros in the complex number system, where a 
-                root of multiplicity <m>k</m> counted <m>k</m> times.
-            </p>
-            <example>
-                <statement>
-                    <p>
-                        Express each of the polynomials in the form described by the Linear 
-                        Factorization Theorem. List each zero and its multiplicity.
-                    </p>
-                    <p>
-                        <ol marker="a) ">
-                            <li>
-                                <p>
-                                    <m>p(x)= x^{3}-(6)x^{2}-16x</m>
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    <m>q(x)=(3)x^{2}- 10x +8</m> 
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    <m>f(x)= (2)x{4}+(8)x^{3}+(10)x^{2}</m>
-                                </p>
-                            </li>
-                        </ol>
-                    </p>
-                </statement>
-                <solution>
-                    <p>
-                        <ol marker="a) ">
-                            <li>
-                                <p>
-                                    We may factorize <m>p(x)</m> as follows:
-                                </p>
-                                <p>
-                                    <md>
-                                        <mrow> p(x)= x^{3}-(6)x^{2}-16x=\amp x(x^{2} - 6x - 16) </mrow>
-                                        <mrow>     =\amp x(x-8)(x+2) </mrow>
-                                        <mrow>     =\amp x(x-8)(x-(x-2))</mrow>
-                                    </md>
-                                </p>
-                                <p>
-                                    The zeros of <m>p(x)</m> are <m>0, 8,</m> and <m>–2</m> each of multiplicity one.  
-                                </p>  
-                            </li>
-                            <li>
-                                <p>
-                                    We may factorize <m>q(x)</m> as follows:
-                                </p>
-                                <p>
-                                    <md>
-                                        <mrow> q(x) = 3x^{2} - 10x + 8 \amp= (3x - 4)(x - 2)</mrow>
-                                        <mrow>  \amp= 3(x - \frac{4}{3})(x - 2)</mrow>
-                                    </md>
-                                </p>
-                                <p>
-                                    Thus, the zeros of <m>q(x)</m> are <m>\frac{4}{3}</m> and <m>2</m>, each of multiplicity one.
-                                </p> 
-                            </li>
-                            <li>
-                                <p>
-                                    We may factorize <m>f(x)</m> as follows: 
-                                </p>
-                                <p>
-                                    <md>
-                                        <mrow> f(x) = 2x^{4} + 8x^{3} + 10x^{2} =\amp 2x^{2}(x^{2} + 4x + 5)</mrow>
-                                        <mrow>       =\amp 2x^{2}(x - (-2 + i))(x - (-2 - i)) </mrow>
-                                    </md>
-                                </p>
-                                <p>
-                                    Thus, the zeros of f(x) are 0 with multiplicity two and <m>- 2 + i</m> and 
-                                    <m>- 2 - i</m> each with multiplicity one.
-                                </p>
-                            </li>
-                        </ol>
-                    </p>
-                </solution>
-            </example>
-            <example>
+        <p>
+            If we apply the division algorithm where the divisor, <m>d(x)</m>, is linear
+            (that is of the form <m>x - r</m>), we get
+        </p>
+        <p>
+            <me>\boxed{p(x)=(x-r)q(x)+R}</me>
+        </p>
+        <p>
+            Note that since the divisor is of the first degree, the remainder <m>R</m>, must be a constant. 
+            If we now substitute <m>x = r</m>, into this equation, we get
+        </p>
+        <p>
+            <me>P(r)=(r-r)q(r)+R = 0 \cdot q(r)+R</me>
+        </p>
+        <p>
+            Therefore, <m>p(r) = R</m>.
+        </p>
+        <p>
+            The result we just proved is called the remainder theorem.
+        </p>
+        <theorem xml:id="thm-remainder-theorem">
             <statement>
                 <p>
-                    Find a polynomial <m>p(x)</m> with exactly the following zeros and multiplicity.
+                    When a polynomial <m>p(x)</m> of degree at least <m>1</m> is divided by <m>x-r</m>, the remainder is
+                    <m>p(r)</m>
                 </p>
-                <tabular top="medium" left="minor" bottom="minor" right="minor">
-                    <row header="yes">
-                        <cell>zeros</cell>
-                        <cell>multiplicity</cell>
-                    </row>
-                    <row>
-                        <cell>-1</cell>
-                        <cell>3</cell>
-                    </row>
-                    <row>
-                        <cell>2</cell>
-                        <cell>4</cell>
-                    </row>
-                    <row>
-                        <cell>5</cell>
-                        <cell>2</cell>
-                    </row>
-                </tabular>
             </statement>
-            </example>
-    </paragraphs>
-          <!--  
-                          
-                          <p>
-                            Are there any other polynomials that give the same roots and multiplicity?
-                          </p>
-                          <solution>
+        </theorem> 
+        <example>
+            <statement>
+                <p>
+                    The remainder when <m>P(x) = x^{3} - x^{2} + 3x - 1</m> is divided by
+                    <m>x - 2</m> is <m>p(2) = 9</m>.As a consequence of the remainder theorem, 
+                    if <m>x - r</m> is a factor of <m>p(x)</m>, then the remainder must be <m>0</m>. 
+                    Conversely, if the remainder is 0, then <m>x - r</m>, is a factor of <m>p(x)</m>. 
+                    This is known as the Factor Theorem.
+                </p>
+            </statement>
+        </example>
+        <theorem xml:id="thm-factor-theorem">
+            <statement>
+                <p>
+                    <m>x - r</m> is a factor of <m>p(x)</m> if and only if <m>p(r) = 0</m>.
+                </p>
+            </statement>
+        </theorem>
+        <p>
+            The next theorem, called location theorem, allows us to verify that a zero exists somewhere within
+            an interval of numbers, and can also be used to zoom in closer on a value.
+        </p>
+        <theorem xml:id="thm-location-theorem">
+            <statement>
+                <p>
+                    Let <m>f</m> be a polynomial function and <m>a</m> and <m>b</m> be real numbers 
+                    such that <m>a &lt; b</m>. If <m>f(a)f(b) &lt; 0</m>, then there is at least one zero
+                    of <m>f</m> between <m>a</m> and <m>b</m>.
+                </p>
+            </statement>
+        </theorem>
+        <p>
+            The Factor and Remainder theorems establish the intimate relationship between the factors of 
+            a polynomial <m>p(x)</m> and its zeros. Recall that a polynomial of degree <m>n</m> 
+            can have at most <m>n</m> zeros.  Does every polynomial have a zero? Our answer depends on
+            the number system in which we are working. If we restrict ourselves to the set of real number system,
+            then we are already familiar with the fact that the polynomial <m>p(x) = x^{2} + 1</m> has no real zeros.
+            However, this polynomial does have two zeros in the complex number system.(The zeros are <m>i</m> and <m>- i</m>).
+            Carl Friedrich Gauss (<m>1777-1855</m>), in his doctoral dissertation, proved that within the complex number system,
+            every polynomial of degree <m>\geq 1</m> has at least one zero. This fact is usually referred to as the
+            Fundamental theorem of Algebra.
+        </p> 
+        <theorem xml:id="thm-fundamental-theorem-of-algebra">
+            <statement>
+                <p>
+                    If <m>p(x)</m> is a polynomial of degree <m>n &gt; 0</m> whose coefficients are complex 
+                    numbers,  then <m>p(x)</m> has at least one zero in the complex number system.
+                </p>
+            </statement>
+        </theorem>
+        <p>
+            Note that since all real numbers are complex numbers, a polynomial with real
+            coefficients also satisfies the Fundamental theorem of Algebra.As an immediate
+            consequence of the Fundamental theorem of Algebra, we have 
+        </p>
+        <theorem xml:id="thm-linear-factorization-theorem">
+            <statement>
+                <p>
+                    If <m>p(x) = a_{n}x^{n} + a_{n - 1}x^{n - 1} + \cdots + a_{1}x + a_{0}</m>,
+                    where <m>n \geq 1</m> and <m>a_{n} \neq 0</m>, then 
+                    <m>p(x)=a_{n}(x-r_{1})(x-r_{2})\ldots (x-r_{n})</m>, where <m>r_{i}</m> are complex
+                    numbers (possible real not necessarily distinct).
+                </p>
+            </statement>
+        </theorem>
+        <p>
+            From the linear factorization theorem, it follows that every polynomial of degree 
+            <m>n \geq 1</m> has exactly <m>n</m> zeros in the complex number system, where a 
+            root of multiplicity <m>k</m> counted <m>k</m> times.
+        </p>
+        <example>
+            <statement>
+                <p>
+                    Express each of the polynomials in the form described by the Linear 
+                    Factorization Theorem. List each zero and its multiplicity.
+                </p>
+                <p>
+                    <ol marker="a) ">
+                        <li>
                             <p>
-                                <ol>
-                                    <li>
-                                           <p>
-                                             Based on the Factor Theorem, we may write the polynomial as
-                                             <m>p(x)\  = (x - ( - 1))^{3}\ (x - 2)^{4}(x - 5)^{2} = (x + 1)^{3}\ (x - 2)^{4}(x - 5)^{2}</m>
-                                             which gives the required roots and multiplicities.
-                                             Any polynomial of the form <m>\text{kp}(x)</m>, where <m>k</m> is a non-zero constant will give
-                                             the same roots and multiplicities.
-                                          </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                             Based on part (1), we know that <m>f(x)\  = k(x + 1)^{3}\ (x - 2)^{4}(x - 5)^{2}</m>. 
-                                             Since we want <m>f(x) = \amp 32</m>, we have
-                                             <md>
-                                                <mrow>  <m>f(x) =\amp \frac{1}{4}(x + 1)^{3}\ (x - 2)^{4}(x - 5)^{2}</m></mrow>
-                                                <mrow> 32=\amp, \text{k}(8)(1)(16) \frac{1}{4} </mrow>
-                                             </md>
-                                             Thus, <m>f(x) =\amp, \frac{1}{4}(x + 1)^{3}\ (x - 2)^{4}(x - 5)^{2}</m>.
-                                        </p>
-                                    </li>
-                                </ol>
+                                <m>p(x)= x^{3}-(6)x^{2}-16x</m>
                             </p>
-                          </solution>
-                          <p>
-                             Our experience in using the quadratic formula on quadratic equations with 
-                             real coefficients has shown us that complex roots always appear in conjugate pairs. 
-                             For example, the roots of <m>x^{2}-2x+5=\amp 0</m> are <m>1+2 \text{i}</m> and
-                              <m>1-2 \text{i}</m>. Infact, this property extends to all polynomial equations.
-                          </p>
-                          <theorem xml:id="thm-Conjugate-Roots-Theorem">
-                            <statement>
-                                <p>
-                                    Let <m>p(x)</m> be a polynomial with real coefficients. If complex number <m>a + \text{bi}</m> 
-                                   (where <m>a</m> and <m>b</m> are real numbers) is a zero of <m>p(x)</m>, then so is its conjugate 
-                                  <m>a - \text{bi}</m>
-                                </p>
-                            </statement>
-                          </theorem>
-                          <example>
-                              <statement>
-                                   <p>
-                                     Let <m>r(x) = x^{4} + 2x^{3} - 9x^{2} + \text{26}x - \text{20}\text{.}</m> 
-                                      Given that <m>1 - \sqrt{3}\ i</m> is a zero, find the other zero of <m>r(x)</m>.
-                                  </p>
-                              </statement>
-                          </example> 
-                          <solution>
+                        </li>
+                        <li>
                             <p>
-                                 According to the Conjugate Roots Theorem, if <m>1 - \sqrt{3}\ i</m> is a zero,
-                                 then its conjugate, <m>1 + \sqrt{3}\ i</m> must also be a zero. Therefore,
-                                 <m>x - (1 - \sqrt{3}\ i\ )</m> and <m>x - (1 + \sqrt{3}\ i\ )</m> are both factors
-                                 of <m>r(x)</m>, and so their product must be a factor of  <m>r(x)</m>.That is,
-                                 <m>\lbrack x - (1 - \sqrt{3}\ i\ )\rbrack</m> <m>\lbrack x - (1 + \sqrt{3}\ i\ )\rbrack =</m>
-                                 <m>x^{2} - 2x + 4</m> is a factor of <m>r(x)</m>. Dividing <m>r(x)</m> by <m>x^{2} - 2x + 4</m>,
-                                 we obtain
+                                <m>q(x)=(3)x^{2}- 10x +8</m> 
                             </p>
-                                <p>
-                                    
-                               </p>
-                                   <p>
-                                      Thus, the zeros of <m>r(x)</m> are <m>1 - \sqrt{3}\ i</m>, <m>1 + \sqrt{3}\ i</m>, <m>- 5</m> and 1.
-                                   </p>
-                                   <p>
-                                     The theorems we have discussed so far are called existence theorems because they 
-                                     ensure the existence of zeros and linear factors of polynomials. 
-                                     These theorems do not tell us how to find the zeros or the linear factors. 
-                                     The Linear Factorization Theorem guarantees that we can factor a polynomial of degree
-                                     at least one into linear factors, but it does not tell us how.
-                                   </p>
-                                   <p>
-                                     We know from experience that if <m>p(x)</m> happens to be a quadratic function, then 
-                                     we may find the  zeros of <m>p(x) = \text{Ax}^{2} + \text{Bx} + C</m> by using the
-                                     quadratic formula to obtain the zeros
-                                   </p>
-                                   <p>
-                                    <md>
-                                        <mrow><m>x =\amp  \frac{- B \pm \sqrt{B^{2} - 4\text{AC}}}{2A}\text{.}</m></mrow>
-                                    </md>
-                                   </p>
-                          </solution> 
-                          <p>
-                             The rest of this subsection is devoted to developing some special methods for finding the zeros of a 
-                             polynomial function.
-                          </p>
-                          <p>
-                             As we have seen, even though we have no general techniques for factorizing polynomials of degree 
-                             greater than 2, if we happen to know a root, say <m>r</m>, we can use long division
-                             to divide <m>p(x)</m> by <m>x - r</m> and obtain a quotient polynomial of lower degree. 
-                             If we can get the quotient polynomial down to a quadratic, then we are able to determine all the roots. 
-                             But how do we find a root to start the process? The following theorem can be most helpful.
-                          </p>
-                          <theorem xml:id="thm-The-Rational-Root-Theorem">
-                             <statement>
-                                   <p>
-                                     Suppose that <m>f(x) = a_{n}x^{n} + a_{n - 1}x^{n - 1} + \cdots + a_{1}x + a_{0}</m>, where
-                                     <m>n \geq 1\ ,\ a_{n} \neq 0</m> is an <m>n^{\text{th}}</m>degree polynomial with integer coefficients. 
-                                     If <m>\frac{p}{q}</m> is a rational root of <m>f(x) = 0</m>, where <m>p</m> and <m>q</m> have
-                                     no common factor other than <m>\pm 1</m>, then <m>p</m> is a factor of <m>\ a_{0}</m> and <m>q</m> 
-                                     is a factor of <m>\ a_{n}</m>.
-                                 </p>
-                              </statement>
-                          </theorem>
-                          <p>
-                             To get a feeling as to why this theorem is true, suppose <m>\frac{3}{2}</m> is a root of
-                             <m>a_{3}x^{3} + a_{2}x^{2} + a_{1}x + a_{0} = 0</m>.
-                          </p> 
-                          <p>
-                             Then, <m>a_{3}\left( \frac{3}{2} \right)^{3} + a_{2}\left( \frac{3}{2} \right)^{2} + a_{1}
-                              \left( \frac{3}{2} \right) + a_{0} = 0</m> which implies that
-                          </p> 
-                          <p>
-                            <m>\frac{\text{27}a_{3}}{8} + \frac{9a_{2}}{4} + \frac{3a_{1}}{2} + a_{0} = 0</m> multiplying both sides by 8
-                          </p> 
-                          <p>
-                                   <m>  \begin{matrix}
-                                     \text{27}a_{3} + \text{18}a_{2} + \text{12}a_{1} = - 8a_{0}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}(1) \\
-                                       \\
-                                     \text{27}a_{3} = - \text{18}a_{2} - \text{12}a_{1} - 8a_{0}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}\text{.}(2) \\
-                                     \end{matrix}
-                                 </m>
-                          </p> 
-                          <p>
-                             If we look at equation (1), the left hand side is divisible by 3, and therefore the right hand side must
-                             also be divisible by 3. Since 8 is not divisible by 3, <m>a_{0}</m> must be divisible by 3. From equation (2),
-                             <m>a_{3}</m> must be divisible by 2.
-                          </p> 
-                          <example>
-                            <statement>
-                                <p>
-                                     Find all the zeros of the function 
-                                     <m>p(x) = 2x^{3} + 3x^{2} - \text{23}x - 12</m>
-                                </p>
-                            </statement>
-                          </example>
-                          <solution>
-                               <p>
-                                 According to the Rational Root Theorem, if <m>\frac{p}{q}</m> is a rational root 
-                                 of the given equation, then <m>p</m> must be a factor of <m>- \text{12}</m> and <m>q</m> must be a factor of 2.
-                                 Thus, we have 
+                        </li>
+                        <li>
+                            <p>
+                                <m>f(x)= (2)x{4}+(8)x^{3}+(10)x^{2}</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol marker="a) ">
+                        <li>
+                            <p>
+                                We may factorize <m>p(x)</m> as follows:
                             </p>
                             <p>
-                              possible values of <m>p</m>: <m>\pm 1,\  \pm 2,\  \pm 3,\  \pm 4,\  \pm 6,\  \pm \text{12}</m>
-                            </p>
-                            <p>
-                                possible values of <m>q</m>: <m>\pm 1,\  \pm 2</m>
-                            </p>
-                              <p>
-                                 possible rational roots <m>\frac{p}{q}</m>: <m>\pm 1,\  \pm \ \frac{1}{2},\  \pm 2,\ 
-                                 \pm 3,\  \pm \ \frac{3}{2},\  \pm 4,\  \pm 6,\  \pm \text{12}</m>
-                              </p>
-                              <p>
-                                 We may check these possible roots by substituting the value in <m>p(x)</m>.
-                                 Now <m>p(1) = - \text{30}</m> and <m>p( - 1) = \text{12}</m>. 
-                                 Since <m>p(1)</m> is negative and <m>p( - 1)</m> is positive, by location theorem, <m>p(x)</m> 
-                                 has a zero between <m>- 1</m> and 1. Since <m>P\left( - \frac{1}{2} \right) = 0</m>, 
-                                 then <m>\left( x + \frac{1}{2} \right)</m> is a factor of <m>p(x)</m>. Using 
-                                 long division, we obtain
-                              </p>
-                              <p>
                                 <md>
-                                    <mrow> p(x)= \amp 2x^{3} + 3x^{2}-23x-12= </mrow>
-                                    <mrow> \amp </mrow>
+                                    <mrow> p(x)= x^{3}-(6)x^{2}-16x=\amp x(x^{2} - 6x - 16) </mrow>
+                                    <mrow>     =\amp x(x-8)(x+2) </mrow>
+                                    <mrow>     =\amp x(x-8)(x-(x-2))</mrow>
                                 </md>
-                              </p>
-                          </solution>                                          
-    <ol start="2" type="1">
-    <li><p>Find a polynomial <em>f</em> (<em>x</em>) having the zeros described in part (a) such that <em>f</em>(1) = 32.</p></li>
-    </ol>
-    <ol start="2" type="1">
-
-    <p>Our experience in using the quadratic formula on quadratic equations with real coefficients has shown us that complex roots always appear in conjugate pairs. For example, the roots of <m>x^{2} - 2x + 5 = 0</m> are <m>1 + 2i</m> and <m>1 - 2i</m>. In fact, this property extends to all polynomial equations with real coefficients.</p>
-
-
-
-
-
-    <p>
-        We may check these possible roots by substituting the value in <m>p(x)</m>.
-        Now <m>p(1) = - \text{30}</m> and <m>p( - 1) = \text{12}</m>. 
-        Since <m>p(1)</m> is negative and <m>p( - 1)</m> is positive, by location theorem, <m>p(x)</m> 
-        has a zero between <m>- 1</m> and 1. Since <m>P\left( - \frac{1}{2} \right) = 0</m>, 
-        then <m>\left( x + \frac{1}{2} \right)</m> is a factor of <m>p(x)</m>. Using long division, we obtain
-        </p>
-    <p>
-        <m>\begin{matrix}
-        p(x) = 2x^{3} + 3x^{2} - \text{23}x - \text{12} = (x + \frac{1}{2})(2x^{2} + 2x - \text{24}) \\
-        \  = 2(x + \frac{1}{2})(x + 4)(x - 3) \\
-        \end{matrix}</m>
-    </p>
-    <p>
-        Therefore, the zeros of <em>p</em>(<em>x</em>) are <m>- \frac{1}{2}</m>, <m>- 4</m> and 3.
-    </p>
-    <ul>
-    <li> 
+                            </p>
+                            <p>
+                                The zeros of <m>p(x)</m> are <m>0, 8,</m> and <m>–2</m> each of multiplicity one.  
+                            </p>  
+                        </li>
+                        <li>
+                            <p>
+                                We may factorize <m>q(x)</m> as follows:
+                            </p>
+                            <p>
+                                <md>
+                                    <mrow> q(x) = 3x^{2} - 10x + 8 \amp= (3x - 4)(x - 2)</mrow>
+                                    <mrow>  \amp= 3(x - \frac{4}{3})(x - 2)</mrow>
+                                </md>
+                            </p>
+                            <p>
+                                Thus, the zeros of <m>q(x)</m> are <m>\frac{4}{3}</m> and <m>2</m>, each of multiplicity one.
+                            </p> 
+                        </li>
+                        <li>
+                            <p>
+                                We may factorize <m>f(x)</m> as follows: 
+                            </p>
+                            <p>
+                                <md>
+                                    <mrow> f(x) = 2x^{4} + 8x^{3} + 10x^{2} =\amp 2x^{2}(x^{2} + 4x + 5)</mrow>
+                                    <mrow>       =\amp 2x^{2}(x - (-2 + i))(x - (-2 - i)) </mrow>
+                                </md>
+                            </p>
+                            <p>
+                                Thus, the zeros of f(x) are 0 with multiplicity two and <m>- 2 + i</m> and 
+                                <m>- 2 - i</m> each with multiplicity one.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+        <example>
+            <statement>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Find a polynomial <m>p(x)</m> with exactly the following zeros and multiplicity.
+                            </p>
+                            <tabular top="medium" left="minor" bottom="minor" right="minor">
+                                <row header="yes">
+                                    <cell>zeros</cell>
+                                    <cell>multiplicity</cell>
+                                </row>
+                                <row>
+                                    <cell halign="center"><m>-1</m></cell>
+                                    <cell halign="center"><m>3</m></cell>
+                                </row>
+                                <row>
+                                    <cell halign="center"><m>2</m></cell>
+                                    <cell halign="center"><m>4</m></cell>
+                                </row>
+                                <row>
+                                    <cell halign="center"><m>5</m></cell>
+                                    <cell halign="center"><m>2</m></cell>
+                                </row>
+                            </tabular>
+                            <p>
+                                Are there any other polynomials that give the same roots and multiplicity?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Find a polynomial <m>f (x)</m> having the zeros described in part (a) such that <m>f(1) = 32</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Based on the Factor Theorem, we may write the polynomial as
+                                <m>p(x)\  = (x - ( - 1))^{3}\ (x - 2)^{4}(x - 5)^{2} = (x + 1)^{3}\ (x - 2)^{4}(x - 5)^{2}</m>
+                                which gives the required roots and multiplicities.
+                                Any polynomial of the form <m>kp(x)</m>, where <m>k</m> is a non-zero constant will give
+                                the same roots and multiplicities.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Based on part (1), we know that <m>f(x) = k(x + 1)^{3}\ (x - 2)^{4}(x - 5)^{2}</m>. 
+                                Since we want <m>f(x) = 32</m>, we have
+                                <md>
+                                    <mrow>  f(x) \amp= \frac{1}{4}(x + 1)^{3}\ (x - 2)^{4}(x - 5)^{2}</mrow>
+                                    <mrow> 32 \amp= k(8)(1)(16) \Rightarrow k = \frac{1}{4} </mrow>
+                                </md>
+                                Thus, <m>f(x) = \frac{1}{4}(x + 1)^{3}\ (x - 2)^{4}(x - 5)^{2}</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
         <p>
-            <alert>Rational Functions and their Graphs</alert>
+            Our experience in using the quadratic formula on quadratic equations with 
+            real coefficients has shown us that complex roots always appear in conjugate pairs. 
+            For example, the roots of <m>x^{2}-2x+5 = 0</m> are <m>1+2 i</m> and
+            <m>1-2 i</m>. Infact, this property extends to all polynomial equations.
         </p>
-    </li>
-    </ul>
-    <p>
-        A rational function is a function of the form where both <em>n</em>(<em>x</em>) and <em>d</em>(<em>x</em>) 
-        are polynomials and <m>d(x) \neq 0</m>.
-    </p>
-    <p>
-        <alert>Example 3.25</alert>: The functions <m>f(x) = \frac{3}{x + 5}</m>, <m>f(x) = \frac{x - 1}{x^{2} - 4}</m>
-        and <m>f(x) = \frac{x^{5} + 2x^{3} - x + 1}{x + 5x}</m> are examples of rational function.
+        <theorem xml:id="thm-conjugate-roots-theorem">
+            <statement>
+                <p>
+                    Let <m>p(x)</m> be a polynomial with real coefficients. If complex number <m>a + bi</m> 
+                    (where <m>a</m> and <m>b</m> are real numbers) is a zero of <m>p(x)</m>, then so is its conjugate 
+                    <m>a - bi</m>
+                </p>
+            </statement>
+        </theorem>
+        <example>
+            <statement>
+                <p>
+                    Let <m>r(x) = x^{4} + 2x^{3} - 9x^{2} + 26x - 20</m>. 
+                    Given that <m>1 - \sqrt{3} i</m> is a zero, find the other zero of <m>r(x)</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    According to the Conjugate Roots Theorem, if <m>1 - \sqrt{3} i</m> is a zero,
+                    then its conjugate, <m>1 + \sqrt{3} i</m> must also be a zero. Therefore,
+                    <m>x - (1 - \sqrt{3} i)</m> and <m>x - (1 + \sqrt{3} i )</m> are both factors
+                    of <m>r(x)</m>, and so their product must be a factor of  <m>r(x)</m>. That is,
+                    <m>\lbrack x - (1 - \sqrt{3} i )\rbrack</m> <m>\lbrack x - (1 + \sqrt{3} i )\rbrack =</m>
+                    <m>x^{2} - 2x + 4</m> is a factor of <m>r(x)</m>. Dividing <m>r(x)</m> by <m>x^{2} - 2x + 4</m>,
+                    we obtain
+                </p>
+                <p>
+                    <me>
+                        r(x) = (x^2-2x+4)(x^2+4x-5) = (x^2 - 2x + 4)(x+5)(x-1).
+                    </me>
+                </p>
+                <p>
+                    Thus, the zeros of <m>r(x)</m> are <m>1 - \sqrt{3} i</m>, <m>1 + \sqrt{3} i</m>, <m>- 5</m> and <m>1</m>.
+                </p>
+            </solution>
+        </example> 
+
+        <p>
+            The theorems we have discussed so far are called existence theorems because they 
+            ensure the existence of zeros and linear factors of polynomials. 
+            These theorems do not tell us how to find the zeros or the linear factors. 
+            The Linear Factorization Theorem guarantees that we can factor a polynomial of degree
+            at least one into linear factors, but it does not tell us how.
         </p>
-    <p>
-        Note that the domain of the rational function is <m>\left\{ x:d(x) \neq 0 \right\}</m>
-    </p>
-    <example>
-        <statement>
-            <p>
-                Find the domain and zeros of the function <m>f(x) = \frac{3x - 5}{x^{2} - x - \text{12}}</m>.
+
+        <p>
+            We know from experience that if <m>p(x)</m> happens to be a quadratic function, then 
+            we may find the  zeros of <m>p(x) = Ax^{2} + Bx + C</m> by using the
+            quadratic formula to obtain the zeros
+        </p>
+
+        <p>
+            <me>x = \frac{- B \pm \sqrt{B^{2} - 4A}}{2A}</me>.
+        </p>
+
+        <p>
+            The rest of this subsection is devoted to developing some special methods for finding the zeros of a 
+            polynomial function.
+        </p>
+        <p>
+            As we have seen, even though we have no general techniques for factorizing polynomials of degree 
+            greater than <m>2</m>, if we happen to know a root, say <m>r</m>, we can use long division
+            to divide <m>p(x)</m> by <m>x - r</m> and obtain a quotient polynomial of lower degree. 
+            If we can get the quotient polynomial down to a quadratic, then we are able to determine all the roots. 
+            But how do we find a root to start the process? The following theorem can be most helpful.
+        </p>
+        <theorem xml:id="thm-rational-root">
+            <statement>
+                <p>
+                    Suppose that <m>f(x) = a_{n}x^{n} + a_{n - 1}x^{n - 1} + \cdots + a_{1}x + a_{0}</m>, where
+                    <m>n \geq 1\ ,\ a_{n} \neq 0</m> is an <m>n^{\text{th}}</m> degree polynomial with integer coefficients. 
+                    If <m>\frac{p}{q}</m> is a rational root of <m>f(x) = 0</m>, where <m>p</m> and <m>q</m> have
+                    no common factor other than <m>\pm 1</m>, then <m>p</m> is a factor of <m> a_{0}</m> and <m>q</m> 
+                    is a factor of <m> a_{n}</m>.
+                </p>
+            </statement>
+        </theorem>
+
+        <p>
+            To get a feeling as to why this theorem is true, suppose <m>\frac{3}{2}</m> is a root of
+            <m>a_{3}x^{3} + a_{2}x^{2} + a_{1}x + a_{0} = 0</m>.
+        </p> 
+
+        <p>
+            Then, <m>a_{3}\left( \frac{3}{2} \right)^{3} + a_{2}\left( \frac{3}{2} \right)^{2} + a_{1}
+            \left( \frac{3}{2} \right) + a_{0} = 0</m> which implies that
+        </p> 
+        <p>
+            <me>
+                \frac{27a_{3}}{8} + \frac{9a_{2}}{4} + \frac{3a_{1}}{2} + a_{0} = 0 \text{ multiplying both sides by } 8
+            </me>
+            <men xml:id="eqn-rational-root-1">
+                27a_{3} + 18a_{2} + 12a_{1} = - 8a_{0}
+            </men>
+            <men xml:id="eqn-rational-root-2">
+                27a_{3} = - 18a_{2} - 12a_{1} - 8a_{0}
+            </men>
+            
+        </p>
+
+        <p>
+            If we look at equation <xref ref="eqn-rational-root-1"/>, the left hand side is divisible 
+            by <m>3</m>, and therefore the right hand side must
+            also be divisible by <m>3</m>. Since <m>8</m> is not divisible by <m>3</m>, <m>a_{0}</m>
+             must be divisible by <m>3</m>. From equation <xref ref="eqn-rational-root-2"/>,
+            <m>a_{3}</m> must be divisible by <m>2</m>.
+        </p> 
+        <example>
+            <statement>
+                <p>
+                        Find all the zeros of the function 
+                        <m>p(x) = 2x^{3} + 3x^{2} - 23x - 12</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    According to the Rational Root Theorem, if <m>\frac{p}{q}</m> is a rational root 
+                    of the given equation, then <m>p</m> must be a factor of <m>-12</m> and <m>q</m> must be a factor of <m>2</m>.
+                    Thus, we have 
+                </p>
+                <p>
+                    possible values of <m>p</m>: <m>\pm 1,  \pm 2,  \pm 3,  \pm 4,  \pm 6,  \pm 12</m>
+                </p>
+                <p>
+                    possible values of <m>q</m>: <m>\pm 1, \pm 2</m>
+                </p>
+                <p>
+                    possible rational roots <m>\frac{p}{q}</m>: <m>\pm 1, \pm \ \frac{1}{2},\  \pm 2,
+                    \pm 3,\  \pm  \frac{3}{2},  \pm 4,  \pm 6,  \pm 12</m>
+                </p>
+                <p>
+                    We may check these possible roots by substituting the value in <m>p(x)</m>.
+                    Now <m>p(1) = - 30</m> and <m>p( - 1) = 12</m>. 
+                    Since <m>p(1)</m> is negative and <m>p( - 1)</m> is positive, by location theorem, <m>p(x)</m> 
+                    has a zero between <m>- 1</m> and 1. Since <m>P\left( - \frac{1}{2} \right) = 0</m>, 
+                    then <m>\left( x + \frac{1}{2} \right)</m> is a factor of <m>p(x)</m>. Using 
+                    long division, we obtain
+                </p>
+                <p>
+                    <m>\begin{matrix}
+                    p(x) = 2x^{3} + 3x^{2} - 23x - 12 \amp = (x + \frac{1}{2})(2x^{2} + 2x - 24) \\
+                     \amp = 2(x + \frac{1}{2})(x + 4)(x - 3) \\
+                    \end{matrix}</m>
+                </p>
+                <p>
+                    Therefore, the zeros of <m>p(x)</m> are <m>- \frac{1}{2}</m>, <m>- 4</m> and <m>3</m>.
+                </p>
+            </solution>  
+        </example>
+    </paragraphs>
+    <paragraphs>
+        <title>Rational Functions and their Graphs</title>
+        <p>
+            A rational function is a function of the form <m>f(x) = \frac{n(x)}{d(x)}</m> where both <m>n(x)</m> and <m>d(x)</m>
+            are polynomials and <m>d(x) \neq 0</m>.
+        </p>
+        <example>
+            <statement>
+                <p>
+                    The functions <m>f(x) = \frac{3}{x + 5}</m>, <m>f(x) = \frac{x - 1}{x^{2} - 4}</m>
+                    and <m>f(x) = \frac{x^{5} + 2x^{3} - x + 1}{x + 5x}</m> are examples of rational function.
+                </p>
+            </statement>
+        </example>
+        <note>
+             <p>
+                Note that the domain of the rational function <m>f(x) = \frac{n(x)}{d(x)}</m> is <m>\left\{ x:d(x) \neq 0 \right\}</m>
             </p>
-        </statement>
-    </example>        
-        <solution>
-            <p>
-                The values of <m>x</m> for which <m>x^{2} - x - \text{12} = 0</m> are excluded from 
-            the domain of <m>f\text{.}</m>Since <m>x^{2} - x - \text{12} = (x - 4)(x + 3)</m>, 
-            we have <m>\text{Dom}(f) = \left\{ x:x \neq - 3,4 \right\}</m>. To find the zeros of <m>f(x)</m>, 
-            we solve the equation
-            </p>
-        </solution>    
-
-    <p><m>\frac{n\ (x)}{d(x)} = 0 \Leftrightarrow n\ (x) = 0\  \land \ q(x) \neq 0</m></p>
-    <p>
-        Therefore, to find the zeros of <m>f(x)</m>, we solve <m>3x - 5 = 0</m>, giving <m>x = \frac{5}{3}</m>. 
-        Since <m>\frac{5}{3}</m> does not make the denominator zero, it is the only zero of <m>f(x)</m>.
-    </p>
-    <p> 
-        The following terms and notations are useful in our next discussion.
-    </p>
-    <p>
-        Given a number <em>a</em>,
-    </p>
-    <ul>
-    <li><p><m>x</m> approaches <em>a</em> from the right means <em>x</em> takes any value near and near to <em>a</em> but <em>x</em> &gt; <em>a</em>. This is denoted by: <em>x</em>→<em>a</em><sup>+</sup> (read: ‘<em>x</em> approaches <em>a</em> from the right’ ).</p></li>
-    </ul>
-    <p>
-        For instance, <em>x</em>→ 1<sup>+</sup> means <em>x</em> can be 1.001, 1.0001, 1.00001, 1.000001, etc.
-    </p>
-    <ul>
-    <li>
-        <p>
-            <m>x</m> approaches <em>a</em> from the left means <em>x</em> takes any value near and near to 
-            <em>a</em> but <em>x</em> &lt; <em>a</em>.
-        </p>
-    </li>
-    </ul>
-    <p>
-        This is denoted by: <em>x</em>→<em>a</em><sup>–</sup> (read: ‘<em>x</em> approaches <em>a</em> from the
-        left’ ).
-        </p>
-    <p>
-        For instance, <em>x</em>→1<sup>–</sup> means <em>x</em> 
-        can be 0.99, 0.999, 0.9999, 0.9999, etc.
-    </p>
-    <ul>
-    <li>
-        <p>
-            <em>x</em>→∞ (read: ‘<em>x</em> approaches or tends to <em>infinity</em>’) means the value of 
-            <em>x</em> gets indefinitely larger and larger in magnitude (keep increasing without bound). 
-            For instance, <em>x</em> can be 10<sup>6</sup>, 10<sup>10</sup>, 10<sup>12</sup>, etc.
-        </p>
-    </li>
-    <li> 
-        <p>
-            <em>x</em>→ –∞ (read: ‘<em>x</em> approaches or tends to negative <em>infinity</em>’) means the value of
-            <em>x</em> is negative and gets indefinitely larger and larger negative in magnitude
-            (keep decreasing without bound). For instance, <em>x</em> can be –10<sup>6</sup>, –10<sup>10</sup>,
-            –10<sup>12</sup>, etc.
-            </p>
-        </li>
-    </ul>
-
-    <p>
-        The same meanings apply also for the values of a function <em>f</em> if we wrote
-        <em>f</em>(<em>x</em>)→∞ or <em>f</em>(<em>x</em>)→−∞. 
-        The following figure illustrates these notion and notations.
-        </p>
-
-    <table>
-    <tabular>
-    <row>
-    <cell>
-    <p>
-        Fig. 2.1. Graphical illustration of the idea of <em>x</em>→<em>a</em><sup>+</sup>, <em>f</em>(<em>x</em>)→∞, 
-        etc.
-    </p>
-    </cell>
-    </row>
-    </tabular>
-    </table>
-    <p>
-        We may also write <em>f</em>(<em>x</em>)→<em>b</em> (read: ‘<em>f</em>(<em>x</em>) approaches <em>b</em>’) 
-        to mean the function values, <em>f</em>(<em>x</em>), becomes arbitrarily closer and closer to <em>b</em> 
-        (i.e., approximately <em>b</em>) but not exactly equal to <em>b</em>. For instance, if , then <em>f</em>
-        (<em>x</em>)→0 as <em>x</em>→∞; i.e., is approximately 0 when <em>x</em> is arbitrarily large.
-    </p>
-    <p>
-        The following steps are usually used to sketch (or draw) the graph of a rational function 
-        <em>f</em>(<em>x</em>).
-    </p>
-    <ol type="1">
-    <li>
-        <p>
-            Identify the domain and simplify it.
-        </p>
-    </li>
-    <li>
-        <p>
-            Find the intercepts of the graph whenever possible. Recall the following:
-        </p>
-    </li>
-    </ol>
-    <ul>
-    <li>
+        </note>
+        <example>
+            <statement>
+                <p>
+                    Find the domain and zeros of the function <m>f(x) = \frac{3x - 5}{x^{2} - x - 12}</m>.
+                </p>
+            </statement>  
+            <solution>
+                <p>
+                    The values of <m>x</m> for which <m>x^{2} - x - 12 = 0</m> are excluded from 
+                    the domain of <m>f</m>. Since <m>x^{2} - x - 12 = (x - 4)(x + 3)</m>, 
+                    we have <m>\text{Dom}(f) = \left\{ x:x \neq - 3,4 \right\}</m>. To find the zeros of <m>f(x)</m>, 
+                    we solve the equation
+                </p>
+                <p>
+                    <me>\frac{n(x)}{d(x)} = 0 \Leftrightarrow n(x) = 0  \text{ &amp; }  q(x) \neq 0</me>
+                </p>
+                <p>
+                    Therefore, to find the zeros of <m>f(x)</m>, we solve <m>3x - 5 = 0</m>, giving <m>x = \frac{5}{3}</m>. 
+                    Since <m>\frac{5}{3}</m> does not make the denominator zero, it is the only zero of <m>f(x)</m>.
+                </p>
+            </solution> 
+        </example>  
         <p> 
-            y–intercept is the point on y-axis where the graph of <em>y</em> = <em>f</em>(<em>x</em>) intersects
-            with the <em>y</em>-axis. At this point <em>x</em>=0. Thus, <em>y</em> = <em>f</em>(0), or
-            (0, <em>f</em>(0) ) is the y-intercept if 0∈Dom(<em>f</em>).
+            The following terms and notations are useful in our next discussion.
         </p>
-        </li>
-    <li><p>x–intercept is the point on x-axis where the graph of <em>y</em> = <em>f</em>(<em>x</em>) intersects with the <em>x</em>-axis. At this point <em>y</em>=0. Thus, <em>x</em>=<em>a</em> or (<em>a</em>, 0) is x-intercept if <em>f</em>(<em>a</em>)=0.</p></li>
-    </ul>
-    <ol start="3" type="1">
-    <li>
         <p>
-            Determine the asymptotes of the graph. Here, remember the following. 
+            Given a number <m>a</m>,
         </p>
-    </li>
-    </ol>
-    <ul>
-    <li> 
         <p>
-            Vertical Asymptote: The vertical line <em>x</em>=<em>a</em> is called a vertical asymptote(VA) of
-            <em>f</em>(<em>x)</em> if
-            </p>
-        </li>
-    </ul>
-    <ol type="i">
-    <li>
-    <p> 
-        <em>a</em>∉dom(<em>f</em>), i.e., <em>f</em> is not defined at <em>x</em>=<em>a</em>; and
-    </p>
-    </li>
-    <li>
-    <p>
-        <em>f</em>(<em>x</em>)→∞ or <em>f</em>(<em>x</em>)→ –∞ when <em>x</em>→<em>a</em><sup>+</sup> or
-        <em>x</em>→<em>a</em><sup>–</sup> . In this case, the graph of <em>f</em> is almost vertically rising upward
-        (if <em>f</em>(<em>x</em>)→∞) or sinking downward (if <em>f</em>(<em>x</em>)→−∞) along with the vertical line
-        <em>x</em>=<em>a</em> when <em>x</em> approaches <em>a</em> either from the right or from the left.
+            <ul>
+                <li>
+                    <p>
+                        <m>x</m> approaches <m>a</m> from the right means <m>x</m> takes any value near and near to <m>a</m> but <m>x</m> &gt;
+                        <m>a</m>. This is denoted by:  <m>x \rightarrow  a^+</m> (read: ‘<m>x</m> approaches <m>a</m> from the right’ ).
+                    </p> 
+                    <p>
+                        For instance, <m>x \rightarrow 1^+</m> means <m>x</m> can be <m>1.001, 1.0001, 1.00001, 1.000001,</m> etc.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>x</m> approaches <m>a</m> from the left means <m>x</m> takes any value near and near to 
+                        <m>a</m> but <m>x</m> &lt; <m>a</m>.
+                    </p>
+                    <p>
+                        This is denoted by: <m>x \rightarrow a^-</m> (read: ‘<m>x</m> approaches <m>a</m> from the left’ ).
+                    </p>
+                    <p>
+                        For instance, <m>x \therefore 1^-</m> means <m>x</m>  can be <m>0.99, 0.999, 0.9999, 0.9999,</m> etc.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>x \rightarrow \infty </m> (read: ‘<m>x</m> approaches or tends to <em>infinity</em>’) means the value of 
+                        <m>x</m> gets indefinitely larger and larger in magnitude (keep increasing without bound). 
+                        For instance, <m>x</m> can be <m>10^6, 10^{10},10^{12},</m> etc.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>x \rightarrow \infty</m> (read: ‘<m>x</m> approaches or tends to negative <em>infinity</em>’) means the value of
+                        <m>x</m> is negative and gets indefinitely larger and larger negative in magnitude
+                        (keep decreasing without bound). For instance, <m>x</m> can be <m>-10^6 , -10^{10}, 10^{12}, </m> etc.
+                    </p>
+                </li>
+            </ul>
         </p>
-    </li>
-    </ol>
-    <p>
-        <alert>Example 3.27</alert>: Consider where <em>a</em> ≥ 0 and <em>n</em> is a positive integer.
-    </p>
-    <p>
-        Obviously <em>a</em>∉Dom(<em>f</em>). 
-        Next, we investigate the trend of the values of <em>f</em>(<em>x</em>) near <em>a</em>. 
-        To do this, we consider two cases, when <em>n</em> is even or odd:
-        </p>
-    <p>
-        Suppose <em>n</em> is even: In this case (<em>x</em> – <em>a</em>)<em><sup>n</sup></em> &gt; 
-        0 for all <em>x</em>∈ℜ\{<em>a</em>}; and since (<em>x</em> – <em>a</em>)<em><sup>n</sup></em> →0 as
-        <em>x</em>→<em>a</em><sup>+</sup> or <em>x</em>→<em>a</em><sup>–</sup> . 
-        Hence, as <em>x</em>→<em>a</em><sup>+</sup> or <em>x</em>→<em>a</em><sup>–</sup> . Therefore, 
-        <em>x=a</em> is a VA of <em>f</em>(<em>x</em>). Moreover, <em>y</em>= 1/<em>a<sup>n</sup></em> or 
-        (0, 1/<em>a<sup>n</sup></em> ) is its y-intercept since <em>f</em>(0)=1/<em>a<sup>n</sup></em>.
-        However, it has no x-intercept since <em>f</em>(<em>x</em>) &gt;0 for all <em>x</em> in its domain 
-        (See, Fig. 2.2 (A)).
-        </p>
-    <p>
-        Suppose <em>n</em> is odd: In this case (<em>x</em> – <em>a</em>)<em><sup>n</sup></em>&gt;
-        0 for all <em>x</em>&gt;<em>a</em> and 1/ (<em>x</em> – <em>a</em>)<em><sup>n</sup></em> →∞ when
-        <em>x</em>→<em>a</em><sup>+</sup> as in the above case. Thus, <em>x=a</em> is its VA. 
-        However, 1/(<em>x</em>–<em>a</em>)<em><sup>n</sup></em>→ –∞ when <em>x</em>→<em>a</em><sup>–</sup>
-        since (<em>x</em> – <em>a</em>)<em><sup>n</sup></em>&lt; 0 for <em>x</em>&lt;<em>a</em>. 
-        Moreover, <em>y</em>= –1/<em>a<sup>n</sup></em> or (0, –1/<em>a<sup>n</sup></em> ) is its y-intercept
-        since <em>f</em>(0) = –1/<em>a<sup>n</sup></em>. However, it has no x-intercept also in this case. 
-        (See, Fig. 2.2 (B)).
-        </p>
-    <p>
-        Note that in both cases, as <em>x</em>→∞or <em>x</em>→ –∞.
-    </p>
-    <p>
-        <image source="/./media/png72/image50.png" style="width:4.67639in;height:2.28125in" />
-    </p>
-    <table>
-    <tabular>
-    <row>
-    <cell>
-    <p> 
-        <alert>Remark</alert>: Let be a rational function. Then,
-    </p>
-    <p>
-        1. if and , then <em>x=a</em> is a VA of <em>f</em> .
-    </p>
-    <p> 
-        2. if , then <em>x=a</em> may or may <alert>not</alert> be a VA of <em>f</em> . 
-        In this case, simplify <em>f</em>(<em>x</em>) and look for VA of the simplest form of <em>f</em>.
-    </p>
-    </cell>
-    </row>
-    </tabular>
-    </table>
-    <ul>
-    <li>
         <p>
-            Horizontal Asymptote: A horizontal line <em>y</em>=<em>b</em> is called horizontal asymptote
-            (HA) of <em>f</em>(<em>x</em>) if the value of the function becomes closer and closer to <em>b</em>
-            (i.e., <em>f</em>(<em>x</em>)→<em>b</em>)as <em>x</em>→∞ or as <em>x</em>→ –∞.
-            </p>
-        </li>
-    </ul>
+            The same meanings apply also for the values of a function <m>f</m> if we wrote
+            <m> f(x) \rightarrow \infty</m> or <m>f(x) \rightarrow -\infty</m>. 
+            The following figure illustrates these notion and notations.
+        </p>
+          <!-- An image needs to be inserted here -->
+        <p>
+            Fig. 2.1. Graphical illustration of the idea of <m>x \rightarrow a^+</m>, <m>f(x) \rightarrow \infty</m>, etc.
+        </p>
 
-    <p>
-        In this case, the graph of <em>f</em> becomes almost a horizontal line along with
-        (or near) the line <em>y=b</em> as <em>x</em>→∞ and as <em>x</em>→–∞. 
-        For instance, from the above example, the HA of is <em>y</em>=0 (the x-axis) , 
-        for any positive integer <em>n</em> (See, Fig. 2.2).
+        <p>
+            We may also write <m>f(x) \rightarrow b</m> (read: ‘ <m>f(x)</m> approaches <m>b</m>’) 
+            to mean the function values, <m>f(x)</m>, becomes arbitrarily closer and closer to <m>b</m> 
+            (i.e., approximately <m>b</m>) but not exactly equal to <m>b</m>. For instance, if , then <m>f(x) \rightarrow 0</m> as <m>x \rightarrow \infty</m>;
+            i.e., is approximately <m>0</m> when <m>x</m> is arbitrarily large.
         </p>
+        <p>
+            The following steps are usually used to sketch (or draw) the graph of a rational function <m>f(x)</m>.
+        </p>
+        <p>
+            <ol marker="1. ">
+                <li>
+                    <p>
+                        Identify the domain and simplify it.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Find the intercepts of the graph whenever possible. Recall the following:
+                    </p>
+                    <p>
+                        <ul>
+                            <li>
+                                <p>
+                                    y–intercept is the point on <m>y</m>-axis where the graph of <m>y=f(x)</m> intersects
+                                    with the <m>y</m>-axis. At this point <m>x=0</m>. Thus, <m>y = f(0)</m>, or
+                                    (<m>0,f(0)</m>) is the y-intercept if <m>0 \in </m> Dom(<m>f</m>).
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>x</m>–intercept is the point on <m>x</m>-axis where the graph of <m>y=f(x)</m>
+                                    intersects with the <m>x</m>-axis. At this point <m>y=0</m>. Thus, 
+                                    <m>x=a</m> or <m>(a, 0)</m> is x-intercept if <m>f(a)=0</m>.
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Determine the asymptotes of the graph. Here, remember the following. 
+                    </p>
+                </li>
+            </ol>
+        </p>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        Vertical Asymptote: The vertical line <m>x=a</m> is called a vertical asymptote(VA) of
+                        <m>f</m>(<m>x)</m> if
+                    </p>
+                    <p>
+                        <ol marker="i) ">
+                            <li>
+                                <p>
+                                    <m>a \in </m> dom(<m>f</m>), i.e., <m>f</m> is not defined at <m>x=a</m>; and
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <m>f(x) \rightarrow \infty </m> or <m>f(x) \rightarrow -\infty </m> when <m>x \rightarrow a^+</m> or <m>x \rightarrow a^-</m>.
+                                     In this case, the graph of <m>f</m> is almost vertically rising upward
+                                    (if <m>f(x) \rightarrow \infty</m>) or sinking downward (if <m>f(x)\rightarrow -\infty</m>) along with the vertical line
+                                    <m>x=a</m> when <m>x</m> approaches <m>a</m> either from the right or from the left.
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </li>
+            </ul>
+        </p>
+        <example>
+            <statement>
+                <p>
+                    Consider where <m>a \geq 0</m> and <m>n</m> is a positive integer.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Obviously <m>a \in </m>Dom(<m>f</m>). 
+                    Next, we investigate the trend of the values of <m>f(x)</m> near <m>a</m>. 
+                    To do this, we consider two cases, when <m>n</m> is even or odd:
+                </p>
+                <p>
+                    Suppose <m>n</m> is even: In this case <m>(x-a)^n &gt; 0</m> for all
+                    <m>x \in \mathbf{R}\{a\}</m>; and since  <m>(x-a)^n \rightarrow 0</m> as
+                    <m>x \rightarrow a^+</m> or <m>x \rightarrow a^-</m>. 
+                    Hence, as <m>x \rightarrow a^+</m> or <m>x \rightarrow a^-</m>. Therefore, 
+                    <m>x=a</m> is a VA of <m>f(x)</m>. Moreover, <m>y=\frac{1}{a^n}</m> or 
+                    (<m>0,\frac{1}{a^n}</m>) is its y-intercept since <m>f(0) = \frac{1}{a^n}</m>.
+                    However, it has no <m>x</m>-intercept since <m>f(x) &gt; 0</m> for all <m>x</m> in its domain 
+                    (See, Fig. 2.2 (A)).
+                </p>
+                <p>
+                    Suppose <m>n</m> is odd: In this case, <m>(x - a)^n &gt; 0</m> for all <m>x &gt; a</m>, and 
+                    <m>\frac{1}{(x - a)^n} \rightarrow \infty</m> as <m>x \rightarrow a^+</m>, just like in the even case. 
+                    Thus, <m>x = a</m> is a VA of <m>f(x)</m>. However, <m>\frac{1}{(x - a)^n} \rightarrow -\infty</m> as 
+                    <m>x \rightarrow a^–</m>, since <m>(x - a)^n &lt; 0</m> for <m>x &lt; a</m>. 
+                    Moreover, <m>y = \frac{-1}{a^n}</m> or <m>(0, \frac{-1}{a^n})</m> is its y-intercept, 
+                    since <m>f(0) = \frac{-1}{a^n}</m>. However, it has no <m>x</m>-intercept in this case either. 
+                    (See, Fig. 2.2 (B)).
+                </p>
+                <p>
+                    Note that in both cases, <m>f(x) = \frac{1}{(x-a)^n} \rightarrow 0</m> as <m>x \rightarrow \infty</m>
+                    or <m>x \rightarrow -\infty</m>.
+                </p>
+            </solution>
+        </example>
+        <!-- AN image needs to be here -->
+         <!-- <image source="./media/png72/image50.png">
+            <shortdescription>(for accessibility)</shortdescription>
+         </image> -->
+         <remark>
+            <p>
+                Let <m>f(x)  = \frac{n(x)}{d(x)}</m> be a rational function. Then,
+            </p>
+            <p>
+                <ol marker="1. ">
+                    <li>
+                        <p>
+                            if and , then <m>x=a</m> is a VA of <m>f</m>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            if <m>d(a) = 0 = n(a)</m>, then <m>x=a</m> may or may <alert>not</alert> be a VA of <em>f</em> . 
+                            In this case, simplify <m>f(x)</m> and look for VA of the simplest form of <em>f</em>.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+         </remark>
+         <p>
+            <ul>
+                <li>
+                    <p>
+                        Horizontal Asymptote: A horizontal line <m>y=b</m> is called horizontal asymptote
+                        (HA) of <m>f(x)</m> if the value of the function becomes closer and closer to <m>b</m>
+                        (i.e., <m>f(x) \rightarrow b</m> as <m>x \rightarrow \infty</m> or as <m>x \rightarrow -\infty</m>.
+                    </p>
+                    <p>
+                        In this case, the graph of <em>f</em> becomes almost a horizontal line along with
+                        (or near) the line <m>y=b</m> as <m>x \rightarrow \infty</m> and as <m>x \rightarrow -\infty</m> . 
+                        For instance, from the above example, the HA of <m>f(x)=\frac{1}{(x-a)^n}</m> is <m>y=0</m> (the <m>x</m>-axis) , 
+                        for any positive integer <m>n</m> (See, Fig. 2.2).
+                    </p>
+                </li>
+            </ul>
+         </p>
+         <remark>
+            <p>
+                A rational function <m>f(x)=\frac{n(x)}{d(x)}</m> has a HA only when <em>degree</em>(<m>n(x)</m>)
+                <m>\leq</m><em>degree</em>(<m>d(x)</m>)
+            </p>
+         </remark>
+    </paragraphs>
+          <!--                                          
+
+
     <p>
         <alert>Remark</alert>: A rational function has a HA only when <em>degree</em>(<em>n</em>(<em>x</em>))
         ≤<em>degree</em>(<em>d</em>(<em>x</em>)).
