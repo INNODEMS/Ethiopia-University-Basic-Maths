@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Finding the inverse of a matrix</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Let \(A={@A@}\) and \(P={@P@}\)</p>
+
+<br>
+
+<p>(a) Find \(P^{-1}\)</p>
+<table style="margin-left: 30px">
+<tr>
+<td>\(P^{-1} = \)</td>
+<td>&nbsp; [[input:ans1]] [[validation:ans1]]</td>
+</tr>
+</table>
+<p>[[feedback:prt1]]</p>
+
+<br>
+
+<p>(b) Find \(P^{-1} A P\)</p>
+<table style="margin-left: 30px">
+<tr>
+<td>\(P^{-1} A P = \)</td>
+<td>&nbsp; [[input:ans2]] [[validation:ans2]]</td>
+</tr>
+</table>
+<p>[[feedback:prt2]]</p>
+
+<br>
+
+<p>(c) What can we conclude about the matrix found in part (b)?</p>
+<p>[[input:ans3]] [[validation:ans3]]</p>
+<p>[[feedback:prt3]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked solution</h3>
+
+<p>We are given \(A={@A@}\) and \(P={@P@}\)</p>
+
+<br>
+
+<p>(a) We first find the inverse of the matrix \(P\), denoted as \(P^{-1}\). In general, the inverse of a \(2 \times 2\) matrix is given by,</p>
+<p style="margin-left: 30px">\(\begin{bmatrix}
+a &b \\ 
+c & d
+\end{bmatrix}^{-1} 
+= \textstyle \frac{1}{ad-bc}
+\displaystyle \begin{bmatrix}
+d &-b \\ 
+-c & a
+\end{bmatrix}\)</p>
+
+<p>Therefore,</p>
+<p style="margin-left: 30px">\(\begin{align*}
+P^{-1} &= {@P@}^{-1} \\
+&= \textstyle \frac{1}{{@a*d@}-{@b*c@}} 
+\displaystyle \begin{bmatrix}
+{@d@} & {@-b@}  \\ 
+{@-c@}  & {@a@} 
+\end{bmatrix} \\
+& ={@ta@}
+\end{align*}\)</p>
+
+<br>
+
+<p>(b) We now need to carry out the matrix multiplication. In this case we have,</p>
+<p style="margin-left: 30px">\(\begin{align*}
+P^{-1} A P &= {@ta@}{@A@}{@P@} \\
+&= {@ta@}{@A.P@} \\
+&= {@ta2@}
+\end{align*}\)</p>
+
+<br>
+
+<p>(c) The matrix in (b) is <b>diagonal</b> because it only has entries on the main diagonal.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[/*Diagnozable*/
+a1:rand(5)+1;
+d1:rand(5)+1;
+D:matrix([a1,0],[0,d1]);
+
+P: rand(matrix([3,2],[3,4])) + matrix([0,1],[0,0]);
+if determinant(P) = 0 then 
+    P: P + matrix([0,0],[1,0]);
+
+ta:invert(P);
+A:P.D.ta;
+ta2:D;
+ta3:random_permutation([
+    ["It is a diagonal matrix", true],
+    ["It is not a diagonal matrix", false], 
+    ["We cannot say anything about the matrix", false]
+]);
+
+/*worked solution variables*/
+a:row(col(P,1),1)[1][1];
+b:row(col(P,2),1)[1][1];
+c:row(col(P,1),2)[1][1];
+d:row(col(P,2),2)[1][1];]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>Let \(A={@A@}\) and \(P={@P@}\)</p>
+<p> \(P^{-1}={@ta@}\)</p>
+<p>\(P^{-1}\cdot A \cdot P ={@ta2@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>ta</tans>
+      <boxsize>8</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>ta2</tans>
+      <boxsize>8</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>dropdown</type>
+      <tans>ta3</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*node 1:checks for the correct answer*/
+/*node 2:Find the transpose and not the inverse*/ 
+mistake_1:transpose(P);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake_1</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You have given the <b>transpose</b> of the matrix \(P\).
+<br>However, you should have found the <b>inverse</b> of the matrix \(P\), this is the matrix, \(P^{-1}\) such that,</p>
+<p style="margin-left: 30px">\(P^{-1} P = I = P P^{-1}\)</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*node 1:checks for the correct answer*/
+/*node 2:Finding P^-1A and forgetting about P*/ 
+mistake_1:ta.A;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>mistake_1</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You have found the product \(P^{-1} A\).
+<br>However, you should have also post-multiplied by \(P\) to find the product \(P^{-1} A P\).</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*node 1:checks for the correct answer*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>mcq_correct(ta3)[1]</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1487981704</deployedseed>
+    <deployedseed>146665278</deployedseed>
+    <deployedseed>412365812</deployedseed>
+    <deployedseed>1394018663</deployedseed>
+    <deployedseed>422044774</deployedseed>
+    <deployedseed>404834908</deployedseed>
+    <deployedseed>300955989</deployedseed>
+    <deployedseed>518721304</deployedseed>
+    <deployedseed>901550863</deployedseed>
+    <deployedseed>833649567</deployedseed>
+    <deployedseed>547834835</deployedseed>
+    <deployedseed>1544575682</deployedseed>
+    <deployedseed>1406272504</deployedseed>
+    <deployedseed>372293553</deployedseed>
+    <deployedseed>640649691</deployedseed>
+    <deployedseed>1123271949</deployedseed>
+    <deployedseed>2045855308</deployedseed>
+    <deployedseed>233228453</deployedseed>
+    <deployedseed>332240922</deployedseed>
+    <deployedseed>30997098</deployedseed>
+    <deployedseed>1957412491</deployedseed>
+    <deployedseed>19504863</deployedseed>
+    <deployedseed>650184007</deployedseed>
+    <deployedseed>728432149</deployedseed>
+    <deployedseed>704465665</deployedseed>
+    <deployedseed>1377271435</deployedseed>
+    <deployedseed>62482365</deployedseed>
+    <deployedseed>1641639467</deployedseed>
+    <deployedseed>148786738</deployedseed>
+    <deployedseed>489033862</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>first(mcq_correct(ta3))</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>transpose(P)</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>first(mcq_correct(ta3))</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

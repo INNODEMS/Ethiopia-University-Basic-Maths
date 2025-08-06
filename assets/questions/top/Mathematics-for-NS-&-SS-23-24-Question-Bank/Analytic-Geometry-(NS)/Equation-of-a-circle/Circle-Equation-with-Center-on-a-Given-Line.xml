@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Circle Equation with Center on a Given Line</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Consider a circle that passes through the points \( \text{A} ({@x_1@} \, , \, {@y_1@} )\) and \( \text{B}({@x_2@} \, , \, {@y_2@} )\) and has its center located on the line with the equation \( {@expr@} \) .</p>
+<p><b>1.</b> Find the center of the circle</p>
+<p> Center \(=\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]</p>
+<p><b>2.</b> Find the radius of the circle</p>
+<p> Radius \(=\) [[input:ans2]] [[validation:ans2]][[feedback:prt2]]</p>
+<p><b>3.</b> Give the equation  of the circle</p>
+<p> Equation \(:\) [[input:ans3]] [[validation:ans3]][[feedback:prt3]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3>Worked Solution</h3>
+<p>To find an equation of the circle passing through the points \( \text{A} ({@x_1@} ,  {@y_1@} )\) and \( \text{B}({@x_2@}  , {@y_2@} )\) with its center on the line  \( {@expr@} \) , we can follow these steps: </p>
+<p><b>Step 1:</b> Finding \(OA^2\) and \(OB^2\):</p>
+<p>Let the center of the circle be \(O(h\, , \, k)\). We need to use the formula of distance to get  \( O\, A^2\) and \( O B^2\) involving \(h\) and \(k\). The distance between two points is given by:</p>
+<p>\(\text{Distance}^2=(x_2-x_1)^2+(y_2-y_1)^2\)</p>
+<p>For points \(A ( {@x_1@} \, , \, {@y_1@} )\) and \(O(h,k)\):</p>
+<p>\(
+\begin{align}
+OA^2 & =(h -({@x_1@}))^2+(k- ({@y_1@}) )^2 \\
+ &= {@expand((h -x_1)^2+(k- y_1 )^2)@}
+\end{align}
+\)</p>
+<p></p>
+
+<p>For points \(B({@x_2@} \, , \, {@y_2@} )\) and \(O(h,k)\):</p>
+<p>\(
+\begin{align}
+OB^2 & =(h-({@x_2@}) )^2+(k-({@y_2@}) )^2 \\
+& ={@expand((h-x_2 )^2+(k-y_2 )^2)@}
+\end{align}
+\)</p>
+<p><b>Step 2:</b> Determining the expression of \(h\):</p>
+<p>Since \(O A^2=O B^2\), we can set up the following equation:</p>
+<p>\({@sim@}\)</p>
+<p> \( h={@h_val@} \)</p>
+<p><b>Step 3:</b> Determining the coordinates of the centre: </p>
+<p>Since the center \(O(h\, , \, k)\) lies on the line \( {@expr@} \), we can substitute \(x\) and \(y\) by  \(h\) and \(k\) respectively into this equation, that is, \( {@ gradient*h-k+(k_fval-gradient*h_fval)=0 @} \).</p>
+<p>Substituting \(h={@h_val@} \) in \( {@ gradient*h-k+(k_fval-gradient*h_fval)=0 @} \), gives \( {@gradient@} {@h_val@}-k+{@(k_fval-gradient*h_fval)=0@}  \). Thus \(k={@k_fval@}\).</p>
+
+<p>Substituting back for \(k\) in \(h={@h_val@} \), yields to \( h={@h_fval@} \).</p>
+<p>Hence the center of the circle is \(O({@h_fval@} , {@k_fval@})\)</p>
+
+<p><b>Step 4:</b> Finding the radius:</p>
+<p>Now, let's find the radius of the circle using the distance formula between center \(O({@h_fval@} , {@k_fval@})\) and point \( \text{A} ({@x_1@} \, , \, {@y_1@} )\):</p>
+<p>We recall \( \text{radius} =\sqrt{(x_2-x_1)^2+ (y_2 - y_1)^2} \)</p>
+<p>
+\( 
+\begin{align}
+             \text{radius}   &= \sqrt{(h-({@x_1@}))^2+ (k - ({@y_1@}))^2} \\
+               &= \sqrt{({@h_fval@}-({@x_1@}))^2+ ({@k_fval@} - ({@y_1@}))^2} \\
+               &=\sqrt{ ({@h_fval-x_1@})^2+ ({@k_fval - y_1@})^2} \\
+               &= \sqrt{ {@(h_fval-x_1)^2 @}+ {@(k_fval - y_1)^2@} } \\
+               &=\sqrt{  {@(h_fval-x_1)^2 + (k_fval - y_1)^2@} } \\
+              &={@ta2@}
+\end{align} 
+\)
+</p>
+<p><b>Step 5:</b> Writing the equation of the Circle:</p>
+<p>Now that we have the center \(O({@h_fval@}\, , \, {@k_fval@}) \) and the radius \({@rad_sq@} \), we use the equation of a circle: \((x-h)^2+(y-k)^2=r^2\). </p>
+<p>Substituting the corresponding values of \(h,\, k\) and \(r\) we get, \({@ta3@}\), which can be written as: \({@expand((x-h_fval)^2+(y-k_fval)^2-rad_sq)=0@}\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>h_fval:rand_with_step(-5,5,1);
+k_fval: rand_with_step(-5,5,1);
+Radius: rand_with_step(2,5,1);
+x_1: Radius+h_fval;
+y_1: k_fval;
+x_2: h_fval;
+y_2: Radius+k_fval;
+/*Equation of the line passing by the centre*/
+gradient:rand_with_step(-5,5,1);
+expr: gradient*x-y+(k_fval-gradient*h_fval)=0;
+OA_sq:(h-x_1)^2+(k-y_1)^2;
+OB_sq:(h-x_2)^2+(k-y_2)^2;
+OAOB_eq:OA_sq=OB_sq;
+sim:simplify(expand(OAOB_eq));
+solve_eq:solve(OAOB_eq,h)[1];
+h_val:rhs(solve_eq);
+rad_sq:(h_fval-x_1)^2+(k_fval-y_1)^2;
+ta1:[h_fval,k_fval];
+ta2:sqrt(rad_sq);
+ta3:(x-h_fval)^2+(y-k_fval)^2=rad_sq;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>A circle passing through the points \( \text{A} ({@x_1@},{@y_1@} )\) and \( \text{B}({@x_2@} ,{@y_2@} )\) and its center located on the line with the equation \( {@expr@} \) .</p>
+<p> Center \(={@ta1@}\) </p>
+<p> Radius \(={@ta2@}\) </p>
+<p> Equation \(: \, {@ta3@} \) </p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>6</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>[? , ?]</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>646148850</deployedseed>
+    <deployedseed>1798797247</deployedseed>
+    <deployedseed>1243086301</deployedseed>
+    <deployedseed>392274123</deployedseed>
+    <deployedseed>1433946794</deployedseed>
+    <deployedseed>640285934</deployedseed>
+    <deployedseed>2145066908</deployedseed>
+    <deployedseed>1756873516</deployedseed>
+    <deployedseed>726478569</deployedseed>
+    <deployedseed>994949659</deployedseed>
+    <deployedseed>1351690913</deployedseed>
+    <deployedseed>1539599893</deployedseed>
+    <deployedseed>750125968</deployedseed>
+    <deployedseed>962256996</deployedseed>
+    <deployedseed>1040288888</deployedseed>
+    <deployedseed>2103169185</deployedseed>
+    <deployedseed>351221932</deployedseed>
+    <deployedseed>430785618</deployedseed>
+    <deployedseed>1257974183</deployedseed>
+    <deployedseed>389241682</deployedseed>
+    <deployedseed>1516334776</deployedseed>
+    <deployedseed>1701998356</deployedseed>
+    <deployedseed>1495311663</deployedseed>
+    <deployedseed>1814700377</deployedseed>
+    <deployedseed>480128211</deployedseed>
+    <deployedseed>307672065</deployedseed>
+    <deployedseed>1781127536</deployedseed>
+    <deployedseed>1174088400</deployedseed>
+    <deployedseed>1481036710</deployedseed>
+    <deployedseed>812303595</deployedseed>
+    <deployedseed>72040463</deployedseed>
+    <deployedseed>1098521033</deployedseed>
+    <deployedseed>66934029</deployedseed>
+    <deployedseed>1420404157</deployedseed>
+    <deployedseed>688480379</deployedseed>
+    <deployedseed>1546402435</deployedseed>
+    <deployedseed>2103721959</deployedseed>
+    <deployedseed>1020652475</deployedseed>
+    <deployedseed>559127692</deployedseed>
+    <deployedseed>436604522</deployedseed>
+    <deployedseed>1933348146</deployedseed>
+    <deployedseed>1963002860</deployedseed>
+    <deployedseed>2019019182</deployedseed>
+    <deployedseed>804454835</deployedseed>
+    <deployedseed>749811901</deployedseed>
+    <deployedseed>799487125</deployedseed>
+    <deployedseed>872669346</deployedseed>
+    <deployedseed>1794545625</deployedseed>
+    <deployedseed>743127236</deployedseed>
+    <deployedseed>1901957746</deployedseed>
+    <deployedseed>1127894266</deployedseed>
+    <deployedseed>1362834702</deployedseed>
+    <deployedseed>310142027</deployedseed>
+    <deployedseed>571697305</deployedseed>
+    <deployedseed>2136751774</deployedseed>
+    <deployedseed>208594382</deployedseed>
+    <deployedseed>1263472733</deployedseed>
+    <deployedseed>929159616</deployedseed>
+    <deployedseed>1490532311</deployedseed>
+    <deployedseed>1320846165</deployedseed>
+    <deployedseed>1526405131</deployedseed>
+    <deployedseed>367108450</deployedseed>
+    <deployedseed>1402793673</deployedseed>
+    <deployedseed>160863335</deployedseed>
+    <deployedseed>2145356061</deployedseed>
+    <deployedseed>1730224524</deployedseed>
+    <deployedseed>166112056</deployedseed>
+    <deployedseed>294996113</deployedseed>
+    <deployedseed>1828169249</deployedseed>
+    <deployedseed>1390203298</deployedseed>
+    <deployedseed>865152838</deployedseed>
+    <deployedseed>565607020</deployedseed>
+    <deployedseed>756096323</deployedseed>
+    <deployedseed>317937263</deployedseed>
+    <deployedseed>873277100</deployedseed>
+    <deployedseed>418045456</deployedseed>
+    <deployedseed>602640846</deployedseed>
+    <deployedseed>266289347</deployedseed>
+    <deployedseed>866214479</deployedseed>
+    <deployedseed>1707530588</deployedseed>
+    <deployedseed>354867061</deployedseed>
+    <deployedseed>148468477</deployedseed>
+    <deployedseed>379501822</deployedseed>
+    <deployedseed>1921150019</deployedseed>
+    <deployedseed>55351550</deployedseed>
+    <deployedseed>1403485456</deployedseed>
+    <deployedseed>1565094516</deployedseed>
+    <deployedseed>824647140</deployedseed>
+    <deployedseed>1307717935</deployedseed>
+    <deployedseed>1158557381</deployedseed>
+    <deployedseed>511833816</deployedseed>
+    <deployedseed>566093330</deployedseed>
+    <deployedseed>934283844</deployedseed>
+    <deployedseed>843792036</deployedseed>
+    <deployedseed>1466591130</deployedseed>
+    <deployedseed>472730121</deployedseed>
+    <deployedseed>1104746938</deployedseed>
+    <deployedseed>1118975177</deployedseed>
+    <deployedseed>321282767</deployedseed>
+    <deployedseed>1308572694</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

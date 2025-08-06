@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Limit of a Function</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Find \(\displaystyle \lim_{x \rightarrow {@aa@}} \frac{{@x-aa@}}{{@(x-aa)^2@}}\)</p>
+<p><em>Note: If no limit exists, give <code>NO</code> as your answer.</em></p>
+<p>[[input:ans1]] [[validation:ans1]]</p>
+<p>[[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked solution</h3>
+<p>First, we can simplify the function to \(\displaystyle f(x) = {@fx@}\)</p>
+
+<p>Then, we can test values from both sides to try to determine the directional limits of the function.</p>
+
+<p hidden>{@stackfltfmt:"~,2f";@}</p>
+<table style="margin-left: 30px">
+<tr>
+  <td style="text-align: center; border: 1px solid gray; width:60px;">\(x\)</th>
+  <td style="text-align: center; border: 1px solid gray; width:100px;">{@aa-0.25@}</th>
+  <td style="text-align: center; border: 1px solid gray; width:100px;">{@aa-0.1@}</th>
+  <td style="text-align: center; border: 1px solid gray; width:100px;">{@aa-0.01@}</th>
+  <td style="text-align: center; border: 1px solid gray; width:100px;">{@aa+0.01@}</th>
+  <td style="text-align: center; border: 1px solid gray; width:100px;">{@aa+0.1@}</th>
+  <td style="text-align: center; border: 1px solid gray; width:100px;">{@aa+0.25@}</th>
+</tr>
+<tr style="height:40px">
+  <td style="text-align: center; border: 1px solid gray; ">\(f(x)\)</td>
+  <td style="text-align: center; border: 1px solid gray; ">{@decimalplaces(ev(fx, x=aa-0.25), 2)@}</td>
+  <td style="text-align: center; border: 1px solid gray; ">{@decimalplaces(ev(fx, x=aa-0.1), 2)@}</td>
+  <td style="text-align: center; border: 1px solid gray; ">{@decimalplaces(ev(fx, x=aa-0.01), 2)@}</td>
+  <td style="text-align: center; border: 1px solid gray; ">{@decimalplaces(ev(fx, x=aa+0.01), 2)@}</td>
+  <td style="text-align: center; border: 1px solid gray; ">{@decimalplaces(ev(fx, x=aa+0.1), 2)@}</td>
+  <td style="text-align: center; border: 1px solid gray; ">{@decimalplaces(ev(fx, x=aa+0.25), 2)@}</td>
+</tr>
+</table>
+
+<br>
+
+<p>You can see from the table that,</p>
+<p style="margin-left: 30px">Taking the limit from the <b>left</b>, \(x \rightarrow {@aa@}^{-}\), gives 
+\( \frac{{@x-aa@}}{{@(x-aa)^2@}} = {@fx@} \rightarrow -\infty\)</p> 
+<p style="margin-left: 30px">Taking the limit from the <b>right</b>, \(x \rightarrow {@aa@}^{+}\), gives 
+\( \frac{{@x-aa@}}{{@(x-aa)^2@}} = {@fx@} \rightarrow +\infty\)</p> 
+
+<p>We conclude that, because the directional limits of the function are <b>not equal</b>, the limit of the function <b>does not exist</b>.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[pm1:rand_with_prohib(-1,1,[0]);
+aa:pm1*(rand(9)+1);
+fx:(x-aa)/(x-aa)^2;
+ta:"NO";]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>\(\displaystyle \lim_{x \rightarrow {@aa@}} {@fx@}={@ta@}\) limit.</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>string</type>
+      <tans>ta</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>StringSloppy</answertest>
+        <sans>ans1</sans>
+        <tans>ta</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>403362756</deployedseed>
+    <deployedseed>1251724197</deployedseed>
+    <deployedseed>1463725569</deployedseed>
+    <deployedseed>97175439</deployedseed>
+    <deployedseed>1482388408</deployedseed>
+    <deployedseed>1229851084</deployedseed>
+    <deployedseed>541051092</deployedseed>
+    <deployedseed>1210244494</deployedseed>
+    <deployedseed>1912191178</deployedseed>
+    <deployedseed>1073625060</deployedseed>
+    <deployedseed>817103125</deployedseed>
+    <deployedseed>1557905710</deployedseed>
+    <deployedseed>669930780</deployedseed>
+    <deployedseed>742581257</deployedseed>
+    <deployedseed>1355457226</deployedseed>
+    <deployedseed>1853006823</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>
