@@ -15,7 +15,7 @@
             Let <m>p</m> be the distance from vertex <m>\text{V}(h,k)</m> to the focus <m>\text{F}</m> of the parabola, i.e.,<m>|VF| = p</m>. Then, by the definition,<m> \text{F}</m> is located <m>p</m> units above <m>\text{V} </m>if the parabola opens upward and it is located <m>p</m> units below <m>\text{V}</m> if the parabola opens downward as indicated on Figure 4.13(a) and (b), respectively. To determine the desired equation, we first consider the case when the parabola opens upward.
         </p>
         <p>
-            Therefore, considering a vertical parabola with vertex <m> \text{v(h,k)}</m> that opens upward (Figure 4.13a), its focus is at <m>\text{F(h, k+p})</m>. <m>\Rightarrow</m> The equation of its directrix is <m>\text{y = k−p.}</m>
+            Therefore, considering a vertical parabola with vertex <m> \text{v(h,k)}</m> that opens upward (Figure 4.13a), its focus is at <m>\text{F(h, k+p)}</m>. <m>\Rightarrow</m> The equation of its directrix is <m>\text{y = k−p.}</m>
         </p>
         <p>
             Then, for any point <m>\text{P(x,y)} </m> on the parabola, <m>|PF|</m> is equal to the distance between P and the directrix if and only if 
@@ -148,7 +148,7 @@
         </solution>
         </example>
         <p>
-            <alert>II: Equation of a parabola whose axis is parallel to the <m>x</m>-axis</alert>.
+            <term>II: Equation of a parabola whose axis is parallel to the <m>x</m>-axis</term>.
         </p>
         <p>
             A parabola whose axis is parallel to <m>\textbf{x}</m>-axis is called <m>\textbf{horizontal parabola}</m>. Such parabola opens either to the right or to the left as shown in Figure 4.15 (a) and (b), respectively.

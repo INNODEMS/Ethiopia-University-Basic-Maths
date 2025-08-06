@@ -4,12 +4,12 @@
             We are now ready to derive equation of a hyperbola. But, for simplicity, we consider first the equation of a standard hyperbola with center at origin. A standard hyperbola is the one whose principal axis (or transverse axis) is parallel to either of the coordinate axes.
         </p>
         <p>
-            <alert>I. Equation of a standard hyperbola with center at origin.</alert></p>
+            <term>I. Equation of a standard hyperbola with center at origin.</term></p>
         <p>
             There are two possible situations, namely, when the transverse axis lies on <em>x</em>-axis (called horizontal hyperbola) and when the transverse axis lies on <em>y</em>-axis (called vertical hyperbola). We first consider a horizontal hyperbola with center C(0,0), vertices V′(−<em>a</em>, 0), V (<em>a</em>, 0) and foci
         </p>
         <p>
-            F′(−<em>c</em>, 0), F (<em>c</em>, 0).
+           <m> \text{F}′(−c, 0), \text{F} (c, 0)</m>.
         </p>
 
         <image source="/horizontal-hyperbola-c-origin.png" width="70%">
@@ -17,11 +17,11 @@
         </image>
         
         <p>
-            Notice that <em><m>c^2</m></em> − <em><m>a^2</m></em> &gt; 0 as <em>c</em> &gt; <em>a</em> . Hence, we can put <m> b^2 = C^2 - a^2</m>for some positive <em>b</em>. That is, <m>  a^2 + b^2 = C^2 </m> so that <em>a</em>, <em>b, c</em> are sides of a right triangle (see, Figure 4.25). The line segment BB′ perpendicular to the transverse axis at C and with endpoints B(0,<em>b</em>) and B′(0,−<em>b</em>) is called <alert>conjugate axis</alert> of the hyperbola. Observe that the midpoint of the conjugate axis is C and its length is |BB′<alert>|</alert> = 2<em>b</em><term>.</term> ( <em>b</em> will play important role in equation of the hyperbola and its graph).
+            Notice that <m>c^2 − a^2 &gt; 0 </m> as <m> c &gt; a</m> . Hence, we can put <m> b^2 = C^2 - a^2</m>for some positive <m>b</m>. That is, <m>  a^2 + b^2 = C^2 </m> so that <m>a, b, c</m> are sides of a right triangle (see, Figure 4.25). The line segment <m>\text{BB}′</m> perpendicular to the transverse axis at <m>\text{C}</m> and with endpoints <m>\text{B}(0,b)</m> and <m>\text{B}′(0,b)</m>  is called <m>\textbf{conjugate axis}</m> of the hyperbola. Observe that the midpoint of the conjugate axis is <m>\text{C}</m> and its length is <m>|\text{BB}′|= 2b \textbf{.} ( b</m>  will play important role in equation of the hyperbola and its graph).
 
         </p>
         <p>
-            Now, for any point P(<em>x,y</em>) on the hyperbola it holds that <alert>|</alert>PF′<alert>| − |</alert>PF<alert>| =</alert> 2<em>a</em> <alert>.</alert>
+            Now, for any point <m>P(x,y) </m> on the hyperbola it holds that <m> \textbf{|} \text{PF}′ \textbf{| − |} \text{PF} \textbf{| =}2a \textbf{.}</m>
         </p>
         <p>
 
@@ -52,13 +52,13 @@
             </p>
 
                 <p>
-                    (Equation of horizontal hyperbola with center C(0,0)<alert>,</alert>
+                    (Equation of horizontal hyperbola with center <m>\text{C}(0,0),</m>
                     vertices <m> (\pm \text{a}, 0)</m>, foci <m>(\pm \text{c}, 0)</m>, where <m>\pm \text{c}2</m> = <m>\text{a}2</m> + <m>b\text{2}</m> )
                 </p>
            </sidebyside>
            
         <p>
-          Note that this hyperbola has no <em>y</em>-intercept because if <em>x</em> = 0, then −<em><m>y^2</m></em> = <em><m>b^2</m></em> which is not possible. The hyperbola is symmetric with respect to both <em>x</em>-and <em>y</em>- axes.
+          Note that this hyperbola has no <m>y</m>-intercept because if <m>x = 0</m>, then <m> −y^2 = b^2</m> which is not possible. The hyperbola is symmetric with respect to both <m>x</m>-and <em>y</em>- axes.
         </p>
         <p>
             Also, from this equation we get </p>
@@ -140,10 +140,10 @@
             </statement>
             <solution>
                 <p>
-                    It is a vertical hyperbola with center C(0,0) and a = |CV| = 1. Since an asymptote of such vertical hyperbola is <m>y = {a/b}x</m> and the slope of the given asymptote is 2, we have a/b  = 2 ⇒ 1 /b  =2 ⇒ <em>b</em> = 1/2. Thus, <m>c^2</m> = <m>a^2</m>+<m>b^2</m><m>= 1 + 1/4 = 5/4 </m>.
+                    It is a vertical hyperbola with center <m>\text{C}(0,0)</m> and <m>a = |\text{CV}| = 1.</m> Since an asymptote of such vertical hyperbola is <m>y = {a/b}x</m> and the slope of the given asymptote is 2, we have a/b  = 2 ⇒ 1 /b  =2 ⇒ <em>b</em> = 1/2. Thus, <m>c^2</m> = <m>a^2</m>+<m>b^2</m><m>= 1 + 1/4 = 5/4 </m>.
                 </p>
                 <p>
-                    So, the foci are <m>0, \sqrt{5}/2</m>and the equation of the hyperbola is <m>y^2</m> − 4<m>x^2 = 1.</m>
+                    So, the foci are <m>0, \sqrt{5}/2</m>and the equation of the hyperbola is <m>y^2 − 4x^2 = 1.</m>
                 </p>
                 <p>
                     (You may sketch the hyperbola)
