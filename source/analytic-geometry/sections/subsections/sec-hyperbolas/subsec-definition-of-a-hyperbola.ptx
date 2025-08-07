@@ -16,7 +16,7 @@
         <ul>
             <li>
                 <p>
-                    The line through the two foci <m>F\textbf{′}</m> and F is called the <m>\textbf{principal axis}</m> of the hyperbola. The point on the principal axis at halfway between the two foci, that is, the midpoint of <m>\text{F′F}</m>, is called the <m>\textbf{center}</m> of the hyperbola and represented by <m>\text{C}</m>. We denote the distance between the two foci by <m>2c</m>. That is, <m>\textbf{|}F\textbf{′}F \textbf{|} = 2c</m> or <m>\textbf{|} \text{CF} \textbf{|} = c =  \textbf{|} \text{CF} \textbf{′|}</m>. Noting also that <m>|\text{PF} \textbf{′}| &lt; \textbf{|}\text{F} \textbf{′} \text{F} \textbf{|} + |\text{PF}| \, \text{in} \Delta \text{PF}\textbf{′} \text{F} \, \text{and} |\text{PF} \textbf{′}| – |\text{PF}| = 2a</m>, you can show that <m>a &lt;</m> <m>c</m>.
+                    The line through the two foci <m>F\textbf{′}</m> and F is called the <m>\textbf{principal axis}</m> of the hyperbola. The point on the principal axis at halfway between the two foci, that is, the midpoint of <m>\text{F′F}</m>, is called the <m>\textbf{center}</m> of the hyperbola and represented by <m>\text{C}</m>. We denote the distance between the two foci by <m>2c</m>. That is, <m>\textbf{|}F\textbf{′}F \textbf{|} = 2c</m> or <m>\textbf{|} \text{CF} \textbf{|} = c =  \textbf{|} \text{CF} \textbf{′|}</m>. Noting also that <m>|\text{PF} \textbf{′}| &lt; \textbf{|}\text{F} \textbf{′} \text{F} \textbf{|} + |\text{PF}| \, \text{in} \, \Delta \text{PF}\textbf{′} \text{F} \, \, \text{and}\, \, \ |\text{PF} \textbf{′}| – |\text{PF}| = 2a</m>, you can show that <m>a &lt;</m> <m>c</m>.
                 </p>
             </li>
             <li>
@@ -55,20 +55,20 @@
     <exercise>
         
         <statement>
-            <p>
+            <!-- <p>
                     Use the definition of hyperbola and the given information to answer or solve each of the following problems.
                 
-            </p>
+            </p> -->
             <p>
 
-                Suppose C is the center, <m> \text{F} \textbf{′} \text{ and \, F }</m> are the foci, and <m> \text{V} \textbf{′} \text{ and \, V }</m>  are the vertices of the hyperbola, as in Figure 4.24, with <m>|\text{CV}| = a</m> and <m>|\text{CF}|  = c</m>. Then, show that each of the followings hold. 
+                Suppose C is the center, <m> \text{F} \textbf{′} \text{ and  F }</m> are the foci, and <m> \text{V} \textbf{′} \text{ and  V }</m>  are the vertices of the hyperbola, as in Figure 4.24, with <m>|\text{CV}| = a</m> and <m>|\text{CF}|  = c</m>. Then, show that each of the followings hold. 
             </p>
             <p>
                 <ol marker="(a)">
                     <li>
                         <p>
 
-                            If P is any point on the hyperbola, then <m>|\text{PF}| – |\text{PF}′| = \pm 2a</m>.
+                            If P is any point on the hyperbola, then <m>|\text{PF}| – |\text{PF′}| = \pm 2a</m>.
                         </p>
                         <p>
                             (Note: Taking that<m> |\text{PF}| – |\text{PF} \textbf{′}| = k</m>, a constant, show that <m>k = \pm 2a</m>.)
@@ -136,7 +136,7 @@
                 <statement>
                     <p>
                         Suppose the vertices of a hyperbola are at <m>(0, \pm2)</m> and its eccentricity is <m>1.5</m>. Then,
-                        <ol marker="1">
+                        <ol marker="1.">
                             <li>
                                 <p>
                                     Find the foci of the hyperbola.

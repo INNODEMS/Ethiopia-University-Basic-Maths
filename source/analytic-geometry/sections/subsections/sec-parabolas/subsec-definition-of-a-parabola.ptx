@@ -31,12 +31,12 @@
         </li>
         <li>
             <p>
-                The chord <m>BB′ \,</m>through <m> \text{F} </m> perpendicular to the axis is called <m>\textbf{latus rectum}</m>.
+                The chord <m>\text{BB′} \,</m>through <m> \text{F} </m> perpendicular to the axis is called <m>\textbf{latus rectum}</m>.
             </p>
         </li>
         <li>
             <p>
-                The length of the latus rectum, i.e, <m>|BB′|</m>, is called <m>\textbf{focal width}</m>.
+                The length of the latus rectum, i.e, <m>|\textbf{BB′}|</m>, is called <m>\textbf{focal width}</m>.
             </p>
         </li>
     </ul>
@@ -47,7 +47,7 @@
      </sidebyside>
      
     <p>
-        Letting <m>\textbf{|}VF \textbf{|} = \textbf{p}</m>, you may show that <m>\textbf{|}BB′\textbf{|} = 4p</m>; i.e., focal width is <m>4</m> times focal length.
+        Letting <m>\textbf{|}VF \textbf{|} = \textbf{p}</m>, you may show that <m>\textbf{|}\text{BB′}\textbf{|} = 4p</m>; i.e., focal width is <m>4</m> times focal length.
     </p>
     <p>
         If <m>\textbf{P}(x,y) </m>is any point on the parabola, then by the definition, the distance of <m>\textbf{P}</m> from the directrix is equal to the distance between <m>\text{P}</m> and the focus <m>\text{F}</m>. This is used to determine an equation of a parabola. To do this, we consider first the cases when the axis of the parabola is parallel to one of the coordinate axes.
@@ -99,7 +99,7 @@
                                             <m>(\text{i}) (4, 4) \,\,\,\,\,\,  (\text{ii}) (2, 2)   \,\,\,\,\,\, (\text{iii}) (-4, 4)  \,\,\,\,\,\,  (\text{iv}) (4, -4)   \,\,\,\,\,\, (\text{v}) (1, \frac{1}{4})</m>
                                         </p>
                                         <p>
-                                            (Note: By the definition, a point is on the parabola iff its distances from the focus and from the directrix are equal. )
+                                            <m> \mathit{(Note: By the definition, a point is on the parabola iff its distances from the focus and from the directrix are equal. )}</m>
                                         </p>
                                     </li>
                                 </ol>

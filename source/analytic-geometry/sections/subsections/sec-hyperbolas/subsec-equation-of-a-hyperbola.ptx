@@ -172,10 +172,10 @@
                             Center: <m>C(h,k),</m>
                         </p>
                         <p>
-                            Vertices:<m>\text{V}′ (h–a,k), \text{V}( h+a, k)</m>
+                            Vertices:<m>\text{V′} (h–a,k), \text{V}( h+a, k)</m>
                         </p>
                         <p>
-                            Foci :<m> \text{F}′(h–c, k), \text{F}(h+c, k), \text{where} c^2 = a^2+b^2</m>
+                            Foci :<m> \text{F′}(h–c, k), \text{F}(h+c, k), \text{where} \,c^2 = a^2+b^2</m>
                         </p>
                         <p>
                             Asymptotes: <m>y-k = \pm \frac{b}{a}(x-h)</m>
@@ -185,7 +185,7 @@
               </p>
        </sidebyside>
                 
-        <p>z
+        <p>
             Similarly, the standard equation of a vertical hyperbola (transverse axis parallel to <m>y</m>-axis) with center <m>\text{C}(h,k),</m> length of transverse axis <m>=2a,</m> and length of conjugate axis <m>=2b</m> is
         </p>
         <sidebyside >
@@ -199,10 +199,10 @@
                             Center: <m>C(h,k),</m>
                         </p>
                         <p>
-                            Vertices: <m>\text{V}′ (h,k–a), text{V}(h, k+a)</m>,
+                            Vertices: <m>\text{V′} (h,k–a), \text{V}(h, k+a)</m>,
                         </p>
                         <p>
-                            Foci : <m>\text{F}′ (h,k–c), text{V}(h, k+c)</m>, where<m>c^2 =a^2 + b^2</m></p>
+                            Foci : <m>\text{F′} (h,k–c), \text{V}(h, k+c)</m>, where<m>c^2 =a^2 + b^2</m></p>
                         <p>
                             Asymptotes: <m>y - k = \pm \frac{a}{b}(x-h)</m></p>
                     </li>
@@ -223,12 +223,8 @@
             <p>
                 This is equation of a hyperbola with center <m>\text{C}(−1, 2)</m>. Note that the '<m>x^2</m>term' is positive indicates that the hyperbola is horizontal (principal axis <m>y=2,\, a=1, \,b=2, \text{and} c^2 = a^2+b^2 \Rightarrow C = \sqrt{5}</m>. As a result the foci are at <m>(-1 \,- \sqrt{5},2)</m> and <m>(-1 \,+ \sqrt{5},2)</m>, vertices are at <m>(−2,2)</m> and <m>(0,2) </m> and the asymptotes are the lines <m>y−2=\,\pm 2(x+1)</m>, that is,<m> y=2x+4 </m> and <m>y=−2x</m>. Consequently, the hyperbola is sketched as in Figure 4.28.
             </p>
-            <p>
-                <md>
-                    <mrow>\text{F}(-1  +\sqrt{5},2) \amp </mrow>
-                </md>
-            </p>
-            <image source="assets/asymptote.png" width="70%">
+    
+            <image source="/asymptote.png" width="70%">
                 <shortdescription></shortdescription>
             </image>
             </solution>
@@ -247,7 +243,7 @@
         </p>
         <sidebyside>
             <p>
-            <m>\,\,\, \Rightarrow  9x^2 -4y^2 -72x+8y  \amp = -176 </m>
+            <m>\,\,\, \Rightarrow  9x^2 -4y^2 -72x+8y   = -176 </m>
             
             <m>\textbf{(Multiply both sides by -1)}</m>
 
@@ -255,16 +251,16 @@
         </p>
         </sidebyside>
         <p>
-                <m> \,\,\, \Rightarrow  9x^2 + 72x + 4y^2 -8y  \amp = 176</m>
-                <m> \,\,\, \Rightarrow  -9x^2  + 72x + 4y^2 -8y  \amp = -176</m>
-                <m> \,\,\, \Rightarrow 4(y^2-2y) - 9(x^2 -8x)  \amp =  176</m>
-                <m>\,\,\, \Rightarrow 4(y^2-2y  \mathbf{{\color{Blue} +1^2}}) - 9(x^2 - 8x  \mathbf{{\color{Blue} +4^2}}) \amp = 176 \mathbf{{\color{Blue} +4-144}} </m>
+                <m> \,\,\, \Rightarrow  9x^2 + 72x + 4y^2 -8y   = 176</m>
+                <m> \,\,\, \Rightarrow  -9x^2  + 72x + 4y^2 -8y   = -176</m>
+                <m> \,\,\, \Rightarrow 4(y^2-2y) - 9(x^2 -8x)   =  176</m>
+                <m>\,\,\, \Rightarrow 4(y^2-2y  \mathbf{{\color{Blue} +1^2}}) - 9(x^2 - 8x  \mathbf{{\color{Blue} +4^2}}) = 176 \mathbf{{\color{Blue} +4-144}} </m>
             
         </p>
         <sidebyside>
            <p>
             
-                <m> \,\,\, \Rightarrow 4(y-1)^2 - 9(x - 4 )^2 \amp = 36  </m>
+                <m> \,\,\, \Rightarrow 4(y-1)^2 - 9(x - 4 )^2 = 36  </m>
                 
             
            </p> 
@@ -273,7 +269,7 @@
            </p>
         </sidebyside>
         <p>
-            <m> \,\,\, \Rightarrow \frac{(y-1)^2}{ 9} - \frac{(x - 4 )^2 }{4}\amp  = 1 </m>
+            <m> \,\,\, \Rightarrow \frac{(y-1)^2}{ 9} - \frac{(x - 4 )^2 }{4}  = 1 </m>
             
         </p>
 
@@ -338,13 +334,15 @@
     </remark>
             
        <exercises xml:id="exercises-equation-of-a-hyperbola">
-        <exercise >
-        <statement>
-            <p>
-                For questions 1 to 9, find an equation of the hyperbola having the given properties and sketch its graph.
-            </p>
-            </statement>
-            </exercise>
+        <exercisegroup>
+        
+            <introduction>
+                <p>
+                    For questions 1 to 9, find an equation of the hyperbola having the given properties and sketch its graph.
+
+                </p>
+            </introduction>
+        
             <exercise>
                 <statement>
                    <p>
@@ -410,65 +408,46 @@
                     <p>
                         For questions 10 to 17 find the center, foci, vertices and asymptotes of the hyperbola having the given equation and sketch its graph.
                     </p>
-                </statement>
-            </exercise>
-            <exercise>
-                <statement>
-                    
         <sidebyside>
-            <p>10. <m>\frac{x^2}{64} - \frac{y^2}{36} = 1</m></p>
-            <p>14. <m>\frac{(x - 2)^2}{9} - \frac{(y + 3)^2}{16} = 1</m></p>
+            <p><m>\textbf{10.}</m> <m>\frac{x^2}{64} - \frac{y^2}{36} = 1</m></p>
+            <p><m>\textbf{14.}</m> <m>\frac{(x - 2)^2}{9} - \frac{(y + 3)^2}{16} = 1</m></p>
         </sidebyside>
 
         <sidebyside>
-            <p>11. <m>y^2 - x^2 = 9</m></p>
-            <p>15. <m>4x^2 - y^2 + 2y - 5 = 0</m></p>
+            <p><m>\textbf{11.}</m>. <m>y^2 - x^2 = 9</m></p>
+            <p><m>\textbf{15.}</m> <m>4x^2 - y^2 + 2y - 5 = 0</m></p>
         </sidebyside>
 
         <sidebyside>
-            <p>12. <m>x^2 - y^2 = 9</m></p>
-            <p>16. <m>2x^2 - 3y^2 - 4x + 12y + 8 = 0</m></p>
+            <p><m>\textbf{12.}</m> <m>x^2 - y^2 = 9</m></p>
+            <p><m>\textbf{16.}</m> <m>2x^2 - 3y^2 - 4x + 12y + 8 = 0</m></p>
         </sidebyside>
 
         <sidebyside>
-            <p>13. <m>(y + 1)^2 - 4(y + 2)^2 = 8</m></p>
-            <p>17. <m>-16x^2 + 9y^2 - 64x + 90y + 305 = 0</m></p>
+            <p><m>\textbf{13.}</m> <m>(y + 1)^2 - 4(y + 2)^2 = 8</m></p>
+            <p><m>\textbf{17.}</m> <m>-16x^2 + 9y^2 - 64x + 90y + 305 = 0</m></p>
         </sidebyside>
-        </statement>
-        </exercise>
-        <exercise>
-            <statement>
                 <p>
-                    18. Find an equation of hyperbola whose major axis is parallel to the x-axis, has a focus at <m>(2,1)</m>and its vertices are at the endpoints of a diameter of the circle <m>x^2 + y^2 -2y =0</m>
+                    <m>\textbf{18.}</m> Find an equation of hyperbola whose major axis is parallel to the x-axis, has a focus at <m>(2,1)</m>and its vertices are at the endpoints of a diameter of the circle <m>x^2 + y^2 -2y =0</m>
                 </p>
-            </statement>
-        </exercise>
-        <exercise>
-            <statement>
                 <p>
-                     A satellite moves along a hyperbolic curve whose horizontal transverse axis is 24 km and an asymptote <m>y = \frac{5}{12} \text{x} + 2</m>. Then what is the eccentricity of the hyperbola?
+                     <m>\textbf{19.}</m> A satellite moves along a hyperbolic curve whose horizontal transverse axis is 24 km and an asymptote <m>y = \frac{5}{12} \text{x} + 2</m>. Then what is the eccentricity of the hyperbola?
                 </p>
-            </statement>
-        </exercise>
-        <exercise>
-            <statement>
                  <p>
-                     Two regions A and B are separated by a sea. The shores are roughly in a shape of hyperbolic curves with asymptotes <m> y = \pm 3\,x\,</m>and a focus at <m>(30,0)</m> taking a coordinate system with origin at the center of the hyperbola. What is the shortest distance between the regions in kms?
+                    <m>\textbf{20.}</m> Two regions A and B are separated by a sea. The shores are roughly in a shape of hyperbolic curves with asymptotes <m> y = \pm 3\,x\,</m>and a focus at <m>(30,0)</m> taking a coordinate system with origin at the center of the hyperbola. What is the shortest distance between the regions in kms?
                 </p>
-            </statement>
-        </exercise>
-        <exercise>
-            <statement>
                 <p>
-                 Determine the type of curve represented by the equation
+                 <m>\textbf{21.}</m>Determine the type of curve represented by the equation
             </p>
-            <p><m>\frac{x^2}{k} + \frac{y^2}{k-16} = 1</m>
+            <p><me>\frac{x^2}{k} + \frac{y^2}{k-16} = 1</me>
             </p>
             <p>
-                In each of the following cases: ( a) <m>k &lt; 0 \,\,\,\,\, </m>( b) <m> 0 &lt; k &lt; 16 \,\,\,\,</m> (c)<m>k &gt;16 </m>       
+                <m>\textbf{22.}</m> each of the following cases: ( a) <m>k &lt; 0 \,\,\,\,\, </m>( b) <m> 0 &lt; k &lt; 16 \,\,\,\,</m> (c)<m>k &gt;16 </m>       
             </p>
             </statement>
         </exercise>
+        
+        </exercisegroup>
        </exercises>
 
         

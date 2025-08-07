@@ -37,10 +37,7 @@
                 <ul>
                     <li>
                         <p>
-                            called standard equation of a vertical parabola,
-                        </p>
-                        <p>
-                             vertex <m>(h, k)</m>, focal length <m>p,</m> open upward.
+                            called standard equation of a vertical parabola, <m>\mathit{vertex(h, k), focal length p, open upward.}</m>
                         </p>
                     </li>
                 </ul>    
@@ -81,7 +78,7 @@
                                 ( Standard equation of a vertical parabola, 
                             </p>
                             <p>
-                                open downward, vertex <m>(h, k)</m> , and focal length <m>p .</m> )
+                               <m> \mathit{open downward, vertex (h, k) , and focal length p .}</m>) 
                             </p>
                         </li>
                     </ul>
@@ -133,7 +130,7 @@
             </md>
                     <m>\Rightarrow</m> focal length <m>p= 3/2.</m> Moreover, as the parabola opens upward its vertex is <m>p</m> units below its focus. That is,
                     <md>
-                        <mrow>\text{V}(h,k) = (-1,\, 1\,\frac{-3}{2}) = \amp (-1,\frac{-1}{2}). </mrow>
+                        <mrow>\text{V}(h,k) = (-1,\, 1-\,\frac{3}{2}) = \amp (-1,\frac{-1}{2}). </mrow>
                     </md>Therefore, the equation of the parabola is
                     <md>
                         <mrow>(x+1)^2 = \amp 6(y+\frac{1}{2}) </mrow>
@@ -199,7 +196,7 @@
                     The equation is  <m>y^2 = -10x </m>; and comparing this with the above equation, it is an equation of a parabola whose vertex is at <m>(0,0),</m> axis of symmetry is the x-axis, open to the left and <m>4p=10</m>, i.e., <m>p= 5/2</m>. Thus, the focus is <m>\text{F}=(–5/2,0)</m> and its directrix is <m>x = 5/2.</m> Its graph is sketched in Figure 4.16.
 
                 </p>
-                <image source="assets/parabola-sketch-example.png" width="80%">
+                <image source="/parabola-sketch-example.png" width="80%" >
                     <shortdescription></shortdescription>
                 </image>
                 <p>
@@ -219,7 +216,7 @@
                     The equation is  <m>y^2 +4y = –8x +4</m>. (Now complete the square of y-terms)
                 </p>
                 <p>
-                    <m>\Rightarrow ^2+4y+2^2 = \amp -8x+4+ 4</m>
+                    <m> \Rightarrow y^2+4y+\textbf{2}^\textbf{2} =  -8x+4+ \textbf{4}</m>
                 </p>
                 <p>
                     ⇒ <m>(y+2)^2 = –8x +8</m>
@@ -254,211 +251,128 @@
             </p>
         </remark>
                
-        <exercises xml:id="exercises-equation-of-parabolas">
-              
-             <exercise>
-                <statement>
-                  <p>
-                    For questions 1 to 8, find an equation of the parabola with the given properties and sketch its graph.
-             </p>  
-                    <p>
-                        Focus<m>(0, 1)</m> and directrix <m>y = −1.</m> 
-                        
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                        Focus<m>(−1, 2) </m>and directrix  <m> y= -2.</m>
-
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                         Focus<m> (3/2, 0)</m> and directrix <m> x= −3/2.</m> 
-                        
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                        Focus <m>(−1, −2)</m> and directrix  <m> x = 0.</m>
-                        
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                        Vertex<m>(3, 2 )</m> and Focus<m>(3, 3)</m>.
-                        
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                        Vertex<m>(5, −2 )</m> and Focus<m>(−5, −2).</m> 
-                        
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                    Vertex<m>(1, 0)</m> and directrix <m> x = −2.</m>
-                        
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                        Vertex <m>(0, 2)</m> and directrix <m> y = 4.</m>
-                        
-                    </p>
-                     <p>
-                        For questions 9 to 17 find the vertex, focus and directrix of the parabola and sketch it.
-
-                    </p>
-                     <p>
-                    For questions 9 to 17 find the vertex, focus and directrix of the parabola and sketch it.
-
-             </p>
-                </statement>
-             </exercise>
+        <exercises xml:id="exercises-eqations-of-a-parabola">
+            <exercisegroup>
             
-             <exercise>
-                <statement>
+                <introduction>
                     <p>
+                    For questions 1 to 8, find an equation of the parabola with the given properties and sketch its graph.
                         
                     </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                        
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                        
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                        
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                        
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                        
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                        
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                        
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                        
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                        
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                    Find an equation of the parabola that has a vertical axis, its vertex at <m>(1, 0)</m> and passing through <m>(0,1).</m>
-                       
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                     The vertex and endpoints of the latus rectum of the parabola <m>x^2 = 36y</m> forms a triangle. Find the area of the triangle.
-                        
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                     P<m>(4, 6)</m> is a point on a parabola whose focus is at <m>(0, 2) </m> and directrix is parallel to <m>x</m>-axis. 
-                        <ol marker="(a)">
-                            <li>
-                                <p>
-                                    Find an equation of the parabola, its vertex and directrix.
-                                    
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    Determine the distance from P to the directrix.
-                                    
-                                </p>
-                            </li>
-                        </ol>
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                     An iron wire bent in the shape of a parabola has latus rectum of length 60cm. What is its focal length?
-                        
-                    </p>
-                </statement>
-             </exercise>
-             <exercise>
-                <statement>
-                    <p>
-                     A cross-section of a parabolic reflector is shown in the figure below. A bulb is located at the focus and the opening at the focus,<m> \text{AB, is} 12 \text{cm}</m>. What is the diameter of the opening, <m>\text{CD}, 8 \text{cm}</m> from the vertex?
-                        
-                    </p>
-                </statement>
-             </exercise>
+                </introduction>
+        <exercise>
+            <statement>
+                        <p>
+                            Focus<m>(0, 1)</m> and directrix <m>y = −1.</m> 
+                        </p>
+                            <p>
+                            <m>\textbf{2.}</m> Focus<m>(−1, 2) </m>and directrix  <m> y= -2.</m>
+                        </p>
+                        <p>
+                                <m>\textbf{3.}</m> Focus<m> (3/2, 0)</m> and directrix <m> x= −3/2.</m> 
+                            
+                        </p>
+                        <p>
+                           <m>\textbf{4.}</m> Focus <m>(−1, −2)</m> and directrix  <m> x = 0.</m>
+                        </p>
+                        <p>
+                           <m>\textbf{5.}</m> Vertex<m>(3, 2 )</m> and Focus<m>(3, 3)</m>.
+                        </p>
+                    
                 
-        </exercises>
-        
-
+                        
+                        <p>
+                            <m>\textbf{6.}</m> Vertex<m>(5, −2 )</m> and Focus<m>(−5, −2).</m> 
+                        </p>
+                    
+                
+                        
+                        <p>
+                            <m>\textbf{7.}</m>Vertex<m>(1, 0)</m> and directrix <m> x = −2.</m>
+                        </p>
+                    
+                
+                        
+                        <p>
+                            <m>\textbf{8.}</m> Vertex <m>(0, 2)</m> and directrix <m> y = 4.</m>
+                        </p>
+                        
+                    
+                <p>
+                    For questions 9 to 17 find the vertex, focus and directrix of the parabola and sketch it.
+                </p>
+                <sidebyside>
+                
+                        <p>
+                            <m>\textbf{9.}</m> <m>y=2x^2</m>
+                        </p>
+                    
+                
+                        <p>
+                            <m>\textbf{12.}</m> <m>x+y^2=0</m>
+                        </p>
+                
+                        <p>
+                            <m>\textbf{15.}</m><m> y^2 +8x+6y+5=0</m>
+                        </p>
+                    
+                        
+                </sidebyside>
+                <sidebyside>
+                    <p>
+                       <m>\textbf{10.}</m> <m>8x^2=-y</m> 
+                    </p>
+                    <p>
+                        <m>\textbf{13.\,}</m><m> x-1=(y+2)^2  </m>
+                    </p>
+                    <p>
+                        <m>\textbf{16.}</m> <m>y^2 – 2y – 4x + 9= 0</m>
+                    </p>
+                </sidebyside>
+                <sidebyside>
+                    <p>
+                        <m>\textbf{11.}</m> <m>4x − y^2= 0</m>
+                    </p>
+                    <p>
+                        <m>\textbf{14.}</m> <m>(x+4)^2 = 8y -24</m>
+                    </p>
+                    <p>
+                        
+                    </p>
+                </sidebyside>
+                    <p>
+                        <m>\textbf{17.}</m> <m>-4x^2 +4x -\frac{1}{2}y=1</m>
+                    </p>
+                
+               
+                <p>
+                    <m>\textbf{18.}</m> Find an equation of the parabola that has a vertical axis, its vertex at <m>(1, 0)</m> and passing through <m>(0,1).</m>
+                </p>
+                <p>
+                    <m>\textbf{19.}</m> The vertex and endpoints of the latus rectum of the parabola <m>x^2 = 36y</m> forms a triangle. Find the area of the triangle.
+                </p>
+                <p>
+                    <m>\textbf{20.\,}</m> P<m>(4, 6)</m> is a point on a parabola whose focus is at <m>(0, 2) </m> and directrix is parallel to <m>x</m>-axis. 
+                </p>    
+                <p>
+                    (a) Find an equation of the parabola, its vertex and directrix.
+                </p>
+                <p>
+                    (b) Determine the distance from P to the directrix.
+                </p>
+                <p>
+                    <m>\textbf{21.}</m>An iron wire bent in the shape of a parabola has latus rectum of length 60cm. What is its focal length?
+                </p>
+                <p>
+                    <m>\textbf{22.}</m> A cross-section of a parabolic reflector is shown in the figure below. A bulb is located at the focus and the opening at the focus,<m> \text{AB, is} 12 \text{cm}</m>. What is the diameter of the opening, <m>\text{CD}, 8 \text{cm}</m> from the vertex?
+                </p>
+                <image source="/exercise_parabola.png" width="50%">
+                    <shortdescription></shortdescription>
+                </image>
+            </statement>   
+         </exercise>
+    </exercisegroup>
+</exercises>
 <exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equation-of-a-parabola/Finding-Focus-and-Directrix-of-a-Parabola(Guided).xml" />
 
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-parabola%2FFinding-Focus-and-Directrix-of-a-Parabola%28Guided%29.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-parabolas%2Fsubsec-equation-of-parabolas.ptx">Add review</url></exercise>
