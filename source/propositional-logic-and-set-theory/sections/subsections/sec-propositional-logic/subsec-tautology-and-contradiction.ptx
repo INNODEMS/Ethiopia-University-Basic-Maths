@@ -14,6 +14,12 @@
             A proposition that is neither a tautology nor a contradiction is called a <term>contingency</term>.
         </p>
     </note>
+    <definition>
+        <statement>
+        <p>This is another <em>definition</em> of the <term>term</term>.</p>
+        <p>Here is some maths: <m>x^2+5</m></p>
+        </statement>
+    </definition>
     
     <example>
         <statement>
