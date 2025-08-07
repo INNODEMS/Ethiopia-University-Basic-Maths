@@ -42,7 +42,7 @@
     </ul>
 </p>
 <p>Functions are not numbers. But just as two numbers <m>a</m> and <m>b</m> can be added to produce a new number <m>a + b</m>, so two functions <m>f</m> and <m>g</m> can be added to produce a new function <m>f + g</m>. This is just one of the several operations on functions that we will describe in this section.</p>
-<p>Consider functions <m>f</m> and <m>g</m> defined by <m>f(x) = \frac{x - 3}{2}</m> and <m>g(x) = \sqrt{x}</m>. We can make a new function <m>f + g</m> by having it assign to <m>x</m>the value <m>\frac{x - 3}{2} + \sqrt{x}</m>, that is,</p>
+<p>Consider functions <m>f</m> and <m>g</m> defined by <m>f(x) = \frac{x - 3}{2}</m> and <m>g(x) = \sqrt{x}</m>. We can make a new function <m>f + g</m> by having it assign to <m>x</m> the value <m>\frac{x - 3}{2} + \sqrt{x}</m>, that is,</p>
 <p><m>(f + g)(x) = f(x) + g(x) = \frac{x - 3}{2} + \sqrt{x}</m> .</p>
 
 <definition xml:id="def-sum-difference-product-quotient-of-functions">
@@ -65,7 +65,7 @@
     </p>
 
     <p>
-        Since an <m>x -</m>value must be an input into both <m>f</m> and <m>g</m>, the domain of <m>(f + g)(x)</m> is the set of all <m>x</m> common to the domain of <m>f</m> and <m>g</m>. This is usually written as <m>\text{Dom}(f + g) = \text{Dom}(f) \cap \text{Dom}(g)</m>. Similar statements hold for the domains of the difference and product of two functions. In the case of the quotient, we must impose the additional restriction that all elements in the domain of <m>g</m> for which <m>g(x) = 0</m> are excluded.
+        Since an <m>x -</m>value must be an input into both <m>f</m> and <m>g</m>, the domain of <m>(f + g)(x)</m> is the set of all <m>x</m> common to the domain of <m>f</m> and <m>g</m>. This is usually written as <m>Dom(f + g) = Dom(f) \cap Dom(g)</m>. Similar statements hold for the domains of the difference and product of two functions. In the case of the quotient, we must impose the additional restriction that all elements in the domain of <m>g</m> for which <m>g(x) = 0</m> are excluded.
     </p>
     </statement>
 </definition>
@@ -168,7 +168,7 @@
 
             <row>
                 <cell><m>f^{3}(x) = \left( f(x) \right)^{3} = \left( \sqrt[4]{x + 1} \right)^{3} = \left( x + 1 \right)^{\frac{3}{4}}</m> </cell>
-                <cell><m>\lbrack - 1,\infty \rbrack</m></cell>
+                <cell><m>\left.\lbrack - 1,\infty \right)</m></cell>
 
             </row>
         </tabular>
@@ -469,7 +469,7 @@
 
                 <li>
                     <p>
-                        Let <m>f(x) = \frac{x^{2} - \text{25}}{x - 5},\ x \in \Re\{ 5</m>, and <m>g(x) = x + 5,\ x \in \Re</m>. The function <m>f</m> and <m>g</m> are not equal because <m>\text{Dom}(f) \neq \text{Dom}(g)\text{.}</m>
+                        Let <m>f(x) = \frac{x^{2} - \text{25}}{x - 5},\ x \in \Re \setminus  \{ 5\} </m>, and <m>g(x) = x + 5,\ x \in \Re</m>. The function <m>f</m> and <m>g</m> are not equal because <m>\text{Dom}(f) \neq \text{Dom}(g)\text{.}</m>
                     </p>
                 </li>
             </ol>

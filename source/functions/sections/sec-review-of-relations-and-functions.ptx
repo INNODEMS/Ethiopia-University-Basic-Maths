@@ -550,13 +550,13 @@
 <example>
     <statement>
         <p>
-            Let <m>f</m> be the subset of <m>Z \times Z</m> defined by <m>f = \left\{ (\text{mn},m + n):m,n \in Z \right\}</m>. Is <m>f</m> a function?
+            Let <m>f</m> be the subset of <m>Z \times Z</m> defined by <m>f = \left\{ (mn,m + n):m,n \in Z \right\}</m>. Is <m>f</m> a function?
         </p>
     </statement>
 
     <solution>
         <p>
-            First we show that <m>f</m> satisfies condition (i) in the definition. Let <m>x</m> be any element of <m>Z</m>. Then, <m>x = x \cdot 1</m>. Hence, <m>(x,x + 1) = (x \cdot 1,x + 1) \in f</m>. This implies that<m>x \in \text{Dom}(f)</m>. Thus, <m>Z \subseteq \text{Dom}(f)</m>. However, <m>\text{Dom}(f) \subseteq Z</m> and so <m>\text{Dom}(f) = Z</m>. Now, <m></m> and <m>4 = 4 \cdot 1 = 2 \cdot 2</m>. Thus, <m>(4 \cdot 1,4 + 1)</m> and <m>(2 \cdot 2,2 + 2)</m> are in <m>f</m>. Hence we find that <m>4 \cdot 1 = 2 \cdot 2</m> and <m>f(4 \cdot 1) = 5 \neq 4 = f(2 \cdot 2)</m>. This implies that <m>f</m> is not well defined, i.e, <m>f</m> does not satisfy condition (ii). Hence, <m>f</m> is not a function from <m>Z</m> to <m>Z</m>.
+            First we show that <m>f</m> satisfies condition (i) in the definition. Let <m>x</m> be any element of <m>Z</m>. Then, <m>x = x \cdot 1</m>. Hence, <m>(x,x + 1) = (x \cdot 1,x + 1) \in f</m>. This implies that <m>x \in Dom(f)</m>. Thus, <m>Z \subseteq Dom(f)</m>. However, <m>Dom(f) \subseteq Z</m> and so <m>Dom(f) = Z</m>. Now, <m></m> and <m>4 = 4 \cdot 1 = 2 \cdot 2</m>. Thus, <m>(4 \cdot 1,4 + 1)</m> and <m>(2 \cdot 2,2 + 2)</m> are in <m>f</m>. Hence we find that <m>4 \cdot 1 = 2 \cdot 2</m> and <m>f(4 \cdot 1) = 5 \neq 4 = f(2 \cdot 2)</m>. This implies that <m>f</m> is not well defined, i.e, <m>f</m> does not satisfy condition (ii). Hence, <m>f</m> is not a function from <m>Z</m> to <m>Z</m>.
         </p>
     </solution>
 </example>
@@ -710,12 +710,47 @@
             This is a quadratic inequality, which can be solved by analyzing signs:
         </p>
 
-        <p>
-            Sign of <m>3x - x^{2}</m> <m>\begin{matrix}
-            \overrightarrow{- \  - \  - \ |\  + \  + \  + \ |\  - \  - \  -} \\
-            \ 0\ 3 \\
-            \end{matrix}</m>
-        </p>
+        <sidebyside>
+            <p>
+                Sign of <m>3x - x^{2}</m>
+            </p>
+
+            <image>
+                <latex-image>
+                    \begin{tikzpicture}
+                        % Draw main line with arrows on both ends
+                        \draw[&lt;-&gt;] (-2,0) -- (5,0);
+
+                        % Vertical bars at 0 and 3
+                        \draw[very thick] (0,-0.2) -- (0,0.2);
+                        \draw[very thick] (3,-0.2) -- (3,0.2);
+
+                        % Plus signs between 0 and 3
+                        \node at (0.5,0.25) {$+$};
+                        \node at (1.0,0.25) {$+$};
+                        \node at (1.5,0.25) {$+$};
+                        \node at (2.0,0.25) {$+$};
+                        \node at (2.5,0.25) {$+$};
+
+                        % Minus signs to the left of 0
+                        \node at (-1.5,0.25) {$-$};
+                        \node at (-1.0,0.25) {$-$};
+                        \node at (-0.5,0.25) {$-$};
+
+                        % Minus signs to the right of 3
+                        \node at (3.5,0.25) {$-$};
+                        \node at (4.0,0.25) {$-$};
+                        \node at (4.5,0.25) {$-$};
+
+                        % Labels
+                        \node[below] at (0,-0.2) {0};
+                        \node[below] at (3,-0.2) {3};
+                    \end{tikzpicture}
+                </latex-image>
+                <shortdescription></shortdescription>
+                
+            </image>
+        </sidebyside>
 
         <p>
             Since we want <m>3x - x^{2} = x(3 - x)</m> to be non-negative, the sign analysis shows us that the domain is <m>\left\{ x:0 \leq x \leq 3 \right\}</m> or <m>\lbrack 0,3\rbrack</m>.
