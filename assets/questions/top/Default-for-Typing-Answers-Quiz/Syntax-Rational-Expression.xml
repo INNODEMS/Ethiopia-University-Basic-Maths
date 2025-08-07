@@ -5,7 +5,7 @@
       <text>Syntax-Rational-Expression</text>
     </name>
     <questiontext format="html">
-      <text><![CDATA[<p>Enter the following \[{@ta@}\] in STACK. Use the (^) sign to denote a power, and make sure you input multiplication as a*b.</p>
+      <text><![CDATA[<p>Enter the following \[{@ta@}\] in STACK. Use the <code>/</code> sign for division, and make sure to use brackets when needed. Use the <code>^</code> sign to denote a power, and make sure you input multiplication as <code>a*b</code>.</p>
 <p>[[input:ans1]] [[validation:ans1]]</p>]]></text>
     </questiontext>
     <generalfeedback format="html">
