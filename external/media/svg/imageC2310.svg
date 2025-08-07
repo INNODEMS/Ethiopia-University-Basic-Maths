@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN"
+"http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+<svg width="768" height="134"
+	xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+<desc>wmf2svg</desc>
+<line x1="42.289917" y1="89.333336" x2="51.540836" y2="82.952377" 
+	style="stroke-width:3.333483; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:none; stroke:black" />
+<line x1="51.540836" y1="84.775513" x2="64.945229" y2="130.353745" 
+	style="stroke-width:6.666967; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:none; stroke:black" />
+<line x1="66.455582" y1="130.353745" x2="84.202248" y2="1.823129" 
+	style="stroke-width:3.333483; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:none; stroke:black" />
+<line x1="84.202248" y1="1.823129" x2="475.384003" y2="1.823129" 
+	style="stroke-width:3.333483; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:none; stroke:black" />
+<text x="0" y="0" style="font-family:Times; font-style:italic; font-weight:normal; font-size:87.510201; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 704.202637 107.564629)"
+	>cx</text>
+<text x="0" y="0" style="font-family:Times; font-style:italic; font-weight:normal; font-size:87.510201; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 555.810364 107.564629)"
+	>a</text>
+<text x="0" y="0" style="font-family:Times; font-style:italic; font-weight:normal; font-size:87.510201; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 395.712799 107.564629)"
+	>y</text>
+<text x="0" y="0" style="font-family:Times; font-style:italic; font-weight:normal; font-size:87.510201; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 219.001358 107.564629)"
+	>c</text>
+<text x="0" y="0" style="font-family:Times; font-style:italic; font-weight:normal; font-size:87.510201; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 117.052452 107.564629)"
+	>x</text>
+<text x="0" y="0" style="font-family:Times; font-style:italic; font-weight:normal; font-size:87.510201; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 0.000000 107.564629)"
+	>a</text>
+<text x="0" y="0" style="font-family:Symbol; font-style:normal; font-weight:normal; font-size:87.510201; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 649.829895 107.564629)"
+	>+</text>
+<text x="0" y="0" style="font-family:Symbol; font-style:normal; font-weight:normal; font-size:87.510201; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 496.906525 107.564629)"
+	>=</text>
+<text x="0" y="0" style="font-family:Symbol; font-style:normal; font-weight:normal; font-size:87.510201; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 333.410706 107.564629)"
+	>+</text>
+<text x="0" y="0" style="font-family:Symbol; font-style:normal; font-weight:normal; font-size:87.510201; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 164.628616 107.564629)"
+	>+</text>
+<text x="0" y="0" style="font-family:Times; font-style:normal; font-weight:normal; font-size:65.632652; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 599.233032 68.367348)"
+	>2</text>
+<text x="0" y="0" style="font-family:Times; font-style:normal; font-weight:normal; font-size:65.632652; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 435.737183 68.367348)"
+	>2</text>
+<text x="0" y="0" style="font-family:Times; font-style:normal; font-weight:normal; font-size:65.632652; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 282.813812 68.367348)"
+	>2</text>
+<text x="0" y="0" style="font-family:Times; font-style:normal; font-weight:normal; font-size:87.510201; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 252.984329 107.564629)"
+	>)</text>
+<text x="0" y="0" style="font-family:Times; font-style:normal; font-weight:normal; font-size:87.510201; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 87.600548 107.564629)"
+	>(</text>
+</svg>

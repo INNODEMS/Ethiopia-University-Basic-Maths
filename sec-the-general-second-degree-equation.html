@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette: leaves                       *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The General Second Degree Equation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="BASIC MATHEMATICS FOR NATURAL SCIENCES">
+<meta property="book:author" content="Ato Arbsie Yasin">
+<meta property="book:author" content="Dr. Berhanu Bekele">
+<meta property="book:author" content="Dr. Berhanu Guta">
+<meta property="book:author" content="Ato Wondwosen Zemene">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.9.4';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.879b99e54406967d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.28cc3c4821792be5.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="basic-maths-for-natural-sciences.html"><span class="title">BASIC MATHEMATICS FOR NATURAL SCIENCES</span> <span class="subtitle">UNDERGRADUATE STUDENT TEXTBOOK</span></a></h1>
+<p class="byline">Ato Arbsie Yasin, Dr. Berhanu Bekele, Dr. Berhanu Guta, Ato Wondwosen Zemene</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-hyperbolas.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="analytic-geometry.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="basic-maths-for-natural-sciences-8.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="basic-maths-for-natural-sciences-4.html" class="internal"><span class="codenumber">1</span> <span class="title">Propositional Logic and Set Theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="propositional-logic.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Propositional Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="propositional-logic.html#definition-and-examples-of-propositions" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Definition and examples of propositions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="propositional-logic.html#logical-connectives" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Logical connectives</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="propositional-logic.html#exercises-logical-connectives" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="propositional-logic.html#compound-or-complex-propositions" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Compound (or complex) propositions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="propositional-logic.html#tautology-and-contradiction" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Tautology and contradiction</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="propositional-logic.html#exercises-tautology-and-contradiction" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="open-propositions-and-quantifiers.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Open propositions and quantifiers</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="open-propositions-and-quantifiers.html#exercises-open-propositions-and-quantifiers" class="internal"><span class="codenumber">1.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-argument-and-validity.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Argument and Validity</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-argument-and-validity.html#sec-argument-and-validity-7" class="internal"><span class="codenumber">1.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-set-theory.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Set theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set-theory.html#subsec-the-concept-of-a-set" class="internal"><span class="codenumber">1.4.1</span> <span class="title">The concept of a set</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-set-theory.html#subsec-description-of-sets" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Description of Sets</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-set-theory.html#exercises-description-of-sets" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-set-theory.html#subsec-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Set Operations and Venn diagrams</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-set-theory.html#exercises-set-operations-and-venn-diagrams" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="the-real-and-complex-number-systems.html" class="internal"><span class="codenumber">2</span> <span class="title">The Real and Complex Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html" class="internal"><span class="codenumber">2.1</span> <span class="title">The real number System</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1</span> <span class="title">The set of natural numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Operations on the set of natural numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-oder-relation-N" class="internal"><span class="codenumber">2.1.1.2</span> <span class="title">Order Relation in <span class="process-math">\(\mathbf{N}\)</span></span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-factors-of-a-number" class="internal"><span class="codenumber">2.1.1.3</span> <span class="title">Factors of a number</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-prime-factorization" class="internal"><span class="codenumber">2.1.1.4</span> <span class="title">Prime Factorization</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-greatest-common-factor" class="internal"><span class="codenumber">2.1.1.5</span> <span class="title">Greatest Common Factor (GCF)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-lcm" class="internal"><span class="codenumber">2.1.1.6</span> <span class="title">Least Common Multiple (LCM)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-well-ordering-principle-in-the-set-of-natural-numbers" class="internal"><span class="codenumber">2.1.1.7</span> <span class="title">Well ordering Principle in the set of natural numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-principle-of-mathematical-induction" class="internal"><span class="codenumber">2.1.1.8</span> <span class="title">Principle of Mathematical Induction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-integers" class="internal"><span class="codenumber">2.1.2</span> <span class="title">The set of Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-integers" class="internal"><span class="codenumber">2.1.2.1</span> <span class="title">Operations on the set of integers</span></a></div></li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-z" class="internal"><span class="codenumber">2.1.2.2</span> <span class="title">Order Relation in Z</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-real-number-system.html#exercises-sets-of-integers" class="internal"><span class="codenumber">2.1.2.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-rational-numbers" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The set of rational numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-rational-numbers" class="internal"><span class="codenumber">2.1.3.1</span> <span class="title">Operations on the set of rational numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-q" class="internal"><span class="codenumber">2.1.3.2</span> <span class="title">Order Relation in Q</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-decimal-representation-of-rational-numbers" class="internal"><span class="codenumber">2.1.3.3</span> <span class="title">Decimal representation of rational numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-fraction-form-of-decimal-numbers" class="internal"><span class="codenumber">2.1.3.4</span> <span class="title">Fraction form of decimal numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-non-terminating-and-non-periodic-decimals" class="internal"><span class="codenumber">2.1.3.5</span> <span class="title">Non-terminating and non-periodic decimals</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsec-the-set-of-real-numbers" class="internal"><span class="codenumber">2.1.4</span> <span class="title">The set of real numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-operations-on-the-set-of-real-numbers" class="internal"><span class="codenumber">2.1.4.1</span> <span class="title">Operations on the set of real numbers</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-the-real-number-and-the-number-line" class="internal"><span class="codenumber">2.1.4.2</span> <span class="title">The real number and the number line</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-order-relation-in-r" class="internal"><span class="codenumber">2.1.4.3</span> <span class="title">Order Relation in R</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-intervals" class="internal"><span class="codenumber">2.1.4.4</span> <span class="title">Intervals</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-upper-bounds-and-lower-bounds" class="internal"><span class="codenumber">2.1.4.5</span> <span class="title">Upper bounds and lower bounds</span></a></div></li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-the-real-number-system.html#subsubsec-completeness-property-of-real-number" class="internal"><span class="codenumber">2.1.4.6</span> <span class="title">Completeness property of real number (R)</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-real-number-system.html#exercises-real-number" class="internal"><span class="codenumber">2.1.4.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The set of complex numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-plotting-complex-numbers" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Plotting complex numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-operations-on-complex-numbers" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Operations on Complex numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-conjugate-of-a-complex-number" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Conjugate of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-modulus-norm-of-a-complex" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Modulus (Norm) of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-additive-and-multiplicative-inverses" class="internal"><span class="codenumber">2.2.5</span> <span class="title">Additive and multiplicative inverses</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-argument-amplitude-of-a-complex" class="internal"><span class="codenumber">2.2.6</span> <span class="title">Argument (Amplitude) of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex" class="internal"><span class="codenumber">2.2.7</span> <span class="title">Polar form of a complex number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-the-set-of-complex-numbers.html#subsec-extraction-of-roots" class="internal"><span class="codenumber">2.2.8</span> <span class="title">Extraction of roots</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="functions.html" class="internal"><span class="codenumber">3</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-review-of-relations-and-functions.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Review of relations and functions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-review-of-relations-and-functions.html#exercises-Review-of-relations-and-functions" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-real-valued-functions-and-their.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Real Valued functions and their properties</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-real-valued-functions-and-their.html#exercises-Real-Valued-functions-and-their-properties" class="internal"><span class="codenumber">3.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-types-of-functions-and-inverse.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Types of functions and inverse of a function</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-types-of-functions-and-inverse.html#exercises-types-of-functions-and-inverse" class="internal"><span class="codenumber">3.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-polynomials-zeros-of-polynomials-rational.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Polynomials, zeros of polynomials, rational functions and their graphs</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-polynomials-zeros-of-polynomials-rational.html#exercises-polynomials-zeros-of-polynomials-rationals" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-definition-and-basic-properties-of.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Definition and basic properties of logarithmic, exponential, trigonometric and hyperbolic functions and their graphs</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-definition-and-basic-properties-of.html#exercises-Basic-properties-of-functions" class="internal"><span class="codenumber">3.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="analytic-geometry.html" class="internal"><span class="codenumber">4</span> <span class="title">Analytic Geometry</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Distance Formula and Equation of Lines</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-distance-between-two-points-and" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Distance between two points and division of segments</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#exercises-distance-between-two-points-and" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-equations-of-lines" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Equations of lines</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#exercises-equations-of-lines" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#subsec-distance-between-a-point-and" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Distance between a point and a line</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-distance-formula-and-equation-of.html#exercises-distance_between_a_point" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-circles.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Circles</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-circles.html#subsec-definition-of-a-circle" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Definition of a Circle</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-circles.html#exercises-definition-of-a-circle" class="internal"><span class="codenumber">4.2.1</span> <span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-circles.html#subsec-equation-of-a-circle" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Equation of a Circle</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-circles.html#exercises-exercise" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Exercise</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-circles.html#subsec-intersection-of-a-circle-with" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Intersection of a circle with a line and tangent line to a circle</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-circles.html#exercises-intersection-of-a-circle" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Exercise</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-parabolas.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Parabolas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-parabolas.html#subsec-definition-of-a-parabola" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Definition of a Parabola</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-parabolas.html#exercises-definition-of-a-parabola" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-parabolas.html#subsec-equation-of-parabolas" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Equation of Parabolas</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ellipses.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Ellipses</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ellipses.html#subsec-definition-of-an-ellipse" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Definition of an Ellipse</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ellipses.html#exercises-ellipse" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Exercise</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-ellipses.html#subsec-equation-of-an-ellipse" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Equation of an Ellipse</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-ellipses.html#subsubsec-equation-of-an-ellipse-at-standard-position" class="internal"><span class="codenumber">4.4.2.1</span> <span class="title">Equation of an ellipse at standard position</span></a></div></li>
+<li class="toc-item toc-subsubsection">
+<div class="toc-title-box"><a href="sec-ellipses.html#subsubsec-equation-of-shifted-ellipses" class="internal"><span class="codenumber">4.4.2.2</span> <span class="title">Equation of shifted Ellipses</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-ellipses.html#fig-ellipse" class="internal"><span class="codenumber">4.4.2.2</span> <span class="title">Exercise</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyperbolas.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Hyperbolas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-hyperbolas.html#subsec-definition-of-a-hyperbola" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Definition of a hyperbola</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-hyperbolas.html#exercises-definition-of-a-hyperbola" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-hyperbolas.html#subsec-equation-of-a-hyperbola" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Equation of a hyperbola</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-hyperbolas.html#exercises-equation-of-a-hyperbola" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html" class="internal"><span class="codenumber">4.6</span> <span class="title">The General Second Degree Equation</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#subsec-rotation-of-coordinate-axes" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Rotation of Coordinate Axes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#exercises-rotation-of-coordinate-axes" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#subsec-analysis-of-the-general-second" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Analysis of the General Second Degree Equations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-the-general-second-degree-equation.html#exercises-analysis-of-the-general" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="basic-maths-for-natural-sciences-8.html" class="internal"><span class="codenumber">5</span> <span class="title">References</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-the-general-second-degree-equation"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The General Second Degree Equation</span>
+</h2>
+<section class="introduction" id="sec-the-general-second-degree-equation-2"><div class="para" id="sec-the-general-second-degree-equation-2-1">By the end of this section, you should:<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-general-second-degree-equation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-the-general-second-degree-equation-2-2">
+<ul class="disc" id="sec-the-general-second-degree-equation-2-2-1">
+<li id="sec-the-general-second-degree-equation-2-2-1-1">
+<div class="para" id="sec-the-general-second-degree-equation-2-2-1-1-1">know the general form of second degree equation representing conic sections whose lines of symmetry are not necessarily parallel to the coordinate axes.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-general-second-degree-equation-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-general-second-degree-equation-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-general-second-degree-equation-2-2-1-2">
+<div class="para" id="sec-the-general-second-degree-equation-2-2-1-2-1">know the rotation formula for rotating the coordinate axes.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-general-second-degree-equation-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-general-second-degree-equation-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-general-second-degree-equation-2-2-1-3">
+<div class="para" id="sec-the-general-second-degree-equation-2-2-1-3-1">be able to find equivalent equation of a conic section under rotation of the reference axes.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-general-second-degree-equation-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-general-second-degree-equation-2-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-general-second-degree-equation-2-2-1-4">
+<div class="para" id="sec-the-general-second-degree-equation-2-2-1-4-1">be able to apply the rotation formula to find a suitable coordinate system in which a given general second degree equation is converted to a simpler standard form.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-general-second-degree-equation-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-general-second-degree-equation-2-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-general-second-degree-equation-2-2-1-5">
+<div class="para" id="sec-the-general-second-degree-equation-2-2-1-5-1">be able to convert a given general second degree equation to an equivalent simpler standard form of equation of a conic section.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-general-second-degree-equation-2-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-general-second-degree-equation-2-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-the-general-second-degree-equation-2-2-1-6">
+<div class="para" id="sec-the-general-second-degree-equation-2-2-1-6-1">be able to identify a conic section that a given general second degree equation represents and sketch the corresponding conic section.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-general-second-degree-equation-2-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-the-general-second-degree-equation-2-2-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-general-second-degree-equation-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-the-general-second-degree-equation-2-3">In the previous sections we have seen that, except in degenerate cases, the graph of the equation<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-general-second-degree-equation-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-the-general-second-degree-equation-2-4">
+<span class="process-math">\(Ax_2 + Cy_2 + Dx + Ey + F = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-the-general-second-degree-equation-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-the-general-second-degree-equation-2-5">is a circle, parabola, ellipse or hyperbola. The construction of these equations was based on the assumption that the axis of symmetry of a conic section is parallel to one of the coordinate axes. The assumption seems to be quite restrictive because the axis of symmetry for a parabola, ellipse, or hyperbola can be any oblique line as indicated in their corresponding definitions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-general-second-degree-equation-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-the-general-second-degree-equation-2-6">However, the reason why we have assumed that is not only for simplicity but there is always a coordinate system whose one of the axes is parallel to a desired line of symmetry. In particular, we can rotate the axes of our <em class="emphasis">xy</em><em class="alert">-</em>coordinate system, whenever needed, so as to form a new <em class="emphasis">x</em>’<em class="emphasis">y</em>’-coordinate system such that either the x’- axis or y’-axis is parallel to the desired line of symmetry. Toward this end, let us review the notion of rotation of axes.<div class="autopermalink" data-description="Paragraph"><a href="#sec-the-general-second-degree-equation-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsec-rotation-of-coordinate-axes"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Rotation of Coordinate Axes</span>
+</h3>
+<div class="para" id="subsec-rotation-of-coordinate-axes-2">A rotation of the <em class="emphasis">x</em> and <em class="emphasis">y</em> coordinate axes by an angle <em class="emphasis">θ</em> about the origin O(0,0) creates a new <em class="emphasis">x</em>’<em class="emphasis">y</em>’-coordinate system whose <em class="emphasis">x</em>’-axis is the line obtained by rotating the <em class="emphasis">x</em>-axis by angle <em class="emphasis">θ</em> about O and <em class="alert"><em class="emphasis">y</em>’</em>-axis is the line obtained by rotating the <em class="emphasis"><em class="alert">y</em></em>-axis in the same way. This makes a point P to have two sets of coordinates denoted by (<em class="emphasis">x</em>,<em class="emphasis">y</em>) and (<em class="emphasis">x</em>′,<em class="emphasis">y</em>′) relative to the <em class="emphasis">xy</em><em class="alert">-</em> and <em class="emphasis">x</em>′<em class="emphasis">y</em>′-coordinate axes, respectively.(See <a href="sec-the-general-second-degree-equation.html#rotation-of-coordinates1" class="xref" data-knowl="./knowl/xref/rotation-of-coordinates1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.6.1">Figure 4.6.1</a>)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="rotation-of-coordinates1"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external//rotation-of-coordinates1.png" class="contained" alt="(for accessibility)"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 4.6.1"><a href="#rotation-of-coordinates1" title="Copy heading and permalink for Figure 4.6.1" aria-label="Copy heading and permalink for Figure 4.6.1">🔗</a></div></figcaption></figure><div class="para" id="subsec-rotation-of-coordinate-axes-4">The angle <em class="emphasis">θ</em> considered in the above discussion is called the angle of rotation. Our aim is to find the relationships between the coordinates (<em class="emphasis">x</em>,<em class="emphasis">y</em>) and the coordinates (<em class="emphasis">x</em>′,<em class="emphasis">y</em>′) of the same point P.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-5">To find this relationships, let P(<em class="emphasis">x,y</em>) be any point in <em class="emphasis">xy</em>-plane, <em class="emphasis">θ</em> be an angle of rotation (i.e., <em class="emphasis">θ</em> is angle between <em class="emphasis">x</em> and <em class="emphasis">x</em>’ axes ) and <em class="emphasis">θ</em> be the angle between OP and <em class="alert"><em class="emphasis">x</em>’</em>-axis. (See <a href="sec-the-general-second-degree-equation.html#rotation-of-coordinates2" class="xref" data-knowl="./knowl/xref/rotation-of-coordinates2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.6.2">Figure 4.6.2</a>)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="rotation-of-coordinates2"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external//rotation-of-coordinates2.png" class="contained" alt="(for accessibility)"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 4.6.2"><a href="#rotation-of-coordinates2" title="Copy heading and permalink for Figure 4.6.2" aria-label="Copy heading and permalink for Figure 4.6.2">🔗</a></div></figcaption></figure><div class="para" id="subsec-rotation-of-coordinate-axes-7">So, letting <em class="alert">|</em>OP<em class="alert">|</em> = <em class="emphasis">r</em> observe that<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-8">
+<span class="process-math">\(x'=rcos\left ( \theta  \right )\text{,}\)</span> <span class="process-math">\(y'=rsin\left ( \theta  \right )\)</span> .....(1)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-9">and<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-10">
+<span class="process-math">\(x'=rcos\left ( \theta +\phi   \right )\text{,}\)</span> <span class="process-math">\(y'=rsin\left ( \theta +\phi   \right )\)</span> .....(2)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-11">Then, using the trigonometric identities<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-12">
+<span class="process-math">\(cos\left ( \theta +\phi   \right )=cos\theta cos\phi -sin\theta sin\phi \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-13">
+<span class="process-math">\(sin\left ( \theta +\phi   \right )=sin\theta cos\phi -cos\theta sin\phi \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-14">and (1), the equations in (2) become<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-15">
+<span class="process-math">\(\begin{align}
+x &amp; = x'cos\theta -y'sin\theta  \\ 
+y &amp; = x'sin\theta -y'cos\theta    .........(3)
+\end{align}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-16">Moreover, these equations can be solved for <em class="emphasis">x</em>′ and <em class="emphasis">y</em>′ in terms of <em class="emphasis">x</em> and <em class="emphasis">y</em> to obtain<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-17">
+<span class="process-math">\(\begin{align}
+x' &amp; = xcos\theta +ysin\theta  \\  
+y' &amp; = ysin\theta +ycos\theta    ......(4)
+\end{align}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-18">The Equations (3) and (4) are called <span class="process-math">\(\textbf{rotation formulas}\text{.}\)</span> It follows that if the angle of rotation <em class="emphasis">θ</em> is given, then Equation (3) can be used to determine the <em class="emphasis">x</em> and <em class="emphasis">y</em> coordinates of a point P if we know its <em class="emphasis">x</em>′ and <em class="emphasis">y</em>′ coordinates. Similarly, Equation (4) can be used to determine the <em class="emphasis">x</em>′ and <em class="emphasis">y</em>′ coordinates of P if we know its <em class="emphasis">x</em> and <em class="emphasis">y</em> coordinates.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsec-rotation-of-coordinate-axes-19"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-rotation-of-coordinate-axes-19-1-1">Suppose the <em class="alert"><em class="emphasis">x</em></em> and <em class="alert"><em class="emphasis">y</em></em> coordinate axes are rotated by π/4 about the origin.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="subsec-rotation-of-coordinate-axes-19-1-2">
+<ol class="lower-alpha ol-marker-17" id="subsec-rotation-of-coordinate-axes-19-1-2-1">
+<li id="subsec-rotation-of-coordinate-axes-19-1-2-1-1">
+<div class="para" id="subsec-rotation-of-coordinate-axes-19-1-2-1-1-1">Find the coordinates of P(1, 2) relative to the new <em class="emphasis"><em class="alert">x</em></em>’ and <em class="emphasis"><em class="alert">y</em></em>’ axes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#subsec-rotation-of-coordinate-axes-19-1-2-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="subsec-rotation-of-coordinate-axes-19-1-2-1-2">
+<div class="para" id="subsec-rotation-of-coordinate-axes-19-1-2-1-2-1">Find the equation of the curve <em class="emphasis">xy</em> = 1 relative to the new <em class="emphasis">x</em>’<em class="emphasis">y</em>’-coordinate system and sketch its graph<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#subsec-rotation-of-coordinate-axes-19-1-2-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-rotation-of-coordinate-axes-19-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-rotation-of-coordinate-axes-19-2-1">The given information about P and the curve are relative to the   <em class="emphasis">xy</em>-coordinate system and we need to express them in terms of <em class="emphasis">x</em>’ and <em class="emphasis">y</em>’ coordinates relative to the new <em class="emphasis">x</em>′<em class="emphasis">y</em>′-coordinate system obtained under the rotation of the original axes by <em class="emphasis">θ</em> = π/4 rad about the origin. Thus, we use <span class="process-math">\(cos\frac{\pi}{4}=sin\frac{\pi}{4}= \frac{\sqrt{2}}{2}\)</span> in the relevant rotation formula to obtain the following.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-rotation-of-coordinate-axes-19-2-2">
+<ol class="lower-alpha ol-marker-17" id="subsec-rotation-of-coordinate-axes-19-2-2-1">
+<li id="subsec-rotation-of-coordinate-axes-19-2-2-1-1">
+<div class="para" id="subsec-rotation-of-coordinate-axes-19-2-2-1-1-1">Since P(1,2) has the coordinates <em class="emphasis">x</em>=1 and <em class="emphasis">y</em>=2, its <em class="emphasis">x</em>’ and <em class="emphasis">y</em>’ coordinates are, using formula (4)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-rotation-of-coordinate-axes-19-2-2-1-1-2">
+<div class="displaymath process-math">
+\begin{equation*}
+x'=\frac{\sqrt{2}}{2}\left ( 1 \right )+\frac{\sqrt{2}}{2}\left ( 2 \right )=\frac{3\sqrt{2}}{2}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-2-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-rotation-of-coordinate-axes-19-2-2-1-1-3">
+<div class="displaymath process-math">
+\begin{equation*}
+y'=\frac{\sqrt{2}}{2}\left ( 1 \right )+\frac{\sqrt{2}}{2}\left ( 2 \right )=\frac{\sqrt{2}}{2}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-2-2-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-19-2-2-1-1-4">Therefore, the coordinates of P relative to the new <em class="emphasis"><em class="alert">x</em></em>’ and <em class="emphasis"><em class="alert">y</em></em>’ axes are <span class="process-math">\((\frac{3\sqrt{2}}{2},\frac{\sqrt{2}}{2})\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-2-2-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#subsec-rotation-of-coordinate-axes-19-2-2-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="subsec-rotation-of-coordinate-axes-19-2-2-1-2">
+<div class="para" id="subsec-rotation-of-coordinate-axes-19-2-2-1-2-1">We need to express <em class="emphasis">x</em> and <em class="emphasis">y</em> in the equation <em class="emphasis">xy</em> =1 in terms of <em class="emphasis">x</em>’ and <em class="emphasis">y</em>’ using the rotation formula (3). So, again since <span class="process-math">\(cos\left ( \frac{\pi}{4} \right )=sin\left ( \frac{\pi}{4} \right )=\frac{\sqrt{2}}{2}\)</span> ,we obtain the formula (3)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-rotation-of-coordinate-axes-19-2-2-1-2-2">
+<div class="displaymath process-math">
+\begin{equation*}
+x=\frac{\sqrt{2}}{2}x'-\frac{\sqrt{2}}{2}y'
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-2-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-rotation-of-coordinate-axes-19-2-2-1-2-3">
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y=\frac{\sqrt{2}}{2}x'+\frac{\sqrt{2}}{2}y'
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-2-2-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-19-2-2-1-2-4">Therefore, xy=1<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-2-2-1-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-rotation-of-coordinate-axes-19-2-2-1-2-5">
+<div class="displaymath process-math">
+\begin{equation*}
+\left(\frac{\sqrt{2}}{2}x'-\frac{\sqrt{2}}{2}y'\right )\left ( \frac{\sqrt{2}}{2}x'+\frac{\sqrt{2}}{2}y' \right )=1
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-2-2-1-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-rotation-of-coordinate-axes-19-2-2-1-2-6">
+<div class="displaymath process-math">
+\begin{equation*}
+\left(\frac{\sqrt{2}}{2}x'\right )^{2}-\left ( \frac{\sqrt{2}}{2}y' \right )^{2}=1
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-2-2-1-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-rotation-of-coordinate-axes-19-2-2-1-2-7">
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{x'^{2}}{2}-\frac{y'^{2}}{2}=1
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-2-2-1-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-19-2-2-1-2-8">Note that this is an equation of a hyperbola with center at origin vertices <span class="process-math">\(\left ( -\sqrt{2} ,0\right )\)</span> and <span class="process-math">\(\left ( \sqrt{2} ,0\right )\)</span> in the <em class="emphasis">x</em>’<em class="emphasis">y</em>’-coordinate system with principal axis on <em class="emphasis"><em class="alert">x</em></em>’-axis. Since the <em class="alert"><em class="emphasis">x</em></em> and <em class="alert">y</em>- axes were rotated though an angle of π/4 to obtain <em class="emphasis"><em class="alert">x</em></em>’ and <em class="emphasis"><em class="alert">y</em></em>’-axes, the hyperbola can be sketched as shown. (You may use Formula (3) to show that the vertices <span class="process-math">\(\left ( -\sqrt{2} ,0\right )\)</span> and <span class="process-math">\(\left ( \sqrt{2} ,0\right )\)</span> are (-1,1) and (1,1), respectively, relative to the <em class="emphasis"><em class="alert">x</em></em> and <em class="emphasis"><em class="alert">y</em></em>-axes).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-2-2-1-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#subsec-rotation-of-coordinate-axes-19-2-2-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-19-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="rotation-of-coordinates3"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//rotation-of-coordinates3.png" class="contained" alt="(for accessibility)"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 4.6.4"><a href="#rotation-of-coordinates3" title="Copy heading and permalink for Figure 4.6.4" aria-label="Copy heading and permalink for Figure 4.6.4">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Solution 4.6.3.1"><a href="#subsec-rotation-of-coordinate-axes-19-2" title="Copy heading and permalink for Solution 4.6.3.1" aria-label="Copy heading and permalink for Solution 4.6.3.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.6.3"><a href="#subsec-rotation-of-coordinate-axes-19" title="Copy heading and permalink for Example 4.6.3" aria-label="Copy heading and permalink for Example 4.6.3">🔗</a></div></article><article class="example example-like" id="subsec-rotation-of-coordinate-axes-20"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-rotation-of-coordinate-axes-20-1-1">Find an equation of the ellipse whose center is the origin, vertices are (−4,−3) and (4, 3), and length of minor axis is 6.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-rotation-of-coordinate-axes-20-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="subsec-rotation-of-coordinate-axes-20-2-1">The position of the ellipse is as shown in <a href="sec-the-general-second-degree-equation.html#rotation-of-coordinates4" class="xref" data-knowl="./knowl/xref/rotation-of-coordinates4.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.6.6">Figure 4.6.6</a> .<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="rotation-of-coordinates4"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//rotation-of-coordinates4.png" class="contained" alt="(for accessibility)"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 4.6.6"><a href="#rotation-of-coordinates4" title="Copy heading and permalink for Figure 4.6.6" aria-label="Copy heading and permalink for Figure 4.6.6">🔗</a></div></figcaption></figure><div class="para" id="subsec-rotation-of-coordinate-axes-20-2-3">To apply the standard equation of ellipse we use the <em class="emphasis">x</em>’<em class="emphasis">y</em>’-coordinate system such that the <em class="alert"><em class="emphasis">x</em>’</em>-axis coincide with the major axis of the ellipse. Therefore, the equation of the ellipse relative to the <em class="emphasis">x</em>’<em class="emphasis">y</em>’ system is<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-rotation-of-coordinate-axes-20-2-4">
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{x'^{2}}{a^{2}}=\frac{y'^{2}}{b'^{2}}=1
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-20-2-5">Moreover, from the given information, <span class="process-math">\(a_2\)</span> = <span class="process-math">\(|OV|_2\)</span> =<span class="process-math">\(3_2\)</span>+ <span class="process-math">\(4_2\)</span> =25; and<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-20-2-6">length of minor axis = 2<em class="emphasis">b</em> = 6 ⇒ <em class="emphasis">b</em>= 3. So, <span class="process-math">\(b_2\)</span>= 9 .<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-20-2-7">Hence, the equation of the ellipse relative to the <em class="emphasis">x</em>’<em class="emphasis">y</em>’ -coordinate system is<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-rotation-of-coordinate-axes-20-2-8">
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{x'^{2}}{25}=\frac{y'^{2}}{9}=1 \, \quad \text{or} \, \quad 9x'^{2}+25y'^{2}=225 ......(1)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-20-2-9">Now we use the rotation formula to express the equation relative to our <em class="emphasis">xy</em>-coordinate system.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-20-2-10">So, let <em class="emphasis">θ</em> the angle between <em class="emphasis"><em class="alert">x</em></em>-axis and <em class="emphasis"><em class="alert">x</em></em>’-axis. Then, observe that<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-2-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-rotation-of-coordinate-axes-20-2-11">
+<div class="displaymath process-math">
+\begin{equation*}
+cos\theta=\frac{4}{5} \, \quad \text{and} \, \quad sin\theta=\frac{3}{5}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-2-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-20-2-12">Thus, using rotation formula (4) we get:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-2-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-rotation-of-coordinate-axes-20-2-13">
+<div class="displaymath process-math">
+\begin{equation*}
+x'=xcos\theta+ysin\theta = \frac{4}{5}x + \frac{3}{5}y
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y'=xsin\theta+ycos\theta = \frac{-3}{5}x + \frac{4}{5}y
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-2-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-20-2-14">Now we substitute these for <em class="emphasis">x</em>′ and <em class="emphasis">y</em>′ in (1) to obtain<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-2-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-rotation-of-coordinate-axes-20-2-15">
+<div class="displaymath process-math">
+\begin{equation*}
+9\left ( \frac{4}{5}x+\frac{3}{5}y \right )^{2}+25\left ( \frac{-3}{5}x+\frac{4}{5}y \right )^{2} =225
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-2-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-20-2-16">And simplifying this we get<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-2-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-rotation-of-coordinate-axes-20-2-17">
+<div class="displaymath process-math">
+\begin{equation*}
+369x^2 - 384xy + 481y^2 - 5625 = 0
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-2-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-rotation-of-coordinate-axes-20-2-18">which is the equation of the ellipse in the <em class="emphasis">xy</em>- coordinate system.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-rotation-of-coordinate-axes-20-2-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.6.5.1"><a href="#subsec-rotation-of-coordinate-axes-20-2" title="Copy heading and permalink for Solution 4.6.5.1" aria-label="Copy heading and permalink for Solution 4.6.5.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.6.5"><a href="#subsec-rotation-of-coordinate-axes-20" title="Copy heading and permalink for Example 4.6.5" aria-label="Copy heading and permalink for Example 4.6.5">🔗</a></div></article><section class="exercises" id="exercises-rotation-of-coordinate-axes"><h4 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h4>
+<article class="exercise exercise-like" id="exercises-rotation-of-coordinate-axes-1"><h5 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="exercises-rotation-of-coordinate-axes-1-1-1">Suppose the <em class="emphasis"><em class="alert">xy</em></em>-coordinate axes are rotated 60° counterclockwise about the origin to obtain the new <em class="emphasis"><em class="alert">x</em></em>’<em class="emphasis"><em class="alert">y</em></em>’-coordinate system.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="exercises-rotation-of-coordinate-axes-1-1-2">
+<ol class="lower-alpha ol-marker-17" id="exercises-rotation-of-coordinate-axes-1-1-2-1">
+<li id="exercises-rotation-of-coordinate-axes-1-1-2-1-1">
+<div class="para logical" id="exercises-rotation-of-coordinate-axes-1-1-2-1-1-1">
+<div class="para">If each of the following are coordinates of points relative to the <em class="emphasis">xy</em>-system, find the coordinates of the points relative to the <em class="alert"><em class="emphasis">x</em>′<em class="emphasis">y</em>′</em>- system.</div>
+<ol class="lower-roman ol-marker-18" id="exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3">
+<li id="exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-1">
+<div class="para" id="exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-1-1">(5, 0)<div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.1.a.i"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-1" title="Copy heading and permalink for Item 4.6.1.1.a.i" aria-label="Copy heading and permalink for Item 4.6.1.1.a.i">🔗</a></div>
+</li>
+<li id="exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-2">
+<div class="para" id="exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-2-1">(1, 4)<div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.1.a.ii"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-2" title="Copy heading and permalink for Item 4.6.1.1.a.ii" aria-label="Copy heading and permalink for Item 4.6.1.1.a.ii">🔗</a></div>
+</li>
+<li id="exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-3">
+<div class="para" id="exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-3-1">(0, 1)<div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.1.a.iii"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-3" title="Copy heading and permalink for Item 4.6.1.1.a.iii" aria-label="Copy heading and permalink for Item 4.6.1.1.a.iii">🔗</a></div>
+</li>
+<li id="exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-4">
+<div class="para" id="exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-4-1">(−1/2, 5/2)<div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.1.a.iv"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-4" title="Copy heading and permalink for Item 4.6.1.1.a.iv" aria-label="Copy heading and permalink for Item 4.6.1.1.a.iv">🔗</a></div>
+</li>
+<li id="exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-5">
+<div class="para" id="exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-5-1">(−2, −1)<div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.1.a.v"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-1-1-3-5" title="Copy heading and permalink for Item 4.6.1.1.a.v" aria-label="Copy heading and permalink for Item 4.6.1.1.a.v">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.1.a"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-1" title="Copy heading and permalink for Item 4.6.1.1.a" aria-label="Copy heading and permalink for Item 4.6.1.1.a">🔗</a></div>
+</li>
+<li id="exercises-rotation-of-coordinate-axes-1-1-2-1-2">
+<div class="para" id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-1">Find the equation of the following lines and conics relative to the new <em class="alert"><em class="emphasis">x</em>′<em class="emphasis">y</em>′</em>- system.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2">
+<ol class="decimal ol-marker-19" id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1">
+<li id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-1">
+<div class="para" id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-1-1">
+<span class="process-math">\(\displaystyle x = 5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.1.b.1"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-1" title="Copy heading and permalink for Item 4.6.1.1.b.1" aria-label="Copy heading and permalink for Item 4.6.1.1.b.1">🔗</a></div>
+</li>
+<li id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-2">
+<div class="para" id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-2-1">
+<span class="process-math">\(\displaystyle x − 2y = 1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.1.b.2"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-2" title="Copy heading and permalink for Item 4.6.1.1.b.2" aria-label="Copy heading and permalink for Item 4.6.1.1.b.2">🔗</a></div>
+</li>
+<li id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-3">
+<div class="para" id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-3-1">
+<span class="process-math">\(\displaystyle x^2 + y^2 = 1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.1.b.3"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-3" title="Copy heading and permalink for Item 4.6.1.1.b.3" aria-label="Copy heading and permalink for Item 4.6.1.1.b.3">🔗</a></div>
+</li>
+<li id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-4">
+<div class="para" id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-4-1">
+<span class="process-math">\(\displaystyle (x − 1)^2 + y^2 = 4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.1.b.4"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-4" title="Copy heading and permalink for Item 4.6.1.1.b.4" aria-label="Copy heading and permalink for Item 4.6.1.1.b.4">🔗</a></div>
+</li>
+<li id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-5">
+<div class="para" id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-5-1">
+<span class="process-math">\(\displaystyle x^2 − 4y = 1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.1.b.5"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-5" title="Copy heading and permalink for Item 4.6.1.1.b.5" aria-label="Copy heading and permalink for Item 4.6.1.1.b.5">🔗</a></div>
+</li>
+<li id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-6">
+<div class="para" id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-6-1">
+<span class="process-math">\(\displaystyle 4x^2 + (y − 2)^2 = 4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.1.b.6"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-6" title="Copy heading and permalink for Item 4.6.1.1.b.6" aria-label="Copy heading and permalink for Item 4.6.1.1.b.6">🔗</a></div>
+</li>
+<li id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-7">
+<div class="para" id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-7-1">
+<span class="process-math">\(\displaystyle x^2 + 4y^2 − 4x = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.1.b.7"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-7" title="Copy heading and permalink for Item 4.6.1.1.b.7" aria-label="Copy heading and permalink for Item 4.6.1.1.b.7">🔗</a></div>
+</li>
+<li id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-8">
+<div class="para" id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-8-1">
+<span class="process-math">\(\displaystyle x^2 − 4y^2 = 1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.1.b.8"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-8" title="Copy heading and permalink for Item 4.6.1.1.b.8" aria-label="Copy heading and permalink for Item 4.6.1.1.b.8">🔗</a></div>
+</li>
+<li id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-9">
+<div class="para" id="exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-9-1">
+<span class="process-math">\(\displaystyle −x^2 + y^2 − 2y = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.1.b.9"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2-1-9" title="Copy heading and permalink for Item 4.6.1.1.b.9" aria-label="Copy heading and permalink for Item 4.6.1.1.b.9">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.1.b"><a href="#exercises-rotation-of-coordinate-axes-1-1-2-1-2" title="Copy heading and permalink for Item 4.6.1.1.b" aria-label="Copy heading and permalink for Item 4.6.1.1.b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 4.6.1.1"><a href="#exercises-rotation-of-coordinate-axes-1" title="Copy heading and permalink for Exercise 4.6.1.1" aria-label="Copy heading and permalink for Exercise 4.6.1.1">🔗</a></div></article><article class="exercise exercise-like" id="exercises-rotation-of-coordinate-axes-2"><h5 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="exercises-rotation-of-coordinate-axes-2-1-1">Suppose the <span class="process-math">\(xy\)</span>-coordinate axes are rotated 30° counterclockwise about the origin to obtain the new <span class="process-math">\(x'y'\)</span>-coordinate system. If the following points are with respect to the new <span class="process-math">\(x'y'\)</span>-system, what is the coordinates of each point with respect to the old <span class="process-math">\(xy\)</span>-system?<div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="exercises-rotation-of-coordinate-axes-2-1-2">
+<ol class="lower-alpha ol-marker-17" id="exercises-rotation-of-coordinate-axes-2-1-2-1">
+<li id="exercises-rotation-of-coordinate-axes-2-1-2-1-1">
+<div class="para" id="exercises-rotation-of-coordinate-axes-2-1-2-1-1-1">(0, 2)<div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-2-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.2.a"><a href="#exercises-rotation-of-coordinate-axes-2-1-2-1-1" title="Copy heading and permalink for Item 4.6.1.2.a" aria-label="Copy heading and permalink for Item 4.6.1.2.a">🔗</a></div>
+</li>
+<li id="exercises-rotation-of-coordinate-axes-2-1-2-1-2">
+<div class="para" id="exercises-rotation-of-coordinate-axes-2-1-2-1-2-1">(−2, 4)<div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-2-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.2.b"><a href="#exercises-rotation-of-coordinate-axes-2-1-2-1-2" title="Copy heading and permalink for Item 4.6.1.2.b" aria-label="Copy heading and permalink for Item 4.6.1.2.b">🔗</a></div>
+</li>
+<li id="exercises-rotation-of-coordinate-axes-2-1-2-1-3">
+<div class="para" id="exercises-rotation-of-coordinate-axes-2-1-2-1-3-1">(1, −3)<div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-2-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.2.c"><a href="#exercises-rotation-of-coordinate-axes-2-1-2-1-3" title="Copy heading and permalink for Item 4.6.1.2.c" aria-label="Copy heading and permalink for Item 4.6.1.2.c">🔗</a></div>
+</li>
+<li id="exercises-rotation-of-coordinate-axes-2-1-2-1-4">
+<div class="para" id="exercises-rotation-of-coordinate-axes-2-1-2-1-4-1">
+<span class="process-math">\(\displaystyle \left ( \sqrt{3} ,-\sqrt{3}\right )\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-2-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.1.2.d"><a href="#exercises-rotation-of-coordinate-axes-2-1-2-1-4" title="Copy heading and permalink for Item 4.6.1.2.d" aria-label="Copy heading and permalink for Item 4.6.1.2.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-rotation-of-coordinate-axes-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 4.6.1.2"><a href="#exercises-rotation-of-coordinate-axes-2" title="Copy heading and permalink for Exercise 4.6.1.2" aria-label="Copy heading and permalink for Exercise 4.6.1.2">🔗</a></div></article><div class="autopermalink" data-description="Exercises 4.6.1"><a href="#exercises-rotation-of-coordinate-axes" title="Copy heading and permalink for Exercises 4.6.1" aria-label="Copy heading and permalink for Exercises 4.6.1">🔗</a></div></section><details id="subsec-rotation-of-coordinate-axes-22" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FRotation-of-coordinate-axes%2FCoordinate-Rotation-Converting-Points-between-Two-Coordinate-Systems.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-the-general-second-degree-equation%2Fsubsec-rotation-of-coordinate-axes.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-rotation-of-coordinate-axes-22-3"><summary class="ptx-footnote__number" title="Footnote 4.6.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="subsec-rotation-of-coordinate-axes-22-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FRotation-of-coordinate-axes%2FCoordinate-Rotation-Converting-Points-between-Two-Coordinate-Systems.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-the-general-second-degree-equation%2Fsubsec-rotation-of-coordinate-axes.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.6.7"><a href="#subsec-rotation-of-coordinate-axes-22" title="Copy heading and permalink for Checkpoint 4.6.7" aria-label="Copy heading and permalink for Checkpoint 4.6.7">🔗</a></div></article></details><details id="subsec-rotation-of-coordinate-axes-23" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FRotation-of-coordinate-axes%2FCoordinate-Transformation-Rotating-Axes-and-Finding-New-Coordinates.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-the-general-second-degree-equation%2Fsubsec-rotation-of-coordinate-axes.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-rotation-of-coordinate-axes-23-3"><summary class="ptx-footnote__number" title="Footnote 4.6.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="subsec-rotation-of-coordinate-axes-23-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FRotation-of-coordinate-axes%2FCoordinate-Transformation-Rotating-Axes-and-Finding-New-Coordinates.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-the-general-second-degree-equation%2Fsubsec-rotation-of-coordinate-axes.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.6.8"><a href="#subsec-rotation-of-coordinate-axes-23" title="Copy heading and permalink for Checkpoint 4.6.8" aria-label="Copy heading and permalink for Checkpoint 4.6.8">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 4.6.1: Rotation of Coordinate Axes"><a href="#subsec-rotation-of-coordinate-axes" title="Copy heading and permalink for Subsection 4.6.1: Rotation of Coordinate Axes" aria-label="Copy heading and permalink for Subsection 4.6.1: Rotation of Coordinate Axes">🔗</a></div></section><section class="subsection" id="subsec-analysis-of-the-general-second"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Analysis of the General Second Degree Equations</span>
+</h3>
+<div class="para" id="subsec-analysis-of-the-general-second-2">In the previous sections, we have seen that the equation of the form<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-3">
+<span class="process-math">\(A x^2 + C y^2 + D x + E y + F = 0\text{..........}\)</span> (1)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-4">represents a conic section (a parabola, ellipse, or hyperbola) whose axis of symmetry is parallel to one of the coordinate axes, except in degenerate cases.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-5">In Subsection 4.6.1, we also saw some examples of conic sections whose equations involve the <span class="process-math">\(xy\)</span> term when their lines of symmetry are not parallel to either of the axes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-6">Now we would like to analyze the graph of any quadratic (second degree) equation in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> of the form:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-7">
+<span class="process-math">\(A x^2 + B x y + C y^2 + D x + E y + F = 0\text{...........}\)</span> (2)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-8">where <span class="process-math">\(B ≠ 0\text{.}\)</span> In order to analyze the graph of Equation (2), we usually convert it into an equation of type (1) using a suitable rotated coordinate system. To this end, we prove the following theorem.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm-4analysis"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="thm-4analysis-1-1">Consider the general second degree equation of the form (2), i..e.,<div class="autopermalink" data-description="Paragraph"><a href="#thm-4analysis-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="thm-4analysis-1-2">
+<span class="process-math">\(A x^2 + B x y + C y^2 + D x + E y + F = 0\text{,}\)</span> where <span class="process-math">\(B ≠ 0\)</span> ........... (2)<div class="autopermalink" data-description="Paragraph"><a href="#thm-4analysis-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="thm-4analysis-1-3">there is a rotation angle <span class="process-math">\(θ ∈ (0, π/2)\)</span>through which the <span class="process-math">\(xy\)</span>-coordinate system  in which Equation (2) reduces to the form<div class="autopermalink" data-description="Paragraph"><a href="#thm-4analysis-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="thm-4analysis-1-4">
+<span class="process-math">\(A' x'^2 + C' y'^2 + D' x' + E' y' + F' = 0\text{...........}\)</span> (3)<div class="autopermalink" data-description="Paragraph"><a href="#thm-4analysis-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 4.6.9"><a href="#thm-4analysis" title="Copy heading and permalink for Theorem 4.6.9" aria-label="Copy heading and permalink for Theorem 4.6.9">🔗</a></div></article><div class="para" id="subsec-analysis-of-the-general-second-10">
+<span class="process-math">\(\textbf{Proof:}\)</span> Let the <span class="process-math">\(xy\)</span>-coordinate system be rotated by an angle <span class="process-math">\(θ\)</span> about the origin to form a new <span class="process-math">\(x'y'\)</span>-coordinate system. Then, from the rotation formula (3),we have<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-analysis-of-the-general-second-11">
+<div class="displaymath process-math">
+\begin{equation*}
+x=x'cos\theta -y'sin\theta \,\, \text{and} \, \, y=x'sin\theta +y'cos\theta 
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-12">we substitute for <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in Equation (2) so that<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-analysis-of-the-general-second-13">
+<div class="displaymath process-math">
+\begin{equation*}
+A\left ( x'cos\theta -y'sin\theta\right)^{2} +B\left ( x'cos\theta -y'cos\theta  \right )\left ( x'sin\theta +y'cos\theta  \right ) 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
++C\left ( x'sin\theta +ycos'\theta  \right )^{2}+ D\left ( x'cos\theta -y'sin\theta  \right )+E\left ( x'sin\theta +y'cos\theta  \right )+F=0 
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-14">After some calculations, combining like terms (those involving <span class="process-math">\(x'_2,x'y',y'_2\)</span> and so on ), we get equation of the form<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-15">
+<span class="process-math">\(A' x'^2 + B' x' y' + C' y'^2 + D' x' + E' y' + F' = 0\text{...............}\)</span> (4)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-16">where the new coefficient <span class="process-math">\(B'\)</span> is given by:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-17">
+<span class="process-math">\(B' = 2(C − A) sin(θ) cos(θ) + B (cos^2(θ) − sin^2(θ))\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-18">Here the exact expressions for A’, C’, D’, E’ are omitted as they are irrelevant. What we need is to get the angle of rotation <span class="process-math">\(\theta\)</span> for which Equation (4) has <span class="process-math">\(\textbf{no}\)</span> x’y’ term, that is B’=0.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-analysis-of-the-general-second-19">
+<div class="para">This means that,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2(C − A) sin(θ) cos(θ) + B (cos^2(θ) − sin^2(θ))=0
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-20">Since <span class="process-math">\(2 sin(θ) cos(θ) = sin2(θ)\)</span> and   <span class="process-math">\(cos^2(θ) + B  − sin^2(θ)=cos2θ\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-21">this equation is equivalent to<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-analysis-of-the-general-second-22">
+<div class="displaymath process-math">
+\begin{equation*}
+(C − A) sin(2θ) + B cos(2θ) = 0
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-analysis-of-the-general-second-23">
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or} \, \quad \frac{\text{cos}2\theta}{\text{sin}2\theta}=\frac{A-C}{B}, \text{Since} B \neq  0
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-23" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-analysis-of-the-general-second-24">
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or} \, \quad \text{cot}2\theta=\frac{A-C}{B} .......(5)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-25">That is, if we choose the angle of rotation <span class="process-math">\(\theta\)</span> satisfying (5), then B’ = 0 in Equation (4) so that the resulting equation in x’y’-coordinate system is in the form of Equation (3). Moreover, we can always find an angle that satisfies <span class="process-math">\(\text{cot}2\theta=\frac{A-C}{B}\)</span> for any A C, <span class="process-math">\(\text{B}  \, \epsilon \, \Re , \text{B}\neq 0\)</span> since the range of the cotangent function is the entire set of real numbers. Note also that since <span class="process-math">\(2 \,\,\theta \,  \epsilon (0,\pi )\text{,}\)</span> the angel of rotation  can always be chosen so that <span class="process-math">\(0&lt; \theta &lt; \frac{\pi}{2}\text{.}\)</span> So, the Theorem is proved.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="remark remark-like" id="subsec-analysis-of-the-general-second-26"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-analysis-of-the-general-second-26-1">If <span class="process-math">\(A = C\text{,}\)</span> then <span class="process-math">\(\frac{\cos 2\theta}{\sin 2\theta} = \frac{A - C}{B} = 0 \Rightarrow 2\theta = \frac{\pi}{2} \Rightarrow \theta = \frac{\pi}{4}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-26-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 4.6.10"><a href="#subsec-analysis-of-the-general-second-26" title="Copy heading and permalink for Remark 4.6.10" aria-label="Copy heading and permalink for Remark 4.6.10">🔗</a></div></article><div class="para" id="subsec-analysis-of-the-general-second-27">Therefore, we can rewrite the result of the above theorem as follows:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-28">The rotation of the <span class="process-math">\(xy\)</span>-coordinate system by angle <span class="process-math">\(\theta\)</span> creates an <span class="process-math">\(x'y'\)</span>-coordinate system in which a general second degree equation <span class="process-math">\(Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0\text{,}\)</span> with <span class="process-math">\(B \ne 0\text{,}\)</span> is converted to an equation <span class="process-math">\(A'x'^2 + C'y'^2 + D'x' + E'y' + F' = 0\)</span> (with no <span class="process-math">\(x'y'\)</span> term), if we choose <span class="process-math">\(\theta \in (0, \frac{\pi}{2})\)</span> such that:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-analysis-of-the-general-second-29">
+<div class="displaymath process-math">
+\begin{equation*}
+\tan 2\theta = \frac{B}{A - C}, \text{ if } A \ne C
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-analysis-of-the-general-second-30">
+<div class="displaymath process-math">
+\begin{equation*}
+\theta = \frac{\pi}{4}, \text{ if } \text{A = C}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsec-analysis-of-the-general-second-31"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-analysis-of-the-general-second-31-1-1">Use rotation of axes to eliminate the <span class="process-math">\(xy\)</span> term in each of the following equations,\ describe the locus (type of conic section) and sketch the graph of the equation<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="subsec-analysis-of-the-general-second-31-1-2">
+<ol class="lower-alpha ol-marker-17" id="subsec-analysis-of-the-general-second-31-1-2-1">
+<li id="subsec-analysis-of-the-general-second-31-1-2-1-1">
+<div class="para" id="subsec-analysis-of-the-general-second-31-1-2-1-1-1">
+<span class="process-math">\(\displaystyle 8x^2 + 28xy + 8y^2 - 32x - 32y + 30 = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#subsec-analysis-of-the-general-second-31-1-2-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="subsec-analysis-of-the-general-second-31-1-2-1-2">
+<div class="para" id="subsec-analysis-of-the-general-second-31-1-2-1-2-1">
+<span class="process-math">\(\displaystyle 73x^2 - 72xy + 52y^2 + 30x + 40y - 75 = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#subsec-analysis-of-the-general-second-31-1-2-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-analysis-of-the-general-second-31-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-analysis-of-the-general-second-31-2-1">
+<ol class="lower-alpha ol-marker-17" id="subsec-analysis-of-the-general-second-31-2-1-1">
+<li id="subsec-analysis-of-the-general-second-31-2-1-1-1">
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-1-1">Given:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-1-2">
+<span class="process-math">\(8x^2 + 28xy + 8y^2 - 32x - 32y + 30 = 0 \Rightarrow A = C = 8\text{.}\)</span> So, from the above Remark, the rotation angle is <span class="process-math">\(\theta = \frac{\pi}{4}\)</span> <span class="process-math">\(\Rightarrow \cos\theta = \sin\theta = \frac{1}{\sqrt{2}}\text{,}\)</span> <span class="process-math">\(\Rightarrow x = \frac{x' - y'}{\sqrt{2}}\)</span> and <span class="process-math">\(y = \frac{x' + y'}{\sqrt{2}}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-1-3">Now we substitute these for <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in the given equation:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-1-4">
+<span class="process-math">\(8\left( \frac{x' - y'}{\sqrt{2}} \right)^2 + 28\left( \frac{x' - y'}{\sqrt{2}} \right)\left( \frac{x' + y'}{\sqrt{2}} \right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-1-5">
+<span class="process-math">\(+ 8\left( \frac{x' + y'}{\sqrt{2}} \right)^2 - 32\left( \frac{x' - y'}{\sqrt{2}} \right) - 32\left( \frac{x' + y'}{\sqrt{2}} \right) + 30 = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-1-6">Expanding the squared expressions, combining like terms and simplifying, we obtain<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-1-7">
+<span class="process-math">\(8x'^2 + 16y' - 32 = 0\)</span> or, <span class="process-math">\(8(x'^2 + 2y' - 4) = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-1-8">This is an equation of a parabola. Its vertex is <span class="process-math">\((h', k') = (0, 2)\)</span> relative to the <span class="process-math">\(x'y'\)</span>-system, principal axis is on <span class="process-math">\(y'\)</span>-axis and opens towards negative <span class="process-math">\(y'\)</span> direction. (You can show that its vertex is <span class="process-math">\((h, k) = \left( \frac{2}{\sqrt{2}}, -\frac{2}{\sqrt{2}} \right)\)</span> relative to the <span class="process-math">\(xy\)</span>-system.) The graph of the equation is sketched in <a href="sec-the-general-second-degree-equation.html#analytic-geometry1" class="xref" data-knowl="./knowl/xref/analytic-geometry1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.6.12">Figure 4.6.12</a><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="analytic-geometry1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//rotation-of-coordinates3.png" class="contained" alt="(for accessibility)"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 4.6.12"><a href="#analytic-geometry1" title="Copy heading and permalink for Figure 4.6.12" aria-label="Copy heading and permalink for Figure 4.6.12">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item a"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="subsec-analysis-of-the-general-second-31-2-1-1-2">
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-2-1">Given: <span class="process-math">\(73x^2 - 72xy + 52y^2 + 30x + 40y - 75 = 0 \Rightarrow A = 73\text{,}\)</span> <span class="process-math">\(B = -72\)</span> and <span class="process-math">\(C = 52\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-2-2">Hence,<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-2-3">
+<span class="process-math">\(\tan 2\theta = \frac{A - C}{B} = \frac{21}{-72} = -\frac{7}{24}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-2-4">The terminal side of <span class="process-math">\(2\theta\)</span> is through <span class="process-math">\((-7, 24)\)</span> since <span class="process-math">\(0 &lt; 2\theta &lt; \pi\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-2-5">
+<span class="process-math">\(\cos 2\theta = -\frac{7}{25}\text{.}\)</span> Now as <span class="process-math">\(0 &lt; \theta &lt; \frac{\pi}{2}\text{,}\)</span> both <span class="process-math">\(\cos\theta\)</span> and <span class="process-math">\(\sin\theta\)</span> are positive. Hence,<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-2-6">
+<span class="process-math">\(\cos\theta = \sqrt{\frac{1 + \cos 2\theta}{2}} = \sqrt{\frac{1 - 7/25}{2}} = \frac{3}{5}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-2-7">
+<span class="process-math">\(\sin\theta = \sqrt{\frac{1 - \cos 2\theta}{2}} = \sqrt{\frac{1 + 7/25}{2}} = \frac{4}{5}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-2-8">This implies the <span class="process-math">\(x'\)</span>-axis is through the coordinate point <span class="process-math">\((3, 4)\text{,}\)</span> that is the line <span class="process-math">\(y = \frac{4}{3}x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-2-9">Therefore, using the rotation formula (3), we get<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-2-10">
+<span class="process-math">\(x = \frac{3}{5}x' - \frac{4}{5}y'\)</span> and <span class="process-math">\(y = \frac{4}{5}x' + \frac{3}{5}y'\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-2-11">Now we substitute these for <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in the given equation to obtain<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-2-12">
+<span class="process-math">\(73\left( \frac{3x' - 4y'}{5} \right)^2 - 72\left( \frac{3x' - 4y'}{5} \right)\left( \frac{4x' + 3y'}{5} \right) + 52\left( \frac{4x' + 3y'}{5} \right)^2 \)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-2-13">
+<span class="process-math">\(+ 30\left( \frac{3x' - 4y'}{5} \right) + 40\left( \frac{4x' + 3y'}{5} \right) - 75 = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-2-14">Expanding the squared expressions, combining like terms and simplifying, we obtain<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-2-15">
+<span class="process-math">\(25x'^2 + 100x' - 50y' + 75 = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-2-16">Completing the square and dividing by 100 to get <span class="process-math">\(\frac{(x' + 2)^2}{4} + \frac{y'}{1} = 1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-analysis-of-the-general-second-31-2-1-1-2-17">which is an ellipse with center at <span class="process-math">\((h',k') = (-1, 0)\)</span> relative to the <span class="process-math">\(x'y'\)</span>-system, major axis on <span class="process-math">\(x'\)</span>- axis (which is the line <span class="process-math">\(y = \frac{4}{3}x\)</span> ), length of major axis = 4 and length of minor axis = 2. (You can show that the center is <span class="process-math">\((h, k) =\left( -\frac{3}{5}, -\frac{4}{5} \right)\)</span> relative to the <span class="process-math">\(xy\)</span>-system). The graph of the equation is sketched in <a href="sec-the-general-second-degree-equation.html#analytic-geometry2" class="xref" data-knowl="./knowl/xref/analytic-geometry2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.6.13">Figure 4.6.13</a><div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="analytic-geometry2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external//rotation-of-coordinates4.png" class="contained" alt="(for accessibility)"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 4.6.13"><a href="#analytic-geometry2" title="Copy heading and permalink for Figure 4.6.13" aria-label="Copy heading and permalink for Figure 4.6.13">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item b"><a href="#subsec-analysis-of-the-general-second-31-2-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-analysis-of-the-general-second-31-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.6.11.1"><a href="#subsec-analysis-of-the-general-second-31-2" title="Copy heading and permalink for Solution 4.6.11.1" aria-label="Copy heading and permalink for Solution 4.6.11.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.6.11"><a href="#subsec-analysis-of-the-general-second-31" title="Copy heading and permalink for Example 4.6.11" aria-label="Copy heading and permalink for Example 4.6.11">🔗</a></div></article><section class="exercises" id="exercises-analysis-of-the-general"><h4 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h4>
+<article class="exercise exercise-like" id="exercises-analysis-of-the-general-1"><h5 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para logical" id="exercises-analysis-of-the-general-1-1-1">
+<div class="para">Find an equation of the conic section having the given properties and sketch its graph.</div>
+<ol class="lower-alpha ol-marker-17" id="exercises-analysis-of-the-general-1-1-1-1">
+<li id="exercises-analysis-of-the-general-1-1-1-1-1">
+<div class="para" id="exercises-analysis-of-the-general-1-1-1-1-1-1">Ellipsi with center at origin, foci at <span class="process-math">\((-2,2)\)</span> and <span class="process-math">\((2, 2)\text{,}\)</span> and length of major axis <span class="process-math">\(2\sqrt{8}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-analysis-of-the-general-1-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.2.1.a"><a href="#exercises-analysis-of-the-general-1-1-1-1-1" title="Copy heading and permalink for Item 4.6.2.1.a" aria-label="Copy heading and permalink for Item 4.6.2.1.a">🔗</a></div>
+</li>
+<li id="exercises-analysis-of-the-general-1-1-1-1-2">
+<div class="para" id="exercises-analysis-of-the-general-1-1-1-1-2-1">Parabola whose vertex is at <span class="process-math">\((3, 4)\)</span> and focus <span class="process-math">\((-5,-2)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-analysis-of-the-general-1-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.2.1.b"><a href="#exercises-analysis-of-the-general-1-1-1-1-2" title="Copy heading and permalink for Item 4.6.2.1.b" aria-label="Copy heading and permalink for Item 4.6.2.1.b">🔗</a></div>
+</li>
+<li id="exercises-analysis-of-the-general-1-1-1-1-3">
+<div class="para" id="exercises-analysis-of-the-general-1-1-1-1-3-1">Hyperbola whose foci are <span class="process-math">\((-2, 2)\)</span> and <span class="process-math">\((2, -2)\text{,}\)</span> and length of transverse axis <span class="process-math">\(2\sqrt{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-analysis-of-the-general-1-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.2.1.c"><a href="#exercises-analysis-of-the-general-1-1-1-1-3" title="Copy heading and permalink for Item 4.6.2.1.c" aria-label="Copy heading and permalink for Item 4.6.2.1.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-analysis-of-the-general-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 4.6.2.1"><a href="#exercises-analysis-of-the-general-1" title="Copy heading and permalink for Exercise 4.6.2.1" aria-label="Copy heading and permalink for Exercise 4.6.2.1">🔗</a></div></article><article class="exercise exercise-like" id="exercises-analysis-of-the-general-2"><h5 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="exercises-analysis-of-the-general-2-1-1">Use rotation of axes to eliminate the <span class="process-math">\(xy\)</span> term in each of the following equations, describe the locus (type of conic section) and sketch the graph of the equation.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-analysis-of-the-general-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="exercises-analysis-of-the-general-2-1-2">
+<ol class="lower-alpha ol-marker-17" id="exercises-analysis-of-the-general-2-1-2-1">
+<li id="exercises-analysis-of-the-general-2-1-2-1-1">
+<div class="para" id="exercises-analysis-of-the-general-2-1-2-1-1-1">
+<span class="process-math">\(\displaystyle 17x^2 - 12xy + 8y^2 - 36 = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-analysis-of-the-general-2-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.2.2.a"><a href="#exercises-analysis-of-the-general-2-1-2-1-1" title="Copy heading and permalink for Item 4.6.2.2.a" aria-label="Copy heading and permalink for Item 4.6.2.2.a">🔗</a></div>
+</li>
+<li id="exercises-analysis-of-the-general-2-1-2-1-2">
+<div class="para" id="exercises-analysis-of-the-general-2-1-2-1-2-1">
+<span class="process-math">\(\displaystyle 8x^2 + 24xy + y^2 - 1 = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-analysis-of-the-general-2-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.2.2.b"><a href="#exercises-analysis-of-the-general-2-1-2-1-2" title="Copy heading and permalink for Item 4.6.2.2.b" aria-label="Copy heading and permalink for Item 4.6.2.2.b">🔗</a></div>
+</li>
+<li id="exercises-analysis-of-the-general-2-1-2-1-3">
+<div class="para" id="exercises-analysis-of-the-general-2-1-2-1-3-1">
+<span class="process-math">\(\displaystyle x^2 - 2xy + y^2 - 5y = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-analysis-of-the-general-2-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.2.2.c"><a href="#exercises-analysis-of-the-general-2-1-2-1-3" title="Copy heading and permalink for Item 4.6.2.2.c" aria-label="Copy heading and permalink for Item 4.6.2.2.c">🔗</a></div>
+</li>
+<li id="exercises-analysis-of-the-general-2-1-2-1-4">
+<div class="para" id="exercises-analysis-of-the-general-2-1-2-1-4-1">
+<span class="process-math">\(\displaystyle 2x^2 + xy = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-analysis-of-the-general-2-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.2.2.d"><a href="#exercises-analysis-of-the-general-2-1-2-1-4" title="Copy heading and permalink for Item 4.6.2.2.d" aria-label="Copy heading and permalink for Item 4.6.2.2.d">🔗</a></div>
+</li>
+<li id="exercises-analysis-of-the-general-2-1-2-1-5">
+<div class="para" id="exercises-analysis-of-the-general-2-1-2-1-5-1">
+<span class="process-math">\(\displaystyle 5x^2 + 6xy + 5y^2 - 4x + 4y - 4 = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-analysis-of-the-general-2-1-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.2.2.e"><a href="#exercises-analysis-of-the-general-2-1-2-1-5" title="Copy heading and permalink for Item 4.6.2.2.e" aria-label="Copy heading and permalink for Item 4.6.2.2.e">🔗</a></div>
+</li>
+<li id="exercises-analysis-of-the-general-2-1-2-1-6">
+<div class="para" id="exercises-analysis-of-the-general-2-1-2-1-6-1">
+<span class="process-math">\(\displaystyle x^2 + 4xy + 4y^2 + 2x - 2y + 1 = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-analysis-of-the-general-2-1-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.6.2.2.f"><a href="#exercises-analysis-of-the-general-2-1-2-1-6" title="Copy heading and permalink for Item 4.6.2.2.f" aria-label="Copy heading and permalink for Item 4.6.2.2.f">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-analysis-of-the-general-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 4.6.2.2"><a href="#exercises-analysis-of-the-general-2" title="Copy heading and permalink for Exercise 4.6.2.2" aria-label="Copy heading and permalink for Exercise 4.6.2.2">🔗</a></div></article><article class="exercise exercise-like" id="exercises-analysis-of-the-general-3"><h5 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="exercises-analysis-of-the-general-3-1-1">Show that if <span class="process-math">\(B &gt; 0\text{,}\)</span> then the graph of<div class="autopermalink" data-description="Paragraph"><a href="#exercises-analysis-of-the-general-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="exercises-analysis-of-the-general-3-1-2">
+<div class="displaymath process-math">
+\begin{equation*}
+x^2 + 2Bxy = F
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercises-analysis-of-the-general-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exercises-analysis-of-the-general-3-1-3">is a hyperbola if <span class="process-math">\(F \ne 0\text{,}\)</span> and two intersecting lines if <span class="process-math">\(F = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-analysis-of-the-general-3-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 4.6.2.3"><a href="#exercises-analysis-of-the-general-3" title="Copy heading and permalink for Exercise 4.6.2.3" aria-label="Copy heading and permalink for Exercise 4.6.2.3">🔗</a></div></article><div class="autopermalink" data-description="Exercises 4.6.2"><a href="#exercises-analysis-of-the-general" title="Copy heading and permalink for Exercises 4.6.2" aria-label="Copy heading and permalink for Exercises 4.6.2">🔗</a></div></section><details id="subsec-analysis-of-the-general-second-33" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FAnalysis-of-the-general-second-degree-equation%2FFinding-Equations-and-Graphs-of-Conic-Sections-with-Specific-Properties.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-the-general-second-degree-equation%2Fsubsec-analysis-of-the-general-second.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-analysis-of-the-general-second-33-3"><summary class="ptx-footnote__number" title="Footnote 4.6.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="subsec-analysis-of-the-general-second-33-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FAnalysis-of-the-general-second-degree-equation%2FFinding-Equations-and-Graphs-of-Conic-Sections-with-Specific-Properties.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-the-general-second-degree-equation%2Fsubsec-analysis-of-the-general-second.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.6.14"><a href="#subsec-analysis-of-the-general-second-33" title="Copy heading and permalink for Checkpoint 4.6.14" aria-label="Copy heading and permalink for Checkpoint 4.6.14">🔗</a></div></article></details><details id="subsec-analysis-of-the-general-second-34" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FAnalysis-of-the-general-second-degree-equation%2FRotation-of-Axes-Conic-Section-Locus-and-Graph-Sketch.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-the-general-second-degree-equation%2Fsubsec-analysis-of-the-general-second.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-analysis-of-the-general-second-34-3"><summary class="ptx-footnote__number" title="Footnote 4.6.4"><sup> 4 </sup></summary><div class="ptx-footnote__contents" id="subsec-analysis-of-the-general-second-34-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FAnalysis-of-the-general-second-degree-equation%2FRotation-of-Axes-Conic-Section-Locus-and-Graph-Sketch.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-the-general-second-degree-equation%2Fsubsec-analysis-of-the-general-second.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.6.15"><a href="#subsec-analysis-of-the-general-second-34" title="Copy heading and permalink for Checkpoint 4.6.15" aria-label="Copy heading and permalink for Checkpoint 4.6.15">🔗</a></div></article></details><details id="subsec-analysis-of-the-general-second-35" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><a class="external" href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FAnalysis-of-the-general-second-degree-equation%2FGraph-Analysis-Hyperbola-and-Intersecting-Lines-with-B-0.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-the-general-second-degree-equation%2Fsubsec-analysis-of-the-general-second.ptx" target="_blank">Add review</a><details class="ptx-footnote" aria-live="polite" id="subsec-analysis-of-the-general-second-35-3"><summary class="ptx-footnote__number" title="Footnote 4.6.5"><sup> 5 </sup></summary><div class="ptx-footnote__contents" id="subsec-analysis-of-the-general-second-35-3"><code class="code-inline tex2jax_ignore">docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FAnalysis-of-the-general-second-degree-equation%2FGraph-Analysis-Hyperbola-and-Intersecting-Lines-with-B-0.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-the-general-second-degree-equation%2Fsubsec-analysis-of-the-general-second.ptx</code></div></details><div class="autopermalink" data-description="Checkpoint 4.6.16"><a href="#subsec-analysis-of-the-general-second-35" title="Copy heading and permalink for Checkpoint 4.6.16" aria-label="Copy heading and permalink for Checkpoint 4.6.16">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 4.6.2: Analysis of the General Second Degree Equations"><a href="#subsec-analysis-of-the-general-second" title="Copy heading and permalink for Subsection 4.6.2: Analysis of the General Second Degree Equations" aria-label="Copy heading and permalink for Subsection 4.6.2: Analysis of the General Second Degree Equations">🔗</a></div></section><div class="autopermalink" data-description="Section 4.6: The General Second Degree Equation"><a href="#sec-the-general-second-degree-equation" title="Copy heading and permalink for Section 4.6: The General Second Degree Equation" aria-label="Copy heading and permalink for Section 4.6: The General Second Degree Equation">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-hyperbolas.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="basic-maths-for-natural-sciences-8.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN"
+"http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+<svg width="768" height="171"
+	xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+<desc>wmf2svg</desc>
+<line x1="1.418938" y1="81.474953" x2="353.138092" y2="81.474953" 
+	style="stroke-width:2.894666; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:none; stroke:black" />
+<line x1="427.100220" y1="81.474953" x2="766.581055" y2="81.474953" 
+	style="stroke-width:2.894666; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:none; stroke:black" />
+<text x="0" y="0" style="font-family:Symbol; font-style:normal; font-weight:normal; font-size:70.834953; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 571.477112 154.339035)"
+	>p</text>
+<text x="0" y="0" style="font-family:Symbol; font-style:normal; font-weight:normal; font-size:70.834953; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 426.036041 54.542912)"
+	>q</text>
+<text x="0" y="0" style="font-family:Symbol; font-style:normal; font-weight:normal; font-size:70.834953; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 0.354734 54.542912)"
+	>q</text>
+<text x="0" y="0" style="font-family:Times; font-style:italic; font-weight:normal; font-size:70.834953; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 554.449890 54.542912)"
+	>radians</text>
+<text x="0" y="0" style="font-family:Times; font-style:italic; font-weight:normal; font-size:70.834953; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 483.857727 54.542912)"
+	>in</text>
+<text x="0" y="0" style="font-family:Times; font-style:italic; font-weight:normal; font-size:70.834953; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 234.834183 54.542912)"
+	>rees</text>
+<text x="0" y="0" style="font-family:Times; font-style:italic; font-weight:normal; font-size:70.834953; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 58.176445 54.542912)"
+	>in</text>
+<text x="0" y="0" style="font-family:Symbol; font-style:normal; font-weight:normal; font-size:70.834953; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 371.939026 99.183685)"
+	>=</text>
+<text x="0" y="0" style="font-family:Times; font-style:normal; font-weight:normal; font-size:41.320389; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 214.791687 122.979805)"
+	>o</text>
+<text x="0" y="0" style="font-family:Times; font-style:normal; font-weight:normal; font-size:70.834953; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 110.322403 154.707962)"
+	>180</text>
+<text x="0" y="0" style="font-family:Times; font-style:normal; font-weight:normal; font-size:70.834953; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 126.994919 54.542912)"
+	>deg</text>
+</svg>

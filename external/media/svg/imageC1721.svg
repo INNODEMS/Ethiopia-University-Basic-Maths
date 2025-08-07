@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN"
+"http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+<svg width="768" height="374"
+	xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+<desc>wmf2svg</desc>
+<line x1="478.568390" y1="203.594040" x2="589.007263" y2="203.594040" 
+	style="stroke-width:10.809923; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:none; stroke:black" />
+<text x="0" y="0" style="font-family:Symbol; font-style:normal; font-weight:normal; font-size:346.141327; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 394.716675 266.528839)"
+	>(</text>
+<text x="0" y="0" style="font-family:Symbol; font-style:normal; font-weight:normal; font-size:346.141327; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 609.458862 266.528839)"
+	>)</text>
+<text x="0" y="0" style="font-family:Times; font-style:italic; font-weight:normal; font-size:149.972260; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 700.809570 130.616470)"
+	>x</text>
+<text x="0" y="0" style="font-family:Times; font-style:italic; font-weight:normal; font-size:257.095306; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 0.000000 267.867859)"
+	>y</text>
+<text x="0" y="0" style="font-family:Times; font-style:normal; font-weight:normal; font-size:149.972260; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 496.974884 339.506409)"
+	>2</text>
+<text x="0" y="0" style="font-family:Times; font-style:normal; font-weight:normal; font-size:149.972260; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 496.293152 181.499908)"
+	>1</text>
+<text x="0" y="0" style="font-family:Symbol; font-style:normal; font-weight:normal; font-size:257.095306; fill:black" transform="matrix(1.000000 -0.000000 0.000000 1.000000 189.518539 267.867859)"
+	>=</text>
+</svg>
