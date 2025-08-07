@@ -21,17 +21,17 @@
         </li>
         <li>
             <p>
-                VF| is called the <m>\textbf{focal length}</m>.
+              <m>  |\text{VF}|</m> is called the <m>\textbf{focal length}</m>.
             </p>
         </li>
         <li>
             <p>
-                The line through F perpendicular to the directrix is called the <m>\textbf{axis}</m> of the parabola. It is the line of symmetry for the parabola.
+                The line through <m>\text{F}</m> perpendicular to the directrix is called the <m>\textbf{axis}</m> of the parabola. It is the line of symmetry for the parabola.
             </p>
         </li>
         <li>
             <p>
-                The chord <m>BB′ </m>through <m> \text{F} </m> perpendicular to the axis is called <m>\textbf{latus rectum}</m>.
+                The chord <m>BB′ \,</m>through <m> \text{F} </m> perpendicular to the axis is called <m>\textbf{latus rectum}</m>.
             </p>
         </li>
         <li>
@@ -53,102 +53,101 @@
         If <m>\textbf{P}(x,y) </m>is any point on the parabola, then by the definition, the distance of <m>\textbf{P}</m> from the directrix is equal to the distance between <m>\text{P}</m> and the focus <m>\text{F}</m>. This is used to determine an equation of a parabola. To do this, we consider first the cases when the axis of the parabola is parallel to one of the coordinate axes.
     </p>
     <exercises xml:id="exercises-definition-of-a-parabola">
-
-        <exercise >
-
-            <statement>
-                <p>
-        Use the definition of parabola and the given information to answer or solve each of the following problems.
-    </p>
-    <p>
-        <ol>
-            <li>
-                <p>
-
-
-                   Suppose the focal length of a parabola is <m>p</m>, for some <m>p</m> &gt; 0. Then, show that the focal width (length of the latus rectum) of the parabola is <m>4p</m>.
-
-                </p>
-            </li>
-            <li>
-                <p>
-
-
-                   Suppose the vertex of a parabola is the origin and its focus is<m> \text{F}(0,1)</m>. Then,         
-
-                </p>
-                <p>
-                    <ol marker="(a)">
-                        <li>
+        <exercisegroup>
+                
+                    <introduction>
+                        <p>
+                            Use the definition of parabola and the given information to answer or solve each of the following problems.
+                            
+                        </p>
+                    </introduction>
+                
+                    <exercise>
+                        <statement>
                             <p>
-                                (a) What is the focal length of the parabola.
+                     Suppose the focal length of a parabola is <m>p</m>, for some <m>p</m> &gt; 0. Then, show that the focal width (length of the latus rectum) of the parabola is <m>4p</m>.
                                 
                             </p>
-                        </li>
-                        <li>
+                        </statement>
+                    </exercise>
+                    <exercise>
+                        <statement>
                             <p>
-                                (b) Find the equations of the axis and directrix of the parabola.
+                             Suppose the vertex of a parabola is the origin and its focus is<m> \text{F}(0,1)</m>. Then,         
+                                <ol marker="(a)">
+                                    <li>
+                                        <p>
+                                            What is the focal length of the parabola.
+                                            
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Find the equations of the axis and directrix of the parabola.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Find the endpoints of the latus rectum of the parabola.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Determine whether each of the following point is on the parabola or not.
+                                        </p>
+                                        <p>
+                                            <m>(\text{i}) (4, 4) \,\,\,\,\,\,  (\text{ii}) (2, 2)   \,\,\,\,\,\, (\text{iii}) (-4, 4)  \,\,\,\,\,\,  (\text{iv}) (4, -4)   \,\,\,\,\,\, (\text{v}) (1, \frac{1}{4})</m>
+                                        </p>
+                                        <p>
+                                            (Note: By the definition, a point is on the parabola iff its distances from the focus and from the directrix are equal. )
+                                        </p>
+                                    </li>
+                                </ol>
                             </p>
-                        </li>
-                        <li>
+                                
+                        </statement>
+                    </exercise>
+                    <exercise>
+                        <statement>
                             <p>
-                                (c) Find the endpoints of the latus rectum of the parabola.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                (d) Determine whether each of the following point is on the parabola or not.
-                            </p>
-                            <p>
-                                 <m>(\text{i}) (4, 4) \,\,\,\,\,\,  (\text{ii}) (2, 2)   \,\,\,\,\,\, (\text{iii}) (-4, 4)  \,\,\,\,\,\,  (\text{iv}) (4, -4)   \,\,\,\,\,\, (\text{v}) (1, \frac{1}{4})</m>
-                            </p>
-                            <p>
-                                (Note: By the definition, a point is on the parabola iff its distances from the focus and from the directrix are equal. )
-                            </p>
-                        </li>
-                    </ol>
-                </p>
-            </li>
-            <li>
-                <p>
+                                Suppose the vertex of a parabola is <m>\text{V}(0, 1)</m> and its directrix is the line <m>x = −2</m>. Then,
 
-                     Suppose the vertex of a parabola is <m>\text{V}(0, 1)</m> and its directrix is the line <m>x = −2</m>. Then,
+                                        </p>
+                                        <p>
+                                            <ol marker="(a)">
+                                                <li>
+                                                    <p>
+                                                        Find the equation of the axis of the parabola.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        Find the focus of the parabola.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        Find the length and endpoints of the latus rectum of the parabola.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        Determine whether each of the following point is on the parabola or not.
+                                                    </p>
+                                                    <p>
 
-                </p>
-                <p>
-                    <ol marker="(a)">
-                        <li>
-                            <p>
-                                Find the equation of the axis of the parabola.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Find the focus of the parabola.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Find the length and endpoints of the latus rectum of the parabola.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Determine whether each of the following point is on the parabola or not.
-                            </p>
-                            <p>
+                                                        <m>(\text{i}) (1, 0)\,\,\,\,\,\,\,      (\text{ii}) (3, 0)\,\,\,\,\,\,\,      (\text{iii}) (8, 9) \,\,\,\,\,\,\,      (\text{iv}) (8, -7) \,\,\,\,\,\,\,       (\text{v}) (8, 8)</m>
 
-                                 <m>(\text{i}) (1, 0)\,\,\,\,\,\,\,      (\text{ii}) (3, 0)\,\,\,\,\,\,\,      (\text{iii}) (8, 9) \,\,\,\,\,\,\,      (\text{iv}) (8, -7) \,\,\,\,\,\,\,       (\text{v}) (8, 8)</m>
+                                                    </p>
+                                                </li>
+                                            </ol>
+                                        </p>
+                        </statement>
 
-                            </p>
-                        </li>
-                    </ol>
-                </p>
-            </li>
-        </ol>
-    </p>
-            </statement>
-        </exercise>
+                        </exercise>
+                </exercisegroup>
+                
+               
     </exercises>
 
 
