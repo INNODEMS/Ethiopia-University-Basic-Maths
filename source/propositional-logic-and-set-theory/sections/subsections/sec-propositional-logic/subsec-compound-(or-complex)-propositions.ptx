@@ -111,7 +111,9 @@
     <definition xml:id="def-equivalence-of-propositions">
         <statement>
             <p>
-                Two compound propositions <m>P</m> and <m>Q</m> are said to be <em>equivalent</em> if they have the same truth value for all possible combinations of truth values for the component propositions occurring in both <m>P</m> and <m>Q</m>. 
+                Two compound propositions <m>P</m> and <m>Q</m> are said to be <em>equivalent</em> 
+                if they have the same truth value for all possible combinations of truth values for the 
+                component propositions occurring in both <m>P</m> and <m>Q</m>. 
                 In this case we write <m>P \equiv Q</m>.
             </p>
         </statement>
@@ -167,9 +169,6 @@
                 </row>
                 <row>
                     <cell><m>T</m></cell> <cell><m>F</m></cell> <cell><m>F</m></cell> <cell><m>T</m></cell> <cell><m>F</m></cell> <cell><m>T</m></cell>
-                </row>
-                <row>
-                    <cell><m>F</m></cell> <cell><m>T</m></cell> <cell><m>T</m></cell> <cell><m>F</m></cell> <cell><m>T</m></cell> <cell><m>F</m></cell>
                 </row>
                 <row>
                     <cell><m>F</m></cell> <cell><m>T</m></cell> <cell><m>T</m></cell> <cell><m>F</m></cell> <cell><m>T</m></cell> <cell><m>F</m></cell>

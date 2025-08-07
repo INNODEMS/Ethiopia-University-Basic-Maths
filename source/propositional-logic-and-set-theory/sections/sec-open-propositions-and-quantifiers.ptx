@@ -240,7 +240,7 @@
                     </li>
                     <li>
                         <p>
-                            <m>Q(x):x^2 \leq 0</m>
+                            <m>Q(x):x^2 \lt 0</m>
                         </p>
                     </li>
                 </ol>
@@ -703,7 +703,7 @@
                         <p>
                             Consider the statement
                             <me>
-                                \text{For every two real numbers} x and y, x^2 + y^2 \geq 0.
+                                \text{ For every two real numbers } x \text{ and } y, x^2 + y^2 \geq 0.
                             </me>
                             If we let
                             <me>

@@ -154,7 +154,7 @@
                         <p><m>p \vee q</m>: 3 is an odd number or 27 is a prime number. (True)</p>
                     </li>
                     <li>
-                        <p><m>p \vee s</m>: 3 is an odd number or Nairobi is the capital city of Ethiopia. (False)</p>
+                        <p><m>p \vee s</m>: 27 is an odd number or Nairobi is the capital city of Ethiopia. (False)</p>
                     </li>
                 </ol>
             </p>
@@ -212,7 +212,7 @@
         <row>
             <cell><m>T</m></cell>
             <cell><m>F</m></cell>
-            <cell><m>T</m></cell>
+            <cell><m>F</m></cell>
         </row>
         <row>
             <cell><m>F</m></cell>
@@ -297,9 +297,9 @@
         The truth table for bi-implication is given by:
     </p>
     
-    <tabular top="minor" left="minor" right="minor">
+    <tabular top="minor" left="minor" right="minor" halign="center">
         <col width="100"></col>
-        <row header="yes">
+        <row header="yes" bottom="minor">
             <cell><m>p</m></cell>
             <cell><m>q</m></cell>
             <cell><m>p \Longleftrightarrow q</m></cell>
@@ -434,37 +434,31 @@
         <exercise>
             <statement>
                 <p>
-                    <ol marker="1.">
+                    Which of the following sentences are propositions? For those that are, indicate the truth value.
+                    <ol marker="a.">
                         <li>
                             <p>
-                                Which of the following sentences are propositions? For those that are, indicate the truth value.
-                                <ol marker="a.">
-                                    <li>
-                                        <p>
-                                            123 is a prime number.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            0 is an even number.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <m>x^{2} - 4 = 0</m>.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Multiply <m>5x + 2</m> by 3.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            What an impossible question!
-                                        </p>
-                                    </li>
-                                </ol>
+                                123 is a prime number.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                0 is an even number.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <m>x^{2} - 4 = 0</m>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Multiply <m>5x + 2</m> by 3.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                What an impossible question!
                             </p>
                         </li>
                     </ol>
@@ -475,7 +469,7 @@
             <statement>
                 <p>
                     State the negation of each of the following statements.
-                    <ol marker="1.">
+                    <ol marker="a.">
                         <li>
                             <p>
                                 <m>\sqrt{2}</m> is a rational number.
@@ -505,7 +499,7 @@
                 </p>
                 <p>
                     State each of the following in words, and determine the truth value of each.
-                    <ol marker="1." cols="2">
+                    <ol marker="a." cols="2">
                         <li>
                             <p>
                                 <m>p \vee q</m>.

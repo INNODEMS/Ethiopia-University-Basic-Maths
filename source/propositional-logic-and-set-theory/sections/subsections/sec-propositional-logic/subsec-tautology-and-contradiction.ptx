@@ -280,34 +280,31 @@
                                 <m>p \Longrightarrow (r \vee s)</m>.
                             </p>
                         </li>
+                        <!-- f-->
                         <li>
                             <p>
-                                <m>(p \vee r) \leftrightarrow (q \vee r)</m>.
+                                <m>(p \vee r) \Leftrightarrow (r \vee \neg s)</m>.
                             </p>
                         </li>
                         <li>
                             <p>
-                                <m>(p \vee q) \leftrightarrow (p \vee \neg s)</m>.
+                                <m>(s \Leftrightarrow q) \Longrightarrow (\neg p \vee s)</m>.
                             </p>
                         </li>
                         <li>
                             <p>
-                                <m>(s \leftrightarrow p) \longrightarrow (\neg p \leftrightarrow p)</m>
+                                <m>(q \land \neg s) \Longrightarrow (p \Leftrightarrow s)</m>
+                            </p>
+                        </li>
+                        <!--i-->
+                        <li>
+                            <p>
+                                <m> (r \land s) \Longrightarrow (p \Longrightarrow (\neg q \vee a)) </m>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <m> (q \land \neg s) \Longrightarrow (p \leftrightarrow q) </m>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <m> (r \land s) \Longrightarrow (p \longrightarrow (\neg q \vee s)) </m>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <m> (p \vee \neg q) \vee r \Longrightarrow (s \leftrightarrow \neg s) </m>
+                                <m> (p \vee \neg q) \vee r \Longrightarrow (s \land \neg s) </m>
                             </p>
                         </li>
                     </ol>
@@ -317,7 +314,7 @@
         <exercise>
             <statement>
                 <p>
-                    Suppose the value of <m>p \rightarrow q</m> is <m>T</m>;  what can be said about the value of <m>\neg p \land q \leftrightarrow p \vee \neg q</m>?
+                    Suppose the value of <m>p \rightarrow q</m> is <m>T</m>;  what can be said about the value of <m>\neg p \land q \Leftrightarrow p \vee q</m>?
                 </p>
             </statement>
         </exercise>
@@ -327,14 +324,14 @@
                     <ol marker="a.">
                         <li>
                             <p>
-                                Suppose the value of <m>p \rightarrow q</m> is <m>T</m>;  
-                                what can be said about the value of <m>p \leftrightarrow \neg q </m> <m>\neg p \leftrightarrow q</m>?
+                                Suppose the value of <m>p \Leftrightarrow q</m> is <m>T</m>;  
+                                what can be said about the value of <m>p \Leftrightarrow \neg q </m> and <m>\neg p \Leftrightarrow q</m>?
                             </p>
                         </li>
                         <li>
                             <p>
-                                 Suppose the value of <m>p \leftrightarrow \neg q</m> is <m>F</m>;  
-                                 what can be said about the value of <m> p \leftrightarrow \neg q</m> and <m>\neg p \leftrightarrow q</m>?
+                                 Suppose the value of <m>p \Leftrightarrow q</m> is <m>F</m>;  
+                                 what can be said about the value of <m> p \Leftrightarrow \neg q</m> and <m>\neg p \Leftrightarrow q</m>?
                             </p>
                         </li>
                     </ol>
@@ -348,32 +345,32 @@
                     <ol marker="a." cols="2">
                         <li>
                             <p>
-                                <m>p \rightarrow (p \rightarrow q) </m>
+                                <m>p \Longrightarrow (p \Longrightarrow q) </m>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <m> (p \vee q) \leftrightarrow (q \vee p) </m>
+                                <m> (p \vee q) \Leftrightarrow (q \vee p) </m>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <m> p \rightarrow \neg (q \land r) </m>
+                                <m> p \Longrightarrow \neg (q \land r) </m>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <m> (p \rightarrow q) \leftrightarrow (q \vee p) </m>
+                                <m> (p \Longrightarrow q) \Leftrightarrow (q \vee p) </m>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <m> (p \leftrightarrow (q \land r)) \vee (\neg p \land q) </m>
+                                <m> (p \Longleftrightarrow (q \land r)) \vee (\neg p \land q) </m>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <m> (p \land  q) \rightarrow ((q \land \neg q) \rightarrow (r \land \neg q)) </m>
+                                <m> (p \land  q) \Longrightarrow ((q \land \neg q) \Longrightarrow (r \land q)) </m>
                             </p>
                         </li>
                     </ol>
