@@ -30,6 +30,7 @@
         <p>
             <ul>
                 <li>Use a star for multiplication. For example, <m>3x</m> should be entered as <code>3*x</code>.</li>
+                <li>Use a <code>/</code> for division. For example, <m>\frac{x}{2}</m> should be entered as <code>x/2</code>.</li>
                 <li>Use a caret (^) for raising something to a power: for example, <m>x^2</m> should be entered as <code>x^2</code></li>
                 <li><m>x^{-2}</m> should be entered as <code>x^(-2)</code></li>
                 <li><m>\displaystyle x^{\frac{1}{3}}</m> should be entered as <code>x^(1/3)</code></li>
