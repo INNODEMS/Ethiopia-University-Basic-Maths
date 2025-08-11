@@ -122,13 +122,13 @@
         Consequently, the equation of the horizontal and vertical ellipses relative to the new <em>X</em><alert>′</alert><em>Y</em><alert>′</alert> coordinate system with (<em>x</em>′, <em>y</em>′) coordinate points are
     </p>
     <p>
-        <m>\frac{x^{'2}}{a^2} + \frac{y^{'2}}{b^2} = 1</m> and <m>\frac{x^{'2}}{b^2} + \frac{y^{'2}}{a^2} = 1</m>, .........(I) respectively.
+        <me>\frac{x^{'2}}{a^2} + \frac{y^{'2}}{b^2} = 1</me> and <me>\frac{x^{'2}}{b^2} + \frac{y^{'2}}{a^2} = 1</me>, .........(I) respectively.
     </p>
     <p>
         Since the origin of the new coordinate system is at the point (<em>h,k</em>) of the <em>xy</em>-coordinate system, the relationship between a point (<em>x,y</em>) of the <em><alert>xy</alert></em>-coordinate system and (<em>x</em>′<em>,y</em>′) of the new coordinate system is given by (<em>x, y</em>) = (<em>x</em>′<em>,y</em>′) + (<em>h, k</em>). That is,
     </p>
     <p>
-        <m>x' = x-h,</m> and <m>y' = y-k</m>
+        <me>x' = x-h,</me> and <me>y' = y-k</me>
     </p>
     <p>
         Thus, in the original <em>xy</em>-coordinate system the equations of the horizontal and vertical ellipses with center C(<em>h, k</em>), lengths of major axis = 2<em>a</em> and minor axis = 2<em>b</em> are, respectively, given by
@@ -158,13 +158,23 @@
         <solution>
             <p>
                 The given vertices are at <m>V′(-3,4)</m> and <m>V(7,4)</m> implies that <m>2a = |V′V| = 10 ⇒ a = 5</m>;
-                and the center C(<em>h,k</em>) is the midpoint of <m>V′V ⇒ (h,k) = (\frac{-3+7}{2}, \frac{4+4}{2}) = (2,4) </m>. 
+                 
+  
+            </p>
+            <p>
+                and the center C(<em>h,k</em>) is the midpoint of <m>V′V ⇒ (h,k) = (\frac{-3+7}{2}, \frac{4+4}{2}) = (2,4) </m>.
+            </p>
+            <p>
                 Moreover, eccentricity <m>= \frac{c}{a} = 0.6 ⇒ c= 5 \times 0.6 = 3</m>. 
-                Hence, <m>b^2 = a^2-c^2 = 25 - 9 = 16</m>. Note that the major axis V'V is horizontal. 
+            </p>
+            <p>
+                Hence, <m>b^2 = a^2-c^2 = 25 - 9 = 16</m>. Note that the major axis V'V is horizontal.
+            </p>
+            <p>
                 Therefore, using the standard equation of a horizontal ellipse, the equation of the ellipse is
             </p>
             <p>
-                <m>\frac{(x-2)^2}{25} + \frac{(y-4)^2}{16} = 1</m>
+                <m>\quad\quad\quad\frac{(x-2)^2}{25} + \frac{(y-4)^2}{16} = 1</m>
             </p>
             <p>
                 Now, as the center (<em>h,k</em>) = <m>(2,4)</m>, <em>c</em>=3 and V′V is horizontal, the foci are at (<em>h</em> ± <em>c</em>, <em>k</em>) = <m>(2 ± 3, 4)</m>.
