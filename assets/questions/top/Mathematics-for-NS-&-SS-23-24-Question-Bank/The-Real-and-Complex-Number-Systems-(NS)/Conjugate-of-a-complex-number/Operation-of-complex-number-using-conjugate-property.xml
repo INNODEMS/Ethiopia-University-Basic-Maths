@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Operation of complex number using conjugate property</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Write the complex number  \(z = \displaystyle  \frac{({@a1@})+({@a2@})}{({@b1@})-({@b2@})}\)   in the form \(a+b{@%i@}\). </p>
+<p><em>Note: Use <code>b*%i</code> to input the imaginary part of the complex number.</p>
+<p> \(z =\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked solution</h3>
+<p>\(
+\begin{align}
+ \displaystyle  z & =  \frac{({@a1@})+({@a2@})}{({@b1@})-({@b2@})} \\
+& =  \displaystyle \frac{@aa@}{@bb@} \\
+& =  \displaystyle \left( \frac{@aa@}{@bb@} \right) \left( \frac{\overline{@bb@}}{\overline{@bb@}} \right) \\
+& =  \displaystyle \left( \frac{@aa@}{@bb@} \right) \left( \frac{@conj@}{@conj@}\right)\\
+& =   \displaystyle \frac{@ta1@}{@ta2@} \\
+& = \displaystyle  {@rez@}{@if imagpart(tt)<0 then "-" else "+"@}{@abs(imagpart(tt))@}{@%i@}
+\end{align}
+\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>x:rand(10)+5;
+y:rand_with_prohib(1,10,[x,0]);
+
+x1:rand_with_prohib(1,10,[x,0,y]);
+y1:rand_with_prohib(1,10,[x,0,y,x1]);
+
+a1: x-y*%i;
+a2: x1+y1*%i;
+aa: a1+a2;
+
+x2:rand_with_prohib(1,10,[x,0,y,x1,y1]);
+y2: rand_with_prohib(1,10,[x,0,y,x1,y1,x2]);
+
+x3:  rand_with_prohib(1,10,[x,0,y,x1,y1,x2,y2]);
+y3:  rand_with_prohib(1,10,[x,0,y,x1,y1,x2,y2,x3]);
+
+b1: x2+y2*%i;
+b2: x3-y3*%i;
+bb: b1-b2;
+
+conj: conjugate(bb);
+ta1: expand(aa*conj);
+ta2: expand(bb*conj);
+
+tt:ta1/ta2;
+rez: realpart(tt);
+imz: (imagpart(tt))*%i;
+
+ta:rez+imz;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p> \(z = \displaystyle  \frac{({@a1@})+({@a2@})}{({@b1@})-({@b2@})}\) </p>
+<p>  Form \(a+bi: {@ta@}\). </p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<p>Correct answer, well done.</p>]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<p>Incorrect answer.</p>]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1566937238</deployedseed>
+    <deployedseed>897016384</deployedseed>
+    <deployedseed>444187444</deployedseed>
+    <deployedseed>753478245</deployedseed>
+    <deployedseed>2001505023</deployedseed>
+    <deployedseed>1356667844</deployedseed>
+    <deployedseed>1298497086</deployedseed>
+    <deployedseed>1855866891</deployedseed>
+    <deployedseed>725132576</deployedseed>
+    <deployedseed>944228457</deployedseed>
+    <deployedseed>461918901</deployedseed>
+    <deployedseed>1627954522</deployedseed>
+    <deployedseed>1754094059</deployedseed>
+    <deployedseed>54400266</deployedseed>
+    <deployedseed>1956497591</deployedseed>
+    <deployedseed>993562199</deployedseed>
+    <deployedseed>371964818</deployedseed>
+    <deployedseed>1904634778</deployedseed>
+    <deployedseed>1825577339</deployedseed>
+    <deployedseed>1845812156</deployedseed>
+    <deployedseed>1877829829</deployedseed>
+    <deployedseed>402845592</deployedseed>
+    <deployedseed>1935975906</deployedseed>
+    <deployedseed>1916082087</deployedseed>
+    <deployedseed>1297010224</deployedseed>
+    <deployedseed>1879561430</deployedseed>
+    <deployedseed>2120187266</deployedseed>
+    <deployedseed>230329911</deployedseed>
+    <deployedseed>1398801200</deployedseed>
+    <deployedseed>1428579279</deployedseed>
+    <deployedseed>13407681</deployedseed>
+    <deployedseed>516808500</deployedseed>
+    <deployedseed>643441339</deployedseed>
+    <deployedseed>595609943</deployedseed>
+    <deployedseed>270122843</deployedseed>
+    <deployedseed>648736275</deployedseed>
+    <deployedseed>489503020</deployedseed>
+    <deployedseed>1340981810</deployedseed>
+    <deployedseed>336074501</deployedseed>
+    <deployedseed>133003329</deployedseed>
+    <deployedseed>1650143411</deployedseed>
+    <deployedseed>1555002835</deployedseed>
+    <deployedseed>1583366203</deployedseed>
+    <deployedseed>468867869</deployedseed>
+    <deployedseed>207647715</deployedseed>
+    <deployedseed>870408078</deployedseed>
+    <deployedseed>347021701</deployedseed>
+    <deployedseed>646727758</deployedseed>
+    <deployedseed>2028526244</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

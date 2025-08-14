@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Computing determinants of matrix given 3 vectors in R^3</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Let \(u_1= ({@a@}, {@b@}, {@c@}), \, u_2=({@d@}, {@e@}, {@f@}), \, u_3=({@g@}, {@h@}, {@i@})\).</p>
+<p>Find the volume \(V(S)\) of the parallelepiped \(S\) in \(\mathbb{R}^3\) determined by the three vectors.</p>
+<br>a) Write the three vectors in matrix form \(A=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</p>
+<p>b) Compute the determinant of \(A\) and use it to find the volume of the parallelepiped \( V(S)=\)  [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<p><h3>Worked Solution</h3></p>
+<p>We let \(A\) be the matrix of the three vectors and find the determinant of \(A\)</p>
+<p>\(A={@A@}\). The matrix \(A\) can also be represented like this, \( {@transpose(A)@}\).</p>
+<p>
+\(
+\begin{align}
+V(S) &= | det(A)| \\
+       &= |{@+a@} \cdot {@submatrix1@} - {@b@} \cdot {@submatrix2@} + {@c@} \cdot {@submatrix3@}| \\
+       &= |{@a*determinant(submatrix1)@}-{@b*determinant(submatrix2)@}+{@c*determinant(submatrix3)@}| \\    
+            &={@ta2@}   \\
+          V(S) &= {@ta2@}  \text{ cubic units}.
+
+\end{align}
+\)
+</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>2</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*Defining question variables*/
+A: rand(matrix([2,3,5],[3,6,4],[4,6,3]));
+while determinant(A) = 0 do A: rand(matrix([2,3,5],[3,6,4],[4,6,3]));
+A;
+determinant(A);
+
+/*Worked solution*/
+a:A[1,1]; /*first entry in the first row*/
+b:A[1,2]; /*second  entry in  first row*/ 
+c:A[1,3]; /*third entry in the first row*//*u1*/
+
+d:A[2,1]; /*first entry in second row*/
+e:A[2,2]; /*second  entry in second row*/ 
+f:A[2,3]; /*third entry in second row*/   /*u2*/
+ 
+g:A[3,1]; /*first entry in third row*/
+h:A[3,2]; /*second  entry in third row*/ 
+i:A[3,3]; /*third entry in third row*/   /*u3*/
+
+submatrix1:matrix([e,f],[h,i]); /*extracting submatrices*/
+submatrix2:matrix([d,f],[g,i]);
+submatrix3:matrix([d,e],[g,h]);
+a*determinant(submatrix1);
+-b*determinant(submatrix2);
+c*determinant(submatrix3); 
+
+/*Model answers*/
+ta1:A;
+ta2:abs(determinant(A));</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>Let \(u_1= ({@a@}, {@b@}, {@c@}), \quad u_2=({@d@}, {@e@}, {@f@}), \quad u_3=({@g@}, {@h@}, {@i@})\).</p>
+<p>Matrix form \(A={@ta1@}\)</p>
+<p> Volume of the parallelepiped \(V(S)={@ta2@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>ta1</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>8</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*node 1 checks for correct answer*/
+/*node 2 : transposing the vectors and forming the matrix */
+corr_ans:transpose(A);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>corr_ans</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>is_absolute:is(ans2=abs(determinant(A)));
+is_correct: is(determinant(ans1)=-(ans2));</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>is_absolute</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>is_correct</sans>
+        <tans>true</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your volume is negative. Note that the volume of an object, in three-dimensional space that an object occupies, does not depend on direction hence you should take its absolute value.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>714888462</deployedseed>
+    <deployedseed>1658592266</deployedseed>
+    <deployedseed>883310491</deployedseed>
+    <deployedseed>1227102409</deployedseed>
+    <deployedseed>1833688554</deployedseed>
+    <deployedseed>1639857282</deployedseed>
+    <deployedseed>1005296095</deployedseed>
+    <deployedseed>675345236</deployedseed>
+    <deployedseed>725421710</deployedseed>
+    <deployedseed>813752538</deployedseed>
+    <deployedseed>2142847732</deployedseed>
+    <deployedseed>154956617</deployedseed>
+    <deployedseed>3193755</deployedseed>
+    <deployedseed>909801753</deployedseed>
+    <deployedseed>624804379</deployedseed>
+    <deployedseed>1129815005</deployedseed>
+    <deployedseed>1782762262</deployedseed>
+    <deployedseed>1765561574</deployedseed>
+    <deployedseed>28358211</deployedseed>
+    <deployedseed>719024026</deployedseed>
+    <deployedseed>1211759464</deployedseed>
+    <deployedseed>1853955197</deployedseed>
+    <deployedseed>1857941843</deployedseed>
+    <deployedseed>1995800879</deployedseed>
+    <deployedseed>1626055950</deployedseed>
+    <deployedseed>406791340</deployedseed>
+    <deployedseed>788659125</deployedseed>
+    <deployedseed>2064828531</deployedseed>
+    <deployedseed>1234185022</deployedseed>
+    <deployedseed>1849669306</deployedseed>
+    <deployedseed>243440599</deployedseed>
+    <deployedseed>33522666</deployedseed>
+    <deployedseed>335806167</deployedseed>
+    <deployedseed>564548402</deployedseed>
+    <deployedseed>1061541554</deployedseed>
+    <deployedseed>327428100</deployedseed>
+    <deployedseed>1320407442</deployedseed>
+    <deployedseed>1404488049</deployedseed>
+    <deployedseed>749762721</deployedseed>
+    <deployedseed>1504533487</deployedseed>
+    <deployedseed>88111362</deployedseed>
+    <deployedseed>106654110</deployedseed>
+    <deployedseed>508564820</deployedseed>
+    <deployedseed>2123062034</deployedseed>
+    <deployedseed>650462551</deployedseed>
+    <deployedseed>1652749610</deployedseed>
+    <deployedseed>918855490</deployedseed>
+    <deployedseed>1749059461</deployedseed>
+    <deployedseed>368638168</deployedseed>
+    <deployedseed>1259785122</deployedseed>
+    <deployedseed>2100642962</deployedseed>
+    <deployedseed>536134005</deployedseed>
+    <deployedseed>629707697</deployedseed>
+    <deployedseed>232255016</deployedseed>
+    <deployedseed>1479054567</deployedseed>
+    <deployedseed>2113017234</deployedseed>
+    <deployedseed>871871349</deployedseed>
+    <deployedseed>1110041658</deployedseed>
+    <deployedseed>600692778</deployedseed>
+    <deployedseed>1731383654</deployedseed>
+    <deployedseed>724000330</deployedseed>
+    <deployedseed>505790566</deployedseed>
+    <deployedseed>622350264</deployedseed>
+    <deployedseed>1876797050</deployedseed>
+    <deployedseed>1536741353</deployedseed>
+    <deployedseed>236297257</deployedseed>
+    <deployedseed>1947851621</deployedseed>
+    <deployedseed>2024283521</deployedseed>
+    <deployedseed>709804600</deployedseed>
+    <deployedseed>1564689813</deployedseed>
+    <deployedseed>1972166393</deployedseed>
+    <deployedseed>1756251053</deployedseed>
+    <deployedseed>1118806204</deployedseed>
+    <deployedseed>2076301988</deployedseed>
+    <deployedseed>153978351</deployedseed>
+    <deployedseed>1781396213</deployedseed>
+    <deployedseed>1514110775</deployedseed>
+    <deployedseed>553264268</deployedseed>
+    <deployedseed>844307616</deployedseed>
+    <deployedseed>301375236</deployedseed>
+    <deployedseed>1533536131</deployedseed>
+    <deployedseed>1454609043</deployedseed>
+    <deployedseed>216510647</deployedseed>
+    <deployedseed>1116794248</deployedseed>
+    <deployedseed>1105130336</deployedseed>
+    <deployedseed>1969284504</deployedseed>
+    <deployedseed>1195515194</deployedseed>
+    <deployedseed>1068983512</deployedseed>
+    <deployedseed>617781799</deployedseed>
+    <deployedseed>637424128</deployedseed>
+    <deployedseed>1935413736</deployedseed>
+    <deployedseed>1673084547</deployedseed>
+    <deployedseed>863706015</deployedseed>
+    <deployedseed>409351885</deployedseed>
+    <deployedseed>2134984079</deployedseed>
+    <deployedseed>1994740806</deployedseed>
+    <deployedseed>786618153</deployedseed>
+    <deployedseed>1032088741</deployedseed>
+    <deployedseed>464400050</deployedseed>
+    <deployedseed>1042875452</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

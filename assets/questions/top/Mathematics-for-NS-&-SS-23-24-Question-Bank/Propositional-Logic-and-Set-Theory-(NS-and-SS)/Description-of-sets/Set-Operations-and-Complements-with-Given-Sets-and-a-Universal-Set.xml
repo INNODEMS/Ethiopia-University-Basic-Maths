@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Set Operations and Complements with Given Sets and a Universal Set</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>In this question you will have to find sets defined from two sets \(A\), \(B\) and a universal set. Write your answers using curly brackets notation, listing elements using commas and without spaces between elements, for example the set containing numbers 1, 2 and 3 is entered as {1,2,3}. The empty set is entered as {}. </p><p>Set \(A = {@set1@}\) and set \(B = {@set2@}\)</p><p>Find the following sets:</p><p>1. \(A \cup B = \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</p> <p>2. \(A \cap B = \) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</p> <p>3. \(A \setminus B = \) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]</p> <p>4. \(B \setminus A = \) [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]</p> <p>The universal set for this question is the set of natural numbers up to and including 12. Considering this, find the following sets: </p> <p>5. \(\overline{B} \cap A = \) [[input:ans5]] [[validation:ans5]] [[feedback:prt5]]</p> <p>6. \(\overline{A \setminus \overline{B}} = \) [[input:ans6]] [[validation:ans6]] [[feedback:prt6]]</p> <p>7. \(\overline{A \setminus \overline{A}} = \) [[input:ans7]] [[validation:ans7]] [[feedback:prt7]]</p> <p>8. \(A \cap \overline{A} = \) [[input:ans8]] [[validation:ans8]] [[feedback:prt8]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked solution</h3>
+<p>In this question you will have to find sets defined from two sets \(A\), \(B\) and a universal set. Write your answers using curly brackets notation, listing elements using commas and without spaces between elements, for example the set containing numbers 1, 2 and 3 is entered as {1,2,3}. The empty set is entered as {}. </p><p>Set \(A = {@set1@}\) and set \(B = {@set2@}\)</p>
+<p>Find the following sets:</p>
+<p>1. \(A \cup B = {@ta1@}\)</p>
+ <p>2. \(A \cap B ={@ta2@} \) </p> 
+<p>3. \(A \setminus B = {@ta3@} \)</p> 
+<p>4. \(B \setminus A =  {@ta4@}  \)</p> 
+<p>The universal set for this question is the set of natural numbers up to and including 12. Considering this, find the following sets: </p> 
+<p>We recall that the uiversal set is \( \Omega = {@univ@} \)</p>
+<p>5. \( \overline{B} \cap A =  {@ta5@}  \), because \(  \overline{B} = {@setdifference(univ,set2)@} \)</p>
+ <p>6. \(\overline{A \setminus \overline{B}} = {@ta6@}\), because \( A \setminus \overline{B}={@setdifference(set1,setdifference(univ,set2))@}\)</p>
+ <p>7. \( \overline{A \setminus \overline{A}} = {@ta7@} \), because \( \overline{A} = {@setdifference(univ,set1)@} \) and \( A \setminus \overline{A} = {@setdifference(set1,setdifference(univ,set1))@}  \)</p> 
+<p>8. \( A \cap \overline{A} = {@ta8@} \)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>4</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>aa:rand(12)+1;
+ff:rand_with_prohib(1,12,[aa]);
+bb:rand_with_prohib(1,12,[aa,ff]);
+cc:rand_with_prohib(1,12,[aa,bb,ff]);
+dd:rand_with_prohib(1,12,[aa,bb,cc,ff]);
+gg:rand_with_prohib(1,12,[bb,ff]);
+hh:rand_with_prohib(1,12,[bb,ff,gg]);
+ii:rand_with_prohib(1,12,[bb,ff,gg,hh]);
+jj:rand_with_prohib(1,9,[bb,ff,gg,hh,ii]);
+set1:set(aa,bb,cc,dd,ff);
+set2:set(aa,ff,gg,hh,ii,jj);
+univ:set(1,2,3,4,5,6,7,8,9,10,11,12);
+ta1:union(set1,set2);
+ta2:intersect(set1,set2);
+ta3:setdifference(set1,set2);
+ta4:setdifference(set2,set1);
+ta5:intersect(setdifference(univ,set2),set1);
+ta6:setdifference(univ,setdifference(set1,setdifference(univ,set2)));
+ta7:setdifference(univ,setdifference(set1,setdifference(univ,set1)));
+ta8:intersect(set1,setdifference(univ,set1));</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>1. \(A \cup B = {@ta1@}\)</p>
+ <p>2. \(A \cap B ={@ta2@} \) </p> 
+<p>3. \(A \setminus B = {@ta3@} \)</p> 
+<p>4. \(B \setminus A =  {@ta4@}  \)</p> 
+<p>5. \( \overline{B} \cap A =  {@ta5@}  \) </p>
+ <p>6. \(\overline{A \setminus \overline{B}} = {@ta6@}\)</p>
+ <p>7. \( \overline{A \setminus \overline{A}} = {@ta7@} \)</p> 
+<p>8. \( A \cap \overline{A} = {@ta8@} \)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>20</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>20</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>20</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>ta4</tans>
+      <boxsize>20</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans5</name>
+      <type>algebraic</type>
+      <tans>ta5</tans>
+      <boxsize>20</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans6</name>
+      <type>algebraic</type>
+      <tans>ta6</tans>
+      <boxsize>20</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans7</name>
+      <type>algebraic</type>
+      <tans>ta7</tans>
+      <boxsize>20</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans8</name>
+      <type>algebraic</type>
+      <tans>ta8</tans>
+      <boxsize>20</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>0</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>listans1:listify(ans1);
+listta1:listify(ta1);
+lengthans1:length(listans1);
+lengthta1:length(listta1);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>Sets</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>The union of \(A\) and \(B\) is the set containing all the elements of \(A\) together with all the elements of \(B\) but we don't include repetitions.</text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>lengthans1</sans>
+        <tans>lengthta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.5</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>You seem to have repetitions. Please make sure you don't include elements more than once.</text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>0</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>listans2:listify(ans2);
+listta2:listify(ta2);
+lengthans2:length(listans2);
+lengthta2:length(listta2);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>Sets</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>The intersection of set \(A\) and \(B\) is the set containing the elements which are elements of both \(A\) and \(B\).</text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>lengthans2</sans>
+        <tans>lengthta2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.5</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>You seem to have repetitions. Please make sure you don't include elements more than once.</text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>0</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>listans3:listify(ans3);
+listta3:listify(ta3);
+lengthans3:length(listans3);
+lengthta3:length(listta3);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>Sets</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>\(A \setminus B\) is the set difference of \(A\) and \(B\) and contains all the elements of set \(A\) which are not elements of set \(B\).</text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>lengthans3</sans>
+        <tans>lengthta3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.5</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>You seem to have repetitions. Please make sure you don't include elements more than once.</text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>0</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>listans4:listify(ans4);
+listta4:listify(ta4);
+lengthans4:length(listans4);
+lengthta4:length(listta4);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>Sets</answertest>
+        <sans>ans4</sans>
+        <tans>ta4</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>\(B \setminus A\) is the set difference of \(B\) and \(A\) and contains all the elements of set \(B\) which are not elements of set \(A\).</text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>lengthans4</sans>
+        <tans>lengthta4</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.5</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>You seem to have repetitions. Please make sure you don't include elements more than once.</text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt5</name>
+      <value>1.0000000</value>
+      <autosimplify>0</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>listans5:listify(ans5);
+listta5:listify(ta5);
+lengthans5:length(listans5);
+lengthta5:length(listta5);
+compB:setdifference(univ,set2);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>Sets</answertest>
+        <sans>ans5</sans>
+        <tans>ta5</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt5-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt5-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>\(\overline{B}\) is the complement of \(B\), which is the set of elements in the universal set that are not elements of \(B\). So, \(\overline{B} = {@compB@}\). If we take the intersection with set \(A\) we get the set of elements that are both in \(A\) and {@compB@}, which is {@ta5@}</text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>lengthans5</sans>
+        <tans>lengthta5</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt5-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.5</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt5-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>You seem to have repetitions. Please make sure you don't include elements more than once.</text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt6</name>
+      <value>1.0000000</value>
+      <autosimplify>0</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>listans6:listify(ans6);
+listta6:listify(ta6);
+lengthans6:length(listans6);
+lengthta6:length(listta6);
+compB:setdifference(univ,set2);
+AmincompB:setdifference(set1,compB);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>Sets</answertest>
+        <sans>ans6</sans>
+        <tans>ta6</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt6-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt6-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>\(\overline{B}\) is the complement of \(B\), which is the set of elements in the universal set that are not elements of \(B\). So, \(\overline{B} = {@compB@}\). \(A \setminus \overline{B}\) is the set of elements in \(A\) which are not in \(\overline{B}\), which is {@AmincompB@}. The complement of this is the set of elements in the universe except for the elements of {@AmincompB@}, which is {@ta6@}.</text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>lengthans6</sans>
+        <tans>lengthta6</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt6-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.5</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt6-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>You seem to have repetitions. Please make sure you don't include elements more than once.</text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt7</name>
+      <value>1.0000000</value>
+      <autosimplify>0</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>listans7:listify(ans7);
+listta7:listify(ta7);
+lengthans7:length(listans7);
+lengthta7:length(listta7);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>Sets</answertest>
+        <sans>ans7</sans>
+        <tans>ta7</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt7-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt7-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>\(\overline{A}\) is the set of elements which are not in set \(A\), so \(A \setminus \overline{A} = A\) as we are removing from \(A\) all the elements that are not in \(A\). Therefore, \(\overline{A \setminus \overline{A}} = \overline{A} = {@ta7@}\).</text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>lengthans7</sans>
+        <tans>lengthta7</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt7-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.5</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt7-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>You seem to have repetitions. Please make sure you don't include elements more than once.</text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt8</name>
+      <value>1.0000000</value>
+      <autosimplify>0</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>listans8:listify(ans8);
+listta8:listify(ta8);
+lengthans8:length(listans8);
+lengthta8:length(listta8);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>Sets</answertest>
+        <sans>ans8</sans>
+        <tans>ta8</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt8-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt8-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>\(\overline{A}\) is the set of elements in the universe which are not elements of \(A\). So, if we consider the intersection between \(A\) and the set containing everything that is not in \(A\) we don't get any elements and the answer is the empty set, which can be entered as {}.</text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>343754957</deployedseed>
+    <deployedseed>503629622</deployedseed>
+    <deployedseed>828817565</deployedseed>
+    <deployedseed>1721056701</deployedseed>
+    <deployedseed>133533864</deployedseed>
+    <deployedseed>884318306</deployedseed>
+    <deployedseed>266028039</deployedseed>
+    <deployedseed>590908133</deployedseed>
+    <deployedseed>1305499925</deployedseed>
+    <deployedseed>1631956782</deployedseed>
+    <deployedseed>1338558815</deployedseed>
+    <deployedseed>463502636</deployedseed>
+    <deployedseed>2077209285</deployedseed>
+    <deployedseed>649661022</deployedseed>
+    <deployedseed>102551010</deployedseed>
+    <deployedseed>1829447280</deployedseed>
+    <deployedseed>1189266648</deployedseed>
+    <deployedseed>2003489180</deployedseed>
+    <deployedseed>1389755070</deployedseed>
+    <deployedseed>1388486572</deployedseed>
+    <deployedseed>263410260</deployedseed>
+    <deployedseed>627981928</deployedseed>
+    <deployedseed>90481455</deployedseed>
+    <deployedseed>1551880495</deployedseed>
+    <deployedseed>1985380147</deployedseed>
+    <deployedseed>747342169</deployedseed>
+    <deployedseed>1620774107</deployedseed>
+    <deployedseed>1380955930</deployedseed>
+    <deployedseed>1104785830</deployedseed>
+    <deployedseed>18267195</deployedseed>
+    <deployedseed>2067599823</deployedseed>
+    <deployedseed>586170274</deployedseed>
+    <deployedseed>1225313737</deployedseed>
+    <deployedseed>1659323865</deployedseed>
+    <deployedseed>1660516412</deployedseed>
+    <deployedseed>1584175577</deployedseed>
+    <deployedseed>1962831679</deployedseed>
+    <deployedseed>274770107</deployedseed>
+    <deployedseed>1792788967</deployedseed>
+    <deployedseed>2112413765</deployedseed>
+    <deployedseed>1558293683</deployedseed>
+    <deployedseed>1649608240</deployedseed>
+    <deployedseed>1384010987</deployedseed>
+    <deployedseed>209177092</deployedseed>
+    <deployedseed>1802443810</deployedseed>
+    <deployedseed>1835080437</deployedseed>
+    <deployedseed>465201683</deployedseed>
+    <deployedseed>1889941301</deployedseed>
+    <deployedseed>755556630</deployedseed>
+    <deployedseed>1870470080</deployedseed>
+    <deployedseed>1973340920</deployedseed>
+    <deployedseed>1815368843</deployedseed>
+    <deployedseed>1214004232</deployedseed>
+    <deployedseed>1354859566</deployedseed>
+    <deployedseed>2136515480</deployedseed>
+    <deployedseed>95748294</deployedseed>
+    <deployedseed>691973316</deployedseed>
+    <deployedseed>1407388044</deployedseed>
+    <deployedseed>1931271201</deployedseed>
+    <deployedseed>555809272</deployedseed>
+    <deployedseed>251947164</deployedseed>
+    <deployedseed>316855275</deployedseed>
+    <deployedseed>1511276824</deployedseed>
+    <deployedseed>1433674653</deployedseed>
+    <deployedseed>179926167</deployedseed>
+    <deployedseed>855543893</deployedseed>
+    <deployedseed>1614161774</deployedseed>
+    <deployedseed>666229038</deployedseed>
+    <deployedseed>1314956503</deployedseed>
+    <deployedseed>1961682750</deployedseed>
+    <deployedseed>1075607973</deployedseed>
+    <deployedseed>918840775</deployedseed>
+    <deployedseed>1380189597</deployedseed>
+    <deployedseed>1415554393</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>ta5</value>
+      </testinput>
+      <testinput>
+        <name>ans6</name>
+        <value>ta6</value>
+      </testinput>
+      <testinput>
+        <name>ans7</name>
+        <value>ta7</value>
+      </testinput>
+      <testinput>
+        <name>ans8</name>
+        <value>ta8</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt5</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt5-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt6</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt6-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt7</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt7-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt8</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt8-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>ta5</value>
+      </testinput>
+      <testinput>
+        <name>ans6</name>
+        <value>ta6</value>
+      </testinput>
+      <testinput>
+        <name>ans7</name>
+        <value>ta7</value>
+      </testinput>
+      <testinput>
+        <name>ans8</name>
+        <value>ta8</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt5</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt5-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt6</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt6-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt7</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt7-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt8</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt8-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

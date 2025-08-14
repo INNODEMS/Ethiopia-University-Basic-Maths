@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Calculating the Distance from the Origin to a Given Line</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Find the distance from the origin to the line \( \displaystyle {@equation_line@}\). Give your answer in exact form.</p>
+<p>\(\qquad\) Distance \(=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<p><b><h3>Worked Solution</h3></b></p>
+<p>To find the distance from the origin to the line with equation  \( \displaystyle {@equation_line@}\), we can use the formula for the distance between the point \(A (x_{0}, y_{0})\) and the line of equation \(ax+by+c=0\), where \(a, \, b\), and \(c\) are the coefficients of the equation of the line.</p>
+<p>\[ \displaystyle \text{distance} = \frac{ \left| ax_{0} + by_{0} + c \right| }{ \sqrt{a^2 + b^2}}\]</p>
+<p>In this case, the equation of the line is \( \displaystyle {@equation_line@}\), so \(a = {@a@}, \, b = {@b@}, \) and \(c = {@c@}\). </p>
+<p>The point \((0, 0)\) is the origin.</p>
+<p>Substituting these values into the formula, we get:</p>
+<p>\( \displaystyle \text{distance} = \frac{ \left| {@a@}(0){@b@}(0) {@c@} \right| }{ \sqrt{{@a@}^2 +( {@b@})^2}}\),</p>
+<p>\( \displaystyle \text{distance} ={@distance@}\) units.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*coefficients of the equation of the line*/
+a:rand(10)+5;
+b:-1*(rand_with_prohib(2,10,[a]));
+c:-1*(rand_with_prohib(2,10,[a,b]));
+equation_line:a*x+b*y+c=0;
+distance:abs(c)/sqrt(a^2+b^2);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p> Line: \( \displaystyle {@equation_line@}\)</p>
+<p> Distance from the origin: \({@distance @}\) </p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>distance</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*possible mistakes*/
+/*node 1 checks for the correct answer*/
+/*node 2 mistake :  Forgetting to take the absolute value of the numerator*/
+incorrect_d1:(c)/sqrt(a^2+b^2);
+/*Node 3 Forgetting to square the value of \(a\) and the value of \(b\) in the denominator*/
+incorrect_d2:abs(c)/sqrt(a+b);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>distance</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>incorrect_d1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your solution is negative. Recall that distance can never be negative.</p>
+<p>In the distance formula, it's crucial to take the absolute value of the expression \(a(x) + a(y) + c\). This ensures that the distance is always positive.
+</p>]]></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>incorrect_d2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You forgot to square the value of \(a\) and the value of \(b\) in the denominator. Here you should use the distance formula: </p>
+<p>\( \displaystyle \text{distance} = \frac{ \left| ax_{0} + by_{0} + c_{0} \right| }{ \sqrt{(a^2 + b^2)}}\).</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>561482584</deployedseed>
+    <deployedseed>536913639</deployedseed>
+    <deployedseed>1774351424</deployedseed>
+    <deployedseed>796628560</deployedseed>
+    <deployedseed>327530133</deployedseed>
+    <deployedseed>1067443107</deployedseed>
+    <deployedseed>1648136736</deployedseed>
+    <deployedseed>1485848484</deployedseed>
+    <deployedseed>283604989</deployedseed>
+    <deployedseed>1689971698</deployedseed>
+    <deployedseed>741251990</deployedseed>
+    <deployedseed>2045554173</deployedseed>
+    <deployedseed>1652319968</deployedseed>
+    <deployedseed>1624827696</deployedseed>
+    <deployedseed>143159912</deployedseed>
+    <deployedseed>841539840</deployedseed>
+    <deployedseed>1854631923</deployedseed>
+    <deployedseed>1309284556</deployedseed>
+    <deployedseed>545343989</deployedseed>
+    <deployedseed>1450046303</deployedseed>
+    <deployedseed>1966860567</deployedseed>
+    <deployedseed>744718099</deployedseed>
+    <deployedseed>192097391</deployedseed>
+    <deployedseed>829435895</deployedseed>
+    <deployedseed>457989560</deployedseed>
+    <deployedseed>106696633</deployedseed>
+    <deployedseed>1308255246</deployedseed>
+    <deployedseed>106660313</deployedseed>
+    <deployedseed>1902122135</deployedseed>
+    <deployedseed>1679925843</deployedseed>
+    <deployedseed>740233859</deployedseed>
+    <deployedseed>1955498825</deployedseed>
+    <deployedseed>2054497477</deployedseed>
+    <deployedseed>1633157611</deployedseed>
+    <deployedseed>989929816</deployedseed>
+    <deployedseed>1319450314</deployedseed>
+    <deployedseed>1644370700</deployedseed>
+    <deployedseed>427786286</deployedseed>
+    <deployedseed>728543478</deployedseed>
+    <deployedseed>542207779</deployedseed>
+    <deployedseed>103997059</deployedseed>
+    <deployedseed>1193187931</deployedseed>
+    <deployedseed>1282285963</deployedseed>
+    <deployedseed>1280132914</deployedseed>
+    <deployedseed>328570664</deployedseed>
+    <deployedseed>123074439</deployedseed>
+    <deployedseed>122818542</deployedseed>
+    <deployedseed>1425647772</deployedseed>
+    <deployedseed>332084427</deployedseed>
+    <deployedseed>554053957</deployedseed>
+    <deployedseed>1599962739</deployedseed>
+    <deployedseed>1936680016</deployedseed>
+    <deployedseed>322260001</deployedseed>
+    <deployedseed>1626040365</deployedseed>
+    <deployedseed>1361264429</deployedseed>
+    <deployedseed>1116958228</deployedseed>
+    <deployedseed>512338205</deployedseed>
+    <deployedseed>1357216655</deployedseed>
+    <deployedseed>1928152081</deployedseed>
+    <deployedseed>777698969</deployedseed>
+    <deployedseed>1580660185</deployedseed>
+    <deployedseed>852405063</deployedseed>
+    <deployedseed>1443978710</deployedseed>
+    <deployedseed>976762732</deployedseed>
+    <deployedseed>1476316480</deployedseed>
+    <deployedseed>462184049</deployedseed>
+    <deployedseed>46429547</deployedseed>
+    <deployedseed>599992308</deployedseed>
+    <deployedseed>859799428</deployedseed>
+    <deployedseed>125167232</deployedseed>
+    <deployedseed>1412349613</deployedseed>
+    <deployedseed>33221385</deployedseed>
+    <deployedseed>727751437</deployedseed>
+    <deployedseed>1559451385</deployedseed>
+    <deployedseed>1619395093</deployedseed>
+    <deployedseed>1210023398</deployedseed>
+    <deployedseed>1265383531</deployedseed>
+    <deployedseed>1288778275</deployedseed>
+    <deployedseed>51071268</deployedseed>
+    <deployedseed>1655203905</deployedseed>
+    <deployedseed>251172924</deployedseed>
+    <deployedseed>828323403</deployedseed>
+    <deployedseed>429142999</deployedseed>
+    <deployedseed>1945824444</deployedseed>
+    <deployedseed>978855738</deployedseed>
+    <deployedseed>25273881</deployedseed>
+    <deployedseed>386819404</deployedseed>
+    <deployedseed>166170076</deployedseed>
+    <deployedseed>249639253</deployedseed>
+    <deployedseed>1492123163</deployedseed>
+    <deployedseed>1936421721</deployedseed>
+    <deployedseed>1670477907</deployedseed>
+    <deployedseed>2110449893</deployedseed>
+    <deployedseed>1051853379</deployedseed>
+    <deployedseed>1197159647</deployedseed>
+    <deployedseed>1477690655</deployedseed>
+    <deployedseed>1762505888</deployedseed>
+    <deployedseed>1999779451</deployedseed>
+    <deployedseed>1580482774</deployedseed>
+    <deployedseed>1360596404</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>distance</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>incorrect_d1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>incorrect_d2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-3-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

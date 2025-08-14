@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Coordinate Rotation: Converting Points between Two Coordinate Systems</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Suppose the xy-coordinate axes are rotated \( {@Angle_of_rot@} ^ { \circ } \) counterclockwise about the origin to obtain the new \(x^{ \prime } y^{ \prime } \)-coordinate system. If the following points are with respect to the new \(x^{ \prime } y^{ \prime } \)- system, what is the coordinates of each point with respect to the old \(x\,y\)-system?</p>
+<p>(a) \( ({@x_a@}, {@y_a@}) \) </p>  
+<p> [[input:ans1]] [[validation:ans1]][[feedback:prt1]]</p>
+<p>(b) \( ({@x_b@}, {@y_b@}) \) </p> 
+<p>[[input:ans2]] [[validation:ans2]][[feedback:prt2]]</p>
+<p>(c) \( ({@x_c@},{@y_c@}) \) </p>  
+<p>[[input:ans3]] [[validation:ans3]][[feedback:prt3]]</p>
+<p>(d) \( ({@x_d@} ,{@y_d @}) \) </p> 
+<p>[[input:ans4]] [[validation:ans4]][[feedback:prt4]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3>Worked Solution</h3>
+<p>To convert coordinates from the rotated system \( (x^{ \prime}, y ^{ \prime } ) \) back to the original system \( (x, y) \), we need to perform a clockwise rotation by the same angle. In this case, the angle of rotation is \( {@Angle_of_rot@} \) degrees counterclockwise, so we'll perform a clockwise rotation of \( {@Angle_of_rot@} \) degrees to get back to the original system.</p>
+<p>The formula to rotate a point \( (x, y) \) by an angle \( \theta \) counterclockwise is:</p>
+<p>\( x^{ \prime}= x \, \cos(\theta) - y \, \sin(\theta) \)</p>
+<p>\( y^{ \prime} = x \, \sin(\theta) + y \, \cos(\theta) \)</p>
+<p>Since we want to go from \( (x^{ \prime}, y^{ \prime} ) \) to \( (x, y) \), we'll substitute \( -\theta \) (clockwise rotation) and use the same trigonometric functions:</p>
+<p>\( x = x^{ \prime} \, \cos(-\theta) - y^{ \prime} \, \sin(-\theta) \)</p>
+<p>\( y = x^{ \prime} \, \sin(-\theta) + y^{ \prime} \, \cos(-\theta) \)</p>
+<p>Given \( \theta = {@Angle_of_rot@} \) degrees, or \( {@Angle_in_pi@} \) radians, the trigonometric values are:</p>
+<p>\( \cos({@Angle_in_pi@}) = {@a1@} \)</p>
+<p>\( \sin({@Angle_in_pi@})  = {@a2@} \)</p>
+<p>\( \cos(-{@Angle_in_pi@})= {@a3@} \)</p>
+<p>\( \sin(-{@Angle_in_pi@}) = {@a4@} \)</p>
+<p>Let's apply this to each given point:</p>
+<p>(a) \( ({@x_a@}, {@y_a@}) \) :</p>
+<p>\( x = {@x_a@} \cdot ({@a3@}) - ({@y_a@}) \cdot ({@a4@}) = {@ta1[1]@} \)</p>
+<p>\( y = {@x_a@} \cdot ({@a4@}) + ({@y_a@}) \cdot ({@a3@}) = {@ta1[2]@} \)</p>
+<p>So, the coordinates of this point with respect to the old xy-system is</p>
+<p>\( ({@ta1[1]@} ,{@ta1[2]@}) \)</p>
+<br>
+<p>(b) \( ({@x_b@}, {@y_b@}) \) :</p>
+<p>\( x = {@x_b@} \cdot ({@a3@}) - ({@y_b@}) \cdot ({@a4@}) = {@ta2[1]@} \)</p>
+<p>\( y = {@x_b@} \cdot ({@a4@}) + ({@y_b@}) \cdot ({@a3@}) = {@ta2[2]@} \)</p>
+<p>So, the coordinates of this point with respect to the old xy-system is</p>
+<p>\( ({@ta2[1]@}, {@ta2[2]@}) \)</p>
+<br>
+<p>(c) \( ({@x_c@},{@y_c@}) \) :</p>
+<p>\( x = {@x_c@} \cdot ({@a3@}) - ({@y_c@}) \cdot ({@a4@}) = {@ta3[1]@} \)</p>
+<p>\( y = {@x_c@} \cdot ({@a4@}) + ({@y_c@}) \cdot ({@a3@}) = {@ta3[2]@} \)</p>
+<p>So, the coordinates of this point with respect to the old xy-system is</p>
+<p> \( ({@ta3[1]@}, {@ta3[2]@}) \)</p>
+<br>
+<p>(d) \( ({@x_d@} ,{@y_d @}) \) :</p>
+<p>\( x = {@x_d@} \cdot ({@a3@}) - ({@y_d@}) \cdot ({@a4@}) = {@ta4[1]@} \)</p>
+<p>\( y = {@x_d@} \cdot ({@a4@}) + ({@y_d@}) \cdot ({@a3@}) = {@ta4[2]@} \)</p>
+<p>So, the coordinates of this point with respect to the old xy-system is</p>
+<p>\( ({@ta4[1]@}, {@ta4[2]@})\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[Angle_of_rot:rand([30,45,60,90,180,270,360]);
+Angle_in_pi:if Angle_of_rot=30 then pi/6 else if Angle_of_rot=45 then pi/4 else if Angle_of_rot=60 then pi/3 else if Angle_of_rot=90 then pi/2 else if Angle_of_rot=180 then pi else if Angle_of_rot=270 then (3*pi)/2 else 2*pi;
+x1:rand_with_step(-16,16,1);
+x_a:if x1>0 then sqrt(x1) else if x1<0 then -sqrt(abs(x1)) else 0;
+y1:rand_with_step(-16,16,1);
+y_a:if y1>0 then sqrt(y1) else if y1<0 then -sqrt(abs(y1)) else 0;
+x2:rand_with_step(-16,16,1);
+x_b:if x2>0 then sqrt(x2) else if x2<0 then -sqrt(abs(x2)) else 0;
+y2:rand_with_step(-16,16,1);
+y_b:if y2>0 then sqrt(y2) else if y2<0 then -sqrt(abs(y2)) else 0;
+x3:rand_with_step(-16,16,1);
+x_c:if x3>0 then sqrt(x3) else if x3<0 then -sqrt(abs(x3)) else 0;
+y3:rand_with_step(-16,16,1);
+y_c:if y3>0 then sqrt(y3) else if y3<0 then -sqrt(abs(y3)) else 0;
+x4:rand_with_step(-16,16,1);
+x_d:if x4>0 then sqrt(x4) else if x4<0 then -sqrt(abs(x4)) else 0;
+y4:rand_with_step(-16,16,1);
+y_d:if y4>0 then sqrt(y4) else if y4<0 then -sqrt(abs(y4)) else 0;
+a1:if Angle_of_rot=30 then cos(pi/6) else if Angle_of_rot=45 then cos(pi/4) else if Angle_of_rot=60 then cos(pi/3) else if Angle_of_rot=90 then cos(pi/2) else if Angle_of_rot=180 then cos(pi) else if Angle_of_rot=270 then cos((3*pi)/2) else cos(2*pi);
+a2:if Angle_of_rot=30 then sin(pi/6) else if Angle_of_rot=45 then sin(pi/4) else if Angle_of_rot=60 then sin(pi/3) else if Angle_of_rot=90 then sin(pi/2) else if Angle_of_rot=180 then sin(pi) else if Angle_of_rot=270 then sin((3*pi)/2) else sin(2*pi);
+a3:if Angle_of_rot=30 then cos(-pi/6) else if Angle_of_rot=45 then cos(-pi/4) else if Angle_of_rot=60 then cos(-pi/3) else if Angle_of_rot=90 then cos(-pi/2) else if Angle_of_rot=180 then cos(-pi) else if Angle_of_rot=270 then cos((-3*pi)/2) else cos(-2*pi);
+a4:if Angle_of_rot=30 then sin(-pi/6) else if Angle_of_rot=45 then sin(-pi/4) else if Angle_of_rot=60 then sin(-pi/3) else if Angle_of_rot=90 then sin(-pi/2) else if Angle_of_rot=180 then sin(-pi) else if Angle_of_rot=270 then sin((-3*pi)/2) else sin(-2*pi);
+x_1:ratsimp(x_a*a3-y_a*a4);
+y_1:ratsimp(x_a*a4+y_a*a3);
+x_2:ratsimp(x_b*a3-y_b*a4);
+y_2:ratsimp(x_b*a4+y_b*a3);
+x_3:ratsimp(x_c*a3-y_c*a4);
+y_3:ratsimp(x_c*a4+y_c*a3);
+x_4:ratsimp(x_d*a3-y_d*a4);
+y_4:ratsimp(x_d*a4+y_d*a3);
+ta1:[x_1,y_1];
+ta2:[x_2,y_2];
+ta3:[x_3,y_3];
+ta4:[x_4,y_4];]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>The xy-coordinate axes are rotated \({@Angle_of_rot@} ^ { \circ } \) counterclockwise</p>
+<p>The coordinates of each point with respect to the old \(x\,y\)-system are </p>
+<p>(a) \( ({@x_a@}, {@y_a@}) \) </p>  
+<p> \({@ta1@}\)</p>
+<p>(b) \( ({@x_b@}, {@y_b@}) \) </p> 
+<p> \({@ta2@}\)</p>
+<p>(c) \( ({@x_c@},{@y_c@}) \) </p>  
+<p> \({@ta3@}\)</p>
+<p>(d) \( ({@x_d@} ,{@y_d @}) \) </p> 
+<p> \({@ta4@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>11</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>[ ? , ? ]</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>11</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>[ ? , ? ]</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>11</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>[ ? , ? ]</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>ta4</tans>
+      <boxsize>11</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>[ ? , ? ]</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>ta4</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1239644147</deployedseed>
+    <deployedseed>1723243708</deployedseed>
+    <deployedseed>1582843077</deployedseed>
+    <deployedseed>2066362853</deployedseed>
+    <deployedseed>544283497</deployedseed>
+    <deployedseed>892048919</deployedseed>
+    <deployedseed>1183236334</deployedseed>
+    <deployedseed>615639366</deployedseed>
+    <deployedseed>237504538</deployedseed>
+    <deployedseed>1367367761</deployedseed>
+    <deployedseed>52998219</deployedseed>
+    <deployedseed>1122518633</deployedseed>
+    <deployedseed>311028004</deployedseed>
+    <deployedseed>1863642908</deployedseed>
+    <deployedseed>1535618099</deployedseed>
+    <deployedseed>1273061741</deployedseed>
+    <deployedseed>107824067</deployedseed>
+    <deployedseed>172245327</deployedseed>
+    <deployedseed>2131636663</deployedseed>
+    <deployedseed>1309591967</deployedseed>
+    <deployedseed>1542889583</deployedseed>
+    <deployedseed>1602496036</deployedseed>
+    <deployedseed>1600377535</deployedseed>
+    <deployedseed>212133145</deployedseed>
+    <deployedseed>1154405457</deployedseed>
+    <deployedseed>358737233</deployedseed>
+    <deployedseed>224616007</deployedseed>
+    <deployedseed>464052296</deployedseed>
+    <deployedseed>633119281</deployedseed>
+    <deployedseed>1055390600</deployedseed>
+    <deployedseed>960702771</deployedseed>
+    <deployedseed>124514609</deployedseed>
+    <deployedseed>1923678350</deployedseed>
+    <deployedseed>496720703</deployedseed>
+    <deployedseed>1108556377</deployedseed>
+    <deployedseed>170922520</deployedseed>
+    <deployedseed>1109939507</deployedseed>
+    <deployedseed>756863020</deployedseed>
+    <deployedseed>1870781290</deployedseed>
+    <deployedseed>1373319705</deployedseed>
+    <deployedseed>1871050133</deployedseed>
+    <deployedseed>1292270239</deployedseed>
+    <deployedseed>1270572520</deployedseed>
+    <deployedseed>1520400504</deployedseed>
+    <deployedseed>1121368838</deployedseed>
+    <deployedseed>1157358619</deployedseed>
+    <deployedseed>1508947933</deployedseed>
+    <deployedseed>514582805</deployedseed>
+    <deployedseed>2097335127</deployedseed>
+    <deployedseed>1965802117</deployedseed>
+    <deployedseed>323270835</deployedseed>
+    <deployedseed>1461682130</deployedseed>
+    <deployedseed>1016679471</deployedseed>
+    <deployedseed>942660523</deployedseed>
+    <deployedseed>629155797</deployedseed>
+    <deployedseed>2108668545</deployedseed>
+    <deployedseed>165273038</deployedseed>
+    <deployedseed>155041745</deployedseed>
+    <deployedseed>1981881203</deployedseed>
+    <deployedseed>1117443875</deployedseed>
+    <deployedseed>976993341</deployedseed>
+    <deployedseed>306691739</deployedseed>
+    <deployedseed>869420925</deployedseed>
+    <deployedseed>928345780</deployedseed>
+    <deployedseed>1874752534</deployedseed>
+    <deployedseed>1426074616</deployedseed>
+    <deployedseed>325469291</deployedseed>
+    <deployedseed>17371264</deployedseed>
+    <deployedseed>1710669745</deployedseed>
+    <deployedseed>600595953</deployedseed>
+    <deployedseed>1403113428</deployedseed>
+    <deployedseed>116298267</deployedseed>
+    <deployedseed>1330475751</deployedseed>
+    <deployedseed>2093885167</deployedseed>
+    <deployedseed>1808411809</deployedseed>
+    <deployedseed>522261757</deployedseed>
+    <deployedseed>1262151807</deployedseed>
+    <deployedseed>77488630</deployedseed>
+    <deployedseed>629525820</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>
