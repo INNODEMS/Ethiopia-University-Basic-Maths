@@ -10,13 +10,112 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
+  "id": "preface",
+  "level": "1",
+  "url": "preface.html",
+  "type": "Preface",
+  "number": "",
+  "title": "Preface",
+  "body": "  Typing answers in interactive questions  This book contains interactive STACK questions. When you enter your answers in response to a question, you will have to adhere to certain syntax. In the following, we show the most common examples.  In STACK you often need to enter an answer which is an algebraic expression. You should type in your answers using the same syntax as that used in the symbolic mathematics package Maxima.  The syntax is broadly similar to the syntax used for mathematical formulae in graphical calculators, general programming languages such as Maple, Java, C and Basic and in spreadsheet programs, so you will find it useful to master it.    Basic operations  Add review    Use a star for multiplication. For example, should be entered as 3*x .  Use a caret (^) for raising something to a power: for example, should be entered as x^2  should be entered as x^(-2)  should be entered as x^(1\/3)  Brackets are important to group terms in an expression.    Add review  Add review  Add review  Add review  Add review   Add review    Other input types  Add review   Add review  Add review    "
+},
+{
+  "id": "preface-2-2",
+  "level": "2",
+  "url": "preface.html#preface-2-2",
+  "type": "Checkpoint",
+  "number": "0.0.1",
+  "title": "",
+  "body": "Add review "
+},
+{
+  "id": "preface-2-4",
+  "level": "2",
+  "url": "preface.html#preface-2-4",
+  "type": "Checkpoint",
+  "number": "0.0.2",
+  "title": "",
+  "body": "Add review "
+},
+{
+  "id": "preface-2-5",
+  "level": "2",
+  "url": "preface.html#preface-2-5",
+  "type": "Checkpoint",
+  "number": "0.0.3",
+  "title": "",
+  "body": "Add review "
+},
+{
+  "id": "preface-2-6",
+  "level": "2",
+  "url": "preface.html#preface-2-6",
+  "type": "Checkpoint",
+  "number": "0.0.4",
+  "title": "",
+  "body": "Add review "
+},
+{
+  "id": "preface-2-7",
+  "level": "2",
+  "url": "preface.html#preface-2-7",
+  "type": "Checkpoint",
+  "number": "0.0.5",
+  "title": "",
+  "body": "Add review "
+},
+{
+  "id": "preface-2-8",
+  "level": "2",
+  "url": "preface.html#preface-2-8",
+  "type": "Checkpoint",
+  "number": "0.0.6",
+  "title": "",
+  "body": "Add review "
+},
+{
+  "id": "preface-2-9",
+  "level": "2",
+  "url": "preface.html#preface-2-9",
+  "type": "Checkpoint",
+  "number": "0.0.7",
+  "title": "",
+  "body": "Add review "
+},
+{
+  "id": "preface-3-2",
+  "level": "2",
+  "url": "preface.html#preface-3-2",
+  "type": "Checkpoint",
+  "number": "0.0.8",
+  "title": "",
+  "body": "Add review "
+},
+{
+  "id": "preface-3-3",
+  "level": "2",
+  "url": "preface.html#preface-3-3",
+  "type": "Checkpoint",
+  "number": "0.0.9",
+  "title": "",
+  "body": "Add review "
+},
+{
+  "id": "preface-3-4",
+  "level": "2",
+  "url": "preface.html#preface-3-4",
+  "type": "Checkpoint",
+  "number": "0.0.10",
+  "title": "",
+  "body": "Add review "
+},
+{
   "id": "propositional-logic",
   "level": "1",
   "url": "propositional-logic.html",
   "type": "Section",
   "number": "1.1",
   "title": "Propositional Logic",
-  "body": " Propositional Logic   Mathematical or symbolic logic is an analytical theory of the art of reasoning whose goal is to systematize and codify principles of valid reasoning. It has emerged from a study of the use of language in argument and persuasion and is based on the identification and examination of those parts of language which are essential for these purposes. It is formal in the sense that it lacks reference to meaning. Thereby it achieves versatility: it may be used to judge the correctness of a chain of reasoning (in particular, a \"mathematical proof\") solely on the basis of the form (and not the content) of the sequence of statements which make up the chain. There is a variety of symbolic logics. We shall be concerned only with that one which encompasses most of the deductions of the sort encountered in mathematics. Within the context of logic itself, this is \"classical\" symbolic logic.   Section objectives:   After completing this section, students will be able to:-     Identify the difference between proposition and sentence.    Describe the five logical connectives.    Determine the truth values of propositions using the rules of logical connectives.    Construct compound propositions using the five logical connectives.    Identify the difference between the converse and contrapositive of conditional statements.    Determine the truth values of compound propositions.    Distinguish a given compound proposition is whether tautology or contradiction.       Definition and examples of propositions  Consider the following sentences.     2 is an even number.    A triangle has four sides.    Athlete Haile G\/silassie weighed 45 kg when he was 20 years old.    May God bless you!    Give me that book.    What is your name?     The first three sentences are declarative sentences. The first one is true and the second one is false. The truth value of the third sentence cannot be ascertained because of lack of historical records but it is, by its very form, either true or false but not both. On the other hand, the last three sentences have no truth value. So they are not declaratives.  Now we begin by examining proposition, the building blocks of every argument. A proposition is a sentence that may be asserted or denied. Proposition in this way are different from questions, commands, and exclamations. Neither questions, which can be asked, nor exclamations, which can be uttered, can possibly be asserted or denied. Only propositions assert that something is (or is not) the case, and therefore only they can be true or false.    A proposition (or statement) is a sentence which has a truth value (either True or False but not both).    The above definition does not mean that we must always know what the truth value is. For example, the sentence “The digit in the decimal expansion of is 7” is a proposition, but it may be necessary to find this information in a Web site on the Internet to determine whether this statement is true. Indeed, for a sentence to be a proposition (or a statement), it is not a requirement that we are able to determine its truth value.  Every proposition has a truth value, namely true (denoted by T ) or false (denoted by F ).   Add review   Add review   Add review   Add review    Logical connectives  In mathematical discourse and elsewhere one constantly encounters declarative sentences which have been formed by modifying a statement with the word “not” or by connecting statements with the words “and”, “or”, “if . . . then (or implies)”, and “if and only if”. These five words or combinations of words are called propositional connectives.   Letters such as etc. are usually used to denote propositions.    Conjunction  When two propositions are joined with the connective “ and ,” the proposition formed is a logical conjunction . “and” is denoted by . So, the logical conjunction of two propositions, and , is written:      p and q are called the components of the conjunction . is true if and only if is true and is true.   The truth table for conjunction is given as follows:                                Consider the following propositions:   : 3 is an odd number. (True)   : 27 is a prime number. (False)   : Addis Ababa is the capital city of Ethiopia. (True)      : 3 is an odd number and 27 is a prime number. (False)     : 3 is an odd number and Addis Ababa is the capital city of Ethiopia. (True)        Disjunction  When two propositions are joined with the connective “ or ,” the proposition formed is called a logical disjunction . “or” is denoted by “ ”. So, the logical disjunction of two propositions, and , is written:   , read as “ or ” or “ disjunction ”.   is false if and only if both and are false.   The truth table for disjunction is given as follows:                                Consider the following propositions:   : 3 is an odd number. (True)   : 27 is a prime number. (False)   : Nairobi is the capital city of Ethiopia. (False)     : 3 is an odd number or 27 is a prime number. (True)    : 3 is an odd number or Nairobi is the capital city of Ethiopia. (False)        The use of “ or ” in propositional logic is rather different from its normal use in the English language. For example, if Solomon says, “I will go to the football match in the afternoon or I will go to the cinema in the afternoon,” he means he will do one thing or the other, but not both. Here “or” is used in the exclusive sense. But in propositional logic, “or” is used in the inclusive sense; that is, we allow Solomon the possibility of doing both things without him being inconsistent.    Implication  When two propositions are joined with the connective “ implies ,” the proposition formed is called a logical implication . “implies” is denoted by “ ” So, the logical implication of two propositions, and , is written:   .  The function of the connective “implies” between two propositions is the same as the use of “If … then …” Thus can be read as “if , then .”   is false if and only if is true and is false.   This form of a proposition is common in mathematics. The proposition is called the hypothesis or the antecedent of the conditional proposition while is called its conclusion or the consequent.  The following is the truth table for implication.                                Consider the following propositions:   : 3 is an odd number. (True)   : 27 is a prime number. (False)   : Addis Ababa is the capital city of Ethiopia. (True)     : If 3 is an odd number, then 27 is a prime number. (False)    : If 3 is an odd number, then Addis Ababa is the capital city of Ethiopia. (True)     We have already mentioned that can be expressed as both “If , then ” and “ implies . ” There are various ways of expressing the proposition , namely:   .   .   .   .   .   .     Bi-Implication  When two propositions are joined with the connective “ bi-implication ,” the proposition formed is called a logical  bi-implication or a logical equivalence . A bi-implication is denoted by “ ”. So the logical bi-implication of two propositions, and , is written:   .   is false if and only if and have different truth values.   The truth table for bi-implication is given by:                                   Let   : 2 is greater than 3. (False)  Let : 5 is greater than 4. (True)  Then   : 2 is greater than 3 if and only if 5 is greater than 4. (False)    Consider the following propositions:   : 3 is an odd number. (True)   : 2 is a prime number. (True)   : 3 is an odd number if and only if 2 is a prime number. (True)     There are various ways of stating the proposition .   if and only if (also written as iff ),   implies and implies ,   is necessary and sufficient for    is necessary and sufficient for    is equivalent to      Negation  Given any proposition , we can form the proposition called the negation of . The truth value of is if is and if is .   We can describe the relation between and as follows.                   Let   : Addis Ababa is the capital city of Ethiopia. (True)   : Addis Ababa is not the capital city of Ethiopia. (False)     Exercises       Which of the following sentences are propositions? For those that are, indicate the truth value.   123 is a prime number.    0 is an even number.     .    Multiply by 3.    What an impossible question!            State the negation of each of the following statements.    is a rational number.    0 is not a negative integer.    111 is a prime number.         Let : 15 is an odd number.   : 21 is a prime number.  State each of the following in words, and determine the truth value of each.    .     .     .     .     .     .     .     .         Complete the following truth table.                                       Add review   Add review   Add review    Compound (or complex) propositions  So far, what we have done is simply to define the logical connectives, and express them through algebraic symbols. Now we shall learn how to form propositions involving more than one connective, and how to determine the truth values of such propositions.    The proposition formed by joining two or more proposition by connective(s) is called a compound statement.     We must be careful to insert the brackets in proper places, just as we do in arithmetic. For example, the expression will be meaningless unless we know which connective should apply first. It could mean or , which are very different propositions. The truth value of such complicated propositions is determined by systematic applications of the rules for the connectives.       The possible truth values of a proposition are often listed in a table, called a truth table . If and are propositions, then there are four possible combinations of truth values for and . That is, , , and . If a third proposition is involved, then there are eight possible combinations of truth values for , and . In general, a truth table involving “ ” propositions , ,…, contains possible combinations of truth values. So, we use truth tables to determine the truth value of a compound proposition based on the truth value of its constituent component propositions.          Suppose and are true and is false.  What is the truth value of ?   Since is true and is false, is true.    Since is true and is false, true.    Thus, by applying the rule of implication, we get that is true.       Suppose that a compound proposition is symbolized by and that the truth values of and are and , respectively. Then the truth value of is , that of is , that of is . So the truth value of is         When dealing with compound propositions, we shall adopt the following convention on the use of parenthesis. Whenever “ ” or “ ” occur with “ ” or “ ”, we shall assume that “ ” or “ ” is applied first, and then “ ” or “ ” is then applied. For example,    However, it is always advisable to use brackets to indicate the order of the desired operations.     Two compound propositions and are said to be equivalent if they have the same truth value for all possible combinations of truth values for the component propositions occurring in both and . In this case we write .      Let P : .   Q : .                                             Then, P is equivalent to Q , since columns 5 and 6 of the above table are identical.      Let P : .   Q : .                                                     Looking at columns 5 and 6 of the table we see that they are not identical. Thus . It is useful at this point to mention the non-equivalence of certain conditional propositions. Given the conditional , we give the related conditional propositions:-     As we observed from example 1.7, the conditional and its contrapositve are equivalent. On the other hand, and .     Do not confuse the contrapositive and the converse of the conditional proposition. Here is the difference:    Converse: The hypothesis of a converse statement is the conclusion of the conditional statement and the conclusion of the converse statement is the hypothesis of the conditional statement.   Contrapositive: The hypothesis of a contrapositive statement is the negation of conclusion of the conditional statement and the conclusion of the contrapositive statement is the negation of hypothesis of the conditional statement.       If Kidist lives in Ethiopia, then she lives in Addis Ababa.   Converse: If Kidist lives in Addis Ababa, then she lives in Ethiopia.   Contrapositive: If Kidist does not live in Ethiopia, then she does not live in Addis Ababa.   Inverse: If Kidist does not live in Addis Ababa, then she does not live in Ethiopia.    If it is morning, then the sun is in the east.   Converse: If the sun is in the east, then it is morning.   Contrapositive: If the sun is not in the east, then it is not morning.   Inverse: If it is not morning, then the sun is not in the east.       Propositions, under the relation of logical equivalence, satisfy various laws or identities, which are listed below.     Idempotent Laws    .     .       Commutative Laws    .     .       Associative Laws    .     .       Distributive Laws    .     .       De Morgan’s Laws    .     .       Law of Contrapositive     Complement Law .      Add review   Add review    Tautology and contradiction    A compound proposition is a tautology if it is always true regardless of the truth values of its component propositions. If, on the other hand, a compound proposition is always false regardless of its component propositions, we say that such a proposition is a contradiction .     A proposition that is neither a tautology nor a contradiction is called a contingency .        Suppose is any proposition. Consider the compound propositions and .                       Observe that is a tautology while is a contradiction.    For any propositions and . Consider the compound proposition . Let us make a truth table and study the situation.                                   We have exhibited all the possibilities and we see that for all truth values of the constituent propositions, the proposition is always true. Thus, is a tautology.    The truth table for the compound proposition .                                              In example 1.10(c), the given compound proposition has a truth value for every possible combination of assignments of truth values for the component propositions and . Thus is a contradiction.        In truth table, if a proposition is a tautology, then every line in its column has as its entry; if a proposition is a contradiction, every line in its column has as its entry.    Two compound propositions and are equivalent if and only if \" \" is a tautology.         For statements , , and , use a truth table to show that each of the following pairs of statements are logically equivalent.    and .     and .     and .     and .     and .         For statements , , and , show that the following compound statements are tautology.    .     .     .         For statements and , show that is a contradiction.      Write the contrapositive and the converse of the following conditional statements.   If it is cold, then the lake is frozen.    If Solomon is healthy, then he is happy.    If it rains, Tigist does not take a walk.         Let and be statements. Which of the following implies that is false?    is false.     is true.     is true.     is true.     is false.         Suppose that the statements and are assigned the truth values and , respectively. Find the truth value of each of the following statements.    .     .     .     .     .     .     .                             Suppose the value of is ; what can be said about the value of ?         Suppose the value of is ; what can be said about the value of  ?    Suppose the value of is ; what can be said about the value of and ?         Construct the truth table for each of the following statements.                                      For each of the following determine whether the information given is sufficient to decide the truth value of the statement. If the information is enough, state the truth value. If it is insufficient, show that both truth values are possible.    , where .     , where .     , where .     , where .     , where .     , where and .         Add review   Add review   "
+  "body": " Propositional Logic   Mathematical or symbolic logic is an analytical theory of the art of reasoning whose goal is to systematize and codify principles of valid reasoning. It has emerged from a study of the use of language in argument and persuasion and is based on the identification and examination of those parts of language which are essential for these purposes. It is formal in the sense that it lacks reference to meaning. Thereby it achieves versatility: it may be used to judge the correctness of a chain of reasoning (in particular, a \"mathematical proof\") solely on the basis of the form (and not the content) of the sequence of statements which make up the chain. There is a variety of symbolic logics. We shall be concerned only with that one which encompasses most of the deductions of the sort encountered in mathematics. Within the context of logic itself, this is \"classical\" symbolic logic.   Section objectives:   After completing this section, students will be able to:-     Identify the difference between proposition and sentence.    Describe the five logical connectives.    Determine the truth values of propositions using the rules of logical connectives.    Construct compound propositions using the five logical connectives.    Identify the difference between the converse and contrapositive of conditional statements.    Determine the truth values of compound propositions.    Distinguish a given compound proposition is whether tautology or contradiction.       Definition and examples of propositions  Consider the following sentences.     2 is an even number.    A triangle has four sides.    Athlete Haile G\/silassie weighed 45 kg when he was 20 years old.    May God bless you!    Give me that book.    What is your name?     The first three sentences are declarative sentences. The first one is true and the second one is false. The truth value of the third sentence cannot be ascertained because of lack of historical records but it is, by its very form, either true or false but not both. On the other hand, the last three sentences have no truth value. So they are not declaratives.  Now we begin by examining proposition, the building blocks of every argument. A proposition is a sentence that may be asserted or denied. Proposition in this way are different from questions, commands, and exclamations. Neither questions, which can be asked, nor exclamations, which can be uttered, can possibly be asserted or denied. Only propositions assert that something is (or is not) the case, and therefore only they can be true or false.    A proposition (or statement) is a sentence which has a truth value (either True or False but not both).    The above definition does not mean that we must always know what the truth value is. For example, the sentence “The digit in the decimal expansion of is 7” is a proposition, but it may be necessary to find this information in a Web site on the Internet to determine whether this statement is true. Indeed, for a sentence to be a proposition (or a statement), it is not a requirement that we are able to determine its truth value.  Every proposition has a truth value, namely true (denoted by T ) or false (denoted by F ).   Add review   Add review   Add review   Add review    Logical connectives  In mathematical discourse and elsewhere one constantly encounters declarative sentences which have been formed by modifying a statement with the word “not” or by connecting statements with the words “and”, “or”, “if . . . then (or implies)”, and “if and only if”. These five words or combinations of words are called propositional connectives.   Letters such as etc. are usually used to denote propositions.    Conjunction  When two propositions are joined with the connective “ and ,” the proposition formed is a logical conjunction . “and” is denoted by . So, the logical conjunction of two propositions, and , is written:      p and q are called the components of the conjunction . is true if and only if is true and is true.   The truth table for conjunction is given as follows:                                Consider the following propositions:   : 3 is an odd number. (True)   : 27 is a prime number. (False)   : Addis Ababa is the capital city of Ethiopia. (True)      : 3 is an odd number and 27 is a prime number. (False)     : 3 is an odd number and Addis Ababa is the capital city of Ethiopia. (True)        Disjunction  When two propositions are joined with the connective “ or ,” the proposition formed is called a logical disjunction . “or” is denoted by “ ”. So, the logical disjunction of two propositions, and , is written:   , read as “ or ” or “ disjunction ”.   is false if and only if both and are false.   The truth table for disjunction is given as follows:                                Consider the following propositions:   : 3 is an odd number. (True)   : 27 is a prime number. (False)   : Nairobi is the capital city of Ethiopia. (False)     : 3 is an odd number or 27 is a prime number. (True)    : 27 is an odd number or Nairobi is the capital city of Ethiopia. (False)        The use of “ or ” in propositional logic is rather different from its normal use in the English language. For example, if Solomon says, “I will go to the football match in the afternoon or I will go to the cinema in the afternoon,” he means he will do one thing or the other, but not both. Here “or” is used in the exclusive sense. But in propositional logic, “or” is used in the inclusive sense; that is, we allow Solomon the possibility of doing both things without him being inconsistent.    Implication  When two propositions are joined with the connective “ implies ,” the proposition formed is called a logical implication . “implies” is denoted by “ ” So, the logical implication of two propositions, and , is written:   .  The function of the connective “implies” between two propositions is the same as the use of “If … then …” Thus can be read as “if , then .”   is false if and only if is true and is false.   This form of a proposition is common in mathematics. The proposition is called the hypothesis or the antecedent of the conditional proposition while is called its conclusion or the consequent.  The following is the truth table for implication.                                Consider the following propositions:   : 3 is an odd number. (True)   : 27 is a prime number. (False)   : Addis Ababa is the capital city of Ethiopia. (True)     : If 3 is an odd number, then 27 is a prime number. (False)    : If 3 is an odd number, then Addis Ababa is the capital city of Ethiopia. (True)     We have already mentioned that can be expressed as both “If , then ” and “ implies . ” There are various ways of expressing the proposition , namely:   .   .   .   .   .   .     Bi-Implication  When two propositions are joined with the connective “ bi-implication ,” the proposition formed is called a logical  bi-implication or a logical equivalence . A bi-implication is denoted by “ ”. So the logical bi-implication of two propositions, and , is written:   .   is false if and only if and have different truth values.   The truth table for bi-implication is given by:                                   Let   : 2 is greater than 3. (False)  Let : 5 is greater than 4. (True)  Then   : 2 is greater than 3 if and only if 5 is greater than 4. (False)    Consider the following propositions:   : 3 is an odd number. (True)   : 2 is a prime number. (True)   : 3 is an odd number if and only if 2 is a prime number. (True)     There are various ways of stating the proposition .   if and only if (also written as iff ),   implies and implies ,   is necessary and sufficient for    is necessary and sufficient for    is equivalent to      Negation  Given any proposition , we can form the proposition called the negation of . The truth value of is if is and if is .   We can describe the relation between and as follows.                   Let   : Addis Ababa is the capital city of Ethiopia. (True)   : Addis Ababa is not the capital city of Ethiopia. (False)     Exercises    Which of the following sentences are propositions? For those that are, indicate the truth value.   123 is a prime number.    0 is an even number.     .    Multiply by 3.    What an impossible question!         State the negation of each of the following statements.    is a rational number.    0 is not a negative integer.    111 is a prime number.         Let : 15 is an odd number.   : 21 is a prime number.  State each of the following in words, and determine the truth value of each.    .     .     .     .     .     .     .     .         Complete the following truth table.                                       Add review   Add review   Add review    Compound (or complex) propositions  So far, what we have done is simply to define the logical connectives, and express them through algebraic symbols. Now we shall learn how to form propositions involving more than one connective, and how to determine the truth values of such propositions.    The proposition formed by joining two or more proposition by connective(s) is called a compound statement.     We must be careful to insert the brackets in proper places, just as we do in arithmetic. For example, the expression will be meaningless unless we know which connective should apply first. It could mean or , which are very different propositions. The truth value of such complicated propositions is determined by systematic applications of the rules for the connectives.       The possible truth values of a proposition are often listed in a table, called a truth table . If and are propositions, then there are four possible combinations of truth values for and . That is, , , and . If a third proposition is involved, then there are eight possible combinations of truth values for , and . In general, a truth table involving “ ” propositions , ,…, contains possible combinations of truth values. So, we use truth tables to determine the truth value of a compound proposition based on the truth value of its constituent component propositions.          Suppose and are true and is false.  What is the truth value of ?   Since is true and is false, is true.    Since is true and is false, true.    Thus, by applying the rule of implication, we get that is true.       Suppose that a compound proposition is symbolized by and that the truth values of and are and , respectively. Then the truth value of is , that of is , that of is . So the truth value of is         When dealing with compound propositions, we shall adopt the following convention on the use of parenthesis. Whenever “ ” or “ ” occur with “ ” or “ ”, we shall assume that “ ” or “ ” is applied first, and then “ ” or “ ” is then applied. For example,    However, it is always advisable to use brackets to indicate the order of the desired operations.     Two compound propositions and are said to be equivalent if they have the same truth value for all possible combinations of truth values for the component propositions occurring in both and . In this case we write .      Let P : .   Q : .                                             Then, P is equivalent to Q , since columns 5 and 6 of the above table are identical.      Let P : .   Q : .                                             Looking at columns 5 and 6 of the table we see that they are not identical. Thus . It is useful at this point to mention the non-equivalence of certain conditional propositions. Given the conditional , we give the related conditional propositions:-     As we observed from example 1.7, the conditional and its contrapositve are equivalent. On the other hand, and .     Do not confuse the contrapositive and the converse of the conditional proposition. Here is the difference:    Converse: The hypothesis of a converse statement is the conclusion of the conditional statement and the conclusion of the converse statement is the hypothesis of the conditional statement.   Contrapositive: The hypothesis of a contrapositive statement is the negation of conclusion of the conditional statement and the conclusion of the contrapositive statement is the negation of hypothesis of the conditional statement.       If Kidist lives in Ethiopia, then she lives in Addis Ababa.   Converse: If Kidist lives in Addis Ababa, then she lives in Ethiopia.   Contrapositive: If Kidist does not live in Ethiopia, then she does not live in Addis Ababa.   Inverse: If Kidist does not live in Addis Ababa, then she does not live in Ethiopia.    If it is morning, then the sun is in the east.   Converse: If the sun is in the east, then it is morning.   Contrapositive: If the sun is not in the east, then it is not morning.   Inverse: If it is not morning, then the sun is not in the east.       Propositions, under the relation of logical equivalence, satisfy various laws or identities, which are listed below.     Idempotent Laws    .     .       Commutative Laws    .     .       Associative Laws    .     .       Distributive Laws    .     .       De Morgan’s Laws    .     .       Law of Contrapositive     Complement Law .      Add review   Add review    Tautology and contradiction    A compound proposition is a tautology if it is always true regardless of the truth values of its component propositions. If, on the other hand, a compound proposition is always false regardless of its component propositions, we say that such a proposition is a contradiction .     A proposition that is neither a tautology nor a contradiction is called a contingency .        Suppose is any proposition. Consider the compound propositions and .                       Observe that is a tautology while is a contradiction.    For any propositions and . Consider the compound proposition . Let us make a truth table and study the situation.                                   We have exhibited all the possibilities and we see that for all truth values of the constituent propositions, the proposition is always true. Thus, is a tautology.    The truth table for the compound proposition .                                              In example 1.10(c), the given compound proposition has a truth value for every possible combination of assignments of truth values for the component propositions and . Thus is a contradiction.        In truth table, if a proposition is a tautology, then every line in its column has as its entry; if a proposition is a contradiction, every line in its column has as its entry.    Two compound propositions and are equivalent if and only if \" \" is a tautology.         For statements , , and , use a truth table to show that each of the following pairs of statements are logically equivalent.    and .     and .     and .     and .     and .         For statements , , and , show that the following compound statements are tautology.    .     .     .         For statements and , show that is a contradiction.      Write the contrapositive and the converse of the following conditional statements.   If it is cold, then the lake is frozen.    If Solomon is healthy, then he is happy.    If it rains, Tigist does not take a walk.         Let and be statements. Which of the following implies that is false?    is false.     is true.     is true.     is true.     is false.         Suppose that the statements and are assigned the truth values and , respectively. Find the truth value of each of the following statements.    .     .     .     .     .      .     .                         Suppose the value of is ; what can be said about the value of ?         Suppose the value of is ; what can be said about the value of and ?    Suppose the value of is ; what can be said about the value of and ?         Construct the truth table for each of the following statements.                                      For each of the following determine whether the information given is sufficient to decide the truth value of the statement. If the information is enough, state the truth value. If it is insufficient, show that both truth values are possible.    , where .     , where .     , where .     , where .     , where .     , where and .         Add review    "
 },
 {
   "id": "propositional-logic-2-2",
@@ -142,7 +241,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "1.1.8",
   "title": "",
-  "body": "  Consider the following propositions:   : 3 is an odd number. (True)   : 27 is a prime number. (False)   : Nairobi is the capital city of Ethiopia. (False)     : 3 is an odd number or 27 is a prime number. (True)    : 3 is an odd number or Nairobi is the capital city of Ethiopia. (False)      "
+  "body": "  Consider the following propositions:   : 3 is an odd number. (True)   : 27 is a prime number. (False)   : Nairobi is the capital city of Ethiopia. (False)     : 3 is an odd number or 27 is a prime number. (True)    : 27 is an odd number or Nairobi is the capital city of Ethiopia. (False)      "
 },
 {
   "id": "logical-connectives-12",
@@ -196,7 +295,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.1.2.1",
   "title": "",
-  "body": "     Which of the following sentences are propositions? For those that are, indicate the truth value.   123 is a prime number.    0 is an even number.     .    Multiply by 3.    What an impossible question!         "
+  "body": "  Which of the following sentences are propositions? For those that are, indicate the truth value.   123 is a prime number.    0 is an even number.     .    Multiply by 3.    What an impossible question!      "
 },
 {
   "id": "exercises-logical-connectives-3",
@@ -322,7 +421,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "1.1.22",
   "title": "",
-  "body": "  Let P : .   Q : .                                                     Looking at columns 5 and 6 of the table we see that they are not identical. Thus . It is useful at this point to mention the non-equivalence of certain conditional propositions. Given the conditional , we give the related conditional propositions:-     As we observed from example 1.7, the conditional and its contrapositve are equivalent. On the other hand, and .   "
+  "body": "  Let P : .   Q : .                                             Looking at columns 5 and 6 of the table we see that they are not identical. Thus . It is useful at this point to mention the non-equivalence of certain conditional propositions. Given the conditional , we give the related conditional propositions:-     As we observed from example 1.7, the conditional and its contrapositve are equivalent. On the other hand, and .   "
 },
 {
   "id": "compound-or-complex-propositions-11",
@@ -466,7 +565,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.1.4.6",
   "title": "",
-  "body": "  Suppose that the statements and are assigned the truth values and , respectively. Find the truth value of each of the following statements.    .     .     .     .     .     .     .                          "
+  "body": "  Suppose that the statements and are assigned the truth values and , respectively. Find the truth value of each of the following statements.    .     .     .     .     .      .     .                      "
 },
 {
   "id": "exercises-tautology-and-contradiction-7",
@@ -484,7 +583,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.1.4.8",
   "title": "",
-  "body": "     Suppose the value of is ; what can be said about the value of  ?    Suppose the value of is ; what can be said about the value of and ?      "
+  "body": "     Suppose the value of is ; what can be said about the value of and ?    Suppose the value of is ; what can be said about the value of and ?      "
 },
 {
   "id": "exercises-tautology-and-contradiction-9",
@@ -514,22 +613,13 @@ var ptx_lunr_docs = [
   "body": " Add review "
 },
 {
-  "id": "tautology-and-contradiction-8",
-  "level": "2",
-  "url": "propositional-logic.html#tautology-and-contradiction-8",
-  "type": "Checkpoint",
-  "number": "1.1.31",
-  "title": "",
-  "body": " Add review "
-},
-{
   "id": "open-propositions-and-quantifiers",
   "level": "1",
   "url": "open-propositions-and-quantifiers.html",
   "type": "Section",
   "number": "1.2",
   "title": "Open propositions and quantifiers",
-  "body": " Open propositions and quantifiers  In mathematics, one frequently comes across sentences that involve a variable. For example, is one such. The truth value of this statement depends on the value we assign for the variable . For example, if , then this sentence is true, whereas if , then the sentence is false.   Section objectives:   After completing this section, students will be able to:-     Define open proposition.    Explain and exemplify the difference between proposition and open proposition.    Identify the two types of quantifiers.    Convert open propositions into propositions using quantifiers.#    Determine the truth value of a quantified proposition.    Convert a quantified proposition into words and vise versa.    Explain the relationship between existential and universal quantifiers.    Analyze quantifiers occurring in combinations.       An open statement (also called a predicate) is a sentence that contains one or more variables and whose truth value depends on the values assigned for the variables. We represent an open statement by a capital letter followed by the variable(s) in parenthesis, e.g., etc.      Here are some open propositions:    is the day before Sunday.     is a city in Africa.     is greater than .     .     It is clear that each one of these examples involves variables, but is not a proposition as we cannot assign a truth value to it. However, if individuals are substituted for the variables, then each one of them is a proposition or statement. For example, we may have the following.   Monday is the day before Sunday.    London is a city in Africa.    5 is greater than 9.             The collection of all allowable values for the variable in an open sentence is called the universal set (the universe of discourse) and denoted by U .     Two open proposition and are said to be equivalent if and only if for all individual . Note that if the universe is specified, then and are equivalent if and only if for all .      Let   .   .    Let   Then for all ; and have the same truth value.                Therefore for all .      Let be the universal set. An open proposition is a tautology if and only if is always true for all values of .      The open proposition is a tautology.  As we have observed in example 1.11, an open proposition can be converted into a proposition by substituting the individuals for the variables. However, there are other ways that an open proposition can be converted into a proposition, namely by a method called quantification. Let be an open proposition over the domain . Adding the phrase “For every ” to or “For some ” to produces a statement called a quantified statement.  Consider the following open propositions with universe .                   Then is always true for each .    is true only for and .     is always false for all values of .   Hence, given an open proposition , with universe , we observe that there are three possibilities.    is true for all .     is true for some .     is false for all .   Now we proceed to study open propositions which are satisfied by “ all ” and “ some ” members of the given universe.           The phrase \"for every \" is called a universal quantifier . We regard \"for every ,\" \"for all ,\" and \"for each \" as having the same meaning and symbolize each by “ .” Think of the symbol as an inverted (representing all). If is an open proposition with universe , then is a quantified proposition and is read as “every has the property .”    The phrase \"there exists an \" is called an existential quantifier . We regard \"there exists an ,\" \"for some ,\" and \"for at least one \" as having the same meaning, and symbolize each by “ .” Think of the symbol as the backwards capital (representing exists). If is an open proposition with universe , then is a quantified proposition and is read as “there exists with the property .”            To show that is , it is sufficient to find at least one such that is . Such an element is called a counter example .     is if we cannot find any having the property .           Write the following statements using quantifiers.   For each real number .    There is a real number such that .    The square of any real number is nonnegative.          Let . The truth value for [i.e ] is .    Let . The truth value for is . is a counterexample since but . On the other hand, is true, since such that .    Let . The truth value for is since there is no real number whose absolute value is .                 .     .           Relationship between the existential and universal quantifiers.   If is a formula in , consider the following four statements.    .     .     .     .   We might translate these into words as follows.   Everything has property .    Something has property .    Nothing has property .    Something does not have property .     Now (d) is the denial of (a), and (c) is the denial of (b), on the basis of everyday meaning. Thus, for example, the existential quantifier may be defined in terms of the universal quantifier.  Now we proceed to discuss the negation of quantifiers. Let be an open proposition. Then is false only if we can find an individual “ ” in the universe such that is false. If we succeed in getting such an individual, then is true. Hence will be false if is true. Therefore the negation of is . Hence we conclude that     Similarly, we can easily verified that   .   To negate a statement that involves the quantifiers and , change each to , change each to , and negate the open statement.     Let .                  Given propositions containing quantifiers we can form a compound proposition by joining them with connectives in the same way we form a compound proposition without quantifiers. For example, if we have and we can form . Consider the following statements involving quantifiers. Illustrations of these along with translations appear below.   All rationals are reals. .    No rationals are reals. .    Some rationals are reals. .    Some rationals are not reals. .       Let The set of intergers.  Let is a prime number.   is an even number.   is an odd number.  Then    is ; since there is an , say 2, such that is .     is . As a counterexample take 7. Then is and is . Hence .     is .     is .        Quantifiers Occurring in Combinations   So far, we have only considered cases in which universal and existential quantifiers appear simply. However, if we consider cases in which universal and existential quantifiers occur in combination, we are lead to essentially new logical structures. The following are the simplest forms of combinations:   “for all and for all the relation holds”;     “there is an and there is a for which holds”;     “for every there is a such that holds”;     “there is an which stands to every in the relation .”       Let The set of integers.  Let       means that there is an integer and there is an integer such that . This statement is true when and , since 4 + 1 = 5. Therefore, the statement is always true for this universe. There are other choices of and for which it would be true, but the symbolic statement merely says that there is at least one choice for and which will make the statement true, and we have demonstrated one such choice.     means that there is an integer such that for every , . This is false since no fixed value of will make this true for all in the universe; e.g. if , then is false for some .     means that for every integer , there is an integer such that . Let , then will always be an integer, so this is a true statement.     means that for every integer and for every integer , . This is false, for if and , we get .            Consider the statement If we let where the domain of both and is , the statement can be expressed as Since and for all real numbers and , it follows that and so is true for all real numbers and . Thus the quantified statement is true.    Consider the open statement     where the domain of the variable is the set of even integers and the domain of the variable is the set of odd integers. Then the quantified statement     can be expressed in words as  There exist an even integer and an odd integer such that .  Since is true, the quantified statement is true.    Consider the open statement where the domain of both and is the set of positive rational numbers. Then the quantified statement can be expressed in words as  For every positive rational number , there exists a positive rational number such that .  It turns out that the quantified statement is true. If we replace by , then we have     Since and for every real number , is false.    Consider the open statement where the domain of both and is the set of natural numbers. Then the quantified statement expressed in words, is  There exists a natural number such that for every natural numbers , is odd. The statement is false.       In general, from the meaning of the universal quantifier it follows that in an expression the two universal quantifiers may be interchanged without altering the sense of the sentence. This also holds for the existential quantifies in an expression such as .  In the statement , the choice of is allowed to depend on - the that works for one need not work for another . On the other hand, in the statement , the must work for all , i.e., is independent of . For example, the expression , where and are variables referring to the domain of real numbers, constitutes a true proposition, namely, “For every number , there is a number , such that is less that ,” i.e., “given any number, there is a greater number.” However, if the order of the symbol and is changed, in this case, we obtain: , which is a false proposition, namely, “There is a number which is greater than every number.” By transposing and , therefore, we get a different statement.  The logical situation here is:   .  Finally, we conclude this section with the remark that there are no mechanical rules for translating sentences from English into the logical notation which has been introduced. In every case one must first decide on the meaning of the English sentence and then attempt to convey that same meaning in terms of predicates, quantifiers, and, possibly, individual constants.     In each of the following, two open statements and are given, where the domain of both and is . Determine the truth value of for the given values of and .    . and . .     . and . .     . and . .         Let denote the set of odd integers and let is even, and is even. be open statements over the domain . State and in words.      State the negation of the following quantified statements.   For every rational number , the number is rational.    There exists a rational number such that .         Let is an integer, be an open sentence over the domain . Determine, with explanations, whether the following statements are true or false:      .     .         Determine the truth value of the following statements.    .     .     .     .     .     .     .              Consider the quantified statement where the domain of the variables and is .   Express this quantified statement in symbols.   Is the quantified statement in (a) true or false? Explain.  Express the negation of the quantified statement in (a) in symbols.  Is the negation of the quantified in (a) true or false? Explain.        Consider the open statement where the domain of is and the domain of is .   State the quantified statement in words.    Show quantified statement in (a) is true.         Consider the open statement where the domain of is and the domain of is .   State the quantified statement in words.    Show quantified statement in (a) is true.        "
+  "body": " Open propositions and quantifiers  In mathematics, one frequently comes across sentences that involve a variable. For example, is one such. The truth value of this statement depends on the value we assign for the variable . For example, if , then this sentence is true, whereas if , then the sentence is false.   Section objectives:   After completing this section, students will be able to:-     Define open proposition.    Explain and exemplify the difference between proposition and open proposition.    Identify the two types of quantifiers.    Convert open propositions into propositions using quantifiers.#    Determine the truth value of a quantified proposition.    Convert a quantified proposition into words and vise versa.    Explain the relationship between existential and universal quantifiers.    Analyze quantifiers occurring in combinations.       An open statement (also called a predicate) is a sentence that contains one or more variables and whose truth value depends on the values assigned for the variables. We represent an open statement by a capital letter followed by the variable(s) in parenthesis, e.g., etc.      Here are some open propositions:    is the day before Sunday.     is a city in Africa.     is greater than .     .     It is clear that each one of these examples involves variables, but is not a proposition as we cannot assign a truth value to it. However, if individuals are substituted for the variables, then each one of them is a proposition or statement. For example, we may have the following.   Monday is the day before Sunday.    London is a city in Africa.    5 is greater than 9.             The collection of all allowable values for the variable in an open sentence is called the universal set (the universe of discourse) and denoted by U .     Two open proposition and are said to be equivalent if and only if for all individual . Note that if the universe is specified, then and are equivalent if and only if for all .      Let   .   .    Let   Then for all ; and have the same truth value.                Therefore for all .      Let be the universal set. An open proposition is a tautology if and only if is always true for all values of .      The open proposition is a tautology.  As we have observed in example 1.11, an open proposition can be converted into a proposition by substituting the individuals for the variables. However, there are other ways that an open proposition can be converted into a proposition, namely by a method called quantification. Let be an open proposition over the domain . Adding the phrase “For every ” to or “For some ” to produces a statement called a quantified statement.  Consider the following open propositions with universe .                   Then is always true for each .    is true only for and .     is always false for all values of .   Hence, given an open proposition , with universe , we observe that there are three possibilities.    is true for all .     is true for some .     is false for all .   Now we proceed to study open propositions which are satisfied by “ all ” and “ some ” members of the given universe.           The phrase \"for every \" is called a universal quantifier . We regard \"for every ,\" \"for all ,\" and \"for each \" as having the same meaning and symbolize each by “ .” Think of the symbol as an inverted (representing all). If is an open proposition with universe , then is a quantified proposition and is read as “every has the property .”    The phrase \"there exists an \" is called an existential quantifier . We regard \"there exists an ,\" \"for some ,\" and \"for at least one \" as having the same meaning, and symbolize each by “ .” Think of the symbol as the backwards capital (representing exists). If is an open proposition with universe , then is a quantified proposition and is read as “there exists with the property .”            To show that is , it is sufficient to find at least one such that is . Such an element is called a counter example .     is if we cannot find any having the property .           Write the following statements using quantifiers.   For each real number .    There is a real number such that .    The square of any real number is nonnegative.          Let . The truth value for [i.e ] is .    Let . The truth value for is . is a counterexample since but . On the other hand, is true, since such that .    Let . The truth value for is since there is no real number whose absolute value is .                 .     .           Relationship between the existential and universal quantifiers.   If is a formula in , consider the following four statements.    .     .     .     .   We might translate these into words as follows.   Everything has property .    Something has property .    Nothing has property .    Something does not have property .     Now (d) is the denial of (a), and (c) is the denial of (b), on the basis of everyday meaning. Thus, for example, the existential quantifier may be defined in terms of the universal quantifier.  Now we proceed to discuss the negation of quantifiers. Let be an open proposition. Then is false only if we can find an individual “ ” in the universe such that is false. If we succeed in getting such an individual, then is true. Hence will be false if is true. Therefore the negation of is . Hence we conclude that     Similarly, we can easily verified that   .   To negate a statement that involves the quantifiers and , change each to , change each to , and negate the open statement.     Let .                  Given propositions containing quantifiers we can form a compound proposition by joining them with connectives in the same way we form a compound proposition without quantifiers. For example, if we have and we can form . Consider the following statements involving quantifiers. Illustrations of these along with translations appear below.   All rationals are reals. .    No rationals are reals. .    Some rationals are reals. .    Some rationals are not reals. .       Let The set of intergers.  Let is a prime number.   is an even number.   is an odd number.  Then    is ; since there is an , say 2, such that is .     is . As a counterexample take 7. Then is and is . Hence .     is .     is .        Quantifiers Occurring in Combinations   So far, we have only considered cases in which universal and existential quantifiers appear simply. However, if we consider cases in which universal and existential quantifiers occur in combination, we are lead to essentially new logical structures. The following are the simplest forms of combinations:   “for all and for all the relation holds”;     “there is an and there is a for which holds”;     “for every there is a such that holds”;     “there is an which stands to every in the relation .”       Let The set of integers.  Let       means that there is an integer and there is an integer such that . This statement is true when and , since 4 + 1 = 5. Therefore, the statement is always true for this universe. There are other choices of and for which it would be true, but the symbolic statement merely says that there is at least one choice for and which will make the statement true, and we have demonstrated one such choice.     means that there is an integer such that for every , . This is false since no fixed value of will make this true for all in the universe; e.g. if , then is false for some .     means that for every integer , there is an integer such that . Let , then will always be an integer, so this is a true statement.     means that for every integer and for every integer , . This is false, for if and , we get .            Consider the statement If we let where the domain of both and is , the statement can be expressed as Since and for all real numbers and , it follows that and so is true for all real numbers and . Thus the quantified statement is true.    Consider the open statement     where the domain of the variable is the set of even integers and the domain of the variable is the set of odd integers. Then the quantified statement     can be expressed in words as  There exist an even integer and an odd integer such that .  Since is true, the quantified statement is true.    Consider the open statement where the domain of both and is the set of positive rational numbers. Then the quantified statement can be expressed in words as  For every positive rational number , there exists a positive rational number such that .  It turns out that the quantified statement is true. If we replace by , then we have     Since and for every real number , is false.    Consider the open statement where the domain of both and is the set of natural numbers. Then the quantified statement expressed in words, is  There exists a natural number such that for every natural numbers , is odd. The statement is false.       In general, from the meaning of the universal quantifier it follows that in an expression the two universal quantifiers may be interchanged without altering the sense of the sentence. This also holds for the existential quantifies in an expression such as .  In the statement , the choice of is allowed to depend on - the that works for one need not work for another . On the other hand, in the statement , the must work for all , i.e., is independent of . For example, the expression , where and are variables referring to the domain of real numbers, constitutes a true proposition, namely, “For every number , there is a number , such that is less that ,” i.e., “given any number, there is a greater number.” However, if the order of the symbol and is changed, in this case, we obtain: , which is a false proposition, namely, “There is a number which is greater than every number.” By transposing and , therefore, we get a different statement.  The logical situation here is:   .  Finally, we conclude this section with the remark that there are no mechanical rules for translating sentences from English into the logical notation which has been introduced. In every case one must first decide on the meaning of the English sentence and then attempt to convey that same meaning in terms of predicates, quantifiers, and, possibly, individual constants.     In each of the following, two open statements and are given, where the domain of both and is . Determine the truth value of for the given values of and .    . and . .     . and . .     . and . .         Let denote the set of odd integers and let is even, and is even. be open statements over the domain . State and in words.      State the negation of the following quantified statements.   For every rational number , the number is rational.    There exists a rational number such that .         Let is an integer, be an open sentence over the domain . Determine, with explanations, whether the following statements are true or false:      .     .         Determine the truth value of the following statements.    .     .     .     .     .     .     .              Consider the quantified statement where the domain of the variables and is .   Express this quantified statement in symbols.   Is the quantified statement in (a) true or false? Explain.  Express the negation of the quantified statement in (a) in symbols.  Is the negation of the quantified in (a) true or false? Explain.        Consider the open statement where the domain of is and the domain of is .   State the quantified statement in words.    Show quantified statement in (a) is true.         Consider the open statement where the domain of is and the domain of is .   State the quantified statement in words.    Show quantified statement in (a) is true.         Add review   Add review  "
 },
 {
   "id": "open-propositions-and-quantifiers-3",
@@ -766,121 +856,157 @@ var ptx_lunr_docs = [
   "body": "  Consider the open statement where the domain of is and the domain of is .   State the quantified statement in words.    Show quantified statement in (a) is true.      "
 },
 {
+  "id": "open-propositions-and-quantifiers-37",
+  "level": "2",
+  "url": "open-propositions-and-quantifiers.html#open-propositions-and-quantifiers-37",
+  "type": "Checkpoint",
+  "number": "1.2.15",
+  "title": "",
+  "body": " Add review "
+},
+{
+  "id": "open-propositions-and-quantifiers-38",
+  "level": "2",
+  "url": "open-propositions-and-quantifiers.html#open-propositions-and-quantifiers-38",
+  "type": "Checkpoint",
+  "number": "1.2.16",
+  "title": "",
+  "body": " Add review "
+},
+{
   "id": "sec-argument-and-validity",
   "level": "1",
   "url": "sec-argument-and-validity.html",
   "type": "Section",
   "number": "1.3",
   "title": "Argument and Validity",
-  "body": " Argument and Validity   Section Objectives    Define argument (or logical deduction)  Identify hypothesis and conclusion of a given argument  Determine the validity of an argument using a truth table  Determine the validity of an argument using rules of inferences      Basic Concepts of Arguments    An argument (logical deduction) is an assertion that a given set of statements , called or , yield another statement , called the . Such a logical deduction is denoted by:                                          Consider the following argument:  If you study hard, then you will pass the exam.  You did not pass the exam.  Therefore, you did not study hard.  Let : You study hard.   : You will pass the exam.  The argument form can be written as:      When is an argument form accepted to be correct? In normal usage, we use an argument in order to demonstrate that a certain conclusion follows from known premises. Therefore, we shall require that under any assignment of truth values to the statements appearing, if the premises became all true, then the conclusion must also become true. Hence, we state the following definition.    Validity of Arguments    An argument form is said to be valid if is true whenever all the premises are true; otherwise it is invalid .      Investigate the validity of the following arguments:               If it rains, crops will be good. It did not rain. Therefore, crops were not good.       First we construct a truth table for the statements appearing in the argument forms.                                            The premises and are true simultaneously in row 4 only. Since in this case is also true, the argument is valid.                                                                              The , , , and rows are those in which all the premises take value . In the , and rows however the conclusion takes value . Hence, the argument form is invalid.    Let : It rains.   : Crops are good.   : It did not rain.   : Crops were not good.  The argument form is   Now we can use truth table to test validity as follows:                                       Examining the table, we can see that the premises and are true in both rows 3 and 4. However, in row 3, is false, which means the argument is invalid.  The premises and are true simultaneously in row 4 only. Since in this case is also true, the argument is valid.           What is important in validity is the form of the argument rather than the meaning or content of the statements involved.    The argument form is valid iff the statement   is a tautology.        Rules of Inference  Below we list certain valid deductions called rules of inferences.     Modus Ponens       Modus Tollens       Principle of Syllogism       Principle of Adjunction                  Principle of Detachment       Modus Tollendo Ponens       Modus Ponendo Tollens       Constructive Dilemma       Principle of Equivalence       Principle of Conditionalization          Formal Proofs of Validity  A formal proof demonstrates the validity of an argument using a sequence of logical steps.    A formal proof of a conclusion given hypotheses is a sequence of steps, each of which applies some inference rule to hypotheses or previously proven statements (antecedent) to yield a new true statement (the consequent).    A formal proof of validity is given by writing on the premises and the statements which follows from them in a single column, and setting off in another column, to the right of each statement, its justification. It is convenient to list all the premises first.    Show that is valid.        1. is true  premise    2. is true  premise    3. is true  contrapositive of (2)    4. is true  Modus Ponens using (1) and (3)        Show that the hypotheses   It is not sunny this afternoon and it is colder than yesterday.  If we go swimming, then it is sunny.  If we do not go swimming, then we will take a canoe trip.  If we take a canoe trip, then we will be home by sunset.   Lead to the conclusion:   We will be home by sunset.    Let : It is sunny this afternoon.   : It is colder than yesterday.   : We go swimming.   : We take a canoe trip.   : We will be home by sunset.  Then      1.  hypothesis    2.  simplification using (1)    3.  hypothesis    4.  Modus Tollens using (2) and (3)    5.  hypothesis    6.  Modus Ponens using (4) and (5)    7.  hypothesis    8.  Modus Ponens using (6) and (7)          Use the truth table method to show that the following argument forms are valid.      .     .     .     .     .         For the following arguments given a, b and c below:    Identify the premises.    Write argument forms.    Check the validity.       If he studies medicine, he will get a good job.   If he gets a good job, he will get a good wage.   He did not get a good wage.   Therefore, he did not study medicine.     If the team is late, then it cannot play the game.   If the referee is here, then the team can play the game.   The team is late.   Therefore, the referee is not here.     If the professor offers chocolate for an answer, you answer the professor's question.   The professor offers chocolate for an answer.   Therefore, you answer the professor's question.        Give formal proof to show that the following argument forms are valid.      .       .       .       .       .       .       .       .       .         Prove the following are valid arguments by giving formal proof.     If the rain does not come, the crops are ruined and the people will starve. The crops are not ruined or the people will not starve. Therefore, the rain comes.    If the team is late, then it cannot play the game. If the referee is here then the team can play the game. The team is late. Therefore, the referee is not here.        "
+  "body": " Argument and Validity   Section Objectives    Define argument (or logical deduction)  Identify hypothesis and conclusion of a given argument  Determine the validity of an argument using a truth table  Determine the validity of an argument using rules of inferences       An argument (logical deduction) is an assertion that a given set of statements , called or premises , yield another statement , called the conclusion . Such a logical deduction is denoted by:                                          Consider the following argument:   If you study hard, then you will pass the exam.  You did not pass the exam.  Therefore, you did not study hard.  Let : You study hard.   : You will pass the exam.  The argument form can be written as:       When is an argument form accepted to be correct? In normal usage, we use an argument in order to demonstrate that a certain conclusion follows from known premises. Therefore, we shall require that under any assignment of truth values to the statements appearing, if the premises became all true, then the conclusion must also become true. Hence, we state the following definition.    An argument form is said to be valid if is true whenever all the premises are true; otherwise it is invalid .      Investigate the validity of the following arguments:               If it rains, crops will be good. It did not rain. Therefore, crops were not good.       First we construct a truth table for the statements appearing in the argument forms.                                            The premises and are true simultaneously in row 4 only. Since in this case is also true, the argument is valid.                                                                              The , , , and rows are those in which all the premises take value . In the , and rows however the conclusion takes value . Hence, the argument form is invalid.    Let : It rains.   : Crops are good.   : It did not rain.   : Crops were not good.  The argument form is   Now we can use truth table to test validity as follows:                                       Examining the table, we can see that the premises and are true in both rows 3 and 4. However, in row 3, is false, which means the argument is invalid.  The premises and are true simultaneously in row 4 only. Since in this case is also true, the argument is valid.           What is important in validity is the form of the argument rather than the meaning or content of the statements involved.    The argument form is valid iff the statement   is a tautology.       Rules of Inference  Below we list certain valid deductions called rules of inferences.     Modus Ponens       Modus Tollens       Principle of Syllogism       Principle of Adjunction                  Principle of Detachment       Modus Tollendo Ponens       Modus Ponendo Tollens       Constructive Dilemma       Principle of Equivalence       Principle of Conditionalization          Formal proofs of validity of an argument    A formal proof of a conclusion given hypotheses is a sequence of steps, each of which applies some inference rule to hypotheses or previously proven statements (antecedent) to yield a new true statement (the consequent).    A formal proof of validity is given by writing on the premises and the statements which follows from them in a single column, and setting off in another column, to the right of each statement, its justification. It is convenient to list all the premises first.    Show that is valid.        1. is true  premise    2. is true  premise    3. is true  contrapositive of (2)    4. is true  Modus Ponens using (1) and (3)        Show that the hypotheses   It is not sunny this afternoon and it is colder than yesterday.  If we go swimming, then it is sunny.  If we do not go swimming, then we will take a canoe trip.  If we take a canoe trip, then we will be home by sunset.   Lead to the conclusion:   We will be home by sunset.    Let : It is sunny this afternoon.   : It is colder than yesterday.   : We go swimming.   : We take a canoe trip.   : We will be home by sunset.  Then      1.  hypothesis    2.  simplification using (1)    3.  hypothesis    4.  Modus Tollens using (2) and (3)    5.  hypothesis    6.  Modus Ponens using (4) and (5)    7.  hypothesis    8.  Modus Ponens using (6) and (7)          Use the truth table method to show that the following argument forms are valid.      .     .     .     .     .         For the following arguments given a, b and c below:    Identify the premises.    Write argument forms.    Check the validity.     If he studies medicine, he will get a good job. If he gets a good job, he will get a good wage. He did not get a good wage. Therefore, he did not study medicine.    If the team is late, then it cannot play the game. If the referee is here, then the team can play the game. The team is late. Therefore, the referee is not here.    If the professor offers chocolate for an answer, you answer the professor's question. The professor offers chocolate for an answer. Therefore, you answer the professor's question.           Give formal proof to show that the following argument forms are valid.      .     .     .     .     .     .     .     .     .         Prove the following are valid arguments by giving formal proof.   If the rain does not come, the crops are ruined and the people will starve. The crops are not ruined or the people will not starve. Therefore, the rain comes.    If the team is late, then it cannot play the game. If the referee is here then the team can play the game. The team is late. Therefore, the referee is not here.         Add review   Add review  "
 },
 {
-  "id": "sec-argument-and-validity-3-2",
+  "id": "sec-argument-and-validity-3",
   "level": "2",
-  "url": "sec-argument-and-validity.html#sec-argument-and-validity-3-2",
+  "url": "sec-argument-and-validity.html#sec-argument-and-validity-3",
   "type": "Definition",
   "number": "1.3.1",
   "title": "",
-  "body": "  An argument (logical deduction) is an assertion that a given set of statements , called or , yield another statement , called the . Such a logical deduction is denoted by:                                        "
+  "body": "  An argument (logical deduction) is an assertion that a given set of statements , called or premises , yield another statement , called the conclusion . Such a logical deduction is denoted by:                                        "
 },
 {
-  "id": "sec-argument-and-validity-3-3",
+  "id": "sec-argument-and-validity-4",
   "level": "2",
-  "url": "sec-argument-and-validity.html#sec-argument-and-validity-3-3",
+  "url": "sec-argument-and-validity.html#sec-argument-and-validity-4",
   "type": "Example",
   "number": "1.3.2",
   "title": "",
-  "body": " Consider the following argument:  If you study hard, then you will pass the exam.  You did not pass the exam.  Therefore, you did not study hard.  Let : You study hard.   : You will pass the exam.  The argument form can be written as:     "
+  "body": " Consider the following argument:   If you study hard, then you will pass the exam.  You did not pass the exam.  Therefore, you did not study hard.  Let : You study hard.   : You will pass the exam.  The argument form can be written as:      "
 },
 {
-  "id": "sec-argument-and-validity-4-2",
+  "id": "sec-argument-and-validity-6",
   "level": "2",
-  "url": "sec-argument-and-validity.html#sec-argument-and-validity-4-2",
+  "url": "sec-argument-and-validity.html#sec-argument-and-validity-6",
   "type": "Definition",
   "number": "1.3.3",
   "title": "",
   "body": "  An argument form is said to be valid if is true whenever all the premises are true; otherwise it is invalid .   "
 },
 {
-  "id": "sec-argument-and-validity-4-3",
+  "id": "sec-argument-and-validity-7",
   "level": "2",
-  "url": "sec-argument-and-validity.html#sec-argument-and-validity-4-3",
+  "url": "sec-argument-and-validity.html#sec-argument-and-validity-7",
   "type": "Example",
   "number": "1.3.4",
   "title": "",
   "body": "  Investigate the validity of the following arguments:               If it rains, crops will be good. It did not rain. Therefore, crops were not good.       First we construct a truth table for the statements appearing in the argument forms.                                            The premises and are true simultaneously in row 4 only. Since in this case is also true, the argument is valid.                                                                              The , , , and rows are those in which all the premises take value . In the , and rows however the conclusion takes value . Hence, the argument form is invalid.    Let : It rains.   : Crops are good.   : It did not rain.   : Crops were not good.  The argument form is   Now we can use truth table to test validity as follows:                                       Examining the table, we can see that the premises and are true in both rows 3 and 4. However, in row 3, is false, which means the argument is invalid.  The premises and are true simultaneously in row 4 only. Since in this case is also true, the argument is valid.      "
 },
 {
-  "id": "sec-argument-and-validity-4-4",
+  "id": "sec-argument-and-validity-8",
   "level": "2",
-  "url": "sec-argument-and-validity.html#sec-argument-and-validity-4-4",
+  "url": "sec-argument-and-validity.html#sec-argument-and-validity-8",
   "type": "Remark",
   "number": "1.3.5",
   "title": "",
   "body": "    What is important in validity is the form of the argument rather than the meaning or content of the statements involved.    The argument form is valid iff the statement   is a tautology.     "
 },
 {
-  "id": "sec-argument-and-validity-6-3",
+  "id": "sec-argument-and-validity-10-2",
   "level": "2",
-  "url": "sec-argument-and-validity.html#sec-argument-and-validity-6-3",
+  "url": "sec-argument-and-validity.html#sec-argument-and-validity-10-2",
   "type": "Definition",
   "number": "1.3.6",
   "title": "",
   "body": "  A formal proof of a conclusion given hypotheses is a sequence of steps, each of which applies some inference rule to hypotheses or previously proven statements (antecedent) to yield a new true statement (the consequent).   "
 },
 {
-  "id": "sec-argument-and-validity-6-5",
+  "id": "sec-argument-and-validity-10-4",
   "level": "2",
-  "url": "sec-argument-and-validity.html#sec-argument-and-validity-6-5",
+  "url": "sec-argument-and-validity.html#sec-argument-and-validity-10-4",
   "type": "Example",
   "number": "1.3.7",
   "title": "",
   "body": "  Show that is valid.        1. is true  premise    2. is true  premise    3. is true  contrapositive of (2)    4. is true  Modus Ponens using (1) and (3)     "
 },
 {
-  "id": "sec-argument-and-validity-6-6",
+  "id": "sec-argument-and-validity-10-5",
   "level": "2",
-  "url": "sec-argument-and-validity.html#sec-argument-and-validity-6-6",
+  "url": "sec-argument-and-validity.html#sec-argument-and-validity-10-5",
   "type": "Example",
   "number": "1.3.8",
   "title": "",
   "body": "  Show that the hypotheses   It is not sunny this afternoon and it is colder than yesterday.  If we go swimming, then it is sunny.  If we do not go swimming, then we will take a canoe trip.  If we take a canoe trip, then we will be home by sunset.   Lead to the conclusion:   We will be home by sunset.    Let : It is sunny this afternoon.   : It is colder than yesterday.   : We go swimming.   : We take a canoe trip.   : We will be home by sunset.  Then      1.  hypothesis    2.  simplification using (1)    3.  hypothesis    4.  Modus Tollens using (2) and (3)    5.  hypothesis    6.  Modus Ponens using (4) and (5)    7.  hypothesis    8.  Modus Ponens using (6) and (7)     "
 },
 {
-  "id": "sec-argument-and-validity-7-1",
+  "id": "sec-argument-and-validity-11-1",
   "level": "2",
-  "url": "sec-argument-and-validity.html#sec-argument-and-validity-7-1",
+  "url": "sec-argument-and-validity.html#sec-argument-and-validity-11-1",
   "type": "Exercise",
   "number": "1.3.1",
   "title": "",
   "body": "  Use the truth table method to show that the following argument forms are valid.      .     .     .     .     .      "
 },
 {
-  "id": "sec-argument-and-validity-7-2",
+  "id": "sec-argument-and-validity-11-2",
   "level": "2",
-  "url": "sec-argument-and-validity.html#sec-argument-and-validity-7-2",
+  "url": "sec-argument-and-validity.html#sec-argument-and-validity-11-2",
   "type": "Exercise",
   "number": "1.3.2",
   "title": "",
-  "body": "  For the following arguments given a, b and c below:    Identify the premises.    Write argument forms.    Check the validity.       If he studies medicine, he will get a good job.   If he gets a good job, he will get a good wage.   He did not get a good wage.   Therefore, he did not study medicine.     If the team is late, then it cannot play the game.   If the referee is here, then the team can play the game.   The team is late.   Therefore, the referee is not here.     If the professor offers chocolate for an answer, you answer the professor's question.   The professor offers chocolate for an answer.   Therefore, you answer the professor's question.     "
+  "body": "  For the following arguments given a, b and c below:    Identify the premises.    Write argument forms.    Check the validity.     If he studies medicine, he will get a good job. If he gets a good job, he will get a good wage. He did not get a good wage. Therefore, he did not study medicine.    If the team is late, then it cannot play the game. If the referee is here, then the team can play the game. The team is late. Therefore, the referee is not here.    If the professor offers chocolate for an answer, you answer the professor's question. The professor offers chocolate for an answer. Therefore, you answer the professor's question.        "
 },
 {
-  "id": "sec-argument-and-validity-7-3",
+  "id": "sec-argument-and-validity-11-3",
   "level": "2",
-  "url": "sec-argument-and-validity.html#sec-argument-and-validity-7-3",
+  "url": "sec-argument-and-validity.html#sec-argument-and-validity-11-3",
   "type": "Exercise",
   "number": "1.3.3",
   "title": "",
-  "body": "  Give formal proof to show that the following argument forms are valid.      .       .       .       .       .       .       .       .       .      "
+  "body": "  Give formal proof to show that the following argument forms are valid.      .     .     .     .     .     .     .     .     .      "
 },
 {
-  "id": "sec-argument-and-validity-7-4",
+  "id": "sec-argument-and-validity-11-4",
   "level": "2",
-  "url": "sec-argument-and-validity.html#sec-argument-and-validity-7-4",
+  "url": "sec-argument-and-validity.html#sec-argument-and-validity-11-4",
   "type": "Exercise",
   "number": "1.3.4",
   "title": "",
-  "body": "  Prove the following are valid arguments by giving formal proof.     If the rain does not come, the crops are ruined and the people will starve. The crops are not ruined or the people will not starve. Therefore, the rain comes.    If the team is late, then it cannot play the game. If the referee is here then the team can play the game. The team is late. Therefore, the referee is not here.      "
+  "body": "  Prove the following are valid arguments by giving formal proof.   If the rain does not come, the crops are ruined and the people will starve. The crops are not ruined or the people will not starve. Therefore, the rain comes.    If the team is late, then it cannot play the game. If the referee is here then the team can play the game. The team is late. Therefore, the referee is not here.      "
+},
+{
+  "id": "sec-argument-and-validity-12",
+  "level": "2",
+  "url": "sec-argument-and-validity.html#sec-argument-and-validity-12",
+  "type": "Checkpoint",
+  "number": "1.3.9",
+  "title": "",
+  "body": " Add review "
+},
+{
+  "id": "sec-argument-and-validity-13",
+  "level": "2",
+  "url": "sec-argument-and-validity.html#sec-argument-and-validity-13",
+  "type": "Checkpoint",
+  "number": "1.3.10",
+  "title": "",
+  "body": " Add review "
 },
 {
   "id": "sec-set-theory",
@@ -889,7 +1015,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.4",
   "title": "Set theory",
-  "body": " Set theory     In this section, we study some part of set theory especially description of sets, Venn diagrams and operations of sets.    Explain the concept of set.  Describe sets in different ways.  Identify operations on sets.  Illustrate sets using Venn diagrams.     The concept of a set  The term set is an undefined term, just as a point and a line are undefined terms in geometry. However, the concept of a set permeates every aspect of mathematics. Set theory underlies the language and concepts of modern mathematics. The term set refers to a well-defined collection of objects that share a certain property or certain properties. The term “ well-defined ” here means that the set is described in such a way that one can decide whether or not a given object belongs in the set. If is a set, then the objects of the collection are called the elements or members of the set . If is an element of the set , we write . If is not an element of the set , we write .  As a convention, we use capital letters to denote the names of sets and lowercase letters for elements of a set.  Note that for each objects and each set , exactly one of or but not both must be true.   Add review   Add review    Description of Sets  Sets are described or characterized by one of the following four different ways.     In this method, an ordinary English statement with minimum mathematical symbolization of the property of the elements is used to describe a set. actually, the statement could be in any language.       The set of counting numbers less than ten.    The set of letters in the word Addis Ababa.     The set of all countries in Africa.          If the elements of a set can be listed, we list them all between a pair of braces without repetion separating by commas, and without concern about the order of their appearance. Such a method of describing a set is called the rooster\/complete listing method.       The set of vowels in English alphabet may also be desribed as     The set of positive factors of is also described as            We agree on the convention that the order of writing the elements in the list is immaterial. As a result the sets contain the same elements, namely     The set contains just two distinct elements; namely hence it is the same set as We list distinct elements without repetition.           Let Elements of are   Notice that are different objects. Here but     Let The only element of is But     Let Then has four elements.     The readers are invited to write down all the elements of        In many occassions, the number of elements of a set may be too large to list them all; and in other occassions there may not be an end to the list. In such cases we look for a common property of the elements and describe the set by partially listing the elements. More precisely, if the common property is simple that it can easily be identified from a list of the first few elements, then within a pair of braces, we list these few elements followed (or preceded) by exactly three dotes and possibly by one last element. The following are such instances of describing sets by partial listing method.       The set of all counting numbers in     The set of non-positive integers is     The set of multiples of is     The set of odd integers less than is           When all the elements satisfy a common property we express the situation as an open proposition and describe the set using a method called the set-builder Method as follows:     We read it as is equal to the set of all 's is true. Here the bar | and the colon : mean such that. Notice that the letter is only a place holder and can be replaced throughout by other letters. So, for a property the set are all the same set.    The following sets are described using the set-builder method.                                   Express each of the above by using either the complete or the oartial listing method.      The set which has no elements is called the empty (or null) set and is denoted by       The set of such that is an empty set.      A set is finite if it has limited number of elements and it is called infinite if it unlimited number of elements.         Set is said to be a subset of set (or contained in ), denoted by every element of is an element of i.e.,   It follows from the definition that set is not a subset of if at least one element of is not an element of i.e., In such cases we write or      For any set and         If then and On the other hand, it is clear that and     If and then since every multiple of is even. However, while Thus     If then and On the other hand, since and             Sets and are said to be equal if they contain exactly the same elements. In this case, we write     Sets and are said to be equivalent if and only if there is a one to one correspondence among their elements. In this case, we write             The sets are all equal.              he set is said to be a proper subset of if every element is also an element in but has at least one element that is not in In this case, we write We also say is a proper set of and write It is clear that      Some authors do not use the symbol Instead they use the symbol for both subset and proper subset. In this material, we prefer to use the notations commonly used in highschool mathematics, and we continue using and differently, namely for subset and proper subset, respectively.     Let be a set. The power set of denoted by is the set whose elements are all subsets of That is,      If a set is finite with elements, then   The number of subsets of is and    The number of proper subsets of is         Let As denoted before, and are subset af Moreover, are all subsets of Therefore,     Frequently it is necessary to limit the topic of discussion to elements of a certain fixed set and regard all sets under consideration as a subset of this fixed set. We call this set the universal set or the universe and denoted by U.      Which of the following are sets?                                 Which of the following sets can be described in complete listing, partial listing and\/or set-builder methods? Describe each set by at least one of the three methods.   The set of the first letters in the English alphabet.    The set of all countries in the world.    The set of students of Addis Ababa University in the 2018\/2019 academic year.    The set of positive multiples of     The set of all horses with six legs.         Write each of the following sets by listing its elements within braces.                                 Let be the set of positive even integers less than Find the truth value of each of the following.                                                     Find the truth value of each of the following and verify your conclusion.              for any set      for any set               For any set               For each of the following set, find its power set.                            How many subsets and proper subsets do the sets that contain exactly elements have?      Is there a set with exactly the following indicated property?   Only one subset    Only one proper subset    Exactly 3 proper subsets    Exactly 4 subsets    Exactly 6 proper subse    Exactly 30 subsets    Exactly 14 proper subsets    Exactly 15 proper subsets         How many elements does contain if it has:    subsets?     proper subsets?    No proper subset?     proper subsets?         Find the truth value of each of the following.        For any set     For any set     For any set          For any three sets prove that:   If and then     If and then          Add review   Add review   Add review   Add review    Set Operations and Venn diagrams  Given two subsets and of a universal set , new sets can be formed using and in many ways, such as taking common elements or non-common elements, and putting everything together. Such processes of forming new sets are called set operations. In this section, three most important operations, namely union, intersection and complement are discussed.    The union of two sets and , denoted by , is the set of all elements that are either in or in (or in both sets). That is,     As easily seen the union operator in the theory of set id the counterpart of the logical operator     The union of two sets and , denoted by , is the set of all elements that are in That is,     As suggested by , the intersection operator in the theory of sets is the counterpart of the logical operator .   Two sets and are said to be disjoint sets if         Let Then,       Let The set of positive even integers and The set of positive multiples of 3. Then,                        The difference between two sets denoted by is all the elements in and not in this set is also called the relative complement of with respect to Symbolically,       is sometimes denoted by  are used interchangeably.     If then and      The above example shows that, in general, are disjoint.     Let be a subset of a universal set The absolute complement (or simply complement ) of denoted by is defined to be the set of all elements of that are not in That is,     Notice that taking the absolute complement of is the same as finding the relative complement of with respect to the universal set That is        If and if then         and     Then,            Let Then             Find Which of these are equal?    For any two sets and each of the following holds.                                    Now we define the symmetric difference of two sets.    The symmetric difference of two sets denoted by is the set       Let be the universal set, and Then and Thus       For any three sets, each of the following holds.    a.     b.     c.     d.     e.     f.       Let us prove property e formally.                              The readers are invited to prove the rest part of the theorem        While working with sets, it is helpful to use diagrams, called Venn diagrams , to illustrate the relationships involved. A Venn diagram is a schematic or pictorial representative of the sets involved in the discussion. Usually sets are represented as interlocking circles, each of which is enclosed in a rectangle, which represents the universal set    In some occasions, we list the elements of set inside the curve representing A.       If then a Venn diagram representation of these two sets looks like the following.       Let         A Venn diagram representation of these sets is given below.            Let    The set of one digits even numbers   The set of positive prime numbers less than 10  We illustrate the sets using a Venn diagram as follows.        Illustrate by a Venn diagram       Illustrate by Venn diagram       Illustrate by using a Venn diagram          Now we illustrate intersections and unions of sets by Venn diagram.        If find       Let and Find                  Suppose The set of one digit numbers and   Describe each of the sets by complete listing method:                                                                       Let Then show that       Perform each of the following operations                            Let       Then find each of the following.         Let    If _______________    If _______________    If _________________         Let Verify each of the following.                                 Depending on question No.9 find.                            For any two subsets of a universal set prove that:                            Draw an appropriate Venn diagram to depict each of the following sets.    The set of high scool students in Addis Ababa.   The set of female high school students in Addis Ababa.   The set of high school anti-AIDS club members students in Addis Ababa.   The set of school Nature Club members students in Addis Ababa.     The set of integers   The set of even integers.   The set of odd integers.   The set of multiples of 3.   The set of prime numbers.         Add review   Add review   "
+  "body": " Set theory     In this section, we study some part of set theory especially description of sets, Venn diagrams and operations of sets.    Explain the concept of set.  Describe sets in different ways.  Identify operations on sets.  Illustrate sets using Venn diagrams.     The concept of a set  The term set is an undefined term, just as a point and a line are undefined terms in geometry. However, the concept of a set permeates every aspect of mathematics. Set theory underlies the language and concepts of modern mathematics. The term set refers to a well-defined collection of objects that share a certain property or certain properties. The term “ well-defined ” here means that the set is described in such a way that one can decide whether or not a given object belongs in the set. If is a set, then the objects of the collection are called the elements or members of the set . If is an element of the set , we write . If is not an element of the set , we write .  As a convention, we use capital letters to denote the names of sets and lowercase letters for elements of a set.  Note that for each objects and each set , exactly one of or but not both must be true.   Add review   Add review    Description of Sets  Sets are described or characterized by one of the following four different ways.     In this method, an ordinary English statement with minimum mathematical symbolization of the property of the elements is used to describe a set. actually, the statement could be in any language.       The set of counting numbers less than ten.    The set of letters in the word Addis Ababa.     The set of all countries in Africa.          If the elements of a set can be listed, we list them all between a pair of braces without repetion separating by commas, and without concern about the order of their appearance. Such a method of describing a set is called the rooster\/complete listing method.       The set of vowels in English alphabet may also be desribed as     The set of positive factors of is also described as            We agree on the convention that the order of writing the elements in the list is immaterial. As a result the sets contain the same elements, namely     The set contains just two distinct elements; namely hence it is the same set as We list distinct elements without repetition.           Let Elements of are   Notice that are different objects. Here but     Let The only element of is But     Let Then has four elements.     The readers are invited to write down all the elements of        In many occassions, the number of elements of a set may be too large to list them all; and in other occassions there may not be an end to the list. In such cases we look for a common property of the elements and describe the set by partially listing the elements. More precisely, if the common property is simple that it can easily be identified from a list of the first few elements, then within a pair of braces, we list these few elements followed (or preceded) by exactly three dotes and possibly by one last element. The following are such instances of describing sets by partial listing method.       The set of all counting numbers in     The set of non-positive integers is     The set of multiples of is     The set of odd integers less than is           When all the elements satisfy a common property we express the situation as an open proposition and describe the set using a method called the set-builder Method as follows:     We read it as is equal to the set of all 's is true. Here the bar | and the colon : mean such that. Notice that the letter is only a place holder and can be replaced throughout by other letters. So, for a property the set are all the same set.    The following sets are described using the set-builder method.                                   Express each of the above by using either the complete or the oartial listing method.      The set which has no elements is called the empty (or null) set and is denoted by       The set of such that is an empty set.      A set is finite if it has limited number of elements and it is called infinite if it unlimited number of elements.         Set is said to be a subset of set (or is contained in ), denoted by every element of is an element of i.e.,   It follows from the definition that set is not a subset of set if at least one element of is not an element of i.e., In such cases we write or      For any set and         If then and On the other hand, it is clear that and     If and then since every multiple of is even. However, while Thus     If then and On the other hand, since and             Sets and are said to be equal if they contain exactly the same elements. In this case, we write     Sets and are said to be equivalent if and only if there is a one to one correspondence among their elements. In this case, we write             The sets are all equal.              The set is said to be a proper subset of if every element is also an element in but has at least one element that is not in In this case, we write We also say is a proper set of and write It is clear that      Some authors do not use the symbol Instead they use the symbol for both subset and proper subset. In this material, we prefer to use the notations commonly used in highschool mathematics, and we continue using and differently, namely for subset and proper subset, respectively.     Let be a set. The power set of denoted by is the set whose elements are all subsets of That is,      If a set is finite with elements, then   The number of subsets of is and    The number of proper subsets of is         Let As denoted before, and are subset af Moreover, are all subsets of Therefore,     Frequently it is necessary to limit the topic of discussion to elements of a certain fixed set and regard all sets under consideration as a subset of this fixed set. We call this set the universal set or the universe and denoted by U.      Which of the following are sets?                                 Which of the following sets can be described in complete listing, partial listing and\/or set-builder methods? Describe each set by at least one of the three methods.   The set of the first letters in the English alphabet.    The set of all countries in the world.    The set of students of Addis Ababa University in the 2018\/2019 academic year.    The set of positive multiples of     The set of all horses with six legs.         Write each of the following sets by listing its elements within braces.                                 Let be the set of positive even integers less than Find the truth value of each of the following.                                                     Find the truth value of each of the following and verify your conclusion.              for any set      for any set               For any set               For each of the following set, find its power set.                            How many subsets and proper subsets do the sets that contain exactly elements have?      Is there a set with exactly the following indicated property?   Only one subset    Only one proper subset    Exactly 3 proper subsets    Exactly 4 subsets    Exactly 6 proper subse    Exactly 30 subsets    Exactly 14 proper subsets    Exactly 15 proper subsets         How many elements does contain if it has:    subsets?     proper subsets?    No proper subset?     proper subsets?         Find the truth value of each of the following.        For any set     For any set     For any set          For any three sets prove that:   If and then     If and then          Add review   Add review   Add review   Add review    Set Operations and Venn diagrams  Given two subsets and of a universal set , new sets can be formed using and in many ways, such as taking common elements or non-common elements, and putting everything together. Such processes of forming new sets are called set operations. In this section, three most important operations, namely union, intersection and complement are discussed.    The union of two sets and , denoted by , is the set of all elements that are either in or in (or in both sets). That is,     As easily seen the union operator in the theory of set is the counterpart of the logical operator     The intersection of two sets and , denoted by , is the set of all elements that are in That is,     As suggested by , the intersection operator in the theory of sets is the counterpart of the logical operator .   Two sets and are said to be disjoint sets if         Let Then,       Let The set of positive even integers and The set of positive multiples of 3. Then,                        The difference between two sets denoted by is all the elements in and not in this set is also called the relative complement of with respect to Symbolically,       is sometimes denoted by  are used interchangeably.     If then and      The above example shows that, in general, are disjoint.     Let be a subset of a universal set The absolute complement (or simply complement ) of denoted by is defined to be the set of all elements of that are not in That is,     Notice that taking the absolute complement of is the same as finding the relative complement of with respect to the universal set That is        If and if then         and     Then,            Let Then             Find Which of these are equal?    For any two sets and each of the following holds.                                    Now we define the symmetric difference of two sets.    The symmetric difference of two sets denoted by is the set       Let be the universal set, and Then and Thus       For any three sets, each of the following holds.    a.     b.     c.     d.     e.     f.       Let us prove property e formally.                              Therefore, we have   The readers are invited to prove the rest part of the        While working with sets, it is helpful to use diagrams, called Venn diagrams , to illustrate the relationships involved. A Venn diagram is a schematic or pictorial representative of the sets involved in the discussion. Usually sets are represented as interlocking circles, each of which is enclosed in a rectangle, which represents the universal set    In some occasions, we list the elements of set inside the curve representing A.       If then a Venn diagram representation of these two sets looks like the following.       Let         A Venn diagram representation of these sets is given below.            Let    The set of one digits even numbers   The set of positive prime numbers less than 10  We illustrate the sets using a Venn diagram as follows.        Illustrate by a Venn diagram       Illustrate by Venn diagram       Illustrate by using a Venn diagram          Now we illustrate intersections and unions of sets by Venn diagram.        If find       Let and Find        Is          Suppose The set of one digit numbers and   Describe each of the sets by complete listing method:                                           Use Venn diagram to illustrate the following statements:                            Let Then show that       Perform each of the following operations                            Let       Then find each of the following.         Let    If _______________    If _______________    If _________________         Let Verify each of the following.                                 Depending on question No.9 find.                            For any two subsets of a universal set prove that:                            Draw an appropriate Venn diagram to depict each of the following sets.    The set of high scool students in Addis Ababa.   The set of female high school students in Addis Ababa.   The set of high school anti-AIDS club members students in Addis Ababa.   The set of school Nature Club members students in Addis Ababa.     The set of integers   The set of even integers.   The set of odd integers.   The set of multiples of 3.   The set of prime numbers.         Add review   Add review   "
 },
 {
   "id": "sec-set-theory-2",
@@ -1033,7 +1159,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.4.13",
   "title": "",
-  "body": "  Set is said to be a subset of set (or contained in ), denoted by every element of is an element of i.e.,   It follows from the definition that set is not a subset of if at least one element of is not an element of i.e., In such cases we write or    "
+  "body": "  Set is said to be a subset of set (or is contained in ), denoted by every element of is an element of i.e.,   It follows from the definition that set is not a subset of set if at least one element of is not an element of i.e., In such cases we write or    "
 },
 {
   "id": "subsec-description-of-sets-25",
@@ -1078,7 +1204,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.4.18",
   "title": "",
-  "body": "  he set is said to be a proper subset of if every element is also an element in but has at least one element that is not in In this case, we write We also say is a proper set of and write It is clear that    "
+  "body": "  The set is said to be a proper subset of if every element is also an element in but has at least one element that is not in In this case, we write We also say is a proper set of and write It is clear that    "
 },
 {
   "id": "subsec-description-of-sets-30",
@@ -1285,7 +1411,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.4.28",
   "title": "",
-  "body": "  The union of two sets and , denoted by , is the set of all elements that are in That is,    "
+  "body": "  The intersection of two sets and , denoted by , is the set of all elements that are in That is,    "
 },
 {
   "id": "subsec-set-operations-and-venn-diagrams-7",
@@ -1396,27 +1522,27 @@ var ptx_lunr_docs = [
   "body": "  For any three sets, each of the following holds.    a.     b.     c.     d.     e.     f.      "
 },
 {
-  "id": "subsec-set-operations-and-venn-diagrams-27",
+  "id": "subsec-set-operations-and-venn-diagrams-28",
   "level": "2",
-  "url": "sec-set-theory.html#subsec-set-operations-and-venn-diagrams-27",
+  "url": "sec-set-theory.html#subsec-set-operations-and-venn-diagrams-28",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Venn diagrams "
 },
 {
-  "id": "subsec-set-operations-and-venn-diagrams-30",
+  "id": "subsec-set-operations-and-venn-diagrams-31",
   "level": "2",
-  "url": "sec-set-theory.html#subsec-set-operations-and-venn-diagrams-30",
+  "url": "sec-set-theory.html#subsec-set-operations-and-venn-diagrams-31",
   "type": "Example",
   "number": "1.4.41",
   "title": "",
   "body": "     If then a Venn diagram representation of these two sets looks like the following.       Let         A Venn diagram representation of these sets is given below.         "
 },
 {
-  "id": "subsec-set-operations-and-venn-diagrams-31",
+  "id": "subsec-set-operations-and-venn-diagrams-32",
   "level": "2",
-  "url": "sec-set-theory.html#subsec-set-operations-and-venn-diagrams-31",
+  "url": "sec-set-theory.html#subsec-set-operations-and-venn-diagrams-32",
   "type": "Example",
   "number": "1.4.42",
   "title": "",
@@ -1438,7 +1564,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.4.3.2",
   "title": "",
-  "body": "  Let and Find               "
+  "body": "  Let and Find        Is       "
 },
 {
   "id": "exercises-set-operations-and-venn-diagrams-3",
@@ -1456,7 +1582,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.4.3.4",
   "title": "",
-  "body": "                           "
+  "body": "  Use Venn diagram to illustrate the following statements:                         "
 },
 {
   "id": "exercises-set-operations-and-venn-diagrams-5",
@@ -1531,18 +1657,18 @@ var ptx_lunr_docs = [
   "body": "  Draw an appropriate Venn diagram to depict each of the following sets.    The set of high scool students in Addis Ababa.   The set of female high school students in Addis Ababa.   The set of high school anti-AIDS club members students in Addis Ababa.   The set of school Nature Club members students in Addis Ababa.     The set of integers   The set of even integers.   The set of odd integers.   The set of multiples of 3.   The set of prime numbers.      "
 },
 {
-  "id": "subsec-set-operations-and-venn-diagrams-35",
+  "id": "subsec-set-operations-and-venn-diagrams-36",
   "level": "2",
-  "url": "sec-set-theory.html#subsec-set-operations-and-venn-diagrams-35",
+  "url": "sec-set-theory.html#subsec-set-operations-and-venn-diagrams-36",
   "type": "Checkpoint",
   "number": "1.4.43",
   "title": "",
   "body": " Add review "
 },
 {
-  "id": "subsec-set-operations-and-venn-diagrams-36",
+  "id": "subsec-set-operations-and-venn-diagrams-37",
   "level": "2",
-  "url": "sec-set-theory.html#subsec-set-operations-and-venn-diagrams-36",
+  "url": "sec-set-theory.html#subsec-set-operations-and-venn-diagrams-37",
   "type": "Checkpoint",
   "number": "1.4.44",
   "title": "",
@@ -2338,7 +2464,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "The set of complex numbers",
-  "body": "The set of complex numbers   The positive integers (natural numbers) were invented to count things. The negative integers were introduced to count money when we owed more than we had. The rational numbers were invented for measuring quantities. Since quantities like voltage, length and time can be measured using fractions, they can be measured using the rational numbers.  The real numbers were invented for wholly mathematical reasons: it was found that there were lengths such as the diagonal of the unit square which, in principle, couldn't be measured by the rational numbers, instead they can be measured using real numbers.  The complex numbers were invented for purely mathematical reasons, just like the real numbers and were intended to make things neat and tidy in solving equations. They were regarded with deep suspicion by the more conservative folk for a century. Complex numbers are points in the plane, together with a rule telling you how to multiply them. They are two-dimensional, whereas the real numbers are one dimensional.  Equations of the form has no solution on the set of real numbers. Therefore, the set of complex numbers permits us to solve such equations.    The set of complex numbers is denoted by and is described by .    Note: If , the number is called purely imaginary and if , the number is called purely real.  Complex numbers can be defined as an order pair of real numbers that can be interpreted as points in the complex plane (z- plane) with coordinates and .    Find the real imaginary part of the following complex numbers :     Solution: real part & imaginary part      Solution: real part & imaginary part       Plotting complex numbers  Any complex number can be drawn in the complex plane as below :     Draw the complex number         Two complex numbers and are equal iff & .    If and are equal, then find the value of & .     , .     Add review   Add review    Operations on Complex numbers  Example 2.46            .    If and , then find                    Add review   Add review   Add review    Conjugate of a complex number    The conjugate of a complex number z = x+iy is denoted by and is defined as = x-iy. It can be represented by the point (x, -y) which is the reflection of the point (x, y) about the x-axis.       Find the conjugate of the complex number .        .                              proof : a) let          .   &    &   Now         The others are left for the reader.   Add review   Add review    Modulus (Norm) of a complex number    The modulus of a complex number z = x+iy is a non-negative real number denoted by |z| and is defined as |z| = . Geometrically, the number |z| represents the distnce between the point (x, y) and the origin.     Example 2.48: Find the modulus of the complex number z = 3 – 4i.  Properties of modulus  The others are left for the reader.   Add review   Add review   Add review    Additive and multiplicative inverses  Let z = x +i y be a complex number, then  Example 2.49 : Find the additive and the multiplicative inverse of z = 3+4i.     Exercise 2.3         Verify that  Show that  Do the following operations and simplify your answer.  Locate the complex numbers z 1 +z 2 and z 1 -z 2 , as vectors where  Sketch the following set of points determined by the condition given below:  Using properties of conjugate and modulus, show that  Show that  Using mathematical induction, show that (when n = 2, 3, . . . ,)  Show that the equation which is a circle of radius r centered at can be written as       Add review   Add review    Argument (Amplitude) of a complex number     Definition 2.15    Argument of a complex number z = x+iy is the angle formed by the complex number z = x+iy with the positive x-axis. The argument of a complex number z = x+iy is deonted by argz and is given by arg(z) =  The particular argument of z that lies in the range is called the principal argument of z and is dented by Argz.     Example 2.50 : Find the principal argument of the following complex numbers:  Properties of Arguments  Example 2.51 : Find the principal argument of   Add review   Add review    Polar form of a complex number     Definition 2.16    Let r and be polar coordinates of the point (x, y) of the complex number z = x+iy. Since x = and y = , then the complex number can be written as : which is called polar form, where r is modulus of z and is principal argument of z.     Example 2.52 : Express the following complex numbers in polar form:       Multiplication and division in polar forms     Proof:  Example 2.53:      Argument of a product      The argument of the product of two complex numbers is the sum of their arguments.      Proof:   Argument of a quotient     The argument of the quotient of two complex numbers is the difference of their arguments.     Proof:  Example 2.54:      De Moivre’s Formula     Example 2.55: Express in polar form.  Example 2.56: Express in polar form.     Euler’s formula  The complex number can be written in exponential form as: which is called Euler’s formula.     Example 2.57 : Express the complex number z = 1+i using Euler’s formula.   Example 2.58 : Express the complex number using Euler’s formula.  Example 2.59 : Express the complex number using Euler’s formula.   Add review   Add review    Extraction of roots  Example 2.60 : Find the square roots of the complex number  Example 2.61 : Find the cube roots of the complex number     Exercise 2.4        1. Find the argument of the following complex numbers:  2. Show that  3. Using mathematical induction, show that  4. Show that  5. Show that  6. Find the square roots of z = 9i  7. Find the cube roots of z = 8i  8. Solve the following equations:         Add review   Add review   Add review   Add review   "
+  "body": "The set of complex numbers   The positive integers (natural numbers) were invented to count things. The negative integers were introduced to count money when we owed more than we had. The rational numbers were invented for measuring quantities. Since quantities like voltage, length and time can be measured using fractions, they can be measured using the rational numbers.  The real numbers were invented for wholly mathematical reasons: it was found that there were lengths such as the diagonal of the unit square which, in principle, couldn't be measured by the rational numbers, instead they can be measured using real numbers.  The complex numbers were invented for purely mathematical reasons, just like the real numbers and were intended to make things neat and tidy in solving equations. They were regarded with deep suspicion by the more conservative folk for a century. Complex numbers are points in the plane, together with a rule telling you how to multiply them. They are two-dimensional, whereas the real numbers are one dimensional.  Equations of the form has no solution on the set of real numbers. Therefore, the set of complex numbers permits us to solve such equations.    The set of complex numbers is denoted by and is described by .    Note: If , the number is called purely imaginary and if , the number is called purely real.  Complex numbers can be defined as an order pair of real numbers that can be interpreted as points in the complex plane (z- plane) with coordinates and .    Find the real imaginary part of the following complex numbers :     Solution: real part & imaginary part      Solution: real part & imaginary part       Plotting complex numbers  Any complex number can be drawn in the complex plane as below :     Draw the complex number         Two complex numbers and are equal iff & .    If and are equal, then find the value of & .     , .     Add review   Add review    Operations on Complex numbers  Example 2.46            .    If and , then find                    Add review   Add review   Add review    Conjugate of a complex number    The conjugate of a complex number z = x+iy is denoted by and is defined as = x-iy. It can be represented by the point (x, -y) which is the reflection of the point (x, y) about the x-axis.       Find the conjugate of the complex number .        .                              proof : a) let          .   &    &   Now         The others are left for the reader.   Add review   Add review    Modulus (Norm) of a complex number    The modulus of a complex number z = x+iy is a non-negative real number denoted by and is defined as = . Geometrically, the number represents the distnce between the point (x, y) and the origin.       Find the modulus of the complex number .    The modulus of the complex number    .       a. =   b.   c.   d. (if )  e. triangle inequality  f.   proof           proof      Now      proof            proof (if )  The others are left for the reader.   Add review   Add review   Add review    Additive and multiplicative inverses  Let z = x +i y be a complex number, then     its additive inverse denoted by is given by : .    its multiplicative inverse denoted by is given by : .       Find the additive and multiplicative inverses of the complex number .     .      .         Verify that                            Show that                       Do the following operations and simplify your answer.                           Add review   Add review    Argument (Amplitude) of a complex number    Argument of a complex number is the angle formed by the complex number with the positive x-axis. The argument of a complex number is deonted by and is given by arg(z) =   The particular argument of that lies in the range is called the principal argument of and is dented by Argz.    Notes : .   move counter clock wise direction, if not move the other direction.    Find the argument of the following complex numbers:                                                      Find the principal argument of              Add review   Add review    Polar form of a complex number    Let and be polar coordinates of the point (x, y) of the complex number . Since x = and y = , then the complex number can be written as : which is called polar form, where is modulus of and is principal argument of .      Express the following complex numbers in polar form:                                .                                           If and , then find:                             The argument of the product of two complex numbers is the sum of their arguments.                                        The argument of the quotient of two complex numbers is the difference of their arguments.                    Recall the product : .  Similarly, we get .  Now we can generalize that .   which is called De Moivre's formula.    Express in polar form.     and hence               Express in polar form.     .                  The complex number can be written in exponential form as: which is called Euler’s formula.                 Now &               Now &               Now &         Extraction of roots  Suppose is the root of a non - zero complex number , where .  Then, , which implies that    & .   &    which is the root of , where and or we can denote it by where .    Find the square roots of the complex number .       Here   Hence .         , then    , then    & .      Find the cube roots of the complex number .    We have . Here .  Hence,          , then    , then    , then    & .         Find the square roots of the complex numbers:          Show that     Using mathematical induction, show that          Add review   Add review   Add review   Add review   "
 },
 {
   "id": "def-the-set-of-complex-numbers",
@@ -2473,32 +2599,41 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "2.2.15",
   "title": "",
-  "body": "  The modulus of a complex number z = x+iy is a non-negative real number denoted by |z| and is defined as |z| = . Geometrically, the number |z| represents the distnce between the point (x, y) and the origin.   "
+  "body": "  The modulus of a complex number z = x+iy is a non-negative real number denoted by and is defined as = . Geometrically, the number represents the distnce between the point (x, y) and the origin.   "
 },
 {
-  "id": "subsec-modulus-norm-of-a-complex-7",
+  "id": "subsec-modulus-norm-of-a-complex-4",
   "level": "2",
-  "url": "sec-the-set-of-complex-numbers.html#subsec-modulus-norm-of-a-complex-7",
-  "type": "Checkpoint",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-modulus-norm-of-a-complex-4",
+  "type": "Example",
   "number": "2.2.16",
   "title": "",
-  "body": " Add review "
+  "body": "  Find the modulus of the complex number .    The modulus of the complex number    .   "
 },
 {
-  "id": "subsec-modulus-norm-of-a-complex-8",
+  "id": "subsec-modulus-norm-of-a-complex-26",
   "level": "2",
-  "url": "sec-the-set-of-complex-numbers.html#subsec-modulus-norm-of-a-complex-8",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-modulus-norm-of-a-complex-26",
   "type": "Checkpoint",
   "number": "2.2.17",
   "title": "",
   "body": " Add review "
 },
 {
-  "id": "subsec-modulus-norm-of-a-complex-9",
+  "id": "subsec-modulus-norm-of-a-complex-27",
   "level": "2",
-  "url": "sec-the-set-of-complex-numbers.html#subsec-modulus-norm-of-a-complex-9",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-modulus-norm-of-a-complex-27",
   "type": "Checkpoint",
   "number": "2.2.18",
+  "title": "",
+  "body": " Add review "
+},
+{
+  "id": "subsec-modulus-norm-of-a-complex-28",
+  "level": "2",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-modulus-norm-of-a-complex-28",
+  "type": "Checkpoint",
+  "number": "2.2.19",
   "title": "",
   "body": " Add review "
 },
@@ -2506,26 +2641,26 @@ var ptx_lunr_docs = [
   "id": "subsec-additive-and-multiplicative-inverses-4",
   "level": "2",
   "url": "sec-the-set-of-complex-numbers.html#subsec-additive-and-multiplicative-inverses-4",
-  "type": "Table",
-  "number": "2.2.19",
+  "type": "Example",
+  "number": "2.2.20",
   "title": "",
-  "body": "   Exercise 2.3    "
+  "body": "  Find the additive and multiplicative inverses of the complex number .     .      .   "
 },
 {
   "id": "subsec-additive-and-multiplicative-inverses-5",
   "level": "2",
   "url": "sec-the-set-of-complex-numbers.html#subsec-additive-and-multiplicative-inverses-5",
-  "type": "Table",
-  "number": "2.2.20",
+  "type": "Checkpoint",
+  "number": "2.2.21",
   "title": "",
-  "body": "    Verify that  Show that  Do the following operations and simplify your answer.  Locate the complex numbers z 1 +z 2 and z 1 -z 2 , as vectors where  Sketch the following set of points determined by the condition given below:  Using properties of conjugate and modulus, show that  Show that  Using mathematical induction, show that (when n = 2, 3, . . . ,)  Show that the equation which is a circle of radius r centered at can be written as     "
+  "body": "     Verify that                            Show that                       Do the following operations and simplify your answer.                         "
 },
 {
   "id": "subsec-additive-and-multiplicative-inverses-6",
   "level": "2",
   "url": "sec-the-set-of-complex-numbers.html#subsec-additive-and-multiplicative-inverses-6",
   "type": "Checkpoint",
-  "number": "2.2.21",
+  "number": "2.2.22",
   "title": "",
   "body": " Add review "
 },
@@ -2534,160 +2669,241 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-the-set-of-complex-numbers.html#subsec-additive-and-multiplicative-inverses-7",
   "type": "Checkpoint",
-  "number": "2.2.22",
-  "title": "",
-  "body": " Add review "
-},
-{
-  "id": "subsec-argument-amplitude-of-a-complex-2",
-  "level": "2",
-  "url": "sec-the-set-of-complex-numbers.html#subsec-argument-amplitude-of-a-complex-2",
-  "type": "Table",
   "number": "2.2.23",
   "title": "",
-  "body": "   Definition 2.15    Argument of a complex number z = x+iy is the angle formed by the complex number z = x+iy with the positive x-axis. The argument of a complex number z = x+iy is deonted by argz and is given by arg(z) =  The particular argument of z that lies in the range is called the principal argument of z and is dented by Argz.    "
+  "body": " Add review "
 },
 {
-  "id": "subsec-argument-amplitude-of-a-complex-6",
+  "id": "def-argument-amplitude-of-a-complex",
   "level": "2",
-  "url": "sec-the-set-of-complex-numbers.html#subsec-argument-amplitude-of-a-complex-6",
-  "type": "Checkpoint",
+  "url": "sec-the-set-of-complex-numbers.html#def-argument-amplitude-of-a-complex",
+  "type": "Definition",
   "number": "2.2.24",
   "title": "",
-  "body": " Add review "
+  "body": "  Argument of a complex number is the angle formed by the complex number with the positive x-axis. The argument of a complex number is deonted by and is given by arg(z) =   The particular argument of that lies in the range is called the principal argument of and is dented by Argz.   "
 },
 {
-  "id": "subsec-argument-amplitude-of-a-complex-7",
+  "id": "subsec-argument-amplitude-of-a-complex-5",
   "level": "2",
-  "url": "sec-the-set-of-complex-numbers.html#subsec-argument-amplitude-of-a-complex-7",
-  "type": "Checkpoint",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-argument-amplitude-of-a-complex-5",
+  "type": "Example",
   "number": "2.2.25",
   "title": "",
+  "body": "  Find the argument of the following complex numbers:                                          "
+},
+{
+  "id": "subsec-argument-amplitude-of-a-complex-9",
+  "level": "2",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-argument-amplitude-of-a-complex-9",
+  "type": "Example",
+  "number": "2.2.26",
+  "title": "",
+  "body": "  Find the principal argument of            "
+},
+{
+  "id": "subsec-argument-amplitude-of-a-complex-10",
+  "level": "2",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-argument-amplitude-of-a-complex-10",
+  "type": "Checkpoint",
+  "number": "2.2.27",
+  "title": "",
   "body": " Add review "
 },
 {
-  "id": "subsec-polar-form-of-a-complex-2",
+  "id": "subsec-argument-amplitude-of-a-complex-11",
   "level": "2",
-  "url": "sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex-2",
-  "type": "Table",
-  "number": "2.2.26",
-  "title": "",
-  "body": "   Definition 2.16    Let r and be polar coordinates of the point (x, y) of the complex number z = x+iy. Since x = and y = , then the complex number can be written as : which is called polar form, where r is modulus of z and is principal argument of z.    "
-},
-{
-  "id": "subsec-polar-form-of-a-complex-6",
-  "level": "2",
-  "url": "sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex-6",
-  "type": "Table",
-  "number": "2.2.27",
-  "title": "",
-  "body": "   Multiplication and division in polar forms    "
-},
-{
-  "id": "subsec-polar-form-of-a-complex-11",
-  "level": "2",
-  "url": "sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex-11",
-  "type": "Table",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-argument-amplitude-of-a-complex-11",
+  "type": "Checkpoint",
   "number": "2.2.28",
   "title": "",
-  "body": "   The argument of the product of two complex numbers is the sum of their arguments.    "
+  "body": " Add review "
 },
 {
-  "id": "subsec-polar-form-of-a-complex-15",
+  "id": "def-polar-form-of-a-complex",
   "level": "2",
-  "url": "sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex-15",
-  "type": "Table",
+  "url": "sec-the-set-of-complex-numbers.html#def-polar-form-of-a-complex",
+  "type": "Definition",
   "number": "2.2.29",
   "title": "",
-  "body": "   The argument of the quotient of two complex numbers is the difference of their arguments.    "
+  "body": "  Let and be polar coordinates of the point (x, y) of the complex number . Since x = and y = , then the complex number can be written as : which is called polar form, where is modulus of and is principal argument of .   "
 },
 {
-  "id": "subsec-polar-form-of-a-complex-18",
+  "id": "subsec-polar-form-of-a-complex-3",
   "level": "2",
-  "url": "sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex-18",
-  "type": "Table",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex-3",
+  "type": "Example",
   "number": "2.2.30",
   "title": "",
-  "body": "   De Moivre’s Formula    "
+  "body": "  Express the following complex numbers in polar form:                     "
 },
 {
   "id": "subsec-polar-form-of-a-complex-21",
   "level": "2",
   "url": "sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex-21",
-  "type": "Table",
+  "type": "Example",
   "number": "2.2.31",
   "title": "",
-  "body": "   Euler’s formula  The complex number can be written in exponential form as: which is called Euler’s formula.    "
+  "body": "  If and , then find:                       "
 },
 {
-  "id": "subsec-polar-form-of-a-complex-26",
+  "id": "def-argument-of-a-product",
   "level": "2",
-  "url": "sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex-26",
-  "type": "Checkpoint",
+  "url": "sec-the-set-of-complex-numbers.html#def-argument-of-a-product",
+  "type": "Definition",
   "number": "2.2.32",
   "title": "",
-  "body": " Add review "
+  "body": "     The argument of the product of two complex numbers is the sum of their arguments.   "
 },
 {
-  "id": "subsec-polar-form-of-a-complex-27",
+  "id": "def-argument-of-a-quotient",
   "level": "2",
-  "url": "sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex-27",
-  "type": "Checkpoint",
+  "url": "sec-the-set-of-complex-numbers.html#def-argument-of-a-quotient",
+  "type": "Definition",
   "number": "2.2.33",
   "title": "",
-  "body": " Add review "
+  "body": "     The argument of the quotient of two complex numbers is the difference of their arguments.   "
 },
 {
-  "id": "subsec-extraction-of-roots-4",
+  "id": "subsec-polar-form-of-a-complex-37",
   "level": "2",
-  "url": "sec-the-set-of-complex-numbers.html#subsec-extraction-of-roots-4",
-  "type": "Table",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex-37",
+  "type": "Example",
   "number": "2.2.34",
   "title": "",
-  "body": "   Exercise 2.4    "
+  "body": "      "
 },
 {
-  "id": "subsec-extraction-of-roots-5",
+  "id": "subsec-polar-form-of-a-complex-43",
   "level": "2",
-  "url": "sec-the-set-of-complex-numbers.html#subsec-extraction-of-roots-5",
-  "type": "Table",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex-43",
+  "type": "Example",
   "number": "2.2.35",
   "title": "",
-  "body": "   1. Find the argument of the following complex numbers:  2. Show that  3. Using mathematical induction, show that  4. Show that  5. Show that  6. Find the square roots of z = 9i  7. Find the cube roots of z = 8i  8. Solve the following equations:       "
+  "body": "  Express in polar form.     and hence            "
 },
 {
-  "id": "subsec-extraction-of-roots-6",
+  "id": "subsec-polar-form-of-a-complex-44",
   "level": "2",
-  "url": "sec-the-set-of-complex-numbers.html#subsec-extraction-of-roots-6",
-  "type": "Checkpoint",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex-44",
+  "type": "Example",
   "number": "2.2.36",
   "title": "",
-  "body": " Add review "
+  "body": "  Express in polar form.     .            "
+},
+{
+  "id": "def-euler-s-formula",
+  "level": "2",
+  "url": "sec-the-set-of-complex-numbers.html#def-euler-s-formula",
+  "type": "Definition",
+  "number": "2.2.37",
+  "title": "",
+  "body": "     The complex number can be written in exponential form as: which is called Euler’s formula.   "
+},
+{
+  "id": "subsec-polar-form-of-a-complex-47",
+  "level": "2",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex-47",
+  "type": "Example",
+  "number": "2.2.38",
+  "title": "",
+  "body": "          Now &    "
+},
+{
+  "id": "subsec-polar-form-of-a-complex-48",
+  "level": "2",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex-48",
+  "type": "Example",
+  "number": "2.2.39",
+  "title": "",
+  "body": "          Now &    "
+},
+{
+  "id": "subsec-polar-form-of-a-complex-49",
+  "level": "2",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex-49",
+  "type": "Example",
+  "number": "2.2.40",
+  "title": "",
+  "body": "          Now &    "
+},
+{
+  "id": "subsec-polar-form-of-a-complex-50",
+  "level": "2",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex-50",
+  "type": "Checkpoint",
+  "number": "2.2.41",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "subsec-polar-form-of-a-complex-51",
+  "level": "2",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-polar-form-of-a-complex-51",
+  "type": "Checkpoint",
+  "number": "2.2.42",
+  "title": "",
+  "body": ""
 },
 {
   "id": "subsec-extraction-of-roots-7",
   "level": "2",
   "url": "sec-the-set-of-complex-numbers.html#subsec-extraction-of-roots-7",
-  "type": "Checkpoint",
-  "number": "2.2.37",
+  "type": "Example",
+  "number": "2.2.43",
   "title": "",
-  "body": " Add review "
+  "body": "  Find the square roots of the complex number .       Here   Hence .         , then    , then    & .   "
 },
 {
   "id": "subsec-extraction-of-roots-8",
   "level": "2",
   "url": "sec-the-set-of-complex-numbers.html#subsec-extraction-of-roots-8",
+  "type": "Example",
+  "number": "2.2.44",
+  "title": "",
+  "body": "  Find the cube roots of the complex number .    We have . Here .  Hence,          , then    , then    , then    & .   "
+},
+{
+  "id": "exercises-subsec-extraction-of-roots-1",
+  "level": "2",
+  "url": "sec-the-set-of-complex-numbers.html#exercises-subsec-extraction-of-roots-1",
+  "type": "Exercise",
+  "number": "2.2.8.1",
+  "title": "",
+  "body": "    Find the square roots of the complex numbers:          Show that     Using mathematical induction, show that       "
+},
+{
+  "id": "subsec-extraction-of-roots-10",
+  "level": "2",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-extraction-of-roots-10",
   "type": "Checkpoint",
-  "number": "2.2.38",
+  "number": "2.2.45",
   "title": "",
   "body": " Add review "
 },
 {
-  "id": "subsec-extraction-of-roots-9",
+  "id": "subsec-extraction-of-roots-11",
   "level": "2",
-  "url": "sec-the-set-of-complex-numbers.html#subsec-extraction-of-roots-9",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-extraction-of-roots-11",
   "type": "Checkpoint",
-  "number": "2.2.39",
+  "number": "2.2.46",
+  "title": "",
+  "body": " Add review "
+},
+{
+  "id": "subsec-extraction-of-roots-12",
+  "level": "2",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-extraction-of-roots-12",
+  "type": "Checkpoint",
+  "number": "2.2.47",
+  "title": "",
+  "body": " Add review "
+},
+{
+  "id": "subsec-extraction-of-roots-13",
+  "level": "2",
+  "url": "sec-the-set-of-complex-numbers.html#subsec-extraction-of-roots-13",
+  "type": "Checkpoint",
+  "number": "2.2.48",
   "title": "",
   "body": " Add review "
 },
@@ -2698,7 +2914,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "Review of relations and functions",
-  "body": " Review of relations and functions  After completing this section, the student should be able to:    define Cartesian product of two sets  understand the notion of relation and function  know the difference between relation and function  determine the domain and range of relations and functions  find the inverse of a relation    The student is familiar with the phrase ordered pair. In the ordered pair and ; and are the first coordinates while and are the second coordinates.       Given sets and . Then, the set is the Cartesian product of and , and it is denoted by .    Suppose and are sets. The Cartesian product of and , denoted by , is the set which contains every ordered pair whose first coordinate is an element of and second coordinate is an element of , i.e.  and .      For and , we have      , and  .      Let and . Then,    .  From example 3.1, we can see that and are not equal. Recall that two sets are equal if one is a subset of the other and vice versa. To check equality of Cartesian products we need to define equality of ordered pairs.    Two ordered pairs and are equal if and only if and .      If and are sets, any subset of is called a relation from A into B .    Suppose R is a relation from a set A to a set B . Then, R ⊆ A × B and hence for each , we have either or . If , we say “ a is R- related (or simply related) to b ”, and write . If , we say that “ a is not related to b ”.  In particular if R is a relation from a set A to itself, then we say that R is a relation on A .       Let and . Let be the relation “less than” from to . Then, .    Let and .  (a) The following are relations from into ;  (i)   (ii)   (iii)   (b) The following are relations from to ;  (i)   (ii)   (iii)          Let be a relation from into . Then,     the domain of , denoted by , is the set of first coordinates of the elements of , i.e       the range of , denoted by , is the set of second coordinates of elements of , i.e           : If is a relation from the set to the set , then the set is called the codomain of the relation . The range of relation is always a subset of the codomain.       The set is a relation from set to set . The domain of is , the range of is and the codomain of is .    The set of ordered pairs is a relation between the sets and , where is the domain and is the range.             If for a relation , we say is related to (or paired with) . Note that may also be paired with an element different from . In any case, is called the image of while is called the pimageA of under .    If the domain and\/or range of a relation is infinite, we cannot list each element assignment, so instead we use set builder notation to describe the relation. The situation we will encounter most frequently is that of a relation defined by an equation or formula. For example,     is a relation for which the range value is 3 less than twice the domain value. Hence, and are examples of ordered pairs that are of the assignment.          Let Let be the relation on defined by is a factor of . Find the domain and range of .    Let and .  Let Find   (a)   (b)   (c)            We have   .  Then, and .    We have   and and 64 are in whereas 125 is not in . Thus, , and .             A relation on a set is called  (i) a universal relation if   (ii) identity relation if   (iii) void or empty relation if     If is a relation from into , then the inverse relation of , denoted by , is a relation from to and is given by:   .  Observe that and . For instance, if is a relation on a set , then        Let be a relation defined on by .Find   (a)   (b)   (c)   (d)      The smallest natural number is           Therefore, , , and .             Mathematically, it is important for us to distinguish among the relations that assign a unique range element to each domain element and those that do not.    A function is a relation in which each element of the domain corresponds to exactly one element of the range.      Determine whether the following relations are functions.   (a)   (b)         Since the domain element is assigned to two different values in the range, and , it is not a function.    Each element in the domain, , is assigned no more than one value in the range, 2 is assigned only 4, 3 is assigned only 4, and 6 is assigned only . Therefore, it is a function.        Map or mapping, transformation and correspondence are synonyms for the word function. If is a function and , we say is mapped to by .    A relation from A into B is called a function from A into B , denoted by   or   if and only if          No element of A is mapped by to more than one element in B , i.e. if and , then .             If to the element of corresponds under the function , then we write and is called the image of x under and x is called a preimage of under .    The symbol is read as “ of ” but not “ times ”.    In order to show that a relation from into is a function, we first show that the domain of is and next we show that well defined or single-valued, i.e. if in , then in for all .       Let and . Which of the following are functions from A to .    defined by  defined by  defined by  defined by  defined by          is a function because to each element of there corresponds exactly one element of .     is not a function because there is no element of which correspond to ( ).     is a function because to each element of there corresponds exactly one element of . In the given function, the images of all element of are the same.     is not a function because there are two elements of which correspond to .In other words, the image of is not unique.     is a function because to each element of there corresponds exactly one element of .       As with relations, we can describe a function with an equation. For example, is a function, since each will produce only one .    Let . Then, maps:             More generally any real number is mapped to its square. As the square of a number is unique, maps every real number to a unique number. Thus, is a function from into .  We will find it useful to use the following vocabulary: The independent variable refers to the variable representing possible values in the domain, and the dependent variable refers to the variable representing possible values in the range. Thus, in our usual ordered pair notation , is the independent variable and is the dependent variable.    Let be the subset of defined by . Is a function?    First we note that . Then, satisfies condition (i) in the definition of a function. Now, , and but . Thus is not well defined. Hence, is not a function from to .      Let be the subset of defined by . Is a function?    First we show that satisfies condition (i) in the definition. Let be any element of . Then, . Hence, . This implies that . Thus, . However, and so . Now, and . Thus, and are in . Hence we find that and . This implies that is not well defined, i.e, does not satisfy condition (ii). Hence, is not a function from to .             For a function      The set A is called the domain of     The set B is called the codomain of     The set of all image of elements of A is called the range of        Let and . Let be the correspondence which assigns to each element in , its square. Thus, we have . Therefore, is a function and , and codomain of is .      Let . Let and represent the elements in the sets and , respectively. Let be a function defined by .  The variable can take values Thus, we have   .  This implies that and codomain of is IN .      Determine whether the following equations determine as a function of , if so, find the domain of the function.                            To determine whether gives as a function of , we need to know whether each x-value uniquely determines a y-value . Looking at the equation , we can see that once is chosen we multiply it by – 3 and then add 5. Thus, for each x there is a unique . Therefore, is a function. It domain is the set of all real numbers.    Looking at the equation carefully, we can see that each uniquely determines a (one can not produce two different ). Therefore, is a function.  As for its domain, we ask ourselves. Are there any values of that must be excluded? Since is a fractional expression, we must exclude any value of that makes the denominator equal to zero. We must have     Therefore, the domain consists of all real numbers except . Thus, .    For the equation , if we choose we get , which gives . In other words, there are two values associated with . Therefore, is not a function.         Find the domain of the function .    Since is defined and is real when the expression under the radical is non-negative, we need to satisfy the inequality     This is a quadratic inequality, which can be solved by analyzing signs:  Sign of    Since we want to be non-negative, the sign analysis shows us that the domain is or .       Let R be a relation on the set defined by .     List the elements of     Is          Let be a relation on the set defined by divides .     List the elements of     Find &     Find the elements of     Find &          Let . Define a relation on by . Write down the domain, codomain and range of . Find .      Find the domain and range of the relation .      Let and . Which of the following are functions from to ?                              Determine the domain and range of the following relations. Which relation a function?                                        Find the domain and range of the following functions.                              Given .  Find                           Add review   Add review   Add review   Add review  "
+  "body": " Review of relations and functions  After completing this section, the student should be able to:    define Cartesian product of two sets  understand the notion of relation and function  know the difference between relation and function  determine the domain and range of relations and functions  find the inverse of a relation    The student is familiar with the phrase ordered pair. In the ordered pair and ; and are the first coordinates while and are the second coordinates.       Given sets and . Then, the set is the Cartesian product of and , and it is denoted by .    Suppose and are sets. The Cartesian product of and , denoted by , is the set which contains every ordered pair whose first coordinate is an element of and second coordinate is an element of , i.e.  .      For and , we have      , and  .      Let and . Then,    .  From example 3.1, we can see that and are not equal. Recall that two sets are equal if one is a subset of the other and vice versa. To check equality of Cartesian products we need to define equality of ordered pairs.   (Equality of ordered pairs)     Two ordered pairs and are equal if and only if and .     Relation from A into B     If and are sets, any subset of is called a relation from A into B .    Suppose is a relation from a set to a set . Then, ⊆ × and hence for each , we have either or . If , we say is related (or simply related) to , and write . If , we say that is not related to .  In particular if is a relation from a set to itself, then we say that is a relation on .       Let and . Let be the relation “less than” from to . Then, .    Let and .  (a) The following are relations from into ;  (i)   (ii)   (iii)   (b) The following are relations from to ;  (i)   (ii)   (iii)          Let be a relation from into . Then,     the domain of , denoted by , is the set of first coordinates of the elements of , i.e       the range of , denoted by , is the set of second coordinates of elements of , i.e           If is a relation from the set to the set , then the set is called the codomain of the relation . The range of relation is always a subset of the codomain.        The set is a relation from set to set . The domain of is , the range of is and the codomain of is .    The set of ordered pairs is a relation between the sets and , where is the domain and is the range.           If for a relation , we say is related to (or paired with) . Note that may also be paired with an element different from . In any case, is called the image of while is called the pre-image of under .    If the domain and\/or range of a relation is infinite, we cannot list each element assignment, so instead we use set builder notation to describe the relation. The situation we will encounter most frequently is that of a relation defined by an equation or formula. For example,     is a relation for which the range value is 3 less than twice the domain value. Hence, and are examples of ordered pairs that are of the assignment.           Let   Let be the relation on defined by . Find the domain and range of .    Let and .  Let Find   (a)   (b)   (c)            We have   .  Then, and .    We have   and and are in whereas is not in . Thus, , and .           A relation on a set is called  (i) a universal relation if   (ii) identity relation if   (iii) void or empty relation if     If is a relation from into , then the inverse relation of , denoted by , is a relation from to and is given by:   .  Observe that and . For instance, if is a relation on a set , then         Let be a relation defined on by .Find   (a)   (b)   (c)   (d)      The smallest natural number is           Therefore, , , and .             Mathematically, it is important for us to distinguish among the relations that assign a unique range element to each domain element and those that do not.   Function     A function is a relation in which each element of the domain corresponds to exactly one element of the range.      Determine whether the following relations are functions.   (a)   (b)         Since the domain element is assigned to two different values in the range, and , it is not a function.    Each element in the domain, , is assigned no more than one value in the range, is assigned only , is assigned only , and is assigned only . Therefore, it is a function.        Map or mapping, transformation and correspondence are synonyms for the word function. If is a function and , we say is mapped to by .     A relation from A into B is called a function from A into B , denoted by   or   if and only if          No element of A is mapped by to more than one element in B , i.e. if and , then .           If to the element of corresponds under the function , then we write and is called the image of x under and x is called a preimage of under .    The symbol is read as “ of ” but not “ times ”.    In order to show that a relation from into is a function, we first show that the domain of is and next we show that well defined or single-valued, i.e. if in , then in for all .        Let and . Which of the following are functions from A to .    defined by  defined by  defined by  defined by  defined by          is a function because to each element of there corresponds exactly one element of .     is not a function because there is no element of which correspond to ( ).     is a function because to each element of there corresponds exactly one element of . In the given function, the images of all element of are the same.     is not a function because there are two elements of which correspond to .In other words, the image of is not unique.     is a function because to each element of there corresponds exactly one element of .       As with relations, we can describe a function with an equation. For example, is a function, since each will produce only one .    Let . Then, maps:             More generally any real number is mapped to its square. As the square of a number is unique, maps every real number to a unique number. Thus, is a function from into .  We will find it useful to use the following vocabulary: The independent variable refers to the variable representing possible values in the domain, and the dependent variable refers to the variable representing possible values in the range. Thus, in our usual ordered pair notation , is the independent variable and is the dependent variable.    Let be the subset of defined by . Is a function?    First we note that . Then, satisfies condition (i) in the definition of a function. Now, , and but . Thus is not well defined. Hence, is not a function from to .      Let be the subset of defined by . Is a function?    First we show that satisfies condition (i) in the definition. Let be any element of . Then, . Hence, . This implies that . Thus, . However, and so . Now, and . Thus, and are in . Hence we find that and . This implies that is not well defined, i.e, does not satisfy condition (ii). Hence, is not a function from to .             For a function      The set A is called the domain of     The set B is called the codomain of     The set of all image of elements of A is called the range of        Let and . Let be the correspondence which assigns to each element in , its square. Thus, we have . Therefore, is a function and , and codomain of is .      Let . Let and represent the elements in the sets and , respectively. Let be a function defined by .  The variable can take values Thus, we have   .  This implies that and codomain of is IN .      Determine whether the following equations determine as a function of , if so, find the domain of the function.                            To determine whether gives as a function of , we need to know whether each x-value uniquely determines a y-value . Looking at the equation , we can see that once is chosen we multiply it by – 3 and then add 5. Thus, for each x there is a unique . Therefore, is a function. It domain is the set of all real numbers.    Looking at the equation carefully, we can see that each uniquely determines a (one can not produce two different ). Therefore, is a function.  As for its domain, we ask ourselves. Are there any values of that must be excluded? Since is a fractional expression, we must exclude any value of that makes the denominator equal to zero. We must have     Therefore, the domain consists of all real numbers except . Thus, .    For the equation , if we choose we get , which gives . In other words, there are two values associated with . Therefore, is not a function.         Find the domain of the function .    Since is defined and is real when the expression under the radical is non-negative, we need to satisfy the inequality     This is a quadratic inequality, which can be solved by analyzing signs:   Sign of        Since we want to be non-negative, the sign analysis shows us that the domain is or .       Let R be a relation on the set defined by .     List the elements of     Is          Let be a relation on the set defined by divides .     List the elements of     Find &     Find the elements of     Find &          Let . Define a relation on by . Write down the domain, codomain and range of . Find .      Find the domain and range of the relation .      Let and . Which of the following are functions from to ?                              Determine the domain and range of the following relations. Which relation a function?                                        Find the domain and range of the following functions.                              Given .  Find                           Add review   Add review   Add review   Add review  "
 },
 {
   "id": "def-Cartesian-product",
@@ -2707,7 +2923,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.1.1",
   "title": "",
-  "body": "  Suppose and are sets. The Cartesian product of and , denoted by , is the set which contains every ordered pair whose first coordinate is an element of and second coordinate is an element of , i.e.  and .   "
+  "body": "  Suppose and are sets. The Cartesian product of and , denoted by , is the set which contains every ordered pair whose first coordinate is an element of and second coordinate is an element of , i.e.  .   "
 },
 {
   "id": "sec-review-of-relations-and-functions-8",
@@ -2733,8 +2949,8 @@ var ptx_lunr_docs = [
   "url": "sec-review-of-relations-and-functions.html#def-Equality-of-ordered-pairs",
   "type": "Definition",
   "number": "3.1.4",
-  "title": "",
-  "body": "  Two ordered pairs and are equal if and only if and .   "
+  "title": "(Equality of ordered pairs).",
+  "body": " (Equality of ordered pairs)     Two ordered pairs and are equal if and only if and .   "
 },
 {
   "id": "def-Relation",
@@ -2742,8 +2958,8 @@ var ptx_lunr_docs = [
   "url": "sec-review-of-relations-and-functions.html#def-Relation",
   "type": "Definition",
   "number": "3.1.5",
-  "title": "",
-  "body": "  If and are sets, any subset of is called a relation from A into B .   "
+  "title": "Relation from A into B.",
+  "body": " Relation from A into B     If and are sets, any subset of is called a relation from A into B .   "
 },
 {
   "id": "sec-review-of-relations-and-functions-17",
@@ -2764,29 +2980,56 @@ var ptx_lunr_docs = [
   "body": "  Let be a relation from into . Then,     the domain of , denoted by , is the set of first coordinates of the elements of , i.e       the range of , denoted by , is the set of second coordinates of elements of , i.e         "
 },
 {
+  "id": "sec-review-of-relations-and-functions-19",
+  "level": "2",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-19",
+  "type": "Remark",
+  "number": "3.1.8",
+  "title": "",
+  "body": " If is a relation from the set to the set , then the set is called the codomain of the relation . The range of relation is always a subset of the codomain.  "
+},
+{
   "id": "sec-review-of-relations-and-functions-20",
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-20",
   "type": "Example",
-  "number": "3.1.8",
+  "number": "3.1.9",
   "title": "",
   "body": "     The set is a relation from set to set . The domain of is , the range of is and the codomain of is .    The set of ordered pairs is a relation between the sets and , where is the domain and is the range.      "
+},
+{
+  "id": "sec-review-of-relations-and-functions-21",
+  "level": "2",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-21",
+  "type": "Remark",
+  "number": "3.1.10",
+  "title": "",
+  "body": "    If for a relation , we say is related to (or paired with) . Note that may also be paired with an element different from . In any case, is called the image of while is called the pre-image of under .    If the domain and\/or range of a relation is infinite, we cannot list each element assignment, so instead we use set builder notation to describe the relation. The situation we will encounter most frequently is that of a relation defined by an equation or formula. For example,     is a relation for which the range value is 3 less than twice the domain value. Hence, and are examples of ordered pairs that are of the assignment.     "
+},
+{
+  "id": "sec-review-of-relations-and-functions-22",
+  "level": "2",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-22",
+  "type": "Example",
+  "number": "3.1.11",
+  "title": "",
+  "body": "     Let   Let be the relation on defined by . Find the domain and range of .    Let and .  Let Find   (a)   (b)   (c)            We have   .  Then, and .    We have   and and are in whereas is not in . Thus, , and .      "
 },
 {
   "id": "sec-review-of-relations-and-functions-23",
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-23",
-  "type": "Example",
-  "number": "3.1.9",
+  "type": "Remark",
+  "number": "3.1.12",
   "title": "",
-  "body": "     Let Let be the relation on defined by is a factor of . Find the domain and range of .    Let and .  Let Find   (a)   (b)   (c)            We have   .  Then, and .    We have   and and 64 are in whereas 125 is not in . Thus, , and .      "
+  "body": "    A relation on a set is called  (i) a universal relation if   (ii) identity relation if   (iii) void or empty relation if     If is a relation from into , then the inverse relation of , denoted by , is a relation from to and is given by:   .  Observe that and . For instance, if is a relation on a set , then      "
 },
 {
-  "id": "sec-review-of-relations-and-functions-26",
+  "id": "sec-review-of-relations-and-functions-24",
   "level": "2",
-  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-26",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-24",
   "type": "Example",
-  "number": "3.1.10",
+  "number": "3.1.13",
   "title": "",
   "body": "  Let be a relation defined on by .Find   (a)   (b)   (c)   (d)      The smallest natural number is           Therefore, , , and .   "
 },
@@ -2795,99 +3038,117 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#def-Function",
   "type": "Definition",
-  "number": "3.1.11",
-  "title": "",
-  "body": "  A function is a relation in which each element of the domain corresponds to exactly one element of the range.   "
+  "number": "3.1.14",
+  "title": "Function.",
+  "body": " Function     A function is a relation in which each element of the domain corresponds to exactly one element of the range.   "
 },
 {
-  "id": "sec-review-of-relations-and-functions-30",
+  "id": "sec-review-of-relations-and-functions-28",
   "level": "2",
-  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-30",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-28",
   "type": "Example",
-  "number": "3.1.12",
+  "number": "3.1.15",
   "title": "",
-  "body": "  Determine whether the following relations are functions.   (a)   (b)         Since the domain element is assigned to two different values in the range, and , it is not a function.    Each element in the domain, , is assigned no more than one value in the range, 2 is assigned only 4, 3 is assigned only 4, and 6 is assigned only . Therefore, it is a function.      "
+  "body": "  Determine whether the following relations are functions.   (a)   (b)         Since the domain element is assigned to two different values in the range, and , it is not a function.    Each element in the domain, , is assigned no more than one value in the range, is assigned only , is assigned only , and is assigned only . Therefore, it is a function.      "
+},
+{
+  "id": "sec-review-of-relations-and-functions-29",
+  "level": "2",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-29",
+  "type": "Remark",
+  "number": "3.1.16",
+  "title": "",
+  "body": " Map or mapping, transformation and correspondence are synonyms for the word function. If is a function and , we say is mapped to by .  "
 },
 {
   "id": "def-mapping-transformation-correspondence",
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#def-mapping-transformation-correspondence",
   "type": "Definition",
-  "number": "3.1.13",
+  "number": "3.1.17",
   "title": "",
   "body": "  A relation from A into B is called a function from A into B , denoted by   or   if and only if          No element of A is mapped by to more than one element in B , i.e. if and , then .      "
 },
 {
-  "id": "sec-review-of-relations-and-functions-35",
+  "id": "sec-review-of-relations-and-functions-31",
   "level": "2",
-  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-35",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-31",
+  "type": "Remark",
+  "number": "3.1.18",
+  "title": "",
+  "body": "    If to the element of corresponds under the function , then we write and is called the image of x under and x is called a preimage of under .    The symbol is read as “ of ” but not “ times ”.    In order to show that a relation from into is a function, we first show that the domain of is and next we show that well defined or single-valued, i.e. if in , then in for all .     "
+},
+{
+  "id": "sec-review-of-relations-and-functions-32",
+  "level": "2",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-32",
   "type": "Example",
-  "number": "3.1.14",
+  "number": "3.1.19",
   "title": "",
   "body": "  Let and . Which of the following are functions from A to .    defined by  defined by  defined by  defined by  defined by          is a function because to each element of there corresponds exactly one element of .     is not a function because there is no element of which correspond to ( ).     is a function because to each element of there corresponds exactly one element of . In the given function, the images of all element of are the same.     is not a function because there are two elements of which correspond to .In other words, the image of is not unique.     is a function because to each element of there corresponds exactly one element of .      "
+},
+{
+  "id": "sec-review-of-relations-and-functions-34",
+  "level": "2",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-34",
+  "type": "Example",
+  "number": "3.1.20",
+  "title": "",
+  "body": "  Let . Then, maps:            "
 },
 {
   "id": "sec-review-of-relations-and-functions-37",
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-37",
   "type": "Example",
-  "number": "3.1.15",
-  "title": "",
-  "body": "  Let . Then, maps:            "
-},
-{
-  "id": "sec-review-of-relations-and-functions-40",
-  "level": "2",
-  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-40",
-  "type": "Example",
-  "number": "3.1.16",
+  "number": "3.1.21",
   "title": "",
   "body": "  Let be the subset of defined by . Is a function?    First we note that . Then, satisfies condition (i) in the definition of a function. Now, , and but . Thus is not well defined. Hence, is not a function from to .   "
 },
 {
-  "id": "sec-review-of-relations-and-functions-41",
+  "id": "sec-review-of-relations-and-functions-38",
   "level": "2",
-  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-41",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-38",
   "type": "Example",
-  "number": "3.1.17",
+  "number": "3.1.22",
   "title": "",
   "body": "  Let be the subset of defined by . Is a function?    First we show that satisfies condition (i) in the definition. Let be any element of . Then, . Hence, . This implies that . Thus, . However, and so . Now, and . Thus, and are in . Hence we find that and . This implies that is not well defined, i.e, does not satisfy condition (ii). Hence, is not a function from to .   "
+},
+{
+  "id": "sec-review-of-relations-and-functions-42",
+  "level": "2",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-42",
+  "type": "Example",
+  "number": "3.1.23",
+  "title": "",
+  "body": "  Let and . Let be the correspondence which assigns to each element in , its square. Thus, we have . Therefore, is a function and , and codomain of is .   "
+},
+{
+  "id": "sec-review-of-relations-and-functions-43",
+  "level": "2",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-43",
+  "type": "Example",
+  "number": "3.1.24",
+  "title": "",
+  "body": "  Let . Let and represent the elements in the sets and , respectively. Let be a function defined by .  The variable can take values Thus, we have   .  This implies that and codomain of is IN .   "
+},
+{
+  "id": "sec-review-of-relations-and-functions-44",
+  "level": "2",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-44",
+  "type": "Example",
+  "number": "3.1.25",
+  "title": "",
+  "body": "  Determine whether the following equations determine as a function of , if so, find the domain of the function.                            To determine whether gives as a function of , we need to know whether each x-value uniquely determines a y-value . Looking at the equation , we can see that once is chosen we multiply it by – 3 and then add 5. Thus, for each x there is a unique . Therefore, is a function. It domain is the set of all real numbers.    Looking at the equation carefully, we can see that each uniquely determines a (one can not produce two different ). Therefore, is a function.  As for its domain, we ask ourselves. Are there any values of that must be excluded? Since is a fractional expression, we must exclude any value of that makes the denominator equal to zero. We must have     Therefore, the domain consists of all real numbers except . Thus, .    For the equation , if we choose we get , which gives . In other words, there are two values associated with . Therefore, is not a function.      "
 },
 {
   "id": "sec-review-of-relations-and-functions-45",
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-45",
   "type": "Example",
-  "number": "3.1.18",
+  "number": "3.1.26",
   "title": "",
-  "body": "  Let and . Let be the correspondence which assigns to each element in , its square. Thus, we have . Therefore, is a function and , and codomain of is .   "
-},
-{
-  "id": "sec-review-of-relations-and-functions-46",
-  "level": "2",
-  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-46",
-  "type": "Example",
-  "number": "3.1.19",
-  "title": "",
-  "body": "  Let . Let and represent the elements in the sets and , respectively. Let be a function defined by .  The variable can take values Thus, we have   .  This implies that and codomain of is IN .   "
-},
-{
-  "id": "sec-review-of-relations-and-functions-47",
-  "level": "2",
-  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-47",
-  "type": "Example",
-  "number": "3.1.20",
-  "title": "",
-  "body": "  Determine whether the following equations determine as a function of , if so, find the domain of the function.                            To determine whether gives as a function of , we need to know whether each x-value uniquely determines a y-value . Looking at the equation , we can see that once is chosen we multiply it by – 3 and then add 5. Thus, for each x there is a unique . Therefore, is a function. It domain is the set of all real numbers.    Looking at the equation carefully, we can see that each uniquely determines a (one can not produce two different ). Therefore, is a function.  As for its domain, we ask ourselves. Are there any values of that must be excluded? Since is a fractional expression, we must exclude any value of that makes the denominator equal to zero. We must have     Therefore, the domain consists of all real numbers except . Thus, .    For the equation , if we choose we get , which gives . In other words, there are two values associated with . Therefore, is not a function.      "
-},
-{
-  "id": "sec-review-of-relations-and-functions-48",
-  "level": "2",
-  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-48",
-  "type": "Example",
-  "number": "3.1.21",
-  "title": "",
-  "body": "  Find the domain of the function .    Since is defined and is real when the expression under the radical is non-negative, we need to satisfy the inequality     This is a quadratic inequality, which can be solved by analyzing signs:  Sign of    Since we want to be non-negative, the sign analysis shows us that the domain is or .   "
+  "body": "  Find the domain of the function .    Since is defined and is real when the expression under the radical is non-negative, we need to satisfy the inequality     This is a quadratic inequality, which can be solved by analyzing signs:   Sign of        Since we want to be non-negative, the sign analysis shows us that the domain is or .   "
 },
 {
   "id": "exercises-Review-of-relations-and-functions-1",
@@ -2962,38 +3223,38 @@ var ptx_lunr_docs = [
   "body": "  Given .  Find                        "
 },
 {
+  "id": "sec-review-of-relations-and-functions-47",
+  "level": "2",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-47",
+  "type": "Checkpoint",
+  "number": "3.1.27",
+  "title": "",
+  "body": " Add review "
+},
+{
+  "id": "sec-review-of-relations-and-functions-48",
+  "level": "2",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-48",
+  "type": "Checkpoint",
+  "number": "3.1.28",
+  "title": "",
+  "body": " Add review "
+},
+{
+  "id": "sec-review-of-relations-and-functions-49",
+  "level": "2",
+  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-49",
+  "type": "Checkpoint",
+  "number": "3.1.29",
+  "title": "",
+  "body": " Add review "
+},
+{
   "id": "sec-review-of-relations-and-functions-50",
   "level": "2",
   "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-50",
   "type": "Checkpoint",
-  "number": "3.1.22",
-  "title": "",
-  "body": " Add review "
-},
-{
-  "id": "sec-review-of-relations-and-functions-51",
-  "level": "2",
-  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-51",
-  "type": "Checkpoint",
-  "number": "3.1.23",
-  "title": "",
-  "body": " Add review "
-},
-{
-  "id": "sec-review-of-relations-and-functions-52",
-  "level": "2",
-  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-52",
-  "type": "Checkpoint",
-  "number": "3.1.24",
-  "title": "",
-  "body": " Add review "
-},
-{
-  "id": "sec-review-of-relations-and-functions-53",
-  "level": "2",
-  "url": "sec-review-of-relations-and-functions.html#sec-review-of-relations-and-functions-53",
-  "type": "Checkpoint",
-  "number": "3.1.25",
+  "number": "3.1.30",
   "title": "",
   "body": " Add review "
 },
@@ -3004,7 +3265,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Real Valued functions and their properties",
-  "body": " Real Valued functions and their properties  After completing this section, the student should be able to:    perform the four fundamental operations on polynomials  compose functions to get a new function  determine the domain of the sum, difference, product and quotient of two functions  define equality of two functions    Let be a function from set to set . If is a subset of the set of real numbers , then is called a real valued function, and in particular if is also a subset of , then is called a real function.       The function defined by , is a real function.    The function defined as is also a real valued function.                Functions are not numbers. But just as two numbers and can be added to produce a new number , so two functions and can be added to produce a new function . This is just one of the several operations on functions that we will describe in this section.  Consider functions and defined by and . We can make a new function by having it assign to the value , that is,  .    Let and be two functions. We define the following four functions:    The sum of the two functions  The difference of the two functions  The product of the two functions  The quotient of the two functions (provided    Since an value must be an input into both and , the domain of is the set of all common to the domain of and . This is usually written as . Similar statements hold for the domains of the difference and product of two functions. In the case of the quotient, we must impose the additional restriction that all elements in the domain of for which are excluded.      Let and . Find each of the following and its domain                                      We have            Let and , with respective domains and . Find formulas for and and give their domains.      Formula  Domain                            There is yet another way of producing a new function from two given functions.      Given two functions and , the composition of the two functions is denoted by and is defined by:   .   is read as composed with of . The domain of consists of those s in the domain of whose range values are in the domain of , i.e. those s for which is in the domain of .      Suppose and . The function is found by taking elements in the domain of and evaluating as follows:   ,   If we attempt to find we get , but is not in the domain of and so we cannot find . Hence, . The figure below illustrates this situation.          Given and , find                                …… First evaluate            …….First evaluate            ……. But               ……. But                   Given and , find       and its domain     and its domain            . Thus, .     . Since must first be an input into and so must be in the domain of , we see that .         Let and . Find and and its domain.    We have .   .  The domain of is .  We now explore the meaning of equality of two functions. Let and be two functions. Then, and are subsets of . Suppose . Let be any element of . Then, and thus . Since is a function and , we must have Conversely, assume that for all . Let . Then, . Thus, , which implies that . Similarly, we can show that . It now follows that . Thus two functions and are equal if and only if for all . In general we have the following definition.      Two functions are said to be equal if and only if the following two conditions hold:     The functions have the same domain;    Their functional values are equal at each element of the domain.            Let and be defined by and . Now, for all , . Thus, .    Let , and . The function and are not equal because           For and , find each value:                                          If and , find a formula for each of the following and state its domain.                              Let and .     Find and its domain.    Find and its domain    Are and the same functions? Explain.         Let . Find so that .      Let Find so that .      If is a real function defined by . Show that .      Find two functions and so that the given function , where                              Let and . Find                                        Add review   Add review   Add review   Add review  "
+  "body": " Real Valued functions and their properties  After completing this section, the student should be able to:    perform the four fundamental operations on polynomials  compose functions to get a new function  determine the domain of the sum, difference, product and quotient of two functions  define equality of two functions    Let be a function from set to set . If is a subset of the set of real numbers , then is called a real valued function, and in particular if is also a subset of , then is called a real function.       The function defined by , is a real function.    The function defined as is also a real valued function.                Functions are not numbers. But just as two numbers and can be added to produce a new number , so two functions and can be added to produce a new function . This is just one of the several operations on functions that we will describe in this section.  Consider functions and defined by and . We can make a new function by having it assign to the value , that is,  .   Sum, Difference, Product and Quotient of two functions     Let and be two functions. We define the following four functions:    The sum of the two functions  The difference of the two functions  The product of the two functions  The quotient of the two functions (provided    Since an value must be an input into both and , the domain of is the set of all common to the domain of and . This is usually written as . Similar statements hold for the domains of the difference and product of two functions. In the case of the quotient, we must impose the additional restriction that all elements in the domain of for which are excluded.      Let and . Find each of the following and its domain                                      We have            Let and , with respective domains and . Find formulas for and and give their domains.      Formula  Domain                            There is yet another way of producing a new function from two given functions.     (Composition of functions)     Given two functions and , the composition of the two functions is denoted by and is defined by:   .   is read as composed with of . The domain of consists of those s in the domain of whose range values are in the domain of , i.e. those s for which is in the domain of .      Suppose and . The function is found by taking elements in the domain of and evaluating as follows:   ,   If we attempt to find we get , but is not in the domain of and so we cannot find . Hence, . The figure below illustrates this situation.          Given and , find                                …… First evaluate            …….First evaluate            ……. But               ……. But                   Given and , find       and its domain     and its domain            . Thus, .     . Since must first be an input into and so must be in the domain of , we see that .         Let and . Find and and its domain.    We have .   .  The domain of is .  We now explore the meaning of equality of two functions. Let and be two functions. Then, and are subsets of . Suppose . Let be any element of . Then, and thus . Since is a function and , we must have Conversely, assume that for all . Let . Then, . Thus, , which implies that . Similarly, we can show that . It now follows that . Thus two functions and are equal if and only if for all . In general we have the following definition.     (Equality of functions)     Two functions are said to be equal if and only if the following two conditions hold:     The functions have the same domain;    Their functional values are equal at each element of the domain.            Let and be defined by and . Now, for all , . Thus, .    Let , and . The function and are not equal because           For and , find each value:                                          If and , find a formula for each of the following and state its domain.                              Let and .     Find and its domain.    Find and its domain    Are and the same functions? Explain.         Let . Find so that .      Let Find so that .      If is a real function defined by . Show that .      Find two functions and so that the given function , where                              Let and . Find                                        Add review   Add review   Add review   Add review  "
 },
 {
   "id": "sec-real-valued-functions-and-their-5",
@@ -3021,8 +3282,8 @@ var ptx_lunr_docs = [
   "url": "sec-real-valued-functions-and-their.html#def-sum-difference-product-quotient-of-functions",
   "type": "Definition",
   "number": "3.2.2",
-  "title": "",
-  "body": "  Let and be two functions. We define the following four functions:    The sum of the two functions  The difference of the two functions  The product of the two functions  The quotient of the two functions (provided    Since an value must be an input into both and , the domain of is the set of all common to the domain of and . This is usually written as . Similar statements hold for the domains of the difference and product of two functions. In the case of the quotient, we must impose the additional restriction that all elements in the domain of for which are excluded.   "
+  "title": "Sum, Difference, Product and Quotient of two functions.",
+  "body": " Sum, Difference, Product and Quotient of two functions     Let and be two functions. We define the following four functions:    The sum of the two functions  The difference of the two functions  The product of the two functions  The quotient of the two functions (provided    Since an value must be an input into both and , the domain of is the set of all common to the domain of and . This is usually written as . Similar statements hold for the domains of the difference and product of two functions. In the case of the quotient, we must impose the additional restriction that all elements in the domain of for which are excluded.   "
 },
 {
   "id": "sec-real-valued-functions-and-their-11",
@@ -3048,8 +3309,8 @@ var ptx_lunr_docs = [
   "url": "sec-real-valued-functions-and-their.html#def-Composition-of-functions",
   "type": "Definition",
   "number": "3.2.5",
-  "title": "",
-  "body": "  Given two functions and , the composition of the two functions is denoted by and is defined by:   .   is read as composed with of . The domain of consists of those s in the domain of whose range values are in the domain of , i.e. those s for which is in the domain of .   "
+  "title": "(Composition of functions).",
+  "body": " (Composition of functions)     Given two functions and , the composition of the two functions is denoted by and is defined by:   .   is read as composed with of . The domain of consists of those s in the domain of whose range values are in the domain of , i.e. those s for which is in the domain of .   "
 },
 {
   "id": "sec-real-valued-functions-and-their-14",
@@ -3093,8 +3354,8 @@ var ptx_lunr_docs = [
   "url": "sec-real-valued-functions-and-their.html#def-Equality-of-functions",
   "type": "Definition",
   "number": "3.2.10",
-  "title": "",
-  "body": "  Two functions are said to be equal if and only if the following two conditions hold:     The functions have the same domain;    Their functional values are equal at each element of the domain.      "
+  "title": "(Equality of functions).",
+  "body": " (Equality of functions)     Two functions are said to be equal if and only if the following two conditions hold:     The functions have the same domain;    Their functional values are equal at each element of the domain.      "
 },
 {
   "id": "sec-real-valued-functions-and-their-19",
@@ -3418,7 +3679,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.4",
   "title": "Polynomials, zeros of polynomials, rational functions and their graphs",
-  "body": " Polynomials, zeros of polynomials, rational functions and their graphs    After completing this section, the student should be able to:       define polynomial and rational functions    apply the theorems on polynomials to find the zeros of polynomial functions    use the division algorithm to find quotient and remainder    apply theorems on polynomials to solve related problems    sketch and analyze the graphs of rational functions     The functions described in this section frequently occur as mathematical models of real-life situations. For instance, in business the demand function gives the price per item, , in terms of the number of items sold, . Suppose a company finds that the price (in Birr) for its model GC-5 calculator is related to the number of calculators sold, (in millions), and is given by the demand function .  The manufacturer’s revenue is determined by multiplying the number of items sold ( ) by the price per item ( ). Thus, the revenue function is   These demand and revenue functions are examples of polynomial functions. The major aim of this section is to better understand the significance of applied functions (such as this demand function).In order to do this, we need to analyze the domain, range, and behavior of such functions.    A polynomial function is a function of the form Each is assumed to be a real number and is a non-negative integer, is called the leading coefficient. Such a polynomial is said to be of degree         The domain of a polynomial function is always the set of real numbers.    (Types of polynomials)     A polynomial of degree is called a linear function.    A polynomial of degree is called quadratic function.    A polynomial of degree is called a cubic function.    i.e             , and are examples of polynomial functions.     Properties of polynomial functions     The graph of a polynomial is a smooth unbroken curve. The word smooth means that the graph does not have any sharp corners as turning points.    If is a polynomial of degree , then it has at most zeros. Thus, a quadratic polynomial has at most 2 zeros    The graph of a polynomial function of degree can have at most turning points. Thus, the graph of a polynomial of degree 5 can have at most 4 turning points.    The graph of a polynomial always exhibits the characteristic that as gets very large, gets very large.       Zeros of a polynomial  The zeros of a polynomial function provide valuable information that can be helpful in sketching its graph. One can find the zeros by factorizing the polynomial. However, we have no general method for factorizing polynomials of degree greater than . In this subsection, we turn our attention to methods that will allow us to find zeros of higher degree polynomials. To do this, we first need to discuss about the division algorithm. Recall that a number is a zero of a polynomial function if .   Division Algorithm  Let and be polynomials with , and with the degree of less than or equal to the degree of . Then there are polynomials and such that , where either or the degree of is less than degree of      Divide .    Using long division we have:                                                    This long division means   With the aid of the division algorithm, we can derive two important theorems that will allow us to recognize the zeros of polynomials.  If we apply the division algorithm where the divisor, , is linear (that is of the form ), we get     Note that since the divisor is of the first degree, the remainder , must be a constant. If we now substitute , into this equation, we get     Therefore, .  The result we just proved is called the remainder theorem.    When a polynomial of degree at least is divided by , the remainder is       The remainder when is divided by is .As a consequence of the remainder theorem, if is a factor of , then the remainder must be . Conversely, if the remainder is 0, then , is a factor of . This is known as the Factor Theorem.       is a factor of if and only if .    The next theorem, called location theorem, allows us to verify that a zero exists somewhere within an interval of numbers, and can also be used to zoom in closer on a value.    Let be a polynomial function and and be real numbers such that . If , then there is at least one zero of between and .    The Factor and Remainder theorems establish the intimate relationship between the factors of a polynomial and its zeros. Recall that a polynomial of degree can have at most zeros. Does every polynomial have a zero? Our answer depends on the number system in which we are working. If we restrict ourselves to the set of real number system, then we are already familiar with the fact that the polynomial has no real zeros. However, this polynomial does have two zeros in the complex number system.(The zeros are and ). Carl Friedrich Gauss ( ), in his doctoral dissertation, proved that within the complex number system, every polynomial of degree has at least one zero. This fact is usually referred to as the Fundamental theorem of Algebra.    If is a polynomial of degree whose coefficients are complex numbers, then has at least one zero in the complex number system.    Note that since all real numbers are complex numbers, a polynomial with real coefficients also satisfies the Fundamental theorem of Algebra.As an immediate consequence of the Fundamental theorem of Algebra, we have    If , where and , then , where are complex numbers (possible real not necessarily distinct).    From the linear factorization theorem, it follows that every polynomial of degree has exactly zeros in the complex number system, where a root of multiplicity counted times.    Express each of the polynomials in the form described by the Linear Factorization Theorem. List each zero and its multiplicity.                          We may factorize as follows:     The zeros of are and each of multiplicity one.    We may factorize as follows:     Thus, the zeros of are and , each of multiplicity one.    We may factorize as follows:     Thus, the zeros of f(x) are 0 with multiplicity two and and each with multiplicity one.            Find a polynomial with exactly the following zeros and multiplicity.    zeros  multiplicity                Are there any other polynomials that give the same roots and multiplicity?    Find a polynomial having the zeros described in part (a) such that .          Based on the Factor Theorem, we may write the polynomial as which gives the required roots and multiplicities. Any polynomial of the form , where is a non-zero constant will give the same roots and multiplicities.    Based on part (1), we know that . Since we want , we have Thus, .       Our experience in using the quadratic formula on quadratic equations with real coefficients has shown us that complex roots always appear in conjugate pairs. For example, the roots of are and . Infact, this property extends to all polynomial equations.    Let be a polynomial with real coefficients. If complex number (where and are real numbers) is a zero of , then so is its conjugate       Let . Given that is a zero, find the other zero of .    According to the Conjugate Roots Theorem, if is a zero, then its conjugate, must also be a zero. Therefore, and are both factors of , and so their product must be a factor of . That is,   is a factor of . Dividing by , we obtain     Thus, the zeros of are , , and .    The theorems we have discussed so far are called existence theorems because they ensure the existence of zeros and linear factors of polynomials. These theorems do not tell us how to find the zeros or the linear factors. The Linear Factorization Theorem guarantees that we can factor a polynomial of degree at least one into linear factors, but it does not tell us how.  We know from experience that if happens to be a quadratic function, then we may find the zeros of by using the quadratic formula to obtain the zeros   .  The rest of this subsection is devoted to developing some special methods for finding the zeros of a polynomial function.  As we have seen, even though we have no general techniques for factorizing polynomials of degree greater than , if we happen to know a root, say , we can use long division to divide by and obtain a quotient polynomial of lower degree. If we can get the quotient polynomial down to a quadratic, then we are able to determine all the roots. But how do we find a root to start the process? The following theorem can be most helpful.    Suppose that , where is an degree polynomial with integer coefficients. If is a rational root of , where and have no common factor other than , then is a factor of and is a factor of .    To get a feeling as to why this theorem is true, suppose is a root of .  Then, which implies that       If we look at equation , the left hand side is divisible by , and therefore the right hand side must also be divisible by . Since is not divisible by , must be divisible by . From equation , must be divisible by .    Find all the zeros of the function     According to the Rational Root Theorem, if is a rational root of the given equation, then must be a factor of and must be a factor of . Thus, we have  possible values of :   possible values of :   possible rational roots :   We may check these possible roots by substituting the value in . Now and . Since is negative and is positive, by location theorem, has a zero between and 1. Since , then is a factor of . Using long division, we obtain     Therefore, the zeros of are , and .      Rational Functions and their Graphs  A rational function is a function of the form where both and are polynomials and .    The functions , and are examples of rational function.     Note that the domain of the rational function is      Find the domain and zeros of the function .    The values of for which are excluded from the domain of . Since , we have . To find the zeros of , we solve the equation     Therefore, to find the zeros of , we solve , giving . Since does not make the denominator zero, it is the only zero of .    The following terms and notations are useful in our next discussion.  Given a number ,      approaches from the right means takes any value near and near to but > . This is denoted by: (read: ‘ approaches from the right’ ).  For instance, means can be etc.     approaches from the left means takes any value near and near to but < .  This is denoted by: (read: ‘ approaches from the left’ ).  For instance, means can be etc.     (read: ‘ approaches or tends to infinity ’) means the value of gets indefinitely larger and larger in magnitude (keep increasing without bound). For instance, can be etc.     (read: ‘ approaches or tends to negative infinity ’) means the value of is negative and gets indefinitely larger and larger negative in magnitude (keep decreasing without bound). For instance, can be etc.     The same meanings apply also for the values of a function if we wrote or . The following figure illustrates these notion and notations.    Graphical illustration of the idea of , , etc.   (for accessibility)    We may also write (read: ‘ approaches ’) to mean the function values, , becomes arbitrarily closer and closer to (i.e., approximately ) but not exactly equal to . For instance, if , then as ; i.e., is approximately when is arbitrarily large.  The following steps are usually used to sketch (or draw) the graph of a rational function .     Identify the domain and simplify it.    Find the intercepts of the graph whenever possible. Recall the following:     y–intercept is the point on -axis where the graph of intersects with the -axis. At this point . Thus, , or ( ) is the y-intercept if Dom( ).     –intercept is the point on -axis where the graph of intersects with the -axis. At this point . Thus, or is x-intercept if .       Determine the asymptotes of the graph. Here, remember the following.        Vertical Asymptote: The vertical line is called a vertical asymptote(VA) of ( if      dom( ), i.e., is not defined at ; and     or when or . In this case, the graph of is almost vertically rising upward (if ) or sinking downward (if ) along with the vertical line when approaches either from the right or from the left.          Consider where and is a positive integer.    Obviously Dom( ). Next, we investigate the trend of the values of near . To do this, we consider two cases, when is even or odd:  Suppose is even: In this case for all ; and since as or . Hence, as or . Therefore, is a VA of . Moreover, or ( ) is its y-intercept since . However, it has no -intercept since for all in its domain (See, ).  Suppose is odd: In this case, for all , and as , just like in the even case. Thus, is a VA of . However, as , since for . Moreover, or is its y-intercept, since . However, it has no -intercept in this case either. (See, ).  Note that in both cases, as or .        (A)   (for accessibility)     (B)   (for accessibility)      Let be a rational function. Then,     if and , then is a VA of .    if , then may or may not be a VA of f . In this case, simplify and look for VA of the simplest form of f .          Horizontal Asymptote : A horizontal line is called horizontal asymptote (HA) of if the value of the function becomes closer and closer to (i.e., as or as .  In this case, the graph of f becomes almost a horizontal line along with (or near) the line as and as . For instance, from the above example, the HA of is (the -axis) , for any positive integer (See, , ).      A rational function has a HA only when degree ( ) degree ( )  In this case,   If degree < degree , then (the x-axis) is the HA of f .    If degree  degree , i.e., ,  then is the HA of .      In this case,   If degree < degree , then (the x-axis) is the HA of f .    If degree  degree , i.e., ,  then is the HA of .         Oblique Asymptote: The oblique line , , is called an oblique asymptote (OA) of f if the value of the function, , becomes closer and closer to (i.e., becomes approximately ) as either or . In this case, the graph of f becomes almost a straight line along with (or near) the oblique line as and as .      A rational function has an OA only when degree  degree  . In this case, using long division, if the quotient of is , then is the OA of .     Sketch the graphs of                     Since at , dom( ) .      Intercepts : -intercept: . Hence, is -intercept.   -intercept: . Hence, is -intercept.     Asymptotes:      VA: Since at and at , is VA of . In fact, if , then but the denominator is almost (but positive).  Consequently, as .  Moreover, as (since, if then is almost but negative).  (So, the graph of rises up to at the right side of , and sink down to at the left side of )    HA: Note that if you divide by , the quotient is and remainder is . Thus, . Thus, if (or ), then so that .  Hence, is the HA of .     Using these information, you can sketch the graph of as displayed below in Fig. 2.3 (A).       Both the denominator and numerator are at . So, first factorize and simplify them:   and . Therefore,     This implies that only is VA.     Hence, the graph of , is exactly the same as that of except that is not defined at . Therefore, the graph of and its VA are the same as that of except that there should be a hole at the point corresponding to on the graph of as shown on below.      (A)   (for accessibility)     (B)   (for accessibility)         Perform the requested divisions. Find the quotient and remainder and verify the Remainder Theorem by computing .   Divide     Divide     Divide     Divide          Given that , factor as completely as possible.      Given that and , find the remaining zeros of .      Given that is a double zero of , find all the zeros of .         Write the general polynomial whose only zeros are and , with multiplicity and respectively. What is its degree?    Find described in part if .         If is a root of , find the remaining zeros of p( ).      Determine the rational zeros of the polynomials                         Find the domain and the real zeros of the given function.                              Sketch the graph of                              Determine the behavior of when is near .      The graph of any rational function in which the degree of the numerator is exactly one more than the degree of the denominator will have an oblique (or slant) asymptote.     Use long division to show that       Show that this means that the line is a slant asymptote for the graph and sketch the graph of .         Add review   Add review   Add review  "
+  "body": " Polynomials, zeros of polynomials, rational functions and their graphs    After completing this section, the student should be able to:       define polynomial and rational functions    apply the theorems on polynomials to find the zeros of polynomial functions    use the division algorithm to find quotient and remainder    apply theorems on polynomials to solve related problems    sketch and analyze the graphs of rational functions     The functions described in this section frequently occur as mathematical models of real-life situations. For instance, in business the demand function gives the price per item, , in terms of the number of items sold, . Suppose a company finds that the price (in Birr) for its model GC-5 calculator is related to the number of calculators sold, (in millions), and is given by the demand function .  The manufacturer’s revenue is determined by multiplying the number of items sold ( ) by the price per item ( ). Thus, the revenue function is   These demand and revenue functions are examples of polynomial functions. The major aim of this section is to better understand the significance of applied functions (such as this demand function). In order to do this, we need to analyze the domain, range, and behavior of such functions.   Polynomial functions    A polynomial function is a function of the form Each is assumed to be a real number and is a non-negative integer, is called the leading coefficient. Such a polynomial is said to be of degree .        The domain of a polynomial function is always the set of real numbers.    (Types of polynomials)     A polynomial of degree is called a linear function.    A polynomial of degree is called quadratic function.    A polynomial of degree is called a cubic function.  i.e             , and are examples of polynomial functions.      Properties of polynomial functions     The graph of a polynomial is a smooth unbroken curve. The word smooth means that the graph does not have any sharp corners as turning points.    If is a polynomial of degree , then it has at most zeros. Thus, a quadratic polynomial has at most 2 zeros    The graph of a polynomial function of degree can have at most turning points. Thus, the graph of a polynomial of degree 5 can have at most 4 turning points.    The graph of a polynomial always exhibits the characteristic that as gets very large, gets very large.       Zeros of a polynomial  The zeros of a polynomial function provide valuable information that can be helpful in sketching its graph. One can find the zeros by factorizing the polynomial. However, we have no general method for factorizing polynomials of degree greater than . In this subsection, we turn our attention to methods that will allow us to find zeros of higher degree polynomials. To do this, we first need to discuss about the division algorithm. Recall that a number is a zero of a polynomial function if .   Division Algorithm  Let and be polynomials with , and with the degree of less than or equal to the degree of . Then there are polynomials and such that , where either or the degree of is less than degree of      Divide .    Using long division we have:                                                    This long division means   With the aid of the division algorithm, we can derive two important theorems that will allow us to recognize the zeros of polynomials.  If we apply the division algorithm where the divisor, , is linear (that is of the form ), we get     Note that since the divisor is of the first degree, the remainder , must be a constant. If we now substitute , into this equation, we get     Therefore, .  The result we just proved is called the remainder theorem.   The Remainder Theorem   When a polynomial of degree at least is divided by , then the remainder is .      The remainder when is divided by is . As a consequence of the remainder theorem, if is a factor of , then the remainder must be . Conversely, if the remainder is 0, then , is a factor of . This is known as the Factor Theorem.     The Factor Theorem    is a factor of if and only if .    The next theorem, called location theorem, allows us to verify that a zero exists somewhere within an interval of numbers, and can also be used to zoom in closer on a value.   Location Theorem   Let be a polynomial function and and be real numbers such that . If , then there is at least one zero of between and .    The Factor and Remainder theorems establish the intimate relationship between the factors of a polynomial and its zeros. Recall that a polynomial of degree can have at most zeros. Does every polynomial have a zero? Our answer depends on the number system in which we are working. If we restrict ourselves to the set of real number system, then we are already familiar with the fact that the polynomial has no real zeros. However, this polynomial does have two zeros in the complex number system.(The zeros are and ). Carl Friedrich Gauss ( ), in his doctoral dissertation, proved that within the complex number system, every polynomial of degree has at least one zero. This fact is usually referred to as the Fundamental theorem of Algebra.   Fundamental Theorem of Algebra   If is a polynomial of degree whose coefficients are complex numbers, then has at least one zero in the complex number system.    Note that since all real numbers are complex numbers, a polynomial with real coefficients also satisfies the Fundamental theorem of Algebra.As an immediate consequence of the Fundamental theorem of Algebra, we have   The linear Factorization Theorem   If , where and , then , where are complex numbers (possible real not necessarily distinct).    From the linear factorization theorem, it follows that every polynomial of degree has exactly zeros in the complex number system, where a root of multiplicity counted times.    Express each of the polynomials in the form described by the Linear Factorization Theorem. List each zero and its multiplicity.                          We may factorize as follows:     The zeros of are and each of multiplicity one.    We may factorize as follows:     Thus, the zeros of are and , each of multiplicity one.    We may factorize as follows:     Thus, the zeros of are with multiplicity two and and each with multiplicity one.            Find a polynomial with exactly the following zeros and multiplicity.    zeros  multiplicity                Are there any other polynomials that give the same roots and multiplicity?    Find a polynomial having the zeros described in part (a) such that .          Based on the Factor Theorem, we may write the polynomial as which gives the required roots and multiplicities.  Any polynomial of the form , where is a non-zero constant will give the same roots and multiplicities.    Based on part (1), we know that . Since we want , we have Thus, .       Our experience in using the quadratic formula on quadratic equations with real coefficients has shown us that complex roots always appear in conjugate pairs. For example, the roots of are and . Infact, this property extends to all polynomial equations.   Conjugate Roots Theorem   Let be a polynomial with real coefficients. If complex number (where and are real numbers) is a zero of , then so is its conjugate .      Let . Given that is a zero, find the other zero of .    According to the Conjugate Roots Theorem, if is a zero, then its conjugate, must also be a zero. Therefore, and are both factors of , and so their product must be a factor of . That is,   is a factor of . Dividing by , we obtain     Thus, the zeros of are , , and .    The theorems we have discussed so far are called existence theorems because they ensure the existence of zeros and linear factors of polynomials. These theorems do not tell us how to find the zeros or the linear factors. The Linear Factorization Theorem guarantees that we can factor a polynomial of degree at least one into linear factors, but it does not tell us how.  We know from experience that if happens to be a quadratic function, then we may find the zeros of by using the quadratic formula to obtain the zeros   .  The rest of this subsection is devoted to developing some special methods for finding the zeros of a polynomial function.  As we have seen, even though we have no general techniques for factorizing polynomials of degree greater than , if we happen to know a root, say , we can use long division to divide by and obtain a quotient polynomial of lower degree. If we can get the quotient polynomial down to a quadratic, then we are able to determine all the roots. But how do we find a root to start the process? The following theorem can be most helpful.   The Rational Root Theorem   Suppose that , where is an degree polynomial with integer coefficients. If is a rational root of , where and have no common factor other than , then is a factor of and is a factor of .    To get a feeling as to why this theorem is true, suppose is a root of .  Then, which implies that       If we look at equation , the left hand side is divisible by , and therefore the right hand side must also be divisible by . Since is not divisible by , must be divisible by . From equation , must be divisible by .    Find all the zeros of the function     According to the Rational Root Theorem, if is a rational root of the given equation, then must be a factor of and must be a factor of . Thus, we have  possible values of :   possible values of :   possible rational roots :   We may check these possible roots by substituting the value in . Now and . Since is negative and is positive, by location theorem, has a zero between and 1. Since , then is a factor of . Using long division, we obtain     Therefore, the zeros of are , and .      Rational Functions and their Graphs  A rational function is a function of the form where both and are polynomials and .    The functions , and are examples of rational function.     Note that the domain of the rational function is      Find the domain and zeros of the function .    The values of for which are excluded from the domain of . Since , we have . To find the zeros of , we solve the equation     Therefore, to find the zeros of , we solve , giving . Since does not make the denominator zero, it is the only zero of .    The following terms and notations are useful in our next discussion.  Given a number ,      approaches from the right means takes any value near and near to but > . This is denoted by: (read: ‘ approaches from the right’ ).  For instance, means can be etc.     approaches from the left means takes any value near and near to but < .  This is denoted by: (read: ‘ approaches from the left’ ).  For instance, means can be etc.     (read: ‘ approaches or tends to infinity ’) means the value of gets indefinitely larger and larger in magnitude (keep increasing without bound). For instance, can be etc.     (read: ‘ approaches or tends to negative infinity ’) means the value of is negative and gets indefinitely larger and larger negative in magnitude (keep decreasing without bound). For instance, can be etc.     The same meanings apply also for the values of a function if we wrote or . The following figure illustrates these notion and notations.    Graphical illustration of the idea of , , etc.   (for accessibility)    We may also write (read: ‘ approaches ’) to mean the function values, , becomes arbitrarily closer and closer to (i.e., approximately ) but not exactly equal to . For instance, if , then as ; i.e., is approximately when is arbitrarily large.  The following steps are usually used to sketch (or draw) the graph of a rational function .     Identify the domain and simplify it.    Find the intercepts of the graph whenever possible. Recall the following:     y–intercept is the point on -axis where the graph of intersects with the -axis. At this point . Thus, , or ( ) is the y-intercept if Dom( ).     –intercept is the point on -axis where the graph of intersects with the -axis. At this point . Thus, or is x-intercept if .       Determine the asymptotes of the graph. Here, remember the following.        Vertical Asymptote: The vertical line is called a vertical asymptote(VA) of ( if      dom( ), i.e., is not defined at ; and     or when or . In this case, the graph of is almost vertically rising upward (if ) or sinking downward (if ) along with the vertical line when approaches either from the right or from the left.          Consider , where and is a positive integer.    Obviously Dom( ). Next, we investigate the trend of the values of near . To do this, we consider two cases, when is even or odd:  Suppose is even: In this case for all ; and since as or . Hence, as or . Therefore, is a VA of . Moreover, or ( ) is its -intercept since . However, it has no -intercept since for all in its domain (See, ).  Suppose is odd: In this case, for all , and as , just like in the even case. Thus, is a VA of . However, as , since for . Moreover, or is its y-intercept, since . However, it has no -intercept in this case either. (See, ).  Note that in both cases, as or .    (A)   (for accessibility)     (B)   (for accessibility)        Let be a rational function. Then,     if and , then is a VA of .    if , then may or may not be a VA of f . In this case, simplify and look for VA of the simplest form of f .         Horizontal Asymptote: A horizontal line is called horizontal asymptote (HA) of if the value of the function becomes closer and closer to (i.e., as or as .  In this case, the graph of f becomes almost a horizontal line along with (or near) the line as and as . For instance, from the above example, the HA of is (the -axis) , for any positive integer (See, , ).      A rational function has a HA only when degree ( ) degree ( )  In this case,   If degree < degree , then (the x-axis) is the HA of f .    If degree  degree , i.e., ,  then is the HA of .      In this case,   If degree < degree , then (the x-axis) is the HA of f .    If degree  degree , i.e., ,  then is the HA of .        Oblique Asymptote: The oblique line , , is called an oblique asymptote (OA) of f if the value of the function, , becomes closer and closer to (i.e., becomes approximately ) as either or . In this case, the graph of f becomes almost a straight line along with (or near) the oblique line as and as .      A rational function has an OA only when degree  degree  . In this case, using long division, if the quotient of is , then is the OA of .     Sketch the graphs of                     Since at , dom( ) .     Intercepts: -intercept: . Hence, is -intercept.   -intercept: . Hence, is -intercept.    Asymptotes:     VA: Since at and at , is VA of . In fact, if , then but the denominator is almost (but positive).  Consequently, as .  Moreover, as (since, if then is almost but negative).  (So, the graph of rises up to at the right side of , and sink down to at the left side of )    HA: Note that if you divide by , the quotient is and remainder is . Thus, . Thus, if (or ), then so that .  Hence, is the HA of .     Using these information, you can sketch the graph of as displayed below in Fig. 2.3 (A).       Both the denominator and numerator are at . So, first factorize and simplify them:   and . Therefore,     This implies that only is VA.     Hence, the graph of , is exactly the same as that of except that is not defined at . Therefore, the graph of and its VA are the same as that of except that there should be a hole at the point corresponding to on the graph of as shown on below.    (A)   (for accessibility)     (B)   (for accessibility)           Perform the requested divisions. Find the quotient and remainder and verify the Remainder Theorem by computing .   Divide     Divide     Divide     Divide          Given that , factor as completely as possible.      Given that and , find the remaining zeros of .      Given that is a double zero of , find all the zeros of .         Write the general polynomial whose only zeros are and , with multiplicity and respectively. What is its degree?    Find described in part if .         If is a root of , find the remaining zeros of p( ).      Determine the rational zeros of the polynomials                         Find the domain and the real zeros of the given function.                              Sketch the graph of                              Determine the behavior of when is near .      The graph of any rational function in which the degree of the numerator is exactly one more than the degree of the denominator will have an oblique (or slant) asymptote.     Use long division to show that       Show that this means that the line is a slant asymptote for the graph and sketch the graph of .         Add review   Add review   Add review  "
 },
 {
   "id": "sec-polynomials-zeros-of-polynomials-rational-2",
@@ -3436,30 +3697,30 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.4.1",
   "title": "",
-  "body": "  A polynomial function is a function of the form Each is assumed to be a real number and is a non-negative integer, is called the leading coefficient. Such a polynomial is said to be of degree    "
+  "body": "  A polynomial function is a function of the form Each is assumed to be a real number and is a non-negative integer, is called the leading coefficient. Such a polynomial is said to be of degree .   "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-7",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-6-3",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-7",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-6-3",
   "type": "Remark",
   "number": "3.4.2",
   "title": "",
-  "body": "    The domain of a polynomial function is always the set of real numbers.    (Types of polynomials)     A polynomial of degree is called a linear function.    A polynomial of degree is called quadratic function.    A polynomial of degree is called a cubic function.    i.e         "
+  "body": "    The domain of a polynomial function is always the set of real numbers.    (Types of polynomials)     A polynomial of degree is called a linear function.    A polynomial of degree is called quadratic function.    A polynomial of degree is called a cubic function.  i.e         "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-8",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-6-4",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-8",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-6-4",
   "type": "Example",
   "number": "3.4.3",
   "title": "",
   "body": "   , and are examples of polynomial functions.   "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-10-4",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-8-4",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-10-4",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-8-4",
   "type": "Example",
   "number": "3.4.4",
   "title": "",
@@ -3471,17 +3732,17 @@ var ptx_lunr_docs = [
   "url": "sec-polynomials-zeros-of-polynomials-rational.html#thm-remainder-theorem",
   "type": "Theorem",
   "number": "3.4.5",
-  "title": "",
-  "body": "  When a polynomial of degree at least is divided by , the remainder is    "
+  "title": "The Remainder Theorem.",
+  "body": " The Remainder Theorem   When a polynomial of degree at least is divided by , then the remainder is .   "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-10-14",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-8-14",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-10-14",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-8-14",
   "type": "Example",
   "number": "3.4.6",
   "title": "",
-  "body": "  The remainder when is divided by is .As a consequence of the remainder theorem, if is a factor of , then the remainder must be . Conversely, if the remainder is 0, then , is a factor of . This is known as the Factor Theorem.   "
+  "body": "  The remainder when is divided by is . As a consequence of the remainder theorem, if is a factor of , then the remainder must be . Conversely, if the remainder is 0, then , is a factor of . This is known as the Factor Theorem.   "
 },
 {
   "id": "thm-factor-theorem",
@@ -3489,8 +3750,8 @@ var ptx_lunr_docs = [
   "url": "sec-polynomials-zeros-of-polynomials-rational.html#thm-factor-theorem",
   "type": "Theorem",
   "number": "3.4.7",
-  "title": "",
-  "body": "   is a factor of if and only if .   "
+  "title": "The Factor Theorem.",
+  "body": " The Factor Theorem    is a factor of if and only if .   "
 },
 {
   "id": "thm-location-theorem",
@@ -3498,8 +3759,8 @@ var ptx_lunr_docs = [
   "url": "sec-polynomials-zeros-of-polynomials-rational.html#thm-location-theorem",
   "type": "Theorem",
   "number": "3.4.8",
-  "title": "",
-  "body": "  Let be a polynomial function and and be real numbers such that . If , then there is at least one zero of between and .   "
+  "title": "Location Theorem.",
+  "body": " Location Theorem   Let be a polynomial function and and be real numbers such that . If , then there is at least one zero of between and .   "
 },
 {
   "id": "thm-fundamental-theorem-of-algebra",
@@ -3507,8 +3768,8 @@ var ptx_lunr_docs = [
   "url": "sec-polynomials-zeros-of-polynomials-rational.html#thm-fundamental-theorem-of-algebra",
   "type": "Theorem",
   "number": "3.4.9",
-  "title": "",
-  "body": "  If is a polynomial of degree whose coefficients are complex numbers, then has at least one zero in the complex number system.   "
+  "title": "Fundamental Theorem of Algebra.",
+  "body": " Fundamental Theorem of Algebra   If is a polynomial of degree whose coefficients are complex numbers, then has at least one zero in the complex number system.   "
 },
 {
   "id": "thm-linear-factorization-theorem",
@@ -3516,26 +3777,26 @@ var ptx_lunr_docs = [
   "url": "sec-polynomials-zeros-of-polynomials-rational.html#thm-linear-factorization-theorem",
   "type": "Theorem",
   "number": "3.4.10",
-  "title": "",
-  "body": "  If , where and , then , where are complex numbers (possible real not necessarily distinct).   "
+  "title": "The linear Factorization Theorem.",
+  "body": " The linear Factorization Theorem   If , where and , then , where are complex numbers (possible real not necessarily distinct).   "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-10-23",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-8-23",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-10-23",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-8-23",
   "type": "Example",
   "number": "3.4.11",
   "title": "",
-  "body": "  Express each of the polynomials in the form described by the Linear Factorization Theorem. List each zero and its multiplicity.                          We may factorize as follows:     The zeros of are and each of multiplicity one.    We may factorize as follows:     Thus, the zeros of are and , each of multiplicity one.    We may factorize as follows:     Thus, the zeros of f(x) are 0 with multiplicity two and and each with multiplicity one.      "
+  "body": "  Express each of the polynomials in the form described by the Linear Factorization Theorem. List each zero and its multiplicity.                          We may factorize as follows:     The zeros of are and each of multiplicity one.    We may factorize as follows:     Thus, the zeros of are and , each of multiplicity one.    We may factorize as follows:     Thus, the zeros of are with multiplicity two and and each with multiplicity one.      "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-10-24",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-8-24",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-10-24",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-8-24",
   "type": "Example",
   "number": "3.4.12",
   "title": "",
-  "body": "     Find a polynomial with exactly the following zeros and multiplicity.    zeros  multiplicity                Are there any other polynomials that give the same roots and multiplicity?    Find a polynomial having the zeros described in part (a) such that .          Based on the Factor Theorem, we may write the polynomial as which gives the required roots and multiplicities. Any polynomial of the form , where is a non-zero constant will give the same roots and multiplicities.    Based on part (1), we know that . Since we want , we have Thus, .      "
+  "body": "     Find a polynomial with exactly the following zeros and multiplicity.    zeros  multiplicity                Are there any other polynomials that give the same roots and multiplicity?    Find a polynomial having the zeros described in part (a) such that .          Based on the Factor Theorem, we may write the polynomial as which gives the required roots and multiplicities.  Any polynomial of the form , where is a non-zero constant will give the same roots and multiplicities.    Based on part (1), we know that . Since we want , we have Thus, .      "
 },
 {
   "id": "thm-conjugate-roots-theorem",
@@ -3543,13 +3804,13 @@ var ptx_lunr_docs = [
   "url": "sec-polynomials-zeros-of-polynomials-rational.html#thm-conjugate-roots-theorem",
   "type": "Theorem",
   "number": "3.4.13",
-  "title": "",
-  "body": "  Let be a polynomial with real coefficients. If complex number (where and are real numbers) is a zero of , then so is its conjugate    "
+  "title": "Conjugate Roots Theorem.",
+  "body": " Conjugate Roots Theorem   Let be a polynomial with real coefficients. If complex number (where and are real numbers) is a zero of , then so is its conjugate .   "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-10-27",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-8-27",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-10-27",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-8-27",
   "type": "Example",
   "number": "3.4.14",
   "title": "",
@@ -3561,40 +3822,40 @@ var ptx_lunr_docs = [
   "url": "sec-polynomials-zeros-of-polynomials-rational.html#thm-rational-root",
   "type": "Theorem",
   "number": "3.4.15",
-  "title": "",
-  "body": "  Suppose that , where is an degree polynomial with integer coefficients. If is a rational root of , where and have no common factor other than , then is a factor of and is a factor of .   "
+  "title": "The Rational Root Theorem.",
+  "body": " The Rational Root Theorem   Suppose that , where is an degree polynomial with integer coefficients. If is a rational root of , where and have no common factor other than , then is a factor of and is a factor of .   "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-10-38",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-8-38",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-10-38",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-8-38",
   "type": "Example",
   "number": "3.4.16",
   "title": "",
   "body": "  Find all the zeros of the function     According to the Rational Root Theorem, if is a rational root of the given equation, then must be a factor of and must be a factor of . Thus, we have  possible values of :   possible values of :   possible rational roots :   We may check these possible roots by substituting the value in . Now and . Since is negative and is positive, by location theorem, has a zero between and 1. Since , then is a factor of . Using long division, we obtain     Therefore, the zeros of are , and .   "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-11-3",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-9-3",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-11-3",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-9-3",
   "type": "Example",
   "number": "3.4.17",
   "title": "",
   "body": "  The functions , and are examples of rational function.   "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-11-4",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-9-4",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-11-4",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-9-4",
   "type": "Note",
   "number": "3.4.18",
   "title": "",
   "body": " Note that the domain of the rational function is   "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-11-5",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-9-5",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-11-5",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-9-5",
   "type": "Example",
   "number": "3.4.19",
   "title": "",
@@ -3610,85 +3871,49 @@ var ptx_lunr_docs = [
   "body": " Graphical illustration of the idea of , , etc.   (for accessibility)   "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-11-15",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-9-15",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-11-15",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-9-15",
   "type": "Example",
   "number": "3.4.21",
   "title": "",
-  "body": "  Consider where and is a positive integer.    Obviously Dom( ). Next, we investigate the trend of the values of near . To do this, we consider two cases, when is even or odd:  Suppose is even: In this case for all ; and since as or . Hence, as or . Therefore, is a VA of . Moreover, or ( ) is its y-intercept since . However, it has no -intercept since for all in its domain (See, ).  Suppose is odd: In this case, for all , and as , just like in the even case. Thus, is a VA of . However, as , since for . Moreover, or is its y-intercept, since . However, it has no -intercept in this case either. (See, ).  Note that in both cases, as or .   "
+  "body": "  Consider , where and is a positive integer.    Obviously Dom( ). Next, we investigate the trend of the values of near . To do this, we consider two cases, when is even or odd:  Suppose is even: In this case for all ; and since as or . Hence, as or . Therefore, is a VA of . Moreover, or ( ) is its -intercept since . However, it has no -intercept since for all in its domain (See, ).  Suppose is odd: In this case, for all , and as , just like in the even case. Thus, is a VA of . However, as , since for . Moreover, or is its y-intercept, since . However, it has no -intercept in this case either. (See, ).  Note that in both cases, as or .    (A)   (for accessibility)     (B)   (for accessibility)      "
 },
 {
-  "id": "fig-n-even",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-9-16",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#fig-n-even",
-  "type": "Figure",
-  "number": "3.4.22",
-  "title": "",
-  "body": " (A)   (for accessibility)   "
-},
-{
-  "id": "fig-n-odd",
-  "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#fig-n-odd",
-  "type": "Figure",
-  "number": "3.4.23",
-  "title": "",
-  "body": " (B)   (for accessibility)   "
-},
-{
-  "id": "sec-polynomials-zeros-of-polynomials-rational-11-17",
-  "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-11-17",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-9-16",
   "type": "Remark",
   "number": "3.4.24",
   "title": "",
   "body": " Let be a rational function. Then,     if and , then is a VA of .    if , then may or may not be a VA of f . In this case, simplify and look for VA of the simplest form of f .     "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-11-19",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-9-18",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-11-19",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-9-18",
   "type": "Remark",
   "number": "3.4.25",
   "title": "",
   "body": " A rational function has a HA only when degree ( ) degree ( )  In this case,   If degree < degree , then (the x-axis) is the HA of f .    If degree  degree , i.e., ,  then is the HA of .     "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-11-22",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-9-21",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-11-22",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-9-21",
   "type": "Note",
   "number": "3.4.26",
   "title": "",
   "body": " A rational function has an OA only when degree  degree  . In this case, using long division, if the quotient of is , then is the OA of .  "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-11-23",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-9-22",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-11-23",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-9-22",
   "type": "Example",
   "number": "3.4.27",
   "title": "",
-  "body": "  Sketch the graphs of                     Since at , dom( ) .      Intercepts : -intercept: . Hence, is -intercept.   -intercept: . Hence, is -intercept.     Asymptotes:      VA: Since at and at , is VA of . In fact, if , then but the denominator is almost (but positive).  Consequently, as .  Moreover, as (since, if then is almost but negative).  (So, the graph of rises up to at the right side of , and sink down to at the left side of )    HA: Note that if you divide by , the quotient is and remainder is . Thus, . Thus, if (or ), then so that .  Hence, is the HA of .     Using these information, you can sketch the graph of as displayed below in Fig. 2.3 (A).       Both the denominator and numerator are at . So, first factorize and simplify them:   and . Therefore,     This implies that only is VA.     Hence, the graph of , is exactly the same as that of except that is not defined at . Therefore, the graph of and its VA are the same as that of except that there should be a hole at the point corresponding to on the graph of as shown on below.   "
-},
-{
-  "id": "func-01",
-  "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#func-01",
-  "type": "Figure",
-  "number": "3.4.28",
-  "title": "",
-  "body": " (A)   (for accessibility)   "
-},
-{
-  "id": "func-02",
-  "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#func-02",
-  "type": "Figure",
-  "number": "3.4.29",
-  "title": "",
-  "body": " (B)   (for accessibility)   "
+  "body": "  Sketch the graphs of                     Since at , dom( ) .     Intercepts: -intercept: . Hence, is -intercept.   -intercept: . Hence, is -intercept.    Asymptotes:     VA: Since at and at , is VA of . In fact, if , then but the denominator is almost (but positive).  Consequently, as .  Moreover, as (since, if then is almost but negative).  (So, the graph of rises up to at the right side of , and sink down to at the left side of )    HA: Note that if you divide by , the quotient is and remainder is . Thus, . Thus, if (or ), then so that .  Hence, is the HA of .     Using these information, you can sketch the graph of as displayed below in Fig. 2.3 (A).       Both the denominator and numerator are at . So, first factorize and simplify them:   and . Therefore,     This implies that only is VA.     Hence, the graph of , is exactly the same as that of except that is not defined at . Therefore, the graph of and its VA are the same as that of except that there should be a hole at the point corresponding to on the graph of as shown on below.    (A)   (for accessibility)     (B)   (for accessibility)      "
 },
 {
   "id": "exercises-polynomials-zeros-of-polynomials-rationals-1",
@@ -3790,27 +4015,27 @@ var ptx_lunr_docs = [
   "body": "  The graph of any rational function in which the degree of the numerator is exactly one more than the degree of the denominator will have an oblique (or slant) asymptote.     Use long division to show that       Show that this means that the line is a slant asymptote for the graph and sketch the graph of .      "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-13",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-11",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-13",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-11",
   "type": "Checkpoint",
   "number": "3.4.30",
   "title": "",
   "body": " Add review "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-14",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-12",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-14",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-12",
   "type": "Checkpoint",
   "number": "3.4.31",
   "title": "",
   "body": " Add review "
 },
 {
-  "id": "sec-polynomials-zeros-of-polynomials-rational-15",
+  "id": "sec-polynomials-zeros-of-polynomials-rational-13",
   "level": "2",
-  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-15",
+  "url": "sec-polynomials-zeros-of-polynomials-rational.html#sec-polynomials-zeros-of-polynomials-rational-13",
   "type": "Checkpoint",
   "number": "3.4.32",
   "title": "",
@@ -4741,7 +4966,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "Circles",
-  "body": " Circles   By the end of this section, you should     know the geometric definition of a circle.    be able to identify whether a given point is on, inside or outside a circle.    be able to construct equation of a circle.    be able to identify equations that represent circles    be able to find the center and radius of a circle and sketch its graph if its equation is given.    be able to identify whether a given circle and a line intersect at two points, one points or never intersect at all.    know the properties of a tangent line to a circle.    be able to find equation of a tangent line to a circle.       Definition of a Circle    A circle is the locus of points (set of points) in a plane each of which is equidistant from a fixed point in the plane. The fixed point is called the center of the circle and the constant distance is called its radius .    Definition 4.2 is illustrated by Figure 4.6 in which the center of the circle is denoted by ''C'' and its radius is denoted by r .     Figure 4.6 . Circle with center C, radius r  Observe that a circle is symmetric with respect its center. Based on the definition, a point P is on the circle if and only if its distance to C is r , that is | CP | = r . A point in the plane is said to be inside the circle if its distance to the center C is less than r . Similarly, a point in the plane is said to be outside the circle if its distance to C is greater than r . Moreover, a chord of the circle is a line segment whose endpoints are on the circle. A diameter is a chord of the circle through the center C. Consequently, C is the midpoint of a diameter and the length of a diameter is 2 r . For example, AB and QR are diameters of the circle in Figure 4.6.    Consider a circle of radius 5 whose center is at C(2,1). Determine whether each of the following points is on the circle, inside the circle or outside the circle:       The distance between a given point P( x , y ) and the center C(2,1) is given by   or We need to compare | PC | with the radius .  Note that | PC |  ,  and   Thus, P is on the circle if , inside the circle if | PC | and outside the circle if | PC | . So, we can use the square distance to answer the question. Thus, as     and    is on the circle, is inside the circle, and is outside the circle. Similarly, you can show that is inside the circle, is on the circle, and is outside the circle.        Suppose the center of a circle is and is a point on the circle. What is the radius of the circle?      Let and are endpoints of a diameter of a circle. Find the center and radius of the circle.      Consider a circle whose center is the origin and radius is. Determine whether or not the circle contains the following point.                                                  Consider a circle of radius 5 whose center is at . Determine whether each of the following points is on the circle, inside the circle or outside the circle:                                                  Add review   Add review   Add review    Equation of a Circle  We now construct an equation that the coordinates ( x , y ) of the points on the circle should satisfy. So, let P( x,y ) be any point on a circle of radius r and center C( h,k ) (see, Figure 4.7). Then, the definition of a circle requires that  |CP|= r   ⇒   or       (Standard equation of a circle with center ( h ,k) and radius r).      In particular, if the center is at origin, i.e., ( h,k ) = , the equation is      (Standard Equation of a circle of radius r centered at origin)          Figure 4.7 :(a) Center at C(h,k) ; (b) Center at origin    Find an equation of the circle with radius and center .    Using the standard equation of a circle in which the center ( h, k ) =  and radius r =  we obtain the equation         Find the equation of a circle with endpoints of a diameter at and .    The center of the circle C( h,k ) is the mid-point of the diameter. Hence, . Also, for its radius r , .  Thus, the equation of the circle is . That is,   .      Suppose and are points on a circle whose center is on x -axis. Find the equation of the circle.    We need to obtain the center and radius r of the circle to construct its equation. As the center is on x -axis, its second coordinate is . Therefore, let C( h ,0) be the center of the circle. Note that as both and are on the circle. So, from the first equality we get . Solving this for h we get . Hence, the center is at and . Therefore, the equation of the circle is   .      Determine whether the given equation represents a circle. If it does, identify its center and radius and sketch its graph.                       We need to rewrite each equation in standard form to identify its center and radius. We do this by completing the square on the x-terms and y-terms of the equation as follows:      (Grouping x-terms and y-terms)     (Adding and to both sides)   .  Comparing this with the standard equation of a circle, this is the equation of a circle with center ( h , k ) = (-1, 3) and radius r = . The graph of the circle is sketched in Figure 4.8 below.    Figure 4.8 .    Following the same steps as in (a), you can see that is equivalent to .  This is satisfied by the point only. The locus of this equation is considered as a point-circle, circle of zero radius (sometimes called degenerated circle).    Again following the same steps as in (a), you can see that is equivalent to .  Note that this does not represent a circle; in fact it has no locus at all (Why? ).          Consider an equation of the form     By completing the square you can show the following:     If , then the equation represents a circle with center and radius .    If , then the equation is satisfied by the point only. In this case the locus of the equation is called point-circle (circle of zero radius).    If , then the equation has no locus.       Exercise    Determine whether each of the following points is inside, outside or on the circle with equation .                              Find an equation of the circle whose endpoints of a diameter are and .      Determine an equation of a circle whose center is on y -axis and radius is .      Find an equation of the circle passing through and which has its center on the line .      Find the value(s) of k for which the equation represent a circle.      An equation of a circle is . If the radius of the circle is , then what is the coordinates of its center?      Find equation of the circle passing through and .      Find equation of the circle inscribed in the triangle with vertices ( , and .      In each of the following, check whether or not the given equation represents a circle. If the equation represents a circle, then identify its center and the length of its diameter.                                        Show that represents a circle of positive radius iff .      Add review   Add review   Add review    Intersection of a circle with a line and tangent line to a circle  The number of intersection points of a given line and a circle is at most two; that is, either no intersection point, or only one intersection point, or two intersection points. For instance, in Figure 4.9, the line has no intersection with the circle, has two intersection points with the circle, namely, and , and has only one intersection point with the circle, namely, P.  A line which intersects a circle at one and only one point is called a tangent line to the circle. In this case, the intersection point is called the point of tangency . Thus, a tangent line to the circle in Figure 4.9 and P is the point of tangency.     Figure 4.9 . Intersection of a line and circle  In Figure 4.9, observe that every point on are outside of the circle. Hence, d (C,Q) > r for every point Q on . Consequently, . On the other hand, there is a point on which is inside the circle. Hence,   For the tangent line the point of tangency P is on the circle implies that and P is the point on closest to C. Therefore, . This shows also that CP⊥ .  In general, given a circle of radius r with center C( h , k ) and a line l , by computing the distance d (C, l ) between C and l we can conclude the following.     If d (C, l ) > r , then the line does not intersect with the circle.    If d (C, l ) < r , then the line is a secant of the circle; that is, they have two intersection points.    If d (C, l ) = r , then l is a tangent line to the circle. The point of tangency is the point P on the line (and on the circle) such that CP ⊥ l  . This means the product of the slopes of l and CP must be .       Write the equation of the circle tangent to the x -axis at whose center is on the line .    The circle in the question is as in Figure 4.10.   Figure 4.10    Figure 4.10   Let C( h, k ) be the center of the circle. ( h, k ) is on the line ; and the circle is tangent to x-axis at P CP should be perpendicular to the x-axis.   and the radius is r  .  Hence, the circle is centered at with radius r  . Therefore, the equation of the circle is .      Suppose the line y=x is tangent to a circle at point P . If the center of the circle is on the x -axis, then what is the equation of the circle?    The circle in the question is as in Figure 4.11.     Figure 4.11 .  Let the center of the circle be C( h ,0). We need to find h . The slope of the line l : y=x is and l is perpendicular to CP. Hence the slope of CP is .  So, the slope of CP or .   The center of the circle is C ; and   Therefore, the equation of the circle is .     Exercise    Find the equation of the line tangent to the circle with the center at and point of tangency at .      The center of a circle is on the line and the line is tangent to the circle at . Find the center and radius of the circle.      Suppose two lines and are tangent to a circle at and , respectively. Find the equation of the circle.      Find an equation of the line tangent to the circle at       Find equation of the line through ( ) and tangent to the circle with equation .      Suppose P( ) and Q( ) are the endpoints of a diameter of a circle and L is the line tangent to the circle at Q.  Show that R( ) is on L .  Find the area of ∆PQR, when R is the point given in (a).        Add review   Add review   "
+  "body": " Circles     By the end of this section, you should     know the geometric definition of a circle.    be able to identify whether a given point is on, inside or outside a circle.    be able to construct equation of a circle.    be able to identify equations that represent circles    be able to find the center and radius of a circle and sketch its graph if its equation is given.    be able to identify whether a given circle and a line intersect at two points, one points or never intersect at all.    know the properties of a tangent line to a circle.    be able to find equation of a tangent line to a circle.        Definition of a Circle    A circle is the locus of points (set of points) in a plane each of which is equidistant from a fixed point in the plane. The fixed point is called the center of the circle and the constant distance is called its radius .     is illustrated by Figure 4.6 in which the center of the circle is denoted by ''C'' and its radius is denoted by r .     Figure 4.6 . Circle with center C, radius r  Observe that a circle is symmetric with respect its center. Based on the definition, a point P is on the circle if and only if its distance to C is r , that is | CP | = r . A point in the plane is said to be inside the circle if its distance to the center C is less than r . Similarly, a point in the plane is said to be outside the circle if its distance to C is greater than r . Moreover, a chord of the circle is a line segment whose endpoints are on the circle. A diameter is a chord of the circle through the center C. Consequently, C is the midpoint of a diameter and the length of a diameter is 2 r . For example, AB and QR are diameters of the circle in Figure 4.6.    Consider a circle of radius 5 whose center is at C(2,1). Determine whether each of the following points is on the circle, inside the circle or outside the circle:       The distance between a given point P( x , y ) and the center C(2,1) is given by   or We need to compare | PC | with the radius .  Note that | PC |  ,  and   Thus, P is on the circle if , inside the circle if | PC | and outside the circle if | PC | . So, we can use the square distance to answer the question. Thus, as     and    is on the circle, is inside the circle, and is outside the circle. Similarly, you can show that is inside the circle, is on the circle, and is outside the circle.     Exercises    Suppose the center of a circle is and is a point on the circle. What is the radius of the circle?      Let and are endpoints of a diameter of a circle. Find the center and radius of the circle.      Consider a circle whose center is the origin and radius is. Determine whether or not the circle contains the following point.                                                  Consider a circle of radius 5 whose center is at . Determine whether each of the following points is on the circle, inside the circle or outside the circle:                                                  Add review   Add review   Add review    Equation of a Circle  We now construct an equation that the coordinates ( x , y ) of the points on the circle should satisfy. So, let P( x,y ) be any point on a circle of radius r and center C( h,k ) (see, Figure 4.7).  Then, the definition of a circle requires that |CP|= r      or         (Standard equation of a circle with center ( h ,k) and radius r).     In particular, if the center is at origin, i.e., ( h,k ) = , the equation is        (Standard Equation of a circle of radius r centered at origin)         Figure 4.7 : Circles (a) Center at C(h,k) ; (b) Center at origin    Find an equation of the circle with radius and center .    Using the standard equation of a circle in which the center ( h, k ) =  and radius r =  ,  we obtain the equation:         Find the equation of a circle with endpoints of a diameter at and .    The center of the circle C( h,k ) is the mid-point of the diameter.  Hence, .  Also, for its radius r , .  Thus, the equation of the circle is .  That is, .      Suppose and are points on a circle whose center is on x -axis. Find the equation of the circle.    We need to obtain the center and radius r of the circle to construct its equation.  As the center is on x -axis, its second coordinate is .  Therefore, let C( h ,0) be the center of the circle.  Note that as both and are on the circle.  So, from the first equality we get .  Solving this for h we get .  Hence, the center is at and .  Therefore, the equation of the circle is .      Determine whether the given equation represents a circle. If it does, identify its center and radius and sketch its graph.                       We need to rewrite each equation in standard form to identify its center and radius.  We do this by completing the square on the x-terms and y-terms of the equation as follows:        (Grouping x-terms and y-terms)       (Adding and to both sides)   .  Comparing this with the standard equation of a circle, this is the equation of a circle with center ( h , k ) = (-1, 3) and radius r = .  The graph of the circle is sketched in Figure 4.8 below.    Figure 4.8 .    Following the same steps as in (a), you can see that is equivalent to .  This is satisfied by the point only. The locus of this equation is considered as a point-circle, circle of zero radius (sometimes called degenerated circle).    Again following the same steps as in (a), you can see that is equivalent to .  Note that this does not represent a circle; in fact it has no locus at all (Why? ).          Consider an equation of the form     By completing the square you can show the following:     If , then the equation represents a circle with center and radius .    If , then the equation is satisfied by the point only. In this case the locus of the equation is called point-circle (circle of zero radius).    If , then the equation has no locus.       Exercise    Determine whether each of the following points is inside, outside or on the circle with equation .                              Find an equation of the circle whose endpoints of a diameter are and .      Determine an equation of a circle whose center is on y -axis and radius is .      Find an equation of the circle passing through and which has its center on the line .      Find the value(s) of k for which the equation represent a circle.      An equation of a circle is . If the radius of the circle is , then what is the coordinates of its center?      Find equation of the circle passing through and .      Find equation of the circle inscribed in the triangle with vertices ( , and .      In each of the following, check whether or not the given equation represents a circle. If the equation represents a circle, then identify its center and the length of its diameter.                                        Show that represents a circle of positive radius iff .      Add review   Add review   Add review    Intersection of a circle with a line and tangent line to a circle  The number of intersection points of a given line and a circle is at most two; that is, either no intersection point, or only one intersection point, or two intersection points. For instance, in Figure 4.9, the line has no intersection with the circle, has two intersection points with the circle, namely, and , and has only one intersection point with the circle, namely, P.  A line which intersects a circle at one and only one point is called a tangent line to the circle. In this case, the intersection point is called the point of tangency . Thus, a tangent line to the circle in Figure 4.9 and P is the point of tangency.     Figure 4.9 . Intersection of a line and circle  In Figure 4.9, observe that every point on are outside of the circle. Hence, d (C,Q) > r for every point Q on . Consequently, . On the other hand, there is a point on which is inside the circle. Hence,   For the tangent line the point of tangency P is on the circle implies that and P is the point on closest to C. Therefore, . This shows also that CP⊥ .  In general, given a circle of radius r with center C( h , k ) and a line l , by computing the distance d (C, l ) between C and l we can conclude the following.     If d (C, l ) > r , then the line does not intersect with the circle.    If d (C, l ) < r , then the line is a secant of the circle; that is, they have two intersection points.    If d (C, l ) = r , then l is a tangent line to the circle. The point of tangency is the point P on the line (and on the circle) such that CP ⊥ l  . This means the product of the slopes of l and CP must be .       Write the equation of the circle tangent to the x -axis at whose center is on the line .    The circle in the question is as in Figure 4.10.   Figure 4.10    Figure 4.10   Let C( h, k ) be the center of the circle.  ( h, k ) is on the line ; and the circle is tangent to x-axis at P CP should be perpendicular to the x-axis.   and the radius is r  .  Hence, the circle is centered at with radius r  .  Therefore, the equation of the circle is .      Suppose the line y=x is tangent to a circle at point P . If the center of the circle is on the x -axis, then what is the equation of the circle?    The circle in the question is as in Figure 4.11.     Figure 4.11 .  Let the center of the circle be C( h ,0). We need to find h .  The slope of the line l : y=x is and l is perpendicular to CP.  Hence the slope of CP is .  So, the slope of CP or .   The center of the circle is C ; and   Therefore, the equation of the circle is .     Exercise    Find the equation of the line tangent to the circle with the center at and point of tangency at .      The center of a circle is on the line and the line is tangent to the circle at . Find the center and radius of the circle.      Suppose two lines and are tangent to a circle at and , respectively. Find the equation of the circle.      Find an equation of the line tangent to the circle at       Find equation of the line through ( ) and tangent to the circle with equation .      Suppose P( ) and Q( ) are the endpoints of a diameter of a circle and L is the line tangent to the circle at Q.  Show that R( ) is on L .  Find the area of ∆PQR, when R is the point given in (a).        Add review   Add review   "
 },
 {
   "id": "def-definition-of-a-circle",
@@ -4831,7 +5056,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.2.6",
   "title": "",
-  "body": "  Find an equation of the circle with radius and center .    Using the standard equation of a circle in which the center ( h, k ) =  and radius r =  we obtain the equation      "
+  "body": "  Find an equation of the circle with radius and center .    Using the standard equation of a circle in which the center ( h, k ) =  and radius r =  ,  we obtain the equation:      "
 },
 {
   "id": "subsec-equation-of-a-circle-12",
@@ -4840,7 +5065,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.2.7",
   "title": "",
-  "body": "  Find the equation of a circle with endpoints of a diameter at and .    The center of the circle C( h,k ) is the mid-point of the diameter. Hence, . Also, for its radius r , .  Thus, the equation of the circle is . That is,   .   "
+  "body": "  Find the equation of a circle with endpoints of a diameter at and .    The center of the circle C( h,k ) is the mid-point of the diameter.  Hence, .  Also, for its radius r , .  Thus, the equation of the circle is .  That is, .   "
 },
 {
   "id": "subsec-equation-of-a-circle-13",
@@ -4849,7 +5074,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.2.8",
   "title": "",
-  "body": "  Suppose and are points on a circle whose center is on x -axis. Find the equation of the circle.    We need to obtain the center and radius r of the circle to construct its equation. As the center is on x -axis, its second coordinate is . Therefore, let C( h ,0) be the center of the circle. Note that as both and are on the circle. So, from the first equality we get . Solving this for h we get . Hence, the center is at and . Therefore, the equation of the circle is   .   "
+  "body": "  Suppose and are points on a circle whose center is on x -axis. Find the equation of the circle.    We need to obtain the center and radius r of the circle to construct its equation.  As the center is on x -axis, its second coordinate is .  Therefore, let C( h ,0) be the center of the circle.  Note that as both and are on the circle.  So, from the first equality we get .  Solving this for h we get .  Hence, the center is at and .  Therefore, the equation of the circle is .   "
 },
 {
   "id": "subsec-equation-of-a-circle-14",
@@ -4858,7 +5083,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.2.9",
   "title": "",
-  "body": "  Determine whether the given equation represents a circle. If it does, identify its center and radius and sketch its graph.                       We need to rewrite each equation in standard form to identify its center and radius. We do this by completing the square on the x-terms and y-terms of the equation as follows:      (Grouping x-terms and y-terms)     (Adding and to both sides)   .  Comparing this with the standard equation of a circle, this is the equation of a circle with center ( h , k ) = (-1, 3) and radius r = . The graph of the circle is sketched in Figure 4.8 below.    Figure 4.8 .    Following the same steps as in (a), you can see that is equivalent to .  This is satisfied by the point only. The locus of this equation is considered as a point-circle, circle of zero radius (sometimes called degenerated circle).    Again following the same steps as in (a), you can see that is equivalent to .  Note that this does not represent a circle; in fact it has no locus at all (Why? ).      "
+  "body": "  Determine whether the given equation represents a circle. If it does, identify its center and radius and sketch its graph.                       We need to rewrite each equation in standard form to identify its center and radius.  We do this by completing the square on the x-terms and y-terms of the equation as follows:        (Grouping x-terms and y-terms)       (Adding and to both sides)   .  Comparing this with the standard equation of a circle, this is the equation of a circle with center ( h , k ) = (-1, 3) and radius r = .  The graph of the circle is sketched in Figure 4.8 below.    Figure 4.8 .    Following the same steps as in (a), you can see that is equivalent to .  This is satisfied by the point only. The locus of this equation is considered as a point-circle, circle of zero radius (sometimes called degenerated circle).    Again following the same steps as in (a), you can see that is equivalent to .  Note that this does not represent a circle; in fact it has no locus at all (Why? ).      "
 },
 {
   "id": "subsec-equation-of-a-circle-15",
@@ -4993,7 +5218,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.2.14",
   "title": "",
-  "body": "  Write the equation of the circle tangent to the x -axis at whose center is on the line .    The circle in the question is as in Figure 4.10.   Figure 4.10    Figure 4.10   Let C( h, k ) be the center of the circle. ( h, k ) is on the line ; and the circle is tangent to x-axis at P CP should be perpendicular to the x-axis.   and the radius is r  .  Hence, the circle is centered at with radius r  . Therefore, the equation of the circle is .   "
+  "body": "  Write the equation of the circle tangent to the x -axis at whose center is on the line .    The circle in the question is as in Figure 4.10.   Figure 4.10    Figure 4.10   Let C( h, k ) be the center of the circle.  ( h, k ) is on the line ; and the circle is tangent to x-axis at P CP should be perpendicular to the x-axis.   and the radius is r  .  Hence, the circle is centered at with radius r  .  Therefore, the equation of the circle is .   "
 },
 {
   "id": "subsec-intersection-of-a-circle-with-11",
@@ -5002,7 +5227,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.2.15",
   "title": "",
-  "body": "  Suppose the line y=x is tangent to a circle at point P . If the center of the circle is on the x -axis, then what is the equation of the circle?    The circle in the question is as in Figure 4.11.     Figure 4.11 .  Let the center of the circle be C( h ,0). We need to find h . The slope of the line l : y=x is and l is perpendicular to CP. Hence the slope of CP is .  So, the slope of CP or .   The center of the circle is C ; and   Therefore, the equation of the circle is .   "
+  "body": "  Suppose the line y=x is tangent to a circle at point P . If the center of the circle is on the x -axis, then what is the equation of the circle?    The circle in the question is as in Figure 4.11.     Figure 4.11 .  Let the center of the circle be C( h ,0). We need to find h .  The slope of the line l : y=x is and l is perpendicular to CP.  Hence the slope of CP is .  So, the slope of CP or .   The center of the circle is C ; and   Therefore, the equation of the circle is .   "
 },
 {
   "id": "exercises-intersection-of-a-circle-2",
@@ -5227,7 +5452,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Ellipses",
-  "body": " Ellipses   By the end of this section, you should     know the geometric definition of an ellipse.    know the meaning of the center, vertices, foci, major axis and minor axis of an ellipse.    be able to find equation of an ellipse whose major axis is horizontal or vertical.    be able to identify equations representing ellipses.    be able to find the center, foci and vertices of an ellipse and sketch the ellipse.       Definition of an Ellipse    Let F and F ′ be two fixed points in the plane. An ellipse is the locus or set of all points in the plane such that the sum of the distances from each point to F and F ′ is constant. That is, a point P is on the ellipse if and only if |PF|+ |PF ′ | = constant. (See Figure 4.18).    The two fixed points, F and F ′ , are called foci (singular- focus ) of the ellipse.     Figure 4.18 : Ellipse: |PF| + |PF ′ |= constant  Note also the following terminologies and relationships about ellipse.     The midpoint C between the foci F ′ and F is called the center of the ellipse.    The longest diameter (longest chord) V ′ V through F ′ and F is called the major axis of the ellipse; and the chord BB ′ through C which is perpendicular to V ′ V is called minor axis .    The endpoints of the major axis, V ′ and V, are called the vertices of the ellipse.    From the definition, |V ′ F ′ | + |V ′ F| = |VF ′ | + |VF| ⇒ |V ′ F ′ | = |VF| ⇒ |CV ′ | = |CV|. Hence, C is the midpoint of V ′ V. We denote the length of the major axis by 2 a . That is, |CV| = a .  ⇒ |VF ′ | + |VF| = |V ′ V| = 2 a .  ⇒ |PF ′ | + |PF| = 2 a , for any point P on the ellipse.    We let | BC | = b . (You can show that C is the midpoint of BB ′ . So, |B ′ C| = b. )    The distance from the center C to a focus F (or F ′ ) is denoted by c , i.e., |CF| = c = |CF ′ |.    Now, since |BF ′ |+ |BF| = 2 a and BC is a perpendicular bisector of F ′ F, we obtain that |BF ′ | = |BF|= a . Hence, using the Pythagoras Theorem on ∆BCF, we obtain   or .  ( Note:  a ≥ b . If a=b , the ellipse would be a circle with radius r =a =b ).    The ratio of the distance between the two foci to the length of the major axis is called the eccentricity of the ellipse, and denoted by e. That is,   . (Note that 0 < e < 1 because 0 < c < a )      Exercise   Use the definition of ellipse and the given information to answer or solve each of the following problems.     Suppose F ′ and F are the foci of an ellipse and B ′ and B are the endpoints of the minor axis of the ellipse, as in Figure 4.18. Then, show that each of the followings hold.     ∆BF ′ F is isosceles triangle.    The quadrilateral BF ′ B ′ F is a rhombus.    FF ′ is perpendicular bisector of BB ′ ; and also BB ′ is perpendicular bisector of FF ′.     If the length of the major axis is 2 a , length of minor axis is |BB ′ | = 2 b , and |F ′ F|=2 c , for some positive a , b , c , then     |BF| = a                  Suppose the vertices of an ellipse are and its foci are .     Where is the center of the ellipse?    Find the endpoints of its minor axis.    Find the lengths of the major and minor axes.    Determine whether each of the following points is on the ellipse or not.                                  (Note: By the definition, a point is on the ellipse iff the sum of its distances to the two foci is 2 a )      Suppose the endpoints of the major axis of an ellipse are and the end points of its minor axis are .     Where is the center of the ellipse?    Find the coordinates of the foci.    Determine whether each of the following points is on the ellipse or not.                                 Suppose the endpoints of the minor axis of an ellipse are and its eccentricity is . Find the coordinates of (a) the center, (b) the foci , (c) the vertices of the ellipse.      Add review   Add review    Equation of an Ellipse   In order to obtain the simplest equation for an ellipse, we place the ellipse at standard position. An ellipse is said to be at standard position when its center is at the origin and its major axis lies on either the x -axis or y -axis.    Equation of an ellipse at standard position  There are two possible situations, namely, when the major axis lies on x -axis (called horizontal ellipse) and when the major axis lies on y -axis (called vertical ellipse). We first consider a horizontal ellipse as in Figure 4.19     Figure 4.19 : Horizontal ellipse at standard position  Let the center of the ellipse be at the origin, C(0,0) and foci at F′(− c ,0), F ( c ,0) and vertices at (− a ,0) and ( a ,0) (see Figure 4.19). Then, a point P( x,y ) is on the ellipse iff  |PF′| + |PF| = 2 a .  That is,   or   Squaring both sides we get     which simplifies to   Again squaring both sides, we get   Which becomes   Now recalling that and dividing both sides by , the equation becomes     (Equation of horizontal ellipse at standard position, vertices (± a , 0), foci (± c , 0), where )    For a vertical ellipse at standard position, the same procedure gives the equation     (Equation of vertical ellipse at standard position, vertices (0,± a ), foci (0,± c ), where )     Note : Notice that here, for vertical ellipse, the larger denominator is under .    Locate the vertices and foci of and sketch its graph.    Dividing both sides of the equation by 144, we get:   or   This is equation of a vertical ellipse at standard position with a= 4, so vertices at (0, ±4), and b= 3; i.e., endpoints of the minor axis at . Since , the foci are . The graph is sketched in Figure 4.20.     Figure 4.20 :      Equation of shifted Ellipses  When an ellipse is not at standard position but with center at a point C( h,k ), then we can still obtain its equation by considering translation of the xy -axes in such a way that its origin translated to the point C( h , k ). This result in a new X ′ Y ′ coordinate system whose origin O′ is at C( h,k ) so that the ellipse is at standard position relative to the X ′ Y ′ system( see, Figure 4.21)    (a) horizontal ellipse, center C(h,k)    (b) vertical ellipse, center C(h,k)    Figure 4.21 : (a) horizontal ellipse, center C(h,k); (b) vertical ellipse, center C(h,k)  Consequently, the equation of the horizontal and vertical ellipses relative to the new X ′ Y ′ coordinate system with ( x ′, y ′) coordinate points are   and , .........(I) respectively.  Since the origin of the new coordinate system is at the point ( h,k ) of the xy -coordinate system, the relationship between a point ( x,y ) of the xy -coordinate system and ( x ′ ,y ′) of the new coordinate system is given by ( x, y ) = ( x ′ ,y ′) + ( h, k ). That is,   and   Thus, in the original xy -coordinate system the equations of the horizontal and vertical ellipses with center C( h, k ), lengths of major axis = 2 a and minor axis = 2 b are, respectively, given by     (Standard equation of horizontal ellipse with center C( h,k ) )    and     (Standard equation of vertical ellipse with center C( h,k ) )      The endpoints of the major axis of an ellipse are at and and its eccentricity is . Find the equation of the ellipse and its foci.    The given vertices are at and implies that ; and the center C( h,k ) is the midpoint of . Moreover, eccentricity . Hence, . Note that the major axis V'V is horizontal. Therefore, using the standard equation of a horizontal ellipse, the equation of the ellipse is     Now, as the center ( h,k ) = , c =3 and V′V is horizontal, the foci are at ( h ± c , k ) = .  That is, the foci are at F ′ (-1, 4) and F(5, 4).  Moreover, the endpoints of major axis are at and   The graph of the ellipse is sketched in Figure 4.22.     Figure 4.22 : Example ellipse      Find the center, foci and vertices of and sketch its graph    Group the x-terms of the equation and complete the square:      (divide both sides by 4)     This is equation of a vertical ellipse (major axis parallel to the y-axis), center C=( h,k ) = ,     Thus, foci : F′ and F ,  Vertices: V = , V′= ;  Endpoints of minor axis: B= , B′= ;  The graph of the ellipse is sketched in Figure 4.23.     Figure 4.23 :       Consider the equation: ,  when A and C have the same sign. So, without lose of generality, let A >0 and C >0.  By completing the squares you can show that this equation is equivalent to     From this you can conclude that the given equation represents:-     an ellipse with center if .    If ,the equation is satisfied by the point only. In this case, the locus of the equation is called a point-ellipse (degenerate ellipse).    If , then the equation has no locus.       Exercise   For questions 1 to 13, find an equation of the ellipse with the given properties and sketch its graph.     Foci at and a vertex at       A focus at and vertices at       Foci at and a vertex at       Foci at and a vertex at       Center at , one focus at and one vertex at       Foci at and the length of the major axis is .      Foci at and the length of the minor axis is .      The distance between its foci is and the endpoints of its minor axis are and .      Vertices at and the ellipse passes through .      Center at , a vertex at , and one of the endpoints of the minor axis is .      The ellipse passes through and with center at origin.      The endpoints of the major axis are and , and the ellipse passes through the origin      The endpoints of the minor axis are and , and the ellipse passes through the origin  For questions 14 to 22 find the center, foci and vertices of the ellipse having the given equation and sketch its graph.                                                                     Consider the equation . Find all values of F such that the graph of the equation  (a) is an ellipse. (b) is a point. (c) consists of no points at all.       Add review   Add review   Add review   "
+  "body": " Ellipses     By the end of this section, you should     know the geometric definition of an ellipse.    know the meaning of the center, vertices, foci, major axis and minor axis of an ellipse.    be able to find equation of an ellipse whose major axis is horizontal or vertical.    be able to identify equations representing ellipses.    be able to find the center, foci and vertices of an ellipse and sketch the ellipse.        Definition of an Ellipse    Let F and F ′ be two fixed points in the plane. An ellipse is the locus or set of all points in the plane such that the sum of the distances from each point to F and F ′ is constant. That is, a point P is on the ellipse if and only if |PF|+ |PF ′ | = constant. (See Figure 4.18).    The two fixed points, F and F ′ , are called foci (singular- focus ) of the ellipse.     Figure 4.18 : Ellipse: |PF| + |PF ′ |= constant  Note also the following terminologies and relationships about ellipse.     The midpoint C between the foci F ′ and F is called the center of the ellipse.    The longest diameter (longest chord) V ′ V through F ′ and F is called the major axis of the ellipse; and the chord BB ′ through C which is perpendicular to V ′ V is called minor axis .    The endpoints of the major axis, V ′ and V, are called the vertices of the ellipse.    From the definition, |V ′ F ′ | + |V ′ F| = |VF ′ | + |VF| ⇒ |V ′ F ′ | = |VF| ⇒ |CV ′ | = |CV|. Hence, C is the midpoint of V ′ V. We denote the length of the major axis by 2 a . That is, |CV| = a .   ⇒ |VF ′ | + |VF| = |V ′ V| = 2 a .   ⇒ |PF ′ | + |PF| = 2 a , for any point P on the ellipse.    We let | BC | = b . (You can show that C is the midpoint of BB ′ . So, |B ′ C| = b. )    The distance from the center C to a focus F (or F ′ ) is denoted by c , i.e., |CF| = c = |CF ′ |.    Now, since |BF ′ |+ |BF| = 2 a and BC is a perpendicular bisector of F ′ F, we obtain that |BF ′ | = |BF|= a .  Hence, using the Pythagoras Theorem on ∆BCF, we obtain    or .  ( Note:  a ≥ b . If a=b , the ellipse would be a circle with radius r =a =b ).    The ratio of the distance between the two foci to the length of the major axis is called the eccentricity of the ellipse, and denoted by e. That is,   . (Note that 0 < e < 1 because 0 < c < a )      Exercise   Use the definition of ellipse and the given information to answer or solve each of the following problems.     Suppose F ′ and F are the foci of an ellipse and B ′ and B are the endpoints of the minor axis of the ellipse, as in Figure 4.18. Then, show that each of the followings hold.     ∆BF ′ F is isosceles triangle.    The quadrilateral BF ′ B ′ F is a rhombus.    FF ′ is perpendicular bisector of BB ′ ; and also BB ′ is perpendicular bisector of FF ′.     If the length of the major axis is 2 a , length of minor axis is |BB ′ | = 2 b , and |F ′ F|=2 c , for some positive a , b , c , then     |BF| = a                  Suppose the vertices of an ellipse are and its foci are .     Where is the center of the ellipse?    Find the endpoints of its minor axis.    Find the lengths of the major and minor axes.    Determine whether each of the following points is on the ellipse or not.                                  (Note: By the definition, a point is on the ellipse iff the sum of its distances to the two foci is 2 a )      Suppose the endpoints of the major axis of an ellipse are and the end points of its minor axis are .     Where is the center of the ellipse?    Find the coordinates of the foci.    Determine whether each of the following points is on the ellipse or not.                                 Suppose the endpoints of the minor axis of an ellipse are and its eccentricity is . Find the coordinates of (a) the center, (b) the foci , (c) the vertices of the ellipse.      Add review   Add review    Equation of an Ellipse   In order to obtain the simplest equation for an ellipse, we place the ellipse at standard position. An ellipse is said to be at standard position when its center is at the origin and its major axis lies on either the x -axis or y -axis.    Equation of an ellipse at standard position  There are two possible situations, namely, when the major axis lies on x -axis (called horizontal ellipse) and when the major axis lies on y -axis (called vertical ellipse). We first consider a horizontal ellipse as in Figure 4.19     Figure 4.19 : Horizontal ellipse at standard position  Let the center of the ellipse be at the origin, C(0,0) and foci at F′(− c ,0), F ( c ,0) and vertices at (− a ,0) and ( a ,0) (see Figure 4.19). Then, a point P( x,y ) is on the ellipse iff  |PF′| + |PF| = 2 a .  That is,   or   Squaring both sides we get     which simplifies to   Again squaring both sides, we get   Which becomes   Now recalling that and dividing both sides by , the equation becomes     (Equation of horizontal ellipse at standard position,     vertices (± a , 0), foci (± c , 0), where )    For a vertical ellipse at standard position, the same procedure gives the equation     (Equation of vertical ellipse at standard position,      vertices (0,± a ), foci (0,± c ), where )     Note : Notice that here, for vertical ellipse, the larger denominator is under .    Locate the vertices and foci of and sketch its graph.    Dividing both sides of the equation by 144, we get:   or   This is equation of a vertical ellipse at standard position with a= 4, so vertices at (0, ±4), and b= 3; i.e., endpoints of the minor axis at . Since , the foci are . The graph is sketched in Figure 4.20.     Figure 4.20 :      Equation of shifted Ellipses  When an ellipse is not at standard position but with center at a point C( h,k ), then we can still obtain its equation by considering translation of the xy -axes in such a way that its origin translated to the point C( h , k ). This result in a new X ′ Y ′ coordinate system whose origin O′ is at C( h,k ) so that the ellipse is at standard position relative to the X ′ Y ′ system( see, Figure 4.21)    (a) horizontal ellipse, center C(h,k)    (b) vertical ellipse, center C(h,k)    Figure 4.21 : (a) horizontal ellipse, center C(h,k); (b) vertical ellipse, center C(h,k)  Consequently, the equation of the horizontal and vertical ellipses relative to the new X ′ Y ′ coordinate system with ( x ′, y ′) coordinate points are   and , .........(I) respectively.  Since the origin of the new coordinate system is at the point ( h,k ) of the xy -coordinate system, the relationship between a point ( x,y ) of the xy -coordinate system and ( x ′ ,y ′) of the new coordinate system is given by ( x, y ) = ( x ′ ,y ′) + ( h, k ). That is,   and   Thus, in the original xy -coordinate system the equations of the horizontal and vertical ellipses with center C( h, k ), lengths of major axis = 2 a and minor axis = 2 b are, respectively, given by     (Standard equation of horizontal ellipse with center C( h,k ) )    and     (Standard equation of vertical ellipse with center C( h,k ) )      The endpoints of the major axis of an ellipse are at and and its eccentricity is . Find the equation of the ellipse and its foci.    The given vertices are at and implies that ;  and the center C( h,k ) is the midpoint of .  Moreover, eccentricity .  Hence, . Note that the major axis V'V is horizontal.  Therefore, using the standard equation of a horizontal ellipse, the equation of the ellipse is     Now, as the center ( h,k ) = , c =3 and V′V is horizontal, the foci are at ( h ± c , k ) = .  That is, the foci are at F ′ (-1, 4) and F(5, 4).  Moreover, the endpoints of major axis are at and   The graph of the ellipse is sketched in Figure 4.22.     Figure 4.22 : Example ellipse      Find the center, foci and vertices of and sketch its graph    Group the x-terms of the equation and complete the square:      (divide both sides by 4)     This is equation of a vertical ellipse (major axis parallel to the y-axis), center C=( h,k ) = ,     Thus, foci : F′ and F ,  Vertices: V = , V′= ;  Endpoints of minor axis: B= , B′= ;  The graph of the ellipse is sketched in Figure 4.23.     Figure 4.23 :       Consider the equation: ,  when A and C have the same sign. So, without lose of generality, let A >0 and C >0.  By completing the squares you can show that this equation is equivalent to     From this you can conclude that the given equation represents:-     an ellipse with center if .    If ,the equation is satisfied by the point only. In this case, the locus of the equation is called a point-ellipse (degenerate ellipse).    If , then the equation has no locus.       Exercise   For questions 1 to 13, find an equation of the ellipse with the given properties and sketch its graph.     Foci at and a vertex at       A focus at and vertices at       Foci at and a vertex at       Foci at and a vertex at       Center at , one focus at and one vertex at       Foci at and the length of the major axis is .      Foci at and the length of the minor axis is .      The distance between its foci is and the endpoints of its minor axis are and .      Vertices at and the ellipse passes through .      Center at , a vertex at , and one of the endpoints of the minor axis is .      The ellipse passes through and with center at origin.      The endpoints of the major axis are and , and the ellipse passes through the origin      The endpoints of the minor axis are and , and the ellipse passes through the origin  For questions 14 to 22 find the center, foci and vertices of the ellipse having the given equation and sketch its graph.                                                                     Consider the equation . Find all values of F such that the graph of the equation  (a) is an ellipse.  (b) is a point.  (c) consists of no points at all.       Add review   Add review   Add review   "
 },
 {
   "id": "def-ellipse",
@@ -5308,7 +5533,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.4.5",
   "title": "",
-  "body": "  The endpoints of the major axis of an ellipse are at and and its eccentricity is . Find the equation of the ellipse and its foci.    The given vertices are at and implies that ; and the center C( h,k ) is the midpoint of . Moreover, eccentricity . Hence, . Note that the major axis V'V is horizontal. Therefore, using the standard equation of a horizontal ellipse, the equation of the ellipse is     Now, as the center ( h,k ) = , c =3 and V′V is horizontal, the foci are at ( h ± c , k ) = .  That is, the foci are at F ′ (-1, 4) and F(5, 4).  Moreover, the endpoints of major axis are at and   The graph of the ellipse is sketched in Figure 4.22.     Figure 4.22 : Example ellipse   "
+  "body": "  The endpoints of the major axis of an ellipse are at and and its eccentricity is . Find the equation of the ellipse and its foci.    The given vertices are at and implies that ;  and the center C( h,k ) is the midpoint of .  Moreover, eccentricity .  Hence, . Note that the major axis V'V is horizontal.  Therefore, using the standard equation of a horizontal ellipse, the equation of the ellipse is     Now, as the center ( h,k ) = , c =3 and V′V is horizontal, the foci are at ( h ± c , k ) = .  That is, the foci are at F ′ (-1, 4) and F(5, 4).  Moreover, the endpoints of major axis are at and   The graph of the ellipse is sketched in Figure 4.22.     Figure 4.22 : Example ellipse   "
 },
 {
   "id": "subsubsec-equation-of-shifted-ellipses-14",
@@ -5329,211 +5554,211 @@ var ptx_lunr_docs = [
   "body": "   Consider the equation: ,  when A and C have the same sign. So, without lose of generality, let A >0 and C >0.  By completing the squares you can show that this equation is equivalent to     From this you can conclude that the given equation represents:-     an ellipse with center if .    If ,the equation is satisfied by the point only. In this case, the locus of the equation is called a point-ellipse (degenerate ellipse).    If , then the equation has no locus.     "
 },
 {
-  "id": "fig-ellipse-3",
+  "id": "ellipse-3",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-3",
+  "url": "sec-ellipses.html#ellipse-3",
   "type": "Exercise",
   "number": "4.4.2.2.1",
   "title": "",
   "body": "  Foci at and a vertex at    "
 },
 {
-  "id": "fig-ellipse-4",
+  "id": "ellipse-4",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-4",
+  "url": "sec-ellipses.html#ellipse-4",
   "type": "Exercise",
   "number": "4.4.2.2.2",
   "title": "",
   "body": "  A focus at and vertices at    "
 },
 {
-  "id": "fig-ellipse-5",
+  "id": "ellipse-5",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-5",
+  "url": "sec-ellipses.html#ellipse-5",
   "type": "Exercise",
   "number": "4.4.2.2.3",
   "title": "",
   "body": "  Foci at and a vertex at    "
 },
 {
-  "id": "fig-ellipse-6",
+  "id": "ellipse-6",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-6",
+  "url": "sec-ellipses.html#ellipse-6",
   "type": "Exercise",
   "number": "4.4.2.2.4",
   "title": "",
   "body": "  Foci at and a vertex at    "
 },
 {
-  "id": "fig-ellipse-7",
+  "id": "ellipse-7",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-7",
+  "url": "sec-ellipses.html#ellipse-7",
   "type": "Exercise",
   "number": "4.4.2.2.5",
   "title": "",
   "body": "  Center at , one focus at and one vertex at    "
 },
 {
-  "id": "fig-ellipse-8",
+  "id": "ellipse-8",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-8",
+  "url": "sec-ellipses.html#ellipse-8",
   "type": "Exercise",
   "number": "4.4.2.2.6",
   "title": "",
   "body": "  Foci at and the length of the major axis is .   "
 },
 {
-  "id": "fig-ellipse-9",
+  "id": "ellipse-9",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-9",
+  "url": "sec-ellipses.html#ellipse-9",
   "type": "Exercise",
   "number": "4.4.2.2.7",
   "title": "",
   "body": "  Foci at and the length of the minor axis is .   "
 },
 {
-  "id": "fig-ellipse-10",
+  "id": "ellipse-10",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-10",
+  "url": "sec-ellipses.html#ellipse-10",
   "type": "Exercise",
   "number": "4.4.2.2.8",
   "title": "",
   "body": "  The distance between its foci is and the endpoints of its minor axis are and .   "
 },
 {
-  "id": "fig-ellipse-11",
+  "id": "ellipse-11",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-11",
+  "url": "sec-ellipses.html#ellipse-11",
   "type": "Exercise",
   "number": "4.4.2.2.9",
   "title": "",
   "body": "  Vertices at and the ellipse passes through .   "
 },
 {
-  "id": "fig-ellipse-12",
+  "id": "ellipse-12",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-12",
+  "url": "sec-ellipses.html#ellipse-12",
   "type": "Exercise",
   "number": "4.4.2.2.10",
   "title": "",
   "body": "  Center at , a vertex at , and one of the endpoints of the minor axis is .   "
 },
 {
-  "id": "fig-ellipse-13",
+  "id": "ellipse-13",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-13",
+  "url": "sec-ellipses.html#ellipse-13",
   "type": "Exercise",
   "number": "4.4.2.2.11",
   "title": "",
   "body": "  The ellipse passes through and with center at origin.   "
 },
 {
-  "id": "fig-ellipse-14",
+  "id": "ellipse-14",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-14",
+  "url": "sec-ellipses.html#ellipse-14",
   "type": "Exercise",
   "number": "4.4.2.2.12",
   "title": "",
   "body": "  The endpoints of the major axis are and , and the ellipse passes through the origin   "
 },
 {
-  "id": "fig-ellipse-15",
+  "id": "ellipse-15",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-15",
+  "url": "sec-ellipses.html#ellipse-15",
   "type": "Exercise",
   "number": "4.4.2.2.13",
   "title": "",
   "body": "  The endpoints of the minor axis are and , and the ellipse passes through the origin  For questions 14 to 22 find the center, foci and vertices of the ellipse having the given equation and sketch its graph.   "
 },
 {
-  "id": "fig-ellipse-16",
+  "id": "ellipse-16",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-16",
+  "url": "sec-ellipses.html#ellipse-16",
   "type": "Exercise",
   "number": "4.4.2.2.14",
   "title": "",
   "body": "      "
 },
 {
-  "id": "fig-ellipse-17",
+  "id": "ellipse-17",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-17",
+  "url": "sec-ellipses.html#ellipse-17",
   "type": "Exercise",
   "number": "4.4.2.2.15",
   "title": "",
   "body": "      "
 },
 {
-  "id": "fig-ellipse-18",
+  "id": "ellipse-18",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-18",
+  "url": "sec-ellipses.html#ellipse-18",
   "type": "Exercise",
   "number": "4.4.2.2.16",
   "title": "",
   "body": "      "
 },
 {
-  "id": "fig-ellipse-19",
+  "id": "ellipse-19",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-19",
+  "url": "sec-ellipses.html#ellipse-19",
   "type": "Exercise",
   "number": "4.4.2.2.17",
   "title": "",
   "body": "      "
 },
 {
-  "id": "fig-ellipse-20",
+  "id": "ellipse-20",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-20",
+  "url": "sec-ellipses.html#ellipse-20",
   "type": "Exercise",
   "number": "4.4.2.2.18",
   "title": "",
   "body": "      "
 },
 {
-  "id": "fig-ellipse-21",
+  "id": "ellipse-21",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-21",
+  "url": "sec-ellipses.html#ellipse-21",
   "type": "Exercise",
   "number": "4.4.2.2.19",
   "title": "",
   "body": "      "
 },
 {
-  "id": "fig-ellipse-22",
+  "id": "ellipse-22",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-22",
+  "url": "sec-ellipses.html#ellipse-22",
   "type": "Exercise",
   "number": "4.4.2.2.20",
   "title": "",
   "body": "      "
 },
 {
-  "id": "fig-ellipse-23",
+  "id": "ellipse-23",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-23",
+  "url": "sec-ellipses.html#ellipse-23",
   "type": "Exercise",
   "number": "4.4.2.2.21",
   "title": "",
   "body": "      "
 },
 {
-  "id": "fig-ellipse-24",
+  "id": "ellipse-24",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-24",
+  "url": "sec-ellipses.html#ellipse-24",
   "type": "Exercise",
   "number": "4.4.2.2.22",
   "title": "",
   "body": "      "
 },
 {
-  "id": "fig-ellipse-25",
+  "id": "ellipse-25",
   "level": "2",
-  "url": "sec-ellipses.html#fig-ellipse-25",
+  "url": "sec-ellipses.html#ellipse-25",
   "type": "Exercise",
   "number": "4.4.2.2.23",
   "title": "",
-  "body": "  Consider the equation . Find all values of F such that the graph of the equation  (a) is an ellipse. (b) is a point. (c) consists of no points at all.   "
+  "body": "  Consider the equation . Find all values of F such that the graph of the equation  (a) is an ellipse.  (b) is a point.  (c) consists of no points at all.   "
 },
 {
   "id": "subsec-equation-of-an-ellipse-5",
@@ -5929,7 +6154,7 @@ var ptx_lunr_docs = [
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
-  "body": " This book was authored in PreTeXt . By the following contibutiong team;   Rodgers Maragia    Daniel Murunga    Henry Onyango    Isdora Akinyi    Michael Onyimbo    Joseph Baya    Armstrong Opondo    Eric Morara    Sheila Cherotich    Hariet Moraa    Monica Auma     "
+  "body": " This book was authored in PreTeXt . By the following contibutiong team;   Rodgers Maragia    Daniel Murunga    Henry Onyango    Isdora Akinyi    Michael Onyimbo    Joseph Baya    Armstrong Opondo    Eric Morara    Sheila Cherotich    Hariet Moraa    Monica Auma    Georg Osang     "
 }
 ]
 
