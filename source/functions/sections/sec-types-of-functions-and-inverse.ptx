@@ -389,7 +389,7 @@
                             </li>
                             <li>
                                 <p>
-                                    <m>f:\Re\{ 7 } \rightarrow \Re</m> defined by <m>f(x) = \frac{2x + 1}{x - 7},\ x \in \Re\{ 7 }</m>
+                                    <m>f:\Re\{ 7 \} \rightarrow \Re</m> defined by <m>f(x) = \frac{2x + 1}{x - 7},\ x \in \Re\{ 7 \}</m>
                                 </p>
                             </li>
                         </ol>

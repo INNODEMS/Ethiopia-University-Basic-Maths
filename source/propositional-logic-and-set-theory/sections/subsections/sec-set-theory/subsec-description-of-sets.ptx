@@ -241,14 +241,14 @@
     <definition xml:id="def-description-of-sets-3">
         <statement>
             <p>
-                Set <m>B</m> is said to be a <term>subset</term> of set <m>A</m> (or contained in <m>A</m>), denoted by <m>B \subseteq A,</m> 
+                Set <m>B</m> is said to be a <term>subset</term> of set <m>A</m> (or is contained in <m>A</m>), denoted by <m>B \subseteq A,</m> 
                 every element of <m>B</m> is an element of <m>A,</m> i.e.,
                 <me>
                     (\forall x) (x\in B\Rightarrow x\in A).
                 </me>    
             </p>
             <p>
-                It follows from the definition that set <m>B</m> is not a subset of <m>A</m> if at least one element of <m>B</m> is not an 
+                It follows from the definition that set <m>B</m> is not a subset of set <m>A</m> if at least one element of <m>B</m> is not an 
                 element of <m>A.</m> i.e., <m>B\notin A\Leftrightarrow (\exists x)(x\in B\Rightarrow x\notin A).</m> In such cases we write 
                 <m>B\nsubseteq A</m> or <m>A\nsupseteq B.</m>
             </p>
@@ -336,7 +336,7 @@
     <definition xml:id="def-description-of-sets-5">
         <statement>
             <p>
-                he set <m>A</m> is said to be a <term>proper subset</term>  of <m>B</m> if every element <m>A</m> is also an element in <m>B,</m> 
+                The set <m>A</m> is said to be a <term>proper subset</term>  of <m>B</m> if every element <m>A</m> is also an element in <m>B,</m> 
                 but <m>B</m> has at least one element that is not in <m>A.</m> In this case, we write <m>A\subset B.</m> We also say <m>B</m> is a 
                 proper set of <m>A,</m> and write <m>B\supset A.</m> It is clear that
                 <me>

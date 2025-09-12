@@ -11,7 +11,7 @@
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
-    Include chapters
+    <!-- Include chapters -->
     <xi:include href="propositional-logic-and-set-theory/ch-propositional-logic-and-set-theory.ptx" />
     <xi:include href="the-real-and-complex-number-systems/ch-the-real-and-complex-number-systems.ptx" />
     <xi:include href="functions/ch-functions.ptx" />

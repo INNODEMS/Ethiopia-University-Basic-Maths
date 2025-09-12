@@ -18,14 +18,14 @@
         </statement>
     </definition>
     <p>
-        As easily seen the union operator <q><m>\cup</m></q> in the theory of set id the counterpart of the logical operator 
+        As easily seen the union operator <q><m>\cup</m></q> in the theory of set is the counterpart of the logical operator 
         <q><m>\vee</m></q>
     </p>
 
     <definition xml:id="definition-set-theory-2">
         <statement>
             <p>
-                The union of two sets <m>A</m> and <m>B</m>, denoted by <m>A\cap  B</m>, is the set of all elements that are 
+                The intersection of two sets <m>A</m> and <m>B</m>, denoted by <m>A\cap  B</m>, is the set of all elements that are 
                 in <m>A \text{ and } B.</m> That is,
                 <me>
                     A\cap   B=\left\{ x:\left ( x\in A \right ) \wedge  \left ( x\in B \right )\right\}
@@ -311,9 +311,13 @@
             <cell><m>\left( \text{ definition of } \cap \right)</m></cell>
         </row>
     </tabular>
+
+    <p>
+        Therefore, we have <m> A\cup \left ( B\cap C \right )=\left ( A\cup B \right )\cap \left ( A\cup C \right ).</m>
+    </p>
     
     <p>
-        The readers are invited to prove the rest part of the theorem <xref ref="theorem-set-theory-1"/>
+        The readers are invited to prove the rest part of the <xref ref="theorem-set-theory-1"/>
     </p>
     <p>
         
@@ -443,7 +447,7 @@
                         </li>
                         <li>
                             <p>
-                                <m>\left ( A\cup B \right )\cup C=A\cup \left ( B\cup C \right )?</m>
+                                Is <m>\left ( A\cup B \right )\cup C=A\cup \left ( B\cup C \right )?</m>
                             </p>
                         </li>
                     </ol>
@@ -501,6 +505,7 @@
         <exercise>
             <statement>
                 <p>
+                    Use Venn diagram to illustrate the following statements:
                     <ol marker="a.">
                         <li>
                             <p>

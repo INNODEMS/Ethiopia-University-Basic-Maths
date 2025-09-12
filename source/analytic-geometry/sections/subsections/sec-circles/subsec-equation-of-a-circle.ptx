@@ -3,35 +3,52 @@
     <p>
         We now construct an equation that the coordinates (<em>x</em>,<em>y</em>) of the points on the circle should satisfy. 
         So, let P(<em>x,y</em>) be any point on a circle of radius <em>r</em> and center C(<em>h,k</em>) (see, Figure 4.7).
-        Then, the definition of a circle requires that
+        
     </p>
     <p>
-        |CP|= <em>r</em>
+       Then, the definition of a circle requires that |CP|= <em>r</em>
     </p>
     <p>
-        ⇒ <m>\sqrt{(x-h)^2 + (y-k)^2} = r</m>
+         <m>\quad\quad ⇒ \sqrt{(x-h)^2 + (y-k)^2} = r</m>
     </p>
     <p>or</p>
     <!-- <table> -->
     <!-- <title>Standard equation of a circle</title> -->
-    <tabular>
+    <!-- <tabular>
     <row>
     <cell><m>(x-h)^2 + (y-k)^2 = r^2</m></cell>
     <cell>(Standard equation of a circle with
          center (<em>h</em>,k) and radius <em>r).</em>
     </cell>
     </row>
-    </tabular>
+    </tabular> -->
+    <sidebyside>
+        <p>
+            <m> \quad\quad\quad (x-h)^2 + (y-k)^2 = r^2</m>
+        </p>
+        <p>
+            (Standard equation of a circle with
+         center (<em>h</em>,k) and radius <em>r).</em>
+        </p>
+    </sidebyside>
     <!-- </table> -->
     <p>In particular, if the center is at origin, i.e., (<em>h,k</em>) = <m>(0,0)</m>, the equation is</p>
     <!-- <table>
     <title>Standard equation of a circle at origin</title> -->
-    <tabular>
+    <!-- <tabular>
     <row>
     <cell><m>x^2 + y^2 = r^2</m></cell>
     <cell>(Standard Equation of a circle of radius <em>r</em> centered at origin)</cell>
     </row>
-    </tabular>
+    </tabular> -->
+    <sidebyside>
+        <p>
+            <m> \quad\quad\quad x^2 + y^2 = r^2</m>
+        </p>
+        <p>
+            (Standard Equation of a circle of radius <em>r</em> centered at origin)
+        </p>
+    </sidebyside>
     <!-- </table> -->
         <sidebyside>
             <image source="/center-a.png" width="80%"/>
@@ -204,12 +221,12 @@
         <p>
             
         </p>
-         <p>
-            Consider an equation of the form
-         </p>
         <p>
-            <m>x^2 + y^2 + Dx + Ey + F = 0</m>
+            Consider an equation of the form
         </p>
+        <equation>
+            <me>x^2 + y^2 + Dx + Ey + F = 0</me>
+        </equation>
         <p>
             By completing the square you can show the following:
         </p>
@@ -243,7 +260,7 @@
                     Determine whether each of the following points is inside, outside or on the circle with equation <m>x^2+y^2=5</m>.
                 </p>
                 <p>
-                    <ol marker="(a)">
+                    <ol marker="(a)" cols="2">
                         <li>
                             <p>
                                 <m>(-1, 2)</m>

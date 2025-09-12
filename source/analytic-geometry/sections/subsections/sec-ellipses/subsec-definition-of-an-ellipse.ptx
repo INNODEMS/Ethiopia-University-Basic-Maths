@@ -45,10 +45,10 @@
                 That is, |CV| = <em>a</em>.
             </p>
             <p>
-                ⇒ |VF<alert>′</alert>| + |VF| = |V<alert>′</alert>V| = 2<em>a</em>.
+                <m>\quad\quad</m>⇒ |VF<alert>′</alert>| + |VF| = |V<alert>′</alert>V| = 2<em>a</em>.
             </p>
             <p>
-                ⇒ |PF<alert>′</alert>| + |PF| = 2<em>a</em>, for any point P on the ellipse.
+                <m>\quad\quad</m>⇒ |PF<alert>′</alert>| + |PF| = 2<em>a</em>, for any point P on the ellipse.
             </p>
         </li>
         <li>
@@ -65,10 +65,13 @@
         <li>
             <p>
                 Now, since |BF<alert>′</alert>|+ |BF| = 2<em>a</em> and BC is a perpendicular bisector of F<alert>′</alert>F, we obtain that 
-                |BF<alert>′</alert>| = |BF|= <em>a</em> . Hence, using the Pythagoras Theorem on ∆BCF, we obtain
+                |BF<alert>′</alert>| = |BF|= <em>a</em> . 
             </p>
             <p>
-                <m>b^2+c^2 = a^2</m> or <m>b^2 = a^2 - c^2</m>.
+                Hence, using the Pythagoras Theorem on ∆BCF, we obtain
+            </p>
+            <p>
+                <me>b^2+c^2 = a^2</me> <m>\quad\quad\quad</m>or <me>b^2 = a^2 - c^2</me>.
             </p>
             <p>
                 (<alert>Note:</alert> <em>a</em> ≥ <em>b</em>. If <em>a=b</em>, the ellipse would be a circle with radius <em>r =a =b</em> ).
@@ -79,7 +82,7 @@
                 The ratio of the distance between the two foci to the length of the major axis is called the <alert>eccentricity</alert> of the ellipse, and denoted by e. That is,
             </p>
             <p>
-                <m>e= \frac{|F′F|}{|V′V|} = \frac{c}{a}</m>. (Note that 0 &lt; e &lt; 1 because 0 &lt; <em>c</em> &lt; <em>a</em> )
+                <m>e= \frac{|F′F|}{|V′V|} = \frac{c}{a}</m>. <m>\quad\quad</m>(Note that 0 &lt; e &lt; 1 because 0 &lt; <em>c</em> &lt; <em>a</em> )
             </p>
         </li>
     </ul>
@@ -164,7 +167,7 @@
                             Determine whether each of the following points is on the ellipse or not.
                         </p>
                         <p>
-                            <ol marker="(i)">
+                            <ol marker="(i)" cols="2">
                                 <li>
                                     <p>
                                          <m>\left(1, \frac{3}{2}\right)</m>
@@ -222,7 +225,7 @@
                             Determine whether each of the following points is on the ellipse or not.
                         </p>
                         <p>
-                            <ol marker="(i)">
+                            <ol marker="(i)" cols="2">
                                 <li>
                                     <p>
                                         <m>\left(\frac{1}{2}, \sqrt{3}\right)</m>

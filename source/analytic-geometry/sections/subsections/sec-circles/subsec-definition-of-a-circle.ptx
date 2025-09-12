@@ -10,7 +10,7 @@
     </statement>
 </definition>
 <p>
-    Definition 4.2 is illustrated by Figure 4.6 in which the center of the circle is denoted by ''C'' and its radius is denoted by <em>r</em>.
+    <xref ref="def-definition-of-a-circle"/> is illustrated by Figure 4.6 in which the center of the circle is denoted by ''C'' and its radius is denoted by <em>r</em>.
 </p>
 <image source="/Circle with center C, radius r.png">
     <shortdescription></shortdescription>
@@ -92,7 +92,7 @@
                 Consider a circle whose center is the origin and radius is. Determine whether or not the circle contains the following point.
             </p>
             <p>
-                <ol marker="(a)">
+                <ol marker="(a)" cols="4">
                     <li>
                         <p>
                             <m>(1, 2)   </m>
@@ -143,7 +143,7 @@
                 Consider a circle of radius 5 whose center is at <m>C(-3,4)</m>. Determine whether each of the following points is on the circle, inside the circle or outside the circle:
             </p>
             <p>
-                <ol marker="(a)">
+                <ol marker="(a)" cols="4">
                     <li>
                         <p>
                             <m>(0, 9)</m>

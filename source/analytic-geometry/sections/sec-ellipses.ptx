@@ -1,39 +1,43 @@
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-ellipses" class="anchor">
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-ellipses" >
 <title>Ellipses</title>
 <introduction>
-    <p>
-        By the end of this section, you should
-    </p>
-    <p>
-        <ul>
-            <li>
-                <p>
-                    know the geometric definition of an ellipse.
-                </p>
-            </li>
-            <li>
-                <p>
-                    know the meaning of the center, vertices, foci, major axis and minor axis of an ellipse.
-                </p>
-            </li>
-            <li>
-                <p>
-                    be able to find equation of an ellipse whose major axis is horizontal or vertical.
-                </p>
-            </li>
-            <li>
-                <p>
-                    be able to identify equations representing ellipses.
-                </p>
-            </li>
-            <li>
-                <p>
-                    be able to find the center, foci and vertices of an ellipse and sketch the ellipse.
-                </p>
-            </li>
-        </ul>
-    </p>
+    <assemblage xml:id="assemblage-ellipses-introduction">
+        <title></title>
+        <p>
+           By the end of this section, you should
+        </p>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        know the geometric definition of an ellipse.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        know the meaning of the center, vertices, foci, major axis and minor axis of an ellipse.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        be able to find equation of an ellipse whose major axis is horizontal or vertical.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        be able to identify equations representing ellipses.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        be able to find the center, foci and vertices of an ellipse and sketch the ellipse.
+                    </p>
+                </li>
+            </ul>
+        </p>
 
+    </assemblage>
+    
 </introduction>
 
 <xi:include href="subsections/sec-ellipses/subsec-definition-of-an-ellipse.ptx" />
