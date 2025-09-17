@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Domain and Range of a Function</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>We define the <b>real-valued</b> function \( f(x)={@fx@} \)</p>
+<p>Determine the domain and the range of \(f\), as subsets of the real numbers represented by inequalities.
+<br>Also write these sets as intervals of the real numbers.</p>
+<p><em>Note: To enter intervals of you real line, you should write the relevant text in the table below.</em></p>
+
+<table width="250" cellspacing="1" cellpadding="0" border="1" style="margin-left: 30px">
+  <tr>
+    <th style="text-align: center;">Intervals</th>
+    <th style="text-align: center;">Input Syntax</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">\( [a,b] \)</td>
+    <td style="text-align: center;"><code>cc(a,b)</code></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">\( (a,b) \)</td>
+    <td style="text-align: center;"><code>oo(a,b)</code></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">\( [a,b) \)</td>
+    <td style="text-align: center;"><code>co(a,b)</code></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">\( (a,b] \)</td>
+    <td style="text-align: center;"><code>oc(a,b)</code></td>
+  </tr>
+ <tr>
+    <td style="text-align: center;">\( (a, \infty) \)</td>
+    <td style="text-align: center;"><code>oo(a,inf)</code></td>
+  </tr>
+ <tr>
+    <td style="text-align: center;">\( (-\infty, b] \)</td>
+    <td style="text-align: center;"><code>oc(-inf,b)</code></td>
+  </tr>
+ <tr>
+    <td style="text-align: center;">\( (-\infty, \infty) \)</td>
+    <td style="text-align: center;"><code>oo(-inf,inf)</code></td>
+  </tr>
+</table>
+
+<br>
+
+<p>(a) \(Dom(f) = \{ x \in \mathbb{R} : \) [[input:ans1]] [[validation:ans1]] \(\leq x \leq\) [[input:ans2]] [[validation:ans2]] \(\}\) = [[input:ans5]] [[validation:ans5]] </p>
+<p>[[feedback:prt1]]</p>
+
+<p>(b) \(Range(f) = \{ y \in \mathbb{R} : \) [[input:ans3]] [[validation:ans3]] \(\leq x \leq\) [[input:ans4]] [[validation:ans4]] \(\}\) = [[input:ans6]] [[validation:ans6]]</p>
+<p>[[feedback:prt2]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked Solution</h3>
+
+<p>(a) Since we require \(f\) to be real-valued, to determine the domain of \(f(x)\) we need to find the values of \(x\) for which \({@bb^2 - x^2@} \geq 0\).</p>
+
+<p>To do this, we first find the roots of the quadratic. In this case,</p>
+<p style="margin-left: 30px"> \({@bb^2-x^2@} = {@(bb-x)*(bb+x)@}\)</p> 
+<p>So, the roots are \(x = {@-bb@}\) and \(x = {@bb@}\).</p>
+
+<p>Now, since the coefficient of the \(x^2\) term is negative, the values between the roots will be positive. 
+<br>In particular, we can verify that for \(x = 0\),</p>
+<p style="margin-left: 30px">\({@bb^2-x^2@} = {@bb^2@} > 0\)</p>
+
+<p>Hence, the domain of \(f\) is the set \( \{ x \in \mathbb{R} : {@-bb@} \leq x \leq {@bb@} \}={@ta5@} \)</p>
+
+<br>
+
+<p>(b) To determine the range of \(f\), we need to find the minimal and maximal values of the function. Since \(f\) is continuous it must take every value between its minimum and maximum, so these values will give us the range.</p>
+
+<p>To determine the minimum we have, by definition, that the square root function is non-negative. So,</p>
+<p style="margin-left: 30px">\(f(x) \geq 0\).</p>
+<p>To see that \(f\) does actually attain the value \(0\), we note that \(f({@bb@}) = 0\).</p>
+
+<br>
+
+<p>To determine the maximum, we note that the square root function is increasing, so \(f\) is maximised at the maximum of \({@bb^2@} - x^2\).</p>
+<p>Since \(x^2 \geq 0\), we have,</p>
+<p style="margin-left: 30px">\(\begin{align*} 
+    & {@bb^2@} - x^2 \leq {@bb^2@} \\
+    &\Rightarrow f(x) = {@fx@} \leq {@bb@}
+\end{align*}\)</p>
+<p>To see that \(f\) does actually attain the value \({@bb@}\), we note that \(f(0) = {@bb@}\).</p>
+
+<br>
+
+<p>Hence, we have noted that \(0 \leq f(x) \leq {@bb@}\) and \(f\) attains the values of \(0\) and {@bb@}.</p>
+<p>Therefore, the range of \(f\) is the set \( \{ y \in \mathbb{R} : 0 \leq y \leq {@bb@} \}={@ta6@} \)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>bb:rand(6)+1;
+
+fx:sqrt(bb^2-x^2);
+
+ta1: -bb;
+ta2: bb;
+ta3: 0;
+ta4: bb;
+ta5: cc(ta1,ta2);
+ta6: cc(ta3,ta4);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>\(f(x) = {@fx@}\)</p>
+<p>\( Dom(f)=\{ x \in \mathbb{R} : {@-bb@} \leq x \leq {@bb@} \}={@ta5@} \)</p>
+<p> \( Range(f)=\{ y \in \mathbb{R} : 0 \leq y \leq {@bb@} \}={@ta6@} \)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>ta4</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans5</name>
+      <type>algebraic</type>
+      <tans>ta5</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans6</name>
+      <type>algebraic</type>
+      <tans>ta6</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text><![CDATA[/* Node 1 - check correct answer */
+node1_test: if ans1=ta1 and ans2=ta2 then 1 else 0;
+
+/* Node 2 - check given inequality makes sense */
+node2_test: if ans1<=ans2 then 1 else 0;
+
+/* Node 3 - check whether domain given contains values outside the domain of f */
+node3_test: if ans1<ta1 or ta2<ans2 then 1 else 0;
+
+/* Node 4 - check whether domain given is missing values in the domain of f */
+node4_test: if ta1<ans1 or ans2<ta2 then 1 else 0;]]></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node1_test</sans>
+        <tans>1</tans>
+        <testoptions>x</testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1/2</truescore>
+        <truepenalty/>
+        <truenextnode>4</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node2_test</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>2</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>The inequality you have given does not contain any values for \(x\) since the lower bound is greater than the upper bound.
+<br>Your answer is equivalent to the claim \(Dom(f) = \emptyset\), which is not true since there are real \(x\) for which we can evaluate \(f(x)\).</p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node3_test</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>3</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>The domain you have given contains values of \(x\) for which we cannot evaluate \(f\).
+<br>For example, \({@if ans1<ta1 then ans1 else ans2@} \in \{ x \in \mathbb{R} : {@ans1@} \leq x \leq {@ans2@}\}\). However,</p>
+
+<p style="margin-left: 30px">\(\begin{align*}
+f({@if ans1<ta1 then ans1 else ans2@}) &= \sqrt{{@bb^2@} - {@if ans1<ta1 then ans1^2 else ans2^2@}} \\
+&= \sqrt{{@if ans1<ta1 then bb^2-ans1^2 else bb^2-ans2^2@}}
+\end{align*}\)</p>
+
+<p>Therefore \(f({@if ans1<ta1 then ans1 else ans2@}) \notin \mathbb{R}\), and since \(f\) is real-valued this means \({@if ans1<ta1 then ans1 else ans2@} \notin Dom(f)\).</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node4_test</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[{@if node3_test=1 then "<br>" else ""@}
+
+<p>The domain you have given is missing values of \(x\) for which we can evaluate \(f\).
+<br>For example, \({@if ta1<ans1 then ta1 else ta2@} \notin \{ x \in \mathbb{R} : {@ans1@} \leq x \leq {@ans2@}\}\). However,</p>
+
+<p style="margin-left: 30px">\(\begin{align*}
+f({@if ta1<ans1 then ta1 else ta2@}) &= \sqrt{{@bb^2@} - {@if ta1<ans1 then ta1^2 else ta2^2@}} \\
+&= \sqrt{{@if ta1<ans1 then bb^2-ta1^2 else bb^2-ta2^2@}} \\
+&= {@if ta1<ans1 then sqrt(bb^2-ta1^2) else (bb^2-ta2^2)@}
+\end{align*}\)</p>
+
+<p>Therefore \({@if ta1<ans1 then ta1 else ta2@} \in Dom(f)\).</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>4</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans5</sans>
+        <tans>ta5</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>1/2</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-5-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-5-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>The inequality that you have given, \( {@ans1@} \leq x \leq {@ans2@} \), is correct. 
+<br>However, you have not expressed this inequality with the correct real interval.</p>
+<p>Remember that non-strict inequalities are represented using <b>square brackets</b> around the upper and lower bounds of the inequality. So,</p>
+<p style="margin-left: 30px">\( \{ x \in \mathbb{R} : {@-bb@} \leq x \leq {@bb@} \} = {@ta5@}\)</p>]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text><![CDATA[/* Node 1 - check correct answer */
+node1_test: if ans3=ta3 and ans4=ta4 then 1 else 0;
+
+/* Node 2 - check given inequality makes sense */
+node2_test: if ans3<=ans4 then 1 else 0;
+
+/* Node 3 - check whether domain given contains values outside the domain of f */
+node3_test: if ans3<ta3 or ta4<ans4 then 1 else 0;
+counter_ex3: if ans3<ta3 then ans3 else ans4;
+
+/* Node 4 - check whether domain given is missing values in the domain of f */
+node4_test: if ta3<ans3 or ans4<ta4 then 1 else 0;]]></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node1_test</sans>
+        <tans>1</tans>
+        <testoptions>x</testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1/2</truescore>
+        <truepenalty/>
+        <truenextnode>4</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node2_test</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>2</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>The inequality you have given does not contain any values for \(y\) since the lower bound is greater than the upper bound.
+<br>Your answer is equivalent to the claim \(Range(f) = \emptyset\), which is not true since \(f(x)\) evaluates to a real value for some values of \(x\).</p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node3_test</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>3</truenextnode>
+        <trueanswernote>prt2-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>The range you have given contains values of \(y\) which are not attained by \(f\).
+<br>For example, \({@if ans3<ta3 then ans3 else ans4@} \in \{ y \in \mathbb{R} : {@ans3@} \leq y \leq {@ans4@}\}\). However,</p>
+
+{@if counter_ex3<0 then sconcat(
+    "<p style=\"margin-left: 30px\">\\(\\begin{align*} &f(x) = ", 
+    counter_ex3, 
+    " \\\\ &\\Rightarrow \\sqrt{", 
+    bb^2 - x^2, 
+    "} = ", 
+    counter_ex3, 
+    " < 0 \\end{align*}\\)</p>",
+    "<p>This is impossible since the square-root function is positive by definition.",
+    "<br>Therefore, \\(", 
+    counter_ex3, 
+    " \\notin Range(f)\\).</p>"
+)
+else sconcat(
+    "<p style=\"margin-left: 30px\">\\(\\begin{align*} &f(x) = ", 
+    counter_ex3, 
+    " \\\\ &\\Rightarrow \\sqrt{", 
+    bb^2 - x^2, 
+    "} = ", 
+    counter_ex3, 
+    " \\\\ &\\Rightarrow ", 
+    bb^2 - x^2, 
+    " = ", 
+    counter_ex3^2, 
+    " \\\\ &\\Rightarrow ", 
+    x^2, 
+    " = ", 
+    bb^2 - counter_ex3^2, 
+    " < 0 \\end{align*}\\)</p>",
+    "<p>This is impossible since \\(x \\in \\mathbb{R}\\) so \\(x^2 \\geq 0\\).",
+    "<br>Therefore, \\(", counter_ex3, " \\notin Range(f)\\).</p>"
+)@}]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prt2-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node4_test</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[{@if node3_test=1 then "<br>" else ""@}
+
+<p>The domain you have given is missing values of \(f(x)\) which can be attained by real values of \(x\).
+<br>For example, \({@if ta3<ans3 then ta3 else ta4@} \notin \{ x \in \mathbb{R} : {@ans3@} \leq x \leq {@ans4@}\}\). However,</p>
+
+<p style="margin-left: 30px">\(\begin{align*}
+&f(x) = {@if ta3<ans3 then ta3 else ta4@} \\
+&\Leftarrow {@fx@} = {@if ta3<ans3 then ta3 else ta4@} \\
+&\Leftarrow {@bb^2 - x^2@} = {@if ta3<ans3 then ta3^2 else ta4^2@} \\
+&\Leftarrow x^2 = {@if ta3<ans3 then bb^2-ta3^2 else bb^2-ta4^2@} \\
+&\Leftarrow x = {@if ta3<ans3 then sqrt(bb^2-ta3^2) else (bb^2-ta4^2)@}
+\end{align*}\)</p>
+
+<p>Where we are able to take the square root of both sides in the third equality above, since we know that both sides of the equation are non-negative.
+<br>Therefore, \( f({@if ta3<ans3 then sqrt(bb^2-ta3^2) else (bb^2-ta4^2)@}) = {@if ta3<ans3 then ta3 else ta4@} \Rightarrow {@if ta3<ans3 then ta3 else ta4@} \in Dom(f)\)</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>4</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans6</sans>
+        <tans>ta6</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>1/2</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-5-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-5-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>The inequality that you have given, \( {@ans3@} \leq y \leq {@ans4@} \), is correct. 
+<br>However, you have not expressed this inequality with the correct real interval.</p>
+<p>Remember that non-strict inequalities are represented using <b>square brackets</b> around the upper and lower bounds of the inequality. 
+<br>So,</p>
+<p style="margin-left: 30px">\( \{ x \in \mathbb{R} : 0 \leq x \leq {@bb@} \} = {@ta6@} \)</p>]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1277645289</deployedseed>
+    <deployedseed>1825951122</deployedseed>
+    <deployedseed>745859331</deployedseed>
+    <deployedseed>1424011358</deployedseed>
+    <deployedseed>1649732713</deployedseed>
+    <deployedseed>181094942</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

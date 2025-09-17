@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Equations of Lines Parallel and Perpendicular to a Given Line</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Find the equation of the line that passes through the point \( ({@x_cor@},{@y_cor@}) \) and is</p>
+
+<p>\( (a) \) parallel to the line {@par_line@}</p>
+<p>[[input:ans1]] [[validation:ans1]][[feedback:prt1]]</p>
+<br>
+<p>\( (b) \) perpendicular to the line {@perp_line@}</p>
+<p>[[input:ans2]] [[validation:ans2]][[feedback:prt2]]</p>
+<p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3>Worked solution</h3> 
+<p>\( (a) \) By writing the linear equation \( {@par_line@} \) in slope-intercept form, \( \displaystyle {@eqn1a@} \), </p>
+<p> you can see that the line has a slope: \(m=\displaystyle {@slope1_par@}\). </p>
+<p>The line through the point \( ({@x_cor@},{@y_cor@}) \) that is parallel to the given line also has the same slope: \(\displaystyle {@slope1_par@}\).</p>
+<p> The general equation form is \(y-y_1=m(x-x_1) \)</p>
+<p> Substitute {@y_cor@} for \(y_1 \) and {@x_cor@} for \(x_1 \), we have </p>
+<p>\({@y-y_cor@} = \displaystyle {@slope1_par@}({@x-x_cor@}) \)</p>
+<p>\(y = \displaystyle {@expand(slope1_par*(x-x_cor))+y_cor@} \) </p>
+<p>\( (b)\) By writing the equation {@perp_line@} in slope-intercept form, we can get a slope \( m_1\) of the line </p>
+<p> and thus find  \( m_2\) of the perpendicular line, using the negative reciprocal of  \( m_1\).</p>
+{@perp_line@} \( \implies  \displaystyle {@eqn1b@}\)
+<p>Therefore, \( m_1 = \displaystyle {@slope2_perp@}\) and \( m_2= \displaystyle {@m_2@}\)</p>
+<p>From there, using  \( m_2\), we can compute the equation of a line passing through \( ({@x_cor@},{@y_cor@}) \) </p><p>which is perpendicular to {@perp_line@} as asked in the question.  </p>
+<p>\(y-y_1=m_{2}(x-x_1) \), </p>
+<p>\({@y-y_cor@} = \displaystyle{@m_2@}({@x-x_cor@}) \)</p>
+<p>\( y= \displaystyle {@expand(m_2*(x-x_cor))+y_cor@} \) </p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*Question variables*/
+x_cor: rand_with_step(-5,5,1);
+y_cor: rand_with_step(-5,5,1);
+coef1: rand_with_prohib(-5,5,[0]);
+coef2:rand_with_prohib(-5,5,[0]);
+soln1: rand_with_step(-5,5,1);
+soln2: rand_with_step(-6,8,1);
+par_line:coef1*y+coef2*x=soln1;
+perp_line:coef1*x+coef2*y=soln2;
+
+/*Worked solution*/
+eqn1a: y=(-coef2*x/coef1)+(soln1/coef1);
+slope1_par:-coef2/coef1;
+eqn2a:y-y_cor=slope1_par*(x-x_cor); 
+ta1:y=expand(slope1_par*(x-x_cor))+y_cor;
+
+eqn1b:y=(-coef1*x/coef2)+(soln2/coef2);
+slope2_perp:-coef1/coef2;
+m_2:-1/slope2_perp;
+ta2:y=expand(m_2*(x-x_cor))+y_cor;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>Points: \( ({@x_cor@},{@y_cor@}) \)</p>
+<p>Equation of the parallel line: \({@ta1@}\)</p>
+<p>Equation of the perpendicular line: \({@ta2@}\) </p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node1:checking for correct answer*/
+/*Node2 mistake: using the negative of m1 as it is without finding the reciprocal of the gradient*/
+sans_node2:y=expand(-slope2_perp*(x-x_cor))+y_cor;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>sans_node2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Check that you have computed your \(m_2\) correctly. Note: \(m_1*m_2=-1\) for perpendicular lines.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1635325037</deployedseed>
+    <deployedseed>622685669</deployedseed>
+    <deployedseed>554874345</deployedseed>
+    <deployedseed>1737400675</deployedseed>
+    <deployedseed>1990187631</deployedseed>
+    <deployedseed>522825330</deployedseed>
+    <deployedseed>1982989816</deployedseed>
+    <deployedseed>1908715829</deployedseed>
+    <deployedseed>1279009056</deployedseed>
+    <deployedseed>280054691</deployedseed>
+    <deployedseed>2065948263</deployedseed>
+    <deployedseed>64150934</deployedseed>
+    <deployedseed>1453861715</deployedseed>
+    <deployedseed>1862144972</deployedseed>
+    <deployedseed>1911819210</deployedseed>
+    <deployedseed>118616967</deployedseed>
+    <deployedseed>1280009196</deployedseed>
+    <deployedseed>1836057885</deployedseed>
+    <deployedseed>1267331385</deployedseed>
+    <deployedseed>894749215</deployedseed>
+    <deployedseed>936886710</deployedseed>
+    <deployedseed>1117242469</deployedseed>
+    <deployedseed>1554173161</deployedseed>
+    <deployedseed>778676071</deployedseed>
+    <deployedseed>339561270</deployedseed>
+    <deployedseed>83109392</deployedseed>
+    <deployedseed>174572139</deployedseed>
+    <deployedseed>152942337</deployedseed>
+    <deployedseed>1859265236</deployedseed>
+    <deployedseed>510195769</deployedseed>
+    <deployedseed>1136247570</deployedseed>
+    <deployedseed>1839479853</deployedseed>
+    <deployedseed>325271205</deployedseed>
+    <deployedseed>1407916626</deployedseed>
+    <deployedseed>1352362308</deployedseed>
+    <deployedseed>106027732</deployedseed>
+    <deployedseed>396656259</deployedseed>
+    <deployedseed>1015678977</deployedseed>
+    <deployedseed>82314033</deployedseed>
+    <deployedseed>1317821887</deployedseed>
+    <deployedseed>591525275</deployedseed>
+    <deployedseed>1579505419</deployedseed>
+    <deployedseed>1142624518</deployedseed>
+    <deployedseed>1619887619</deployedseed>
+    <deployedseed>822967251</deployedseed>
+    <deployedseed>1679356664</deployedseed>
+    <deployedseed>2020208946</deployedseed>
+    <deployedseed>1915670445</deployedseed>
+    <deployedseed>1939111698</deployedseed>
+    <deployedseed>2103319883</deployedseed>
+    <deployedseed>235256361</deployedseed>
+    <deployedseed>919745048</deployedseed>
+    <deployedseed>1634388111</deployedseed>
+    <deployedseed>958428867</deployedseed>
+    <deployedseed>1620551776</deployedseed>
+    <deployedseed>1751534758</deployedseed>
+    <deployedseed>503726702</deployedseed>
+    <deployedseed>1841144514</deployedseed>
+    <deployedseed>1750881912</deployedseed>
+    <deployedseed>1654494362</deployedseed>
+    <deployedseed>1668905571</deployedseed>
+    <deployedseed>289766807</deployedseed>
+    <deployedseed>1662223177</deployedseed>
+    <deployedseed>1484621293</deployedseed>
+    <deployedseed>934386012</deployedseed>
+    <deployedseed>505134523</deployedseed>
+    <deployedseed>1141830972</deployedseed>
+    <deployedseed>1214225107</deployedseed>
+    <deployedseed>862292548</deployedseed>
+    <deployedseed>1535552085</deployedseed>
+    <deployedseed>857361652</deployedseed>
+    <deployedseed>1814057138</deployedseed>
+    <deployedseed>741999955</deployedseed>
+    <deployedseed>1262472454</deployedseed>
+    <deployedseed>929219470</deployedseed>
+    <deployedseed>217165567</deployedseed>
+    <deployedseed>993965019</deployedseed>
+    <deployedseed>1703374698</deployedseed>
+    <deployedseed>1425840785</deployedseed>
+    <deployedseed>1643164406</deployedseed>
+    <deployedseed>495011294</deployedseed>
+    <deployedseed>540957409</deployedseed>
+    <deployedseed>958576480</deployedseed>
+    <deployedseed>1504168892</deployedseed>
+    <deployedseed>189386968</deployedseed>
+    <deployedseed>989497796</deployedseed>
+    <deployedseed>1353144810</deployedseed>
+    <deployedseed>2090584632</deployedseed>
+    <deployedseed>12934263</deployedseed>
+    <deployedseed>1667684669</deployedseed>
+    <deployedseed>593426353</deployedseed>
+    <deployedseed>276343439</deployedseed>
+    <deployedseed>198443302</deployedseed>
+    <deployedseed>441187325</deployedseed>
+    <deployedseed>562778982</deployedseed>
+    <deployedseed>804387160</deployedseed>
+    <deployedseed>1688399665</deployedseed>
+    <deployedseed>920463904</deployedseed>
+    <deployedseed>1459370653</deployedseed>
+    <deployedseed>670372829</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>
