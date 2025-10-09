@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz xmlns="http://stack-assessment.org/2025/moodle-question">>
+  <question type="stack">
+    <name>
+      <text>Finding Inverses of a linear Functions</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Find  the inverse of the function below</p>
+<p>\( \displaystyle f(x)={@func@}\)</p>
+<p><b>Note:</b> \(\ln\) can be typed as <code> log</code></p>
+<p>Leave your answer in exact form</p>
+<p>\(f^{-1}(x)=\)[[input:ans1]] [[validation:ans1]][[feedback:prt1]]</p>
+<p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3>Worked Solution</h3>
+<p>\(\begin{align}
+\displaystyle f(x)&={@func@}\\
+y&={@func@}\\
+&{@sol2@}\\
+&{@sol3@}\\
+&{@sol4@}\\
+\end{align}\)</p>
+<p>Swap \(x\) and \(y\) to write the inverse function</p>
+<p>\(f^{-1}(x)= \displaystyle{@ta1@}\)</p>
+<p></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*finding inverses*/
+const_a:rand(8)+2;
+const_b:-(rand(4)+4);
+func:%e^(const_a*x+const_b);
+/*worked solution*/
+sol1:y=func;
+sol2:log(y)=const_a*x+const_b;
+sol3:log(y)-const_b=const_a*x;
+sol4:x=(log(y)-const_b)/const_a;
+ta1:(log(x)-const_b)/const_a;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>\( \displaystyle f(x)={@func@}\)</p>
+<p>\(f^{-1}(x)=\displaystyle {@ta1@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="html">
+      <text><![CDATA[<p id="author">Mary Sayuni</p><p>
+</p><p id="concept">https://docs.google.com/document/d/1SHRuavwMgYyW58e67mna9MuZFOHpXMe7aPVGGcDpRYo/edit</p>
+<p id="reviewer">Nixson Kiplagat</p>
+<p id="reviewer">Santiago Borio</p>
+<p id="description">This question requires the  student to find the inverse of the  given  function. </p>]]></text>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <isbroken>0</isbroken>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>checks for the correct answer</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>418351871</deployedseed>
+    <deployedseed>801770541</deployedseed>
+    <deployedseed>1517882779</deployedseed>
+    <deployedseed>1986015763</deployedseed>
+    <deployedseed>643631541</deployedseed>
+    <deployedseed>1847036485</deployedseed>
+    <deployedseed>1128792134</deployedseed>
+    <deployedseed>1548142766</deployedseed>
+    <deployedseed>1953032235</deployedseed>
+    <deployedseed>592073621</deployedseed>
+    <deployedseed>545276761</deployedseed>
+    <deployedseed>1791464062</deployedseed>
+    <deployedseed>1680619677</deployedseed>
+    <deployedseed>833735968</deployedseed>
+    <deployedseed>276543476</deployedseed>
+    <deployedseed>405238742</deployedseed>
+    <deployedseed>692725985</deployedseed>
+    <deployedseed>1891896939</deployedseed>
+    <deployedseed>185227961</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

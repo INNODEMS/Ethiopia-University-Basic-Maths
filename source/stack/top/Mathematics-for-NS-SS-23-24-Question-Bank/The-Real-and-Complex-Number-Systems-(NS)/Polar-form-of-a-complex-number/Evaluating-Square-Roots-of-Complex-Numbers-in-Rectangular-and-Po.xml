@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz xmlns="http://stack-assessment.org/2025/moodle-question">>
+  <question type="stack">
+    <name>
+      <text>Evaluating Square Roots of Complex Numbers in Rectangular and Polar Form</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Evaluate \( \displaystyle \sqrt{z}\) given that \(z={@z_real@} + {@z_imag@}i\).</p> 
+<p>Note:</p>
+<p><ol>
+  <li><p style="color:blue">Give all the roots!</p></li>
+  <li><p style="color:blue">You might want to write \(z\) in polar form first, with your solution in \(\pi\) radians, or in the form \(\displaystyle z=re^{i\theta}\) to simplify the calculations.</p></li>
+</ol></p>
+<!-- This is commented out 
+<p>\(r =\) </p>
+<p>\(\theta=\)  (in \(\pi\) radians</p>
+<p>\(z =\) (in polar form)</p> -->
+<p>Possible values for \(\sqrt{z}:\)</p>
+<p>\(\sqrt{z}= \) [[input:ans4]] or \(\sqrt{z}= \) [[input:ans5]] </p>
+<p>\(\quad\) [[validation:ans4]] \(\quad \) [[validation:ans5]]</p>
+<p>[[feedback:prt4]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3><b>Worked solution</b></h3>
+<p>Given \( \displaystyle z={@z_real@} + {@z_imag@}i\), let's express \(z\) in polar form:</p>
+
+<ol>
+  <li><p>Magnitude (\(r\)) of \(z\):</p>
+    \(\displaystyle r = \sqrt{({@z_real@} )^2 + ({@z_imag@})^2} = \sqrt{{@z_real^2@} + {@z_imag^2@}} = \sqrt{{@z_real^2+ z_imag^2@}} = {@ta1@} \)</li>
+  <li><p>Argument (\(\theta\)) of \(z\):</p>
+    \( \displaystyle \theta = \arctan\left(\frac{\text{Im}(z)}{\text{Re}(z)}\right) = \arctan\left(\frac{{@z_imag@}}{{@z_real@}}\right) \)
+    \(\displaystyle  \theta= {@arg@} \approx {@decimalplaces(arg,2)@}\)</li>
+
+ <li>
+<p>Now, \(z\) in polar form becomes:</p>
+\(\displaystyle  z = re^{i\theta} = {@radius@}e^{{@arg@}i} ={@ta3@}\)
+
+</li>
+ <li>
+<p>Expressing the square root of \(z\) in polar form:</p>
+\(\displaystyle  \sqrt{z} = \sqrt{ {@radius@}}e^{{@arg@}i}=\sqrt{{@ta3@}} \)
+ <p>Now, for possible values of  \(\displaystyle  \sqrt{z} ,\) we consider the fact that the square root function introduces a \( \pm \) sign:</p>
+
+<p>\(\displaystyle  \sqrt{z} = {@ta4@} \) or </p>
+<p>\(\displaystyle \sqrt{z} = {@ta5@} \)</p></li></ol>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>quadrant: rand(4);
+
+angle: rand([%pi/2, %pi/3, %pi/4, %pi/6]);
+
+arg: angle + %pi/2*quadrant;
+radius: rand_with_step(1, 9, 1);
+
+zz: radius*%e^(%i*arg);
+
+z_real: realpart(zz);
+z_imag: imagpart(zz);
+simp: false;
+zz_cartesian: z_real + z_imag * %i;
+simp: true;
+/*Model Answers*/
+ta1: radius;
+ta2: arg;
+ta3:  radius*(cos(arg) + %i *sin(arg));/*z in polar form*/
+
+/*roots*/
+ta4: sqrt(radius)*(cos(arg/2) + %i *sin(arg/2));
+ta5: sqrt(radius)*(cos((arg+2*%pi)/2) + %i* sin((arg+2*%pi)/2));
+ta_roots: {ta4, ta5}; /* teacher square roots*/
+
+/*Worked solution codes*/</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>\( \displaystyle z={@z_real@} + {@z_imag@}i\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="html">
+      <text><![CDATA[<p id="author">Godfrey Wabwire</p>
+<p id="concept">N/Ap>
+<p id="reviewer">Nixson Kiplagat</p>
+<p id="reviewer">2</p>
+<p id="description">"This question asks students to evaluate the square root of a complex number given in rectangular form. They are also instructed to convert the complex number to polar form and provide all the roots of the square root.
+"</p>]]></text>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <isbroken>0</isbroken>
+    <variantsselectionseed/>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>ta4</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans5</name>
+      <type>algebraic</type>
+      <tans>ta5</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text><![CDATA[ans_roots: {ans4, ans5}; /* student square roots*/
+ta_roots: {ta4, ta5}; /* teacher square roots*/
+student_ans: is(ans_roots=ta_roots);
+
+err:if cardinality(intersect(ans_roots,ta_roots))>0 then 1 else 0;
+errcorr:if cardinality(intersect(ans_roots,ta_roots))>0 then listify(intersect(ans_roots,ta_roots))[1] else "";]]></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>checks for correct ta with sa</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans_roots</sans>
+        <tans>ta_roots</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description>checks if the students puts the same root twice or any incorrect</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>err</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer \(\displaystyle  \sqrt{z}={@errcorr@}\) is correct but the second one isn't. Please double-check your working.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1560019029</deployedseed>
+    <deployedseed>509236230</deployedseed>
+    <deployedseed>343327534</deployedseed>
+    <deployedseed>1042034366</deployedseed>
+    <deployedseed>237591667</deployedseed>
+    <deployedseed>1610478075</deployedseed>
+    <deployedseed>1413716289</deployedseed>
+    <deployedseed>1059035781</deployedseed>
+    <deployedseed>290052385</deployedseed>
+    <deployedseed>342514640</deployedseed>
+    <deployedseed>531999276</deployedseed>
+    <deployedseed>1067390822</deployedseed>
+    <deployedseed>1874226670</deployedseed>
+    <deployedseed>355767221</deployedseed>
+    <deployedseed>951883789</deployedseed>
+    <deployedseed>1463631924</deployedseed>
+    <deployedseed>928243696</deployedseed>
+    <deployedseed>752728578</deployedseed>
+    <deployedseed>1421359229</deployedseed>
+    <deployedseed>135800630</deployedseed>
+    <deployedseed>1699927508</deployedseed>
+    <deployedseed>1093251076</deployedseed>
+    <deployedseed>1476863927</deployedseed>
+    <deployedseed>494987853</deployedseed>
+    <deployedseed>1894212735</deployedseed>
+    <deployedseed>476645710</deployedseed>
+    <deployedseed>508711646</deployedseed>
+    <deployedseed>1857418526</deployedseed>
+    <deployedseed>340060010</deployedseed>
+    <deployedseed>1313278219</deployedseed>
+    <deployedseed>348641396</deployedseed>
+    <deployedseed>723595626</deployedseed>
+    <deployedseed>952551942</deployedseed>
+    <deployedseed>1000941104</deployedseed>
+    <deployedseed>1707049791</deployedseed>
+    <deployedseed>1763327523</deployedseed>
+    <deployedseed>955642371</deployedseed>
+    <deployedseed>1350789870</deployedseed>
+    <deployedseed>619586442</deployedseed>
+    <deployedseed>1270814281</deployedseed>
+    <deployedseed>1866154710</deployedseed>
+    <deployedseed>250952210</deployedseed>
+    <deployedseed>1347589880</deployedseed>
+    <deployedseed>1770948899</deployedseed>
+    <deployedseed>504972157</deployedseed>
+    <deployedseed>802289630</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>ta5</value>
+      </testinput>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

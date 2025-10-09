@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<preface xml:id="preface">
+<preface xml:id="preface" xmlns:xi="http://www.w3.org/2001/XInclude">
     <paragraphs>
         <title>Typing answers in interactive questions</title>
 
@@ -25,7 +25,14 @@
     <paragraphs>
         <title>Basic operations</title>
         
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-Equation.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Equation.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
+        <exercise>
+            <stack label="syntax-equation">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Equation.xml" />
+            </stack>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Equation.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
 
         <p>
             <ul>
@@ -37,27 +44,91 @@
             </ul>
 
         </p>
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-Exponentials.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Exponentials.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-Rational-Expression.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Rational-Expression.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-Logarithms.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Logarithms.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-Polynomials.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Polynomials.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-floating-point-invalid.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-floating-point-invalid.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
-        <!-- <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-floating-point-valid.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-floating-point-valid.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise> -->
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-trigonometry.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-trigonometry.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
-
+        <exercise>
+            <stack label="syntax-exponentials">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Exponentials.xml" />
+            </stack>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Exponentials.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+        <exercise>
+            <stack label="syntax-rational-expression">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Rational-Expression.xml" />
+            </stack>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Rational-Expression.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+        <exercise>
+            <stack label="syntax-logarithms">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Logarithms.xml" />
+            </stack>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Logarithms.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+        <exercise>
+            <stack label="syntax-polynomials">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Polynomials.xml" />
+            </stack>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Polynomials.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+        <exercise>
+            <stack label="syntax-floating-point-invalid">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-floating-point-invalid.xml" />
+            </stack>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-floating-point-invalid.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+        <exercise>
+            <stack label="syntax-trigonometry">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-trigonometry.xml" />
+            </stack>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-trigonometry.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+        
     </paragraphs>
-
+    
     <paragraphs>
         <title>Other input types</title>
-
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-Sets-Lists.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Sets-Lists.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
-        <!-- <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-equiv.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-equiv.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise> -->
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Drop-down-list-Question.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FDrop-down-list-Question.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Questions-with-a-Table.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FQuestions-with-a-Table.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
-        <!-- <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-inequalities.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-inequalities.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise> -->
-
+        
+        <exercise>
+            <stack label="syntax-sets-lists">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Sets-Lists.xml" />
+            </stack>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Sets-Lists.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+        <exercise>
+            <stack label="drop-down-list-question">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Drop-down-list-Question.xml" />
+            </stack>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FDrop-down-list-Question.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+        <exercise>
+            <stack label="questions-with-a-table">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Questions-with-a-Table.xml" />
+            </stack>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FQuestions-with-a-Table.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+    
+        <!-- <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-equiv.xml" />
+         <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-equiv.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise> -->
+        <!-- <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-inequalities.xml" />
+         <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-inequalities.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise> -->
+        <!-- <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-floating-point-valid.xml" />
+         <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-floating-point-valid.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise> -->
     </paragraphs>
 
 </preface>
-
-

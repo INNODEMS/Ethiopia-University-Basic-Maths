@@ -52,9 +52,11 @@
     <!-- Set which marked elements are included in this version: -->
     <!-- See
     https://pretextbook.org/doc/guide/html/publication-file-source.html#publication-file-source-version -->
-      <!-- <version include="videos labs"/> -->
+      <version include="review"/>
 
   </source>
+
+  <stack server="https://stackapi-1-43834256136.europe-west1.run.app/"/>
 
   <numbering>
     <!-- the divisions element describes the numbering of divisions.  -->

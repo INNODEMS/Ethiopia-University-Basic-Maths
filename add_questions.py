@@ -1,5 +1,13 @@
+# pip install python-slugify
+from slugify import slugify
+
 import os
+from pathlib import Path
+import re
 import urllib.parse
+
+MAXCATLENGTH = 64
+MAXQLENGTH = 64
 
 sections_map = {
     "analytic-geometry/sections/subsections/sec-the-general-second-degree-equation/subsec-analysis-of-the-general-second.ptx" : "Analytic-Geometry-(NS)/Analysis-of-the-general-second-degree-equation",
@@ -44,10 +52,18 @@ sections_map = {
     "the-real-and-complex-number-systems/sections/subsections/sec-the-real-number-system/subsec-the-set-of-real-numbers.ptx" : "The-Real-and-Complex-Number-Systems-(NS)/The-set-of-real-numbers",
 }
 
+def shorten_filename(sec):
+    return '/'.join(s[:MAXCATLENGTH] for s in sec.split('/'))
+
+sections_map = {s: shorten_filename(q) for s, q in sections_map.items()}
+
+xmlids = set()
+
 for section, questions in sections_map.items():
     sfile = os.path.join("source", section)
-    qpath = os.path.join("assets/questions/top/Mathematics-for-NS-&-SS-23-24-Question-Bank/", questions)
-    qpath2 = os.path.join("questions/top/Mathematics-for-NS-&-SS-23-24-Question-Bank/", questions)
+    qpath = os.path.join("source/stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/", questions)
+    qpath2 = qpath
+    # qpath2 = os.path.join("questions/top/Mathematics-for-NS-&-SS-23-24-Question-Bank/", questions)
     qfiles = []
     qincludes = []
     for file in os.listdir(qpath):
@@ -65,15 +81,33 @@ for section, questions in sections_map.items():
                 "entry.2077830997": sfile,
             }
             encoded_data = urllib.parse.urlencode(data)
+            xmlid = slugify(Path(qfile).stem)
+            while xmlid in xmlids:
+                # This masks re-use of questions in multiple quizzes.
+                xmlid += "-2"
+            xmlids.add(xmlid)
+            rel_path = os.path.relpath(qfile, os.path.dirname(sfile)).replace("&", "&amp;")
             review_url = (baseurl + encoded_data).replace("&", "&amp;")
             qincludes.append(
-                f'''<exercise><stack source="/{qfile_esc}" />\n
-                <url href="{review_url}">Add review</url></exercise>'''
+                # <stack source="/{qfile_esc}" />
+                f"""
+            <exercise>
+                <stack label="{xmlid}">
+                    <xi:include href="{rel_path}" />
+                </stack>
+                <conclusion component="review">
+                    <url href="{review_url}">Add review</url>
+                </conclusion>
+            </exercise>
+                """
             )
     # qincludes = [f'<exercise><stack source="/{qfile}" /></exercise>' for qfile in qfiles]
     qincludes = "\n".join(qincludes)
     with open(sfile, "r") as f:
         content = f.read()
+    # Remove old STACK question includes
+    content = re.sub(r"\s*<exercise>\s*<stack.*?</exercise>", "", content, flags=re.DOTALL)
+    # Add new includes
     if os.path.basename(sfile).startswith("sec"):
         content = content.replace("</section>", "\n" + qincludes + "\n</section>")
     elif os.path.basename(sfile).startswith("subsec"):
@@ -82,4 +116,3 @@ for section, questions in sections_map.items():
         print("Strange file")
     with open(sfile, "w") as f:
         f.write(content)
-

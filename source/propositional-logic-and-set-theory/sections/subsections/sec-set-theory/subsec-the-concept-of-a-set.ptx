@@ -3,11 +3,46 @@
 <p>The term set is an undefined term, just as a point and a line are undefined terms in geometry. However, the concept of a set permeates every aspect of mathematics. Set theory underlies the language and concepts of modern mathematics. The term set refers to a well-defined collection of objects that share a certain property or certain properties. The term “<alert>well-defined</alert>” here means that the set is described in such a way that one can decide whether or not a given object belongs in the set. If <m>A</m> is a set, then the objects of the collection <m>A</m> are called the elements or members of the set <m>A</m>. If <m>x</m> is an element of the set <m>A</m>, we write <m>x \in A</m>. If <m>x</m> is not an element of the set <m>A</m>, we write <m>x \notin A</m>.</p>
 <p>As a convention, we use capital letters to denote the names of sets and lowercase letters for elements of a set.</p>
 <p>Note that for each objects <m>x</m> and each set <m>A</m>, exactly one of <m>\text{x } \in A</m> or <m>\text{x } \notin A</m> but not both must be true.</p>
+                
 
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/The-concept-of-a-set/Relationship-between-elements-and-sets-notation.xml" />
 
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FThe-concept-of-a-set%2FRelationship-between-elements-and-sets-notation.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-set-theory%2Fsubsec-the-concept-of-a-set.ptx">Add review</url></exercise>
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/The-concept-of-a-set/Introduction-to-sets-and-set-notation.xml" />
+            <exercise>
+                <stack label="analyzing-set-properties-identifying-exceptions">
+                    <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/The-concept-of-a-set/Analyzing-Set-Properties-Identifying-Exceptions.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FThe-concept-of-a-set%2FAnalyzing-Set-Properties-Identifying-Exceptions.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-set-theory%2Fsubsec-the-concept-of-a-set.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FThe-concept-of-a-set%2FIntroduction-to-sets-and-set-notation.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-set-theory%2Fsubsec-the-concept-of-a-set.ptx">Add review</url></exercise>
+            <exercise>
+                <stack label="relationship-between-elements-and-sets-notation">
+                    <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/The-concept-of-a-set/Relationship-between-elements-and-sets-notation.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FThe-concept-of-a-set%2FRelationship-between-elements-and-sets-notation.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-set-theory%2Fsubsec-the-concept-of-a-set.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
+
+            <exercise>
+                <stack label="determining-the-universal-set-for-given-sets-a-b-and-c">
+                    <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/The-concept-of-a-set/Determining-the-Universal-Set-for-Given-Sets-A,-B,-and-C.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FThe-concept-of-a-set%2FDetermining-the-Universal-Set-for-Given-Sets-A%2C-B%2C-and-C.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-set-theory%2Fsubsec-the-concept-of-a-set.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
+
+            <exercise>
+                <stack label="introduction-to-sets-and-set-notation">
+                    <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/The-concept-of-a-set/Introduction-to-sets-and-set-notation.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FThe-concept-of-a-set%2FIntroduction-to-sets-and-set-notation.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-set-theory%2Fsubsec-the-concept-of-a-set.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 </subsection>

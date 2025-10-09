@@ -402,15 +402,27 @@
             </statement>
         </exercise>
     </exercises>
+                
 
 
+            <exercise>
+                <stack label="coordinate-rotation-converting-points-between-two-coordinate-sy">
+                    <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Rotation-of-coordinate-axes/Coordinate-Rotation-Converting-Points-between-Two-Coordinate-Sy.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FRotation-of-coordinate-axes%2FCoordinate-Rotation-Converting-Points-between-Two-Coordinate-Sy.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-the-general-second-degree-equation%2Fsubsec-rotation-of-coordinate-axes.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Rotation-of-coordinate-axes/Coordinate-Rotation-Converting-Points-between-Two-Coordinate-Systems.xml" />
-
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FRotation-of-coordinate-axes%2FCoordinate-Rotation-Converting-Points-between-Two-Coordinate-Systems.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-the-general-second-degree-equation%2Fsubsec-rotation-of-coordinate-axes.ptx">Add review</url></exercise>
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Rotation-of-coordinate-axes/Coordinate-Transformation-Rotating-Axes-and-Finding-New-Coordinates.xml" />
-
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FRotation-of-coordinate-axes%2FCoordinate-Transformation-Rotating-Axes-and-Finding-New-Coordinates.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-the-general-second-degree-equation%2Fsubsec-rotation-of-coordinate-axes.ptx">Add review</url></exercise>
-
+            <exercise>
+                <stack label="coordinate-transformation-rotating-axes-and-finding-new-coordin">
+                    <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Rotation-of-coordinate-axes/Coordinate-Transformation-Rotating-Axes-and-Finding-New-Coordin.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FRotation-of-coordinate-axes%2FCoordinate-Transformation-Rotating-Axes-and-Finding-New-Coordin.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-the-general-second-degree-equation%2Fsubsec-rotation-of-coordinate-axes.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 </subsection>
 

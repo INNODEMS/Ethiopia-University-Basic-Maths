@@ -187,15 +187,26 @@
         
         
     </exercises>
+                
 
 
+            <exercise>
+                <stack label="finding-points-of-intersection-between-a-circle-and-a-line">
+                    <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Intersection-of-a-circle-with-a-line-and-tangent-line-to-a-circl/Finding-Points-of-Intersection-between-a-Circle-and-a-Line.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FIntersection-of-a-circle-with-a-line-and-tangent-line-to-a-circl%2FFinding-Points-of-Intersection-between-a-Circle-and-a-Line.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-intersection-of-a-circle-with.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 
-
-
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Intersection-of-a-circle-with-a-line-and-tangent-line-to-a-circle/Finding-Points-of-Intersection-between-a-Circle-and-a-Line.xml" />
-
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FIntersection-of-a-circle-with-a-line-and-tangent-line-to-a-circle%2FFinding-Points-of-Intersection-between-a-Circle-and-a-Line.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-intersection-of-a-circle-with.ptx">Add review</url></exercise>
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Intersection-of-a-circle-with-a-line-and-tangent-line-to-a-circle/Tangent-Line-and-Circle-with-x-axis-Center.xml" />
-
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FIntersection-of-a-circle-with-a-line-and-tangent-line-to-a-circle%2FTangent-Line-and-Circle-with-x-axis-Center.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-intersection-of-a-circle-with.ptx">Add review</url></exercise>
+            <exercise>
+                <stack label="tangent-line-and-circle-with-x-axis-center">
+                    <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Intersection-of-a-circle-with-a-line-and-tangent-line-to-a-circl/Tangent-Line-and-Circle-with-x-axis-Center.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FIntersection-of-a-circle-with-a-line-and-tangent-line-to-a-circl%2FTangent-Line-and-Circle-with-x-axis-Center.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-intersection-of-a-circle-with.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 </subsection>

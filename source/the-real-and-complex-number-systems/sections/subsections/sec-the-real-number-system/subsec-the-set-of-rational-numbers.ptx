@@ -1,4 +1,4 @@
-<subsection xml:id="subsec-the-set-of-rational-numbers">
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-the-set-of-rational-numbers">
     <title>The set of rational numbers</title>
     <introduction>
         <p>
@@ -386,11 +386,26 @@
             </solution>
         </example>
     </subsubsection>
+                
 
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-rational-numbers/Converting-terminating-decimal-to-fraction-form.xml" />
 
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-rational-numbers%2FConverting-terminating-decimal-to-fraction-form.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-rational-numbers.ptx">Add review</url></exercise>
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-rational-numbers/proving-by-contradiction-of-an-irrational-number.xml" />
+            <exercise>
+                <stack label="converting-terminating-decimal-to-fraction-form">
+                    <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-rational-numbers/Converting-terminating-decimal-to-fraction-form.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-rational-numbers%2FConverting-terminating-decimal-to-fraction-form.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-rational-numbers.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-rational-numbers%2Fproving-by-contradiction-of-an-irrational-number.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-rational-numbers.ptx">Add review</url></exercise>
+            <exercise>
+                <stack label="proving-by-contradiction-of-an-irrational-number">
+                    <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-rational-numbers/proving-by-contradiction-of-an-irrational-number.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-rational-numbers%2Fproving-by-contradiction-of-an-irrational-number.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-rational-numbers.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 </subsection>

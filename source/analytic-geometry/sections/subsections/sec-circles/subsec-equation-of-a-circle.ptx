@@ -387,18 +387,36 @@
         
         
     </exercises>
+                
 
 
+            <exercise>
+                <stack label="finding-the-standard-form-of-circle-equation-with-given-center-a">
+                    <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equation-of-a-circle/Finding-the-Standard-Form-of-Circle-Equation-with-Given-Center-a.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-circle%2FFinding-the-Standard-Form-of-Circle-Equation-with-Given-Center-a.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-equation-of-a-circle.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 
+            <exercise>
+                <stack label="circle-equation-with-center-on-a-given-line">
+                    <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equation-of-a-circle/Circle-Equation-with-Center-on-a-Given-Line.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-circle%2FCircle-Equation-with-Center-on-a-Given-Line.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-equation-of-a-circle.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 
-
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equation-of-a-circle/Finding-the-Standard-Form-of-Circle-Equation-with-Given-Center-and-Point.xml" />
-
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-circle%2FFinding-the-Standard-Form-of-Circle-Equation-with-Given-Center-and-Point.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-equation-of-a-circle.ptx">Add review</url></exercise>
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equation-of-a-circle/Circle-Equation-with-Center-on-a-Given-Line.xml" />
-
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-circle%2FCircle-Equation-with-Center-on-a-Given-Line.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-equation-of-a-circle.ptx">Add review</url></exercise>
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equation-of-a-circle/Equation-of-a-Circle-with-Given-Center-and-Radius.xml" />
-
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-circle%2FEquation-of-a-Circle-with-Given-Center-and-Radius.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-equation-of-a-circle.ptx">Add review</url></exercise>
+            <exercise>
+                <stack label="equation-of-a-circle-with-given-center-and-radius">
+                    <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equation-of-a-circle/Equation-of-a-Circle-with-Given-Center-and-Radius.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-circle%2FEquation-of-a-Circle-with-Given-Center-and-Radius.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-equation-of-a-circle.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 </subsection>

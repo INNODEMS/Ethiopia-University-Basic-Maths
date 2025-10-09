@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz xmlns="http://stack-assessment.org/2025/moodle-question">>
+  <question type="stack">
+    <name>
+      <text>Solve the exponential equation and write it in terms of logarithms</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Consider the equation \({@base1@}^{{@pwr1@}}={@base2@}^{{@pwr2@}}\)</p>
+<p>We will solve this equation to find an answer in terms of \(\log_{{@base1@}}({@base2@})\).</p>
+
+<br>
+
+<p>(a) Take \(\log_{{@base1@}}\) on both sides to get an equivalent equation in the form \(A(x) = \log_{{@base1@}}(B(x))\), 
+<br>where \(A\) and \(B\) are expressions in terms of \(x\).</p>
+<p><em>Note: To enter the logarithm of b base a, \(\log_a(b)\), you should write <code>logbase(b,a)</code>.</em></p>
+<p style="margin-left: 30px">[[input:ans1]] [[validation:ans1]]</p>
+<p>[[feedback:prt1]]</p>
+
+<br>
+
+<p>(b) Use rules of logs to write your equation in the form \(ax + b = cx + d\), 
+<br>where \(a,b,c,d \in \mathbb{R}\) and \(c\) and \(d\) are written in terms of \(\log_{{@base1@}}({@base2@})\).</p>
+<p style="margin-left: 30px">[[input:ans2]] [[validation:ans2]]</p>
+<p>[[feedback:prt2]]</p>
+
+<br>
+
+<p>(c) Rearrange your equation and collect all the \(x\) terms on the left hand side and the constant terms on the right hand side of the equation. 
+<br>Give your answer in the form \(ax + bx = c + d\), where \(a,b,c,d \in \mathbb{R}\) and \(b\) and \(d\) are written in terms of \(\log_{{@base1@}}({@base2@})\).</p>
+<p style="margin-left: 30px">[[input:ans3]] [[validation:ans3]]</p>
+<p>[[feedback:prt3]]</p>
+
+<br>
+
+<p>(d) Take \(x\) as a common factor of the left hand side of your equation. 
+<br>Give your answer in the form \((a+b)x = c + d\), where \(a,b,c,d \in \mathbb{R}\) and \(b\) and \(d\) are written in terms of \(\log_{{@base1@}}({@base2@})\)</p>
+<p style="margin-left: 30px">[[input:ans4]] [[validation:ans4]]</p>
+<p>[[feedback:prt4]]</p>
+
+<br>
+
+<p>(e) Find the value of \(x\). 
+<br>Give your answer in the form \(\frac{a+b}{c+d}\), where \(a,b,c,d \in \mathbb{R}\) and \(b\) and \(d\) are written in terms of \(\log_{{@base1@}}({@base2@})\).</p>
+<p style="margin-left: 30px">\(x = \) [[input:ans5]] [[validation:ans5]]</p>
+<p>[[feedback:prt5]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3>Worked Solution</h3>
+
+<p>We begin with the equation \({@base1@}^{{@pwr1@}}={@base2@}^{{@pwr2@}}\)</p>
+
+<br>
+
+<p>(a) Taking \(\log_{{@base1@}}\) on both sides we get,</p>
+<p style="margin-left: 30px">\(\log_{{@base1@}}({@base1@}^{{@pwr1@}})=\log_{{@base1@}}({@base2@}^{{@pwr2@}})\)</p>
+<p>The left hand side then simplifies to give an equation in the correct form,</p>
+<p style="margin-left: 30px">\({@pwr1@}=\log_{{@base1@}}({@base2@}^{{@pwr2@}})\)</p>
+
+<br>
+
+<p>(b) Using the power rule for logarithms we get,</p>
+<p style="margin-left: 30px">\({@pwr1@}=({@pwr2@}) \log_{{@base1@}}({@base2@})\)</p>
+<p>Expanding the right hand side we get,</p>
+<p style="margin-left: 30px">\({@pwr1@}=2 \log_{{@base1@}}({@base2@}) x + {@dd@} \log_{{@base1@}}({@base2@})\)</p>
+
+<br>
+
+<p>(c) From the equation in (b), collecting the \(x\) terms on the left hand side and the other terms on the right we get,</p>
+<p style="margin-left: 30px">\(x-2 \log_{{@base1@}}({@base2@}) x = {@dd@} \log_{{@base1@}}({@base2@}) - {@cc@}\)</p>
+
+<br>
+
+<p>From the equation in part (c), taking \(x\) as a common factor of the left hand side we get,</p>
+<p style="margin-left: 30px">\((1-2 \log_{{@base1@}}({@base2@})) x = {@dd@} \log_{{@base1@}}({@base2@}) - {@cc@}\)</p>
+
+<br>
+
+<p>(e) Making \(x\) the subject of the equation in part (d) gives,</p>
+<p style="margin-left: 30px">\(x = \frac{{@dd@} \log_{{@base1@}}({@base2@}) - {@cc@}}{1 - 2 \log_{{@base1@}}({@base2@})}\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>base1:rand(5)+2;
+base2:rand_with_prohib(2,8,[base1,base1^2,base1^3]);
+cc:rand(5)+2;
+dd:rand(5)+2;
+pwr1:x+cc;
+pwr2:2*x+dd;
+ta1:pwr1=logbase(base2^pwr2,base1);
+ta2:pwr1=2*logbase(base2,base1)*x+dd*logbase(base2,base1);
+ta3:x-2*logbase(base2,base1)*x = dd*logbase(base2,base1) - cc;
+ta4:x*(1-2*logbase(base2,base1)) = dd*logbase(base2,base1) - cc;
+ta5:(dd*logbase(base2,base1) - cc)/(1-2*logbase(base2,base1));</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>\({@base1@}^{{@pwr1@}}={@base2@}^{{@pwr2@}}\)</p>
+<p>(a) \(A = \log_{{@base1@}}(B)={@ta1@}\)</p>
+<p>(b) \(\log_{{@base1@}}({@base2@}) ={@ta2@}\).</p>
+<p>(c) \(\log_{{@base1@}}({@base2@}) = {@ta3@}\)</p>
+<p>(d) \(\log_{{@base1@}}({@base2@})= {@ta4@}\)</p>
+<p>(e) \(\log_{{@base1@}}({@base2@}) = {@ta5@}\).</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text><![CDATA[<p id="author">Godfrey Wabwire</p>
+<p id="concept">NA</p>
+<p id="reviewer">Emmaculate Odhiambo</p>
+<p id="reviewer">Dan Kelly</p>
+<p id="description">Solving the exponential equation and write it in terms of logarithms</p>]]></text>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <isbroken>0</isbroken>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>ta4</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans5</name>
+      <type>algebraic</type>
+      <tans>ta5</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>Checks for correct answer that is commutatively and associatively equivalent </description>
+        <answertest>EqualComAss</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description>Checks for correct answer that is algebraically equivalent </description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer is equal to the equation given, but it is not in the correct form.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>Checks for correct answer that is commutatively and associatively equivalent </description>
+        <answertest>EqualComAss</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description>Checks for correct answer that is algebraically equivalent </description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer is equal to the equation given, but it is not in the correct form.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>Checks for correct answer that is commutatively and associatively equivalent </description>
+        <answertest>EqualComAss</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description>Checks for correct answer that is algebraically equivalent </description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer is equal to the equation given, but it is not in the correct form.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>Checks for correct answer that is commutatively and associatively equivalent </description>
+        <answertest>EqualComAss</answertest>
+        <sans>ans4</sans>
+        <tans>ta4</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description>Checks for correct answer that is algebraically equivalent </description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>ta4</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer is equal to the equation given, but it is not in the correct form.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt5</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>Checks for correct answer that is commutatively and associatively equivalent </description>
+        <answertest>EqualComAss</answertest>
+        <sans>ans5</sans>
+        <tans>ta5</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt5-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt5-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description>Checks for correct answer that is algebraicallyequivalent </description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans5</sans>
+        <tans>ta5</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt5-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer is correct but it is not in the correct form.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt5-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1613549826</deployedseed>
+    <deployedseed>1845556979</deployedseed>
+    <deployedseed>94737090</deployedseed>
+    <deployedseed>880684615</deployedseed>
+    <deployedseed>397860595</deployedseed>
+    <deployedseed>649666249</deployedseed>
+    <deployedseed>1618568236</deployedseed>
+    <deployedseed>398488873</deployedseed>
+    <deployedseed>1596471233</deployedseed>
+    <deployedseed>468340622</deployedseed>
+    <deployedseed>520458926</deployedseed>
+    <deployedseed>1721350493</deployedseed>
+    <deployedseed>1245581097</deployedseed>
+    <deployedseed>1963390096</deployedseed>
+    <deployedseed>204532543</deployedseed>
+    <deployedseed>2084008680</deployedseed>
+    <deployedseed>1614963800</deployedseed>
+    <deployedseed>1735393610</deployedseed>
+    <deployedseed>134932897</deployedseed>
+    <deployedseed>1583186106</deployedseed>
+    <deployedseed>1182885287</deployedseed>
+    <deployedseed>1135954544</deployedseed>
+    <deployedseed>523614266</deployedseed>
+    <deployedseed>461031708</deployedseed>
+    <deployedseed>1292747875</deployedseed>
+    <deployedseed>1461184930</deployedseed>
+    <deployedseed>187623422</deployedseed>
+    <deployedseed>1274218941</deployedseed>
+    <deployedseed>286689903</deployedseed>
+    <deployedseed>1902668793</deployedseed>
+    <deployedseed>579167305</deployedseed>
+    <deployedseed>1928058022</deployedseed>
+    <deployedseed>1745299405</deployedseed>
+    <deployedseed>257894185</deployedseed>
+    <deployedseed>1168571284</deployedseed>
+    <deployedseed>1845455893</deployedseed>
+    <deployedseed>1202028234</deployedseed>
+    <deployedseed>338351771</deployedseed>
+    <deployedseed>935907281</deployedseed>
+    <deployedseed>1398669720</deployedseed>
+    <deployedseed>681558750</deployedseed>
+    <deployedseed>1826612633</deployedseed>
+    <deployedseed>206363944</deployedseed>
+    <deployedseed>612201724</deployedseed>
+    <deployedseed>649249632</deployedseed>
+    <deployedseed>1047400128</deployedseed>
+    <deployedseed>1211890930</deployedseed>
+    <deployedseed>250860776</deployedseed>
+    <deployedseed>213692290</deployedseed>
+    <deployedseed>1146134463</deployedseed>
+    <deployedseed>1465356079</deployedseed>
+    <deployedseed>848964145</deployedseed>
+    <deployedseed>1910729844</deployedseed>
+    <deployedseed>1498998612</deployedseed>
+    <deployedseed>1718006538</deployedseed>
+    <deployedseed>518130907</deployedseed>
+    <deployedseed>1049801766</deployedseed>
+    <deployedseed>1443918045</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description>Test case assuming the teacher's input gets full marks.</description>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>ta5</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt5</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt5-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

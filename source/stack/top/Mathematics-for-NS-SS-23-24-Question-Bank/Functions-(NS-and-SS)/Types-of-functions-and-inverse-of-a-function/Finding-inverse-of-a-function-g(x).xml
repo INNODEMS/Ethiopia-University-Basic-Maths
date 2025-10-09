@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz xmlns="http://stack-assessment.org/2025/moodle-question">>
+  <question type="stack">
+    <name>
+      <text>Finding inverse of a function g(x)</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>If \(g(x)={@const_1@}+{@coeff_x*x@}+e^x\), find \(g^{-1}({@const_1+1@})\)</p>
+<p> \(g^{-1}({@const_1+1@})=\) [[input:ans1]][[validation:ans1]][[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3>Worked Solution</h3>
+<p>In this case we cannot find \( g^{-1}(x), \) however we can use some elements of the domain of \(g\) to give us the image \({@const_1+1@},\) </p>
+<p>\(g(-2)={@const_1@}+{@coeff_x@}(-2)+e^{-2}={@const_1+coeff_x*(-2)@}+\frac{1}{e^{2}}\)</p>
+<p>\(g(-1)={@const_1@}+{@coeff_x@}(-1)+e^{-1}={@const_1+coeff_x*(-1)@}+\frac{1}{e}\)</p>
+<p>\(g(0)={@const_1@}+0+e^0={@const_1+coeff_x*(0)@}+1={@const_1+1@}\)</p>
+<p>Thus, \(g^{-1}({@const_1+1@})=0.\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>const_1:rand(7)+1;
+coeff_x:rand(5)+1;
+ta:0;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p> \(g(x)={@const_1@}+{@coeff_x*x@}+e^x\)</p>
+<p> \(g^{-1}({@const_1+1@})={@ta@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="html">
+      <text><![CDATA[<p id="author">Nixson Kiplagat</p>
+<p id="concept">https://docs.google.com/document/d/1A5oyYMygAgYhjif6EiN3EjMlvtwS4gkLIbsD9gR0P-I/edit</p>
+<p id="reviewer">Emmaculate Odhiambo</p>
+<p id="reviewer">Santiago Borio</p>
+<p id="description">Given a function g(x), needs to find its inverse</p>]]></text>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <isbroken>0</isbroken>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer*/
+/*Node 2:  Finding the value of the function rather than the inverse*/
+x_value: const_1 + 1;
+g_x:const_1+coeff_x*x+e^x;
+mistake2_1:ev(g_x, x = x_value);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>Checks for the correct answer</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description> Finding the value of the function rather than the inverse</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake2_1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You seem to have found the value of the function rather than the inverse which is not true. Check the worked Solution below</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>971117956</deployedseed>
+    <deployedseed>1205573946</deployedseed>
+    <deployedseed>1104320778</deployedseed>
+    <deployedseed>622738940</deployedseed>
+    <deployedseed>1566507527</deployedseed>
+    <deployedseed>869034020</deployedseed>
+    <deployedseed>290144473</deployedseed>
+    <deployedseed>1275379484</deployedseed>
+    <deployedseed>629231098</deployedseed>
+    <deployedseed>1472538034</deployedseed>
+    <deployedseed>1606903226</deployedseed>
+    <deployedseed>609400881</deployedseed>
+    <deployedseed>846809272</deployedseed>
+    <deployedseed>982166083</deployedseed>
+    <deployedseed>487039082</deployedseed>
+    <deployedseed>177707368</deployedseed>
+    <deployedseed>1363529812</deployedseed>
+    <deployedseed>847181066</deployedseed>
+    <deployedseed>1992158213</deployedseed>
+    <deployedseed>2105696292</deployedseed>
+    <deployedseed>618775502</deployedseed>
+    <deployedseed>856915581</deployedseed>
+    <deployedseed>715319142</deployedseed>
+    <deployedseed>804887948</deployedseed>
+    <deployedseed>885468190</deployedseed>
+    <deployedseed>1766949620</deployedseed>
+    <deployedseed>924294338</deployedseed>
+    <deployedseed>1529365401</deployedseed>
+    <deployedseed>527517734</deployedseed>
+    <deployedseed>92442759</deployedseed>
+    <deployedseed>1760307292</deployedseed>
+    <deployedseed>1386641429</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

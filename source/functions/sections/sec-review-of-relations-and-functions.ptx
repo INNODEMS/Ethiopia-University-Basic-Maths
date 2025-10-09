@@ -996,18 +996,36 @@
         </statement>
     </exercise>
 </exercises>
+                
 
 
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Review-of-relations-and-functions/Give-example-proving-not-function.xml" />
+            <exercise>
+                <stack label="give-example-proving-not-function">
+                    <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Review-of-relations-and-functions/Give-example-proving-not-function.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReview-of-relations-and-functions%2FGive-example-proving-not-function.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-review-of-relations-and-functions.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReview-of-relations-and-functions%2FGive-example-proving-not-function.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-review-of-relations-and-functions.ptx">Add review</url></exercise>
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Review-of-relations-and-functions/Checking-definition-of-relation.xml" />
+            <exercise>
+                <stack label="checking-definition-of-relation">
+                    <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Review-of-relations-and-functions/Checking-definition-of-relation.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReview-of-relations-and-functions%2FChecking-definition-of-relation.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-review-of-relations-and-functions.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReview-of-relations-and-functions%2FChecking-definition-of-relation.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-review-of-relations-and-functions.ptx">Add review</url></exercise>
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Review-of-relations-and-functions/Relations-Cartesian-Products.xml" />
-
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReview-of-relations-and-functions%2FRelations-Cartesian-Products.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-review-of-relations-and-functions.ptx">Add review</url></exercise>
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Review-of-relations-and-functions/Evaluating-the-rational-functions-at-the-given-point.xml" />
-
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReview-of-relations-and-functions%2FEvaluating-the-rational-functions-at-the-given-point.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-review-of-relations-and-functions.ptx">Add review</url></exercise>
+            <exercise>
+                <stack label="relations-cartesian-products">
+                    <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Review-of-relations-and-functions/Relations-Cartesian-Products.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReview-of-relations-and-functions%2FRelations-Cartesian-Products.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-review-of-relations-and-functions.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 </section>

@@ -150,14 +150,27 @@
             </statement>
         </exercise>
     </exercises>
+                
 
 
+            <exercise>
+                <stack label="deriving-the-focal-width-of-a-parabola-from-its-focal-length">
+                    <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-a-parabola/Deriving-the-Focal-Width-of-a-Parabola-from-its-Focal-Length.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-a-parabola%2FDeriving-the-Focal-Width-of-a-Parabola-from-its-Focal-Length.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-parabolas%2Fsubsec-definition-of-a-parabola.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-a-parabola/Deriving-the-Focal-Width-of-a-Parabola-from-its-Focal-Length.xml" />
-
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-a-parabola%2FDeriving-the-Focal-Width-of-a-Parabola-from-its-Focal-Length.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-parabolas%2Fsubsec-definition-of-a-parabola.ptx">Add review</url></exercise>
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-a-parabola/Properties-of-a-Parabola-with-Origin-Vertex-and-given-Focus.xml" />
-
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-a-parabola%2FProperties-of-a-Parabola-with-Origin-Vertex-and-given-Focus.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-parabolas%2Fsubsec-definition-of-a-parabola.ptx">Add review</url></exercise>
+            <exercise>
+                <stack label="properties-of-a-parabola-with-origin-vertex-and-given-focus">
+                    <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-a-parabola/Properties-of-a-Parabola-with-Origin-Vertex-and-given-Focus.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-a-parabola%2FProperties-of-a-Parabola-with-Origin-Vertex-and-given-Focus.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-parabolas%2Fsubsec-definition-of-a-parabola.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 </subsection>
 

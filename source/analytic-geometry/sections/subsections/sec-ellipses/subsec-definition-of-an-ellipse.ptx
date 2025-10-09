@@ -265,17 +265,27 @@
     
     
 </exercises>
+                
 
 
+            <exercise>
+                <stack label="properties-of-an-ellipse-center-foci-and-point-verification">
+                    <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-an-ellipse/Properties-of-an-Ellipse-Center,-Foci,-and-Point-Verification.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-an-ellipse%2FProperties-of-an-Ellipse-Center%2C-Foci%2C-and-Point-Verification.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-ellipses%2Fsubsec-definition-of-an-ellipse.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 
-
-
-
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-an-ellipse/Properties-of-an-Ellipse-Center,-Foci,-and-Point-Verification.xml" />
-
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-an-ellipse%2FProperties-of-an-Ellipse-Center%2C-Foci%2C-and-Point-Verification.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-ellipses%2Fsubsec-definition-of-an-ellipse.ptx">Add review</url></exercise>
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-an-ellipse/Locating-Center,-Foci,-and-Vertices-of-an-Ellipse-with-Given-Minor-Axis-and-Eccentricity.xml" />
-
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-an-ellipse%2FLocating-Center%2C-Foci%2C-and-Vertices-of-an-Ellipse-with-Given-Minor-Axis-and-Eccentricity.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-ellipses%2Fsubsec-definition-of-an-ellipse.ptx">Add review</url></exercise>
+            <exercise>
+                <stack label="locating-center-foci-and-vertices-of-an-ellipse-with-given-min">
+                    <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-an-ellipse/Locating-Center,-Foci,-and-Vertices-of-an-Ellipse-with-Given-Min.xml" />
+                </stack>
+                <conclusion component="review">
+                    <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-an-ellipse%2FLocating-Center%2C-Foci%2C-and-Vertices-of-an-Ellipse-with-Given-Min.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-ellipses%2Fsubsec-definition-of-an-ellipse.ptx">Add review</url>
+                </conclusion>
+            </exercise>
+                
 </subsection>
 
