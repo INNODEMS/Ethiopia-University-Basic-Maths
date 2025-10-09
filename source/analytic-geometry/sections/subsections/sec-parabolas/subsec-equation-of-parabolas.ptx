@@ -3,25 +3,25 @@
 
     <title>Equation of Parabolas</title>
         <p>
-            <term>I: Equation of a parabola whose axis is parallel to the <m>y</m>-axis</term>:
+            <term>I: Equation of a parabola whose axis is parallel to the <m>\text{y}</m>-axis</term>:
         </p>
         <p>
-            A parabola whose axis is parallel to <m>y</m>-axis is called <m>\textbf{vertical parabola}</m>. A vertical parabola is either open upward (as in Figure 4.13 (a) ) or open downward (as in Figure 4.13 (b)).
+            A parabola whose axis is parallel to <m>\text{y}</m>-axis is called <m>\textbf{vertical parabola}</m>. A vertical parabola is either open upward (as in Figure 4.13 (a) ) or open downward (as in Figure 4.13 (b)).
         </p>
         <image source="/equation-parabola.png">
             <shortdescription></shortdescription>
         </image>
         <p>
-            Let <m>p</m> be the distance from vertex <m>\text{V}(h,k)</m> to the focus <m>\text{F}</m> of the parabola, i.e.,<m>|VF| = p</m>. Then, by the definition,<m> \text{F}</m> is located <m>p</m> units above <m>\text{V} </m>if the parabola opens upward and it is located <m>p</m> units below <m>\text{V}</m> if the parabola opens downward as indicated on Figure 4.13(a) and (b), respectively. To determine the desired equation, we first consider the case when the parabola opens upward.
+            Let <m>\text{p}</m> be the distance from vertex <m>\text{V}(h,k)</m> to the focus <m>\text{F}</m> of the parabola, i.e.,<m>|VF| = p</m>. Then, by the definition,<m> \text{F}</m> is located <m>p</m> units above <m>\text{V} \,</m>if the parabola opens upward and it is located <m>p</m> units below <m>\text{V}</m> if the parabola opens downward as indicated on Figure 4.13(a) and (b), respectively. To determine the desired equation, we first consider the case when the parabola opens upward.
         </p>
         <p>
-            Therefore, considering a vertical parabola with vertex <m> \text{v(h,k)}</m> that opens upward (Figure 4.13a), its focus is at <m>\text{F(h, k+p})</m>. <m>\Rightarrow</m> The equation of its directrix is <m>\text{y = k−p.}</m>
+            Therefore, considering a vertical parabola with vertex <m> \text{V(h,k)}</m> that opens upward (Figure 4.13a), its focus is at <m>\text{F(h, k+p)}</m>. <m>\Rightarrow</m> The equation of its directrix is <m>\text{y = k−p.}</m>
         </p>
         <p>
             Then, for any point <m>\text{P(x,y)} </m> on the parabola, <m>|PF|</m> is equal to the distance between P and the directrix if and only if 
         </p>
         <p>
-            <m>\sqrt{(x-h)^2\, +\, (y-k-p)^2 } = y \,-\,k\,+\,p</m>
+            <me>\sqrt{(x-h)^2\, +\, (y-k-p)^2 } = y \,-\,k\,+\,p</me>
         </p>
         
         <p>
@@ -37,7 +37,7 @@
                 <ul>
                     <li>
                         <p>
-                            called standard equation of a vertical parabola, vertex <m>(h, k)</m>, focal length <m>p,</m> open upward.
+                            called standard equation of a vertical parabola, <m>\mathit{vertex(h, k), focal length p, open upward.}</m>
                         </p>
                     </li>
                 </ul>    
@@ -75,7 +75,10 @@
                     <ul>
                         <li>
                             <p>
-                                ( Standard equation of a vertical parabola, open downward, vertex <m>(h, k)</m> , and focal length <m>p .</m> )
+                                ( Standard equation of a vertical parabola, 
+                            </p>
+                            <p>
+                               <m> \mathit{open downward, vertex (h, k) , and focal length p .}</m>) 
                             </p>
                         </li>
                     </ul>
@@ -104,9 +107,6 @@
                 The given equation, <m>x^2\,=\,y</m>, is the standard equation of the parabola with vertex at origin <m>(0,0)</m> and <m>4p =1</m> ⇒ its focal length is <m>p</m> = <m>\frac{1}{4}</m>.
                 Since the parabola opens upward, its focus is <m>p</m> units above its vertex ⇒ its focus is at <m>\text{F}(0,\frac{1}{4})</m>; and its directrix is horizontal line <m>p</m> units below its vertex <m>\Rightarrow</m> its directrix is <m>y</m> = <m>\frac{-1}{4}</m>. You may sketch this parabola.
             </p>
-            <image source="/parabola-sketch-example.png" width="80%">
-                <shortdescription></shortdescription>
-            </image>
         </solution>
        </example>
          
@@ -130,7 +130,7 @@
             </md>
                     <m>\Rightarrow</m> focal length <m>p= 3/2.</m> Moreover, as the parabola opens upward its vertex is <m>p</m> units below its focus. That is,
                     <md>
-                        <mrow>\text{V}(h,k) = (-1,\, 1\,\frac{-3}{2}) = \amp (-1,\frac{-1}{2}). </mrow>
+                        <mrow>\text{V}(h,k) = (-1,\, 1-\,\frac{3}{2}) = \amp (-1,\frac{-1}{2}). </mrow>
                     </md>Therefore, the equation of the parabola is
                     <md>
                         <mrow>(x+1)^2 = \amp 6(y+\frac{1}{2}) </mrow>
@@ -148,7 +148,7 @@
         </solution>
         </example>
         <p>
-            <alert>II: Equation of a parabola whose axis is parallel to the <m>x</m>-axis</alert>.
+            <term>II: Equation of a parabola whose axis is parallel to the <m>x</m>-axis</term>.
         </p>
         <p>
             A parabola whose axis is parallel to <m>\textbf{x}</m>-axis is called <m>\textbf{horizontal parabola}</m>. Such parabola opens either to the right or to the left as shown in Figure 4.15 (a) and (b), respectively.
@@ -157,7 +157,7 @@
             <shortdescription>horizontal parabola</shortdescription>
         </image>
         <p>
-            The equations of such sec-parabolas can be obtained by interchanging the role of <m>x</m> and <m>y</m> in the equations of the sec-parabolas discussed previously. These equations are stated below. In both cases, let the vertex of the parabola be at <m>\text{V}(h,k)</m>.
+            The equations of such parabolas can be obtained by interchanging the role of <m>x</m> and <m>y</m> in the equations of the parabolas discussed previously. These equations are stated below. In both cases, let the vertex of the parabola be at <m>\text{V}(h,k)</m>.
         
         </p>
         <p>
@@ -167,7 +167,7 @@
                         If a horizontal parabola <m>\textbf{opens to the right} </m>(as in Fig.4.15(a) ), then its focus is to the right of <m>\text{V}</m> at <m>\text{F}(h+p, k)</m>, its directrix is <m>x =h−p</m>, and its equation is
                     </p>
                     <p>
-                        <m>(y - k)^2 = 4p(x - h)</m>
+                        <me>(y - k)^2 = 4p(x - h)</me>
                     </p>
                 </li>
                 <li>
@@ -175,12 +175,12 @@
                         If a parabola <m>\textbf{opens to the left }</m>(as in Figure 4.15 (b) ), then its focus is to the left of <m>\text{V}</m> at <m>\text{F}(h−p,k)</m>, its directrix is <m>x=h+p</m> , and its equation is:
                     </p>
                     <p>
-                        <m>(y - k)^2 = -4p(x - h)</m>
+                        <me>(y - k)^2 = -4p(x - h)</me>
                     </p>
                 </li>
                 <li>
                     <p>
-                        If the vertices of these sec-parabolas are at the origin <m>(0,0)</m>, then you can obtain their corresponding equations by setting <m>h=0</m> and <m>k=0</m> in the above equations.
+                        If the vertices of these parabolas are at the origin <m>(0,0)</m>, then you can obtain their corresponding equations by setting <m>h=0</m> and <m>k=0</m> in the above equations.
                     </p>
                 </li>
             </ul>
@@ -194,7 +194,11 @@
             <solution>
                 <p>
                     The equation is  <m>y^2 = -10x </m>; and comparing this with the above equation, it is an equation of a parabola whose vertex is at <m>(0,0),</m> axis of symmetry is the x-axis, open to the left and <m>4p=10</m>, i.e., <m>p= 5/2</m>. Thus, the focus is <m>\text{F}=(–5/2,0)</m> and its directrix is <m>x = 5/2.</m> Its graph is sketched in Figure 4.16.
+
                 </p>
+                <image source="/parabola-sketch-example.png" width="80%" >
+                    <shortdescription></shortdescription>
+                </image>
                 <p>
                     <m></m>
                 </p>
@@ -212,9 +216,7 @@
                     The equation is  <m>y^2 +4y = –8x +4</m>. (Now complete the square of y-terms)
                 </p>
                 <p>
-                    ⇒ <md>
-                        <mrow>y^2+4y+2^2 = \amp -8x+4+ 4</mrow>
-                    </md>
+                    <m> \Rightarrow y^2+4y+\textbf{2}^\textbf{2} =  -8x+4+ \textbf{4}</m>
                 </p>
                 <p>
                     ⇒ <m>(y+2)^2 = –8x +8</m>
@@ -226,7 +228,7 @@
                     This is equation of a parabola with vertex at <m>(h, k) =(1,–2),</m> open to the left and focal length <m>p</m>, where <m>4p=8 \Rightarrow p=2</m>. Therefore, its focus is
                 </p>
                 <p>
-                    <m>\text{F}= (h–p, k) = (–1, –2)</m>, and directrix<m>x=h+p =3</m>. The parabola is sketched in Figure 4.17.
+                    <m>\text{F}= (h–p, k) = (–1, –2)</m>, and directrix<m>\,x=h+p =3</m>. The parabola is sketched in Figure 4.17.
                 </p>
                 <image source="/parabola-equation.png" width="80%">
                     <shortdescription></shortdescription>
@@ -235,13 +237,13 @@
         </example>
         <remark>
             <p>
-                An equation given as: <m>\text{A}x^2 + \text{D}x + \text{E}y + \text{F} = 0</m>
+                An equation given as: <me>\text{A}x^2 + \text{D}x + \text{E}y + \text{F} = 0</me>
             </p>
             <p>
                 or
             </p>
             <p>
-                 <m>\text{C}y^2 + \text{D}x + \text{E}y + \text{F} = 0</m>
+                 <me>\text{C}y^2 + \text{D}x + \text{E}y + \text{F} = 0</me>
             </p>
             <p>
                    
@@ -249,107 +251,108 @@
             </p>
         </remark>
                
+        <exercises xml:id="exercises-eqations-of-a-parabola">
+            <exercisegroup>
+            
+                <introduction>
+                    <p>
+                    For questions 1 to 8, find an equation of the parabola with the given properties and sketch its graph.
+                        
+                    </p>
+                </introduction>
         <exercise>
             <statement>
-                <p>
-                    For questions 1 to 8, find an equation of the parabola with the given properties and sketch its graph.
+                        <p>
+                            Focus<m>(0, 1)</m> and directrix <m>y = −1.</m> 
+                        </p>
+                            <p>
+                            <m>\textbf{2.}</m> Focus<m>(−1, 2) </m>and directrix  <m> y= -2.</m>
+                        </p>
+                        <p>
+                                <m>\textbf{3.}</m> Focus<m> (3/2, 0)</m> and directrix <m> x= −3/2.</m> 
+                            
+                        </p>
+                        <p>
+                           <m>\textbf{4.}</m> Focus <m>(−1, −2)</m> and directrix  <m> x = 0.</m>
+                        </p>
+                        <p>
+                           <m>\textbf{5.}</m> Vertex<m>(3, 2 )</m> and Focus<m>(3, 3)</m>.
+                        </p>
                     
-                    <ol>
-                        <li>
+                
                         
-                                <p>
-                                    Focus<m>(0, 1)</m> and directrix <m>y = −1.</m> 
-                                </p>
-                                 <p>
-                                    2. Focus<m>(−1, 2) </m>and directrix  <m> y= -2.</m>
-                                </p>
-                                <p>
-                                      3. Focus<m> (3/2, 0)</m> and directrix <m> x= −3/2.</m> 
-                                    
-                                </p>
-                                <p>
-                                    4. Focus <m>(−1, −2)</m> and directrix  <m> x = 0.</m>
-                                </p>
-                                <p>
-                                    5. Vertex<m>(3, 2 )</m> and Focus<m>(3, 3)</m>.
-                                </p>
-                            
+                        <p>
+                            <m>\textbf{6.}</m> Vertex<m>(5, −2 )</m> and Focus<m>(−5, −2).</m> 
+                        </p>
+                    
+                
                         
-                               
-                                <p>
-                                    6. Vertex<m>(5, −2 )</m> and Focus<m>(−5, −2).</m> 
-                                </p>
-                            
+                        <p>
+                            <m>\textbf{7.}</m>Vertex<m>(1, 0)</m> and directrix <m> x = −2.</m>
+                        </p>
+                    
+                
                         
-                                
-                                <p>
-                                    7. Vertex<m>(1, 0)</m> and directrix <m> x = −2.</m>
-                                </p>
-                            
+                        <p>
+                            <m>\textbf{8.}</m> Vertex <m>(0, 2)</m> and directrix <m> y = 4.</m>
+                        </p>
                         
-                                
-                                <p>
-                                    8. Vertex <m>(0, 2)</m> and directrix <m> y = 4.</m>
-                                </p>
-                            
-                        </li>
-                    </ol>
-                </p>
+                    
                 <p>
                     For questions 9 to 17 find the vertex, focus and directrix of the parabola and sketch it.
                 </p>
                 <sidebyside>
                 
                         <p>
-                            9. <m>y=2x^2</m>
+                            <m>\textbf{9.}</m> <m>y=2x^2</m>
                         </p>
                     
                 
                         <p>
-                            12. <m>x+y^2=0</m>
+                            <m>\textbf{12.}</m> <m>x+y^2=0</m>
                         </p>
                 
                         <p>
-                            15.<m> y^2 +8x+6y+5=0</m>
+                            <m>\textbf{15.}</m><m> y^2 +8x+6y+5=0</m>
                         </p>
                     
                         
                 </sidebyside>
                 <sidebyside>
                     <p>
-                       10. <m>8x^2=-y</m> 
+                       <m>\textbf{10.}</m> <m>8x^2=-y</m> 
                     </p>
                     <p>
-                        13.<m> x-1=(y+2)^2  </m>
+                        <m>\textbf{13.\,}</m><m> x-1=(y+2)^2  </m>
                     </p>
                     <p>
-                        16. <m>y^2 – 2y – 4x + 9= 0</m>
+                        <m>\textbf{16.}</m> <m>y^2 – 2y – 4x + 9= 0</m>
                     </p>
                 </sidebyside>
                 <sidebyside>
                     <p>
-                        11. <m>4x − y^2= 0</m>
+                        <m>\textbf{11.}</m> <m>4x − y^2= 0</m>
                     </p>
                     <p>
-                        14. <m>(x+4)^2 = 8y -24</m>
+                        <m>\textbf{14.}</m> <m>(x+4)^2 = 8y -24</m>
                     </p>
                     <p>
                         
                     </p>
                 </sidebyside>
                     <p>
-                        17. <m>-4x^2 +4x -\frac{1}{2}y=1</m>
+                        <m>\textbf{17.}</m> <m>-4x^2 +4x -\frac{1}{2}y=1</m>
                     </p>
                 
                
                 <p>
-                    18. Find an equation of the parabola that has a vertical axis, its vertex at <m>(1, 0)</m> and passing through <m>(0,1).</m>
+                    <m>\textbf{18.}</m> Find an equation of the parabola that has a vertical axis, its vertex at <m>(1, 0)</m> and passing through <m>(0,1).</m>
                 </p>
                 <p>
-                    19. The vertex and endpoints of the latus rectum of the parabola <m>x^2 = 36y</m> forms a triangle. Find the area of the triangle.
+                    <m>\textbf{19.}</m> The vertex and endpoints of the latus rectum of the parabola <m>x^2 = 36y</m> forms a triangle. Find the area of the triangle.
                 </p>
                 <p>
-                    20. P<m>(4, 6)</m> is a point on a parabola whose focus is at <m>(0, 2) </m> and directrix is parallel to <m>x</m>-axis. 
+                    <m>\textbf{20.\,}</m> P<m>(4, 6)</m> is a point on a parabola whose focus is at <m>(0, 2) </m> and directrix is parallel to <m>x</m>-axis. 
                 </p>    
                 <p>
                     (a) Find an equation of the parabola, its vertex and directrix.
@@ -358,17 +361,18 @@
                     (b) Determine the distance from P to the directrix.
                 </p>
                 <p>
-                    21. An iron wire bent in the shape of a parabola has latus rectum of length 60cm. What is its focal length?
+                    <m>\textbf{21.}</m>An iron wire bent in the shape of a parabola has latus rectum of length 60cm. What is its focal length?
                 </p>
                 <p>
-                    22. A cross-section of a parabolic reflector is shown in the figure below. A bulb is located at the focus and the opening at the focus,<m> \text{AB, is} 12 \text{cm}</m>. What is the diameter of the opening, <m>\text{CD}, 8 \text{cm}</m> from the vertex?
+                    <m>\textbf{22.}</m> A cross-section of a parabolic reflector is shown in the figure below. A bulb is located at the focus and the opening at the focus,<m> \text{AB, is} 12 \text{cm}</m>. What is the diameter of the opening, <m>\text{CD}, 8 \text{cm}</m> from the vertex?
                 </p>
                 <image source="/exercise_parabola.png" width="50%">
                     <shortdescription></shortdescription>
                 </image>
             </statement>   
-       </exercise>
-
+         </exercise>
+    </exercisegroup>
+</exercises>
 <exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equation-of-a-parabola/Finding-Focus-and-Directrix-of-a-Parabola(Guided).xml" />
 
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-parabola%2FFinding-Focus-and-Directrix-of-a-Parabola%28Guided%29.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-parabolas%2Fsubsec-equation-of-parabolas.ptx">Add review</url></exercise>

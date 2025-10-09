@@ -3,39 +3,39 @@
     <definition xml:id="def-definition-of-a-hyperbola">
         <statement>
             <p>
-                Let F and <m>\text{F} \textbf{′}</m> be two fixed points in the plane. A <term>hyperbola</term> is the set of all points in the plane such that the difference of the distance of each point from F and F<term>′</term> is constant. We shall denote the constant by 2<m>a</m>, for some <m>a</m> <m>\</m> 0. That is, a point P is on the hyperbola if and only if |PF<term>′</term>| – |PF| = 2<m>a</m> (or |PF|– |PF<term>′</term>| = 2<m>a</m> , whichever is positive). The two fixed points F and F<term>′</term> are called the foci of the hyperbola.
+                Let F and <m>\text{F} \textbf{′}</m> be two fixed points in the plane. A <m>\textbf{hyperbola}</m> is the set of all points in the plane such that the difference of the distance of each point from <m>\text{F}</m> and <m>F′</m> is constant. We shall denote the constant by <m>2a</m>, for some <m>a  &gt;0</m> . That is, a point P is on the hyperbola if and only if <m>|PF\textbf{′}| – |PF| = 2a</m> (or <m> |PF|– |PF\textbf{′}| = 2a</m> , whichever is positive). The two fixed points <m>\text{F}\, \text{and}\, \text{F} \textbf{′}</m> are called the foci of the hyperbola.
             </p>
         </statement>
     </definition>
     <image source="/hyperbola-definition.png" width="50%">
     </image>
     <p>
-        Figure 4.24 illustrates the definition of hyperbola. Notice that the definition of hyperbola is similar to that of an ellipse, the only change is that the sum of distances has become the difference of distances. Here, for the difference of any two unequal values, we take the higher value minus the smaller so that <m>&gt;</m> 0 in the definition. The following terminologies, notations and relationships are also important with regard to a hyperbola. Refer to Figure 4.24 for the following discussion.
+        Figure 4.24 illustrates the definition of hyperbola. Notice that the definition of hyperbola is similar to that of an ellipse, the only change is that the sum of distances has become the difference of distances. Here, for the difference of any two unequal values, we take the higher value minus the smaller so that <m> a\,&gt;\,</m> 0 in the definition. The following terminologies, notations and relationships are also important with regard to a hyperbola. Refer to Figure 4.24 for the following discussion.
     </p>
     <p>
         <ul>
             <li>
                 <p>
-                    The line through the two foci F<term>′</term> and F is called the <term>principal axis</term> of the hyperbola. The point on the principal axis at halfway between the two foci, that is, the midpoint of F′F, is called the <term>center</term> of the hyperbola and represented by C. We denote the distance between the two foci by 2<m>c</m>. That is, <term>|</term>F<term>′</term>F<term>|</term> = 2<m>c</m> or <term>|</term>CF<term>|</term> = <m>c</m> = <term>|</term>CF<term>′|</term>. Noting also that |PF<term>′</term>| <term>|</term>F<term>′</term>F<term>|</term> + |PF| in ∆ PF<term>′</term>F and |PF<term>′</term>| – |PF| = 2<m>a</m>, you can show that <m>a</m> <m>c</m>.
+                    The line through the two foci <m>F\textbf{′}</m> and F is called the <m>\textbf{principal axis}</m> of the hyperbola. The point on the principal axis at halfway between the two foci, that is, the midpoint of <m>\text{F′F}</m>, is called the <m>\textbf{center}</m> of the hyperbola and represented by <m>\text{C}</m>. We denote the distance between the two foci by <m>2c</m>. That is, <m>\textbf{|}F\textbf{′}F \textbf{|} = 2c</m> or <m>\textbf{|} \text{CF} \textbf{|} = c =  \textbf{|} \text{CF} \textbf{′|}</m>. Noting also that <m>|\text{PF} \textbf{′}| &lt; \textbf{|}\text{F} \textbf{′} \text{F} \textbf{|} + |\text{PF}| \, \text{in} \, \Delta \text{PF}\textbf{′} \text{F} \, \, \text{and}\, \, \ |\text{PF} \textbf{′}| – |\text{PF}| = 2a</m>, you can show that <m>a &lt;</m> <m>c</m>.
                 </p>
             </li>
             <li>
                 <p>
-                    The points V<term>′</term> and V where the hyperbola crosses the principal axis are called <term>vertices</term> of the hyperbola. The line segment V<term>′</term>V is called the <term>transverse axis</term> of the hyperbola. So, as V<term>′</term> and V are on the hyperbola, the definition requires that <term>|</term>V′F<term>|</term> – <term>|</term>V′F′<term>|</term> = <term>|</term>VF<term>′</term>| – |VF|. From this, you can obtain that |V′F′| = |VF|. Consequently:
+                    The points <m>\text{V} \textbf{′}</m> and <m>\text{V}</m> where the hyperbola crosses the principal axis are called <m>\text{vertices}</m> of the hyperbola. The line segment <m>\text{V′V}\,</m>is called the <m>\textbf{transverse axis}</m> of the hyperbola. So, as <m>\text{V} \textbf{′}</m> and <m>\text{V}</m> are on the hyperbola, the definition requires that <m>\textbf{|} \text{V}′ \text{F}\textbf{|}</m> – <m>\textbf{|}\text{V′F′}\textbf{|} = \textbf{|}\text{VF}\textbf{′}| – |\text{VF}|.</m> From this, you can obtain that <m>|\text{V′F′}| = |VF|</m>. Consequently:
                     <ol marker="(i)">
                         <li>
                             <p>
-                                C is the midpoint of also V′V; that is, <term>|</term>CV<term>′ |</term> = |CV<term>|</term>.
+                                C is the midpoint of also V′V; that is, <m>\textbf{|} \text{CV} \textbf{′ |} = \textbf{|} \text{CV} \textbf{|}</m>.
                             </p>
                         </li>
                         <li>
                             <p>
-                                |V<term>′</term>V| = |V<term>′</term>F| − |VF<term>|</term> = |V<term>′</term>F| − |V′F′| = 2<m>a</m>. (The length of the transverse axis is 2<m>a</m>)
+                                <m>|\text{V} \textbf{′} \text{V}| = |\text{V} \textbf{′} \text{F}| − |\text{VF} \textbf{|} = |\text{V} \textbf{′} \text{F} | − |\text{V′F′}| = 2a</m>. (The length of the transverse axis is <m>2a</m>)
                             </p>
                         </li>
                         <li>
                             <p>
-                                <term>|</term>V<term>′</term>C<term>|</term> = <m>a</m> = |CV<term>|</term> (This follows from (i) and (ii).)
+                                <m> \textbf{|} \text{V} \textbf{′} \text{C} \textbf{|} = a = |\text{CV} \textbf{|}</m> (This follows from (i) and (ii).)
                             </p>
                         </li>
                     </ol>
@@ -43,122 +43,125 @@
             </li>
             <li>
                 <p>
-                    The <term>eccentricity <m>e </m></term> of a hyperbola is defined to be the ratio of the distance between its foci to the length of its transverse axis. That is, similar to the definition of eccentricity of an ellipse, the eccentricity of a hyperbola is
+                    The <m>\textbf{eccentricity e} </m> of a hyperbola is defined to be the ratio of the distance between its foci to the length of its transverse axis. That is, similar to the definition of eccentricity of an ellipse, the eccentricity of a hyperbola is
                 </p>
-                <p><m> e =  \frac {|F'F|}{|V'V|} = \frac{C}{a}</m>(But here, <m>e</m> > 1 because <m>c</m> > <m>a</m>)</p>
+                <p><m> e =  \frac {|F'F|}{|V'V|} = \frac{C}{a}\,\,\,\,\,\,\,</m>(But here, <m>e &gt; 1</m>  because <m>c &gt; a</m>)</p>
             </li>
         </ul>
     </p>
     <exercises xml:id="exercises-definition-of-a-hyperbola">
-    <exercise >
-        <statement>
-
-                <p>
-                    Use the definition of hyperbola and the given information to answer or solve each of the following problems.
-                </p>
-                <p>
-                    <ol>
-                        <li>
-                            <p>
-
-                                Suppose C is the center, F<term>′</term> and F are the foci, and V<term>′</term> and V are the vertices of the hyperbola, as in Figure 4.24, with |CV| = <m>a</m> and |CF| = <m>c</m>. Then, show that each of the followings hold. 
-                            </p>
-                            <p>
-                                <ol marker="(a)">
-                                    <li>
-                                        <p>
-
-                                            If P is any point on the hyperbola, then |PF| – |PF<term>′</term>| = <m>\pm 2a</m>.
-                                        </p>
-                                        <p>
-                                            (Note: Taking that |PF| – |PF<term>′</term>| = <m>k</m>, a constant, show that <m>k</m> = <m>\pm 2a</m>.)
-
-
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-
-                                            <m>a</m>&gt;<m>c</m>.
-         
-                                        </p>
-                                    </li>
-                                </ol>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Consider a hyperbola whose foci are at <m>(\pm2, 0)</m> and contains the point <m>P(2, 3).</m>
-                                <ol marker="(a)">
-                                    <li>
-                                        <p>
-                                            Where is the center of the hyperbola?
-                                        </p>
-                                    </li>    
-                                    <li>
-                                        <p>
-                                            Determine the principal axis of the hyperbola.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Find the length of the transverse axis of the hyperbola.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Find the coordinates of the vertices of the hyperbola.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Determine whether each of the following points is on the hyperbola or not:
-                                            <ol marker="(i)">
-
-                                                <li>
-                                                    <p> 
-                                                        (−2, 3) (ii) (−2, −3) (iii) (2, −3) (iv) (3, 4) (v) <m>(\sqrt{13},6)</m> 
-                                                    </p>
-                                                </li>
-
-                                            </ol>
-                                        </p> 
-                                    </li>                            
-                                    <li>
-                                        <p>
-                                            Suppose the vertices of a hyperbola are at <m>(0, \pm2)</m> and its eccentricity is <m>1.5</m>. Then,
-                                            <ol marker="(a)">
-                                                <li>
-                                                    <p>
-                                                        Find the foci of the hyperbola.
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p>
-                                                        Determine whether each of the following points is on the hyperbola or not:
-                                                        <ol marker="(i)">
-                                                            <li>
-                                                                <p>
-
-                                                                    (0, 3) (ii) (2, 3) (iii) <m>(\sqrt{5},-3)</m> (iv) <m>(3,\sqrt{5})</m> 
-
+        
             
-                                                                </p>
-                                                            </li>
-                                                        </ol>
-                                                    </p>
-                                                </li>
-                                            </ol>
-                                         </p>
-                                  </li>
-                              </ol>
-                            </p>
-                        </li>
-                    </ol>
-                </p>
+    <exercise>
+        
+        <statement>
+            <!-- <p>
+                    Use the definition of hyperbola and the given information to answer or solve each of the following problems.
+                
+            </p> -->
+            <p>
 
-    </statement>
-    </exercise>
+                Suppose C is the center, <m> \text{F} \textbf{′} \text{ and  F }</m> are the foci, and <m> \text{V} \textbf{′} \text{ and  V }</m>  are the vertices of the hyperbola, as in Figure 4.24, with <m>|\text{CV}| = a</m> and <m>|\text{CF}|  = c</m>. Then, show that each of the followings hold. 
+            </p>
+            <p>
+                <ol marker="(a)">
+                    <li>
+                        <p>
+
+                            If P is any point on the hyperbola, then <m>|\text{PF}| – |\text{PF′}| = \pm 2a</m>.
+                        </p>
+                        <p>
+                            (Note: Taking that<m> |\text{PF}| – |\text{PF} \textbf{′}| = k</m>, a constant, show that <m>k = \pm 2a</m>.)
+
+
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+
+                            <m>a</m>&gt;<m>c</m>.
+
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+        </exercise>
+            <exercise>
+                <statement>
+                    <p>
+                         Consider a hyperbola whose foci are at <m>(\pm2, 0)</m> and contains the point <m>P(2, 3).</m>
+                        <ol marker="(a)">
+                    <li>
+                        <p>
+                            Where is the center of the hyperbola?
+                        </p>
+                    </li>    
+                    <li>
+                        <p>
+                            Determine the principal axis of the hyperbola.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Find the length of the transverse axis of the hyperbola.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Find the coordinates of the vertices of the hyperbola.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Determine whether each of the following points is on the hyperbola or not:
+
+
+                            <ol marker="(i)">
+
+                                <li>
+                                    <p> 
+                                        (−2, 3) (ii) (−2, −3) (iii) (2, −3) (iv) (3, 4) (v) <m>(\sqrt{13},6)</m> 
+                                    </p>
+                                </li>
+
+                            </ol>
+                        </p>
+                    </li> 
+                    </ol>   
+                    </p>
+                </statement>
+            </exercise>
+            <exercise>
+                <statement>
+                    <p>
+                        Suppose the vertices of a hyperbola are at <m>(0, \pm2)</m> and its eccentricity is <m>1.5</m>. Then,
+                        <ol marker="1.">
+                            <li>
+                                <p>
+                                    Find the foci of the hyperbola.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Determine whether each of the following points is on the hyperbola or not:
+                                    <ol marker="(i)">
+                                        <li>
+                                            <p>
+
+                                                <m> (0, 3) (\text{ii}) (2, 3) ( \text{iii}) (\sqrt{5},-3) (\text{iv}) (3,\sqrt{5})</m> 
+
+
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+            </exercise>
+            
     </exercises>
 
            
