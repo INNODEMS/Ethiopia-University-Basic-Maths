@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Rational expression_7a</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<br> Given the rational expression below:
+<br> \( \displaystyle {@expr@}\)
+<br> a. Find the least common multiple of the denominators in the expression above.
+<p>\(lcm=\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]</p>
+<p> b. Perform the indicated operations and simplify your result.</p>
+ <p> \( \displaystyle {@expr@}=\) [[input:ans2]] [[validation:ans2]][[feedback:prt2]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<p><b><h3>Worked solution</h3></b></p>
+<p> Given the rational expression \( \displaystyle {@frac_1@}-{@frac_2@}+{@frac_3@}\). </p>
+<p> a. Find the least common multiple of the denominators of the expression above. </p>
+<p>\(lcm=  \displaystyle  {@common_den@} \)</p>
+<p>b. Perform the indicated operations and simplify your result. </p>
+<p> Let's recall the common denominator, which is \(  \displaystyle  {@common_den@}\)</p>
+<li>  To write \(\displaystyle  {@frac_1@}\) as a fraction with a common denominator, we multiply it by \( \displaystyle  \frac{@common_den/den_first_frac@}{@common_den/den_first_frac@} \):
+<br> \(\displaystyle {@frac_1@} =\displaystyle \frac{@num_first_frac*(common_den/den_first_frac)@}{@common_den@} \)
+</li>
+<li>  To write \(\displaystyle {@-frac_2@}\) as a fraction with a common denominator, we multiply it by \( \displaystyle \frac{@common_den/den_second_frac@}{@common_den/den_second_frac@} \):
+<br> \( \displaystyle {@-frac_2@} = \displaystyle - \frac{@num_second_frac*(common_den/den_second_frac)@}{@common_den@} \)
+</li>
+<li>  To write \(\displaystyle {@frac_3@}\) as a fraction with a common denominator, we multiply it by \( \displaystyle \frac{@common_den/den_third_frac@}{@common_den/den_third_frac@} \):
+<br> \( \displaystyle {@frac_3@} = \displaystyle  \frac{@num_third_frac*(common_den/den_third_frac)@}{@common_den@} \)
+</li>
+<p>Combining all the three fractions over a common denominator, we obtain</p>
+<p>\(\displaystyle \frac{@num_first_frac*(common_den/den_first_frac)@}{@common_den@} - \frac{@num_second_frac*(common_den/den_second_frac)@}{@common_den@} + \frac{@num_third_frac*(common_den/den_third_frac)@}{@common_den@} = \displaystyle {@ta_1@}\)</p>
+<p>Therefore, \( \displaystyle {@frac_1@}-{@frac_2@}+{@frac_3@}= \displaystyle {@ta_1@}\).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*Defining question variables*/
+num_first_frac: rand_with_step(1,7,2);
+coef_den_first: rand([2,4]);
+den_first_frac:coef_den_first*a^2;
+frac_1:num_first_frac/den_first_frac;/*first fraction*/
+num_second_frac: rand_with_step(2,12,2);
+coef_den_second: rand_with_step(1,12,2);
+den_second_frac:coef_den_second*a*b;
+frac_2:num_second_frac/den_second_frac;/*second fraction*/
+num_third_frac: rand_with_step(1,12,2);
+coef_den_third: rand([2,4]);
+den_third_frac:coef_den_third*b^2;
+frac_3:num_third_frac/den_third_frac;/*third fraction*/
+common_den:lcm(den_first_frac,den_second_frac,den_third_frac);
+expr:frac_1-frac_2+frac_3;/*expression*/
+expr_1:((num_first_frac*b)/(den_first_frac*b))-((num_second_frac*a)/(den_second_frac*a))+frac_3;
+expr_2:ratsimp(((num_first_frac*b)/(den_first_frac*b))-((num_second_frac*a)/(den_second_frac*a)));
+ta_1:ratsimp(expr_2+frac_3*a^2/a^2);
+ta_2: random_permutation([[0, false],[ R^2,false],[minf, false],[inf,false],[oo(minf,0), true],[oo(0,inf), true]]);
+
+
+
+
+
+/*possible mistakes*/
+mistake_1:ratsimp(((num_first_frac*b)/(den_first_frac*b))+((num_second_frac*a)/(den_second_frac*a)));
+mistake_2:ratsimp(mistake_1+frac_3*a^2/a^2);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text>\( \displaystyle {@expr@}={@ta_1@}\)</text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>common_den</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta_1</tans>
+      <boxsize>20</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>common_den</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1 checks for correct answer*/
+/*Node 2 mistake:Using wrong syntax for computation */
+mistake_1:mistake_2;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta_1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>mistake_1</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>This look fine but it is like you forgotten the negative sign during your computation. Check your question well!!!!</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>429836441</deployedseed>
+    <deployedseed>498461604</deployedseed>
+    <deployedseed>558994180</deployedseed>
+    <deployedseed>315043290</deployedseed>
+    <deployedseed>101199440</deployedseed>
+    <deployedseed>2133018336</deployedseed>
+    <deployedseed>1587487622</deployedseed>
+    <deployedseed>296069006</deployedseed>
+    <deployedseed>1843157438</deployedseed>
+    <deployedseed>1001047345</deployedseed>
+    <deployedseed>699276241</deployedseed>
+    <deployedseed>955181673</deployedseed>
+    <deployedseed>198017819</deployedseed>
+    <deployedseed>1490360838</deployedseed>
+    <deployedseed>1345033068</deployedseed>
+    <deployedseed>109089972</deployedseed>
+    <deployedseed>509830304</deployedseed>
+    <deployedseed>1900674324</deployedseed>
+    <deployedseed>520504551</deployedseed>
+    <deployedseed>2107286233</deployedseed>
+    <deployedseed>1170076744</deployedseed>
+    <deployedseed>141907328</deployedseed>
+    <deployedseed>1689555333</deployedseed>
+    <deployedseed>160485084</deployedseed>
+    <deployedseed>276356205</deployedseed>
+    <deployedseed>92078712</deployedseed>
+    <deployedseed>1573290832</deployedseed>
+    <deployedseed>16089453</deployedseed>
+    <deployedseed>1753708450</deployedseed>
+    <deployedseed>2056745950</deployedseed>
+    <deployedseed>1953151204</deployedseed>
+    <deployedseed>687905063</deployedseed>
+    <deployedseed>1867801512</deployedseed>
+    <deployedseed>327812188</deployedseed>
+    <deployedseed>1114701336</deployedseed>
+    <deployedseed>871416242</deployedseed>
+    <deployedseed>83691977</deployedseed>
+    <deployedseed>381731376</deployedseed>
+    <deployedseed>363774550</deployedseed>
+    <deployedseed>814678091</deployedseed>
+    <deployedseed>2011655242</deployedseed>
+    <deployedseed>1610403933</deployedseed>
+    <deployedseed>1090671711</deployedseed>
+    <deployedseed>933710971</deployedseed>
+    <deployedseed>1709489168</deployedseed>
+    <deployedseed>1683586569</deployedseed>
+    <deployedseed>1151039893</deployedseed>
+    <deployedseed>1755446703</deployedseed>
+    <deployedseed>149286335</deployedseed>
+    <deployedseed>1757885686</deployedseed>
+    <deployedseed>25280093</deployedseed>
+    <deployedseed>334386153</deployedseed>
+    <deployedseed>366822456</deployedseed>
+    <deployedseed>1309247258</deployedseed>
+    <deployedseed>891708600</deployedseed>
+    <deployedseed>1207399524</deployedseed>
+    <deployedseed>1546935658</deployedseed>
+    <deployedseed>1052356996</deployedseed>
+    <deployedseed>2055684148</deployedseed>
+    <deployedseed>1756695127</deployedseed>
+    <deployedseed>314319219</deployedseed>
+    <deployedseed>1813171208</deployedseed>
+    <deployedseed>2074019315</deployedseed>
+    <deployedseed>1579659208</deployedseed>
+    <deployedseed>507495017</deployedseed>
+    <deployedseed>1868329790</deployedseed>
+    <deployedseed>1743153977</deployedseed>
+    <deployedseed>1340233177</deployedseed>
+    <deployedseed>249479948</deployedseed>
+    <deployedseed>1663332937</deployedseed>
+    <deployedseed>1284694050</deployedseed>
+    <deployedseed>1849588708</deployedseed>
+    <deployedseed>341379117</deployedseed>
+    <deployedseed>118904004</deployedseed>
+    <deployedseed>304574918</deployedseed>
+    <deployedseed>1346417937</deployedseed>
+    <deployedseed>2097790280</deployedseed>
+    <deployedseed>1300353664</deployedseed>
+    <deployedseed>198894912</deployedseed>
+    <deployedseed>1077840043</deployedseed>
+    <deployedseed>738637493</deployedseed>
+    <deployedseed>1469102073</deployedseed>
+    <deployedseed>1200144491</deployedseed>
+    <deployedseed>1833524926</deployedseed>
+    <deployedseed>869712245</deployedseed>
+    <deployedseed>1907664178</deployedseed>
+    <deployedseed>446480983</deployedseed>
+    <deployedseed>426282416</deployedseed>
+    <deployedseed>1395496406</deployedseed>
+    <deployedseed>1827994948</deployedseed>
+    <deployedseed>1167443826</deployedseed>
+    <deployedseed>65113425</deployedseed>
+    <deployedseed>1768578663</deployedseed>
+    <deployedseed>465352723</deployedseed>
+    <deployedseed>1693471863</deployedseed>
+    <deployedseed>1707207697</deployedseed>
+    <deployedseed>1446353092</deployedseed>
+    <deployedseed>2137874384</deployedseed>
+    <deployedseed>2070622080</deployedseed>
+    <deployedseed>1038920741</deployedseed>
+    <deployedseed>15785376</deployedseed>
+    <deployedseed>683186103</deployedseed>
+    <deployedseed>2123911775</deployedseed>
+    <deployedseed>1512411097</deployedseed>
+    <deployedseed>881645458</deployedseed>
+    <deployedseed>1773282429</deployedseed>
+    <deployedseed>993405835</deployedseed>
+    <deployedseed>874618978</deployedseed>
+    <deployedseed>727803070</deployedseed>
+    <deployedseed>531826786</deployedseed>
+    <deployedseed>1445208901</deployedseed>
+    <deployedseed>1935792883</deployedseed>
+    <deployedseed>2085139452</deployedseed>
+    <deployedseed>354137778</deployedseed>
+    <deployedseed>1769016569</deployedseed>
+    <deployedseed>482887705</deployedseed>
+    <deployedseed>1285945857</deployedseed>
+    <deployedseed>167070278</deployedseed>
+    <deployedseed>2008186506</deployedseed>
+    <deployedseed>1577380546</deployedseed>
+    <deployedseed>971087239</deployedseed>
+    <deployedseed>576351439</deployedseed>
+    <deployedseed>1370396152</deployedseed>
+    <deployedseed>592562023</deployedseed>
+    <deployedseed>1552711424</deployedseed>
+    <deployedseed>110952530</deployedseed>
+    <deployedseed>1061208126</deployedseed>
+    <deployedseed>579451114</deployedseed>
+    <deployedseed>428999501</deployedseed>
+    <deployedseed>1416131327</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>common_den</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta_1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

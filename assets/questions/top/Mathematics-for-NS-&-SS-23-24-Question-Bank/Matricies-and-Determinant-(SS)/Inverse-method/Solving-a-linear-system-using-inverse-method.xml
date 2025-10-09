@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Solving a linear system using inverse method</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Given that \(
+\left\{ \begin{array}{r}
+{@a1*x_1+b1*x_2@} & = {@d1@} \\
+{@b2*x_2+c2*x_1@} &= {@d2@} \\
+
+\end{array}\right.
+\)</p>
+<p>find&nbsp;\(x_{1}\) and&nbsp;\(x_{2}\) using Inverse method.<br></p>
+<br>\({@matrix_variable@} = \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3><b>Worked Solution</b></h3>
+<p>The system  \(
+\left\{ \begin{array}{r}
+{@a1*x_1+b1*x_2@} & = {@d1@} \\
+{@b2*x_2+c2*x_1@} &= {@d2@} \\
+
+\end{array}\right.
+\) is given by \(Ax=B\) where \(A\) is the matrix defined by \({@matrix_A@}, x={@matrix_variable@}\) and \(B={@column_vector@}\)</p>
+<p>We recall the inverse of \( A\) is \(A^{-1}={@matrix_inverse@} \). Then,</p>
+<p style="margin-left: 30px">\( Ax=B \Rightarrow A^{-1}Ax= A^{-1}B\)</p>
+<p style="margin-left: 30px">\(\quad \quad \quad \quad \Rightarrow x= A^{-1}B\)</p>
+<p style="margin-left: 30px">\(\quad \quad \quad \quad \Rightarrow x= \displaystyle {@matrix_inverse@}{@column_vector@}\)</p>
+<p style="margin-left: 30px">\(\quad \quad \quad \quad \Rightarrow {@matrix_variable@}= \displaystyle {@ta@}\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>ordergreat(x_1,x_2);
+tax1: rand_with_step(-5,5,1);
+tax2: rand_with_step(-5,5,1);
+tax3: rand_with_prohib(-5,5,[0]);
+a1: rand_with_prohib(-5,5,[0]);
+b1: rand([-1,1])*2
+c1: rand_with_prohib(-5,5,[0]);
+b2: rand([-1,1])*3;
+c2: rand_with_prohib(-5,5,[0]);
+d1: a1*tax1+b1*tax2;
+d2: b2*tax2+c2*tax1;
+eqn_1:ratsimp(a1*((d2-b2*x_2)/c2)+b1*x_2= d1);
+eq1: a1*x_1+b1*x_2 = d1;
+eq2: b2*x_2+c2*x_1 = d2;
+matrix_A:matrix([a1,b1],[c2,b2]);
+while determinant(matrix_A) = 0 do matrix_A: matrix([a1,b1],[c2,b2]);
+matrix_A;
+
+matrix_inverse:invert(matrix_A);
+column_vector:matrix([d1],[d2]);
+matrix_variable:matrix([x_1],[x_2]);
+ta:matrix_inverse.column_vector;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>System of the linear equation: \(
+\left\{ \begin{array}{r}
+{@a1*x_1+b1*x_2@} & = {@d1@} \\
+{@b2*x_2+c2*x_1@} &= {@d2@} \\
+
+\end{array}\right.
+\)
+</p>
+<p>Solution for \(x_{1} \) and \(x_{2} \): \({@ta@} \)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>ta</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer of x1 */
+/*Node 2: Checks for the correct answer of x2 */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1450520379</deployedseed>
+    <deployedseed>1315571543</deployedseed>
+    <deployedseed>635765946</deployedseed>
+    <deployedseed>1036727585</deployedseed>
+    <deployedseed>1605754156</deployedseed>
+    <deployedseed>484712357</deployedseed>
+    <deployedseed>1401449961</deployedseed>
+    <deployedseed>491342972</deployedseed>
+    <deployedseed>173106754</deployedseed>
+    <deployedseed>367287079</deployedseed>
+    <deployedseed>41293355</deployedseed>
+    <deployedseed>1177833069</deployedseed>
+    <deployedseed>649826375</deployedseed>
+    <deployedseed>404729481</deployedseed>
+    <deployedseed>1948728521</deployedseed>
+    <deployedseed>1453094889</deployedseed>
+    <deployedseed>1854827364</deployedseed>
+    <deployedseed>1072803243</deployedseed>
+    <deployedseed>25766917</deployedseed>
+    <deployedseed>2096101716</deployedseed>
+    <deployedseed>1198174794</deployedseed>
+    <deployedseed>1233314827</deployedseed>
+    <deployedseed>402812373</deployedseed>
+    <deployedseed>264236122</deployedseed>
+    <deployedseed>1223035669</deployedseed>
+    <deployedseed>573653034</deployedseed>
+    <deployedseed>1743316302</deployedseed>
+    <deployedseed>789561788</deployedseed>
+    <deployedseed>1267866422</deployedseed>
+    <deployedseed>1430120514</deployedseed>
+    <deployedseed>466276174</deployedseed>
+    <deployedseed>1252000098</deployedseed>
+    <deployedseed>836953584</deployedseed>
+    <deployedseed>2031361398</deployedseed>
+    <deployedseed>526794969</deployedseed>
+    <deployedseed>1423117671</deployedseed>
+    <deployedseed>1857159226</deployedseed>
+    <deployedseed>2099311271</deployedseed>
+    <deployedseed>225107373</deployedseed>
+    <deployedseed>418455206</deployedseed>
+    <deployedseed>225978405</deployedseed>
+    <deployedseed>703426958</deployedseed>
+    <deployedseed>927872110</deployedseed>
+    <deployedseed>1296949242</deployedseed>
+    <deployedseed>127384810</deployedseed>
+    <deployedseed>1978357975</deployedseed>
+    <deployedseed>158276569</deployedseed>
+    <deployedseed>1417905786</deployedseed>
+    <deployedseed>2016441975</deployedseed>
+    <deployedseed>88108089</deployedseed>
+    <deployedseed>517141750</deployedseed>
+    <deployedseed>297953753</deployedseed>
+    <deployedseed>634573294</deployedseed>
+    <deployedseed>1942163696</deployedseed>
+    <deployedseed>1828902851</deployedseed>
+    <deployedseed>537736635</deployedseed>
+    <deployedseed>514360981</deployedseed>
+    <deployedseed>1533359797</deployedseed>
+    <deployedseed>611313251</deployedseed>
+    <deployedseed>1200108766</deployedseed>
+    <deployedseed>160470492</deployedseed>
+    <deployedseed>2087247774</deployedseed>
+    <deployedseed>470646065</deployedseed>
+    <deployedseed>215904663</deployedseed>
+    <deployedseed>1263973900</deployedseed>
+    <deployedseed>702455048</deployedseed>
+    <deployedseed>778225198</deployedseed>
+    <deployedseed>241404099</deployedseed>
+    <deployedseed>2048112296</deployedseed>
+    <deployedseed>276678002</deployedseed>
+    <deployedseed>35986870</deployedseed>
+    <deployedseed>112718489</deployedseed>
+    <deployedseed>516082245</deployedseed>
+    <deployedseed>246854297</deployedseed>
+    <deployedseed>1923725369</deployedseed>
+    <deployedseed>439740330</deployedseed>
+    <deployedseed>19103398</deployedseed>
+    <deployedseed>1963828286</deployedseed>
+    <deployedseed>704097589</deployedseed>
+    <deployedseed>1285159103</deployedseed>
+    <deployedseed>155457800</deployedseed>
+    <deployedseed>1482960750</deployedseed>
+    <deployedseed>1556241641</deployedseed>
+    <deployedseed>1290460698</deployedseed>
+    <deployedseed>250488597</deployedseed>
+    <deployedseed>1853667558</deployedseed>
+    <deployedseed>1140544489</deployedseed>
+    <deployedseed>1528959317</deployedseed>
+    <deployedseed>875495390</deployedseed>
+    <deployedseed>1310114895</deployedseed>
+    <deployedseed>996501472</deployedseed>
+    <deployedseed>902467258</deployedseed>
+    <deployedseed>145267421</deployedseed>
+    <deployedseed>341325663</deployedseed>
+    <deployedseed>1001165556</deployedseed>
+    <deployedseed>1208058891</deployedseed>
+    <deployedseed>1667390341</deployedseed>
+    <deployedseed>342028789</deployedseed>
+    <deployedseed>234061992</deployedseed>
+    <deployedseed>2008112015</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

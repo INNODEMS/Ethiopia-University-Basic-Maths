@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Coordinate Transformation: Rotating Axes and Finding New Coordinates</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Given that the \(xy\)-coordinate axes have undergone a \({@angle@}^{\circ}\) counterclockwise rotation about the origin to establish the new \(x'y'\)-coordinate system, determine the coordinates of the following points in relation to the \(x’y’\)-system:</p>
+<p><strong>Note:</strong>
+\(
+x' = x \cos(\theta) - y \sin(\theta) \\
+y' = x \sin(\theta) + y \cos(\theta)
+\)
+Where \(\theta\) is the angle of rotation, which is \({@angle@}^{\circ}\)  in this case.</p>
+
+<p>Calculate the coordinates in the \(x’y’\)-system for each of the following points:</p>
+<ol>
+    <li>\(({@points_xy[1][1]@},{@points_xy[1][2]@})\)
+      \(\begin{pmatrix}x' \\  y' \end{pmatrix}=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]<br>
+    </li>
+    <li>\(({@points_xy[2][1]@},{@points_xy[2][2]@})\)
+      \(\begin{pmatrix}x' \\  y' \end{pmatrix}=\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]<br>
+    </li>
+    <li>\(({@points_xy[3][1]@},{@points_xy[3][2]@})\)
+      \(\begin{pmatrix}x' \\  y' \end{pmatrix}=\) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]<br>
+    </li>
+    <li>\(({@points_xy[4][1]@},{@points_xy[4][2]@})\)
+      \(\begin{pmatrix}x' \\  y' \end{pmatrix}=\) [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]<br>
+    </li>
+    <li>\(({@points_xy[5][1]@},{@points_xy[5][2]@})\)
+        \(\begin{pmatrix}x' \\  y' \end{pmatrix}=\)  [[input:ans5]] [[validation:ans5]] [[feedback:prt5]]
+    </li>
+</ol>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3>Worked Solution</h3>
+<p>When rotating the coordinate axes counterclockwise by \({@angle@}^{\circ}\), you are performing a coordinate transformation using rotation matrices. </p><p>The rotation matrix for a counterclockwise rotation by an angle \(\theta\) is:</p>
+<p>\( R(\theta) = \begin{pmatrix}
+    \cos (\theta) & -\sin (\theta) \\
+    \sin (\theta) & \cos (\theta)
+\end{pmatrix}
+\)</p>
+<p>This rotates column vectors by means of the following matrix multiplication:
+\(
+\begin{pmatrix}
+    x' \\
+    y'
+\end{pmatrix} =
+\begin{pmatrix}
+    \cos \theta & -\sin \theta \\
+    \sin \theta & \cos \theta
+\end{pmatrix}
+\begin{pmatrix}
+    x \\
+    y
+\end{pmatrix}
+\)
+</p>
+<p>In this case, since the angle \(\theta\) is \({@angle@}^{\circ}\), we have:
+</p>
+<p>\( R(\theta) = \begin{pmatrix}
+    \cos ({@angle@}^{\circ}) & -\sin ({@angle@}^{\circ}) \\
+    \sin ({@angle@}^{\circ})& \cos ({@angle@}^{\circ})
+\end{pmatrix} =  {@rotation_matrix@}
+\)</p>
+<p>To find the coordinates of points relative to the new \(x'y'\)-system, you multiply the rotation matrix by the original coordinates. Let's go through each point:</p>
+        <ol>
+            <li>
+                <p> Point \(({@points_xy[1][1]@},{@points_xy[1][2]@})\):</p>
+              <p> \(\begin{pmatrix}x' \\  y' \end{pmatrix}= {@rotation_matrix@}\begin{pmatrix}{@points_xy[1][1]@}\\ {@points_xy[1][2]@}\end{pmatrix}=\begin{pmatrix}{@p[1]@} \\  {@p[2]@}\end{pmatrix}\)
+                Coordinates in <strong>\(x'y'\)</strong>-system: \(\left({@p[1]@}, {@p[2]@}\right)\)
+                </p>
+            </li>
+            <li>
+                <p> Point \(({@points_xy[2][1]@},{@points_xy[2][2]@})\):</p>
+     <p> \(\begin{pmatrix}x' \\  y' \end{pmatrix}= {@rotation_matrix@}\begin{pmatrix}{@points_xy[2][1]@}\\ {@points_xy[2][2]@}\end{pmatrix}=\begin{pmatrix}{@p[3]@} \\  {@p[4]@}\end{pmatrix}\)
+                Coordinates in <strong>\(x'y'\)</strong>-system: \(\left({@p[3]@}, {@p[4]@}\right)\)
+                </p>
+            </li>
+            <li>
+                <p> Point \(({@points_xy[3][1]@},{@points_xy[3][2]@})\):</p>
+             <p> \(\begin{pmatrix}x' \\  y' \end{pmatrix}= {@rotation_matrix@}\begin{pmatrix}{@points_xy[3][1]@}\\ {@points_xy[3][2]@}\end{pmatrix}=\begin{pmatrix}{@p[5]@} \\  {@p[6]@}\end{pmatrix}\)
+                Coordinates in <strong>\(x'y'\)</strong>-system: \(\left({@p[5]@}, {@p[6]@}\right)\)
+                </p>
+            </li>
+            <li>
+                <p> Point \(({@points_xy[4][1]@},{@points_xy[4][2]@})\):</p>
+     <p> \(\begin{pmatrix}x' \\  y' \end{pmatrix}= {@rotation_matrix@}\begin{pmatrix}{@points_xy[4][1]@}\\ {@points_xy[4][2]@}\end{pmatrix}=\begin{pmatrix}{@p[7]@} \\  {@p[8]@}\end{pmatrix}\)
+                Coordinates in <strong>\(x'y'\)</strong>-system: \(\left({@p[7]@}, {@p[8]@}\right)\)
+                </p>
+            </li>
+            <li>
+                <p> Point \(({@points_xy[5][1]@},{@points_xy[5][2]@})\):</p>
+     <p> \(\begin{pmatrix}x' \\  y' \end{pmatrix}= {@rotation_matrix@}\begin{pmatrix}{@points_xy[5][1]@}\\ {@points_xy[5][2]@}\end{pmatrix}=\begin{pmatrix}{@p[9]@} \\  {@p[10]@}\end{pmatrix}\)
+                Coordinates in <strong>\(x'y'\)</strong>-system: \(\left({@p[9]@}, {@p[10]@}\right)\)
+                </p>
+            </li>
+        </ol>
+  
+<p>These are the coordinates of the given points relative to the new <strong>\(x'y'\)</strong>-coordinate system after rotating the <strong>\(xy\)</strong>-coordinate axes <strong>\({@angle@}^{\circ}\)</strong> counterclockwise about the origin.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/* Define the rotation angle in radians */
+angle:rand_with_step(30,1500,30);
+theta: angle*%pi/180;  
+/* Define the rotation matrix */
+rotation_matrix: matrix([cos(theta), -sin(theta)], [sin(theta), cos(theta)]);
+/* Define the points in the xy-system */
+points_xy: [ [rand(5)+5, rand(5)], [rand(9)+1, rand(4)], [rand(10), rand(4)+1], [-1*(rand(5)+1)/(rand(5)+2), (rand(9)+1)/(rand(4)+2)], [(-1*rand(4)+1), (-1*(rand(8)+1))] ];  
+/* Initialize a list to store the results */ points_xyp: [];  
+/* Loop through each point and apply the rotation transformation */
+for p in points_xy do (	 
+	x_new: p[1]*rotation_matrix[1][1] + p[2]*rotation_matrix[1][2],	 
+	y_new: p[1]*rotation_matrix[2][1] + p[2]*rotation_matrix[2][2],	 
+	points_xyp: append(points_xyp, [x_new, y_new]) );  
+/* Display the results */
+p:points_xyp;
+/*Model answers*/
+ta1:matrix([p[1]],[p[2]]);
+ta2:matrix([p[3]],[p[4]]);
+ta3:matrix([p[5]],[p[6]]);
+ta4:matrix([p[7]],[p[8]]);
+ta5:matrix([p[9]],[p[10]]);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>Given that the \(xy\)-coordinate axes have undergone a \({@angle@}^{\circ}\) 
+<ol>
+    <li>\({@points_xy[1]@}\)<br>
+      \((x' y')={@ta1@}\) 
+    </li>
+    <li>\({@points_xy[2]@}\)<br>
+      \((x' y')={@ta2@}\) 
+    </li>
+     <li>\({@points_xy[3]@}\)<br>
+      \((x' y')={@ta3@}\) 
+    </li>
+    <li>\({@points_xy[4]@}\)<br>
+      \((x' y')={@ta4@}\) 
+    </li>
+    <li>\({@points_xy[5]@}\)<br>
+      \((x' y')={@ta5@}\) 
+    </li>
+</ol>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>(</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>ta1</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>ta2</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>matrix</type>
+      <tans>ta3</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>matrix</type>
+      <tans>ta4</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans5</name>
+      <type>matrix</type>
+      <tans>ta5</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/* Define the rotation angle in radians */
+angle:rand_with_step(30,1500,15);
+theta: angle*%pi/180;  
+/* Define the rotation matrix */
+rotation_matrix: matrix([cos(theta), +sin(theta)], [sin(theta), cos(theta)]);
+/* Define the points in the xy-system */
+points_xy: [ [rand(5)+5, rand(5)], [rand(9)+1, rand(4)], [rand(10), rand(4)+1], [-1*(rand(5)+1)/(rand(5)+2), (rand(9)+1)/(rand(4)+2)], [(-1*rand(4)+1), (-1*(rand(8)+1))] ];  
+/* Initialize a list to store the results */ points_xyp: [];  
+/* Loop through each point and apply the rotation transformation */
+for p in points_xy do (	 
+	x_new: p[1]*rotation_matrix[1][1] + p[2]*rotation_matrix[1][2],	 
+	y_new: p[1]*rotation_matrix[2][1] + p[2]*rotation_matrix[2][2],	 
+	points_xyp: append(points_xyp, [x_new, y_new]) );  
+/* Display the results */
+p:points_xyp;
+/*Model answers*/
+mistake1:matrix([p[1]],[p[2]]);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Be cautious of sign errors in the rotation matrix; ensure correct application of signs during multiplication to avoid incorrect values and directions in transformed coordinates.</p>
+<p>In two dimensions, the standard rotation matrix has the following form:
+\[
+R(\theta) = \begin{bmatrix}
+\cos \theta & -\sin \theta \\
+\sin \theta & \cos \theta
+\end{bmatrix}.
+\]
+
+This rotates column vectors by means of the following matrix multiplication:
+\[
+\begin{bmatrix}
+x' \\
+y'
+\end{bmatrix} =
+\begin{bmatrix}
+\cos \theta & -\sin \theta \\
+\sin \theta & \cos \theta
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}.
+\]
+
+Thus, the new coordinates \(x', y')\) of a point \(x, y)\) after rotation are given by:
+\[
+\begin{aligned}
+x' &= x \cos \theta - y \sin \theta, \\
+y' &= x \sin \theta + y \cos \theta.
+\end{aligned}
+\]</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>ta4</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt5</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans5</sans>
+        <tans>ta5</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt5-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt5-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1922333605</deployedseed>
+    <deployedseed>1443906274</deployedseed>
+    <deployedseed>872665964</deployedseed>
+    <deployedseed>1989888159</deployedseed>
+    <deployedseed>523967893</deployedseed>
+    <deployedseed>1737212367</deployedseed>
+    <deployedseed>645511395</deployedseed>
+    <deployedseed>2083293072</deployedseed>
+    <deployedseed>1599645290</deployedseed>
+    <deployedseed>1891827194</deployedseed>
+    <deployedseed>905702826</deployedseed>
+    <deployedseed>752965002</deployedseed>
+    <deployedseed>822773974</deployedseed>
+    <deployedseed>857184109</deployedseed>
+    <deployedseed>645437501</deployedseed>
+    <deployedseed>1689495918</deployedseed>
+    <deployedseed>1841499491</deployedseed>
+    <deployedseed>1618046671</deployedseed>
+    <deployedseed>1495704263</deployedseed>
+    <deployedseed>1520098269</deployedseed>
+    <deployedseed>1819862167</deployedseed>
+    <deployedseed>568326326</deployedseed>
+    <deployedseed>1541953058</deployedseed>
+    <deployedseed>1585799221</deployedseed>
+    <deployedseed>982334509</deployedseed>
+    <deployedseed>919578195</deployedseed>
+    <deployedseed>273958021</deployedseed>
+    <deployedseed>1672980096</deployedseed>
+    <deployedseed>333386315</deployedseed>
+    <deployedseed>224285073</deployedseed>
+    <deployedseed>1939996726</deployedseed>
+    <deployedseed>330528801</deployedseed>
+    <deployedseed>1783910374</deployedseed>
+    <deployedseed>772520261</deployedseed>
+    <deployedseed>1021026616</deployedseed>
+    <deployedseed>1192627346</deployedseed>
+    <deployedseed>888067121</deployedseed>
+    <deployedseed>843249793</deployedseed>
+    <deployedseed>711046952</deployedseed>
+    <deployedseed>817774999</deployedseed>
+    <deployedseed>1842872454</deployedseed>
+    <deployedseed>1506332612</deployedseed>
+    <deployedseed>1563742419</deployedseed>
+    <deployedseed>1131213550</deployedseed>
+    <deployedseed>443161932</deployedseed>
+    <deployedseed>492750274</deployedseed>
+    <deployedseed>1008363483</deployedseed>
+    <deployedseed>859898802</deployedseed>
+    <deployedseed>1036994374</deployedseed>
+    <deployedseed>2121728693</deployedseed>
+    <deployedseed>690644057</deployedseed>
+    <deployedseed>696149198</deployedseed>
+    <deployedseed>854453884</deployedseed>
+    <deployedseed>943546580</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>ta5</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt5</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt5-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

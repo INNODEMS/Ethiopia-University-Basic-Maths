@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Identify set operation in shaded venn diagram</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>The following Venn diagram shows the result of a combination of operations between two sets \(A\) and \(B\) in a universal set \(U\). </p>
+
+[[jsxgraph]]
+var board = JXG.JSXGraph.initBoard(divid, {
+  boundingbox: [1, 8, 9, 2],
+  keepaspectratio: true,
+  showCopyright: false,
+  axis: false
+});
+// Create universe box, vertices v1, v2, v3, v4 and edges 1 to 4
+var v1 = board.create('point', [2, 3], {
+  name: "",
+  size: 0
+});
+var v2 = board.create('point', [2, 7], {
+  name: "",
+  size: 0
+});
+var v3 = board.create('point', [8, 7], {
+  name: "",
+  size: 0
+});
+var v4 = board.create('point', [8, 3], {
+  name: "",
+  size: 0
+});
+var edge1 = board.create('line', [v1, v2], {
+  straightFirst: false,
+  straightLast: false,
+  fixed: true,
+  strokeWidth: 2
+});
+var edge2 = board.create('line', [v2, v3], {
+  straightFirst: false,
+  straightLast: false,
+  fixed: true,
+  strokeWidth: 2
+});
+var edge3 = board.create('line', [v3, v4], {
+  straightFirst: false,
+  straightLast: false,
+  fixed: true,
+  strokeWidth: 2
+});
+var edge4 = board.create('line', [v4, v1], {
+  straightFirst: false,
+  straightLast: false,
+  fixed: true,
+  strokeWidth: 2
+});
+var txt = board.create('text', [1.75, 7.25, "U"], {
+  fontSize: 20,
+  fixed: true
+});
+// create two circles with centres and edge points
+var p1 = board.create('point', [4, 5], {
+  name: "",
+  size: 0
+});
+var p2 = board.create('point', [5.5, 5], {
+  name: "",
+  size: 0
+});
+var a1 = board.create('circle', [p1, p2], {
+  fixed: true
+});
+var txt = board.create('text', [2.5, 6.5, "A"], {
+  fontSize: 20,
+  fixed: true
+});
+var p3 = board.create('point', [6, 5], {
+  name: "",
+  size: 0
+});
+var p4 = board.create('point', [7.5, 5], {
+  name: "",
+  size: 0
+});
+var a2 = board.create('circle', [p3, p4], {
+  fixed: true
+});
+var txt = board.create('text', [7.5, 6.5, "B"], {
+  fontSize: 20,
+  fixed: true
+});
+
+// Create two intersection points
+var i1 = board.create('intersection', [a1, a2, 0], {
+  visible: false
+});
+var i2 = board.create('intersection', [a1, a2, 1], {
+  visible: false
+});
+
+var choice = {#aa#};
+
+if (choice == 1) {
+  // Create two arcs surrounding the intersection area and angle of each
+  var arc11 = i2;
+  var arc12 = i1;
+  var c1 = board.create('arc', [p1, arc11, arc12], {
+    visible: false
+  });
+  var angle1 = board.create('angle', [arc11, p1, arc12], {
+    visible: false
+  });
+  var angleval1 = angle1.Value();
+  var arc21 = i2;
+  var arc22 = i1;
+  var c2 = board.create('arc', [p3, arc21, arc22], {
+    visible: false
+  });
+  var angle2 = board.create('angle', [arc11, p3, arc12], {
+    visible: false
+  });
+  var angleval2 = angle2.Value();
+
+  // create list points on first arc close to each other including endpoints
+  var rotangle = 0.1;
+  var numpoints1 = Math.round(angleval1 / rotangle);
+  var t = board.create('transform', [rotangle, p1], {
+    type: 'rotate'
+  });
+  var q = [];
+  q[0] = arc11;
+  var j = 0;
+  for (j = 1; j < numpoints1; j++) {
+    q[j] = board.create('point', [q[j - 1], t], {
+      visible: false
+    });
+  }
+  var list1 = [q[0], q[1], q[2]];
+  for (j = 3; j < numpoints1; j++) {
+    list1[list1.length] = q[j];
+  }
+  list1[list1.length] = arc12;
+
+  // create list points on second arc close to each other including endpoints
+  var rotangle = 0.1;
+  var numpoints2 = Math.round(angleval2 / rotangle);
+  var t = board.create('transform', [-rotangle, p3], {
+    type: 'rotate'
+  });
+  var r = [];
+  r[0] = arc22;
+  var k = 0;
+  for (k = 1; k < numpoints2; k++) {
+    r[k] = board.create('point', [r[k - 1], t], {
+      visible: false
+    });
+  }
+  var list2 = [r[0], r[1], r[2]];
+  for (k = 3; k < numpoints2; k++) {
+    list2[list2.length] = r[k];
+  }
+  list2[list2.length] = arc21;
+
+  //join two lists and create polygon
+  var list = list1.concat(list2);
+  var poly = board.create('polygon', list);
+} else {
+  if (choice == 2) {
+    // Create two arcs surrounding the intersection area and angle of each
+    var arc11 = i1;
+    var arc12 = i2;
+    var c1 = board.create('arc', [p1, arc11, arc12], {
+      visible: false
+    });
+    var angle1 = board.create('angle', [arc11, p1, arc12], {
+      visible: false
+    });
+    var angleval1 = angle1.Value();
+    var arc21 = i1;
+    var arc22 = i2;
+    var c2 = board.create('arc', [p3, arc21, arc22], {
+      visible: false
+    });
+    var angle2 = board.create('angle', [arc11, p3, arc12], {
+      visible: false
+    });
+    var angleval2 = angle2.Value();
+
+    // create list points on first arc close to each other including endpoints
+    var rotangle = 0.1;
+    var numpoints1 = Math.round(angleval1 / rotangle);
+    var t = board.create('transform', [rotangle, p1], {
+      type: 'rotate'
+    });
+    var q = [];
+    q[0] = arc11;
+    var j = 0;
+    for (j = 1; j < numpoints1; j++) {
+      q[j] = board.create('point', [q[j - 1], t], {
+        visible: false
+      });
+    }
+    var list1 = [q[0], q[1], q[2]];
+    for (j = 3; j < numpoints1; j++) {
+      list1[list1.length] = q[j];
+    }
+    list1[list1.length] = arc12;
+
+    // create list points on second arc close to each other including endpoints
+    var rotangle = 0.1;
+    var numpoints2 = Math.round(angleval2 / rotangle);
+    var t = board.create('transform', [-rotangle, p3], {
+      type: 'rotate'
+    });
+    var r = [];
+    r[0] = arc22;
+    var k = 0;
+    for (k = 1; k < numpoints2; k++) {
+      r[k] = board.create('point', [r[k - 1], t], {
+        visible: false
+      });
+    }
+    var list2 = [r[0], r[1], r[2]];
+    for (k = 3; k < numpoints2; k++) {
+      list2[list2.length] = r[k];
+    }
+    list2[list2.length] = arc21;
+
+    //join two lists and create polygon
+    var list = list1.concat(list2);
+    var poly = board.create('polygon', list);
+  } else {
+    // Create two arcs surrounding the intersection area and angle of each
+    var arc11 = i2;
+    var arc12 = i1;
+    var c1 = board.create('arc', [p1, arc11, arc12], {
+      visible: false
+    });
+    var angle1 = board.create('angle', [arc11, p1, arc12], {
+      visible: false
+    });
+    var angleval1 = angle1.Value();
+    var arc21 = i2;
+    var arc22 = i1;
+    var c2 = board.create('arc', [p3, arc21, arc22], {
+      visible: false
+    });
+    var angle2 = board.create('angle', [arc11, p3, arc12], {
+      visible: false
+    });
+    var angleval2 = angle2.Value();
+
+    // create list points on first arc close to each other including endpoints
+    var rotangle = 0.1;
+    var numpoints1 = Math.round(angleval1 / rotangle);
+    var t = board.create('transform', [rotangle, p1], {
+      type: 'rotate'
+    });
+    var q = [];
+    q[0] = arc11;
+    var j = 0;
+    for (j = 1; j < numpoints1; j++) {
+      q[j] = board.create('point', [q[j - 1], t], {
+        visible: false
+      });
+    }
+    var list1 = [q[0], q[1], q[2]];
+    for (j = 3; j < numpoints1; j++) {
+      list1[list1.length] = q[j];
+    }
+    list1[list1.length] = arc12;
+
+    // create list points on second arc close to each other including endpoints
+    var rotangle = 0.1;
+    var numpoints2 = Math.round(angleval2 / rotangle);
+    var t = board.create('transform', [-rotangle, p3], {
+      type: 'rotate'
+    });
+    var r = [];
+    r[0] = arc22;
+    var k = 0;
+    for (k = 1; k < numpoints2; k++) {
+      r[k] = board.create('point', [r[k - 1], t], {
+        visible: false
+      });
+    }
+    var list2 = [r[0], r[1], r[2]];
+    for (k = 3; k < numpoints2; k++) {
+      list2[list2.length] = r[k];
+    }
+    list2[list2.length] = arc21;
+
+    //join two lists and create polygon
+    var list = list1.concat(list2);
+    var poly = board.create('polygon', list);
+
+    // second shading:
+
+    // Create two arcs surrounding the intersection area and angle of each
+    var arc11 = i1;
+    var arc12 = i2;
+    var c1 = board.create('arc', [p1, arc11, arc12], {
+      visible: false
+    });
+    var angle1 = board.create('angle', [arc11, p1, arc12], {
+      visible: false
+    });
+    var angleval1 = angle1.Value();
+    var arc21 = i1;
+    var arc22 = i2;
+    var c2 = board.create('arc', [p3, arc21, arc22], {
+      visible: false
+    });
+    var angle2 = board.create('angle', [arc11, p3, arc12], {
+      visible: false
+    });
+    var angleval2 = angle2.Value();
+
+    // create list points on first arc close to each other including endpoints
+    var rotangle = 0.1;
+    var numpoints1 = Math.round(angleval1 / rotangle);
+    var t = board.create('transform', [rotangle, p1], {
+      type: 'rotate'
+    });
+    var q = [];
+    q[0] = arc11;
+    var j = 0;
+    for (j = 1; j < numpoints1; j++) {
+      q[j] = board.create('point', [q[j - 1], t], {
+        visible: false
+      });
+    }
+    var list1 = [q[0], q[1], q[2]];
+    for (j = 3; j < numpoints1; j++) {
+      list1[list1.length] = q[j];
+    }
+    list1[list1.length] = arc12;
+
+    // create list points on second arc close to each other including endpoints
+    var rotangle = 0.1;
+    var numpoints2 = Math.round(angleval2 / rotangle);
+    var t = board.create('transform', [-rotangle, p3], {
+      type: 'rotate'
+    });
+    var r = [];
+    r[0] = arc22;
+    var k = 0;
+    for (k = 1; k < numpoints2; k++) {
+      r[k] = board.create('point', [r[k - 1], t], {
+        visible: false
+      });
+    }
+    var list2 = [r[0], r[1], r[2]];
+    for (k = 3; k < numpoints2; k++) {
+      list2[list2.length] = r[k];
+    }
+    list2[list2.length] = arc21;
+
+    //join two lists and create polygon
+    var list = list1.concat(list2);
+    var poly = board.create('polygon', list);
+
+  }
+}
+[[/jsxgraph]]
+
+<br>
+
+<p>Which of the following options represents the set operations represented in the Venn Diagram? Type the number option in the answer box.</p>
+<p>1. \(A\cup \overline{B}\)</p>
+<p>2. \(A\cap \overline{B}\)</p>
+<p>3. \(\overline{A} \cup B\)</p>
+<p>4. \(\overline{A} \cap B\)</p>
+<p>5. \(\overline{A\cup B}\)</p>
+<p>6. \(\overline{A\cap B}\)</p>
+<p>7. \((\overline{A\cap B}) \cup (A\cap B)\)</p>
+<p>8. \((\overline{A\cap B}) \cup (A\cup B)\)</p>
+<p>9. \((\overline{A\cap B}) \cap (A\cap B)\)</p>
+<p>10. \((\overline{A\cap B}) \cap (A\cup B)\)</p>
+<p>11. None of the options above.</p>
+<p>[[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text/>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>aa:rand(3);
+ta:if aa = 0 then 10 else if aa = 1 then 2 else 4;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text>{@aa@}</text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text>\(A\cup \overline{B}\) is the union of \(A\) and the complement of \(B\), so it should include the whole of \(A\) which is not the case in this Venn Diagram.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>10</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-11-T</trueanswernote>
+        <truefeedback format="html">
+          <text>\(A\cap \overline{B}\) is the intersection of \(A\) and everything outside \(B\). This is the whole of \(A\) without the overlap between \(A\) and \(B\) as it cannot include anything in \(B\).</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>11</falsenextnode>
+        <falseanswernote>prt1-11-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>11</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>4</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-12-T</trueanswernote>
+        <truefeedback format="html">
+          <text>\(\overline{A} \cap B\) is the intersection of \(B\) and everything outside \(A\). This is the whole of \(B\) without the overlap between \(A\) and \(B\) as it cannot include anything in \(A\).</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-12-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text>\(\overline{A} \cup B\) is the union of \(B\) and the complement of \(A\), so it should include the whole of \(B\) which is not the case in this Venn Diagram.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>5</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text>\(\overline{A\cup B}\) is the complement of the union between \(A\) and \(B\) so it includes everything that is in the Universal set but not in \(A\) or \(B\), which is not the case in this Venn Diagram.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>4</falsenextnode>
+        <falseanswernote>prt1-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>4</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>6</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-5-T</trueanswernote>
+        <truefeedback format="html">
+          <text>\(\overline{A\cap B}\) is the complement of the intersection of \(A\) and \(B\), which should include everything outside \(A\) and \(B\) as part of the shaded region, which is not the case in this Venn Diagram.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>5</falsenextnode>
+        <falseanswernote>prt1-5-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>5</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>7</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-6-T</trueanswernote>
+        <truefeedback format="html">
+          <text>\((\overline{A\cap B}) \cup (A\cap B)\) is the union of \(\overline{A\cap B}\) and \(A\cap B\) so it should include everything in \(\overline{A\cap B}\) as part of the shaded region, which includes sections outside \(A\) and \(B\), which is not the case in this Venn Diagram.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>6</falsenextnode>
+        <falseanswernote>prt1-6-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>6</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>8</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-7-T</trueanswernote>
+        <truefeedback format="html">
+          <text>\((\overline{A\cap B}) \cup (A\cup B)\) is the union of \(\overline{A\cap B}\) and \(A\cup B\) so it should include everything in \(\overline{A\cap B}\) as part of the shaded region, which includes sections outside \(A\) and \(B\), which is not the case in this Venn Diagram.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>7</falsenextnode>
+        <falseanswernote>prt1-7-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>7</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>9</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-8-T</trueanswernote>
+        <truefeedback format="html">
+          <text>\((\overline{A\cap B}) \cap (A\cap B)\) is the intersection of \(A \cap B\) and its complement. The intersection between a set and its complement is always empty as by definition they don't share any elements. This Venn Diagram is not empty so this cannot be the correct answer.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>8</falsenextnode>
+        <falseanswernote>prt1-8-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>8</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>11</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-9-T</trueanswernote>
+        <truefeedback format="html">
+          <text>There is a correct answer, try drawing the different options and see which one suits the Venn Diagram in the question.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>9</falsenextnode>
+        <falseanswernote>prt1-9-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>9</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>10</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-10-T</trueanswernote>
+        <truefeedback format="html">
+          <text>\((\overline{A\cap B}) \cap (A\cup B)\) is the intersection between \(\overline{A\cap B}\) and \(A\cup B\). \(\overline{A\cap B}\) is the everything except for the region overlapping \(A\) and \(B\) (which is \(A \cap B\)). \(A \cup B\) is the region which includes everything in \(A\) and everything in \(B\) so the entire sets \(A\) and \(B\) should be included. Taking the intersection of these two regions will give us the entirety of \(A\) and \(B\) except for the overlap between them.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>10</falsenextnode>
+        <falseanswernote>prt1-10-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>590137640</deployedseed>
+    <deployedseed>207529159</deployedseed>
+    <deployedseed>1426872832</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>
