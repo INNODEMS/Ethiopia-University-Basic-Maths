@@ -90,12 +90,27 @@
         </p>
     </solution>
 </example>
+            
 
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Argument-(amplitude)-of-a-complex-number/Modulus-and-Argument-of-a-Complex-Number.xml" />
 
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FArgument-%28amplitude%29-of-a-complex-number%2FModulus-and-Argument-of-a-Complex-Number.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-argument-amplitude-of-a-complex.ptx">Add review</url></exercise>
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Argument-(amplitude)-of-a-complex-number/Modulus-and-Argument-of-Complex-Numbers-and-Their-Conjugates.xml" />
+        <exercise>
+            <stack-moodle label="modulus-and-argument-of-a-complex-number" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Argument-(amplitude)-of-a-complex-number/Modulus-and-Argument-of-a-Complex-Number.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FArgument-%28amplitude%29-of-a-complex-number%2FModulus-and-Argument-of-a-Complex-Number.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-argument-amplitude-of-a-complex.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
 
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FArgument-%28amplitude%29-of-a-complex-number%2FModulus-and-Argument-of-Complex-Numbers-and-Their-Conjugates.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-argument-amplitude-of-a-complex.ptx">Add review</url></exercise>
+        <exercise>
+            <stack-moodle label="modulus-and-argument-of-complex-numbers-and-their-conjugates" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Argument-(amplitude)-of-a-complex-number/Modulus-and-Argument-of-Complex-Numbers-and-Their-Conjugates.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FArgument-%28amplitude%29-of-a-complex-number%2FModulus-and-Argument-of-Complex-Numbers-and-Their-Conjugates.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-argument-amplitude-of-a-complex.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
 </subsection>
 

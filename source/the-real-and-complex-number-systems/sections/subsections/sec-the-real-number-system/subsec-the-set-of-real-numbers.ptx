@@ -1,4 +1,4 @@
-<subsection xml:id="subsec-the-set-of-real-numbers" >
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-the-set-of-real-numbers" >
     <title>The set of real numbers</title>
     <introduction>
         <definition xml:id="def-set-of-real-numbers">
@@ -533,8 +533,26 @@
             </exercise>
         </exercises>
     </subsubsection>
+            
 
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-real-numbers/Set-of-Real-numbers.xml" />
 
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-real-numbers%2FSet-of-Real-numbers.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-real-numbers.ptx">Add review</url></exercise>
+        <exercise>
+            <stack-moodle label="simplify-complicated-fraction" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-real-numbers/Simplify-complicated-fraction.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-real-numbers%2FSimplify-complicated-fraction.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-real-numbers.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
+
+        <exercise>
+            <stack-moodle label="terminating-or-non-terminating-periodic-fractions" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-real-numbers/Terminating-or-non-terminating-periodic-fractions.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-real-numbers%2FTerminating-or-non-terminating-periodic-fractions.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-real-numbers.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
 </subsection>

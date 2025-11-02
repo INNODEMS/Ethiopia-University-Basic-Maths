@@ -1,4 +1,4 @@
-<subsection xml:id="subsec-the-set-of-natural-numbers">
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="subsec-the-set-of-natural-numbers">
     <title>The set of natural numbers</title>
     <introduction>
         <p>
@@ -495,9 +495,14 @@
         </example>
 
         <exercise>
-            <stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-natural-numbers/Finding-the-LCM-and-GCF-of-three-integers.xml" />
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-natural-numbers%2FFinding-the-LCM-and-GCF-of-three-integers.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-natural-numbers.ptx">Add review</url>
-      </exercise>
+            <stack-moodle label="finding-the-lcm-and-gcf-of-three-integers" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-natural-numbers/Finding-the-LCM-and-GCF-of-three-integers.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-natural-numbers%2FFinding-the-LCM-and-GCF-of-three-integers.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-natural-numbers.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+
     </subsubsection>
     <subsubsection xml:id="subsubsec-well-ordering-principle-in-the-set-of-natural-numbers">
         <title>Well ordering Principle in the set of natural numbers</title>
@@ -688,11 +693,35 @@
             </solution>
         </example>
     </subsubsection>
+            
 
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-natural-numbers/Proving-the-sum-of-sequence-of-natural-numbers-using-mathematical-induction.xml" />
+        <exercise>
+            <stack-moodle label="proving-the-set-of-natural-numbers-using-mathematical-induction" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-natural-numbers/Proving-the-set-of-natural-numbers-using-mathematical-induction.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-natural-numbers%2FProving-the-set-of-natural-numbers-using-mathematical-induction.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-natural-numbers.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
 
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-natural-numbers%2FProving-the-sum-of-sequence-of-natural-numbers-using-mathematical-induction.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-natural-numbers.ptx">Add review</url></exercise>
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-natural-numbers/Proving-the-set-of-natural-numbers-using-mathematical-induction.xml" />
+        <exercise>
+            <stack-moodle label="proving-the-sum-of-sequence-of-natural-numbers-using-mathematica" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-natural-numbers/Proving-the-sum-of-sequence-of-natural-numbers-using-mathematica.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-natural-numbers%2FProving-the-sum-of-sequence-of-natural-numbers-using-mathematica.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-natural-numbers.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
 
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-natural-numbers%2FProving-the-set-of-natural-numbers-using-mathematical-induction.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-natural-numbers.ptx">Add review</url></exercise>
+        <exercise>
+            <stack-moodle label="proving-use-the-principle-of-mathematical-induction-to-show-that" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-natural-numbers/proving-Use-the-principle-of-mathematical-induction-to-show-that.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-natural-numbers%2Fproving-Use-the-principle-of-mathematical-induction-to-show-that.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-natural-numbers.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
 </subsection>

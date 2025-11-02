@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsection xml:id="tautology-and-contradiction">
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="tautology-and-contradiction">
     <title>Tautology and contradiction</title>
     <definition xml:id="def-tautology-and-contradiction1">
         <statement>
@@ -420,10 +420,18 @@
         </exercise>
     </exercises>
 
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Tautology-and-contradiction/Determine-which-ones-of-statements-are-tautologies.xml" />
 
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FTautology-and-contradiction%2FDetermine-which-ones-of-statements-are-tautologies.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-tautology-and-contradiction.ptx">Add review</url></exercise>
-<!-- <exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Tautology-and-contradiction/Determine-contrapositive,-converse,-inverse,-negation-of-a-condition-statement.xml" />
+<!--  -->
+            
 
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FTautology-and-contradiction%2FDetermine-contrapositive%2C-converse%2C-inverse%2C-negation-of-a-condition-statement.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-tautology-and-contradiction.ptx">Add review</url></exercise> -->
+
+        <exercise>
+            <stack-moodle label="determine-which-ones-of-statements-are-tautologies-2" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Tautology-and-contradiction/Determine-which-ones-of-statements-are-tautologies.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FTautology-and-contradiction%2FDetermine-which-ones-of-statements-are-tautologies.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-tautology-and-contradiction.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
 </subsection>

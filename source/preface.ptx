@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<preface xml:id="preface">
+<preface xml:id="preface" xmlns:xi="http://www.w3.org/2001/XInclude">
     <paragraphs>
         <title>Typing answers in interactive questions</title>
 
@@ -20,44 +20,179 @@
             spreadsheet programs, so you will find it useful to master it.
         </p>
 
+        <exercise>
+            <stack-moodle label="syntax-equation" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Equation.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Equation.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+
     </paragraphs>
+            
 
     <paragraphs>
         <title>Basic operations</title>
-        
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-Equation.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Equation.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
 
         <p>
             <ul>
-                <li>Use a star for multiplication. For example, <m>3x</m> should be entered as <code>3*x</code>.</li>
-                <li>Use a caret (^) for raising something to a power: for example, <m>x^2</m> should be entered as <code>x^2</code></li>
-                <li><m>x^{-2}</m> should be entered as <code>x^(-2)</code></li>
-                <li><m>\displaystyle x^{\frac{1}{3}}</m> should be entered as <code>x^(1/3)</code></li>
+                <li>Use a star for multiplication. For example, <m>3x</m> should be entered as <c>3*x</c>.</li>
+                <li>Use a caret (^) for raising something to a power: for example, <m>x^2</m> should be entered as <c>x^2</c></li>
+                <li><m>x^{-2}</m> should be entered as <c>x^(-2)</c></li>
+                <li><m>\displaystyle x^{\frac{1}{3}}</m> should be entered as <c>x^(1/3)</c></li>
                 <li>Brackets are important to group terms in an expression.</li>
             </ul>
 
         </p>
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-Exponentials.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Exponentials.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-Rational-Expression.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Rational-Expression.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-Logarithms.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Logarithms.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-Polynomials.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Polynomials.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-floating-point-invalid.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-floating-point-invalid.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
-        <!-- <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-floating-point-valid.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-floating-point-valid.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise> -->
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-trigonometry.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-trigonometry.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
+
+        <exercise>
+            <stack-moodle label="syntax-polynomials" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Polynomials.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Polynomials.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
+        <exercise>
+            <stack-moodle label="syntax-rational-expression" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Rational-Expression.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Rational-Expression.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+
+        <exercise>
+            <stack-moodle label="syntax-floating-point-invalid" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-floating-point-invalid.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-floating-point-invalid.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
 
     </paragraphs>
+    
+
+    <paragraphs>
+        <title>Functions and Greek letters</title>
+        <p>Functions always have their arguments in brackets. For example:
+            <ul>
+                <li>\(\cos x\) or \(\ln x\) have to be typed as <c>cos(x)</c> or <c>ln(x)</c>.</li>
+                <li>\(e^x\) can be typed as <c>e^x</c> or <c>exp(x)</c>.</li>
+                <li>Square roots \(\sqrt{x}\) are typed as <c>sqrt(x)</c>, though you can also use <c>x^(1/2)</c>.</li>
+                <li>Greek letters have to be typed using their English names, e.g. \(\alpha\) is typed as <c>alpha</c>.</li>
+            </ul>
+        </p>
+        <p>Below is the full list of Greek letters.
+            <tabular>
+            <row><cell>\(\alpha\)</cell><cell><c>alpha</c></cell></row>
+            <row><cell>\(\beta\)</cell><cell><c>beta</c></cell></row>
+            <row><cell>\(\gamma\)</cell><cell><c>gamma</c></cell></row>
+            <row><cell>\(\delta\)</cell><cell><c>delta</c></cell></row>
+            <row><cell>\(\epsilon\)</cell><cell><c>epsilon</c></cell></row>
+            <row><cell>\(\zeta\)</cell><cell><c>zeta</c></cell></row>
+            <row><cell>\(\eta\)</cell><cell><c>eta</c></cell></row>
+            <row><cell>\(\theta\)</cell><cell><c>theta</c></cell></row>
+            <row><cell>\(\iota\)</cell><cell><c>iota</c></cell></row>
+            <row><cell>\(\kappa\)</cell><cell><c>kappa</c></cell></row>
+            <row><cell>\(\lambda\)</cell><cell><c>lambda</c></cell></row>
+            <row><cell>\(\mu\)</cell><cell><c>mu</c></cell></row>
+            <row><cell>\(\nu\)</cell><cell><c>nu</c></cell></row>
+            <row><cell>\(\xi\)</cell><cell><c>xi</c></cell></row>
+            <row><cell>\(\omicron\)</cell><cell><c>omicron</c></cell></row>
+            <row><cell>\(\pi\)</cell><cell><c>pi</c></cell></row>
+            <row><cell>\(\rho\)</cell><cell><c>rho</c></cell></row>
+            <row><cell>\(\sigma\)</cell><cell><c>sigma</c></cell></row>
+            <row><cell>\(\tau\)</cell><cell><c>tau</c></cell></row>
+            <row><cell>\(\upsilon\)</cell><cell><c>upsilon</c></cell></row>
+            <row><cell>\(\phi\)</cell><cell><c>phi</c></cell></row>
+            <row><cell>\(\chi\)</cell><cell><c>chi</c></cell></row>
+            <row><cell>\(\psi\)</cell><cell><c>psi</c></cell></row>
+            <row><cell>\(\omega\)</cell><cell><c>omega</c></cell></row>
+            </tabular>
+        </p>
+
+        <exercise>
+            <stack-moodle label="syntax-exponentials" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Exponentials.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Exponentials.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
+        <exercise>
+            <stack-moodle label="syntax-square-roots" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Square-roots.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Square-roots.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
+        <exercise>
+            <stack-moodle label="syntax-logarithms" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Logarithms.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Logarithms.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
+        <exercise>
+            <stack-moodle label="syntax-trigonometry" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-trigonometry.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-trigonometry.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+
+    </paragraphs>
+
 
     <paragraphs>
         <title>Other input types</title>
+    
+        <p>There are other input types, such as for multiple choice questions or tables of inputs. You may also be asked to input lists or sets.
+            <ul>
+                <li>Sets are enclosed by curly brackets \( \{a,b,c\} \) is entered <c>{a,b,c}</c></li>
+                <li>Lists are enclosed by square brackets \( [a,b,c] \) is entered <c>[a,b,c]</c></li>
+            </ul>
+        </p>
 
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-Sets-Lists.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Sets-Lists.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
-        <!-- <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-equiv.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-equiv.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise> -->
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Drop-down-list-Question.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FDrop-down-list-Question.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
-        <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Questions-with-a-Table.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FQuestions-with-a-Table.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise>
-        <!-- <exercise><stack source="/questions/top/Default-for-Typing-Answers-Quiz/Syntax-inequalities.xml" /><url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=%2Fquestions%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-inequalities.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url></exercise> -->
+        <exercise>
+            <stack-moodle label="syntax-sets-lists" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Sets-Lists.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Sets-Lists.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
 
+        <exercise>
+            <stack-moodle label="multiple-choice-question" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Multiple-choice-Question.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FMultiple-choice-Question.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
+
+        <exercise>
+            <stack-moodle label="questions-with-a-table" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Questions-with-a-Table.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FQuestions-with-a-Table.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
+            </conclusion>
+        </exercise>
     </paragraphs>
 
+
 </preface>
-
-

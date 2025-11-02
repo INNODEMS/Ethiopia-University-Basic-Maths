@@ -85,15 +85,27 @@
     proof <m>(d) \ \ \ \left | \frac{z_{1}}{z_{2}} \right | = \sqrt{\frac{z_{1} \cdot \overline{z_{1}}}{z_{2} \cdot \overline{z_{2}}}} = \sqrt{\frac{\left |z_{1} \right |^{2}}{\left |z_{2} \right |^{2}}} = \frac{\left |z_{1} \right |}{\left |z_{2} \right |}</m> (if <m>z_{2} \neq 0</m>)
 </p>
 <p>The others are left for the reader.</p>
+            
 
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Modulus-(norm)-of-a-complex-number/Modulus-and-Argument-of-a-Complex-Number.xml" />
 
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FModulus-%28norm%29-of-a-complex-number%2FModulus-and-Argument-of-a-Complex-Number.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-modulus-norm-of-a-complex.ptx">Add review</url></exercise>
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Modulus-(norm)-of-a-complex-number/Finding-the-modulus-of-a-complex-number.xml" />
+        <exercise>
+            <stack-moodle label="finding-the-modulus-of-a-complex-number" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Modulus-(norm)-of-a-complex-number/Finding-the-modulus-of-a-complex-number.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FModulus-%28norm%29-of-a-complex-number%2FFinding-the-modulus-of-a-complex-number.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-modulus-norm-of-a-complex.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
 
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FModulus-%28norm%29-of-a-complex-number%2FFinding-the-modulus-of-a-complex-number.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-modulus-norm-of-a-complex.ptx">Add review</url></exercise>
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Modulus-(norm)-of-a-complex-number/Modulus-of-complex-numbers.xml" />
-
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FModulus-%28norm%29-of-a-complex-number%2FModulus-of-complex-numbers.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-modulus-norm-of-a-complex.ptx">Add review</url></exercise>
+        <exercise>
+            <stack-moodle label="modulus-of-complex-numbers" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Modulus-(norm)-of-a-complex-number/Modulus-of-complex-numbers.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FModulus-%28norm%29-of-a-complex-number%2FModulus-of-complex-numbers.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-modulus-norm-of-a-complex.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
 </subsection>
 

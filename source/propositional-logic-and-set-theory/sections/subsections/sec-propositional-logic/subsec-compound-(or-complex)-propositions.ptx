@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsection xml:id="compound-or-complex-propositions">
+<subsection xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="compound-or-complex-propositions">
     <title>Compound (or complex) propositions</title>
 
     <p>
@@ -351,12 +351,56 @@
             </li>
         </ol>
     </p>
+            
 
 
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Compound-(or-complex)-propositions/Determine-which-ones-of-statements-are-tautologies.xml" />
+        <exercise>
+            <stack-moodle label="determine-contrapositive-converse-inverse-negation-of-a-condi" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Compound-(or-complex)-propositions/Determine-contrapositive,-converse,-inverse,-negation-of-a-condi.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FCompound-%28or-complex%29-propositions%2FDetermine-contrapositive%2C-converse%2C-inverse%2C-negation-of-a-condi.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-compound-%28or-complex%29-propositions.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
 
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FCompound-%28or-complex%29-propositions%2FDetermine-which-ones-of-statements-are-tautologies.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-compound-%28or-complex%29-propositions.ptx">Add review</url></exercise>
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Compound-(or-complex)-propositions/Determine-contrapositive,-converse,-inverse,-negation-of-a-condition-statement.xml" />
+        <exercise>
+            <stack-moodle label="determine-which-ones-of-statements-are-tautologies" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Compound-(or-complex)-propositions/Determine-which-ones-of-statements-are-tautologies.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FCompound-%28or-complex%29-propositions%2FDetermine-which-ones-of-statements-are-tautologies.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-compound-%28or-complex%29-propositions.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
 
-                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=questions%2Ftop%2FMathematics-for-NS-%26-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FCompound-%28or-complex%29-propositions%2FDetermine-contrapositive%2C-converse%2C-inverse%2C-negation-of-a-condition-statement.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-compound-%28or-complex%29-propositions.ptx">Add review</url></exercise>
+        <exercise>
+            <stack-moodle label="statement-and-its-contrapositive-truth-values-q4" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Compound-(or-complex)-propositions/Statement-and-its-contrapositive,-truth-values-Q4.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FCompound-%28or-complex%29-propositions%2FStatement-and-its-contrapositive%2C-truth-values-Q4.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-compound-%28or-complex%29-propositions.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
+
+        <exercise>
+            <stack-moodle label="determine-statements-which-are-equivalent-to-each-other" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Compound-(or-complex)-propositions/Determine-statements-which-are-equivalent-to-each-other.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FCompound-%28or-complex%29-propositions%2FDetermine-statements-which-are-equivalent-to-each-other.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-compound-%28or-complex%29-propositions.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
+
+        <exercise>
+            <stack-moodle label="statement-and-its-converse-truth-values-q4" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Compound-(or-complex)-propositions/Statement-and-its-converse,-truth-values-Q4.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FCompound-%28or-complex%29-propositions%2FStatement-and-its-converse%2C-truth-values-Q4.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-compound-%28or-complex%29-propositions.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
 </subsection>

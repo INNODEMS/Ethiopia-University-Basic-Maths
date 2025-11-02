@@ -310,9 +310,67 @@
         </p>
     </solution>
 </example>
+            
 
 
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Polar-form-of-a-complex-number/Converting-Complex-Numbers-Rectangular-to-Polar-Form.xml" /></exercise>
-<exercise><stack source="/questions/top/Mathematics-for-NS-&amp;-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Polar-form-of-a-complex-number/Conversion-to-Polar-Form-Complex-Number-z-=-x-+-yi.xml" /></exercise>
+        <exercise>
+            <stack-moodle label="conversion-to-polar-form-complex-number-z-x-yi" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Polar-form-of-a-complex-number/Conversion-to-Polar-Form-Complex-Number-z-=-x-+-yi.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FPolar-form-of-a-complex-number%2FConversion-to-Polar-Form-Complex-Number-z-%3D-x-%2B-yi.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-polar-form-of-a-complex.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
+
+        <exercise>
+            <stack-moodle label="complex-number-operations-in-trigonometric-form" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Polar-form-of-a-complex-number/Complex-Number-Operations-in-Trigonometric-Form.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FPolar-form-of-a-complex-number%2FComplex-Number-Operations-in-Trigonometric-Form.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-polar-form-of-a-complex.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
+
+        <exercise>
+            <stack-moodle label="conversion-of-complex-number-cartesian-to-polar-and-exponential" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Polar-form-of-a-complex-number/Conversion-of-Complex-Number-Cartesian-to-Polar-and-Exponential.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FPolar-form-of-a-complex-number%2FConversion-of-Complex-Number-Cartesian-to-Polar-and-Exponential.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-polar-form-of-a-complex.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
+
+        <exercise>
+            <stack-moodle label="plotting-complex-numbers-on-an-argand-diagram-with-polar-forms" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Polar-form-of-a-complex-number/Plotting-complex-numbers-on-an-Argand-diagram-(with-polar-forms).xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FPolar-form-of-a-complex-number%2FPlotting-complex-numbers-on-an-Argand-diagram-%28with-polar-forms%29.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-polar-form-of-a-complex.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
+
+        <exercise>
+            <stack-moodle label="converting-complex-numbers-rectangular-to-polar-form" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Polar-form-of-a-complex-number/Converting-Complex-Numbers-Rectangular-to-Polar-Form.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FPolar-form-of-a-complex-number%2FConverting-Complex-Numbers-Rectangular-to-Polar-Form.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-polar-form-of-a-complex.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
+
+        <exercise>
+            <stack-moodle label="evaluating-square-roots-of-complex-numbers-in-rectangular-and-po" xmlns="http://stack-assessment.org/2025/moodle-question">
+                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/Polar-form-of-a-complex-number/Evaluating-Square-Roots-of-Complex-Numbers-in-Rectangular-and-Po.xml" />
+            </stack-moodle>
+            <conclusion component="review">
+                <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FPolar-form-of-a-complex-number%2FEvaluating-Square-Roots-of-Complex-Numbers-in-Rectangular-and-Po.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-set-of-complex-numbers%2Fsubsec-polar-form-of-a-complex.ptx">Add review</url>
+            </conclusion>
+        </exercise>
+            
 </subsection>
 
