@@ -600,7 +600,7 @@
                 </proof>
             </solution>
         </example>
-        <example>
+        <!-- <example>
             <statement>
                 <p>
                     Show that <m> 1 + 2 + 3 + \cdots + (n) = \frac{n (n + 1)}{2}\text{.}</m>
@@ -633,7 +633,7 @@
                             <mrow> \amp = \frac{(k+1)(k+2)}{2} \,\, \text{which is the required result.} </mrow>
                         </md>
                     </p>
-                    <!-- <p>
+                     <p>
                         Now <m>\quad 1+2+3+\cdots+(k)+(k+1) = \frac{k(k+1)}{2} + (k+1) </m>
                     </p>
                     <p>
@@ -641,13 +641,13 @@
                     </p>
                     <p>
                         <m>\qquad \qquad \qquad \qquad  \qquad \qquad = \frac{(k+1)(k+2)}{2} \,\,</m> which is the required result.
-                    </p> -->
+                    </p>
                     <p>
                         <m>\therefore</m> It is true for any natural number <m>n</m>.
                     </p>
                 </proof>
             </solution>
-        </example>
+        </example> -->
         <example>
             <statement>
                 <p>
