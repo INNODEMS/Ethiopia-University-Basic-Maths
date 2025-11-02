@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Terminating or non-terminating periodic fractions</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which of the following are terminating fractions?</p>
+<p>[[input:ans1]] [[validation:ans1]]</p>
+<p>[[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked solution</h3>
+<p>{@n1@} and {@n2@} are terminating as their denominator only contains prime factors 2 and 5.</p>
+<p>{@n3@} is not terminating as its denominator contains the prime factor {@denom1@}.</p>
+<p>{@n4@} is not terminating as its denominator contains the prime factor {@denom2@}.</p>
+<p>\(\frac{{@nn5@}}{@dd5@}\) is terminating as we can reduce the fraction by {@denom3@} to get {@n5@}, leaving only prime factors 2 and 5 in the denominator.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2025073100</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[[denom1, denom2, denom3]: rand_selection([3, 7, 9, 11, 13, 17], 3);
+n1: denom1 / (2^rand(2)*5^(rand(2)+2));
+n2: denom2 / (2^(rand(3)+3));
+n3: (rand(3)*denom1+rand(denom1-1)+1) / (denom1 * 2^(rand(2)+1));
+n4: (rand(3)*denom2+rand(denom2-1)+1) / (denom2 * 2^(rand(2)+1));
+nn5: ((rand(3)+2)*denom3);
+dd5: (denom3 * 5^(rand(2)+1));
+n5: nn5 / dd5;
+
+all_choices: [
+[1, true, n1],
+[2, true, n2],
+[3, false, n3],
+[4, false, n4],
+[5, true, castext("\\(\\frac{{@nn5@}}{@dd5@}\\)")]
+];
+
+choices: random_permutation(all_choices);
+]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text>{@n1@},{@n2@},{@n3@},{@n4@},{@n5@}</text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <isbroken>0</isbroken>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>checkbox</type>
+      <tans>choices</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mcq_correct(choices)</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>280540471</deployedseed>
+    <deployedseed>134957157</deployedseed>
+    <deployedseed>1827515080</deployedseed>
+    <deployedseed>1303157275</deployedseed>
+    <deployedseed>1832884804</deployedseed>
+    <deployedseed>2037334387</deployedseed>
+    <deployedseed>519787199</deployedseed>
+    <deployedseed>1642815653</deployedseed>
+    <deployedseed>137800512</deployedseed>
+    <deployedseed>543869505</deployedseed>
+    <deployedseed>1980960682</deployedseed>
+    <deployedseed>1017188979</deployedseed>
+    <deployedseed>176778146</deployedseed>
+    <deployedseed>1745699260</deployedseed>
+    <deployedseed>47010503</deployedseed>
+    <deployedseed>674704839</deployedseed>
+    <deployedseed>756787468</deployedseed>
+    <deployedseed>675949528</deployedseed>
+    <deployedseed>1066640046</deployedseed>
+    <deployedseed>2143530287</deployedseed>
+    <deployedseed>818918412</deployedseed>
+    <deployedseed>225729797</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>mcq_correct(choices)</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

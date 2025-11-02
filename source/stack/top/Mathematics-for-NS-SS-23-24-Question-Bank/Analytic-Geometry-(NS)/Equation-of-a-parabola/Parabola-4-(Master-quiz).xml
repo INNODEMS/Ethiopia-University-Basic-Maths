@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Parabola 4 (Master quiz)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Find the focus and directrix of the parabola \( (c): {@parabola@} \)</p>
+<br> 1. a) Rewrite the parabola (c)  in the form \(X^{2} = 4 p Y\).
+<br>  \( \quad \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+<br> 2. We recall that in general, \((c): (x-x_{0})^{2}= 4 p (y - y_{0}) \) has focus \(F(x_{0}, y_{0}+p)\) and directrix \((l): y = y_{0}-p\) .
+<br>  Find the focus and directrix of the parabola (c). 
+<br> Focus: \( F\) ([[input:ans2]], [[input:ans3]])  [[feedback:prtA]]
+  <br>  \( \qquad \qquad \)  [[validation:ans2]] \(\qquad\) [[validation:ans3]] 
+<br> Directrix \((l):\) [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<br><b>Worked solution</b>
+<br> 1. a) Rewrite the parabola (c)  in the form \(X^{2} = 4 p Y\).
+<br> \( (c): {@parabola@} \)
+<br>\(
+\begin{array}{rc}
+\Leftrightarrow & ({@expr1@})+({@expr2@})= 0 \\ 
+\Leftrightarrow &{@(x-aa)^2@}+({@expr2@})= 0 \\ 
+\Leftrightarrow & {@(x-aa)^2@}=({@ev(-expr2,simp)@}) \\ 
+\Leftrightarrow & {@(x-aa)^2@}= 4 \cdot ({@pp@})({@y-cc@}) 
+\end{array}
+\)
+<br> So, \( X = {@x-aa@}\), \(p={@pp@} \) and \( Y = {@y-cc@} \).
+<br> 2.  Find the focus and directrix of the parabola (c). 
+<br>In general, \((c): (x-x_{0})^{2}= 4 p (y - y_{0}) \) has focus \(F(x_{0}, y_{0}+p)\) and directrix \((l): y = y_{0}-p\) 
+<br> It follows that \(y_{0} = {@cc@} \),  \( x_{0}= {@aa@} \) and \(p={@pp@}\).
+<br> Therefore, Focus: \(F({@aa@},{@cc+pp@}) \equiv ({@aa@},{@ev(cc+pp,simp)@}) \) and directrix \( (l): y = {@cc-pp@}= {@ev(cc-pp,simp)@}\)]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2022071300</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*Defining parabola equation*/
+aa: rand_with_step(-5,5,1); /*value of y0*/
+pp: rand_with_step(-4,4,1); /*value of pp*/
+cc: rand_with_step(-5,5,1); /*value of x0*/
+parabola: expand((x-aa)^2-4*pp*(y-cc))=0;
+
+/*Coordinates of the focus*/
+ta2:  aa; /*abscissa*/
+ta3: cc+pp; /*ordinate*/
+/*Directrix*/
+ta4: y=cc-pp;
+
+/*Worked solution*/
+expr1: expand((x-aa)^2);
+expr2: expand((x-aa)^2-4*pp*(y-cc))-expr1;
+simp:false;
+ta1: (x-aa)^2=4*pp*(y-cc);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>Find the focus and directrix of the parabola \( (c): {@parabola@} \)</p>
+<br> 1. a) Rewrite the parabola (c)  in the form \(X^{2} = 4 p Y\). {@ta1@}
+<br> 2. We recall that in general, \((c): (x-x_{0})^{2}= 4 p (y - y_{0}) \) has focus \(F(x_{0}, y_{0}+p)\) and directrix \((l): y = y_{0}-p\) .
+<br>  Find the focus and directrix of the parabola (c). 
+<br> Focus: \( F\) ({@ta2@}, {@ta2@})  and  Directrix \((l):{@ta4@}\)]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <isbroken>0</isbroken>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>ta4</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node1: Check correct answer*/
+/*Node 2: Mistake using variable y*/
+mistake: y=cc-pp;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>ta4</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>mistake</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text>You used the variable \(x\) instead of \(y\).</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prtA</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prtA-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prtA-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtA-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtA-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<br>From question 1, we have \((c): {@parab_red@} \), which is equivalent to the form \((y-y_{0})^{2}= 4 p (x - x_{0}) \).
+<br>Clearly, \(x_{0} = {@cc@} \),  \( y_{0}= {@aa@} \) and \(p={@pp@}\), so \(F({@cc+pp@},{@aa@})\).]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1222775824</deployedseed>
+    <deployedseed>700626544</deployedseed>
+    <deployedseed>1230792454</deployedseed>
+    <deployedseed>186212981</deployedseed>
+    <deployedseed>499388504</deployedseed>
+    <deployedseed>710130059</deployedseed>
+    <deployedseed>371183404</deployedseed>
+    <deployedseed>1632229513</deployedseed>
+    <deployedseed>1906672308</deployedseed>
+    <deployedseed>1419387980</deployedseed>
+    <deployedseed>1644232012</deployedseed>
+    <deployedseed>460609709</deployedseed>
+    <deployedseed>1284311712</deployedseed>
+    <deployedseed>817646269</deployedseed>
+    <deployedseed>225993831</deployedseed>
+    <deployedseed>1423340221</deployedseed>
+    <deployedseed>65732808</deployedseed>
+    <deployedseed>1441019926</deployedseed>
+    <deployedseed>1758547042</deployedseed>
+    <deployedseed>1116550132</deployedseed>
+    <deployedseed>2072769899</deployedseed>
+    <deployedseed>776980929</deployedseed>
+    <deployedseed>1426493720</deployedseed>
+    <deployedseed>72664686</deployedseed>
+    <deployedseed>797383933</deployedseed>
+    <deployedseed>333075072</deployedseed>
+    <deployedseed>1718338073</deployedseed>
+    <deployedseed>1628649772</deployedseed>
+    <deployedseed>2015412284</deployedseed>
+    <deployedseed>186220703</deployedseed>
+    <deployedseed>2056807266</deployedseed>
+    <deployedseed>110325692</deployedseed>
+    <deployedseed>399522759</deployedseed>
+    <deployedseed>717492974</deployedseed>
+    <deployedseed>1574440335</deployedseed>
+    <deployedseed>1450226168</deployedseed>
+    <deployedseed>222324360</deployedseed>
+    <deployedseed>123779997</deployedseed>
+    <deployedseed>153633148</deployedseed>
+    <deployedseed>365785406</deployedseed>
+    <deployedseed>1737056824</deployedseed>
+    <deployedseed>2137067873</deployedseed>
+    <deployedseed>177357620</deployedseed>
+    <deployedseed>1204914365</deployedseed>
+    <deployedseed>457237036</deployedseed>
+    <deployedseed>384828753</deployedseed>
+    <deployedseed>2144974111</deployedseed>
+    <deployedseed>1291571134</deployedseed>
+    <deployedseed>801833767</deployedseed>
+    <deployedseed>952257952</deployedseed>
+    <deployedseed>476257489</deployedseed>
+    <deployedseed>1867639424</deployedseed>
+    <deployedseed>289624210</deployedseed>
+    <deployedseed>1919732792</deployedseed>
+    <deployedseed>2124409666</deployedseed>
+    <deployedseed>242965975</deployedseed>
+    <deployedseed>1121966607</deployedseed>
+    <deployedseed>1714821784</deployedseed>
+    <deployedseed>512132039</deployedseed>
+    <deployedseed>1002358759</deployedseed>
+    <deployedseed>675177757</deployedseed>
+    <deployedseed>1573435668</deployedseed>
+    <deployedseed>1548960068</deployedseed>
+    <deployedseed>802870376</deployedseed>
+    <deployedseed>598908547</deployedseed>
+    <deployedseed>1236215564</deployedseed>
+    <deployedseed>1992498532</deployedseed>
+    <deployedseed>896619439</deployedseed>
+    <deployedseed>1479255272</deployedseed>
+    <deployedseed>1046574642</deployedseed>
+    <deployedseed>930242160</deployedseed>
+    <deployedseed>283775718</deployedseed>
+    <deployedseed>1720302633</deployedseed>
+    <deployedseed>1750782614</deployedseed>
+    <deployedseed>741240943</deployedseed>
+    <deployedseed>626312326</deployedseed>
+    <deployedseed>1490391182</deployedseed>
+    <deployedseed>1410029008</deployedseed>
+    <deployedseed>1074353343</deployedseed>
+    <deployedseed>310383491</deployedseed>
+    <deployedseed>1058493698</deployedseed>
+    <deployedseed>1655810676</deployedseed>
+    <deployedseed>2080090879</deployedseed>
+    <deployedseed>193427186</deployedseed>
+    <deployedseed>2014815088</deployedseed>
+    <deployedseed>529495157</deployedseed>
+    <deployedseed>1178490611</deployedseed>
+    <deployedseed>277019598</deployedseed>
+    <deployedseed>1079698518</deployedseed>
+    <deployedseed>1628946030</deployedseed>
+    <deployedseed>978326112</deployedseed>
+    <deployedseed>784220267</deployedseed>
+    <deployedseed>991195286</deployedseed>
+    <deployedseed>926196698</deployedseed>
+    <deployedseed>1475149933</deployedseed>
+    <deployedseed>1354459798</deployedseed>
+    <deployedseed>415364424</deployedseed>
+    <deployedseed>2049831530</deployedseed>
+    <deployedseed>1529394727</deployedseed>
+    <deployedseed>1393411128</deployedseed>
+  </question>
+</quiz>

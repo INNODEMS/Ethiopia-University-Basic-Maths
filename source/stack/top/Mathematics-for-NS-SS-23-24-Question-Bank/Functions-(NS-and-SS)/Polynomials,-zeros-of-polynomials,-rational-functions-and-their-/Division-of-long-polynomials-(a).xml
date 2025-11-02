@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Division of long polynomials (a)</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Perform long division</p>
+<p>\( ({@fx@}) \div ({@gx@})=\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3>Worked Solution</h3>
+
+
+
+<body>
+    <table style="margin-bottom:0pt; border-collapse:collapse;">
+        <tbody>
+            <tr>
+                <td >
+                    <p > </p>
+                </td>
+                <td style="width:20.8pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:43pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:24.75pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:35.85pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >\({@a1@}\)</p>
+                </td>
+                <td style="width:21.4pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >+</p>
+                </td>
+                <td style="width:35.85pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >\({@a2@}\)</p>
+                </td>
+                <td style="width:21.4pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >+</p>
+                </td>
+                <td style="width:23.7pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >\({@a3@}\)</p>
+                </td>
+                <td style="width:20.55pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:19.35pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:21.05pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >x</p>
+                </td>
+                <td style="width:20.8pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >-</p>
+                </td>
+                <td style="width:43pt; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt;  ">
+                    <p >\({@ee@}\)</p>
+                </td>
+                <td style="width:24.75pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; padding-right:5.4pt; padding-left:5.03pt; ">
+                    <p > </p>
+                </td>
+                <td style="width:27.85pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >\({@aa*x^3 @}\)</p>
+                </td>
+                <td style="width:21.4pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >+</p>
+                </td>
+                <td style="width:27.85pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >\({@bb*x^2 @}\)</p>
+                </td>
+                <td style="width:21.4pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >-</p>
+                </td>
+                <td style="width:23.7pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >\({@cc*x@}\)</p>
+                </td>
+                <td style="width:20.55pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >-</p>
+                </td>
+                <td style="width:19.35pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >\({@dd@}\)</p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:21.05pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:20.8pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:43pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:24.75pt; padding-right:5.4pt;  ">
+                    <p >-</p>
+                </td>
+                <td style="width:40.85pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >( \({@aa*x^3@}\)</p>
+                </td>
+                <td style="width:21.4pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >-</p>
+                </td>
+                <td style="width:45.85pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p > \({@a1*ee@}\) )</p>
+                </td>
+                <td style="width:21.4pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:23.7pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:20.55pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <p > </p>
+                </td>
+                <td style="width:20.8pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:43pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:24.75pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:27.85pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:21.4pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:35.85pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >\({@bb*x^2+a1*ee@}\)</p>
+                </td>
+                <td style="width:21.4pt; padding-right:5.4pt;  ">
+                    <p >-</p>
+                </td>
+                <td style="width:23.7pt; padding-right:5.4pt;  ">
+                    <p >\({@cc*x@}\)</p>
+                </td>
+                <td style="width:20.55pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <p > </p>
+                </td>
+                <td style="width:20.8pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:43pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:24.75pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:27.85pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:21.4pt; padding-right:5.4pt;  ">
+                    <p >-</p>
+                </td>
+                <td style="width:35.85pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >(\({@bb*x^2+a1*ee@}\)</p>
+                </td>
+                <td style="width:21.4pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >-</p>
+                </td>
+                <td style="width:45.7pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >\({@a2*ee@}\) )</p>
+                </td>
+                <td style="width:20.55pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <p > </p>
+                </td>
+                <td style="width:20.8pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:43pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:24.75pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:27.85pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:21.4pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:27.85pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:21.4pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:35.7pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >\({@-cc*x+a2*ee@}\)</p>
+                </td>
+                <td style="width:20.55pt; padding-right:5.4pt;  ">
+                    <p >-</p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p >\({@dd@}\)</p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <p > </p>
+                </td>
+                <td style="width:20.8pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:43pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:24.75pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:27.85pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:21.4pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:27.85pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:21.4pt; padding-right:5.4pt;  ">
+                    <p >-</p>
+                </td>
+                <td style="width:35.7pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >(\({@-cc*x+a2*ee@}\)</p>
+                </td>
+                <td style="width:20.55pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >-</p>
+                </td>
+                <td style="width:35.35pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >\({@a3*ee@}\))</p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <p > </p>
+                </td>
+                <td style="width:20.8pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:43pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:24.75pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:27.85pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:21.4pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:27.85pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:21.4pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:23.7pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:20.55pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:35.35pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p >\({@-dd+a3*ee@}\)</p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+                <td style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p > </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p> </p>
+    <p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0;">Converted to HTML with WordToHTML.net</a></p>
+</body>
+
+</html></p>
+<p> So \(\displaystyle \frac{{@fx@}}{{@gx@}}={@div[1]@}+{@(div[2]/gx)@}.\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>aa:rand_with_step(2,6,1);
+bb:rand_with_prohib(1, 8, [aa]);
+cc:rand_with_prohib(1, 8, [aa,bb]);
+dd:rand_with_prohib(1, 8, [aa,bb,cc]);
+ee:rand_with_step(1,6,1);
+fx :aa*x^3 + bb*x^2 - cc*x - dd;
+gx: x - ee;
+div:divide(fx,gx);
+ta:div[1]+(div[2]/gx);
+a1:first(div[1]);
+a2:second(div[1]);
+a3:third(div[1]);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>\(\displaystyle \frac{{@fx@}}{{@gx@}}={@div[1]@}+{@(div[2]/gx)@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="html">
+      <text><![CDATA[<p id="author">Nixson Kiplagat</p>
+<p id="concept">https://docs.google.com/document/d/13jkKCZcgRghuaSki69GOQdbNYbrdeLhWK2BzbOcLp_I/edit#heading=h.vy8x1tbmoha9</p>
+<p id="reviewer">Godfrey Wabwire</p>
+<p id="reviewer">Wastalas Motognon</p>
+<p id="description">Performing long division of polynomials</p>]]></text>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <isbroken>0</isbroken>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>e.g: 4*x^2-3*x-7 + (5/x-3)</syntaxhint>
+      <syntaxattribute>1</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>Checks for the correct answer</description>
+        <answertest>EqualComAss</answertest>
+        <sans>ans1</sans>
+        <tans>ta</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>637219039</deployedseed>
+    <deployedseed>106173793</deployedseed>
+    <deployedseed>69072599</deployedseed>
+    <deployedseed>323548737</deployedseed>
+    <deployedseed>1789393389</deployedseed>
+    <deployedseed>642734322</deployedseed>
+    <deployedseed>1295899048</deployedseed>
+    <deployedseed>1749097210</deployedseed>
+    <deployedseed>946471384</deployedseed>
+    <deployedseed>1429179612</deployedseed>
+    <deployedseed>397853469</deployedseed>
+    <deployedseed>691853195</deployedseed>
+    <deployedseed>684728373</deployedseed>
+    <deployedseed>1954538989</deployedseed>
+    <deployedseed>1319979050</deployedseed>
+    <deployedseed>1573845170</deployedseed>
+    <deployedseed>1563146832</deployedseed>
+    <deployedseed>1460069113</deployedseed>
+    <deployedseed>1420139554</deployedseed>
+    <deployedseed>211998309</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

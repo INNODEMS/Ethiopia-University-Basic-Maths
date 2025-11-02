@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="description">
+    <name>
+      <text>Information 4</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>There are other input types, such as for multiple choice questions or tables of inputs. You may also be asked to input lists or sets.</p>
+
+<ul>
+<li>Sets are enclosed by curly brackets \( \{a,b,c\} \) is entered <code>{a,b,c}</code></li>
+<li>Lists are enclosed by square brackets \( [a,b,c] \) is entered <code>[a,b,c]</code></li>
+</ul>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text/>
+    </generalfeedback>
+    <defaultgrade>0</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+  </question>
+</quiz>

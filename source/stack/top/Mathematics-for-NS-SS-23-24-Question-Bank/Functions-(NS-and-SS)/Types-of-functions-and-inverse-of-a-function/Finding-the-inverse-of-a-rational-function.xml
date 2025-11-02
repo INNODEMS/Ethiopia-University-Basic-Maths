@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Finding the inverse of a rational function</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<!--/*Find \(g^{-1}\)(x)\).*/-->
+<p>Consider the function, \( \displaystyle g(x)=\frac{{@num@}}{{@denome@}} \)</p>
+<p>Find the inverse function \( \displaystyle g^{-1}(x)\)</p>
+<p style="margin-left: 30px">\( \displaystyle g^{-1} (x) = \) [[input:ans1]] [[validation:ans1]]</p>
+<p>[[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked solution</h3></p>
+<p>To find the inverse of the function, we follow the procedure below.<p> 
+<p>1. Replace the \(g(x)\) in {@quest@} with \(y\).</p>
+<p style="margin-left: 30px">\( \displaystyle {@quest_1@} \)</p>
+
+<p>2. Change all the \(x\)'s in the equation to \(y\), and all of the \(y\)'s to \(x\).</p>
+<p style="margin-left: 30px">\( \displaystyle{@quest_2@} \)</p>
+
+<p>3. Make \(y\) subject of the formulae.</p>
+<p style="margin-left: 30px">\( \displaystyle {@y3@} \)</p>
+<p style="margin-left: 30px">\( \displaystyle {@y4@} \)</p>
+<p style="margin-left: 30px">\( \displaystyle {@y5@} \)</p>
+<p style="margin-left: 30px">\( \displaystyle {@y6@} \)</p>
+
+<p>4. Replace \(y\) with the inverse function.</p>
+<p style="margin-left: 30px">\(g^{-1}(x)={@ta@}\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[/*coefficients of function*/
+sig:rand([-1,1]);
+aa:sig*(rand(4)+1);
+bb:rand_with_prohib(-4,4,[aa,0]);
+cc:rand_with_prohib(-4,5,[bb,0,bb*aa]);
+num:x-aa;
+denome:(bb*x)-cc;
+quest:g(x)=num/denome;
+
+/*Stick a "y" in for the "g(x)"*/
+quest_1:y=num/denome;
+
+/*Switch the x and y*/
+num_1:y-aa;
+denome_1:(bb*y)-cc;
+quest_2:x=num_1/denome_1;
+
+/*make 'y' subject of the formulae*/
+y1:x*denome_1 = num_1;
+y2:expand(x*denome_1) = num_1;
+y3:(bb*y*x)-(cc*x)=y-aa;
+y4:(bb*y*x)-y=(cc*x)-aa;
+y5:y*((bb*x)-1)=(cc*x)-aa;
+y6:y=((cc*x)-aa)/((bb*x)-1);
+
+ta:rhs(y6);]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>Find the inverse of {@quest@}</p>
+<p>Solution: \(g^{-1}(x) = {@ta@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="html">
+      <text><![CDATA[<p id="author">Emmaculate Odhiambo</p>
+<p id="concept">NA</p>
+<p id="reviewer">Godfrey Wabwire</p>
+<p id="reviewer">Wastalas Motognon</p>
+<p id="description">Given a function, need to find the inverse of the function</p>]]></text>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <isbroken>0</isbroken>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>1</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/* Node 1 - Check correct answer */
+/* Node 2 - Check whether answer contains variables other than x */
+other_vars: if emptyp(setdifference(setify(listofvars(ans1)),{x})) then 0 else 1;
+
+/* Node 4 - Gives g(x) */
+/* Node 15 - Gives reciprocal rather than inverse */
+recipr:denome/num;
+
+/* Node 5 - Uses cc as a constant term rather than a coefficient of x */
+y33: bb*y*x - cc = y - aa;
+y66: (cc-aa)/(bb*x-1);
+
+/* Nodes 6-8 - Makes error in the operations while rearranging for x */
+oper_1: ((cc*x)-aa)/(bb*x+1);
+oper_2: (-(cc*x)-aa)/(bb*x-1);
+oper_3: (-(cc*x)-aa)/(bb*x+1);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>Checks for correct answer</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description>Check whether answer contains variables other than x</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>other_vars</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer should be given as a function of \(x\).
+<br>Other variables should not be present in your answer.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>14</name>
+        <description>Gives reciprocal rather than inverse</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>recipr</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-15-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Take care that \(g^{-1}(x)\) represents the <b>inverse</b> of \(g(x)\), not the reciprocal \(\frac{1}{g(x)}\)</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>4</falsenextnode>
+        <falseanswernote>prt1-15-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description>Gives g(x) as answer</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>rhs(quest)</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You have given a function which is equivalent to \({@quest@}\)
+<br>You need to find the <b>inverse</b> of this function.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>14</falsenextnode>
+        <falseanswernote>prt1-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>4</name>
+        <description>checks for incorrect expansionof the lhs of equation after exchanging all the x and y's</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>y66</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-5-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You appear to have made a mistake while rearranging the equation {@quest_2@} to make \(y\) the subject.</p>
+<p>After multiplying on both sides by the denominator of the fraction we have,</p>
+<p style="margin-left: 30px">\( x ({@denome_1@})= {@num_1@}\)</p>
+<p>Take care then in expanding the bracket on the left hand side. You should obtain,</p>
+<p style="margin-left: 30px">{@y3@}</p>
+<p>It appears you may have instead used,
+<p style="margin-left: 30px">{@y33@}</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>5</falsenextnode>
+        <falseanswernote>prt1-5-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>5</name>
+        <description>checks for incorrect operations</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>oper_1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-6-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer is almost correct, however there is a mistake in the signs of the terms.
+<br>It appears you may have added \(y\) when you had to subtract while collecting the \(y\) terms in the equation,</p>
+<p style="margin-left: 30px">{@y2@}</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>6</falsenextnode>
+        <falseanswernote>prt1-6-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>6</name>
+        <description>checks for incorrect operations</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>oper_2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-7-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer is almost correct, however there is a mistake in the signs of the terms.
+<br>It appears you may have added \({@cc*x@}\) when you had to subtract while collecting the \(x\) terms in the equation</p>
+<p style="margin-left: 30px">{@y2@}</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>7</falsenextnode>
+        <falseanswernote>prt1-7-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>7</name>
+        <description>checks for incorrect operations</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>oper_3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-8-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer is almost correct, however there is a mistake in the signs of the terms. 
+<br>It appears you may have added \(y\) and \({@cc*x@}\) when you had to subtract these terms while collecting the \(y\) terms in the equation,</p>
+<p style="margin-left: 30px">{@y2@}</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-8-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>155907300</deployedseed>
+    <deployedseed>937308886</deployedseed>
+    <deployedseed>1134296213</deployedseed>
+    <deployedseed>1258100520</deployedseed>
+    <deployedseed>1743745744</deployedseed>
+    <deployedseed>1412840358</deployedseed>
+    <deployedseed>2008244675</deployedseed>
+    <deployedseed>57013136</deployedseed>
+    <deployedseed>824004784</deployedseed>
+    <deployedseed>1079085546</deployedseed>
+    <deployedseed>443947895</deployedseed>
+    <deployedseed>568522260</deployedseed>
+    <deployedseed>2143493046</deployedseed>
+    <deployedseed>283629087</deployedseed>
+    <deployedseed>108552522</deployedseed>
+    <deployedseed>1590134641</deployedseed>
+    <deployedseed>250279417</deployedseed>
+    <deployedseed>23800518</deployedseed>
+    <deployedseed>453491782</deployedseed>
+    <deployedseed>1591337976</deployedseed>
+    <deployedseed>107085026</deployedseed>
+    <deployedseed>1429101678</deployedseed>
+    <deployedseed>1060210914</deployedseed>
+    <deployedseed>678535141</deployedseed>
+    <deployedseed>79196450</deployedseed>
+    <deployedseed>1640858397</deployedseed>
+    <deployedseed>78762695</deployedseed>
+    <deployedseed>483390325</deployedseed>
+    <deployedseed>1861912209</deployedseed>
+    <deployedseed>719877684</deployedseed>
+    <deployedseed>1305353057</deployedseed>
+    <deployedseed>221851412</deployedseed>
+    <deployedseed>1131491875</deployedseed>
+    <deployedseed>1761740984</deployedseed>
+    <deployedseed>1223235289</deployedseed>
+    <deployedseed>305463658</deployedseed>
+    <deployedseed>1501327861</deployedseed>
+    <deployedseed>2036596080</deployedseed>
+    <deployedseed>158667419</deployedseed>
+    <deployedseed>444360147</deployedseed>
+    <deployedseed>172864168</deployedseed>
+    <deployedseed>945946110</deployedseed>
+    <deployedseed>716465704</deployedseed>
+    <deployedseed>1066450115</deployedseed>
+    <deployedseed>1284705300</deployedseed>
+    <deployedseed>476899772</deployedseed>
+    <deployedseed>2072958555</deployedseed>
+    <deployedseed>288189543</deployedseed>
+    <deployedseed>2081403104</deployedseed>
+    <deployedseed>452507506</deployedseed>
+    <deployedseed>30249615</deployedseed>
+    <deployedseed>132139390</deployedseed>
+    <deployedseed>743704778</deployedseed>
+    <deployedseed>280831734</deployedseed>
+    <deployedseed>761328327</deployedseed>
+    <deployedseed>839595868</deployedseed>
+    <deployedseed>164149588</deployedseed>
+    <deployedseed>1548089294</deployedseed>
+    <deployedseed>527901787</deployedseed>
+    <deployedseed>2010281178</deployedseed>
+    <deployedseed>1366333648</deployedseed>
+    <deployedseed>649169556</deployedseed>
+    <deployedseed>2083466560</deployedseed>
+    <deployedseed>524229461</deployedseed>
+    <deployedseed>1414584856</deployedseed>
+    <deployedseed>147251864</deployedseed>
+    <deployedseed>284224751</deployedseed>
+    <deployedseed>2075872525</deployedseed>
+    <deployedseed>261259888</deployedseed>
+    <deployedseed>1922004358</deployedseed>
+    <deployedseed>1443899059</deployedseed>
+    <deployedseed>145635252</deployedseed>
+    <deployedseed>965178841</deployedseed>
+    <deployedseed>123518736</deployedseed>
+    <deployedseed>364081330</deployedseed>
+    <deployedseed>1317029916</deployedseed>
+    <deployedseed>1959313531</deployedseed>
+    <deployedseed>1717353986</deployedseed>
+    <deployedseed>590967263</deployedseed>
+    <deployedseed>1979472169</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description>Test case assuming the teacher's input gets full marks.</description>
+      <testinput>
+        <name>ans1</name>
+        <value>ta</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

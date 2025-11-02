@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Determine which ones of statements are tautologies (Morara)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Determine which of the following statements are tautologies (i.e. are true regardless of the truth values of \(p, q\) and \(r\)).<br />Hint: You could create a truth table to find out. <br />[[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p style="text-align: left;" dir="ltr">These are the truth tables for the 3 formulas:</p>
+<p style="text-align: left;" dir="ltr"><span style="font-size: 0.9375rem;">{@truth_table(choices[1][1])@}</span></p>
+<p style="text-align: left;" dir="ltr"> </p>
+<p dir="ltr"><span style="font-size: 0.9375rem;">{@truth_table(choices[2][1])@}</span></p>
+<p dir="ltr"><span style="font-size: 0.9375rem;">{@truth_table(choices[3][1])@}</span></p>
+<p dir="ltr">So we see that the expressions that are tautologies are {@mcq_correct(choices)@}</p>
+<p> </p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2022071300</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[all_choices: [
+	[ (p implies q) nounor (p implies not q), true, "(p implies q) or (p implies not(q))"],
+	[ (p nounand q) implies (not r nounor (p implies q)), true, "(p and q) implies (not(r) or (p implies q))"],
+	[ not p nounand not q, false, "not(p) and not(q)"],
+	[ (not p nounand q) nounor q, false, "(not(p) and q) or q"],
+	[ (p nounand q) implies (p nounor q), true, "(p and q) implies (p or q)"],
+	[ (p implies q) nounand (q implies r) implies (p implies r), true, "(p implies q) and (q implies r) implies (p implies r)"],
+	[ (not p nounand q) nounor p, false, "(not(p) and q) or p"],
+	[ p nounor (q nounand r), false, "p or (q and r)"],
+	[ (p nounor q) nounand (p nounor r), false, "(p or q) and (p or r)"]
+];
+choices: rand_selection(all_choices, 3);
+choices: append(choices, [["None of the above", not (choices[1][2] or choices[2][2] or choices[3][2]), "None of the above"]]);
+ta1: choices;]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text>Which statement is tautology {@choices@}?</text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<p>Correct answer, well done.</p>]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<p><span style="font-size: 1.5em; color: orange;"> Your answer is partially correct.</span></p>]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<p>Incorrect answer.</p>]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <isbroken>0</isbroken>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>checkbox</type>
+      <tans>ta1</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mcq_correct(ta1)</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>1</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+  </question>
+</quiz>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="description">
+    <name>
+      <text>Information 3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Functions always have their arguments in brackets. For example:</p>
+
+<ul>
+
+<li>\(\cos x\) or \(\ln x\) have to be typed as <code>cos(x)</code> or <code>ln(x)</code>.</li>
+
+<li>\(e^x\) can be typed as <code>e^x</code> or <code>exp(x)</code>.</li>
+
+<li>Square roots \(\sqrt{x}\) are typed as <code>sqrt(x)</code>, though you can also use <code>x^(1/2)</code>.</li>
+
+<li>Greek letters have to be typed using their English names, e.g. \(\alpha\) is typed as <code>alpha</code>.</li>
+
+</ul>
+
+<p>Below is the full list of Greek letters.</p>
+<table>
+<tr><td>\(\alpha\)</td><td><code>alpha</code></td></tr>
+<tr><td>\(\beta\)</td><td><code>beta</code></td></tr>
+<tr><td>\(\gamma\)</td><td><code>gamma</code></td></tr>
+<tr><td>\(\delta\)</td><td><code>delta</code></td></tr>
+<tr><td>\(\epsilon\)</td><td><code>epsilon</code></td></tr>
+<tr><td>\(\zeta\)</td><td><code>zeta</code></td></tr>
+<tr><td>\(\eta\)</td><td><code>eta</code></td></tr>
+<tr><td>\(\theta\)</td><td><code>theta</code></td></tr>
+<tr><td>\(\iota\)</td><td><code>iota</code></td></tr>
+<tr><td>\(\kappa\)</td><td><code>kappa</code></td></tr>
+<tr><td>\(\lambda\)</td><td><code>lambda</code></td></tr>
+<tr><td>\(\mu\)</td><td><code>mu</code></td></tr>
+<tr><td>\(\nu\)</td><td><code>nu</code></td></tr>
+<tr><td>\(\xi\)</td><td><code>xi</code></td></tr>
+<tr><td>\(\omicron\)</td><td><code>omicron</code></td></tr>
+<tr><td>\(\pi\)</td><td><code>pi</code></td></tr>
+<tr><td>\(\rho\)</td><td><code>rho</code></td></tr>
+<tr><td>\(\sigma\)</td><td><code>sigma</code></td></tr>
+<tr><td>\(\tau\)</td><td><code>tau</code></td></tr>
+<tr><td>\(\upsilon\)</td><td><code>upsilon</code></td></tr>
+<tr><td>\(\phi\)</td><td><code>phi</code></td></tr>
+<tr><td>\(\chi\)</td><td><code>chi</code></td></tr>
+<tr><td>\(\psi\)</td><td><code>psi</code></td></tr>
+<tr><td>\(\omega\)</td><td><code>omega</code></td></tr>
+</table>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text/>
+    </generalfeedback>
+    <defaultgrade>0</defaultgrade>
+    <penalty>0</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+  </question>
+</quiz>

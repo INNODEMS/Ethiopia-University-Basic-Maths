@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Solve the trigonometric equation using the trigonometric identities</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Consider the following trigonometric equation, for values of \(x\) restricted by \(0^\circ \leq x < 360^\circ\):</p>
+<p style="margin-left: 30px;">\({@pp*fx1^2@}+{@qq*fx2=-rr@}\)</p>
+<p>We will solve this equation step by step using the identity \(\sin^2(x)+\cos^2(x) = 1\).</p>
+<p><em>Note: To enter squared trigonometric functions, \(\sin^2(x)\) or \(\cos^2(x)\), you should write <code>sin(x)^2</code> or <code>cos(x)^2</code>.</em></p>
+
+<br>
+
+<p>(a) Rearrange the identity to make \({@fx1^2@}\) the subject.</p>
+<p style="margin-left: 30px;">\({@fx1^2@} = \) [[input:ans1]] [[validation:ans1]] </p>
+<p>[[feedback:prt1]]</p>
+
+<br>
+
+<p>(b) Substitute this expression into the equation and expand and simplify to find an equation in terms of \({@fx2@}\) only. 
+<br>Write your answer in the form \(a {@fx2^2@}+b {@fx2@} + c = 0\), where \(a,b,c \in \mathbb{R}\).</p>
+<p style="margin-left: 30px">[[input:ans2]] [[validation:ans2]]</p>
+<p>[[feedback:prt2]]</p>
+
+<br>
+
+<p>(c) Make the substitution \(y={@fx2@}\) to get a quadratic equation in terms of \(y\).</p>
+<p style="margin-left: 30px">[[input:ans3]] [[validation:ans3]]</p.
+<p>[[feedback:prt3]]</p>
+
+<br>
+
+<p>(d) Solve this quadratic equation to find two possible values of \(y\).</p>
+<p style="margin-left: 30px">\(y = \) [[input:ans4]] [[validation:ans4]] or \(y = \) [[input:ans5]] [[validation:ans5]]</p>
+<p>[[feedback:prt4]]</p>
+
+<br>
+
+<p>(e) Considering that \(y = {@fx2@}\) and the range of \({@fx2@}\) over the reals, only one of these solutions is a possible solution to the original equation. State which of these answers is possible.</p>
+<p style="margin-left: 30px">\(y = \) [[input:ans6]] [[validation:ans6]]</p>
+<p>[[feedback:prt5]]</p>
+
+<br>
+
+<p>(f) Taking now, \({@fx2@}=y\), where \(y\) is your answer from part (e). Solve this equation for \(x\) to find the two solutions to the original equation.</p>
+<p style="margin-left: 30px">\(x = \) [[input:ans7]] [[validation:ans7]] or \(x = \) [[input:ans8]] [[validation:ans8]]</p>
+<p>[[feedback:prt6]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><b>Worked Solution</b></p>
+<p>(a) We know that \(\sin^2(x)+\cos^2(x) = 1\), so subtracting \({@fx2^2@}\) from both sides we get \({@fx1^2@} = 1 - {@fx2^2@}\).</p>
+
+<br>
+
+<p>(b) The original equation is \({@pp*fx1^2@}+{@qq*fx2=-rr@}\) and we know that \({@fx1^2@} = 1 - {@fx2^2@}\).</p> 
+<p>Substituting {@fx1^2@} with \(1 - {@fx2^2@}\) gives us \({@pp*(1-fx2^2)@}+{@qq*fx2@} = {@-rr@}\).</p>
+<p>Expanding gives us \({@pp - pp*fx2^2@} + {@qq*fx2@} = {@-rr@}\).</p>
+<p>Collecting all the terms on the same side we get \({@pp*fx2^2@} - {@qq*fx2@} + {@-pp-rr@} = 0\).</p>
+
+<br>
+
+<p>(c) We need to substitute \(y = {@fx2@}\) into our equation from Part 2, which is \({@pp*fx2^2@} - {@qq*fx2@} + {@-pp-rr@} = 0\).</p>
+<p>Noting that \({@fx2^2@} = ({@fx2@})^2\), we have \({@fx2^2@} = y^2\).</p>
+<p>Therefore, substituting we get \({@pp*y^2@} - {@qq*y@} + {@-pp-rr@} = 0\).</p>
+
+<br>
+
+<p>(d) We need to solve the equation  \({@pp*y^2@} - {@qq*y@} + {@-pp-rr@} = 0\). This can be solved by factorisation, using the quadratic formula or any other suitable method.</p>
+<p>In this solution we will use the quadratic formula.</p>
+<p style="margin-left: 30px">
+\(\begin{align*}
+  y & = \frac{-b\pm \sqrt{b^2-4ac}}{2a} \\
+  & = \frac{{@qq@} \pm \sqrt{{@qq^2@}-{@4*pp*(-pp-rr)@}}}{{@2*pp@}} \\
+  & = \frac{{@qq@} \pm \sqrt{{@qq^2-4*pp*(-pp-rr)@}}}{{@2*pp@}} \\
+  & = \frac{{@qq@} \pm {{@sqrt(qq^2-4*pp*(-pp-rr))@}}}{{@2*pp@}} \\
+  & = {@ta4@}, {@ta5@}
+\end{align*}\)
+</p>
+
+<br>
+
+<p>(e) The range of the function \(f(x) = {@fx2@}\) is the set \([-1,1]\). The answer \(y = {@ta4@}\) is outside this range while the answer \(y = {@ta5@}\) is within this range, so the answer \(y = {@ta5@}\) is the only valid one for the original equation.</p>
+
+<br>
+
+<p>(f) Substituting our solution for \(y\) into \(y = \cos(x)\), we get the equation \(\cos(x) = {@ta5@}\) over the range \(0^\circ \leq x < 360^\circ\).</p>
+<p>Using known results we know that the first solution is \(x = 60^\circ\).</p>
+<p>Using the symmetry of the sine graph we know that the second solution is \(x = 360 - 60 = 300^\circ\).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[fx1:rand([sin(x),cos(x)]);
+fx2:if fx1=sin(x) then cos(x) else sin(x);
+aa:rand([2,3,4,5]);
+var1:rand(4)+1;
+bb:aa+var1;
+for k:1 while gcd(aa,bb)>1 do (var1:rand(5)+1, bb:aa+var1);
+dd:rand(3)+1;
+cc:2*dd;
+pp:aa*cc;
+qq:aa*dd+bb*cc;
+rr:-pp-bb*dd;
+ta1:1-fx2^2;
+ta2:pp*fx2^2-qq*fx2-pp-rr=0;
+ta3:pp*y^2-qq*y-pp-rr=0;
+ta4:bb/aa;
+ta5:dd/cc;
+ta6:dd/cc;
+ta7:if fx2=sin(x) then 30 else 60;
+ta8:if fx2=sin(x) then 150 else 300;
+
+setta4:{ta4,ta5}; /*Checks if the student answer is correct*/
+setta6:{ta7,ta8};/*Checks if the student answer is correct*/]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>Trigonometric equation: \({@pp*fx1^2@}+{@qq*fx2=-rr@}\)</p>
+<p>Rearranging the identity to make \({@fx1^2@}\) the subject: \({@fx1^2@} ={@ta1@} \)</p>
+<p>Substituting this expression into the equation: \({@ta2@}\)</p> 
+<p>Making the substitution \(y={@fx2@}\): \({@ta3@}\)</p>
+<p>The two possible values of \(y\): \(y ={@ta4@} \) or \(y ={@ta5@} \)</p>
+<p>Answer set \({@setta4@}\)</p>
+<p>A possible solution to the original equation is \(y ={@ta6@} \) </p>
+<p>Substituting \({@fx2@}\) back the two solutions to the original equation are \(x ={@ta7@} \) or \(x ={@ta8@} \)</p>
+<p>Answer set \({@setta6@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text><![CDATA[<p id="author">Godfrey Wabwire</p>
+<p id="concept">N/A</p>
+<p id="reviewer">Emmaculate Odhiambo</p>
+<p id="reviewer">Wastalas</p>
+<p id="description">Solve the trigonometric equation using the trigonometric identities by making relevant substitutions to obtain the hidden quadratic equation.</p>]]></text>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <isbroken>0</isbroken>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>8</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>ta4</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans5</name>
+      <type>algebraic</type>
+      <tans>ta5</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans6</name>
+      <type>algebraic</type>
+      <tans>ta6</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans7</name>
+      <type>algebraic</type>
+      <tans>ta7</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans8</name>
+      <type>algebraic</type>
+      <tans>ta8</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks if the student answer is correct*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>Checks if the student answer is correct</description>
+        <answertest>EqualComAss</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks if the student answer is correct*/
+/*Node 2: Checks if the student answer is correct and in expanded form*/
+/*Node 3: Checks if the student answer is correct but is not in the correct form*/
+/*Feedback Variable PRT 2*/
+equivans2:expand(-lhs(ta2))=0; /* Checks if the student answer is correct and in expanded form*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>Checks if the student answer is correct</description>
+        <answertest>EqualComAss</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description> Checks if the student answer is correct and in expanded form</description>
+        <answertest>EqualComAss</answertest>
+        <sans>ans2</sans>
+        <tans>equivans2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description>Checks if the student answer is correct but is not in the correct form</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer is correct but is not in the correct form.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks if the student answer is correct*/
+/*Node 2: Checks if the student student answer is correct and in expanded form*/
+/*Node 3: Checks if the student answer is incorrect but is consistent with the previous answers*/
+/*Feedback Variable PRT 3*/
+equivans3:expand(-lhs(ta3))=0;/*Checks if the student student answer is correct and in expanded form*/
+coefans11:coeff(lhs(ans2),fx2^2);
+coefans12:coeff(lhs(ans2),fx2);
+coefans13:lhs(ans2)-coefans11*fx2^2-coefans12*fx2;
+consans3:coefans11*y^2+coefans12*y+coefans13=0; /*Checks if the student answer is incorrect but is consistent with the previous answers*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>Checks if the student answer is correct</description>
+        <answertest>EqualComAss</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description>Checks if the student student answer is correct and in expanded form</description>
+        <answertest>EqualComAss</answertest>
+        <sans>ans3</sans>
+        <tans>equivans3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt3-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description>Checks if the student answer is incorrect but is consistent with the previous answers</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>consans3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer is incorrect but is consistent with your previous answers.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks if the student answer is correct*/
+/*Node 2: Checks if one of the student answers is correct*/
+/*Feedback Variable PRT 4*/
+setans4:{ans4,ans5};
+setta4:{ta4,ta5}; /*Checks if the student answer is correct*/
+onecorrect:cardinality(intersect(setans4,setta4));
+onecorrectans:if onecorrect = 1 then listify(intersect(setans4,setta4))[1];
+c41:coeff(lhs(ta3),y^2);
+c42:coeff(lhs(ta3),y^1);
+c43:lhs(ta3)-c41*y^2-c42*y;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>Checks if the student answer is correct</description>
+        <answertest>Sets</answertest>
+        <sans>setans4</sans>
+        <tans>setta4</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description>Checks if one of the student answers is correct</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>onecorrect</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer \(y = {@onecorrectans@}\) is correct but the other one is not.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt5</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks if the student answer is correct*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description> Checks if the student answer is correct</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans6</sans>
+        <tans>ta6</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt5-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt5-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt6</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks if the student answer is correct*/
+/*Node 2: Checks if the student incorrect answer is a sine function*/
+/*Node 3: Checks if the student incorrect answer is a cosine function*/
+/*Feedback Variable PRT 6*/
+setans6:{ans7,ans8};
+setta6:{ta7,ta8};/*Checks if the student answer is correct*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description>Checks if the student answer is correct</description>
+        <answertest>Sets</answertest>
+        <sans>setans6</sans>
+        <tans>setta6</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt6-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt6-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description>Checks if the student incorrect answer is a sine function</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>fx2</sans>
+        <tans>sin(x)</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt6-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt6-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description>Checks if the student incorrect answer is a cosine function</description>
+        <answertest>AlgEquiv</answertest>
+        <sans>fx2</sans>
+        <tans>cos(x)</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt6-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt6-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1159028838</deployedseed>
+    <deployedseed>1291407698</deployedseed>
+    <deployedseed>523429938</deployedseed>
+    <deployedseed>1279950784</deployedseed>
+    <deployedseed>1785891591</deployedseed>
+    <deployedseed>1263397892</deployedseed>
+    <deployedseed>1569042699</deployedseed>
+    <deployedseed>436810508</deployedseed>
+    <deployedseed>1177011650</deployedseed>
+    <deployedseed>1276669657</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>ta5</value>
+      </testinput>
+      <testinput>
+        <name>ans6</name>
+        <value>ta6</value>
+      </testinput>
+      <testinput>
+        <name>ans7</name>
+        <value>ta7</value>
+      </testinput>
+      <testinput>
+        <name>ans8</name>
+        <value>ta8</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt5</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt5-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt6</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt6-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>
