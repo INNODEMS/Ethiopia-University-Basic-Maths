@@ -20,7 +20,7 @@ var xaxis = board.create('axis', [
   [0, 0],
   [1, 0]
 ]);
-xaxis.removeAllTicks();
+//xaxis.removeAllTicks();
 board.create('ticks', [xaxis, Math.PI/4], {
   strokeColor: '#ccc',
   majorHeight: -1,
@@ -31,42 +31,31 @@ var yaxis = board.create('axis', [
   [0, 0],
   [0, 1]
 ]);
-yaxis.removeAllTicks();
-board.create('ticks', [yaxis, 1], {
-  strokeColor: '#ccc',
-  majorHeight: -1,
-  drawLabels: true,
-  label: {
-    offset: [7, -2]
-  },
-  minorTicks: 1,
-  drawZero: false
-});
-var txt = board.create('text', [Math.PI - 0.5, -0.2, "180"], {
+var txt = board.create('text', [Math.PI - 0.5, 0.2, "180"], {
   fontSize: 15,
   fixed: true
 });
-var txt = board.create('text', [2 * Math.PI - 0.5, -0.2, "360"], {
+var txt = board.create('text', [2 * Math.PI - 0.5, 0.2, "360"], {
   fontSize: 15,
   fixed: true
 });
-var txt = board.create('text', [3 * Math.PI - 0.5, -0.2, "540"], {
+var txt = board.create('text', [3 * Math.PI - 0.5, 0.2, "540"], {
   fontSize: 15,
   fixed: true
 });
-var txt = board.create('text', [4 * Math.PI - 0.5, -0.2, "720"], {
+var txt = board.create('text', [4 * Math.PI - 0.5, 0.2, "720"], {
   fontSize: 15,
   fixed: true
 });
-var txt = board.create('text', [-Math.PI -0.9, -0.2, "-180"], {
+var txt = board.create('text', [-Math.PI -0.9, 0.2, "-180"], {
   fontSize: 15,
   fixed: true
 });
-var txt = board.create('text', [-2 * Math.PI - 0.9, -0.2, "-360"], {
+var txt = board.create('text', [-2 * Math.PI - 0.9, 0.2, "-360"], {
   fontSize: 15,
   fixed: true
 });
-var txt = board.create('text', [-3 * Math.PI - 0.9, -0.2, "-540"], {
+var txt = board.create('text', [-3 * Math.PI - 0.9, 0.2, "-540"], {
   fontSize: 15,
   fixed: true
 });

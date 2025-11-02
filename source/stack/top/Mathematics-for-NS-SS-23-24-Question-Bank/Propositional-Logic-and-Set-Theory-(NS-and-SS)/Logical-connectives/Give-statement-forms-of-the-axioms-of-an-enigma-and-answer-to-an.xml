@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
+<!-- question: 222435  -->
   <question type="stack">
     <name>
-      <text>Give statement forms of the axioms of an enigma and answer to an enigma.</text>
+      <text>Give statement forms of the axioms of an enigma and answer to an enigma. (narrow formatting)</text>
     </name>
     <questiontext format="html">
       <text><![CDATA[<p>Consider the following enigma problem, and give statement forms of its axioms. Then fill in the truth table, and answer to the enigma: <em>"Who order a dessert and not"</em>.</p>
@@ -25,6 +26,70 @@
     <th style="width: 7%;">\(c\)</th>
     <th style="width: 12%;">\(a \implies b\)</th>
     <th style="width: 12%;">\((b \land \neg c) \lor (\neg b \land c)\)</th>
+  </tr>
+  <tr>
+    <td>\({@p[1]@}\)</td>
+    <td>\({@q[1]@}\)</td>
+    <td>\({@p[1]@}\)</td>
+    <td>[[input:ans1]]</td>
+    <td>[[input:ans9]]</td>
+  </tr>
+  <tr>
+    <td>\({@p[1]@}\)</td>
+    <td>\({@q[1]@}\)</td>
+    <td>\({@p[2]@}\)</td>
+    <td>[[input:ans2]]</td>
+    <td>[[input:ans10]]</td>
+  </tr>
+  <tr>
+    <td>\({@p[1]@}\)</td>
+    <td>\({@q[2]@}\)</td>
+    <td>\({@p[1]@}\)</td>
+    <td>[[input:ans3]]</td>
+    <td>[[input:ans11]]</td>
+  </tr>
+  <tr>
+    <td>\({@p[1]@}\)</td>
+    <td>\({@q[2]@}\)</td>
+    <td>\({@p[2]@}\)</td>
+    <td>[[input:ans4]]</td>
+    <td>[[input:ans12]]</td>
+  </tr>
+  <tr>
+    <td>\({@p[2]@}\)</td>
+    <td>\({@q[1]@}\)</td>
+    <td>\({@p[1]@}\)</td>
+    <td>[[input:ans5]]</td>
+    <td>[[input:ans13]]</td>
+  </tr>
+  <tr>
+    <td>\({@p[2]@}\)</td>
+    <td>\({@q[1]@}\)</td>
+    <td>\({@p[2]@}\)</td>
+    <td>[[input:ans6]]</td>
+    <td>[[input:ans14]]</td>
+  </tr>
+  <tr>
+    <td>\({@p[2]@}\)</td>
+    <td>\({@q[2]@}\)</td>
+    <td>\({@p[1]@}\)</td>
+    <td>[[input:ans7]]</td>
+    <td>[[input:ans15]]</td>
+  </tr>
+  <tr>
+    <td>\({@p[2]@}\)</td>
+    <td>\({@q[2]@}\)</td>
+    <td>\({@p[2]@}\)</td>
+    <td>[[input:ans8]]</td>
+    <td>[[input:ans16]]</td>
+  </tr>
+</table>
+
+<table style="border-collapse: collapse; width: 80%; text-align: center; font-size: 14px; margin-left: 0; margin-right: auto;" border="1">
+  <tr>
+    <th style="width: 7%;">\(a\)</th>
+    <th style="width: 7%;">\(b\)</th>
+    <th style="width: 7%;">\(c\)</th>
     <th style="width: 12%;">\(a \lor c\)</th>
     <th style="width: 12%;">\(c \implies a\)</th>
     <th style="width: 11%;">Feedback</th>
@@ -34,8 +99,6 @@
     <td>\({@p[1]@}\)</td>
     <td>\({@q[1]@}\)</td>
     <td>\({@p[1]@}\)</td>
-    <td>[[input:ans1]]</td>
-    <td>[[input:ans9]]</td>
     <td>[[input:ans17]]</td>
     <td>[[input:ans25]]</td>
     <td>[[feedback:prt1]]</td>
@@ -45,8 +108,6 @@
     <td>\({@p[1]@}\)</td>
     <td>\({@q[1]@}\)</td>
     <td>\({@p[2]@}\)</td>
-    <td>[[input:ans2]]</td>
-    <td>[[input:ans10]]</td>
     <td>[[input:ans18]]</td>
     <td>[[input:ans26]]</td>
     <td>[[feedback:prt2]]</td>
@@ -56,8 +117,6 @@
     <td>\({@p[1]@}\)</td>
     <td>\({@q[2]@}\)</td>
     <td>\({@p[1]@}\)</td>
-    <td>[[input:ans3]]</td>
-    <td>[[input:ans11]]</td>
     <td>[[input:ans19]]</td>
     <td>[[input:ans27]]</td>
     <td>[[feedback:prt3]]</td>
@@ -67,8 +126,6 @@
     <td>\({@p[1]@}\)</td>
     <td>\({@q[2]@}\)</td>
     <td>\({@p[2]@}\)</td>
-    <td>[[input:ans4]]</td>
-    <td>[[input:ans12]]</td>
     <td>[[input:ans20]]</td>
     <td>[[input:ans28]]</td>
     <td>[[feedback:prt4]]</td>
@@ -78,8 +135,6 @@
     <td>\({@p[2]@}\)</td>
     <td>\({@q[1]@}\)</td>
     <td>\({@p[1]@}\)</td>
-    <td>[[input:ans5]]</td>
-    <td>[[input:ans13]]</td>
     <td>[[input:ans21]]</td>
     <td>[[input:ans29]]</td>
     <td>[[feedback:prt5]]</td>
@@ -89,8 +144,6 @@
     <td>\({@p[2]@}\)</td>
     <td>\({@q[1]@}\)</td>
     <td>\({@p[2]@}\)</td>
-    <td>[[input:ans6]]</td>
-    <td>[[input:ans14]]</td>
     <td>[[input:ans22]]</td>
     <td>[[input:ans30]]</td>
     <td>[[feedback:prt6]]</td>
@@ -100,8 +153,6 @@
     <td>\({@p[2]@}\)</td>
     <td>\({@q[2]@}\)</td>
     <td>\({@p[1]@}\)</td>
-    <td>[[input:ans7]]</td>
-    <td>[[input:ans15]]</td>
     <td>[[input:ans23]]</td>
     <td>[[input:ans31]]</td>
     <td>[[feedback:prt7]]</td>
@@ -111,13 +162,12 @@
     <td>\({@p[2]@}\)</td>
     <td>\({@q[2]@}\)</td>
     <td>\({@p[2]@}\)</td>
-    <td>[[input:ans8]]</td>
-    <td>[[input:ans16]]</td>
     <td>[[input:ans24]]</td>
     <td>[[input:ans32]]</td>
     <td>[[feedback:prt8]]</td>
   </tr>
 </table>
+
 </center>
 <p></p>
 <p><strong>Answer to the enigma:</strong> Who orders a dessert?</p>
@@ -142,9 +192,9 @@
     <defaultgrade>9</defaultgrade>
     <penalty>0.1</penalty>
     <hidden>0</hidden>
-    <idnumber/>
+    <idnumber></idnumber>
     <stackversion>
-      <text>2025012100</text>
+      <text>2025073100</text>
     </stackversion>
     <questionvariables>
       <text><![CDATA[p: ( ["True","False"] );
@@ -158,13 +208,13 @@ tas: [[true, false, true, true], [true, true, true, true], [false, true, true, t
 ta: random_permutation([["Bernard and Charles order dessert but not Albert.", false],["Albert and Bernard order dessert but not Charles.", true],["Albert and Charles order dessert but not Bernard.", false]]);]]></text>
     </questionvariables>
     <specificfeedback format="html">
-      <text/>
+      <text></text>
     </specificfeedback>
     <questionnote format="moodle_auto_format">
       <text><![CDATA[<p>Note: There is no randomization in this question</p>]]></text>
     </questionnote>
     <questiondescription format="moodle_auto_format">
-      <text/>
+      <text></text>
     </questiondescription>
     <questionsimplify>1</questionsimplify>
     <assumepositive>0</assumepositive>
@@ -187,7 +237,7 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
     <logicsymbol>lang</logicsymbol>
     <matrixparens>[</matrixparens>
     <isbroken>0</isbroken>
-    <variantsselectionseed/>
+    <variantsselectionseed></variantsselectionseed>
     <input>
       <name>ans1</name>
       <type>boolean</type>
@@ -195,16 +245,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans10</name>
@@ -213,16 +263,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans11</name>
@@ -231,16 +281,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans12</name>
@@ -249,16 +299,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans13</name>
@@ -267,16 +317,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans14</name>
@@ -285,16 +335,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans15</name>
@@ -303,16 +353,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans16</name>
@@ -321,16 +371,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans17</name>
@@ -339,16 +389,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans18</name>
@@ -357,16 +407,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans19</name>
@@ -375,16 +425,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans2</name>
@@ -393,16 +443,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans20</name>
@@ -411,16 +461,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans21</name>
@@ -429,16 +479,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans22</name>
@@ -447,16 +497,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans23</name>
@@ -465,16 +515,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans24</name>
@@ -483,16 +533,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans25</name>
@@ -501,16 +551,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans26</name>
@@ -519,16 +569,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans27</name>
@@ -537,16 +587,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans28</name>
@@ -555,16 +605,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans29</name>
@@ -573,16 +623,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans3</name>
@@ -591,16 +641,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans30</name>
@@ -609,16 +659,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans31</name>
@@ -627,16 +677,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans32</name>
@@ -645,16 +695,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans33</name>
@@ -663,16 +713,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans34</name>
@@ -681,16 +731,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>1</mustverify>
       <showvalidation>3</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans35</name>
@@ -699,16 +749,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>1</mustverify>
       <showvalidation>3</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans36</name>
@@ -717,16 +767,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>1</mustverify>
       <showvalidation>3</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans37</name>
@@ -735,16 +785,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>1</mustverify>
       <showvalidation>3</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans4</name>
@@ -753,16 +803,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans5</name>
@@ -771,16 +821,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans6</name>
@@ -789,16 +839,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans7</name>
@@ -807,16 +857,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans8</name>
@@ -825,16 +875,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <input>
       <name>ans9</name>
@@ -843,16 +893,16 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       <boxsize>15</boxsize>
       <strictsyntax>1</strictsyntax>
       <insertstars>0</insertstars>
-      <syntaxhint/>
+      <syntaxhint></syntaxhint>
       <syntaxattribute>0</syntaxattribute>
-      <forbidwords/>
-      <allowwords/>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
       <forbidfloat>1</forbidfloat>
       <requirelowestterms>0</requirelowestterms>
       <checkanswertype>0</checkanswertype>
       <mustverify>0</mustverify>
       <showvalidation>0</showvalidation>
-      <options/>
+      <options></options>
     </input>
     <prt>
       <name>prt1</name>
@@ -864,27 +914,27 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       </feedbackvariables>
       <node>
         <name>0</name>
-        <description/>
+        <description></description>
         <answertest>AlgEquiv</answertest>
         <sans>[ans1, ans9, ans17, ans25]</sans>
         <tans>tas[1]</tans>
-        <testoptions/>
+        <testoptions></testoptions>
         <quiet>0</quiet>
         <truescoremode>=</truescoremode>
         <truescore>1</truescore>
-        <truepenalty/>
+        <truepenalty></truepenalty>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt1-1-T</trueanswernote>
         <truefeedback format="html">
-          <text/>
+          <text></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
-        <falsepenalty/>
+        <falsepenalty></falsepenalty>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt1-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text/>
+          <text></text>
         </falsefeedback>
       </node>
     </prt>
@@ -898,27 +948,27 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       </feedbackvariables>
       <node>
         <name>0</name>
-        <description/>
+        <description></description>
         <answertest>PropLogic</answertest>
         <sans>ans34</sans>
         <tans>ta1</tans>
-        <testoptions/>
+        <testoptions></testoptions>
         <quiet>0</quiet>
         <truescoremode>=</truescoremode>
         <truescore>1</truescore>
-        <truepenalty/>
+        <truepenalty></truepenalty>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt10-1-T</trueanswernote>
         <truefeedback format="html">
-          <text/>
+          <text></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
-        <falsepenalty/>
+        <falsepenalty></falsepenalty>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt10-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text/>
+          <text></text>
         </falsefeedback>
       </node>
     </prt>
@@ -932,27 +982,27 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       </feedbackvariables>
       <node>
         <name>0</name>
-        <description/>
+        <description></description>
         <answertest>PropLogic</answertest>
         <sans>ans35</sans>
         <tans>ta2</tans>
-        <testoptions/>
+        <testoptions></testoptions>
         <quiet>0</quiet>
         <truescoremode>=</truescoremode>
         <truescore>1</truescore>
-        <truepenalty/>
+        <truepenalty></truepenalty>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt11-1-T</trueanswernote>
         <truefeedback format="html">
-          <text/>
+          <text></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
-        <falsepenalty/>
+        <falsepenalty></falsepenalty>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt11-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text/>
+          <text></text>
         </falsefeedback>
       </node>
     </prt>
@@ -966,27 +1016,27 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       </feedbackvariables>
       <node>
         <name>0</name>
-        <description/>
+        <description></description>
         <answertest>PropLogic</answertest>
         <sans>ans36</sans>
         <tans>ta3</tans>
-        <testoptions/>
+        <testoptions></testoptions>
         <quiet>0</quiet>
         <truescoremode>=</truescoremode>
         <truescore>1</truescore>
-        <truepenalty/>
+        <truepenalty></truepenalty>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt12-1-T</trueanswernote>
         <truefeedback format="html">
-          <text/>
+          <text></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
-        <falsepenalty/>
+        <falsepenalty></falsepenalty>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt12-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text/>
+          <text></text>
         </falsefeedback>
       </node>
     </prt>
@@ -1000,27 +1050,27 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       </feedbackvariables>
       <node>
         <name>0</name>
-        <description/>
+        <description></description>
         <answertest>PropLogic</answertest>
         <sans>ans37</sans>
         <tans>ta4</tans>
-        <testoptions/>
+        <testoptions></testoptions>
         <quiet>0</quiet>
         <truescoremode>=</truescoremode>
         <truescore>1</truescore>
-        <truepenalty/>
+        <truepenalty></truepenalty>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt13-1-T</trueanswernote>
         <truefeedback format="html">
-          <text/>
+          <text></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
-        <falsepenalty/>
+        <falsepenalty></falsepenalty>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt13-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text/>
+          <text></text>
         </falsefeedback>
       </node>
     </prt>
@@ -1034,27 +1084,27 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       </feedbackvariables>
       <node>
         <name>0</name>
-        <description/>
+        <description></description>
         <answertest>AlgEquiv</answertest>
         <sans>[ans2, ans10, ans18, ans26]</sans>
         <tans>tas[2]</tans>
-        <testoptions/>
+        <testoptions></testoptions>
         <quiet>0</quiet>
         <truescoremode>=</truescoremode>
         <truescore>1</truescore>
-        <truepenalty/>
+        <truepenalty></truepenalty>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt2-1-T</trueanswernote>
         <truefeedback format="html">
-          <text/>
+          <text></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
-        <falsepenalty/>
+        <falsepenalty></falsepenalty>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt2-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text/>
+          <text></text>
         </falsefeedback>
       </node>
     </prt>
@@ -1068,27 +1118,27 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       </feedbackvariables>
       <node>
         <name>0</name>
-        <description/>
+        <description></description>
         <answertest>AlgEquiv</answertest>
         <sans>[ans3, ans11, ans19, ans27]</sans>
         <tans>tas[3]</tans>
-        <testoptions/>
+        <testoptions></testoptions>
         <quiet>0</quiet>
         <truescoremode>=</truescoremode>
         <truescore>1</truescore>
-        <truepenalty/>
+        <truepenalty></truepenalty>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt3-1-T</trueanswernote>
         <truefeedback format="html">
-          <text/>
+          <text></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
-        <falsepenalty/>
+        <falsepenalty></falsepenalty>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt3-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text/>
+          <text></text>
         </falsefeedback>
       </node>
     </prt>
@@ -1102,27 +1152,27 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       </feedbackvariables>
       <node>
         <name>0</name>
-        <description/>
+        <description></description>
         <answertest>AlgEquiv</answertest>
         <sans>[ans4, ans12, ans20, ans28]</sans>
         <tans>tas[4]</tans>
-        <testoptions/>
+        <testoptions></testoptions>
         <quiet>0</quiet>
         <truescoremode>=</truescoremode>
         <truescore>1</truescore>
-        <truepenalty/>
+        <truepenalty></truepenalty>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt4-1-T</trueanswernote>
         <truefeedback format="html">
-          <text/>
+          <text></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
-        <falsepenalty/>
+        <falsepenalty></falsepenalty>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt4-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text/>
+          <text></text>
         </falsefeedback>
       </node>
     </prt>
@@ -1136,27 +1186,27 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       </feedbackvariables>
       <node>
         <name>0</name>
-        <description/>
+        <description></description>
         <answertest>AlgEquiv</answertest>
         <sans>[ans5, ans13, ans21, ans29]</sans>
         <tans>tas[5]</tans>
-        <testoptions/>
+        <testoptions></testoptions>
         <quiet>0</quiet>
         <truescoremode>=</truescoremode>
         <truescore>1</truescore>
-        <truepenalty/>
+        <truepenalty></truepenalty>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt5-1-T</trueanswernote>
         <truefeedback format="html">
-          <text/>
+          <text></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
-        <falsepenalty/>
+        <falsepenalty></falsepenalty>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt5-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text/>
+          <text></text>
         </falsefeedback>
       </node>
     </prt>
@@ -1170,27 +1220,27 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       </feedbackvariables>
       <node>
         <name>0</name>
-        <description/>
+        <description></description>
         <answertest>AlgEquiv</answertest>
         <sans>[ans6, ans14, ans22, ans30]</sans>
         <tans>tas[6]</tans>
-        <testoptions/>
+        <testoptions></testoptions>
         <quiet>0</quiet>
         <truescoremode>=</truescoremode>
         <truescore>1</truescore>
-        <truepenalty/>
+        <truepenalty></truepenalty>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt6-1-T</trueanswernote>
         <truefeedback format="html">
-          <text/>
+          <text></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
-        <falsepenalty/>
+        <falsepenalty></falsepenalty>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt6-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text/>
+          <text></text>
         </falsefeedback>
       </node>
     </prt>
@@ -1204,27 +1254,27 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       </feedbackvariables>
       <node>
         <name>0</name>
-        <description/>
+        <description></description>
         <answertest>AlgEquiv</answertest>
         <sans>[ans7, ans15, ans23, ans31]</sans>
         <tans>tas[7]</tans>
-        <testoptions/>
+        <testoptions></testoptions>
         <quiet>0</quiet>
         <truescoremode>=</truescoremode>
         <truescore>1</truescore>
-        <truepenalty/>
+        <truepenalty></truepenalty>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt7-1-T</trueanswernote>
         <truefeedback format="html">
-          <text/>
+          <text></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
-        <falsepenalty/>
+        <falsepenalty></falsepenalty>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt7-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text/>
+          <text></text>
         </falsefeedback>
       </node>
     </prt>
@@ -1238,27 +1288,27 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       </feedbackvariables>
       <node>
         <name>0</name>
-        <description/>
+        <description></description>
         <answertest>AlgEquiv</answertest>
         <sans>[ans8, ans16, ans24, ans32]</sans>
         <tans>tas[8]</tans>
-        <testoptions/>
+        <testoptions></testoptions>
         <quiet>0</quiet>
         <truescoremode>=</truescoremode>
         <truescore>1</truescore>
-        <truepenalty/>
+        <truepenalty></truepenalty>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt8-1-T</trueanswernote>
         <truefeedback format="html">
-          <text/>
+          <text></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
-        <falsepenalty/>
+        <falsepenalty></falsepenalty>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt8-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text/>
+          <text></text>
         </falsefeedback>
       </node>
     </prt>
@@ -1272,34 +1322,34 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       </feedbackvariables>
       <node>
         <name>0</name>
-        <description/>
+        <description></description>
         <answertest>AlgEquiv</answertest>
         <sans>ans33</sans>
         <tans>mcq_correct(ta)</tans>
-        <testoptions/>
+        <testoptions></testoptions>
         <quiet>0</quiet>
         <truescoremode>=</truescoremode>
         <truescore>1</truescore>
-        <truepenalty/>
+        <truepenalty></truepenalty>
         <truenextnode>-1</truenextnode>
         <trueanswernote>prt9-1-T</trueanswernote>
         <truefeedback format="html">
-          <text/>
+          <text></text>
         </truefeedback>
         <falsescoremode>=</falsescoremode>
         <falsescore>0</falsescore>
-        <falsepenalty/>
+        <falsepenalty></falsepenalty>
         <falsenextnode>-1</falsenextnode>
         <falseanswernote>prt9-1-F</falseanswernote>
         <falsefeedback format="html">
-          <text/>
+          <text></text>
         </falsefeedback>
       </node>
     </prt>
     <deployedseed>1765782283</deployedseed>
     <qtest>
       <testcase>1</testcase>
-      <description/>
+      <description></description>
       <testinput>
         <name>ans1</name>
         <value>tas[1][1]</value>
@@ -1528,4 +1578,5 @@ ta: random_permutation([["Bernard and Charles order dessert but not Albert.", fa
       </expected>
     </qtest>
   </question>
+
 </quiz>
