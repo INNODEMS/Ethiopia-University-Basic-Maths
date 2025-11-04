@@ -18,7 +18,7 @@
 
   <colophon>
     <p> 
-        This book was authored in <pretext />. By the following contibutiong team;
+        This book was authored in <pretext />. By the following contibuting team:
         <ol marker="1.">
           <li>
             <p>
@@ -82,6 +82,26 @@
           </li>
         </ol>
     </p>
+
+    <p> 
+        We want to thank the following colleagues who helped with question review and feedback:
+        <ol marker="1.">
+          <li><p>Mr. Getnet Worku, Bahir Dar University</p></li>
+          <li><p>Dr. Zelalem Teshome, Addis Ababa University</p></li>
+          <li><p>Dr. Anteneh Alemu, Woldia University</p></li>
+          <li><p>Ageze Abye Admasu, Woldia University</p></li>
+          <li><p>Ermias Alemayehu, Bahir Dar University</p></li>
+          <li><p>Dr. Gerima Tefera, Wollo University</p></li>
+          <li><p>Dr. Fasil Gidaf, Wollo University</p></li>
+          <li><p>Mr. Habtamu Getachew, Debre Markos University</p></li>
+          <li><p>Yonas Eshetu, Bahir Dar University</p></li>
+          <li><p>Yeshiwas</p></li>
+          <li><p>Mr. Dgnachew Jenber, AASTU</p></li>
+          <li><p>Yibekal</p></li>
+          <li><p>Zemachu</p></li>
+        </ol>
+    </p>
+
   </colophon>
 </backmatter>
 
