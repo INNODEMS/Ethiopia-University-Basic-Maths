@@ -43,7 +43,7 @@
     </copyright>
 
     <credit>
-      <role>Converted into <pretext /> by</role>
+      <role>This book was converted into <pretext /> by</role>
       <entity>INNODEMS</entity>
     </credit>
 
@@ -52,6 +52,43 @@
   <titlepage>
     <titlepage-items/>
   </titlepage>
+
+
+    <abstract>
+    <title>Acknowledgements</title>
+    <paragraphs>
+
+    <p> 
+      We would like to extend our sincere gratitude to the <em>Department of Mathematics at Bahir Dar University</em> for organizing the <em>3rd African STACK Conference</em> one of whose outcomes is this textbook and for their coordination/leadership in digitizing the <em>Basic Mathematics for Natural Sciences</em> course material for undergraduate programs at Ethiopian universities. This important initiative has been crucial for enhancing the accessibility and quality of educational resources.
+
+      Special thanks are due to the following key individuals who played an instrumental role in coordinating the project:
+      <ul>
+        <li><p><em>Dr. Abdu Mohammed Seid</em>, Main Coordinator, Bahir Dar University</p></li>
+        <li><p><em>Dr. Hunegnaw Dessie</em>, Head of the Department of Mathematics, Bahir Dar University</p></li>
+        <li><p><em>Prof. Berhanu Assaye</em>, Dean, College of Science, Bahir Dar University</p></li>
+      </ul>
+    </p> 
+
+    <p> 
+        We also wish to express our appreciation to the following colleagues who contributed their time and expertise in reviewing the questions and providing valuable feedback:
+        <ul>
+          <li><p><em>Mr. Getnet Worku</em>, Bahir Dar University</p></li>
+          <li><p><em>Mr. Ermias Alemayehu</em>, Bahir Dar University</p></li>
+          <li><p><em>Dr. Yeshiwas Mebirat</em>, Bahir Dar University</p></li>
+          <li><p><em>Dr. Zelalem Teshome</em>, Addis Ababa University</p></li>
+          <li><p><em>Dr. Yonas Eshetu</em>, Woldia University</p></li>
+          <li><p><em>Dr. Anteneh Alemu</em>, Woldia University</p></li>
+          <li><p><em>Mr. Ageze Abye Admasu</em>, Woldia University</p></li>
+          <li><p><em>Dr. Gerima Tefera</em>, Wollo University</p></li>
+          <li><p><em>Mr. Fasil Gidaf</em>, Wollo University</p></li>
+          <li><p><em>Dr. Habtamu Getachew</em>, Debre Markos University</p></li>
+        </ul>
+    </p>
+
+    <p>We are deeply grateful to all the individuals mentioned above for their unwavering support and dedication to this project. Their expertise and collaboration have been invaluable in ensuring the success of this digital textbook.</p>
+    </paragraphs>
+    </abstract>
+
 
   <colophon xml:id="front-colophon">
     <colophon-items/>
