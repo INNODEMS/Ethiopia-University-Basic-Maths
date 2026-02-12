@@ -1,0 +1,18 @@
+<stack-static>
+<statement><div><p>Given that the distance between points <m>P</m> and <m>Q</m> with coordinates <m>({2},a)</m> and <m>({-2},{5})</m> respectively is <m>{8}</m> units, find the possible values of <m>a</m>. </p>
+<p><em>Note: Give your answers in exact form. In the case of one solution, repeat the same solution in the two inputs.</em> Type <c>sqrt(x)</c> for <m>\sqrt{x}</m>.</p>
+<p><m>a=</m><fillin characters="9" name="ans1"/>  or <m>a=</m><fillin characters="9" name="ans2"/> </p></div></statement>
+<solution><div><h3><alert>Worked Solution</alert></h3>
+<p>We recall the formula of the distance given by <m>PQ= \displaystyle \sqrt{(x_{q}-x_{p})^{2}+(y_{q}-y_{p})^{2}} </m>. Since <m>PQ={8}</m>, we have;</p>
+<p><md>
+<mrow>\sqrt{({-2}-{2})^2+({5}-{a})^2} \amp ={8}</mrow>
+<mrow>({-4})^2+({5}-{a})^2 \amp ={64}</mrow>
+<mrow>({5}-{a})^2 \amp  ={48}</mrow>
+</md></p>
+
+<p><m>{5}-{a}= \sqrt{{48}}</m> or <m>{5}-{a}= -\sqrt{{48}}</m></p>
+<p><m>a={5-4\cdot \sqrt{3}}</m> or <m>a={4\cdot \sqrt{3}+5}</m></p>
+</div></solution>
+<answer><p><m>5-4\cdot \sqrt{3}</m></p></answer>
+<answer><p><m>4\cdot \sqrt{3}+5</m></p></answer>
+</stack-static>

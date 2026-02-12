@@ -1,0 +1,39 @@
+<stack-static>
+<statement><div><p>Find the three cube roots of<nbsp/> <m>z={-\frac{9}{\sqrt{2}}} + {\frac{9}{\sqrt{2}}}i</m>. Give all roots using principal argument!</p>
+<p><em>Note:  Write <m>z</m> in exponential form first using its principal argument, and the three square roots of <m>z</m> in trigonometric form. <br/>Recall that <m>\sqrt[n]{r}</m> is entered as <m>r^{1/n}</m>.</em></p>
+<p>r = <fillin characters="8" name="ans1"/><nbsp/> and <m>\theta</m> = <fillin characters="8" name="ans2"/> <nbsp/></p>
+<p>z = <fillin characters="15" name="ans3"/></p>
+<p/>
+<p><span/></p>
+<p>(b) The three cube roots of <m>z</m> in trigonometric are;</p>
+<p><m>z_{0}</m> = <fillin characters="18" name="ans4"/> </p>
+<p><m>z_{1}</m> = <fillin characters="18" name="ans5"/> </p>
+<p><m>z_{2}</m> = <fillin characters="18" name="ans6"/> </p>
+<p/></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p>Find the three square roots of  <m>z={-\frac{9}{\sqrt{2}}} {+} {\frac{9}{\sqrt{2}}}i</m>. Give all roots using principal argument!. </p>
+<p><em>Note:  Write <m>z</m> in exponential form first using its principal argument, and the three square roots of <m>z</m> in trigonometric form. <br/>Recall that <m>\sqrt[n]{r}</m> is entered as <m>r^{1/n}</m>.</em></p>
+<p>Recall that if <m>z=x+iy</m>, <m>r = |z| = \sqrt{x^{2}+y^{2}}</m> and depending on the quadrant in which your complex number lies, <m>\theta</m> is obtained from <m>\tan^{-1}(y/x)</m>.</p>
+<p><span/></p>
+<p>In this case, your complex number lies in Quadrant 2 where  <m>\tan^{-1}(y/x) = -{\frac{\pi}{4}}</m>  and <m>\theta = \pi+(-{\frac{\pi}{4}}) = {\frac{3 \pi}{4}}</m>. </p>
+<p><span/></p>
+<p>So <m>r = {9}</m> and <m>\theta = {\frac{3 \pi}{4}}</m> and hence in  exponential form, <m>z=\displaystyle {9} e^{i({\frac{3 \pi}{4}})}</m>.</p>
+<p> </p>
+<p>We apply the following formula to get the roots, <m> z_{k}= \displaystyle |z|^{\frac{1}{n}}e^{({\frac{\Theta}{n}}+{\frac{2 \pi k}{n}})i}</m> where <m>n=3</m>, and <m>k=0,1,2</m>. So,</p>
+ 
+<p><md>
+<mrow>z_{k}= \displaystyle {9}^{\frac{1}{3}}e^{({\frac{\pi}{4}}+{\frac{2 \pi k}{3}})i}</mrow>
+</md></p>
+ 
+<p><md>
+<mrow>\text{For} \; \amp  k=0, \amp  \displaystyle z_{0}= \displaystyle {9^{\frac{1}{3}}} e^{{\frac{\pi}{4}}i}={9^{\frac{1}{3}}} \left( \cos({\frac{\pi}{4}}) + i \sin({\frac{\pi}{4}}) \right)</mrow>
+<mrow>\text{For} \; \amp  k=1, \amp  \displaystyle z_{1}= \displaystyle {9^{\frac{1}{3}}} e^{{\frac{11 \pi}{12}}i} = {9^{\frac{1}{3}}} \left( \cos({\frac{11 \pi}{12}}) + i \sin({\frac{11 \pi}{12}}) \right)</mrow>
+<mrow>\text{For} \; \amp  k=2, \amp  \displaystyle z_{2}= \displaystyle {9^{\frac{1}{3}}} e^{{-\frac{5 \pi}{12}}i} = {9^{\frac{1}{3}}} \left( \cos({-\frac{5 \pi}{12}}) + i \sin({-\frac{5 \pi}{12}}) \right)</mrow>
+</md></p></div></solution>
+<answer><p><m>9</m></p></answer>
+<answer><p><m>\frac{3 \pi}{4}</m></p></answer>
+<answer><p><m>9 e^{\frac{3 \pi}{4} \mathrm{i}}</m></p></answer>
+<answer><p><m>9^{\frac{1}{3}} \left(\cos \left( \frac{\pi}{4} \right)+\mathrm{i} \sin \left( \frac{\pi}{4} \right)\right)</m></p></answer>
+<answer><p><m>9^{\frac{1}{3}} \left(\cos \left( \frac{11 \pi}{12} \right)+\mathrm{i} \sin \left( \frac{11 \pi}{12} \right)\right)</m></p></answer>
+<answer><p><m>9^{\frac{1}{3}} \left(\cos \left( -\frac{5 \pi}{12} \right)+\mathrm{i} \sin \left( -\frac{5 \pi}{12} \right)\right)</m></p></answer>
+</stack-static>

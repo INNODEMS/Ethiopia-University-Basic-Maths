@@ -1,0 +1,24 @@
+<stack-static>
+<statement><div><p>Find the modulus <m>r</m> and argument <m>\theta </m> of <m>{-2\cdot \sqrt{3}}{+}{6\cdot \mathrm{i}}</m>.</p> 
+<p>Give your answers in exact form (in terms of square roots and <m>\pi</m>).</p>
+<p><alert>Note:</alert> <m>\sqrt{a}</m> is entered as <alert>sqrt(a)</alert> and <m>\pi</m> is entered as <alert>%pi</alert>.</p>
+<p><m>r = </m> <fillin characters="8" name="ans1"/>  </p>
+<p><m>\theta = </m> <fillin characters="8" name="ans2"/>  </p></div></statement>
+<solution><div><h3>Worked Solution:</h3>
+<p>The complex number in question is <m>{-2\cdot \sqrt{3}}{+}{6\cdot \mathrm{i}}</m>. If we consider it in the form <m>a + b\cdot i</m>, then <m>a = {-2\cdot \sqrt{3}}</m> and <m>b = {6}</m>. So, the modulus will be;</p>
+<p><m>r = \left| {-2\cdot \sqrt{3}}{+}{6\cdot \mathrm{i}}\right| = \sqrt{a^2 + b^2}</m></p>
+<p><m> = \sqrt{\left( {-2\cdot \sqrt{3}}\right) ^2 + \left( {6}\right) ^2}</m></p>
+<p><m> = \sqrt{ {12} + {36}}</m></p>
+<p><m> = \sqrt{{48}}</m></p>
+<p><m> = {4\cdot \sqrt{3}}</m></p>
+<br/>
+<p>The complex number in question is <m>{-2\cdot \sqrt{3}}{+}{6\cdot \mathrm{i}}</m>. If we consider it in the form <m>a + b\cdot i</m>, then <m>a = {-2\cdot \sqrt{3}}</m> and <m>b = {6}</m>.</p> 
+<p>We first note that, in the Argand Diagram, <m>{-2\cdot \sqrt{3}}{+}{6\cdot \mathrm{i}}</m> lies in quadrant number <m>{2}</m>, which means that the argument <m>\theta </m> is within the range <m>{\frac{\pi}{2}}&lt;\theta &lt; {\pi}</m>.</p>
+<p>So, in order to find the argument of <m>{-2\cdot \sqrt{3}}{+}{6\cdot \mathrm{i}}</m>, we consider the argument of <m>{2\cdot \sqrt{3}+6}\cdot i</m>, where <m>a = {2\cdot \sqrt{3}}</m> and <m>b = {6}</m> and then use the symmetry of the unit circle to find the value of <m>\theta</m> within the correct range.</p>
+<p>In the case of <m>{2\cdot \sqrt{3}+6}\cdot i</m>, <m>\theta = \tan^{-1}\left( \frac{{6}}{{2\cdot \sqrt{3}}}\right) </m></p>
+<p> <m>= \tan^{-1}\left( {\sqrt{3}}\right) </m></p>
+<p> <m>= {-\frac{\pi}{3}}</m></p>
+<p>So, considering the symmetry of the unit circle, for <m>{-2\cdot \sqrt{3}}{+}{6\cdot \mathrm{i}}</m>, <m>\theta = {\frac{2\cdot \pi}{3}}</m>.</p></div></solution>
+<answer><p><m>4\cdot \sqrt{3}</m></p></answer>
+<answer><p><m>\frac{2\cdot \pi}{3}</m></p></answer>
+</stack-static>

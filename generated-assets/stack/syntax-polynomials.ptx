@@ -1,0 +1,4 @@
+<stack-static>
+<statement><p>Try to see if you can input the polynomial. <me>x^4 - 6x^2 -7x + 23</me> Hint: <c>a*x^n</c> will give you <m>ax^n</m> <fillin characters="15" name="ans1"/> </p></statement>
+<answer><p><m>x^4-6\cdot x^2-7\cdot x+23</m></p></answer>
+</stack-static>

@@ -1,0 +1,89 @@
+<stack-static>
+<statement><div><p>Consider the following trigonometric equation, for values of <m>x</m> restricted by <m>0^\circ \leq x &lt; 360^\circ</m>:</p>
+<p style="margin-left: 30px;"><m>{10 \cos ^2\left(x\right)}+{19 \sin \left( x \right)=17}</m></p>
+<p>We will solve this equation step by step using the identity <m>\sin^2(x)+\cos^2(x) = 1</m>.</p>
+<p><em>Note: To enter squared trigonometric functions, <m>\sin^2(x)</m> or <m>\cos^2(x)</m>, you should write <c>sin(x)^2</c> or <c>cos(x)^2</c>.</em></p>
+
+<br/>
+
+<p>(a) Rearrange the identity to make <m>{\cos ^2\left(x\right)}</m> the subject.</p>
+<p style="margin-left: 30px;"><m>{\cos ^2\left(x\right)} = </m> <fillin characters="8" name="ans1"/>  </p>
+<p/>
+
+<br/>
+
+<p>(b) Substitute this expression into the equation and expand and simplify to find an equation in terms of <m>{\sin \left( x \right)}</m> only. 
+<br/>Write your answer in the form <m>a {\sin ^2\left(x\right)}+b {\sin \left( x \right)} + c = 0</m>, where <m>a,b,c \in \mathbb{R}</m>.</p>
+<p style="margin-left: 30px"><fillin characters="15" name="ans2"/> </p>
+<p/>
+
+<br/>
+
+<p>(c) Make the substitution <m>y={\sin \left( x \right)}</m> to get a quadratic equation in terms of <m>y</m>.</p>
+<p style="margin-left: 30px"><fillin characters="15" name="ans3"/> </p>
+
+<br/>
+
+<p>(d) Solve this quadratic equation to find two possible values of <m>y</m>.</p>
+<p style="margin-left: 30px"><m>y = </m> <fillin characters="5" name="ans4"/>  or <m>y = </m> <fillin characters="5" name="ans5"/> </p>
+<p/>
+
+<br/>
+
+<p>(e) Considering that <m>y = {\sin \left( x \right)}</m> and the range of <m>{\sin \left( x \right)}</m> over the reals, only one of these solutions is a possible solution to the original equation. State which of these answers is possible.</p>
+<p style="margin-left: 30px"><m>y = </m> <fillin characters="5" name="ans6"/> </p>
+<p/>
+
+<br/>
+
+<p>(f) Taking now, <m>{\sin \left( x \right)}=y</m>, where <m>y</m> is your answer from part (e). Solve this equation for <m>x</m> to find the two solutions to the original equation.</p>
+<p style="margin-left: 30px"><m>x = </m> <fillin characters="5" name="ans7"/>  or <m>x = </m> <fillin characters="5" name="ans8"/> </p>
+<p/></div></statement>
+<solution><div><p><alert>Worked Solution</alert></p>
+<p>(a) We know that <m>\sin^2(x)+\cos^2(x) = 1</m>, so subtracting <m>{\sin ^2\left(x\right)}</m> from both sides we get <m>{\cos ^2\left(x\right)} = 1 - {\sin ^2\left(x\right)}</m>.</p>
+
+<br/>
+
+<p>(b) The original equation is <m>{10 \cos ^2\left(x\right)}+{19 \sin \left( x \right)=17}</m> and we know that <m>{\cos ^2\left(x\right)} = 1 - {\sin ^2\left(x\right)}</m>.</p> 
+<p>Substituting <m>{\cos ^2\left(x\right)}</m> with <m>1 - {\sin ^2\left(x\right)}</m> gives us <m>{10 \left(1-\sin ^2\left(x\right)\right)}+{19 \sin \left( x \right)} = {17}</m>.</p>
+<p>Expanding gives us <m>{10-10 \sin ^2\left(x\right)} + {19 \sin \left( x \right)} = {17}</m>.</p>
+<p>Collecting all the terms on the same side we get <m>{10 \sin ^2\left(x\right)} - {19 \sin \left( x \right)} + {7} = 0</m>.</p>
+
+<br/>
+
+<p>(c) We need to substitute <m>y = {\sin \left( x \right)}</m> into our equation from Part 2, which is <m>{10 \sin ^2\left(x\right)} - {19 \sin \left( x \right)} + {7} = 0</m>.</p>
+<p>Noting that <m>{\sin ^2\left(x\right)} = ({\sin \left( x \right)})^2</m>, we have <m>{\sin ^2\left(x\right)} = y^2</m>.</p>
+<p>Therefore, substituting we get <m>{10 y^2} - {19 y} + {7} = 0</m>.</p>
+
+<br/>
+
+<p>(d) We need to solve the equation  <m>{10 y^2} - {19 y} + {7} = 0</m>. This can be solved by factorisation, using the quadratic formula or any other suitable method.</p>
+<p>In this solution we will use the quadratic formula.</p>
+<p style="margin-left: 30px">
+<md number="yes">
+<mrow>y \amp  = \frac{-b\pm \sqrt{b^2-4ac}}{2a}</mrow>
+<mrow>\amp  = \frac{{19} \pm \sqrt{{361}-{280}}}{{20}}</mrow>
+<mrow>\amp  = \frac{{19} \pm \sqrt{{81}}}{{20}}</mrow>
+<mrow>\amp  = \frac{{19} \pm {{9}}}{{20}}</mrow>
+<mrow>\amp  = {\frac{7}{5}}, {\frac{1}{2}}</mrow>
+</md>
+</p>
+
+<br/>
+
+<p>(e) The range of the function <m>f(x) = {\sin \left( x \right)}</m> is the set <m>[-1,1]</m>. The answer <m>y = {\frac{7}{5}}</m> is outside this range while the answer <m>y = {\frac{1}{2}}</m> is within this range, so the answer <m>y = {\frac{1}{2}}</m> is the only valid one for the original equation.</p>
+
+<br/>
+
+<p>(f) Substituting our solution for <m>y</m> into <m>y = \cos(x)</m>, we get the equation <m>\cos(x) = {\frac{1}{2}}</m> over the range <m>0^\circ \leq x &lt; 360^\circ</m>.</p>
+<p>Using known results we know that the first solution is <m>x = 60^\circ</m>.</p>
+<p>Using the symmetry of the sine graph we know that the second solution is <m>x = 360 - 60 = 300^\circ</m>.</p></div></solution>
+<answer><p><m>1-\sin ^2\left(x\right)</m></p></answer>
+<answer><p><m>10 \sin ^2\left(x\right)-19 \sin \left( x \right)+7=0</m></p></answer>
+<answer><p><m>10 y^2-19 y+7=0</m></p></answer>
+<answer><p><m>\frac{7}{5}</m></p></answer>
+<answer><p><m>\frac{1}{2}</m></p></answer>
+<answer><p><m>\frac{1}{2}</m></p></answer>
+<answer><p><m>30</m></p></answer>
+<answer><p><m>150</m></p></answer>
+</stack-static>

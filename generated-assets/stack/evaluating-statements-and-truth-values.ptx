@@ -1,0 +1,106 @@
+<stack-static>
+<statement><div><p>A statement is a sentence (or a mathematical expression) that has a well-defined truth value, <br/>either <alert>True</alert> or <alert>False</alert>.</p>
+<p>Use the definition of statement to say whether or not the following sentences are statements and justify your answer.</p>
+
+<br/>
+
+<tabular>
+<row>
+
+<cell width="300px" style="padding:10px">(a) "<m>8</m> is not perfect square."</cell>
+<cell style="padding:10px">[ (a) is a statement | (a) is not a statement ]  because [ it has only one truth value which is false | it is both true and false | it's impossible to say whether it is true or false | it has only one truth value which is true ] 
+<br/></cell><cell>
+
+</cell></row>
+<row>
+
+<cell style="padding:10px">(b) "<m>15 - 6</m>"</cell>
+<cell style="padding:10px">[ (b) is a statement | (b) is not a statement ]  because [ it is both true and false | it is a number, which has no truth value | it has only one truth value which is true | it has only one truth value which is false ] 
+<br/></cell>
+
+</row>
+<row>
+
+<cell style="padding:10px">(c) "<m>15 - 6 = 0</m>"</cell>
+<cell style="padding:10px">[ (c) is a statement | (c) is not a statement ]  because [ it is both true and false | it has only one truth value which is false | it is a number, which has no truth value | it has only one truth value which is true ] 
+<br/></cell>
+
+</row>
+<row>
+
+<cell style="padding:10px">(d) "<m>3x - 2 = 10</m>"</cell>
+<cell style="padding:10px">[ (d) is a statement | (d) is not a statement ]  because [ has only one truth value | we don't know the value of x ] 
+<br/></cell>
+
+</row>
+<row>
+
+<cell style="padding:10px">(e) "if <m>x = 4</m>, then <m>3x - 2 = 10</m>"</cell>
+<cell style="padding:10px">[ (e) is a statement | (e) is not a statement ]  because [ has only one truth value | we don't know the value of x ] 
+<br/></cell>
+
+</row>
+<row>
+
+<cell style="padding:10px">(f) "<m>8,000,000</m> is a very big number."</cell>
+<cell style="padding:10px">[ (f) is a statement | (f) is not a statement ]  because [ it is both true and false | it has truth value true. | everybody will agree that it is true | 'very big' is subjective and not formally defined ] 
+<br/></cell>
+
+</row>
+<row>
+
+<cell style="padding:10px">(g) "It is the highest peak in the world."</cell>
+<cell style="padding:10px">[ (g) is a statement | (g) is not a statement ]  because [ it is both true and false | it is true because it must refer to Mount Everest | it has only one truth value which is false | we don't know what 'it' refers to ] 
+<br/></cell>
+
+</row>
+</tabular></div></statement>
+<solution><div><h3>Worked solution</h3>
+
+<p>(a) "<m>8</m> is not a perfect square."</p>
+<p>This <alert>is</alert> a statement because it makes a clear assertion about the number 8, which can be objectively verified. In this case, the statement is <alert>true</alert> because <m>8</m> is not a perfect square (as it cannot be expressed as the square of an integer).</p>
+
+<br/>
+
+<p>(b) "<m>15 - 6</m>"</p>
+<p>This <alert>is not</alert> a statement because it is an incomplete mathematical expression. It lacks an operation, such as addition or subtraction, to form a valid mathematical statement. As a standalone expression, it doesn't have a truth value.</p>
+
+<br/>
+
+<p>(c) "<m>15 - 6 = 0</m>"</p>
+<p>This <alert>is</alert> a statement because it makes a clear assertion about a mathematical relationship between <m>15</m> and <m>6</m>. However, the statement is false because <m>15 - 6</m> does not equal <m>0</m>; it equals <m>9</m>.</p>
+
+<br/>
+
+<p>(d) "<m>3x - 2 = 10</m>"</p>
+<p>This <alert>is not</alert> a statement because it is an incomplete mathematical equation. The presence of the variable <m>x</m> means that the truth value depends on the value assigned to <m>x</m>. Without knowing the value of <m>x</m>, we cannot determine the truth value of the equation.</p>
+
+<br/>
+
+<p>(e) "if <m>x=4</m>, then <m>3x-2=10</m>"</p>
+<p>This <alert>is</alert> a statement because it presents a conditional relationship between two mathematical expressions. The statement is true because if <m>x</m> is equal to <m>4</m>, then <m>3x - 2</m> equals <m>10</m>.</p>
+
+<br/>
+
+<p>(f) "<m>8,000,000</m> is a very big number."</p>
+<p>This <alert>is not</alert> a statement because the term "very big" is subjective and lacks a well-defined truth value. What is considered "very big" can vary from person to person, making the statement unclear and subjective.</p>
+
+<br/>
+
+<p>(g) "It is the highest peak in the world."</p>
+<p>This <alert>is not</alert> a statement because it uses the pronoun "it" without specifying what "it" refers to. Without knowing the subject being referred to, the statement lacks clarity and a definite truth value.</p></div></solution>
+<answer><p>(a) is a statement</p></answer>
+<answer><p>it has only one truth value which is true</p></answer>
+<answer><p>(b) is not a statement</p></answer>
+<answer><p>it is a number, which has no truth value</p></answer>
+<answer><p>(c) is a statement</p></answer>
+<answer><p>it has only one truth value which is false</p></answer>
+<answer><p>(d) is not a statement</p></answer>
+<answer><p>we don't know the value of x</p></answer>
+<answer><p>(e) is a statement</p></answer>
+<answer><p>has only one truth value</p></answer>
+<answer><p>(f) is not a statement</p></answer>
+<answer><p>'very big' is subjective and not formally defined</p></answer>
+<answer><p>(g) is not a statement</p></answer>
+<answer><p>we don't know what 'it' refers to</p></answer>
+</stack-static>

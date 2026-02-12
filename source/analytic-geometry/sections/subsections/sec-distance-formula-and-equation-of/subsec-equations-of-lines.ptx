@@ -518,9 +518,7 @@
 
 
         <exercise>
-            <stack-moodle label="determining-collinearity-using-slope" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equations-of-lines/Determining-Collinearity-Using-Slope.xml" />
-            </stack-moodle>
+            <stack label="determining-collinearity-using-slope" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equations-of-lines/Determining-Collinearity-Using-Slope.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquations-of-lines%2FDetermining-Collinearity-Using-Slope.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-distance-formula-and-equation-of%2Fsubsec-equations-of-lines.ptx">Add review</url>
             </conclusion>
@@ -528,9 +526,7 @@
             
 
         <exercise>
-            <stack-moodle label="equations-of-a-line-passing-through-two-points" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equations-of-lines/Equations-of-a-Line-Passing-Through-Two-Points.xml" />
-            </stack-moodle>
+            <stack label="equations-of-a-line-passing-through-two-points" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equations-of-lines/Equations-of-a-Line-Passing-Through-Two-Points.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquations-of-lines%2FEquations-of-a-Line-Passing-Through-Two-Points.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-distance-formula-and-equation-of%2Fsubsec-equations-of-lines.ptx">Add review</url>
             </conclusion>
@@ -538,9 +534,7 @@
             
 
         <exercise>
-            <stack-moodle label="equations-of-lines-parallel-and-perpendicular-to-a-given-line" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equations-of-lines/Equations-of-Lines-Parallel-and-Perpendicular-to-a-Given-Line.xml" />
-            </stack-moodle>
+            <stack label="equations-of-lines-parallel-and-perpendicular-to-a-given-line" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equations-of-lines/Equations-of-Lines-Parallel-and-Perpendicular-to-a-Given-Line.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquations-of-lines%2FEquations-of-Lines-Parallel-and-Perpendicular-to-a-Given-Line.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-distance-formula-and-equation-of%2Fsubsec-equations-of-lines.ptx">Add review</url>
             </conclusion>
@@ -548,9 +542,7 @@
             
 
         <exercise>
-            <stack-moodle label="finding-equation-of-a-line-with-given-slope-and-point" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equations-of-lines/Finding-Equation-of-a-Line-with-Given-Slope-and-Point.xml" />
-            </stack-moodle>
+            <stack label="finding-equation-of-a-line-with-given-slope-and-point" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equations-of-lines/Finding-Equation-of-a-Line-with-Given-Slope-and-Point.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquations-of-lines%2FFinding-Equation-of-a-Line-with-Given-Slope-and-Point.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-distance-formula-and-equation-of%2Fsubsec-equations-of-lines.ptx">Add review</url>
             </conclusion>

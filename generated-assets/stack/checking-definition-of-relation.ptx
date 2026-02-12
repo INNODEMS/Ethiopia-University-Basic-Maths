@@ -1,0 +1,17 @@
+<stack-static>
+<statement><div><p>Consider the sets <m>A={\left \{-3 , -2 , 4 , 6 , 8 \right \}}</m> and <m>B={\left \{0 , 2 , 4 , 5 \right \}}.</m></p> 
+<p>Which of the following are relations? Select all the relations from <m>A</m> to <m>B</m>.</p>
+<p/><ol marker="(1)">
+<li><m>{R}_{1}=\left \{\left[ 8 , 0 \right] , \left[ 8 , 4 \right] \right \}</m></li>
+<li><m>{R}_{3}=\left \{\left[ -3 , 0 \right] , \left[ 4 , 5 \right] , \left[ 6 , 8 , 2 \right] , \left[ 8 , 4 \right] \right \}</m></li>
+<li><m>{R}_{2}=\left \{\left[ -3 , 0 \right] , \left[ -3 , 6 \right] , \left[ 8 , 4 \right] \right \}</m></li>
+<li><m>{R}_{4}=\left \{\left[ -3 , 0 \right] , \left[ -3 , 2 \right] , \left[ -3 , 4 \right] , \left[ -3 , 5 \right] , \left[ -2 , 0 \right] , \left[ -2 , 2 \right] , \left[ -2 , 4 \right] , \left[ -2 , 5 \right] , \left[ 4 , 0 \right] , \left[ 4 , 2 \right] , \left[ 4 , 4 \right] , \left[ 4 , 5 \right] , \left[ 6 , 0 \right] , \left[ 6 , 2 \right] , \left[ 6 , 4 \right] , \left[ 6 , 5 \right] , \left[ 8 , 0 \right] , \left[ 8 , 2 \right] , \left[ 8 , 4 \right] , \left[ 8 , 5 \right] \right \}</m></li>
+</ol> 
+<p>Note: For technical reasons, square brackets <m>[a,b]</m> are displayed instead of round brackets <m>(a,b)</m> here.</p></div></statement>
+<solution><div><p><alert><h3>Worked Solution</h3></alert></p>
+<p>Recall: For a relation to be valid, each ordered pair must contain one element from the first set and one element from the second set.</p>
+<p>In this case we have;</p>
+<p><m>{{R}_{1}=\left \{\left[ 8 , 0 \right] , \left[ 8 , 4 \right] \right \}}</m></p>
+<p><m>{{R}_{4}=\left \{\left[ -3 , 0 \right] , \left[ -3 , 2 \right] , \left[ -3 , 4 \right] , \left[ -3 , 5 \right] , \left[ -2 , 0 \right] , \left[ -2 , 2 \right] , \left[ -2 , 4 \right] , \left[ -2 , 5 \right] , \left[ 4 , 0 \right] , \left[ 4 , 2 \right] , \left[ 4 , 4 \right] , \left[ 4 , 5 \right] , \left[ 6 , 0 \right] , \left[ 6 , 2 \right] , \left[ 6 , 4 \right] , \left[ 6 , 5 \right] , \left[ 8 , 0 \right] , \left[ 8 , 2 \right] , \left[ 8 , 4 \right] , \left[ 8 , 5 \right] \right \}}</m></p></div></solution>
+<answer><p><m>(1), (4)</m></p></answer>
+</stack-static>

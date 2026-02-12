@@ -1,0 +1,29 @@
+<stack-static>
+<statement><div><p>Given complex numbers:</p> 
+<p><nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/><m> z_1= \displaystyle  {6} (\cos({\pi})+i\sin({\pi}))</m></p>
+<p><nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/><m> z_2= \displaystyle  {5}(\cos({\frac{\pi}{3}})+i\sin({\frac{\pi}{3}})</m>)</p>
+<p>Calculate in the form <m>a+{\mathrm{i}\cdot b} </m> with <m>a, b</m> be real numbers;</p><p><nbsp/> <nbsp/> <nbsp/> a. <m> \displaystyle  z_1<nbsp/>\times z_2=</m> <fillin characters="16" name="ans1"/> </p>
+<p><nbsp/> <nbsp/> <nbsp/> b. <m> \displaystyle \frac{ z_1 }{z_2} = </m> <fillin characters="18" name="ans2"/> </p></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p>Given complex numbers:</p>
+<p><me> z_1= {6} (\cos({\pi})+i\sin({\pi}))</me> </p>
+<p> <me>z_2= {5}(\cos({\frac{\pi}{3}})+i\sin({\frac{\pi}{3}}))</me>
+</p><p> (a) Recall : <m>A( \cos(\theta)+i\sin(\theta) ) \times B (\cos(\alpha)+i\sin(\alpha)) = (A \times B)(\cos(\theta+\alpha)+i\sin(\theta+\alpha))</m></p>
+<p>In this case, the <em>real</em> parts are <m> A={6}</m> and <m>B={5}</m>, so you need to multiply them. </p>
+<p>Then add the angles which are <m>{\pi}</m> and <m>{\frac{\pi}{3}}</m>,</p>
+<p><md>
+<mrow>\displaystyle z_{1} \times z_{2} \amp  =  {6}(\cos({\pi})+i\sin({\pi})) \times {5} (\cos({\frac{\pi}{3}})+i\sin({\frac{\pi}{3}})</mrow>
+<mrow>\amp  = \displaystyle ({6} \times {5})((\cos({\pi}+{\frac{\pi}{3}})+i\sin({\pi}+{\frac{\pi}{3}}))</mrow>
+<mrow>\amp  = \displaystyle {30} (\cos({\frac{4\cdot \pi}{3}})+i\sin({\frac{4\cdot \pi}{3}}))</mrow>
+<mrow>\amp  = \displaystyle {-5\cdot 3^{\frac{3}{2}}\cdot \mathrm{i}-15}</mrow>
+</md></p>
+<p> (b) Recall : For <m> \displaystyle \frac{ z_1 }{z_2}=\frac{A(\cos(\theta)+i\sin(\theta))}{B(\cos(\alpha)+i\sin(\alpha))} = \frac{A}{B} (\cos(\theta-\alpha)+i\sin(\theta-\alpha)</m>))</p>
+<p>Therefore:</p>
+<p><md>
+<mrow>\displaystyle \frac{ z_1 }{z_2} \amp  = \frac{{6}(\cos({\pi})+i\sin({\pi}))}{ {5} (\cos({\frac{\pi}{3}})+i\sin({\frac{\pi}{3}})}</mrow>
+<mrow>\amp  =  \displaystyle  \left(  \frac{6}{5}\right) \left((\cos({\pi}-{\frac{\pi}{3}})+i\sin({\pi}-{\frac{\pi}{3}}) \right)</mrow>
+<mrow>\amp  =  \displaystyle {\frac{3^{\frac{3}{2}}\cdot \mathrm{i}-3}{5}}</mrow>
+</md></p></div></solution>
+<answer><p><m>-5\cdot 3^{\frac{3}{2}}\cdot \mathrm{i}-15</m></p></answer>
+<answer><p><m>\frac{3^{\frac{3}{2}}\cdot \mathrm{i}-3}{5}</m></p></answer>
+</stack-static>

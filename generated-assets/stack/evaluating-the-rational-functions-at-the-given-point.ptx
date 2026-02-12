@@ -1,0 +1,57 @@
+<stack-static>
+<statement><div><p>Consider the function on the interval <m> {-\frac{9}{7}} \leq x &lt; {\frac{19}{4}} </m> given by,</p>
+<p style="margin-left: 30px"><m> h(x)=\displaystyle {\frac{7 x+2}{3 x^2-9 x-30}} </m></p>
+
+<br/>
+<ol>
+<li>
+<p>Find <m>a</m> such that <m>h(a)=0</m></p>
+<p style="margin-left: 30px"><m>a=</m> <fillin characters="8" name="ans1"/> </p>
+<p/>
+</li>
+<br/>
+<li>
+<p>Find <m>b</m> such that <m>h^{-1}(b)={1}</m></p>
+<p style="margin-left: 30px"><m>b=</m> <fillin characters="8" name="ans2"/> </p>
+<p/>
+</li>
+</ol></div></statement>
+<solution><div><h3>Worked solution</h3>
+<ol>
+<li>
+<p>To find the value of <m>a</m> such that <m>h(a)=0</m>, we need to solve the equation after setting it up equal to zero:</p>
+<p><m>\displaystyle{\frac{7 x+2}{3 x^2-9 x-30}}=0</m></p>
+<p><m>{7 x+2}=0</m></p>
+<p><m>{7 x}={-2}</m></p>
+<p><m>x={-\frac{2}{7}}</m></p>
+
+<p>Now we check that the denominator is non-zero at this point,</p>
+<p hidden=""><m>{\mathbf{False}}</m>
+</p><p style="margin-left: 30px"><md number="yes">
+<mrow>{3 {\left(-\frac{2}{7}\right)}^2-9 \left(-\frac{2}{7}\right)-30} \amp = {\frac{12}{49}+\frac{18}{7}-30}</mrow>
+<mrow>\amp = {-\frac{1332}{49}}</mrow>
+<mrow>\amp  \neq 0</mrow>
+</md></p>
+<p hidden=""><m>{\mathbf{True}}</m>
+
+</p><p>So, we may take <m>a = {-\frac{2}{7}}</m></p>
+</li>
+<br/>
+<li>
+<p>You might have been tempted to find the inverse of <m>h(x)</m> and then solve <m>h^{-1}(b)={1}</m>.
+<br/>However, it is much easier to notice that if <m>h^{-1}(b)={1}</m> then <m>b = h({1})</m>
+<br/>So, we need only to substitute <m>{1}</m> into <m>h(x)</m>.</p>
+
+<p style="margin-left: 30px"><m>h(x) = \displaystyle{\frac{7 x+2}{3 x^2-9 x-30}}</m></p>
+
+<p style="margin-left: 30px"><m>
+h({1}) = \displaystyle\frac{{7} \cdot {1} + {2}}{{3} \cdot {1}^2 {-9} \cdot {1} - {30}}
+= {-\frac{1}{4}}
+</m></p>
+
+<p>So, we have <m>b={-\frac{1}{4}}</m></p>
+</li>
+</ol></div></solution>
+<answer><p><m>-\frac{2}{7}</m></p></answer>
+<answer><p><m>-\frac{1}{4}</m></p></answer>
+</stack-static>

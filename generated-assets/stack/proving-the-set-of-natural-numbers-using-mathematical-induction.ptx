@@ -1,0 +1,95 @@
+<stack-static>
+<statement><div><p>Consider the following proposition, then fill in the blanks to complete the proof outlined below it.</p>
+
+<br/>
+
+<p><alert>Proposition:</alert> Show that by mathematical induction that <nbsp/> <m>\displaystyle  \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}</m></p>
+<p><em>Note: "LHS" means Left Hand Side and "RHS" means Right Hand Side.</em></p>
+<p><em>We also use the notation, <nbsp/> <m> \sum_{k=1}^{n} k^2 = 1^2 + 2^2 + 3^2 + \cdots + n^2 </m></em></p>
+
+<br/>
+
+<p><alert>Proof by induction:</alert></p>
+<p>Define <m>P(n)</m> to be the statement of the proposition, that: <m>\displaystyle  \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6} </m></p>
+
+<p><alert>Step 1:</alert> Base case.</p>
+<p>For <m>n = 1</m>, we have</p>
+
+<p style="margin-left:30px">LHS: <m>\displaystyle \sum_{k=1}^{n} k^2 =</m> <fillin characters="5" name="ans1"/> </p>
+<p/> 
+
+<p style="margin-left:30px">RHS: <m> \frac{n(n+1)(2n+1)}{6}=</m> <fillin characters="5" name="ans2"/> </p>
+<p/>
+
+<p>Since these are equal, <m> P(1) </m> is [ true | false ] </p>
+<p/>
+
+<br/>
+
+<p><alert>Step 2:</alert> Induction step.</p>
+<p>Assume <m>P(n)</m> is true, which means that <m> \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6} </m>
+<br/>This is called the <alert>induction hypothesis</alert>.</p>
+<p>We then need to show <m> P(n+1) </m> is true.</p>
+
+<br/>
+
+<p><m>P(n+1): \displaystyle \sum_{k=1}^{n+1} k^2 = \sum_{k=1}^{n} k^2 </m> + <fillin characters="15" name="ans4"/> </p>
+<p style="margin-left:131px"><m>=</m> <fillin characters="15" name="ans5"/>  <nbsp/> (using the induction hypothesis)</p>
+<p style="margin-left:131px"><m>= (n+1) \times ( </m> <fillin characters="15" name="ans5b"/> <m>)</m>  <nbsp/> (factorizing out the common term)</p>
+<p style="margin-left:131px"><m>= (n+1)(n+2) \times ( </m> <fillin characters="15" name="ans5c"/> <m>)</m>  <nbsp/> (factorising the quadratic)</p>
+<p style="margin-left:131px"><m>=</m> <fillin characters="15" name="ans5d"/>  <nbsp/> (writing in the form of the RHS of <m>P(n+1)</m>)</p>
+<p/>
+
+<p>So, <m>P(n+1)</m> is [ true | false ]  </p>
+
+<br/>
+
+<p>Therefore, by the Principle of Mathematical Induction, we have <m> \displaystyle  \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}</m></p></div></statement>
+<solution><div><p><alert>Proposition:</alert> Show that by mathematical induction that <nbsp/> <m>\displaystyle  \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}</m></p>
+<p><em>Note: "LHS" means Left Hand Side and "RHS" means Right Hand Side.</em></p>
+<p><em>We also use the notation, <nbsp/> <m> \sum_{k=1}^{n} k^2 = 1^2 + 2^2 + 3^2 + \cdots + n^2 </m></em></p>
+
+<br/>
+
+<p><alert>Proof by induction:</alert></p>
+<p>Define <m>P(n)</m> to be the statement of the proposition, that: <m>\displaystyle  \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6} </m></p>
+
+<p><alert>Step 1:</alert> Base case.</p>
+<p>For <m>n = 1</m>, we have</p>
+
+<p style="margin-left:30px">LHS: <m>\displaystyle \sum_{k=1}^{n} k^2 = 1^2 = 1</m></p>
+
+<p style="margin-left:30px">RHS: <m> \frac{n(n+1)(2n+1)}{6} = \frac{1 \cdot (1+1) \cdot (2+1)}{6} = 1</m></p>
+
+<p>Since these are equal, <m> P(1) </m> is <alert>true</alert>.</p>
+
+<br/>
+
+<p><alert>Step 2:</alert> Induction step.</p>
+<p>Assume <m>P(n)</m> is true, which means that <m> \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6} </m>
+<br/>This is called the <alert>induction hypothesis</alert>.</p>
+<p>We then need to show <m> P(n+1) </m> is true.</p>
+
+<br/>
+
+<p><m>P(n+1): \displaystyle \sum_{k=1}^{n+1} k^2 = \sum_{k=1}^{n} k^2 </m> + (n+1)^2</p>
+<p style="margin-left:131px"><m>=</m> <m>{{\left(n+1\right)}^2+\frac{n \left(n+1\right) \left(2 n+1\right)}{6}}</m> <nbsp/> (using the induction hypothesis)</p>
+<p style="margin-left:131px"><m>= (n+1) \times ({\frac{n \left(2 n+1\right)}{6}+n+1})</m> <nbsp/> (factorizing out the common term)</p>
+<p style="margin-left:131px"><m>= (n+1)(n+2) \times ({\frac{2 n+3}{6}})</m> <nbsp/> (factorising the quadratic)</p>
+<p style="margin-left:131px"><m>= {\frac{\left(n+1\right) \left(n+2\right) \left(2 \left(n+1\right)+1\right)}{6}}</m> <nbsp/> (writing in the form of the RHS of <m>P(n+1)</m>)</p>
+
+<p>So, <m>P(n+1)</m> is <alert>true</alert>.</p>
+
+<br/>
+
+<p>Therefore, by the Principle of Mathematical Induction, we have <m> \displaystyle  \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}</m></p></div></solution>
+<answer><p><m>1</m></p></answer>
+<answer><p><m>1</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>{\left(n+1\right)}^2</m></p></answer>
+<answer><p><m>{\left(n+1\right)}^2+\frac{n \left(n+1\right) \left(2 n+1\right)}{6}</m></p></answer>
+<answer><p><m>\frac{n \left(2 n+1\right)}{6}+n+1</m></p></answer>
+<answer><p><m>\frac{2 n+3}{6}</m></p></answer>
+<answer><p><m>\frac{\left(n+1\right) \left(n+2\right) \left(2 \left(n+1\right)+1\right)}{6}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+</stack-static>

@@ -1,0 +1,28 @@
+<stack-static>
+<statement><div><p>In some questions, you may be asked to select choices from a drop down list. There may be multiple of them, such as in the table below.</p>
+<p>Suppose we have two statements as shown:</p>
+<ol>
+<li>John has finished his homework</li>
+<li>Mary has finished her homework</li>
+</ol>
+<p>Complete the table below by filling in the correct response whether true or false.</p>
+
+<tabular border="1">
+
+<row>
+<cell>Both John and Mary are still doing their homework<br/></cell>
+<cell>Both John and Mary are done with their homework<br/></cell>
+</row>
+<row>
+<cell> [ true | false ] </cell>
+<cell> [ true | false ] </cell>
+</row>
+<row>
+<cell> </cell>
+<cell/>
+</row>
+
+</tabular></div></statement>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+</stack-static>

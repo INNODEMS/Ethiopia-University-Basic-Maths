@@ -1,0 +1,44 @@
+<stack-static>
+<statement><div><p>Use the definition of statement to say whether or not the following sentences are statements and justify your answer.</p>
+<hr/>
+<br/><nbsp/>A: "8 <m>x</m> = 72".
+<br/> [ A is not a statement | A is a statement ] because<nbsp/>[ If x ≠ 9 then A is false | A is both true and false ].  
+<hr/>
+<br/><nbsp/>B: "Five is a prime number."<nbsp/>
+<br/><nbsp/> [ B is not a statement | B is a statement ] because<nbsp/>[ B has only one truth value | It's impossible to answer B by true or false ].   
+<hr/>
+<br/><nbsp/>C: "Where are you going?"
+<br/><nbsp/><nbsp/>[ C is a statement | C is not a statement ] because<nbsp/>[ C has only one truth value | Interrogative sentences are not statements ].   
+<hr/>
+<br/><nbsp/>D: "Show me your paper!"
+<br/><nbsp/>[ D is a statement | D is not a statement ] because<nbsp/>[ Interrogative sentences are not statements | We can't give a truth value of D. ].  
+<hr/>
+<br/><nbsp/>E: "The river flows in Kenya."
+<hr/>
+<br/><nbsp/>[ E is not a statement | E is a statement ] because<nbsp/>[ There is no precision about the river | E has only one truth value ].   </div></statement>
+<solution><div><h3><alert>Worked Solution</alert></h3>
+
+<br/><nbsp/>A: "8 <m>x</m> = 72" A is not a statement because A is both true and false
+<hr/>
+<br/><nbsp/>B: "Five is a prime number."<nbsp/>B is a statement because B has only one truth value
+
+<hr/>
+<br/><nbsp/>C: "Where are you going?"
+C is not a statement because Interrogative sentences are not statements
+<hr/>
+<br/><nbsp/>D: "Show me your paper!"
+D is not a statement because We can't give a truth value of D.
+<hr/>
+<br/><nbsp/>E: "The river flows in Kenya."
+E is not a statement because There is no precision about the river</div></solution>
+<answer><p>A is not a statement</p></answer>
+<answer><p>A is both true and false</p></answer>
+<answer><p>B is a statement</p></answer>
+<answer><p>B has only one truth value</p></answer>
+<answer><p>C is not a statement</p></answer>
+<answer><p>Interrogative sentences are not statements</p></answer>
+<answer><p>D is not a statement</p></answer>
+<answer><p>We can't give a truth value of D.</p></answer>
+<answer><p>E is not a statement</p></answer>
+<answer><p>There is no precision about the river</p></answer>
+</stack-static>

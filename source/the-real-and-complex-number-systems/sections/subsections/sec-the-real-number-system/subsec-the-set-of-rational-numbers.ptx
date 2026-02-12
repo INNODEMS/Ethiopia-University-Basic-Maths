@@ -390,9 +390,7 @@
 
 
         <exercise>
-            <stack-moodle label="converting-terminating-decimal-to-fraction-form" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-rational-numbers/Converting-terminating-decimal-to-fraction-form.xml" />
-            </stack-moodle>
+            <stack label="converting-terminating-decimal-to-fraction-form" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-rational-numbers/Converting-terminating-decimal-to-fraction-form.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-rational-numbers%2FConverting-terminating-decimal-to-fraction-form.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-rational-numbers.ptx">Add review</url>
             </conclusion>
@@ -400,9 +398,7 @@
             
 
         <exercise>
-            <stack-moodle label="proving-by-contradiction-of-an-irrational-number" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-rational-numbers/proving-by-contradiction-of-an-irrational-number.xml" />
-            </stack-moodle>
+            <stack label="proving-by-contradiction-of-an-irrational-number" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-rational-numbers/proving-by-contradiction-of-an-irrational-number.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-rational-numbers%2Fproving-by-contradiction-of-an-irrational-number.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-rational-numbers.ptx">Add review</url>
             </conclusion>

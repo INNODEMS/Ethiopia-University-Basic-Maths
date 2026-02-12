@@ -1,0 +1,40 @@
+<stack-static>
+<statement><div><p>Evaluate <m> \displaystyle \sqrt{z}</m> given that <m>z={0} + {4}i</m>.</p> 
+<p>Note:</p>
+<p/><ol>
+  <li><p style="color:blue">Give all the roots!</p></li>
+  <li><p style="color:blue">You might want to write <m>z</m> in polar form first, with your solution in <m>\pi</m> radians, or in the form <m>\displaystyle z=re^{i\theta}</m> to simplify the calculations.</p></li>
+</ol>
+<!-- This is commented out 
+<p><m>r =</m> </p>
+<p><m>\theta=</m>  (in <m>\pi</m> radians</p>
+<p><m>z =</m> (in polar form)</p> -->
+<p>Possible values for <m>\sqrt{z}:</m></p>
+<p><m>\sqrt{z}= </m> <fillin characters="15" name="ans4"/> or <m>\sqrt{z}= </m> <fillin characters="15" name="ans5"/> </p>
+<p><m>\quad</m>  <m>\quad </m> </p>
+<p/></div></statement>
+<solution><div><h3><alert>Worked solution</alert></h3>
+<p>Given <m> \displaystyle z={0} + {4}i</m>, let's express <m>z</m> in polar form:</p>
+
+<ol>
+  <li><p>Magnitude (<m>r</m>) of <m>z</m>:</p>
+    <m>\displaystyle r = \sqrt{({0} )^2 + ({4})^2} = \sqrt{{0} + {16}} = \sqrt{{16}} = {4} </m></li>
+  <li><p>Argument (<m>\theta</m>) of <m>z</m>:</p>
+    <m> \displaystyle \theta = \arctan\left(\frac{\text{Im}(z)}{\text{Re}(z)}\right) = \arctan\left(\frac{{4}}{{0}}\right) </m>
+    <m>\displaystyle  \theta= {\frac{\pi}{2}} \approx {1.57}</m></li>
+
+ <li>
+<p>Now, <m>z</m> in polar form becomes:</p>
+<m>\displaystyle  z = re^{i\theta} = {4}e^{{\frac{\pi}{2}}i} ={4 \mathrm{i}}</m>
+
+</li>
+ <li>
+<p>Expressing the square root of <m>z</m> in polar form:</p>
+<m>\displaystyle  \sqrt{z} = \sqrt{ {4}}e^{{\frac{\pi}{2}}i}=\sqrt{{4 \mathrm{i}}} </m>
+ <p>Now, for possible values of  <m>\displaystyle  \sqrt{z} ,</m> we consider the fact that the square root function introduces a <m> \pm </m> sign:</p>
+
+<p><m>\displaystyle  \sqrt{z} = {2 \left(\frac{\mathrm{i}}{\sqrt{2}}+\frac{1}{\sqrt{2}}\right)} </m> or </p>
+<p><m>\displaystyle \sqrt{z} = {2 \left(-\frac{\mathrm{i}}{\sqrt{2}}-\frac{1}{\sqrt{2}}\right)} </m></p></li></ol></div></solution>
+<answer><p><m>2 \left(\frac{\mathrm{i}}{\sqrt{2}}+\frac{1}{\sqrt{2}}\right)</m></p></answer>
+<answer><p><m>2 \left(-\frac{\mathrm{i}}{\sqrt{2}}-\frac{1}{\sqrt{2}}\right)</m></p></answer>
+</stack-static>

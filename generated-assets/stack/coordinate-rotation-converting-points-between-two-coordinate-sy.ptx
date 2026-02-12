@@ -1,0 +1,52 @@
+<stack-static>
+<statement><div><p>Suppose the xy-coordinate axes are rotated <m> {180} ^ { \circ } </m> counterclockwise about the origin to obtain the new <m>x^{ \prime } y^{ \prime } </m>-coordinate system. If the following points are with respect to the new <m>x^{ \prime } y^{ \prime } </m>- system, what is the coordinates of each point with respect to the old <m>x\,y</m>-system?</p>
+<p>(a) <m> ({3}, {-2}) </m> </p>  
+<p> <fillin characters="11" name="ans1"/> </p>
+<p>(b) <m> ({\sqrt{6}}, {-\sqrt{2}}) </m> </p> 
+<p><fillin characters="11" name="ans2"/> </p>
+<p>(c) <m> ({-\sqrt{11}},{\sqrt{3}}) </m> </p>  
+<p><fillin characters="11" name="ans3"/> </p>
+<p>(d) <m> ({\sqrt{2}} ,{-\sqrt{15}}) </m> </p> 
+<p><fillin characters="11" name="ans4"/> </p></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p>To convert coordinates from the rotated system <m> (x^{ \prime}, y ^{ \prime } ) </m> back to the original system <m> (x, y) </m>, we need to perform a clockwise rotation by the same angle. In this case, the angle of rotation is <m> {180} </m> degrees counterclockwise, so we'll perform a clockwise rotation of <m> {180} </m> degrees to get back to the original system.</p>
+<p>The formula to rotate a point <m> (x, y) </m> by an angle <m> \theta </m> counterclockwise is:</p>
+<p><m> x^{ \prime}= x \, \cos(\theta) - y \, \sin(\theta) </m></p>
+<p><m> y^{ \prime} = x \, \sin(\theta) + y \, \cos(\theta) </m></p>
+<p>Since we want to go from <m> (x^{ \prime}, y^{ \prime} ) </m> to <m> (x, y) </m>, we'll substitute <m> -\theta </m> (clockwise rotation) and use the same trigonometric functions:</p>
+<p><m> x = x^{ \prime} \, \cos(-\theta) - y^{ \prime} \, \sin(-\theta) </m></p>
+<p><m> y = x^{ \prime} \, \sin(-\theta) + y^{ \prime} \, \cos(-\theta) </m></p>
+<p>Given <m> \theta = {180} </m> degrees, or <m> {\pi} </m> radians, the trigonometric values are:</p>
+<p><m> \cos({\pi}) = {-1} </m></p>
+<p><m> \sin({\pi})  = {0} </m></p>
+<p><m> \cos(-{\pi})= {-1} </m></p>
+<p><m> \sin(-{\pi}) = {0} </m></p>
+<p>Let's apply this to each given point:</p>
+<p>(a) <m> ({3}, {-2}) </m> :</p>
+<p><m> x = {3} \cdot ({-1}) - ({-2}) \cdot ({0}) = {-3} </m></p>
+<p><m> y = {3} \cdot ({0}) + ({-2}) \cdot ({-1}) = {2} </m></p>
+<p>So, the coordinates of this point with respect to the old xy-system is</p>
+<p><m> ({-3} ,{2}) </m></p>
+<br/>
+<p>(b) <m> ({\sqrt{6}}, {-\sqrt{2}}) </m> :</p>
+<p><m> x = {\sqrt{6}} \cdot ({-1}) - ({-\sqrt{2}}) \cdot ({0}) = {-\sqrt{6}} </m></p>
+<p><m> y = {\sqrt{6}} \cdot ({0}) + ({-\sqrt{2}}) \cdot ({-1}) = {\sqrt{2}} </m></p>
+<p>So, the coordinates of this point with respect to the old xy-system is</p>
+<p><m> ({-\sqrt{6}}, {\sqrt{2}}) </m></p>
+<br/>
+<p>(c) <m> ({-\sqrt{11}},{\sqrt{3}}) </m> :</p>
+<p><m> x = {-\sqrt{11}} \cdot ({-1}) - ({\sqrt{3}}) \cdot ({0}) = {\sqrt{11}} </m></p>
+<p><m> y = {-\sqrt{11}} \cdot ({0}) + ({\sqrt{3}}) \cdot ({-1}) = {-\sqrt{3}} </m></p>
+<p>So, the coordinates of this point with respect to the old xy-system is</p>
+<p> <m> ({\sqrt{11}}, {-\sqrt{3}}) </m></p>
+<br/>
+<p>(d) <m> ({\sqrt{2}} ,{-\sqrt{15}}) </m> :</p>
+<p><m> x = {\sqrt{2}} \cdot ({-1}) - ({-\sqrt{15}}) \cdot ({0}) = {-\sqrt{2}} </m></p>
+<p><m> y = {\sqrt{2}} \cdot ({0}) + ({-\sqrt{15}}) \cdot ({-1}) = {\sqrt{15}} </m></p>
+<p>So, the coordinates of this point with respect to the old xy-system is</p>
+<p><m> ({-\sqrt{2}}, {\sqrt{15}})</m></p></div></solution>
+<answer><p><m>\left[ -3 , 2 \right] </m></p></answer>
+<answer><p><m>\left[ -\sqrt{6} , \sqrt{2} \right] </m></p></answer>
+<answer><p><m>\left[ \sqrt{11} , -\sqrt{3} \right] </m></p></answer>
+<answer><p><m>\left[ -\sqrt{2} , \sqrt{15} \right] </m></p></answer>
+</stack-static>

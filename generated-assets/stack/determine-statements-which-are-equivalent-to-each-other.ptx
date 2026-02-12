@@ -1,0 +1,35 @@
+<stack-static>
+<statement><div><p>Use the truth table to say which of the following statements are equivalent to each other.</p>
+<tabular style="margin-left:30px">
+<row>
+<cell width="200px"><m>\text{Statement 1}: P \Rightarrow Q</m></cell>
+<cell width="200px"><m>\text{Statement 2}: \neg (P \vee Q)</m></cell>
+</row>
+<cell><m>\text{Statement 3}: \neg (P \wedge Q)</m></cell>
+<cell><m>\text{Statement 4}: P \wedge \neg Q</m></cell>
+<row>
+<cell><m>\text{Statement 5}: \neg (P \Rightarrow Q)</m></cell>
+<cell><m>\text{Statement 6}: P \vee \neg Q</m></cell>
+</row>
+<row>
+<cell><m>\text{Statement 7}: \neg P \vee \neg Q</m></cell>
+<cell><m>\text{Statement 8}: \neg P \wedge \neg Q</m></cell>
+</row>
+<row>
+<cell><m>\text{Statement 9}: \neg P \wedge Q</m></cell>
+<cell><m>\text{Statement 10}: \neg P \Rightarrow \neg Q</m></cell>
+</row>
+</tabular>
+
+<br/>
+
+<p>(a) Which statement is equivalent to statement 1? [ Statement 4 | Statement 5 | Statement 2 ] </p>
+<p/>
+
+<p>(b) Which two statements are equivalent to statement 3? [ Statement 1  | Statement 2 | Statement 4 | Statement 5 ] </p>
+<p/></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p dir="ltr" style="text-align: left;"><m>{\begin{array}{c|c|c} P &amp; Q &amp; P\,{\text{ implies }}\, Q\\ \hline \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{F} \\ \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \end{array}}</m><nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <m>{\begin{array}{c|c|c} P &amp; Q &amp; {\rm not}\left( P\,{\text{ or }}\, Q \right)\\ \hline \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{F} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{F} \\ \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{F} \end{array}}</m><nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <m>{\begin{array}{c|c|c} P &amp; Q &amp; {\rm not}\left( P\,{\text{ and }}\, Q \right)\\ \hline \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{F} \end{array}}</m><nbsp/></p><p dir="ltr" style="text-align: left;"><m>{\begin{array}{c|c|c} P &amp; Q &amp; P\,{\text{ and }}\, {\rm not}\left( Q \right)\\ \hline \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{F} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{F} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{F} \end{array}}</m><nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <m>{\begin{array}{c|c|c} P &amp; Q &amp; {\rm not}\left( P\,{\text{ implies }}\, Q \right)\\ \hline \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{F} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{F} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{F} \end{array}}</m><nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <m>{\begin{array}{c|c|c} P &amp; Q &amp; P\,{\text{ or }}\, {\rm not}\left( Q \right)\\ \hline \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{F} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \end{array}}</m><nbsp/><nbsp/></p><p dir="ltr" style="text-align: left;"><m>{\begin{array}{c|c|c} P &amp; Q &amp; {\rm not}\left( P \right)\,{\text{ or }}\, {\rm not}\left( Q \right)\\ \hline \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{F} \end{array}}</m><nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <m>{\begin{array}{c|c|c} P &amp; Q &amp; {\rm not}\left( P \right)\,{\text{ and }}\, {\rm not}\left( Q \right)\\ \hline \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{F} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{F} \\ \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{F} \end{array}}</m><nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <m>{\begin{array}{c|c|c} P &amp; Q &amp; {\rm not}\left( P \right)\,{\text{ or }}\, Q\\ \hline \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{F} \\ \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \end{array}}</m><nbsp/><nbsp/></p><p dir="ltr" style="text-align: left;"><span style="font-size: 0.9375rem;"><m>{\begin{array}{c|c|c} P &amp; Q &amp; {\rm not}\left( Q \right)\,{\text{ implies }}\, {\rm not}\left( P \right)\\ \hline \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{F} \\ \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \end{array}}</m><nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/> <nbsp/></span><br/></p><p/><br/><p/></div></solution>
+<answer><p>Statement 2</p></answer>
+<answer><p>Statement 4</p></answer>
+</stack-static>

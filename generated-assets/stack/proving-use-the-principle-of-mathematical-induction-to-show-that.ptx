@@ -1,0 +1,50 @@
+<stack-static>
+<statement><div><p>Consider the following proposition, and fill in the blanks in its proof.</p>
+<hr/>
+<p><alert>Proposition:</alert> Use the principle of mathematical induction to show that <m> 2^n &lt; (n + 2)! </m> for all integers <m>n \geq 0</m>.</p>
+<hr/>
+<p><br/><alert>Proof by induction:</alert> Define <m> P(n) : 2^n &lt; (n + 2)! </m></p>
+
+<li>Base case. For <m>n = 0</m>, we have</li>
+<br/><ul><m> 2^n=</m> <fillin characters="5" name="ans1"/> <m> &lt; </m> <fillin characters="5" name="ans2"/> <m>= (n + 2)! </m> </ul>  
+<br/> 
+<br/>So <m>P(0)</m> is [ true | false ]  .
+<li>Induction step. Assume <m>P(k)</m> is true. This means that <m>2^k &lt; (k + 2) ! </m> for <m>k \geq 0</m>. This is called induction hypothesis
+<ul> We need to show <m> P(k+1) </m> is true; namely <m> 2^{k+1} &lt; (k + 3)!  </m>.</ul>
+<br/>We observe that, <m> (k+3)!=</m> 
+ <fillin characters="15" name="ans4"/>  
+<p>Hence</p>
+<br/><m>2^{k+1}=</m> <fillin characters="8" name="ans5"/> <m>&lt;</m> <fillin characters="8" name="ans5a"/>   (by hypothesis induction)
+<br/> <m> \qquad \qquad </m>  <m> \qquad </m> 
+<br/>Therefore,
+<br/><fillin characters="10" name="ans5b"/>  
+<br/> So <m> P(k+1) </m> is [ true | false ]   . 
+<p>Therefore, by the Principle of Mathematical Induction, we have <m> 2^n &lt; (n + 2)! </m> for all integers <m>n \geq 0</m>.</p></li></div></statement>
+<solution><div><p><alert> Worked solution</alert></p>
+<hr/>
+<p><alert>Proposition:</alert> Use the principle of mathematical induction to show that <m> 2^n &lt; (n + 2)! </m> for all integers <m>n \geq 0</m>.</p>
+<hr/>
+<p><br/><alert>Proof by induction:</alert> Define <m> P(n) : 2^n &lt; (n + 2)! </m></p>
+<li>Base case. For <m>n = 0</m>, we have</li>
+<ul><m> 2^{0}= 1 &lt; 2= (0 + 2)! </m>.</ul>
+<br/>So <m>P(0) </m> is true.
+<li>Induction step. Assume <m>P(k)</m> is true. This means that <m>2^k &lt; (k + 2) ! </m> for <m>k \geq 0</m>. (Induction hypothesis)</li>
+<ul>we need to show <m> P(k+1) </m> is true; namely <m> 2^{k+1} &lt; (k + 3)!  </m>.</ul>
+
+<ul>We observe that,</ul>
+<ul><m> (k+3)!= (k+3)(k+2)!</m></ul>
+<ul>Hence</ul>
+<p><m> 2^{k+1}= 2.2^k &lt;  (k+3)(k+2)! </m> (by hypothesis induction)</p>
+<pl>Therefore,
+<p>    <m>2^{k+1}= 2.2^k</m> <m>&lt;</m> <m>(k+3)(k+2)!</m></p>
+<p>So <m> P(k+1) </m> is true . </p>
+<p>Therefore, by the Principle of Mathematical Induction, we have <m> 2^n &lt; (n + 2)! </m> for all integers <m>n \geq 0</m>.</p></pl></div></solution>
+<answer><p><m>1</m></p></answer>
+<answer><p><m>2</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\left(k+3\right)\cdot \left(k+2\right)!</m></p></answer>
+<answer><p><m>2\cdot 2^{k}</m></p></answer>
+<answer><p><m>\left(k+3\right)\cdot \left(k+2\right)!</m></p></answer>
+<answer><p><m>2^{k+1} &lt; \left(k+2\right)!</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+</stack-static>

@@ -1,0 +1,37 @@
+<stack-static>
+<statement><span><br/> Find the equation of the ellipse with focus <m> F_{1} ({-4}, {3})</m> and  <m> F_{2} ({-4}, {13})</m>, and major axis <m> AA'={14}  </m>.
+<br/><fillin characters="15" name="ans1"/>  </span></statement>
+<solution><div><h3>Worked solution</h3>
+<br/> Find the equation of the ellipse with focus <m> F_{1} ({-4}, {3})</m> and  <m> F_{2} ({-4}, {13})</m> and major axis <m> AA'={14}  </m>.
+<br/> The equation of an ellipse in standard form follows:
+ <br/><me> \displaystyle \frac{(x-h)^2}{a^2} + \frac{(y-k)^2}{b^2} = 1</me>
+<br/> Here the center is <m>O (h, k)</m>. 
+<br/> In addtion, if <m>\displaystyle F_{1} (x_{F_{1}}, y_{F_{1}})</m> and <m>\displaystyle F_{2} (x_{F_{2}}, y_{F_{2}}) </m> are the focus, and  <m> AA'={14}  </m>  the major axis, we let <m>F_{1}F_{2}=2\cdot c</m>. 
+<br/> We suppose that <m>F_{1}F_{2} </m> is computed along <m> y-axis</m>, that is,  <m> a &lt; b</m>.
+<br/> Then we have the following relations:
+<br/><m>
+(1) \left\{ \begin{array}{r}
+2 \cdot a = AA' \\ 
+b^2=a^2 + c^2
+\end{array}\right. </m> 
+<br/> Since <m>O</m> midpoint of <m> F_{1} F_{2} </m>, then  <m> (2) \left\{ \begin{array}{r}
+h= \displaystyle \frac{x_{F_{1}}+x_{F_{2}}}{2}\\ 
+k= \displaystyle \frac{y_{F_{1}}+y_{F_{2}}}{2}
+\end{array}\right. </m> 
+<br/> In this case, focus <m> F_{1} ({-4}, {3})</m> and  <m> F_{2} ({-4}, {13})</m> and <m> AA'= {14}  </m>.
+<br/>Using the information above we have
+<br/> <m>2 \cdot c =|y_{F_{1}}-y_{F_{2}}|=|({3})-({13})|={10} \implies c = {5}</m>, and <m> AA'= {14} </m>
+<br/> The system (1) becomes: <br/><m>
+\left\{ \begin{array}{r}
+a= \displaystyle {7}\\ 
+b= \displaystyle {\sqrt{74}}
+\end{array}\right.</m> 
+<br/> Using the system (2), we get 
+<m> \left\{ \begin{array}{r}
+h= \displaystyle \frac{({-4})+({-4})}{2} = {-4} \\ 
+k= \displaystyle \frac{({3})+({13})}{2} = {8}
+\end{array}\right. </m> 
+<br/> Therefore, the equation of the ellipse is:
+<br/> <m> \displaystyle {\frac{{\left(x+4\right)}^2}{49}+\frac{{\left(y-8\right)}^2}{74}=1} </m></div></solution>
+<answer><p><m>\frac{{\left(x+4\right)}^2}{49}+\frac{{\left(y-8\right)}^2}{74}=1</m></p></answer>
+</stack-static>

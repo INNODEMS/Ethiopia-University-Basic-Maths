@@ -7,9 +7,7 @@
 
 
         <exercise>
-            <stack-moodle label="introduction-to-sets-and-set-notation" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/The-concept-of-a-set/Introduction-to-sets-and-set-notation.xml" />
-            </stack-moodle>
+            <stack label="introduction-to-sets-and-set-notation" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/The-concept-of-a-set/Introduction-to-sets-and-set-notation.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FThe-concept-of-a-set%2FIntroduction-to-sets-and-set-notation.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-set-theory%2Fsubsec-the-concept-of-a-set.ptx">Add review</url>
             </conclusion>
@@ -17,9 +15,7 @@
             
 
         <exercise>
-            <stack-moodle label="relationship-between-elements-and-sets-notation" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/The-concept-of-a-set/Relationship-between-elements-and-sets-notation.xml" />
-            </stack-moodle>
+            <stack label="relationship-between-elements-and-sets-notation" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/The-concept-of-a-set/Relationship-between-elements-and-sets-notation.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FThe-concept-of-a-set%2FRelationship-between-elements-and-sets-notation.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-set-theory%2Fsubsec-the-concept-of-a-set.ptx">Add review</url>
             </conclusion>
@@ -27,9 +23,7 @@
             
 
         <exercise>
-            <stack-moodle label="analyzing-set-properties-identifying-exceptions" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/The-concept-of-a-set/Analyzing-Set-Properties-Identifying-Exceptions.xml" />
-            </stack-moodle>
+            <stack label="analyzing-set-properties-identifying-exceptions" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/The-concept-of-a-set/Analyzing-Set-Properties-Identifying-Exceptions.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FThe-concept-of-a-set%2FAnalyzing-Set-Properties-Identifying-Exceptions.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-set-theory%2Fsubsec-the-concept-of-a-set.ptx">Add review</url>
             </conclusion>
@@ -37,9 +31,7 @@
             
 
         <exercise>
-            <stack-moodle label="determining-the-universal-set-for-given-sets-a-b-and-c" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/The-concept-of-a-set/Determining-the-Universal-Set-for-Given-Sets-A,-B,-and-C.xml" />
-            </stack-moodle>
+            <stack label="determining-the-universal-set-for-given-sets-a-b-and-c" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/The-concept-of-a-set/Determining-the-Universal-Set-for-Given-Sets-A,-B,-and-C.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FThe-concept-of-a-set%2FDetermining-the-Universal-Set-for-Given-Sets-A%2C-B%2C-and-C.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-set-theory%2Fsubsec-the-concept-of-a-set.ptx">Add review</url>
             </conclusion>

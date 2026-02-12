@@ -1,0 +1,32 @@
+<stack-static>
+<statement><div><p>a) Which one of the following statements defines a set  and explain why set theory is important in mathematics?
+</p><ol marker="(1)">
+<li>A set is a grouping of unrelated objects.
+Set theory helps in creating art and design.</li>
+<li>A set is a collection of numbers arranged in ascending order. Set theory simplifies arithmetic calculations.</li>
+<li>A set is a well-defined collection of objects that share specific properties or characteristics. Set theory provides a rigorous foundation for other concepts, defines relationships between elements, aids in understanding structures, and enables formal proofs.</li>
+<li>A set is a sequence of letters that form a word. Set theory is used in language studies.</li>
+</ol> 
+<p>b) Consider a set <m>A</m> of even numbers less than <m>{20}</m>: </p>
+<p>Select statements which hold for elements in set <m>A</m>.</p>
+<p/><ol marker="(1)">
+<li>8 ∈ A </li>
+<li>Elements in set A are odd numbers</li>
+<li>8 ∉ A </li>
+</ol> </div></statement>
+<solution><div><h3>Worked solution</h3>
+<p>A set is a well-defined collection of objects that share certain properties or characteristics. </p>
+<p>In set theory, sets serve as the fundamental building blocks, and they are used to organize and classify various mathematical objects.</p>
+<p>Set theory is vital in mathematics because it provides a rigorous foundation for other mathematical concepts and operations. </p>
+<p>It helps define relationships between different elements, aids in understanding mathematical structures and enables the development of formal mathematical proofs.</p>
+<p>Example of a well-defined set:</p>
+<p>Let's consider the set <m>A</m> of even numbers less than <m>{20}</m>:</p>
+<p><m>A = {\left \{2 , 4 , 6 , 8 , 10 , 12 , 14 , 16 , 18 \right \}}</m></p>
+<p>In this example, <m>A</m> is a well-defined set because it clearly states the property that all its elements are even numbers less than <m>{20}</m>.</p>
+<p>Illustration using notation:</p>
+<p>To represent the elements of set <m>A</m> using notation:</p>
+<p><m>{8 ∈ A } ({8}</m> is an element of <m>A)</m>
+</p><p><m>{8 ∉ A } ({8}</m> is not an element of <m>A)</m></p></div></solution>
+<answer><p><m>(3)</m></p></answer>
+<answer><p><m>(1)</m></p></answer>
+</stack-static>

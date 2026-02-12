@@ -1,0 +1,39 @@
+<stack-static>
+<statement><div><p>(a) Set <m>A</m> is defined as <m>A = \{ x: x \in \mathbb{Z} \text{ and } {-3} \leq x \leq {5}  \} </m>. 
+<br/>Write down set <m>A</m> by specifying its elements.</p>
+<p><m>A = </m> <fillin characters="25" name="ans1"/>  </p>
+
+<br/>
+
+<p>(b) Set <m>B</m> is defined as <m>B = \{ x: x \in \mathbb{N} \text{ and } {-6} \leq x \leq {5} \} </m>. 
+<br/>Write down set <m>B</m> by specifying its elements.</p>
+<p><m>B = </m> <fillin characters="25" name="ans2"/>  </p>
+
+<br/>
+
+<p>(c) Select which of the following statements is true:</p>
+<p/><ol marker="(1)">
+<li><m>A</m> is not a subset of <m>B</m> and <m>B</m> is not a subset of <m>A</m></li>
+<li><m>A</m> is equal to <m>B</m></li>
+<li><m>B</m> is a proper subset of <m>A</m></li>
+<li><m>A</m> is a proper subset of <m>B</m></li>
+</ol>  </div></statement>
+<solution><div><h3>Worked solution</h3>
+
+<p>(a) The elements of <m>A</m> are those which are elements of <m>\mathbb{Z} = \{ ... , -2, -1, 0, 1, 2, ... \}</m> and which are in the interval <m>{-3} \leq x \leq {5}</m>.
+<br/>Therefore, <m>A = {\left \{-3 , -2 , -1 , 0 , 1 , 2 , 3 , 4 , 5 \right \}}</m></p>
+
+<br/>
+
+<p>(b) The elements of <m>B</m> are those which are elements of <m>\mathbb{N} = \{1, 2, 3, ... \}</m> and which are in the interval <m>{-6} \leq x \leq {5}</m>.
+<br/>Therefore, <m>B = {\left \{1 , 2 , 3 , 4 , 5 \right \}}</m></p>
+
+<br/>
+
+<p>(c) We should check to see whether the elements of <m>A</m> and <m>B</m> are contained in the other set respectively.
+<br/>We can see that every element of the set <m>B</m> is also an element of the set <m>A</m>. <br/>However, not every element of the set <m>A</m> is an element of <m>B</m>, for example -3.
+</p></div></solution>
+<answer><p><m>\left \{-3 , -2 , -1 , 0 , 1 , 2 , 3 , 4 , 5 \right \}</m></p></answer>
+<answer><p><m>\left \{1 , 2 , 3 , 4 , 5 \right \}</m></p></answer>
+<answer><p><m>(3)</m></p></answer>
+</stack-static>

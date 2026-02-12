@@ -1,0 +1,8 @@
+<stack-static>
+<statement><div><p>Have a go at inputting <me>{e^{\pi\cdot x}\cdot \lambda}</me> For Greek letters just write the English name of the Greek letter using the Latin alphabet, eg <m>\epsilon=</m> epsilon.</p>
+
+<p><fillin characters="15" name="ans1"/> </p>
+
+<p><em>Note: Do not copy unicode characters from elsewhere, just use the keyboard to type the English name.</em></p></div></statement>
+<answer><p><m>e^{\pi\cdot x}\cdot \lambda</m></p></answer>
+</stack-static>

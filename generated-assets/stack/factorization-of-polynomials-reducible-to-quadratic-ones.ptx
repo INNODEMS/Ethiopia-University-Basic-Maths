@@ -1,0 +1,9 @@
+<stack-static>
+<statement><div><p>Consider the expression <m>{15 a^4 b^8+23 a^2 b^4+6}</m> and factorize it fully.</p>
+<p><m>{15 a^4 b^8+23 a^2 b^4+6}=</m> <fillin characters="20" name="ans1"/> </p></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p><m>{15 a^4 b^8+23 a^2 b^4+6}={15 a^4 b^8}+ ({18 a^2 b^4})+({5 a^2 b^4})+({6})</m></p>
+<p><m>\qquad \qquad \qquad \qquad\qquad={3 a^2 b^4}({5 a^2 b^4+6})+{1} ({5 a^2 b^4+6})</m></p>
+<p><m>\qquad \qquad \qquad \qquad\qquad={\left(3 a^2 b^4+1\right) \left(5 a^2 b^4+6\right)}</m></p></div></solution>
+<answer><p><m>\left(3 a^2 b^4+1\right) \left(5 a^2 b^4+6\right)</m></p></answer>
+</stack-static>

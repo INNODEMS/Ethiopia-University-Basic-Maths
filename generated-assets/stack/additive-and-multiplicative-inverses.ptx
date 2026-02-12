@@ -1,0 +1,16 @@
+<stack-static>
+<statement><div><p>Find the additive inverse <m>-z</m> and the multiplicative inverse <m>z^{-1}</m> of <m>z = {46}+{1}i</m>.</p>
+<p>a) <m>-z=</m>  <fillin characters="8" name="ans1"/> </p>
+<p>b) <m> z^{-1}=</m> <fillin characters="8" name="ans2"/> </p></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p>Given <m>z = {46} + {1}i</m>, let's find its additive and multiplicative inverses:</p>
+<p>a) Additive Inverse: </p><p>The additive inverse of <m>z</m> is simply <m>-z</m>.</p><p> So, <m>z=-z = -({46} + {1}i) = {-\mathrm{i}-46}</m></p>
+<p>b) Multiplicative Inverse: </p><p>The multiplicative inverse of <m>z</m> is denoted as <m>z^{-1}</m> and is calculated by taking the reciprocal of the complex number.</p>
+<p> In other words, <m> \displaystyle z^{-1} = \displaystyle \frac{1}{z}</m></p>
+<p><m> \qquad \displaystyle z^{-1} =  \displaystyle \frac{1}{z}=  \displaystyle {\frac{1}{\mathrm{i}+46}}</m></p>
+<p>To rationalize the denominator, we'll multiply both the numerator and denominator by the conjugate of the denominator, which is <m>{46-\mathrm{i}}</m>:</p>
+<p><m> \qquad   \displaystyle  z^{-1} = \displaystyle \left( \frac{1}{{46} + {1}i} \right) \left( \frac{{46-\mathrm{i}}}{{46-\mathrm{i}}} \right)=  \displaystyle \frac{{46-\mathrm{i}}}{{2117}} =  \displaystyle{\frac{46}{2117}}{-}{\frac{\mathrm{i}}{2117}}</m></p>
+<p>So, the multiplicative inverse of <m>  \displaystyle  z = {46} + {1}i </m> is <m>\displaystyle{\frac{46}{2117}}{-}{\frac{\mathrm{i}}{2117}}</m>.</p></div></solution>
+<answer><p><m>-\mathrm{i}-46</m></p></answer>
+<answer><p><m>\frac{46-\mathrm{i}}{2117}</m></p></answer>
+</stack-static>

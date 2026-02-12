@@ -757,9 +757,7 @@
             
 
         <exercise>
-            <stack-moodle label="find-the-number-of-students-who-played-one-sport-using-the-venn" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Set-operations-and-Venn-diagrams/Find-the-number-of-students-who-played-one-sport-using-the-venn-.xml" />
-            </stack-moodle>
+            <stack label="find-the-number-of-students-who-played-one-sport-using-the-venn" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Set-operations-and-Venn-diagrams/Find-the-number-of-students-who-played-one-sport-using-the-venn-.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FSet-operations-and-Venn-diagrams%2FFind-the-number-of-students-who-played-one-sport-using-the-venn-.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-set-theory%2Fsubsec-set-operations-and-venn-diagrams.ptx">Add review</url>
             </conclusion>
@@ -767,9 +765,7 @@
             
 
         <exercise>
-            <stack-moodle label="identify-set-operation-in-shaded-venn-diagram" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Set-operations-and-Venn-diagrams/Identify-set-operation-in-shaded-venn-diagram.xml" />
-            </stack-moodle>
+            <stack label="identify-set-operation-in-shaded-venn-diagram" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Set-operations-and-Venn-diagrams/Identify-set-operation-in-shaded-venn-diagram.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FSet-operations-and-Venn-diagrams%2FIdentify-set-operation-in-shaded-venn-diagram.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-set-theory%2Fsubsec-set-operations-and-venn-diagrams.ptx">Add review</url>
             </conclusion>

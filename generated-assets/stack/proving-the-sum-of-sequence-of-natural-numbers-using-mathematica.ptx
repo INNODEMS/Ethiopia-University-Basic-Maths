@@ -1,0 +1,85 @@
+<stack-static>
+<statement><div><p>Consider the following proposition, then fill in the blanks to complete the proof outlined below it.</p>
+
+<br/>
+
+<p><alert>Proposition:</alert> Show that by mathematical induction that <m> 1+2+3+\cdots+k = \frac{k(k+1)}{2}</m> </p>
+<p><em>Note: "LHS" means Left Hand Side and "RHS" means Right Hand Side.</em></p>
+
+<br/>
+
+<p><alert>Proof by induction:</alert></p>
+<p>Define <m>P(k)</m> to be the statement of the proposition, that: <m>1+2+3+\cdots+k = \frac{k(k+1)}{2} </m></p>
+
+<br/>
+
+<p><alert>Step 1:</alert> Base case.</p>
+<p>For <m>k = 1</m>, we have</p>
+
+<p style="margin-left:30px">LHS: <m> 1+2+3+\cdots+k=</m> <fillin characters="5" name="ans1"/> </p>
+<p>
+
+</p><p style="margin-left:30px">RHS: <m> \frac{k(k+1)}{2}=</m> <fillin characters="5" name="ans2"/> </p>
+<p/>
+
+<p>Since these are equal, <m> P(1) </m> is [ true | false ] </p>
+<p/>
+
+<br/>
+
+<p><alert>Step 2:</alert> Induction step.</p>
+<p>Assume <m>P(k)</m> is true, which means that <m>1+2+3+\cdots+k = \frac{k(k+1)}{2} </m>
+<br/>This is called the <alert>induction hypothesis</alert>.</p>
+<p>We then need to show <m> P(k+1) </m> is true.</p>
+
+<br/>
+
+<p><m>P(k+1): 1 + 2 + 3 + \cdots + k \ +</m> <fillin characters="5" name="ans4"/>  <m>=</m> <fillin characters="15" name="ans5"/>  <nbsp/> (using the induction hypothesis)</p>
+<p style="margin-left:321px"><m>=</m> <fillin characters="15" name="ans5b"/>  <nbsp/> (simplifying the result)</p>
+<p/>
+
+<p>So, <m>P(k+1)</m> is [ true | false ]  </p>
+
+<br/>
+
+<p>Therefore, by the Principle of Mathematical Induction, we have <m>1+2+3+\cdots+k = \frac{k(k+1)}{2}</m></p></div></statement>
+<solution><div><p><alert>Proposition:</alert> Show that by mathematical induction that <m> 1+2+3+\cdots+k = \frac{k(k+1)}{2}</m> </p>
+
+<br/>
+
+<p><alert>Proof by induction:</alert></p>
+<p>Define <m>P(k)</m> to be the statement of the proposition, that: <m>1+2+3+\cdots+k = \frac{k(k+1)}{2} </m></p>
+
+<br/>
+
+<p><alert>Step 1:</alert> Base case.</p>
+<p>For <m>k = 1</m>, we have</p>
+<p style="margin-left:30px">LHS: <m> 1+2+3+\cdots+k=1</m></p>
+<p style="margin-left:30px">RHS: <m> \frac{k(k+1)}{2}=\frac{1 \cdot (1+1)}{2} = 1</m>
+</p><p>Since these are equal, <m> P(1) </m> is <alert>true</alert>.</p>
+
+<br/>
+
+<p><alert>Step 2:</alert> Induction step.</p>
+<p>Assume <m>P(k)</m> is true, which means that <m>1+2+3+\cdots+k = \frac{k(k+1)}{2} </m>
+<br/>This is called the <alert>induction hypothesis</alert>.</p>
+<p>We then need to show <m> P(k+1) </m> is true.</p>
+
+<p><md number="yes">
+<mrow>P(k+1): 1 + 2 + 3 + \cdots + k + (k+1) \amp = \frac{k(k+1)}{2} + (k+1)</mrow>
+<mrow>\amp = \frac{(k+1)(k+2)}{2}</mrow>
+</md></p>
+<p>Where we have used the induction hypothesis in the first equality and simplified the result in the second equality.</p>
+
+<br/>
+
+<p>So, <m>P(k+1)</m> is <alert>true</alert>.</p>
+<p>Therefore, by the Principle of Mathematical Induction, we have <m>1+2+3+\cdots+k = \frac{k(k+1)}{2}</m></p></div></solution>
+<answer><p><m>1</m></p></answer>
+<answer><p><m>1</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>k+1</m></p></answer>
+<answer><p><m>\frac{k\cdot \left(k+1\right)}{2}+k+1</m></p></answer>
+<answer><p><m>\frac{\left(k+1\right)\cdot \left(k+2\right)}{2}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+</stack-static>

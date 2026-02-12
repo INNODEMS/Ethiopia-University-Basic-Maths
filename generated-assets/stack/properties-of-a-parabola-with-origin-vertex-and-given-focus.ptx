@@ -1,0 +1,24 @@
+<stack-static>
+<statement><div><p>Suppose the vertex of a parabola is the origin and its focus is <m>F({0},{27})</m>. Then,</p>
+<p>(a) What is the focal length of the parabola. <fillin characters="5" name="ans1"/> </p>
+<p>(b) Find the equations of the directrix of the parabola.</p>
+<p>Equation of directrix<m>=</m> <fillin characters="8" name="ans2"/> </p>
+<p>(c) Find the endpoints of the latus rectum of the parabola.</p>
+<p><m>A=</m> <fillin characters="8" name="ans3"/> </p>
+<p><m>B=</m> <fillin characters="8" name="ans4"/> </p></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p>(a) The focal length of a parabola is the distance between the focus and the vertex</p>
+<p> In this case, the vertex is at the origin <m>V=(0,0)</m> and the focus is at <m>F({0},{27})</m> </p>
+<p>The focal length <m>f</m> can be calculated using the distance formula:</p>
+<p><m>\sqrt{(x_{F}-x_{V})^{2}-(y_{F}-y_{V})^{2}}=\sqrt{({0}+{729})}={27}</m></p>
+<p>So, the focal length of the parabola is <m>{27}</m>.</p>
+<p>(b) The axis of the parabola is the line passing through the focus and perpendicular to the directrix. Since the parabola is symmetric with respect to the <m>y-</m> axis, the axis will be the x-axis (horizontal axis).
+The equation of the directrix is given by <m>y=-f</m> where <m>f</m> is the focal length. Substituting <m>f={27}</m> we have <m>y=-{27}</m> as the equation of the directrix.</p>
+<p>(c) The latus rectum is the line segment passing through the focus and perpendicular to the axis of the parabola. The length of the latus rectum is equal to  <m>4f</m> where <m>f</m> is the focal length.
+In this case, <m>f={27}</m> so the length of the latus rectum is <m>4 \times {27}={108}</m>. </p>
+<p>The endpoints of the latus rectum will be at a distance of <m>{54}</m> units on either side of the focus   <m>F({0},{27})</m> along the <m>x-</m>axis. Thus, the endpoints are <m>A=({-54},{27})</m> and <m>B=({54},{27})</m>.</p></div></solution>
+<answer><p><m>27</m></p></answer>
+<answer><p><m>y=-27</m></p></answer>
+<answer><p><m>\left[ -54 , 27 \right] </m></p></answer>
+<answer><p><m>\left[ 54 , 27 \right] </m></p></answer>
+</stack-static>

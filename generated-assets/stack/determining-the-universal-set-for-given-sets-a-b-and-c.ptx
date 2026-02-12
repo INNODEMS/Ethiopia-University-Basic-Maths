@@ -1,0 +1,15 @@
+<stack-static>
+<statement><div><p>Given the sets <m>A = {\left \{1 , 4 , 5 , 9 , 10 \right \}}, \, B = {\left \{4 , 6 , 7 , 9 , 10 \right \}},</m>  and <m>C = {\left \{4 , 8 , 9 , 10 \right \}}</m>.</p>
+<p> Select the universal set of all the <alert>three sets</alert> from the following:</p>
+<p/><ol marker="(1)">
+<li><m>\displaystyle \{{1,4,5,6,7,8,9,10}\} </m></li>
+<li><m>\displaystyle \{{4,9,10}\}</m></li>
+<li><m>\displaystyle \{{1,2,3,4,5,6,7,8,9,10}\} </m></li>
+</ol> 
+<p/></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p>Given the sets <m>A = {\left \{1 , 4 , 5 , 9 , 10 \right \}}, \, B = {\left \{4 , 6 , 7 , 9 , 10 \right \}},</m>  and <m>C = {\left \{4 , 8 , 9 , 10 \right \}}</m>.</p>
+<p>The universal set must contain all the elements from the sets <m>A,\, B</m>, and <m>C</m>. </p>
+<p><m>U={\left \{1 , 4 , 5 , 6 , 7 , 8 , 9 , 10 \right \}}</m>: This set contains all the elements from the sets <m>A,\, B,</m> and <m>C</m></p></div></solution>
+<answer><p><m>(1)</m></p></answer>
+</stack-static>

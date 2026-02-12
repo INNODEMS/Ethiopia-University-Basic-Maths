@@ -1,0 +1,149 @@
+<stack-static>
+<statement><div><p>Consider a hyperbola with foci <m>F: \hspace{3px} (</m><m>{13}</m><m>,</m> <m>{-3}</m><m>)</m> and <m>F': \hspace{3px} (</m><m>{-11}</m><m>,</m> <m>{-3}</m><m>)</m>, and which contains the point <m>(</m><m>{13}</m><m>,</m> <m>{29}</m><m>)</m>.</p>
+
+<br/>
+
+<p>(a) Where is the center of the hyperbola?</p>
+<p style="margin-left:30px"><m> C: \hspace{3px} \big( </m> <fillin characters="3" name="ans1x"/>  <m> , </m> <fillin characters="3" name="ans1y"/>  <m> \big) </m></p>
+<p/>
+
+<br/>
+
+<p>(b) Determine the principal axis of the hyperbola.</p>
+<p style="margin-left:30px"><fillin characters="8" name="ans2"/> </p>
+<p/>
+
+<br/>
+
+<p>(c) Find the length of the transverse axis of the hyperbola.</p>
+<p style="margin-left:30px"><fillin characters="15" name="ans3"/> </p>
+<p/>
+
+<br/>
+
+<p>(d) Find the coordinates of the vertices of the hyperbola.</p>
+<p style="margin-left:30px"><m> V: \hspace{3px} \big( </m> <fillin characters="3" name="ans4x"/>  <m> , </m> <fillin characters="3" name="ans4y"/>  <m> \big) </m></p>
+<p style="margin-left:30px"><m> V': \hspace{3px} \big( </m> <fillin characters="3" name="ans5x"/>  <m> , </m> <fillin characters="3" name="ans5y"/>  <m> \big) </m></p>
+<p/>
+
+<br/>
+
+<p>(e) Determine whether each of the following points is on the hyperbola or not.</p>
+
+<tabular style="margin-left:30px">
+  <row height="30px">
+    <cell width="200px">(i) <m>(</m><m>{-13}</m><m>,</m> <m>{-29}</m><m>)</m></cell>
+    <cell width="200px">[ Yes | No ] </cell>
+  </row>
+  <row height="30px">
+    <cell>(ii) <m>(</m><m>{-11}</m><m>,</m> <m>{29}</m><m>)</m></cell>
+    <cell>[ Yes | No ] </cell>
+  </row>
+  <!-- <tr height="30px">
+    <td>(iii) <m>(</m> @question_e[3][1][1]@ <m>,</m> @question_e[3][1][2]@ <m>)</m></td>
+    <td>[input:ans6c] [validation:ans6c]</td>
+  </tr> -->
+</tabular>
+<p/></div></statement>
+<solution><div><h3>Worked Solution</h3>
+
+<p>We are given a hyperbola with foci <m>F: \hspace{3px} (</m><m>{13}</m><m>,</m> <m>{-3}</m><m>)</m> and <m>F': \hspace{3px} (</m><m>{-11}</m><m>,</m> <m>{-3}</m><m>)</m>, and which contains the point <m>(</m><m>{13}</m><m>,</m> <m>{29}</m><m>)</m>.</p>
+
+<br/>
+
+<p>(a) The <alert>center</alert> of the hyperbola is the midpoint of the two foci. 
+<br/>Therefore, this hyperbola has center at <m>(</m> <m>{1}</m> <m>,</m> <m>{-3}</m> <m>)</m></p>
+
+<br/>
+
+<p>(b) The <alert>principal axis</alert> of the hyperbola is the line passing through both of the foci. 
+<br/>Therefore, this hyperbola has principal axis <m>{y=-3}</m></p>
+
+<br/>
+
+<p>(c) The <alert>transverse axis</alert> of the hyperbola is the line segment between the two vertices of the hyperbola. We will call the two vertices <m>V</m> and <m>V’</m>, which are the points of the hyperbola which lie on the principal axis.
+<br/>Since the hyperbola has rotational symmetry about the center, the distance between the two vertices is twice the distance between the center and one of the vertices.</p>
+<p><m>|VV'| = 2|CV|</m></p>
+
+<p>By definition, for any point on the hyperbola, the difference between the distance to each focus is constant. 
+<br/>We call this constant <m>2a</m>, and our aim is to write the distance <m>|CV|</m> in terms of this constant.</p>
+
+<br/>
+
+<p>Since the center, vertex and focus are collinear, we have the following relationships,</p>
+<p style="margin-left:30px"><m>|CV| + |VF| = |CF|</m></p>
+<p style="margin-left:30px"><m>|VF’| = |CV| + |CF’| = |CV| + |CF|</m></p>
+<p>Then, subtracting the first equation from the second,</p>
+<p style="margin-left:30px"><m>|VF’| - |VF| = 2|CV|</m></p>
+
+<p>Since the vertex is a point on the hyperbola, by definition we know that <m>|VF’| - |VF| = 2a</m>.
+<br/>Therefore, <m>|CV| = a</m></p>
+
+<br/>
+
+<p>However, <m>a</m> is a constant which we can determine since we know a point on the hyperbola.</p>
+<p hidden=""><m>{\mathbf{False}}</m></p>
+<p style="margin-left:30px"><md number="yes">
+<mrow>2a \amp = \big| |PF’| - |PF| \big|</mrow>
+<mrow>\amp = \big| {\sqrt{{\left(13-13\right)}^2+{\left(29+3\right)}^2}} - {\sqrt{{\left(13+11\right)}^2+{\left(29+3\right)}^2}} \big|</mrow>
+<mrow>\amp = | {32} - {40} |</mrow>
+<mrow>\amp = {8}</mrow>
+<mrow>a \amp = {4}</mrow>
+</md></p>
+<p hidden=""><m>{\mathbf{True}}</m></p>
+
+<p>Therefore <m>|CV| = {4}</m>, so the length of the transverse axis is given by,</p>
+<p style="margin-left:30px"><m>|VV’| = |CV| + |CV’| = {8}</m></p>
+
+<br/>
+
+<p>(d) Since <m>|CV| = |CV’| = {4}</m> and <m>V, V’</m> lie on the principal axis <m>{y=-3}</m>, we conclude that,</p> 
+<p style="margin-left:30px"><m>V = ({5}, {-3})</m></p>
+<p style="margin-left:30px"><m>V’ = ({-3}, {-3})</m></p>
+
+<br/>
+
+<p>(e) For each of the points, we can check whether the difference between the distance to each focus is equal to <m>2a = {8}</m></p>
+
+
+<br/>
+<p style="margin-left:30px">
+(i)
+Writing <m>Q_{1}: \hspace{3px} (</m><m>{-13}</m><m>,</m> <m>{-29}</m><m>)</m>, we have</p>
+<p hidden=""><m>{\mathbf{False}}</m></p>
+<p style="margin-left:60px"><md number="yes">
+<mrow>\big| |Q_{1}F’| - |Q_{1}F| \big|
+    \amp = \big| \sqrt{{{\left(-13-13\right)}^2+{\left(-29+3\right)}^2}} - \sqrt{{{\left(-13+11\right)}^2+{\left(-29+3\right)}^2}} \big|</mrow>
+<mrow>\amp = | {\sqrt{1352}} - {\sqrt{680}} |</mrow>
+<mrow>\amp = {13\cdot 2^{\frac{3}{2}}-2\cdot \sqrt{170}}</mrow>
+</md></p>
+<p hidden=""><m>{\mathbf{True}}</m></p>
+<p style="margin-left:30px">Therefore, <m>Q_{1}</m> <alert>does not</alert> lie on the hyperbola.</p>
+<p hidden=""><m>{\mathbf{True}}</m></p>
+
+<br/>
+<p style="margin-left:30px">
+(ii)
+Writing <m>Q_{2}: \hspace{3px} (</m><m>{-11}</m><m>,</m> <m>{29}</m><m>)</m>, we have</p>
+<p hidden=""><m>{\mathbf{False}}</m></p>
+<p style="margin-left:60px"><md number="yes">
+<mrow>\big| |Q_{1}F’| - |Q_{1}F| \big|
+    \amp = \big| \sqrt{{{\left(-11-13\right)}^2+{\left(29+3\right)}^2}} - \sqrt{{{\left(-11+11\right)}^2+{\left(29+3\right)}^2}} \big|</mrow>
+<mrow>\amp = | {\sqrt{1600}} - {\sqrt{1024}} |</mrow>
+<mrow>\amp = {8}</mrow>
+</md></p>
+<p hidden=""><m>{\mathbf{True}}</m></p>
+<p style="margin-left:30px">Therefore, <m>Q_{2}</m> <alert>does </alert> lie on the hyperbola.</p>
+<p hidden=""><m>{\mathbf{True}}</m></p>
+</div></solution>
+<answer><p><m>1</m></p></answer>
+<answer><p><m>-3</m></p></answer>
+<answer><p><m>y=-3</m></p></answer>
+<answer><p><m>8</m></p></answer>
+<answer><p><m>5</m></p></answer>
+<answer><p><m>-3</m></p></answer>
+<answer><p><m>-3</m></p></answer>
+<answer><p><m>-3</m></p></answer>
+<answer><p>No</p></answer>
+<answer><p>Yes</p></answer>
+</stack-static>

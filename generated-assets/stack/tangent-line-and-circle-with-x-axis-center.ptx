@@ -1,0 +1,59 @@
+<stack-static>
+<statement><div><p>Suppose the line <m> y = {-2 x} </m> is tangent to a circle at point <m> P({2},{-4}) </m>. 
+<br/>If the center of the circle is on the <m>x</m>-axis, then find the following.</p>
+
+<br/>
+
+<p>(a) The center of the circle:</p>
+<p> Center: <fillin characters="10" name="ans1"/> </p>
+<p/>
+
+<br/>
+
+<p>(b) The radius of the circle:</p>
+<p>Radius: <fillin characters="10" name="ans2"/> </p>
+<p/>
+
+<br/>
+
+<p>(b) The equation of the circle:</p>
+<p>Equation: <fillin characters="15" name="ans3"/> </p>
+<p/></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p> Let the center of the circle be <m>C(h,0)</m>. We need to find the value of <m>h</m>.
+<br/>Since the line <m> y={-2 x} </m> is tangent to the circle at point <m> P({2},{-4}) </m>, the tangent line is perpendicular to the radius at point <m>P</m>. 
+<br/>This means the slope of line <m>CP</m> is the negative reciprocal of the slope of <m> y={-2} x </m>.</p>
+
+<br/>
+
+<p>The slope of the line <m> y= {-2 x} </m> is <m>{-2}</m>. Therefore, the slope of line <m>CP</m> is <m>{\frac{1}{2}} </m>.</p>
+<p>Using the slope formula: </p>
+<p style="margin-left:30px">The slope of <m> CP = \frac{{-4} - 0}{{2} - h }= {\frac{1}{2}} </m>.</p>
+<p>Solve for <m>h</m>:</p>
+<p style="margin-left:30px"><m>\frac{{-4}}{{2} - h }= {\frac{1}{2}}</m></p>
+<p style="margin-left:30px"><m>{-4}= {\frac{2-h}{2}}</m></p>
+<p style="margin-left:30px"><m>h ={10}</m></p> 
+<p>So, the center of the circle is <m>C({10},0)</m>.</p>
+
+<br/>
+
+<p>The distance between the center <m>C</m> and point <m>P</m> is the radius <m>r</m> of the circle. <br/>Using the distance formula:</p>
+<p style="margin-left:30px"><md>
+<mrow>\displaystyle r \amp  = \sqrt{(x_1-h)^2+(y_1-k)^2}</mrow>
+<mrow>\amp = \sqrt{({2} {-} {10})^2 + ({-4} - {0})^2}</mrow>
+<mrow>\amp =  \sqrt{({-8})^2 + ({-4})^2}</mrow>
+<mrow>\amp = \sqrt{{80}}</mrow>
+<mrow>\amp ={4 \sqrt{5}}</mrow>
+</md></p>
+<p>Now we have the center <m>C({10},{0})</m> and the radius <m>r = {4 \sqrt{5}}</m>.</p>
+
+<br/>
+
+<p>The equation of a circle centered at <m>(h,k)</m> with radius <m>r</m> is given by:</p>
+<p style="margin-left:30px"><m> (x - h)^2 + (y - k)^2 = r^2 </m></p>
+<p>Plugging in the values we found, gives the equation of the circle:</p>
+<p style="margin-left:30px"><m>(x {-} {10})^2 + y^2 = {80}</m></p></div></solution>
+<answer><p><m>\left[ 10 , 0 \right] </m></p></answer>
+<answer><p><m>4 \sqrt{5}</m></p></answer>
+<answer><p><m>y^2+{\left(x-10\right)}^2=80</m></p></answer>
+</stack-static>

@@ -1,0 +1,8 @@
+<stack-static>
+<statement><p>Note that the universal quantification of <m>Q(x)</m> is the statement "<m>Q(x)</m> for all values of <m>x</m> in the domain." 
+The notation <m> \forall x Q(x) </m> denotes the universal quantification of <m>Q(x)</m>. An element for which <m>Q(x)</m> is false is called a <alert>counterexample</alert> to <m>  \forall x Q(x) </m>.
+
+Let <m>Q(x)</m> be the statement "<m>x + 1 &gt; x.</m>"
+What is the truth value of the quantification <m>  \forall x Q(x) </m>, where the domain consists of all real numbers? [ true | false ]  </p></statement>
+<answer><p><m>\mathbf{True}</m></p></answer>
+</stack-static>

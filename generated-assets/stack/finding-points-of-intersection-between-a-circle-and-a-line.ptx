@@ -1,0 +1,41 @@
+<stack-static>
+<statement><div><p>Find the intersection of the circle with the equation <m>{{\left(y-4\right)}^2+{\left(x-1\right)}^2=16}</m> with the line <m>{-4\cdot y+4\cdot x-4=0}</m>.</p>
+<p><alert>Step 1:</alert> Rearrange the equation of the line and solve for <m>y</m>:
+</p>
+<p><m> \qquad {-4\cdot y+4\cdot x-4=0}</m> </p>
+<p><m> \qquad  \qquad y=</m> <fillin characters="8" name="ans1"/>  </p>
+<p><alert>Step 2:</alert> Substitute the value of <m>y</m> in the equation of the circle:</p>
+<p><m> \qquad {{\left(y-4\right)}^2+{\left(x-1\right)}^2=16}</m> </p>
+<p><m> \qquad {{\left(x-1\right)}^2} +</m> <fillin characters="8" name="ans2"/><m> = {16}</m> </p>
+<p><alert>Step 3:</alert>  Expand and simplify the expression in <alert>Step 2</alert> to form a quadratic equation in the form:</p>
+<p> <m>\qquad  ax^2+bx+c=0:</m>  <fillin characters="15" name="ans3"/>  </p>
+<p><alert>Step 4:</alert>   Solve the quadratic equation.</p>
+<p><m> \qquad x=</m> <fillin characters="5" name="ans4"/>  or <m>x=</m> <fillin characters="5" name="ans5"/>  </p>
+<p><alert>Step 5:</alert> Substitute these <m>x</m>-values back into the equation in <alert>Step 1</alert> to find the corresponding <m>y</m>-values.</p>
+<p><m> \qquad y=</m> <fillin characters="5" name="ans6"/>  and <m>y=</m> <fillin characters="5" name="ans7"/>  </p>
+<p>Therefore, the points of intersection between the circle and the line are <m>P</m><fillin characters="8" name="ans8"/>  and <m>Q</m><fillin characters="8" name="ans9"/>. </p>
+<p/></div></statement>
+<solution><div><p><alert><h3>Worked Solution</h3></alert></p>
+
+<p><m> \displaystyle {-4\cdot y+4\cdot x-4=0} \Leftrightarrow  y={x-1}</m></p>
+<p>So, <m> \displaystyle  {{\left(x-1\right)}^2+{\left(x-5\right)}^2=16}</m></p>
+<p><m>\displaystyle   \Rightarrow {{\left(x-1\right)}^2} + {x^2-10\cdot x+25} = {16}</m></p>
+<p><m>\displaystyle  \Rightarrow {2\cdot x^2-12\cdot x+26=16}</m></p>
+
+<p><m>\displaystyle  \Rightarrow {2\cdot x^2-12\cdot x+26}={16}</m></p>
+
+<p><m>\displaystyle  \Rightarrow {2\cdot x^2-12\cdot x+10=0}</m></p>
+<p><m>\displaystyle  \Rightarrow {\frac{\left(x-5\right)\cdot \left(x-1\right)}{8}=0}</m></p>
+<p><m>\displaystyle  \Rightarrow x={1}</m> or <m>x={5}</m></p>
+<p>This gives <m> \displaystyle  y={0}</m> and <m>\displaystyle  y={4}</m> respectively.</p>
+<p>Hence the line and the circle intersect at the points <m>\displaystyle  P\left({1}, {0}\right)</m> and .<m>\displaystyle  Q\left({5}, {4}\right)</m>.</p></div></solution>
+<answer><p><m>x-1</m></p></answer>
+<answer><p><m>{\left(x-5\right)}^2</m></p></answer>
+<answer><p><m>2\cdot x^2-12\cdot x+10=0</m></p></answer>
+<answer><p><m>1</m></p></answer>
+<answer><p><m>5</m></p></answer>
+<answer><p><m>0</m></p></answer>
+<answer><p><m>4</m></p></answer>
+<answer><p><m>\left[ 1 , 0 \right] </m></p></answer>
+<answer><p><m>\left[ 5 , 4 \right] </m></p></answer>
+</stack-static>

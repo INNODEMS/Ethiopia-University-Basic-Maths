@@ -40,9 +40,7 @@
         </p>
 
         <exercise>
-            <stack-moodle label="syntax-equation" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Equation.xml" />
-            </stack-moodle>
+            <stack label="syntax-equation" source="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Equation.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Equation.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
             </conclusion>
@@ -66,27 +64,21 @@
         </p>
 
         <exercise>
-            <stack-moodle label="syntax-polynomials" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Polynomials.xml" />
-            </stack-moodle>
+            <stack label="syntax-polynomials" source="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Polynomials.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Polynomials.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
             </conclusion>
         </exercise>
             
         <exercise>
-            <stack-moodle label="syntax-rational-expression" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Rational-Expression.xml" />
-            </stack-moodle>
+            <stack label="syntax-rational-expression" source="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Rational-Expression.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Rational-Expression.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
             </conclusion>
         </exercise>
 
         <exercise>
-            <stack-moodle label="syntax-floating-point-invalid" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-floating-point-invalid.xml" />
-            </stack-moodle>
+            <stack label="syntax-floating-point-invalid" source="stack/top/Default-for-Typing-Answers-Quiz/Syntax-floating-point-invalid.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-floating-point-invalid.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
             </conclusion>
@@ -135,36 +127,28 @@
         </p>
 
         <exercise>
-            <stack-moodle label="syntax-exponentials" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Exponentials.xml" />
-            </stack-moodle>
+            <stack label="syntax-exponentials" source="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Exponentials.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Exponentials.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
             </conclusion>
         </exercise>
             
         <exercise>
-            <stack-moodle label="syntax-square-roots" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Square-roots.xml" />
-            </stack-moodle>
+            <stack label="syntax-square-roots" source="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Square-roots.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Square-roots.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
             </conclusion>
         </exercise>
             
         <exercise>
-            <stack-moodle label="syntax-logarithms" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Logarithms.xml" />
-            </stack-moodle>
+            <stack label="syntax-logarithms" source="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Logarithms.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Logarithms.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
             </conclusion>
         </exercise>
             
         <exercise>
-            <stack-moodle label="syntax-trigonometry" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-trigonometry.xml" />
-            </stack-moodle>
+            <stack label="syntax-trigonometry" source="stack/top/Default-for-Typing-Answers-Quiz/Syntax-trigonometry.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-trigonometry.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
             </conclusion>
@@ -184,9 +168,7 @@
         </p>
 
         <exercise>
-            <stack-moodle label="syntax-sets-lists" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Sets-Lists.xml" />
-            </stack-moodle>
+            <stack label="syntax-sets-lists" source="stack/top/Default-for-Typing-Answers-Quiz/Syntax-Sets-Lists.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FSyntax-Sets-Lists.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
             </conclusion>
@@ -194,9 +176,7 @@
             
 
         <exercise>
-            <stack-moodle label="multiple-choice-question" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Multiple-choice-Question.xml" />
-            </stack-moodle>
+            <stack label="multiple-choice-question" source="stack/top/Default-for-Typing-Answers-Quiz/Multiple-choice-Question.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FMultiple-choice-Question.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
             </conclusion>
@@ -204,9 +184,7 @@
             
 
         <exercise>
-            <stack-moodle label="questions-with-a-table" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="stack/top/Default-for-Typing-Answers-Quiz/Questions-with-a-Table.xml" />
-            </stack-moodle>
+            <stack label="questions-with-a-table" source="stack/top/Default-for-Typing-Answers-Quiz/Questions-with-a-Table.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FDefault-for-Typing-Answers-Quiz%2FQuestions-with-a-Table.xml&amp;entry.2077830997=source%2Fpreface.ptx">Add review</url>
             </conclusion>

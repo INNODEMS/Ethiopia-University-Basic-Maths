@@ -1,0 +1,104 @@
+<stack-static>
+<statement><div><p>Consider the three numbers <m>{45}</m>, <m>{180}</m> and <m>{162}</m>.</p>
+<p>Find both the greatest common factor (<m>\text{GCF}</m>) and least common multiple (<m>\text{LCM}</m>) of the numbers.</p>
+
+<br/>
+
+<p>(a) <m>\text{GCF}({45}, {180}, {162}) =</m> <fillin characters="5" name="ans1"/> </p>
+<p/>
+
+<br/>
+
+<p>(b) <m>\text{LCM}({45}, {180}, {162}) =</m> <fillin characters="5" name="ans2"/> </p>
+<p/></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p>We first express each of the numbers in its prime factorization:</p>
+
+<p style="margin-left:30px"><m>{45} = {3}^{2}
+
+    {\hspace{2px}\times \hspace{2px}}
+    {5}
+    ^{1}
+
+    {}
+    {}
+    ^{}
+
+    {}
+    {}
+    ^{}
+
+</m></p>
+
+<p style="margin-left:30px"><m>{180} = {2}^{2}
+
+    {\hspace{2px}\times \hspace{2px}}
+    {3}
+    ^{2}
+
+    {\hspace{2px}\times \hspace{2px}}
+    {5}
+    ^{1}
+
+    {}
+    {}
+    ^{}
+
+</m></p>
+
+<p style="margin-left:30px"><m>{162} = {2}^{1}
+
+    {\hspace{2px}\times \hspace{2px}}
+    {3}
+    ^{4}
+
+    {}
+    {}
+    ^{}
+
+    {}
+    {}
+    ^{}
+
+</m></p>
+
+<br/>
+
+<p>(a) To find the <m>\text{GCF}</m>, we take the <alert>smallest power</alert> of each prime appearing in all three prime factorizations. Therefore,</p>
+
+<p style="margin-left:30px"><md number="yes">
+<mrow>\text{GCF}({45},{180},{162}) \amp = {3}^{2}
+
+    {}
+    {}
+    ^{}
+
+    {}
+    {}
+    ^{}</mrow>
+<mrow>\amp = \mathbf{{9}}</mrow>
+</md></p>
+
+<br/>
+
+<p>(b) To find the <m>\text{LCM}</m>, we take the <alert>largest power</alert> of each prime appearing in the factorizations. Therefore,</p>
+
+<p style="margin-left:30px"><md number="yes">
+<mrow>\text{LCM}({45},{180},{162}) \amp = {2}^{2}
+
+    {\hspace{2px}\times \hspace{2px}}
+    {3}
+    ^{4}
+
+    {\hspace{2px}\times \hspace{2px}}
+    {5}
+    ^{1}
+
+    {}
+    {}
+    ^{}</mrow>
+<mrow>\amp = \mathbf{{1620}}</mrow>
+</md></p></div></solution>
+<answer><p><m>9</m></p></answer>
+<answer><p><m>1620</m></p></answer>
+</stack-static>

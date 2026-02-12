@@ -352,9 +352,7 @@
 
 
         <exercise>
-            <stack-moodle label="calculating-distance-between-two-coordinates" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Distance-between-two-points-and-division-of-segments/Calculating-Distance-Between-Two-Coordinates.xml" />
-            </stack-moodle>
+            <stack label="calculating-distance-between-two-coordinates" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Distance-between-two-points-and-division-of-segments/Calculating-Distance-Between-Two-Coordinates.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDistance-between-two-points-and-division-of-segments%2FCalculating-Distance-Between-Two-Coordinates.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-distance-formula-and-equation-of%2Fsubsec-distance-between-two-points-and.ptx">Add review</url>
             </conclusion>
@@ -362,9 +360,7 @@
             
 
         <exercise>
-            <stack-moodle label="finding-possible-values-of-a-given-distance-between-points" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Distance-between-two-points-and-division-of-segments/Finding-Possible-Values-of-a-Given-Distance-between-Points.xml" />
-            </stack-moodle>
+            <stack label="finding-possible-values-of-a-given-distance-between-points" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Distance-between-two-points-and-division-of-segments/Finding-Possible-Values-of-a-Given-Distance-between-Points.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDistance-between-two-points-and-division-of-segments%2FFinding-Possible-Values-of-a-Given-Distance-between-Points.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-distance-formula-and-equation-of%2Fsubsec-distance-between-two-points-and.ptx">Add review</url>
             </conclusion>

@@ -1,0 +1,14 @@
+<stack-static>
+<statement><div><p>Simplify as much as possible the following number: <m>\displaystyle \frac{{3}+{\frac{39}{4}}-{4}}{{\frac{155}{6}}+{\frac{13}{3}}-{\frac{39}{4}}}</m></p>
+<p><fillin characters="10" name="ans1"/> </p></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p>To simplify <m> \displaystyle \frac{{3}+{\frac{39}{4}}-{4}}{{\frac{155}{6}}+{\frac{13}{3}}-{\frac{39}{4}}}</m></p>
+<p>We simplify the numerator first by operating on <m>{3}+{\frac{39}{4}}-{4}={\frac{35}{4}}</m></p>
+<p>Simplify the denominator <m>{\frac{155}{6}}+{\frac{13}{3}}-{\frac{39}{4}}={\frac{245}{12}}</m></p>
+<p>Diving the result of the numerator and denominator, we have</p>
+<p><md>
+<mrow>\displaystyle \frac{{3}+{\frac{39}{4}}-{4}}{{\frac{155}{6}}+{\frac{13}{3}}-{\frac{39}{4}}} \amp  = \displaystyle \frac{{\frac{35}{4}}}{{\frac{245}{12}}}</mrow>
+<mrow>\amp = \displaystyle {\frac{3}{7}}</mrow>
+</md></p></div></solution>
+<answer><p><m>\frac{3}{7}</m></p></answer>
+</stack-static>

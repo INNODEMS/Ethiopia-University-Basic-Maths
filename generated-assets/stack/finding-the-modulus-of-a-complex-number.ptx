@@ -1,0 +1,36 @@
+<stack-static>
+<statement><div><p>Find the modulus of the complex number <m>\displaystyle z = \frac{{8-28 \mathrm{i}}}{{28 \mathrm{i}}}</m></p>
+<p><em>Note: Give your answers in exact form i.e using fractions or writing in square root form</em></p>
+<p><m>\displaystyle   |z| = </m> <fillin characters="8" name="ans1"/>  </p></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p>To find the modulus of a complex number, you can use the formula:</p>
+ 
+<p><m>|z| = \sqrt{{\text{Re}(z)}^2 + {\text{Im}(z)}^2}</m>,</p>
+
+<p>where <m>\text{Re}(z)</m> is the real part of the complex number and <m>\text{Im}(z)</m> is the imaginary part.</p>
+
+<p>Given the complex number <m>\displaystyle z = \frac{{8-28 \mathrm{i}}}{{28 \mathrm{i}}}</m>, let's simplify it first:</p>
+
+<p><m>\displaystyle z = \frac{{8-28 \mathrm{i}}}{{28 \mathrm{i}}}</m></p>
+
+<p>To get rid of the denominator, you can multiply both the numerator and the denominator by <m>{-28 \mathrm{i}}</m>:</p>
+
+<p><m>\displaystyle z = \left( \frac{{8-28 \mathrm{i}}}{{28 \mathrm{i}}} \right) \left( \frac{{-28 \mathrm{i}}}{{-28 \mathrm{i}}} \right) </m></p>
+<p><m>\displaystyle z = \frac{{-224 \mathrm{i}-784}}{{784}}</m></p>
+<p><m>\displaystyle z = {-\frac{2 \mathrm{i}}{7}-1}</m></p>
+
+<p>Now we have the real and imaginary parts of the complex number:</p>
+
+<p><m> \displaystyle \text{Re}(z) = {-1}</m></p>
+<p><m>\displaystyle \text{Im}(z) = {-\frac{2}{7}}</m></p>
+
+<p>Now we can plug these values into the modulus formula:</p>
+
+<p><m>\displaystyle \left | z \right |= \sqrt{( {-1})^2 + \left({-\frac{2}{7}}\right)^2}</m></p>
+<p><m>\displaystyle \left | z \right | = \sqrt{ {1} + {\frac{4}{49}}}</m></p>
+<p><m>\displaystyle |z| = \sqrt{ {\frac{53}{49}}}</m></p>
+<p><m>\displaystyle |z| = {\frac{\sqrt{53}}{7}}</m></p>
+
+<p>So, the modulus of the complex number <m>\displaystyle z = \ \frac{{8-28 \mathrm{i}}}{{28 \mathrm{i}}}</m> is <m> \displaystyle {\frac{\sqrt{53}}{7}}</m>.</p></div></solution>
+<answer><p><m>\frac{\sqrt{53}}{7}</m></p></answer>
+</stack-static>

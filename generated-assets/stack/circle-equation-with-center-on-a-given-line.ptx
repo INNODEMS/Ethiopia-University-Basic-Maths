@@ -1,0 +1,56 @@
+<stack-static>
+<statement><div><p>Consider a circle that passes through the points <m> \text{A} ({5} \, , \, {-4} )</m> and <m> \text{B}({3} \, , \, {-2} )</m> and has its center located on the line with the equation <m> {-y-4 x+8=0} </m> .</p>
+<p><alert>1.</alert> Find the center of the circle</p>
+<p> Center <m>=</m> <fillin characters="6" name="ans1"/> </p>
+<p><alert>2.</alert> Find the radius of the circle</p>
+<p> Radius <m>=</m> <fillin characters="5" name="ans2"/> </p>
+<p><alert>3.</alert> Give the equation  of the circle</p>
+<p> Equation <m>:</m> <fillin characters="15" name="ans3"/> </p></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p>To find an equation of the circle passing through the points <m> \text{A} ({5} ,  {-4} )</m> and <m> \text{B}({3}  , {-2} )</m> with its center on the line  <m> {-y-4 x+8=0} </m> , we can follow these steps: </p>
+<p><alert>Step 1:</alert> Finding <m>OA^2</m> and <m>OB^2</m>:</p>
+<p>Let the center of the circle be <m>O(h\, , \, k)</m>. We need to use the formula of distance to get  <m> O\, A^2</m> and <m> O B^2</m> involving <m>h</m> and <m>k</m>. The distance between two points is given by:</p>
+<p><m>\text{Distance}^2=(x_2-x_1)^2+(y_2-y_1)^2</m></p>
+<p>For points <m>A ( {5} \, , \, {-4} )</m> and <m>O(h,k)</m>:</p>
+<p><md>
+<mrow>OA^2 \amp  =(h -({5}))^2+(k- ({-4}) )^2</mrow>
+<mrow>\amp = {k^2+8 k+h^2-10 h+41}</mrow>
+</md></p>
+<p/>
+
+<p>For points <m>B({3} \, , \, {-2} )</m> and <m>O(h,k)</m>:</p>
+<p><md>
+<mrow>OB^2 \amp  =(h-({3}) )^2+(k-({-2}) )^2</mrow>
+<mrow>\amp  ={k^2+4 k+h^2-6 h+13}</mrow>
+</md></p>
+<p><alert>Step 2:</alert> Determining the expression of <m>h</m>:</p>
+<p>Since <m>O A^2=O B^2</m>, we can set up the following equation:</p>
+<p><m>{k^2+8 k+h^2-10 h+41=k^2+4 k+h^2-6 h+13}</m></p>
+<p> <m> h={k+7} </m></p>
+<p><alert>Step 3:</alert> Determining the coordinates of the centre: </p>
+<p>Since the center <m>O(h\, , \, k)</m> lies on the line <m> {-y-4 x+8=0} </m>, we can substitute <m>x</m> and <m>y</m> by  <m>h</m> and <m>k</m> respectively into this equation, that is, <m> {-k-4 h+8=0} </m>.</p>
+<p>Substituting <m>h={k+7} </m> in <m> {-k-4 h+8=0} </m>, gives <m> {-4} {k+7}-k+{8=0}  </m>. Thus <m>k={-4}</m>.</p>
+
+<p>Substituting back for <m>k</m> in <m>h={k+7} </m>, yields to <m> h={3} </m>.</p>
+<p>Hence the center of the circle is <m>O({3} , {-4})</m></p>
+
+<p><alert>Step 4:</alert> Finding the radius:</p>
+<p>Now, let's find the radius of the circle using the distance formula between center <m>O({3} , {-4})</m> and point <m> \text{A} ({5} \, , \, {-4} )</m>:</p>
+<p>We recall <m> \text{radius} =\sqrt{(x_2-x_1)^2+ (y_2 - y_1)^2} </m></p>
+<p>
+<md>
+<mrow>\text{radius}   \amp = \sqrt{(h-({5}))^2+ (k - ({-4}))^2}</mrow>
+<mrow>\amp = \sqrt{({3}-({5}))^2+ ({-4} - ({-4}))^2}</mrow>
+<mrow>\amp =\sqrt{ ({-2})^2+ ({0})^2}</mrow>
+<mrow>\amp = \sqrt{ {4}+ {0} }</mrow>
+<mrow>\amp =\sqrt{  {4} }</mrow>
+<mrow>\amp ={2}</mrow>
+</md>
+</p>
+<p><alert>Step 5:</alert> Writing the equation of the Circle:</p>
+<p>Now that we have the center <m>O({3}\, , \, {-4}) </m> and the radius <m>{4} </m>, we use the equation of a circle: <m>(x-h)^2+(y-k)^2=r^2</m>. </p>
+<p>Substituting the corresponding values of <m>h,\, k</m> and <m>r</m> we get, <m>{{\left(y+4\right)}^2+{\left(x-3\right)}^2=4}</m>, which can be written as: <m>{y^2+8 y+x^2-6 x+21=0}</m></p></div></solution>
+<answer><p><m>\left[ 3 , -4 \right] </m></p></answer>
+<answer><p><m>2</m></p></answer>
+<answer><p><m>{\left(y+4\right)}^2+{\left(x-3\right)}^2=4</m></p></answer>
+</stack-static>

@@ -1,0 +1,30 @@
+<stack-static>
+<statement><div><p>Find the center and radius of a circle with <m>A({-5}, {-1})</m> and <m>B({3}, {-1})</m> as endpoints of its diameter.</p>
+<p> <alert>Note:</alert> Give your answer in <m>2</m> decimal places where necessary</p>
+<p> Centre <m>=</m> <fillin characters="6" name="ans1"/> </p>
+<p> Radius <m>=</m> <fillin characters="4" name="ans2"/> units   </p>
+<p/>
+<p>Note: For the centre coordinates, enter your values inside the parenthesis <m> \left( a, b \right) </m></p></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p>Let's apply these steps to the given endpoints <m>A({-5},{-1})</m> and <m>B({3},{-1})</m>:</p>
+<p><alert>Step 1:</alert> Find the midpoint (center) of the diameter <m> \displaystyle M= \left(\frac{{x_1 + x_2}}{2}, \frac{{y_1 + y_2}}{2}\right)</m> </p>
+<p><md>
+<mrow>\text{Midpoint (M)} \amp  =  \left(\frac{{({-5}) + ({3})}}{2}, \frac{{({-1}) + ({-1})}}{2}\right)</mrow>
+<mrow>\amp  = \left(\frac{{{-2}}}{2}, \frac{{{-2}}}{2}\right)</mrow>
+<mrow>\amp  = \left({-1},{-1} \right)</mrow>
+</md></p>
+<p><alert>Step 2:</alert> Find the distance (radius) from one of the endpoints to the center. </p>
+<p>The distance formula gives us the radius <m>R</m> as:</p>
+<me>R = \sqrt{{(x_2 - x_1)^2 + (y_2 - y_1)^2}}</me>
+<p>Here we can use the points <m>A({-5},{-1})</m> and center <m> C\left({-1},{-1} \right) </m> to find the radius <m>R</m>. (Note: You can also use <m>B({3},{-1})</m>):
+</p>
+<p><m> \displaystyle \begin{align}\text{Radius (R)} &amp; =\sqrt{{(({3}) - ({-1}))^2 + (({-1}) - ({-1}))^2}} \\
+&amp; = \sqrt{{({4})^2 + ({0})^2}} \\
+&amp; = \sqrt{{16}} \\
+&amp; = {4}
+\end{align} </m></p>
+<p>So, the radius of the circle is <m>{4} </m> units</p>
+<p>Therefore, the center of the circle is <m> C [{-1},{-1} ] </m> and the radius is <m>{4}</m> units.</p></div></solution>
+<answer><p><m>\left[ -1 , -1 \right] </m></p></answer>
+<answer><p><m>4</m></p></answer>
+</stack-static>

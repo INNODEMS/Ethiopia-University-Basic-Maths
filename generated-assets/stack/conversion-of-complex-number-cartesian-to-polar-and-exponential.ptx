@@ -1,0 +1,22 @@
+<stack-static>
+<statement><div><p>Consider the complex number <m>z = {3} {+} {5}\cdot i</m>.</p>
+<p>1. Write <m>z</m> in polar or trigonometric form. Give the modulus in exact form and the argument correct to <m>2</m> decimal places within your answer.</p>
+<p><m>z = </m> <fillin characters="18" name="ans1"/>  </p>
+<p>2. Write <m>z</m> in exponential form. Give the modulus and the argument in exact form. Recall that <m>e^k</m> is entered as <c>%e^(k)</c>.</p>
+<p><m>z = </m> <fillin characters="15" name="ans2"/>  </p></div></statement>
+<solution><div><h3>Worked Solution:</h3>
+<p>1. To write <m>z</m> in polar form, we need to find its modulus and argument.</p>
+<p><m>\displaystyle r = |z| = \sqrt{{}{3}{}^2 + {}{5}{}^2}</m></p>
+<p><m>\displaystyle  = \sqrt{{34}}</m></p>
+<p><m>\displaystyle  = {\sqrt{34}}</m>.</p>
+<p>To find the argument, we find the argument of <m>\displaystyle {3} + {5}\cdot i</m>, which is</p>
+<p><m>\displaystyle \tan^{-1} \left( \frac{{5}}{{3}} \right) = {1.03}</m></p>
+<p>If not in the first quadrant, we need to use the symmetry in the Argand Diagram to find the actual argument, which happens to be <m>\displaystyle {\frac{103}{100}}</m> .</p>
+<p>Therefore, the polar form of <m>z</m> is <m> \displaystyle {\sqrt{34}\cdot \left(\mathrm{i}\cdot \sin \left( \frac{103}{100} \right)+\cos \left( \frac{103}{100} \right)\right)}</m> or <m> \displaystyle {\sqrt{34}\cdot \left(0.86\cdot \mathrm{i}+0.51\right)}</m></p>
+
+<p>2. To write <m>z</m> in exponential form, we need to find its modulus and argument.</p>
+<p>From the previous part we know that <m>\displaystyle r = |z| = {\sqrt{34}}</m> and <m>\theta = {\frac{103}{100}}</m>.</p>
+<p>Therefore, the exponential form of <m>z</m> is <m>\displaystyle {\sqrt{34}\cdot e^{\frac{103\cdot \mathrm{i}}{100}}}</m></p></div></solution>
+<answer><p><m>\sqrt{34}\cdot \left(\mathrm{i}\cdot \sin \left( \frac{103}{100} \right)+\cos \left( \frac{103}{100} \right)\right)</m></p></answer>
+<answer><p><m>\sqrt{34}\cdot e^{\frac{103\cdot \mathrm{i}}{100}}</m></p></answer>
+</stack-static>

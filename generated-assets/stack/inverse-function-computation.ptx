@@ -1,0 +1,15 @@
+<stack-static>
+<statement><div><p/><p>Find the inverse of <m> \displaystyle R(x)={\frac{3\cdot x+8}{3\cdot x-1}}</m>.</p><p><m>R^{-1}(x)=</m> <fillin characters="15" name="ans1"/> <br/></p></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p>To find the inverse of the function <m> \displaystyle R(x) = {\frac{3\cdot x+8}{3\cdot x-1}}</m>, we'll follow these steps:</p>
+<p>1. Replace <m>R(x)</m> with <m>y</m>: <m> \displaystyle {y=\frac{3\cdot x+8}{3\cdot x-1}}</m>.</p>
+<p>2. Swap the roles of <m>x</m> and <m>y</m>: <m> \displaystyle {x=\frac{3\cdot y+8}{3\cdot y-1}}</m>.</p>
+<p>3. We solve the resulting equation for <m>y</m> to get <m>R^{-1}(x)</m>.</p>
+<p><m>\displaystyle {x=\frac{3\cdot y+8}{3\cdot y-1}} \\
+{x\cdot \left(3\cdot y-1\right)}= {3\cdot y+8} \\
+{3\cdot x\cdot y-x}= {3\cdot y+8} \\
+ \displaystyle {y=\frac{x+8}{3\cdot x-3}}</m></p>
+<p>Now, we have <m>\displaystyle R^{-1}(x) = {\frac{x+8}{3\cdot x-3}}</m>.</p>
+<p>Please note that for the inverse to be valid, the original function <m>R(x)</m> must be one-to-one (bijective), meaning that each value of <m>x</m> corresponds to a unique value of <m>y</m>, and vice versa. </p><p>If the original function is not one-to-one, its inverse might not exist.</p></div></solution>
+<answer><p><m>\frac{x+8}{3\cdot x-3}</m></p></answer>
+</stack-static>

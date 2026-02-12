@@ -1331,9 +1331,7 @@
 
 
         <exercise>
-            <stack-moodle label="simplification-of-rational-expressions-in-partial-fractions-1-8" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Polynomials,-zeros-of-polynomials,-rational-functions-and-their-/Simplification-of-rational-expressions-in-partial-fractions-1-8.xml" />
-            </stack-moodle>
+            <stack label="simplification-of-rational-expressions-in-partial-fractions-1-8" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Polynomials,-zeros-of-polynomials,-rational-functions-and-their-/Simplification-of-rational-expressions-in-partial-fractions-1-8.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FPolynomials%2C-zeros-of-polynomials%2C-rational-functions-and-their-%2FSimplification-of-rational-expressions-in-partial-fractions-1-8.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-polynomials-zeros-of-polynomials-rational.ptx">Add review</url>
             </conclusion>
@@ -1341,9 +1339,7 @@
             
 
         <exercise>
-            <stack-moodle label="solving-rational-equations" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Polynomials,-zeros-of-polynomials,-rational-functions-and-their-/Solving-Rational-Equations.xml" />
-            </stack-moodle>
+            <stack label="solving-rational-equations" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Polynomials,-zeros-of-polynomials,-rational-functions-and-their-/Solving-Rational-Equations.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FPolynomials%2C-zeros-of-polynomials%2C-rational-functions-and-their-%2FSolving-Rational-Equations.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-polynomials-zeros-of-polynomials-rational.ptx">Add review</url>
             </conclusion>
@@ -1351,9 +1347,7 @@
             
 
         <exercise>
-            <stack-moodle label="evaluating-the-rational-functions-at-the-given-point" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Polynomials,-zeros-of-polynomials,-rational-functions-and-their-/Evaluating-the-rational-functions-at-the-given-point.xml" />
-            </stack-moodle>
+            <stack label="evaluating-the-rational-functions-at-the-given-point" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Polynomials,-zeros-of-polynomials,-rational-functions-and-their-/Evaluating-the-rational-functions-at-the-given-point.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FPolynomials%2C-zeros-of-polynomials%2C-rational-functions-and-their-%2FEvaluating-the-rational-functions-at-the-given-point.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-polynomials-zeros-of-polynomials-rational.ptx">Add review</url>
             </conclusion>
@@ -1361,9 +1355,7 @@
             
 
         <exercise>
-            <stack-moodle label="identify-the-graph-that-corresponds-to-the-given-equation" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Polynomials,-zeros-of-polynomials,-rational-functions-and-their-/Identify-the-graph-that-corresponds-to-the-given-equation-.xml" />
-            </stack-moodle>
+            <stack label="identify-the-graph-that-corresponds-to-the-given-equation" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Polynomials,-zeros-of-polynomials,-rational-functions-and-their-/Identify-the-graph-that-corresponds-to-the-given-equation-.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FPolynomials%2C-zeros-of-polynomials%2C-rational-functions-and-their-%2FIdentify-the-graph-that-corresponds-to-the-given-equation-.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-polynomials-zeros-of-polynomials-rational.ptx">Add review</url>
             </conclusion>
@@ -1371,9 +1363,7 @@
             
 
         <exercise>
-            <stack-moodle label="division-of-long-polynomials-a" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Polynomials,-zeros-of-polynomials,-rational-functions-and-their-/Division-of-long-polynomials-(a).xml" />
-            </stack-moodle>
+            <stack label="division-of-long-polynomials-a" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Polynomials,-zeros-of-polynomials,-rational-functions-and-their-/Division-of-long-polynomials-(a).xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FPolynomials%2C-zeros-of-polynomials%2C-rational-functions-and-their-%2FDivision-of-long-polynomials-%28a%29.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-polynomials-zeros-of-polynomials-rational.ptx">Add review</url>
             </conclusion>
@@ -1381,9 +1371,7 @@
             
 
         <exercise>
-            <stack-moodle label="factorization-of-polynomials-reducible-to-quadratic-ones" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Polynomials,-zeros-of-polynomials,-rational-functions-and-their-/Factorization-of-polynomials-reducible-to-quadratic-ones.xml" />
-            </stack-moodle>
+            <stack label="factorization-of-polynomials-reducible-to-quadratic-ones" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Polynomials,-zeros-of-polynomials,-rational-functions-and-their-/Factorization-of-polynomials-reducible-to-quadratic-ones.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FPolynomials%2C-zeros-of-polynomials%2C-rational-functions-and-their-%2FFactorization-of-polynomials-reducible-to-quadratic-ones.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-polynomials-zeros-of-polynomials-rational.ptx">Add review</url>
             </conclusion>

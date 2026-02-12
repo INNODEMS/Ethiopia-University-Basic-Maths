@@ -1,0 +1,13 @@
+<stack-static>
+<statement><div><p>Find, without using a calculator, the value of <m> \log_{{2}}{8}</m>.</p>
+<p>Type the intermediary steps in your answer to show your working. The syntax for logarithms is as follows: <m> \log_{a} b</m> is entered as logbase(b,a). Please seek advice or post in the issues forum if you have a problem with this notation.</p>
+<p><m> \log_{{2}}{8}=</m> <fillin characters="15" name="ans1"/>  </p></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p><md>
+<mrow>\log_{{2}}{8} \amp = \log_{{2}} {2}^{{3}}</mrow>
+<mrow>\amp  = {3}\cdot \log_{{2}} {2}</mrow>
+<mrow>\amp = {3} \cdot 1</mrow>
+<mrow>\amp = {3}</mrow>
+</md>.</p></div></solution>
+<answer><p><m>\left[ \log_{2}\left(2^3\right) , =3\cdot \log_{2}\left(2\right) , =3 \right] </m></p></answer>
+</stack-static>

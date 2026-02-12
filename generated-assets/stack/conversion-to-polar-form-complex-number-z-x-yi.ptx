@@ -1,0 +1,21 @@
+<stack-static>
+<statement><div><p>Write the complex number <m>z={-6}+{-2\cdot 3^{\frac{3}{2}}}i</m> in polar form using the argument <m>\theta </m> "the angle measured from the positive real axis.</p>
+<p><em>Note: <m>{\mathrm{i}}</m> can be typed as <c>%i</c> .</em></p>
+<p>r = <fillin characters="8" name="ans1"/> and <m>\theta</m> = <fillin characters="8" name="ans2"/> </p>
+<p>z = <fillin characters="15" name="ans3"/> </p></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p>The given complex number is <m>{-6}{-2\cdot 3^{\frac{3}{2}}}i</m></p>
+<p><alert>Step 1:</alert> We calculate the modulus (magnitude) of the complex number using the formula: <m>|z| = \sqrt{a^2 + b^2}</m> for any complex number <m>z= a+b.i </m></p>
+<p>So, for our complex number the modulus is: <m>\displaystyle r=\sqrt{({-6}^2)+({-2\cdot 3^{\frac{3}{2}}}^2)}</m></p>
+<p>Modulus r=<m>{12}</m></p>
+<p/>
+<p><alert>Step 2:</alert> The argument <m> \theta </m> of a complex number can be found using the formula:</p>
+<p><m> \displaystyle \theta =tan^-1 \left( \frac{b}{a}\right) \implies tan^-1 \left( \frac{{-2\cdot 3^{\frac{3}{2}}}}{{-6}}\right) </m> (Note: The angle needs to be in radians)</p>
+<p><m>\theta ={\frac{\pi}{3}}</m></p>
+<p/>
+<p><alert>Step 3:</alert> The polar form of the complex number is given by <m>z=r(\cos\theta+i\,\sin\theta)</m></p>
+<p>Substituting the values of <m>r</m> and <m>\theta</m> into the formula: <m> z = {12}\left(\cos{\frac{\pi}{3}}+i\, \sin {\frac{\pi}{3}}\right)</m></p></div></solution>
+<answer><p><m>12</m></p></answer>
+<answer><p><m>\frac{\pi}{3}</m></p></answer>
+<answer><p><m>12\cdot \left(\cos \left( \frac{\pi}{3} \right)+\mathrm{i}\cdot \sin \left( \frac{\pi}{3} \right)\right)</m></p></answer>
+</stack-static>

@@ -1,0 +1,56 @@
+<stack-static>
+<statement><div><p> Given the complex numbers <m>z</m> = <m>{4}</m> and <m>w</m> =  <m>{13-\mathrm{i}}</m>, evaluate and write in the form <m>a+bi</m>, where <m>a</m> and <m>b</m> are real numbers </p>
+<p>Note: To write the complex number <m>i</m> type <c>%i</c> and <m>\sqrt{a} </m> type <c>sqrt(a)</c></p>
+<ol>
+<li> <m>\bar{z}+\bar{w}</m> = <fillin characters="8" name="ans1"/>  </li>
+<br/>
+<li> <m>\overline{z+w}</m> = <fillin characters="8" name="ans2"/>  </li>
+<br/>
+<li><m>\overline{\bar{z}-\bar{w}}</m> = <fillin characters="8" name="ans3"/>  </li>
+<br/>
+<li> <m>\overline{z-w}</m> = <fillin characters="8" name="ans4"/>  </li>
+<br/>
+<li> <m>z \times \bar{z}</m> = <fillin characters="8" name="ans5"/>  </li>
+</ol></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p>Recall that if <m>z=a+bi</m> then <m>\bar{z}=a-bi</m> is the conjugate of <m>z</m>. Use this in your calculations.</p>
+<p>Given <m>z={4} </m> and <m>w={13-\mathrm{i}}</m>, we have;</p>
+
+1.<p> <md>
+<mrow>\bar{z}+ \bar{w} \amp  = \overline{4} + \overline{13-\mathrm{i}}</mrow>
+<mrow>\amp  =\left( {4} \right) + \left( {\mathrm{i}+13} \right)</mrow>
+<mrow>\amp  = {\mathrm{i}+17}</mrow>
+</md></p>
+<br/>
+2.<p> <md>
+<mrow>\overline{z+w} \amp  = \overline{({4})+({13-\mathrm{i}})}</mrow>
+<mrow>\amp  = \overline{{17-\mathrm{i}}}</mrow>
+<mrow>\amp  = {\mathrm{i}+17}</mrow>
+</md></p>
+<br/>
+3.<p> <md>
+<mrow>\overline{\bar{z}-\bar{w}} \amp  = \overline{\overline{4} - \overline{13-\mathrm{i}}}</mrow>
+<mrow>\amp  = \overline{({4}) - ({\mathrm{i}+13})}</mrow>
+<mrow>\amp  = \overline{{-\mathrm{i}-9}}</mrow>
+<mrow>\amp  = {\mathrm{i}-9}</mrow>
+</md></p>
+<br/>
+4.<p> <md>
+<mrow>\overline{z-w}  \amp  = \overline{z} - \overline{w} \quad \text{ (by property)}</mrow>
+<mrow>\amp  = \left( \overline{4}\right) - \left( \overline{13-\mathrm{i}}\right)</mrow>
+<mrow>\amp  = \left( {4} \right) - \left( {\mathrm{i}+13} \right)</mrow>
+<mrow>\amp  = {-\mathrm{i}-9}</mrow>
+</md></p>
+<br/>
+5.<p>
+<md>
+<mrow>z \times \overline{z}  \amp  =  \left( {4}\right)  \left( \overline{4}\right)</mrow>
+<mrow>\amp  = \left({4}\right)   \left({4}\right)</mrow>
+<mrow>\amp  = {16}</mrow>
+</md></p></div></solution>
+<answer><p><m>\mathrm{i}+17</m></p></answer>
+<answer><p><m>\mathrm{i}+17</m></p></answer>
+<answer><p><m>\mathrm{i}-9</m></p></answer>
+<answer><p><m>-\mathrm{i}-9</m></p></answer>
+<answer><p><m>16</m></p></answer>
+</stack-static>

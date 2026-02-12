@@ -471,9 +471,7 @@
 
 
         <exercise>
-            <stack-moodle label="finding-the-inverse-of-a-rational-function" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Types-of-functions-and-inverse-of-a-function/Finding-the-inverse-of-a-rational-function.xml" />
-            </stack-moodle>
+            <stack label="finding-the-inverse-of-a-rational-function" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Types-of-functions-and-inverse-of-a-function/Finding-the-inverse-of-a-rational-function.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FTypes-of-functions-and-inverse-of-a-function%2FFinding-the-inverse-of-a-rational-function.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-types-of-functions-and-inverse.ptx">Add review</url>
             </conclusion>
@@ -481,9 +479,7 @@
             
 
         <exercise>
-            <stack-moodle label="graphs-of-many-to-one-functions" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Types-of-functions-and-inverse-of-a-function/Graphs-of-many-to-one-functions.xml" />
-            </stack-moodle>
+            <stack label="graphs-of-many-to-one-functions" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Types-of-functions-and-inverse-of-a-function/Graphs-of-many-to-one-functions.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FTypes-of-functions-and-inverse-of-a-function%2FGraphs-of-many-to-one-functions.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-types-of-functions-and-inverse.ptx">Add review</url>
             </conclusion>
@@ -491,9 +487,7 @@
             
 
         <exercise>
-            <stack-moodle label="inverse-function-computation" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Types-of-functions-and-inverse-of-a-function/Inverse-Function-Computation.xml" />
-            </stack-moodle>
+            <stack label="inverse-function-computation" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Types-of-functions-and-inverse-of-a-function/Inverse-Function-Computation.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FTypes-of-functions-and-inverse-of-a-function%2FInverse-Function-Computation.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-types-of-functions-and-inverse.ptx">Add review</url>
             </conclusion>
@@ -501,9 +495,7 @@
             
 
         <exercise>
-            <stack-moodle label="finding-inverse-of-a-function-g-x" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Types-of-functions-and-inverse-of-a-function/Finding-inverse-of-a-function-g(x).xml" />
-            </stack-moodle>
+            <stack label="finding-inverse-of-a-function-g-x" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Types-of-functions-and-inverse-of-a-function/Finding-inverse-of-a-function-g(x).xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FTypes-of-functions-and-inverse-of-a-function%2FFinding-inverse-of-a-function-g%28x%29.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-types-of-functions-and-inverse.ptx">Add review</url>
             </conclusion>
@@ -511,9 +503,7 @@
             
 
         <exercise>
-            <stack-moodle label="finding-inverses-of-a-linear-functions" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Types-of-functions-and-inverse-of-a-function/Finding-Inverses-of-a-linear-Functions.xml" />
-            </stack-moodle>
+            <stack label="finding-inverses-of-a-linear-functions" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Types-of-functions-and-inverse-of-a-function/Finding-Inverses-of-a-linear-Functions.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FTypes-of-functions-and-inverse-of-a-function%2FFinding-Inverses-of-a-linear-Functions.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-types-of-functions-and-inverse.ptx">Add review</url>
             </conclusion>
@@ -521,9 +511,7 @@
             
 
         <exercise>
-            <stack-moodle label="inverse-of-a-function-with-fractional-coefficients" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Types-of-functions-and-inverse-of-a-function/Inverse-of-a-Function-with-Fractional-Coefficients.xml" />
-            </stack-moodle>
+            <stack label="inverse-of-a-function-with-fractional-coefficients" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Types-of-functions-and-inverse-of-a-function/Inverse-of-a-Function-with-Fractional-Coefficients.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FTypes-of-functions-and-inverse-of-a-function%2FInverse-of-a-Function-with-Fractional-Coefficients.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-types-of-functions-and-inverse.ptx">Add review</url>
             </conclusion>

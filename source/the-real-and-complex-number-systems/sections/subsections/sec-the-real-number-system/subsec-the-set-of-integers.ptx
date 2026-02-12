@@ -273,9 +273,7 @@
 
 
         <exercise>
-            <stack-moodle label="proving-the-set-of-integers-using-disproving-by-counterexamples" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-integers/proving-the-set-of-integers-using-disproving-by-counterexamples-.xml" />
-            </stack-moodle>
+            <stack label="proving-the-set-of-integers-using-disproving-by-counterexamples" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-integers/proving-the-set-of-integers-using-disproving-by-counterexamples-.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-integers%2Fproving-the-set-of-integers-using-disproving-by-counterexamples-.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-integers.ptx">Add review</url>
             </conclusion>
@@ -283,10 +281,8 @@
         
         
         <exercise>
-            <stack-moodle label="exponent-simplification-and-writing-in-the-form-a-n-b-m" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <!-- <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-integers/proving-the-set-of-integers-using-disproving-by-counterexamples-.xml" /> -->
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-integers/Exponent-Simplification-and-Writing-in-the-Form-(a-n-b-m).xml" />
-            </stack-moodle>
+            <stack label="exponent-simplification-and-writing-in-the-form-a-n-b-m" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-integers/Exponent-Simplification-and-Writing-in-the-Form-(a-n-b-m).xml"/>
+                <!-- source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/The-Real-and-Complex-Number-Systems-(NS)/The-set-of-integers/proving-the-set-of-integers-using-disproving-by-counterexamples-.xml" -->
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FThe-Real-and-Complex-Number-Systems-%28NS%29%2FThe-set-of-integers%2FExponent-Simplification-and-Writing-in-the-Form-%28a%5En-b%5Em-%29.xml&amp;entry.2077830997=source%2Fthe-real-and-complex-number-systems%2Fsections%2Fsubsections%2Fsec-the-real-number-system%2Fsubsec-the-set-of-integers.ptx">Add review</url>
             </conclusion>

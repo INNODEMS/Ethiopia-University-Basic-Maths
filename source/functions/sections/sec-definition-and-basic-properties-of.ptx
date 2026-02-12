@@ -2730,9 +2730,7 @@
 
 
         <exercise>
-            <stack-moodle label="solve-the-exponential-equation" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Solve-the-exponential-equation.xml" />
-            </stack-moodle>
+            <stack label="solve-the-exponential-equation" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Solve-the-exponential-equation.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FDefinition-and-basic-properties-of-logarithmic%2C-exponential%2C-tri%2FSolve-the-exponential-equation.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-definition-and-basic-properties-of.ptx">Add review</url>
             </conclusion>
@@ -2740,9 +2738,7 @@
             
 
         <exercise>
-            <stack-moodle label="solve-the-exponential-equation-and-write-it-in-terms-of-logarith" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Solve-the-exponential-equation-and-write-it-in-terms-of-logarith.xml" />
-            </stack-moodle>
+            <stack label="solve-the-exponential-equation-and-write-it-in-terms-of-logarith" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Solve-the-exponential-equation-and-write-it-in-terms-of-logarith.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FDefinition-and-basic-properties-of-logarithmic%2C-exponential%2C-tri%2FSolve-the-exponential-equation-and-write-it-in-terms-of-logarith.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-definition-and-basic-properties-of.ptx">Add review</url>
             </conclusion>
@@ -2750,9 +2746,7 @@
             
 
         <exercise>
-            <stack-moodle label="solve-the-logarithmic-equation-giving-your-answer-in-exact-form" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Solve-the-logarithmic-equation,-giving-your-answer-in-exact-form.xml" />
-            </stack-moodle>
+            <stack label="solve-the-logarithmic-equation-giving-your-answer-in-exact-form" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Solve-the-logarithmic-equation,-giving-your-answer-in-exact-form.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FDefinition-and-basic-properties-of-logarithmic%2C-exponential%2C-tri%2FSolve-the-logarithmic-equation%2C-giving-your-answer-in-exact-form.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-definition-and-basic-properties-of.ptx">Add review</url>
             </conclusion>
@@ -2760,9 +2754,7 @@
             
 
         <exercise>
-            <stack-moodle label="evaluation-of-logarithmic-expression-without-calculator" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Evaluation-of-Logarithmic-Expression-without-Calculator.xml" />
-            </stack-moodle>
+            <stack label="evaluation-of-logarithmic-expression-without-calculator" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Evaluation-of-Logarithmic-Expression-without-Calculator.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FDefinition-and-basic-properties-of-logarithmic%2C-exponential%2C-tri%2FEvaluation-of-Logarithmic-Expression-without-Calculator.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-definition-and-basic-properties-of.ptx">Add review</url>
             </conclusion>
@@ -2770,9 +2762,7 @@
             
 
         <exercise>
-            <stack-moodle label="evaluate-hyperbolic-functions" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Evaluate-hyperbolic-functions.xml" />
-            </stack-moodle>
+            <stack label="evaluate-hyperbolic-functions" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Evaluate-hyperbolic-functions.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FDefinition-and-basic-properties-of-logarithmic%2C-exponential%2C-tri%2FEvaluate-hyperbolic-functions.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-definition-and-basic-properties-of.ptx">Add review</url>
             </conclusion>
@@ -2780,9 +2770,7 @@
             
 
         <exercise>
-            <stack-moodle label="find-several-x-values-on-the-graph-of-the-trigonometric-function" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Find-several-x-values-on-the-graph-of-the-trigonometric-function.xml" />
-            </stack-moodle>
+            <stack label="find-several-x-values-on-the-graph-of-the-trigonometric-function" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Find-several-x-values-on-the-graph-of-the-trigonometric-function.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FDefinition-and-basic-properties-of-logarithmic%2C-exponential%2C-tri%2FFind-several-x-values-on-the-graph-of-the-trigonometric-function.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-definition-and-basic-properties-of.ptx">Add review</url>
             </conclusion>
@@ -2790,9 +2778,7 @@
             
 
         <exercise>
-            <stack-moodle label="identify-the-graph-of-the-trigonometric-function-of-y-f-x" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Identify-the-graph-of-the-trigonometric-function-of-y=f(x).xml" />
-            </stack-moodle>
+            <stack label="identify-the-graph-of-the-trigonometric-function-of-y-f-x" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Identify-the-graph-of-the-trigonometric-function-of-y=f(x).xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FDefinition-and-basic-properties-of-logarithmic%2C-exponential%2C-tri%2FIdentify-the-graph-of-the-trigonometric-function-of-y%3Df%28x%29.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-definition-and-basic-properties-of.ptx">Add review</url>
             </conclusion>
@@ -2800,9 +2786,7 @@
             
 
         <exercise>
-            <stack-moodle label="identify-the-graph-of-the-trigonometric-function-of-y-f-x-2" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Identify-the-graph-of-the-trigonometric-function-of-y=f(x)-.xml" />
-            </stack-moodle>
+            <stack label="identify-the-graph-of-the-trigonometric-function-of-y-f-x-2" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Identify-the-graph-of-the-trigonometric-function-of-y=f(x)-.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FDefinition-and-basic-properties-of-logarithmic%2C-exponential%2C-tri%2FIdentify-the-graph-of-the-trigonometric-function-of-y%3Df%28x%29-.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-definition-and-basic-properties-of.ptx">Add review</url>
             </conclusion>
@@ -2810,9 +2794,7 @@
             
 
         <exercise>
-            <stack-moodle label="solve-the-trigonometric-equation-using-the-trigonometric-identit" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Solve-the-trigonometric-equation-using-the-trigonometric-identit.xml" />
-            </stack-moodle>
+            <stack label="solve-the-trigonometric-equation-using-the-trigonometric-identit" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Solve-the-trigonometric-equation-using-the-trigonometric-identit.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FDefinition-and-basic-properties-of-logarithmic%2C-exponential%2C-tri%2FSolve-the-trigonometric-equation-using-the-trigonometric-identit.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-definition-and-basic-properties-of.ptx">Add review</url>
             </conclusion>

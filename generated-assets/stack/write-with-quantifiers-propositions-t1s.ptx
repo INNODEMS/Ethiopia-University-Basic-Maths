@@ -1,0 +1,18 @@
+<stack-static>
+<statement><div><p>Let <m>P</m>: <m>f</m> is a constant function (where f is a function from <m>\mathbb{R}</m> to <m>\mathbb{R}</m>).</p>
+
+<p><alert>Syntax note:</alert> Use the words <c>forall</c> and <c>exists</c> for the quantifiers <m>\forall</m> and <m>\exists</m>. Use <c>!=</c> to mean "not equals" (<m>\neq</m>).</p>
+
+<p>1. Write the statement <m>P</m> using quantifiers. <br/>
+<m>P</m>: [ exists | forall ] <m>x \in \mathbb{R}</m>, <fillin characters="15" name="ans1"/>.   </p>
+<hr/>
+<p>2. Find its negation <m>\neg P</m>.<br/>
+<m>\neg P</m>: [ exists | forall ] <m>x \in \mathbb{R}</m>, <fillin characters="15" name="ans2"/>   </p></div></statement>
+<solution><div><p><alert>Worked solution</alert></p>
+<p>1. <m>P</m>: <m> \forall x \in \mathbb{R}, f(x) = c</m></p>
+<p>2. <m>\neg P</m>: <m> \neg \left(\forall x \in \mathbb{R}, f(x)=c \right)\equiv \exists x\in \mathbb{R}, f(x) \ne c </m></p></div></solution>
+<answer><p>forall</p></answer>
+<answer><p><m>f\left(x\right)=c</m></p></answer>
+<answer><p>exists</p></answer>
+<answer><p><m>c\neq f\left(x\right)</m></p></answer>
+</stack-static>

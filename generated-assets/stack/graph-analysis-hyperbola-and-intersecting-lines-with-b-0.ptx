@@ -1,0 +1,45 @@
+<stack-static>
+<statement><div><p>A conic in the two-dimensional plane is the solution set of an equation of the form</p>
+<p><m>\displaystyle ax^{2}+bxy+cy^{2}+dx+ey+f=0</m></p>
+<p>for real parameters <m>\displaystyle a,b,c,d,e</m> and <m>f,</m> where at least one of the <m>a,b</m> and <m>c</m> is not zero.</p>
+<p>If <m>\displaystyle b^{2}-4ac &gt;0</m> then the graph is a hyperbola (or two intersecting lines).</p>
+<p> Consider the following equation: <m>\displaystyle x^{2}+Bxy=F</m>.</p>
+<br/>Identify the corresponding values of <m>\displaystyle a=</m><fillin characters="5" name="ans1"/> <m>,\displaystyle b=</m><fillin characters="5" name="ans2"/> <m>,c=</m> <fillin characters="5" name="ans3a"/>,  <m>f=</m><fillin characters="5" name="ans3"/> 
+<p>    </p>
+<p> So, <m>\displaystyle b^{2}−4ac=</m><fillin characters="5" name="ans4"/> <m>,B \neq 0</m>  </p>
+<p>Therefore, the graph of <m>\displaystyle x^{2}+Bxy=F,</m> is a hyperbola or two intersecting lines, if <m>B \neq 0</m>. </p>
+<p> Case 1: If <m>\displaystyle F \neq 0,</m>  we have;</p>
+<br/><m>\displaystyle y=</m> <fillin characters="5" name="ans5"/>, thus the graph is a [ circle | two intersecting lines | hyperbola | ellipse ]
+<p> Case 2: If <m>\displaystyle F = 0</m>  we have;</p>
+<p><m>\displaystyle x=</m><fillin characters="5" name="ans7"/> and <m>y=</m><fillin characters="5" name="ans8"/>, thus the graph represents [ hyperbola | circle | two intersecting lines | ellipse ]  </p>
+
+<p>Application:</p>
+<p>What is the nature of the graph corresponding to the equation <m>{x y+x^2=-1}</m></p>
+<p>[ two intersecting lines | ellipse | hyperbola | circle ] </p></div></statement>
+<solution><div><p/><h3>Worked solution</h3>
+<p>A conic in the two-dimensional plane is the solution set of an equation of the form</p>
+<p><m>\displaystyle ax^{2}+bxy+cy^{2}+dx+ey+f=0</m></p>
+<p>for real parameters <m>\displaystyle a,b,c,d,e</m> and <m>f,</m> where at least one of the <m>a,b</m> and <m>c</m> is not zero.</p>
+<p>If <m>\displaystyle b^{2}-4ac &gt;0</m> then the graph is a hyperbola (or two intersecting lines).</p>
+<p> Consider the following equation: <m>\displaystyle x^{2}+Bxy=F</m>.</p>
+
+<p><m>\displaystyle a={1},b={B},c=0,f={-F}</m></p>
+<p><m>\displaystyle b^{2}−4ac=B^{2}−4(1)(0)={B^2} &gt;0,B \neq 0</m>.</p>
+<p>Therefore, the graph of <m>\displaystyle x^{2}+Bxy=F,</m> is a hyperbola or two intersecting lines, if <m>B \neq 0</m>. </p>
+<p> Case 1: If <m>\displaystyle F \neq 0,</m>  we have;</p>
+<p><m>\displaystyle y={\frac{F}{B x}-\frac{x}{B}}</m>, thus the graph is a hyperbola.</p>
+<p> Case 2: If <m>\displaystyle F = 0, x^{2}+Bxy=0,</m>  we have; </p>
+<p><m>\displaystyle x={0}</m> and <m>y={-\frac{x}{B}}</m>, thus the graph represents two intersecting lines.</p>
+<p>As a result, the graph is a hyperbola when <m>F\neq 0</m> and intersecting lines when <m>F=0</m>.</p></div></solution>
+<answer><p><m>1</m></p></answer>
+<answer><p><m>B</m></p></answer>
+<answer><p><m>0</m></p></answer>
+<answer><p><m>-F</m></p></answer>
+<answer><p><m>B^2</m></p></answer>
+<answer><p><m>\frac{F}{B x}-\frac{x}{B}</m></p></answer>
+<answer><p>hyperbola</p></answer>
+<answer><p><m>0</m></p></answer>
+<answer><p><m>-\frac{x}{B}</m></p></answer>
+<answer><p>two intersecting lines</p></answer>
+<answer><p>hyperbola</p></answer>
+</stack-static>

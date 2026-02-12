@@ -1,0 +1,4 @@
+<stack-static>
+<statement><div><p/><p>Find the inverse of <m>f(x)={7\cdot x-6}</m>, giving your answer in the form <m>f^{-1}(x)=mx+c</m>, where <m>m</m> and <m>c</m> are fractions in their simplest form.<nbsp/></p><p><m>f^{-1}(x)=</m> <fillin characters="15" name="ans1"/> <br/></p></div></statement>
+<answer><p><m>\frac{x}{7}+\frac{6}{7}</m></p></answer>
+</stack-static>

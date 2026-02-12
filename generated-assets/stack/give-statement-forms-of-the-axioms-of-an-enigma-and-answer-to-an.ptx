@@ -1,0 +1,223 @@
+<stack-static>
+<statement><div><p>Consider the following enigma problem, and give statement forms of its axioms. Then fill in the truth table, and answer to the enigma: <em>"Who order a dessert and not"</em>.</p>
+<hr/>
+<p><alert>Problem:</alert>Three Colleagues, Albert, Bernard and Charles, have lunch together every working day. <br/>The following axioms are true:</p>
+<ol>
+<li>If Albert orders a dessert, Bernard orders one too.</li>
+<li>Every day, either Bernard or Charles, but not both, orders a dessert.</li>
+<li>Albert or Charles, or both, order dessert daily.</li>
+<li>If Charles orders dessert, Albert does the same.</li>
+</ol><hr/>
+<p><alert>Statement forms of axioms</alert> <br/>Give the statement form of each axiom given in the problem. <br/>Let a: "Albert orders a dessert",      b: "Bernard orders a dessert", and c: "Charles orders a dessert". <br/><span style="font-size: 0.9375rem;"><span style="font-size: 0.9375rem;">1. "If Albert orders a dessert, Bernard orders one too": <fillin characters="15" name="ans34"/>    <br/><span style="font-size: 0.9375rem;">2. "Every day, either Bernard or Charles, but not both, orders a dessert": <fillin characters="15" name="ans35"/>    <br/><span style="font-size: 0.9375rem;">3. "Albert or Charles, or both, order dessert daily": <fillin characters="15" name="ans36"/>    <br/><span style="font-size: 0.9375rem;">4. "If Charles orders dessert, Albert does the same": <fillin characters="15" name="ans37"/>    </span></span></span></span></span></p>
+<center>
+<p><alert>Fill in truth table</alert></p>
+
+<tabular style="border-collapse: collapse; width: 80%; text-align: center; font-size: 14px; margin-left: 0; margin-right: auto;" border="1">
+  <row>
+    <cell style="width: 7%;"><m>a</m></cell>
+    <cell style="width: 7%;"><m>b</m></cell>
+    <cell style="width: 7%;"><m>c</m></cell>
+    <cell style="width: 12%;"><m>a \implies b</m></cell>
+    <cell style="width: 12%;"><m>(b \land \neg c) \lor (\neg b \land c)</m></cell>
+  </row>
+  <row>
+    <cell><m>{True}</m></cell>
+    <cell><m>{True}</m></cell>
+    <cell><m>{True}</m></cell>
+    <cell>[ true | false ]</cell>
+    <cell>[ true | false ]</cell>
+  </row>
+  <row>
+    <cell><m>{True}</m></cell>
+    <cell><m>{True}</m></cell>
+    <cell><m>{False}</m></cell>
+    <cell>[ true | false ]</cell>
+    <cell>[ true | false ]</cell>
+  </row>
+  <row>
+    <cell><m>{True}</m></cell>
+    <cell><m>{False}</m></cell>
+    <cell><m>{True}</m></cell>
+    <cell>[ true | false ]</cell>
+    <cell>[ true | false ]</cell>
+  </row>
+  <row>
+    <cell><m>{True}</m></cell>
+    <cell><m>{False}</m></cell>
+    <cell><m>{False}</m></cell>
+    <cell>[ true | false ]</cell>
+    <cell>[ true | false ]</cell>
+  </row>
+  <row>
+    <cell><m>{False}</m></cell>
+    <cell><m>{True}</m></cell>
+    <cell><m>{True}</m></cell>
+    <cell>[ true | false ]</cell>
+    <cell>[ true | false ]</cell>
+  </row>
+  <row>
+    <cell><m>{False}</m></cell>
+    <cell><m>{True}</m></cell>
+    <cell><m>{False}</m></cell>
+    <cell>[ true | false ]</cell>
+    <cell>[ true | false ]</cell>
+  </row>
+  <row>
+    <cell><m>{False}</m></cell>
+    <cell><m>{False}</m></cell>
+    <cell><m>{True}</m></cell>
+    <cell>[ true | false ]</cell>
+    <cell>[ true | false ]</cell>
+  </row>
+  <row>
+    <cell><m>{False}</m></cell>
+    <cell><m>{False}</m></cell>
+    <cell><m>{False}</m></cell>
+    <cell>[ true | false ]</cell>
+    <cell>[ true | false ]</cell>
+  </row>
+</tabular>
+
+<tabular style="border-collapse: collapse; width: 80%; text-align: center; font-size: 14px; margin-left: 0; margin-right: auto;" border="1">
+  <row>
+    <cell style="width: 7%;"><m>a</m></cell>
+    <cell style="width: 7%;"><m>b</m></cell>
+    <cell style="width: 7%;"><m>c</m></cell>
+    <cell style="width: 12%;"><m>a \lor c</m></cell>
+    <cell style="width: 12%;"><m>c \implies a</m></cell>
+    <cell style="width: 11%;">Feedback</cell>
+  </row>
+
+  <row>
+    <cell><m>{True}</m></cell>
+    <cell><m>{True}</m></cell>
+    <cell><m>{True}</m></cell>
+    <cell>[ true | false ]</cell>
+    <cell>[ true | false ]</cell>
+    <cell/>
+  </row>
+
+  <row>
+    <cell><m>{True}</m></cell>
+    <cell><m>{True}</m></cell>
+    <cell><m>{False}</m></cell>
+    <cell>[ true | false ]</cell>
+    <cell>[ true | false ]</cell>
+    <cell/>
+  </row>
+
+  <row>
+    <cell><m>{True}</m></cell>
+    <cell><m>{False}</m></cell>
+    <cell><m>{True}</m></cell>
+    <cell>[ true | false ]</cell>
+    <cell>[ true | false ]</cell>
+    <cell/>
+  </row>
+
+  <row>
+    <cell><m>{True}</m></cell>
+    <cell><m>{False}</m></cell>
+    <cell><m>{False}</m></cell>
+    <cell>[ true | false ]</cell>
+    <cell>[ true | false ]</cell>
+    <cell/>
+  </row>
+
+  <row>
+    <cell><m>{False}</m></cell>
+    <cell><m>{True}</m></cell>
+    <cell><m>{True}</m></cell>
+    <cell>[ true | false ]</cell>
+    <cell>[ true | false ]</cell>
+    <cell/>
+  </row>
+
+  <row>
+    <cell><m>{False}</m></cell>
+    <cell><m>{True}</m></cell>
+    <cell><m>{False}</m></cell>
+    <cell>[ true | false ]</cell>
+    <cell>[ true | false ]</cell>
+    <cell/>
+  </row>
+
+  <row>
+    <cell><m>{False}</m></cell>
+    <cell><m>{False}</m></cell>
+    <cell><m>{True}</m></cell>
+    <cell>[ true | false ]</cell>
+    <cell>[ true | false ]</cell>
+    <cell/>
+  </row>
+
+  <row>
+    <cell><m>{False}</m></cell>
+    <cell><m>{False}</m></cell>
+    <cell><m>{False}</m></cell>
+    <cell>[ true | false ]</cell>
+    <cell>[ true | false ]</cell>
+    <cell/>
+  </row>
+</tabular>
+
+</center>
+<p/>
+<p><alert>Answer to the enigma:</alert> Who orders a dessert?</p>
+<p><em>Note: Hint: Observe from the truth table the interpretation that makes all four statement forms true. </em></p>
+<p> </p><ol marker="(1)">
+<li>Albert and Charles order dessert but not Bernard.</li>
+<li>Bernard and Charles order dessert but not Albert.</li>
+<li>Albert and Bernard order dessert but not Charles.</li>
+</ol>   
+<p>           </p>
+<p>           </p>
+<p>      </p></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p><alert>Statement forms of axioms:</alert> <br/>Give the statement form of each axiom given in the problem. <br/>Let a: "Albert orders a dessert", b: "Bernard orders a dessert", and c: "Charles orders a dessert". <br/>1. "If Albert orders a dessert, Bernard orders one too": a implies b <br/>2. "Every day, either Bernard or Charles, but not both, orders a dessert": (b and not c) or (not b and c) <br/>3. "Albert or Charles, or both, order dessert daily": a or c <br/>4. "If Charles orders dessert, Albert does the same": c implies a</p>
+<hr/>
+<p><alert>Fill in truth table:</alert> Here are the truth tables of each of these statements </p>
+<p>Truth table of <m>a \implies b</m>: <m>{\begin{array}{c|c|c} a &amp; b &amp; a\,{\text{ implies }}\, b\\ \hline \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{F} \\ \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \end{array}}</m> </p>
+<p>Truth table of ( <m> b \land \neg c</m> ) <m>\lor</m>  ( <m>\neg b \land c</m> ): <m>{\begin{array}{c|c|c} b &amp; c &amp; b\,{\text{ and }}\, {\rm not}\left( c \right)\,{\text{ or }}\, {\rm not}\left( b \right)\,{\text{ and }}\, c\\ \hline \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{F} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{F} \end{array}}</m></p>
+<p>Truth table of <m> a \lor c </m>: <m>{\begin{array}{c|c|c} a &amp; c &amp; a\,{\text{ or }}\, c\\ \hline \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{F} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \end{array}}</m> </p>
+<p>Truth table of <m> c \implies a </m>: <m>{\begin{array}{c|c|c} a &amp; c &amp; c\,{\text{ implies }}\, a\\ \hline \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{F} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \end{array}}</m></p>
+<hr/>
+<p><alert>Answer to the enigma:</alert> Who order a dessert and who does not order a dessert? <br/>We deduction that the interpretation that makes all four statement forms true is the second line from the truth table. <br/>One can see that only "a" and "b" are true and "c" is false. Therefore, Albert and Bernard order dessert but not Charles.</p></div></solution>
+<answer><p><m>a\,{\text{ implies }}\, b</m></p></answer>
+<answer><p><m>b\,{\text{ and }}\, {\rm not}\left( c \right)\,{\text{ or }}\, {\rm not}\left( b \right)\,{\text{ and }}\, c</m></p></answer>
+<answer><p><m>a\,{\text{ or }}\, c</m></p></answer>
+<answer><p><m>c\,{\text{ implies }}\, a</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>(3)</m></p></answer>
+</stack-static>

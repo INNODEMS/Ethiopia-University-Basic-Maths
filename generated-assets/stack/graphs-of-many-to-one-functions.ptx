@@ -1,0 +1,62 @@
+<stack-static>
+<statement><div><p>(a) Consider the function <m>k(x)={\sin x^{\circ}}</m>
+<br/>State two different values of <m>x</m> that would give the same value for <m>k(x)</m>. </p>
+<p style="margin-left: 30px"><m>x_1 =</m> <fillin characters="5" name="ans1"/> </p>
+<p style="margin-left: 30px"><m>x_2 =</m> <fillin characters="5" name="ans2"/> </p>
+<p/>
+
+<p>Therefore, the inverse of this function, <m>k^{-1}(x)</m> cannot exist because two values of <m>x</m> can give the same value for <m>k(x)</m>. 
+<br/>This is an example of a <alert>many to one</alert> function.</p>
+
+<br/>
+
+<p>(b) Which one of these graphs also shows a many to one function that does not have an inverse?</p>
+<p style="margin-left: 30px"><alert>Graph (1)</alert></p>
+<p style="margin-left: 30px"><image alt="STACK auto-generated plot of [x^2] with parameters [[x,-5,5],[y,-1,5],[box,false],[plottags,false],[xtics,-4,1,4]]" width="75%" source="stack/images/graphs-of-many-to-one-functions-render-0.pdf"/></p>
+
+<p style="margin-left: 30px"><alert>Graph (2)</alert></p>
+<p style="margin-left: 30px"><image alt="STACK auto-generated plot of [x^3+1] with parameters [[x,-5,5],[y,-5,5],[box,false],[plottags,false],[xtics,-4,1,4]]" width="75%" source="stack/images/graphs-of-many-to-one-functions-render-1.pdf"/></p>
+
+<p style="margin-left: 30px"><alert>Graph (3)</alert></p>
+<p style="margin-left: 30px"><image alt="STACK auto-generated plot of [1-5*x] with parameters [[x,-5,5],[y,-5,5],[box,false],[plottags,false],[xtics,-4,1,4]]" width="75%" source="stack/images/graphs-of-many-to-one-functions-render-2.pdf"/></p>
+
+<p style="margin-left: 30px">Graph number: [ <c>1</c> | <c>2</c> | <c>3</c> ] </p>
+<p/></div></statement>
+<solution><div><h3>Worked solution</h3>
+
+
+
+<p>(a) We can make use of the fact that <m>\sin(x^\circ)</m> has a <alert>periodicity</alert> of <m>360^\circ</m> to determine two different values of <m>x</m> for which <m>\sin(x^\circ)</m> is the same.
+<br/>In fact, for any value of <m>x</m> we have that <m>\sin(x^\circ) = \sin(x+360)^\circ</m></p>
+
+<p>A particular answer could then be to take,</p>
+<p style="margin-left: 30px"><m>x_1 = {60}^{\circ}</m></p>
+<p style="margin-left: 30px"><m>x_2 = {60}^{\circ}+360^{\circ} = {420}^{\circ}</m></p>
+
+<p>Then, we note in particular that,</p>
+<p style="margin-left: 30px"><m>\sin(x_1) = \sin({60}^{\circ})={\frac{\sqrt{3}}{2}}</m></p> 
+<p style="margin-left: 30px"><m>\sin(x_2) = \sin({420}^{\circ})={\frac{\sqrt{3}}{2}}</m></p>
+
+<br/>
+
+<p>Here is the graph of <m> k(x)=\sin(x^{\circ}) </m> and you can see that both these values of <m>x</m> lead to the same value of <m>k(x)</m>. 
+<br/>In fact, there are infinitely many values of <m>x</m> which give this same value of <m>k(x)</m>.</p>
+<p style="margin-left: 30px"><image alt="STACK auto-generated plot of [sin((%pi*x)/180),sqrt(3)/2,[discrete,[[60,sqrt(3)/2],[420,sqrt(3)/2]]]] with parameters [[x,-460,460],[y,-1.5,1.5],[box,false],[plottags,false],[style,lines,lines,points],[point_type,asterisk],[color,blue,red,red],[xtics,-450,90,450]]" width="75%" source="stack/images/graphs-of-many-to-one-functions-samplesolution-0.pdf"/></p>
+
+
+
+<br/>
+
+<p>(b) A function is called "many to one" if there are multiple values of <m>x</m> which map to the same value of <m>y</m>.
+<br/>Graphically, a function is many to one if we can draw a <alert>horizontal line</alert> which intersects the function more than once.</p>
+<p>We can see that this is only possible for Graph <m>{1}</m>.</p>
+
+<br/>
+
+<p>In the copy of graph <m>{1}</m> below, you can see two values of <m>x</m> that lead to the same value of <m>y</m>. </p>
+
+<p style="margin-left: 30px"><image alt="STACK auto-generated plot of [x^2,4,[discrete,[[2,4],[-2,4]]]] with parameters [[x,-5,5],[y,-5,5],[box,false],[plottags,false],[plottags,false],[style,lines,lines,points],[point_type,asterisk],[color,blue,red,red]]" width="75%" source="stack/images/graphs-of-many-to-one-functions-samplesolution-1.pdf"/></p></div></solution>
+<answer><p><m>60</m></p></answer>
+<answer><p><m>420</m></p></answer>
+<answer><p><c>1</c></p></answer>
+</stack-static>

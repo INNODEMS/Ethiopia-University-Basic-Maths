@@ -1,0 +1,40 @@
+<stack-static>
+<statement><div><p>Determine which of the following statements are tautologies.</p>
+<p>Recall that a compound proposition is a "tautology" if it is true regardless of the truth values of its component propositions, in this case, <m>p, q</m> and <m>r</m>.</p>
+<p><em>Hint: Consider forming a truth table for the statements.</em></p>
+<p/><ol marker="(1)">
+<li><m>(p \Rightarrow q) \lor (p \Rightarrow \neg q)</m></li>
+<li><m>(p \land q) \Rightarrow (\neg r \lor (p \Rightarrow q))</m></li>
+<li><m>(p \lor q) \land (p \lor r)</m></li>
+<li>None of the above</li>
+</ol> 
+<p/></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p>For each of the compound statements, we can construct a truth table.
+<br/>We do this below showing the intermediate steps which are used to build the full proposition.</p>
+
+<br/>
+
+<p>For the statement, <m>(p \Rightarrow q) \lor (p \Rightarrow \neg q)</m>,</p>
+<p style="margin-left: 30px"><m>{\begin{array}{c|c|c|c|c|c} p &amp; q &amp; {\rm not}\left( q \right) &amp; p\,{\text{ implies }}\, q &amp; p\,{\text{ implies }}\, {\rm not}\left( q \right) &amp; p\,{\text{ implies }}\, q\,{\text{ or }}\, \left(p\,{\text{ implies }}\, {\rm not}\left( q \right)\right)\\ \hline \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \end{array}}</m></p>
+
+<br/>
+
+<p>For the statement, <m>(p \land q) \Rightarrow (\neg r \lor (p \Rightarrow q))</m>,</p>
+<p style="margin-left: 30px"><m>{\begin{array}{c|c|c|c|c|c|c|c} p &amp; q &amp; r &amp; p\,{\text{ and }}\, q &amp; {\rm not}\left( r \right) &amp; p\,{\text{ implies }}\, q &amp; p\,{\text{ implies }}\, q\,{\text{ or }}\, {\rm not}\left( r \right) &amp; p\,{\text{ and }}\, q\,{\text{ implies }}\, \left(p\,{\text{ implies }}\, q\,{\text{ or }}\, {\rm not}\left( r \right)\right)\\ \hline \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \end{array}}</m></p>
+
+<br/>
+
+<p>For the statement, <m>(p \lor q) \land (p \lor r)</m>,</p>
+<p style="margin-left: 30px"><m>{\begin{array}{c|c|c|c|c|c} p &amp; q &amp; r &amp; p\,{\text{ or }}\, q &amp; p\,{\text{ or }}\, r &amp; \left(p\,{\text{ or }}\, q\right)\,{\text{ and }}\, \left(p\,{\text{ or }}\, r\right)\\ \hline \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} &amp; \mathbf{T} \\ \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{F} \\ \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{F} &amp; \mathbf{T} &amp; \mathbf{F} \\ \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{F} &amp; \mathbf{F} \end{array}}</m></p>
+
+<br/>
+
+<p>For a statement to be a tautology, it must be true for <alert>all</alert> of the different permutations of truth values for the component propositions.
+
+
+<br/>So we see that both the statements <m>(p \Rightarrow q) \lor (p \Rightarrow \neg q)</m> and <m>(p \land q) \Rightarrow (\neg r \lor (p \Rightarrow q))</m> are tautologies.</p>
+
+</div></solution>
+<answer><p><m>(1), (2)</m></p></answer>
+</stack-static>

@@ -1,0 +1,326 @@
+<stack-static>
+<statement><div><p>Logical connectives can be used together to create more complex statements.</p>
+<hr/>
+<p>Let <m>p</m> and <m>q</m> be statements.</p>
+<p>1. (a) Complete the truth tables of <m> (\neg p \vee q) \wedge q</m> and that of <m> (\neg p \wedge q) \vee q</m></p>
+<tabular border="1">
+    
+        <row>
+            <cell>p </cell>
+            <cell> q</cell>
+            <cell><m> \neg p </m></cell>
+            <cell><m>\neg p \vee q</m><br/><br/></cell>
+            <cell> <m> (\neg p \vee q) \wedge q</m> </cell>
+        </row>
+        <row>
+            <cell> True </cell>
+            <cell>True<br/></cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ] </cell>
+        </row>
+        <row>
+            <cell>True<br/></cell>
+            <cell>False </cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ] </cell>
+        </row>
+        <row>
+            <cell>False<br/></cell>
+            <cell>True<br/></cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ] </cell>
+        </row>
+        <row>
+            <cell>False<br/></cell>
+            <cell> False </cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ]</cell>
+        </row>
+    
+</tabular>
+
+<tabular border="1">
+    
+        <row>
+            <cell>p </cell>
+            <cell> q</cell>
+            <cell><m> \neg p \wedge q</m></cell>
+            <cell> <m> (\neg p \wedge q) \vee q</m></cell>
+            <cell> </cell>
+        </row>
+        <row>
+            <cell> True </cell>
+            <cell>True<br/></cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ] </cell>
+            <cell> </cell>
+        </row>
+        <row>
+            <cell>True<br/></cell>
+            <cell>False </cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ] </cell>
+            <cell/>
+        </row>
+        <row>
+            <cell>False<br/></cell>
+            <cell>True<br/></cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ] </cell>
+            <cell> </cell>
+        </row>
+        <row>
+            <cell>False<br/></cell>
+            <cell> False </cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ]</cell>
+            <cell/>
+        </row>
+    
+</tabular>
+<p>(b) What do you notice about the truth tables of <m> (\neg p \vee q) \wedge q</m> and that of <m> (\neg p \wedge q) \vee q</m>? [ The tables are not the same | The tables are the same ]  </p>
+<p>Based on this result, a creative student concludes that you can always interchange <m> \vee </m> and <m> \wedge </m> without changing the truth table.</p>
+<p>Is the student right? [ true | false ]  </p>
+<p>     
+         </p>
+<hr/>
+<p>2. (a) Complete the truth tables of <m> (\neg p \vee q) \wedge p</m> and that of <m> (\neg p \wedge q) \vee p</m></p>
+<tabular border="1">
+    
+        <row>
+            <cell> p </cell>
+            <cell> q </cell>
+            <cell><m> \neg p </m></cell>
+            <cell><m>\neg p \vee q</m></cell>
+            <cell> <m> (\neg p \vee q) \wedge p</m> </cell>
+        </row>
+        <row>
+            <cell> True</cell>
+            <cell>True<br/></cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ] </cell>
+        </row>
+        <row>
+            <cell>True<br/></cell>
+            <cell> False </cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ]</cell>
+            <cell> [ true | false ]</cell>
+        </row>
+        <row>
+            <cell>False<br/></cell>
+            <cell>True<br/></cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ]</cell>
+            <cell> [ true | false ] </cell>
+        </row>
+        <row>
+            <cell>False<br/></cell>
+            <cell>False<br/></cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ] </cell>
+        </row>
+    
+</tabular>
+
+<tabular border="1">
+    
+        <row>
+            <cell> p </cell>
+            <cell> q </cell>
+            <cell><nbsp/><m> \neg p \wedge q </m></cell>
+            <cell> <m> (\neg p \wedge q) \vee p</m></cell>
+            <cell/>
+        </row>
+        <row>
+            <cell> True</cell>
+            <cell>True<br/></cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ] </cell>
+            <cell> </cell>
+        </row>
+        <row>
+            <cell>True<br/></cell>
+            <cell> False </cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ] </cell>
+            <cell> </cell>
+        </row>
+        <row>
+            <cell>False<br/></cell>
+            <cell>True<br/></cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ] </cell>
+            <cell> </cell>
+        </row>
+        <row>
+            <cell>False<br/></cell>
+            <cell>False<br/></cell>
+            <cell>[ true | false ]</cell>
+            <cell>[ true | false ] </cell>
+            <cell> </cell>
+        </row>
+    
+</tabular>
+<p>(b) What do you notice about the truth tables of <m> (\neg p \vee q) \wedge p</m> and that of <m> (\neg p \wedge q) \vee p</m>? [ The tables are not the same | The tables are the same ]  </p>
+<p>(c) What do you think of the rule formulated in 1.(a) by the student? [ The student's guess is true | The student's guess is false ] </p>
+<p>     
+ <nbsp/>       
+ </p></div></statement>
+<solution><div><h3> Worked solution</h3>
+
+<p>1. a Complete the truth tables of <m> (\neg p \vee q) \wedge q</m> and that of <m> (\neg p \wedge q) \vee q</m></p>
+<tabular border="1">
+    
+        <row>
+            <cell>p </cell>
+            <cell> q</cell>
+            <cell><m> \neg p </m></cell>
+            <cell><m>\neg p \vee q</m><br/><br/></cell>
+            <cell> <m> (\neg p \vee q) \wedge q</m> </cell>
+            <cell><m> \neg p \wedge q</m></cell>
+            <cell> <m> (\neg p \wedge q) \vee q</m></cell>
+        </row>
+        <row>
+            <cell> True </cell>
+            <cell>True<br/></cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+        </row>
+        <row>
+            <cell>True<br/></cell>
+            <cell>False </cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+            <cell><m>{\mathbf{False}}</m> </cell>
+        </row>
+        <row>
+            <cell>False<br/></cell>
+            <cell>True<br/></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+        </row>
+        <row>
+            <cell>False<br/></cell>
+            <cell> False </cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+        </row>
+    
+</tabular>
+<p> 1.(b). We notice that the tables are the same. So the student is right by making such claiming.</p>
+<hr/>
+<p>2. (a) Complete the truth tables of <m> (\neg p \vee q) \wedge p</m> and that of <m> (\neg p \wedge q) \vee p</m></p>
+<tabular border="1">
+    
+        <row>
+            <cell>p </cell>
+            <cell> q</cell>
+            <cell><m> \neg p </m></cell>
+            <cell><m>\neg p \vee q</m><br/><br/></cell>
+            <cell> <m> (\neg p \vee q) \wedge p</m> </cell>
+            <cell><m> \neg p \wedge q</m></cell>
+            <cell> <m> (\neg p \wedge q) \vee p</m></cell>
+        </row>
+        <row>
+            <cell> True</cell>
+            <cell>True<br/></cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+        </row>
+        <row>
+            <cell>True<br/></cell>
+            <cell> False </cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+            <cell><m>{\mathbf{True}}</m> </cell>
+        </row>
+        <row>
+            <cell>False<br/></cell>
+            <cell>True<br/></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+        </row>
+        <row>
+            <cell>False<br/></cell>
+            <cell>False<br/></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+            <cell><m>{\mathbf{True}}</m></cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+            <cell><m>{\mathbf{False}}</m></cell>
+        </row>
+    
+</tabular>
+
+<p> 2.(b). We notice in the second case that the truth tables are not the same. Therefore, the student's guess is false.</p></div></solution>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p>The tables are the same</p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p>The tables are not the same</p></answer>
+<answer><p>The student's guess is false</p></answer>
+</stack-static>

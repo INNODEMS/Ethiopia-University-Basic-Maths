@@ -1,0 +1,20 @@
+<stack-static>
+<statement><div><p>Find  the inverse of the function below</p>
+<p><m> \displaystyle f(x)={e^{7 x-4}}</m></p>
+<p><alert>Note:</alert> <m>\ln</m> can be typed as <c> log</c></p>
+<p>Leave your answer in exact form</p>
+<p><m>f^{-1}(x)=</m><fillin characters="10" name="ans1"/> </p>
+<p/></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p><md>
+<mrow>\displaystyle f(x)\amp ={e^{7 x-4}}</mrow>
+<mrow>y\amp ={e^{7 x-4}}</mrow>
+<mrow>\amp {\ln \left( y \right)=7 x-4}</mrow>
+<mrow>\amp {\ln \left( y \right)+4=7 x}</mrow>
+<mrow>\amp {x=\frac{\ln \left( y \right)+4}{7}}</mrow>
+</md></p>
+<p>Swap <m>x</m> and <m>y</m> to write the inverse function</p>
+<p><m>f^{-1}(x)= \displaystyle{\frac{\ln \left( x \right)+4}{7}}</m></p>
+<p/></div></solution>
+<answer><p><m>\frac{\ln \left( x \right)+4}{7}</m></p></answer>
+</stack-static>

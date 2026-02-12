@@ -1,0 +1,5 @@
+<stack-static>
+<statement><div><p>Input <m>{2\cdot \ln \left( x-1 \right)}</m> into the box below.</p>
+<p><fillin characters="15" name="ans1"/> </p></div></statement>
+<answer><p><m>2\cdot \ln \left( x-1 \right)</m></p></answer>
+</stack-static>

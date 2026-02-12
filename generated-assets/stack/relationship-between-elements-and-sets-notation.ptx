@@ -1,0 +1,66 @@
+<stack-static>
+<statement><div><p>Answer the following questions to get a better understanding of the set theory concept.</p>
+ <p>1. If <m>A</m> is a set and <m>x</m> is an object, how do we use notation to signify whether <m>x</m> is an element of set <m>A</m> or not?</p>
+<p> a) To show <m>x</m> is an element of <m>A</m> </p><ol marker="(1)">
+<li>x ∈ A</li>
+<li>x ∉ A</li>
+<li>x ㄷ A</li>
+</ol> 
+ <p>b) To show  <m>x</m> is not an element of <m>A</m> </p><ol marker="(1)">
+<li>x ㄷ A</li>
+<li>x ∈ A</li>
+<li>x ∉ A</li>
+</ol>
+<p/>
+<p>2. Consider the sets <m>A</m> and <m>B</m>:</p>
+<p>Set <m>A</m> contains prime numbers less than <m>{19}</m> .</p>
+<p>Set <m>B</m> contains the numbers <m>\{{4,6,8}\}</m>.</p>
+<p/><p>For each statement below, choose the suitable set notation that correctly describes the given situation involving the sets.</p>
+
+<ol marker="(1)">
+<li>A ㄷ B</li>
+<li>B ㄷ A</li>
+<li>6 ∉ A </li>
+<li>17 ∈ A </li>
+</ol></div></statement>
+<solution><div><h3>Worked solution</h3> 
+
+<ol type="a"> 
+<li>
+<p>If <m>A</m> is a set and <m>x</m> is an object, we use specific notation to show whether <m>x</m> belongs to <m>A</m> or not.</p>
+      <ul>
+            <li>
+                   <p>To show that <m>x</m> <alert>is an element </alert>of <m>A</m>, we write</p>
+                    <p><m>x \in A </m> </p>
+                   <p>The symbol "<m>\in </m>" means "is an element of."</p>
+            </li>
+            <li>
+                   <p>To show that <m>x</m> is <alert>not an element</alert> of <m>A</m>, we write</p>
+                    <p><m>x \notin A </m> </p>
+                   <p>The symbol "<m>\notin </m>" means "is not an element of."</p>
+            </li>     
+   </ul>
+</li>
+
+<li>
+<p>Consider the sets <m>A</m> and <m>B</m>. Set <m>A</m> contains prime numbers less than <m>{19}</m> . Set <m>B</m> contains the numbers <m>\{{4,6,8}\}</m>.</p>
+<ul>
+<li>
+<p><m>{17}</m> <m> \in A</m>: This is <alert>true</alert>, because <m>{17}</m> is a <alert>prime number less than <m>{19}</m></alert> and therefore it is an element of <m>A</m>.</p>
+</li>
+<li>
+<p><m>{6}</m> <m> \notin A</m>: This is <alert>true</alert>, because <m>{6}</m> is <alert>not a prime number</alert> and therefore it does not belong to <m>A</m>.</p>
+</li>
+<li>
+<p><m>A \subset B</m>: This is <alert>false</alert>, because not all elements of <m>A</m> (which are primes) are contained in <m>B</m> (which contains only even numbers).</p>
+</li>
+<li>
+<p><m>B \subset A</m>: This is <alert>false</alert>, because no even number greater than 2 is a prime number less than <m>{19}</m>.</p>
+</li>
+</ul>
+</li>
+</ol></div></solution>
+<answer><p><m>(1)</m></p></answer>
+<answer><p><m>(3)</m></p></answer>
+<answer><p><m>(3), (4)</m></p></answer>
+</stack-static>

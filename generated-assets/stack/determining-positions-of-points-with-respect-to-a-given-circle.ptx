@@ -1,0 +1,69 @@
+<stack-static>
+<statement><div><p>Consider a circle of radius <m>{10}</m> whose center is at <m>O({-2},{3})</m>. Determine whether each of the following points is on the circle, inside the circle or outside the circle by first calculating the distance.</p>
+<p>1. <m>P_1({6},{18}) </m></p>
+<p>Distance <m>=</m> <fillin characters="5" name="ans1"/></p>
+<p>The point <m>P_1</m> lies </p><ol marker="(1)">
+<li>on the circle</li>
+<li>inside the circle</li>
+<li>outside the circle</li>
+</ol>  
+<p>2. <m>P_2({13},{23}) </m></p>
+<p>Distance <m>=</m> <fillin characters="5" name="ans3"/> </p>
+<p>The point <m>P_2</m> lies </p><ol marker="(1)">
+<li>inside the circle</li>
+<li>on the circle</li>
+<li>outside the circle</li>
+</ol>  
+<p>3. <m>P_3({1},{7}) </m></p>
+<p>Distance <m>=</m> <fillin characters="5" name="ans5"/> </p>
+<p>The point <m>P_3</m> lies </p><ol marker="(1)">
+<li>inside the circle</li>
+<li>on the circle</li>
+<li>outside the circle</li>
+</ol>  </div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p>To determine whether each point is on the circle, inside the circle, or outside the circle, we can use the distance formula between each point and the center of the circle. If the distance between the point and the center is equal to the radius, the point lies on the circle. If it's less than the radius, the point is inside the circle, and if it's greater than the radius, the point is outside the circle.</p>
+<p>Let's calculate the distance for each point:</p>
+<p>1. Point <m> P_1({6},{18}) </m></p>
+<p> <md>
+<mrow>\text{Distance} \displaystyle \amp  =\sqrt{(x_2-x_1)^2+(y_2-y_1)^2 }</mrow>
+<mrow>\amp =\sqrt{({6}-({-2}))^2+({18}-({3}))^2 }</mrow>
+<mrow>\amp =\sqrt{({8})^2+({15})^2 }</mrow>
+<mrow>\amp =\sqrt{ {64}+{225} }</mrow>
+<mrow>\amp = \sqrt{ {289} }</mrow>
+<mrow>\amp = { {17} }</mrow>
+</md> </p>
+
+ <p>Since the distance <m>{17}</m> is greater than the radius <m> {10} </m> , point <m>P_1</m> lies outside the circle.</p>
+ 
+<p>2. Point <m> P_2({13},{23}) </m></p>
+<p> <md>
+<mrow>\text{Distance} \displaystyle \amp  =\sqrt{(x_2-x_1)^2+(y_2-y_1)^2 }</mrow>
+<mrow>\amp =\sqrt{({13}-({-2}))^2+({23}-({3}))^2 }</mrow>
+<mrow>\amp =\sqrt{({15})^2+({20})^2 }</mrow>
+<mrow>\amp =\sqrt{ {225}+{400} }</mrow>
+<mrow>\amp = \sqrt{ {625} }</mrow>
+<mrow>\amp = { {25} }</mrow>
+</md> </p>
+
+<p>Since the distance <m>{25}</m> is greater than the radius <m> {10} </m> , point <m>P_2</m> lies outside the circle.</p>
+ 
+<p>3. Point <m> P_3({1},{7}) </m></p>
+<p> <md>
+<mrow>\text{Distance} \displaystyle \amp  =\sqrt{(x_2-x_1)^2+(y_2-y_1)^2 }</mrow>
+<mrow>\amp =\sqrt{({1}-({-2}))^2+({7}-({3}))^2 }</mrow>
+<mrow>\amp =\sqrt{({3})^2+({4})^2 }</mrow>
+<mrow>\amp =\sqrt{ {9}+{16} }</mrow>
+<mrow>\amp = \sqrt{ {25} }</mrow>
+<mrow>\amp = { {5} }</mrow>
+</md> </p>
+
+<p>Since the distance <m>{5}</m> is less than the radius <m> {10} </m> , point <m>P_3</m> lies  inside the circle.</p>
+</div></solution>
+<answer><p><m>17</m></p></answer>
+<answer><p><m>(3)</m></p></answer>
+<answer><p><m>25</m></p></answer>
+<answer><p><m>(3)</m></p></answer>
+<answer><p><m>5</m></p></answer>
+<answer><p><m>(1)</m></p></answer>
+</stack-static>

@@ -1,0 +1,22 @@
+<stack-static>
+<statement><div><p> In this question, we are going to use the slope to determine whether or not the points <m> ({5}, {-3}) </m>, <m> ({7}, {-8}) </m> and <m> ({4}, {14}) </m> are collinear. </p>
+<br/> <alert>Step 1:</alert> Find the slope <m>m_{1}</m> of the line joining <m> ({5}, {-3}) </m> and <m> ({7}, {-8}) </m>, 
+<br/><m> m_{1} = </m> <fillin characters="5" name="ans1"/>  
+<br/> <alert>Step 2:</alert>Find the slope <m>m_{2}</m> of the line joining  <m> ({7}, {-8}) </m> and <m> ({4}, {14}) </m>.
+<br/> <m> m_{2} =</m>  <fillin characters="5" name="ans2"/>  
+<br/> <alert>Step 3:</alert> Determine whether or not the points are colinear.
+<br/>Since the slopes are [ not the same | the same ], the points [ are colinear | are not colinear ]    </div></statement>
+<solution><div><h3>Worked solution</h3>
+<p> Use slope to determine whether or not the points <m> ({5}, {-3}) </m>, <m> ({7}, {-8}) </m> and <m> ({4}, {14}) </m> are collinear. </p>
+<p> We proceed as follow: </p>
+<br/> <alert>Step 1: </alert> Find the slope <m>m_{1}</m> of the line joining <m> ({5}, {-3}) </m> and <m> ({7}, {-8}) </m>, 
+<br/><m> m_{1} = \frac{y_{2}-y_{1}}{x_{2}-x_{1}} = \frac{({-8})-({-3})}{({7})-({5})} = {-\frac{5}{2}} </m>
+<br/> <alert>Step 2: </alert>Find the slope <m>m_{2}</m> of the line joining  <m> ({7}, {-8}) </m> and <m> ({4}, {14}) </m>.
+<br/> <m> m_{2} = \frac{y_{3}-y_{2}}{x_{3}-x_{2}} = \frac{({14})- ({-8})}{({4})-({7})} = {-\frac{22}{3}} </m>
+<br/> <alert>Step 3:</alert> Determine whether or not the points are colinear.
+<br/>Since the slopes are not the same, the points are not colinear.</div></solution>
+<answer><p><m>-\frac{5}{2}</m></p></answer>
+<answer><p><m>-\frac{22}{3}</m></p></answer>
+<answer><p>not the same</p></answer>
+<answer><p>are not colinear</p></answer>
+</stack-static>

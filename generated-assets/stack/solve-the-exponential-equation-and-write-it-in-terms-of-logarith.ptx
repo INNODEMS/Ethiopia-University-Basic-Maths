@@ -1,0 +1,77 @@
+<stack-static>
+<statement><div><p>Consider the equation <m>{6}^{{x+2}}={5}^{{2 x+6}}</m></p>
+<p>We will solve this equation to find an answer in terms of <m>\log_{{6}}({5})</m>.</p>
+
+<br/>
+
+<p>(a) Take <m>\log_{{6}}</m> on both sides to get an equivalent equation in the form <m>A(x) = \log_{{6}}(B(x))</m>, 
+<br/>where <m>A</m> and <m>B</m> are expressions in terms of <m>x</m>.</p>
+<p><em>Note: To enter the logarithm of b base a, <m>\log_a(b)</m>, you should write <c>logbase(b,a)</c>.</em></p>
+<p style="margin-left: 30px"><fillin characters="15" name="ans1"/> </p>
+<p/>
+
+<br/>
+
+<p>(b) Use rules of logs to write your equation in the form <m>ax + b = cx + d</m>, 
+<br/>where <m>a,b,c,d \in \mathbb{R}</m> and <m>c</m> and <m>d</m> are written in terms of <m>\log_{{6}}({5})</m>.</p>
+<p style="margin-left: 30px"><fillin characters="15" name="ans2"/> </p>
+<p/>
+
+<br/>
+
+<p>(c) Rearrange your equation and collect all the <m>x</m> terms on the left hand side and the constant terms on the right hand side of the equation. 
+<br/>Give your answer in the form <m>ax + bx = c + d</m>, where <m>a,b,c,d \in \mathbb{R}</m> and <m>b</m> and <m>d</m> are written in terms of <m>\log_{{6}}({5})</m>.</p>
+<p style="margin-left: 30px"><fillin characters="15" name="ans3"/> </p>
+<p/>
+
+<br/>
+
+<p>(d) Take <m>x</m> as a common factor of the left hand side of your equation. 
+<br/>Give your answer in the form <m>(a+b)x = c + d</m>, where <m>a,b,c,d \in \mathbb{R}</m> and <m>b</m> and <m>d</m> are written in terms of <m>\log_{{6}}({5})</m></p>
+<p style="margin-left: 30px"><fillin characters="15" name="ans4"/> </p>
+<p/>
+
+<br/>
+
+<p>(e) Find the value of <m>x</m>. 
+<br/>Give your answer in the form <m>\frac{a+b}{c+d}</m>, where <m>a,b,c,d \in \mathbb{R}</m> and <m>b</m> and <m>d</m> are written in terms of <m>\log_{{6}}({5})</m>.</p>
+<p style="margin-left: 30px"><m>x = </m> <fillin characters="15" name="ans5"/> </p>
+<p/></div></statement>
+<solution><div><h3>Worked Solution</h3>
+
+<p>We begin with the equation <m>{6}^{{x+2}}={5}^{{2 x+6}}</m></p>
+
+<br/>
+
+<p>(a) Taking <m>\log_{{6}}</m> on both sides we get,</p>
+<p style="margin-left: 30px"><m>\log_{{6}}({6}^{{x+2}})=\log_{{6}}({5}^{{2 x+6}})</m></p>
+<p>The left hand side then simplifies to give an equation in the correct form,</p>
+<p style="margin-left: 30px"><m>{x+2}=\log_{{6}}({5}^{{2 x+6}})</m></p>
+
+<br/>
+
+<p>(b) Using the power rule for logarithms we get,</p>
+<p style="margin-left: 30px"><m>{x+2}=({2 x+6}) \log_{{6}}({5})</m></p>
+<p>Expanding the right hand side we get,</p>
+<p style="margin-left: 30px"><m>{x+2}=2 \log_{{6}}({5}) x + {6} \log_{{6}}({5})</m></p>
+
+<br/>
+
+<p>(c) From the equation in (b), collecting the <m>x</m> terms on the left hand side and the other terms on the right we get,</p>
+<p style="margin-left: 30px"><m>x-2 \log_{{6}}({5}) x = {6} \log_{{6}}({5}) - {2}</m></p>
+
+<br/>
+
+<p>From the equation in part (c), taking <m>x</m> as a common factor of the left hand side we get,</p>
+<p style="margin-left: 30px"><m>(1-2 \log_{{6}}({5})) x = {6} \log_{{6}}({5}) - {2}</m></p>
+
+<br/>
+
+<p>(e) Making <m>x</m> the subject of the equation in part (d) gives,</p>
+<p style="margin-left: 30px"><m>x = \frac{{6} \log_{{6}}({5}) - {2}}{1 - 2 \log_{{6}}({5})}</m></p></div></solution>
+<answer><p><m>x+2=\log_{6}\left(5^{2 x+6}\right)</m></p></answer>
+<answer><p><m>x+2=2 \log_{6}\left(5\right) x+6 \log_{6}\left(5\right)</m></p></answer>
+<answer><p><m>x-2 \log_{6}\left(5\right) x=6 \log_{6}\left(5\right)-2</m></p></answer>
+<answer><p><m>\left(1-2 \log_{6}\left(5\right)\right) x=6 \log_{6}\left(5\right)-2</m></p></answer>
+<answer><p><m>\frac{6 \log_{6}\left(5\right)-2}{1-2 \log_{6}\left(5\right)}</m></p></answer>
+</stack-static>

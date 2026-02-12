@@ -1,0 +1,12 @@
+<stack-static>
+<statement><div><p>Solve the rational equation <m>{\frac{3}{x^2}=\frac{2}{x}-\frac{1}{x^2}}</m></p>
+<p><m>x=</m> <fillin characters="5" name="ans1"/> </p>
+<p/></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p>To solve the equation<m>{\frac{3}{x^2}=\frac{2}{x}-\frac{1}{x^2}},</m> we can first combine the fractions on the right-hand side by finding a common denominator.</p>
+<p style="margin-left: 30px"><m>{\frac{3}{x^2}}={\frac{2 x-1}{x^2}}</m></p>
+<p>Then, we can cross-multiply and simplify.</p>
+<p style="margin-left: 30px"><m>{3=2 x-1}</m></p>
+<p style="margin-left: 30px"><m>x={2}</m></p></div></solution>
+<answer><p><m>2</m></p></answer>
+</stack-static>

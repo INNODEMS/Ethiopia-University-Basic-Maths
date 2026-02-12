@@ -1,0 +1,17 @@
+<stack-static>
+<statement><div><p>Which of the following are terminating fractions?</p>
+<p/><ol marker="(1)">
+<li><m>\frac{17}{50}</m></li>
+<li><m>\frac{13}{8}</m></li>
+<li><m>\frac{{28}}{35}</m></li>
+<li><m>\frac{13}{17}</m></li>
+<li><m>\frac{9}{26}</m></li>
+</ol> 
+<p/></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p><m>{\frac{17}{50}}</m> and <m>{\frac{13}{8}}</m> are terminating as their denominator only contains prime factors 2 and 5.</p>
+<p><m>{\frac{13}{17}}</m> is not terminating as its denominator contains the prime factor <m>{17}</m>.</p>
+<p><m>{\frac{9}{26}}</m> is not terminating as its denominator contains the prime factor <m>{13}</m>.</p>
+<p><m>\frac{{28}}{35}</m> is terminating as we can reduce the fraction by <m>{7}</m> to get <m>{\frac{4}{5}}</m>, leaving only prime factors 2 and 5 in the denominator.</p></div></solution>
+<answer><p><m>(1), (2), (3)</m></p></answer>
+</stack-static>

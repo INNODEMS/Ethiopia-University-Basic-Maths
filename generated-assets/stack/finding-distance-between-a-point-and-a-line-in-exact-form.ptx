@@ -1,0 +1,38 @@
+<stack-static>
+<statement><div><p>Find the distance, <m>d</m>, between the point <m>P({3},{9})</m> and the line <m>l : {12\, y+2\, x-2=0}</m>.
+<br/>Give your answer in exact form.</p>
+<p>Note: type <c>sqrt(x)</c> for <m>\sqrt{x}</m>.</p>
+<p><m>d=</m> <fillin characters="8" name="ans1"/> </p>
+<p/></div></statement>
+<solution><div><h3>Worked solution</h3>
+
+<p> To find the distance <m>d</m> between the point <m>P({3},{9})</m> and the line <m>l : {12\, y+2\, x-2=0}</m>, we can use the formula for the distance between a point and a line.</p>
+
+<p>The distance between a general point, <m>(x_1, y_1)</m> and a line <m>ax + by + c = 0</m>, is given by,</p>
+
+<p style="margin-left:30px"><m>\displaystyle d = \frac{|a x_1 + b y_1 + c|}{\sqrt{a^2 + b^2}}</m></p>
+
+<br/>
+
+<p> In this case, the given point is <m>P({3},{9})</m>, and the equation of the line is given as <m>l : {12\, y+2\, x-2=0}</m>. </p>
+<p>So, to determine the distance <m>d</m>,</p>
+
+<ol>
+  <li> Identify the values of <m>a</m>, <m>b</m>, and <m>c</m> from the equation of the line:
+    <m>a = {2}</m>,
+    <m>b = {12}</m>,
+    <m>c = -{2}</m>. </li>
+  <li> Identify the coordinates of the point <m>P({3},{9})</m>:
+    <m>x_1 = {3}</m>,
+    <m>y_1 = {9}</m>. </li>
+  <li> Substitute the values into the distance formula: </li>
+</ol>
+
+<p style="margin-left:60px"><m>\displaystyle d = \frac{|{2} \cdot {3} + {12} \cdot {9} - {2}|}{\sqrt{{2}^2 + {12}^2}} </m></p>
+
+<br/>
+
+<p>Then, simplifying,</p>
+<p style="margin-left:30px"><m>\displaystyle d = \frac{|{112}|}{\sqrt{{4} + {144}}} = {\frac{56}{\sqrt{37}}}</m></p></div></solution>
+<answer><p><m>\frac{56}{\sqrt{37}}</m></p></answer>
+</stack-static>

@@ -418,9 +418,7 @@
 
 
         <exercise>
-            <stack-moodle label="finding-a-hyperbola-with-given-foci-and-asymptotes" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equation-of-a-hyperbola/Finding-a-Hyperbola-with-Given-Foci-and-Asymptotes.xml" />
-            </stack-moodle>
+            <stack label="finding-a-hyperbola-with-given-foci-and-asymptotes" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equation-of-a-hyperbola/Finding-a-Hyperbola-with-Given-Foci-and-Asymptotes.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-hyperbola%2FFinding-a-Hyperbola-with-Given-Foci-and-Asymptotes.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-hyperbolas%2Fsubsec-equation-of-a-hyperbola.ptx">Add review</url>
             </conclusion>
@@ -428,9 +426,7 @@
             
 
         <exercise>
-            <stack-moodle label="finding-focus-vertices-and-asymptotes-of-a-hyperbola" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equation-of-a-hyperbola/Finding-Focus,-Vertices,-and-Asymptotes-of-a-Hyperbola.xml" />
-            </stack-moodle>
+            <stack label="finding-focus-vertices-and-asymptotes-of-a-hyperbola" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equation-of-a-hyperbola/Finding-Focus,-Vertices,-and-Asymptotes-of-a-Hyperbola.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-hyperbola%2FFinding-Focus%2C-Vertices%2C-and-Asymptotes-of-a-Hyperbola.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-hyperbolas%2Fsubsec-equation-of-a-hyperbola.ptx">Add review</url>
             </conclusion>
@@ -438,9 +434,7 @@
             
 
         <exercise>
-            <stack-moodle label="finding-the-hyperbola-with-given-focus-and-vertices" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equation-of-a-hyperbola/Finding-the-Hyperbola-with-Given-Focus-and-Vertices.xml" />
-            </stack-moodle>
+            <stack label="finding-the-hyperbola-with-given-focus-and-vertices" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equation-of-a-hyperbola/Finding-the-Hyperbola-with-Given-Focus-and-Vertices.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-hyperbola%2FFinding-the-Hyperbola-with-Given-Focus-and-Vertices.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-hyperbolas%2Fsubsec-equation-of-a-hyperbola.ptx">Add review</url>
             </conclusion>
@@ -448,9 +442,7 @@
             
 
         <exercise>
-            <stack-moodle label="sketching-hyperbola-asymptote" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equation-of-a-hyperbola/Sketching-Hyperbola_Asymptote.xml" />
-            </stack-moodle>
+            <stack label="sketching-hyperbola-asymptote" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Equation-of-a-hyperbola/Sketching-Hyperbola_Asymptote.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FEquation-of-a-hyperbola%2FSketching-Hyperbola_Asymptote.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-hyperbolas%2Fsubsec-equation-of-a-hyperbola.ptx">Add review</url>
             </conclusion>

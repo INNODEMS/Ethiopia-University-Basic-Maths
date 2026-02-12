@@ -1,0 +1,24 @@
+<stack-static>
+<statement><div><p>Write the equation of the circle with centre at <m>C({5},{4})</m> and that passes through the point <m>P({3},{9})</m>.</p>
+<p><fillin characters="15" name="ans1"/> </p></div></statement>
+<solution><div><h3>Worked Solution</h3>
+
+<p>Let <m>r</m> be the radius of a circle, <m>(x,y)</m> be the coordinates of a point on the circle, and <m>(x_0,y_0)</m> be the coordinates on the center of the circle. 
+<br/>Then the equation of the circle is,</p>
+<p style="margin-left: 30px"><m> (x-x_0)^2+(y-y_0)^2=r^2</m></p>
+
+<br/>
+
+<p>In the question given, we have the coordinates of the center of the circle as <m>x_0={5}\, , \, y_0={4}</m>.
+<br/>Therefore, the equation of the circle is,</p>
+<p style="margin-left: 30px"><m> ({x-5})^2+({y-4})^2=r^2</m></p>
+<p>Since the point <m>P({3},{9})</m> is on the circle, we must have,</p>
+<p style="margin-left: 30px"> <m>({3}-({5}))^2+({9}-({4}))^2=r^2</m></p>
+<p>This implies, <m>r^2 = ({-2})^2+({5})^2 = {29}</m></p>
+
+<br/>
+
+<p>Therefore, the equation of the circle is,</p>
+<p style="margin-left: 30px"><m>({x-5})^2+({y-4})^2={29}</m></p></div></solution>
+<answer><p><m>{\left(y-4\right)}^2+{\left(x-5\right)}^2=29</m></p></answer>
+</stack-static>

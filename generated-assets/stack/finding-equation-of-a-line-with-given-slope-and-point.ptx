@@ -1,0 +1,15 @@
+<stack-static>
+<statement><div><p>Find an equation of the line that has a slope of <m>{5}</m> and passes through the point (<m>{3}</m>,<m>{-3}</m>).</p>
+<p><fillin characters="10" name="ans1"/> </p>
+<p/></div></statement>
+<solution><div><p><alert><h3>Worked solution</h3></alert></p> 
+<p>Find an equation of the line that has a slope of <m>{5}</m> and passes through the point (<m>{3}</m>,<m>{-3}</m>).</p>
+<p>We recall that the general form of the line equation is <m>y-y_1=m(x-x_1) </m> where <m>m</m>  is the slope.</p>
+<p> Substituting <m>{-3}</m> for <m>y_1 </m>, <m>{3}</m> for <m>x_1 </m>, and <m>{5}</m> for <m>m</m> we get;</p>
+<p><md>
+<mrow>y{+}{3} \amp  ={5}(x{-}{3})</mrow>
+<mrow>{y+3} \amp ={5\cdot x-15}</mrow>
+<mrow>y \amp  = {5\cdot x-18}</mrow>
+</md></p></div></solution>
+<answer><p><m>y=5\cdot x-18</m></p></answer>
+</stack-static>

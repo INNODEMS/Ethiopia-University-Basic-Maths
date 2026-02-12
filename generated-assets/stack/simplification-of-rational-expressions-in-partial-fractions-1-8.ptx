@@ -1,0 +1,18 @@
+<stack-static>
+<statement><div><p>Write the rational expression below as a sum of its partial fractions.</p>
+<p><m>\qquad  \displaystyle {-\frac{22\cdot x^2+27\cdot x+7}{x\cdot \left(x+1\right)\cdot \left(3\cdot x+1\right)}}=</m> <fillin characters="5" name="ans3"/> <m>+</m> <fillin characters="5" name="ans4"/> <m>+</m> <fillin characters="5" name="ans5"/> </p><p><m>\hspace{6cm} </m> <m>\hspace{1.5cm} </m>  <m>\hspace{1.5cm} </m> </p>
+<p><m>\quad </m>  </p></div></statement>
+<solution><div><p style="">To write <m>  \displaystyle {-\frac{22\cdot x^2+27\cdot x+7}{x\cdot \left(x+1\right)\cdot \left(3\cdot x+1\right)}}</m> as a sum of its partial fractions we need to follow the steps below:</p>
+<p style=""><me>{-\frac{22\cdot x^2+27\cdot x+7}{x\cdot \left(x+1\right)\cdot \left(3\cdot x+1\right)}} ={\frac{A}{x}}+{\frac{B}{3\cdot x+1}}+{\frac{C}{x+1}}</me></p>
+<p style="">Setting the numerators equal gives:</p>
+<p style=""><me>{A\cdot \left(x+1\right)\cdot \left(3\cdot x+1\right)+C\cdot x\cdot \left(3\cdot x+1\right)+B\cdot x\cdot \left(x+1\right)=-22\cdot x^2-27\cdot x-7}</me></p>
+<p style="">Getting the coefficients <m>A</m> and <m>B</m>, we have</p>
+<p style="">Let <m>x=0:\quad {A=-7} \implies {A=-7}</m>. </p>
+<p style="">Let <m>x={-1}:\quad {2\cdot C=-2} \implies {C=-1}</m>.</p>
+<p style="">Let <m>x={-\frac{1}{3}}:\quad {-\frac{2\cdot B}{9}=-\frac{4}{9}} \implies {B=2}</m>.</p>
+<p style="">The partial fraction is then,</p>
+<p style=""><me>{-\frac{22\cdot x^2+27\cdot x+7}{x\cdot \left(x+1\right)\cdot \left(3\cdot x+1\right)}=\frac{2}{3\cdot x+1}-\frac{1}{x+1}-\frac{7}{x}}</me></p></div></solution>
+<answer><p><m>-\frac{7}{x}</m></p></answer>
+<answer><p><m>\frac{2}{3\cdot x+1}</m></p></answer>
+<answer><p><m>-\frac{1}{x+1}</m></p></answer>
+</stack-static>

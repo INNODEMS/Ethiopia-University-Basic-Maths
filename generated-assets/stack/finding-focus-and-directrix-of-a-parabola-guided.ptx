@@ -1,0 +1,44 @@
+<stack-static>
+<statement><div><p>Our aim is to find the focus and directrix of the parabola <m>{16 y+x^2+8 x-64=0}</m></p>
+
+<br/>
+
+<p>(a) Rewrite the parabola in the form <m>(x+a)^{2} = c (y+b) </m> , where <m>a, b</m> and <m>c</m> are constants to be determined.</p>
+<p style="margin-left: 30px"><fillin characters="15" name="ans1"/> </p>
+<p/>
+
+<br/>
+
+<p>(b) Recall that, in general, the parabola <m>(x-x_{0})^{2} = 4 p (y - y_{0}) </m> has focus <m>F(x_{0}, y_{0}+p)</m> and directrix <m>y = y_{0}-p</m>.
+<br/>Find the focus and directrix of the parabola in part (a).
+
+</p><p style="margin-left: 30px">Focus:   <m> F \big( </m> <fillin characters="5" name="ans2"/>  <m>,</m> <fillin characters="5" name="ans3"/> <m> \big)</m></p>
+<p/>
+<p style="margin-left: 30px">Directrix:   <fillin characters="10" name="ans4"/> </p>
+<p/></div></statement>
+<solution><div><h3>Worked solution</h3>
+
+<p>(a) We are required to rewrite the parabola in the form <m>(x-a)^2 = c(y-b)</m>.
+<br/>To do this, we should "complete the square" with the <m>x</m> terms and then collect the <m>y</m> term and constants on the right hand side.</p>
+<p style="margin-left: 30px"><md number="yes">
+<mrow>{16 y+x^2+8 x-64=0} 
+\amp \Rightarrow ({x^2+8 x+16}) + ({16 y-80})= 0</mrow>
+<mrow>\amp \Rightarrow {{\left(x+4\right)}^2} = {80-16 y}</mrow>
+<mrow>\amp \Rightarrow {{\left(x+4\right)}^2} = {-16}({y-5})</mrow>
+</md></p>
+
+<br/>
+
+<p>(b) We now want to determine the the focus and directrix of this parabola.
+<br/>Relating the parabola in part (a) to the general form given, we have that,</p>
+
+<p style="margin-left: 30px"><m>x_0 = {-4},   y_0 = {5}   p = \frac{{-16}}{4} = {-4}</m></p>
+
+<p>Therefore, we can use the general formulae given to find the focus and directrix,</p>
+<p style="margin-left: 30px">Focus:   <m> F(x_{0}, y_{0}+p) = ({-4},{1}) </m></p>
+<p style="margin-left: 30px">Directrix:   <m> y = y_{0}-p = {9} </m></p></div></solution>
+<answer><p><m>{\left(x+4\right)}^2=-16 \left(y-5\right)</m></p></answer>
+<answer><p><m>-4</m></p></answer>
+<answer><p><m>1</m></p></answer>
+<answer><p><m>y=9</m></p></answer>
+</stack-static>

@@ -1,0 +1,79 @@
+<stack-static>
+<statement><div><p>Suppose the focal length of a parabola is <m> \text{p} </m>, for some <m> \text{p} &gt; 0 </m>. Then, show that the focal width
+(length of the latus rectum) of the parabola is <m>4\, \text{p} </m>
+</p>
+<p><alert>A. Comprehension Questions </alert></p>
+<p>To demonstrate that the focal width, which is the length of the latus rectum of the parabola is  <m>4\, \text{p} </m>, you complete the following comprehension steps. </p>
+<p><alert>1. Understand the Terminology:</alert></p>
+   <p>  The focal length of a parabola is denoted by <m> \text{p} </m>. It is </p><ol marker="(1)">
+<li>the distance between the focus (F) and the vertex (V) of the parabola.</li>
+<li>the distance between the two foci of a parabola.</li>
+<li>the distance between the vertex and the center of the ellipse.</li>
+</ol>
+   <p>  The latus rectum is </p><ol marker="(1)">
+<li>the line segment that connects the center of the conic section to its vertex, defining the shape's orientation in space.</li>
+<li>a line segment perpendicular to the axis of symmetry of the parabola,passing through the focus, and having endpoints on the parabola itself.</li>
+<li>the longest chord that can be drawn inside the conic shape, connecting two random points on the curve.</li>
+</ol> 
+<p><alert>2. Standard Form of a Parabola:</alert></p>
+   <p> The standard equation of a parabola with its vertex at the origin is given by:</p>
+  <p> <m> y^2 = </m> <fillin characters="5" name="ans3"/> </p>
+   <p>where <m> \text{p} </m> is the focal length, and the axis of symmetry is the x-axis.</p>
+<p><alert>3. Definition of the Focal Width (Latus Rectum):</alert></p>
+   <p>The length of the latus rectum of a parabola is given by the formula: </p>
+   <p><m> L = </m> <fillin characters="5" name="ans4"/> </p>
+   <p>where <m> \text{L} </m> is the length of the latus rectum and <m> \text{p} </m> is the focal length.</p>
+<p><alert>B. Proof:</alert></p><p>
+</p><p>Suppose the focal length of a parabola is <m> \text{p} </m>, for some <m> \text{p} &gt; 0 </m>. </p>
+  <p> Let's consider a point on the parabola, denoted by <m> \text{P}( \text{x}, \text{y} ) </m>, and the focus <m> \text{F}( 0 , \text{p} ) </m>.</p>
+<p>Then the distance between the focal and the point <m>P</m> is given by the distance formula:</p>
+<p><m>FP= </m> <fillin characters="10" name="ans5"/></p>  
+  <p> Now, we want to find the length of the latus rectum, which is the distance between the endpoints of the latus rectum. These endpoints are two points on the parabola where the x-coordinate is <m> \text{x} = \text{p} </m>.</p>
+   <p>Let's plug <m> \text{x} = \text{p} </m> into the equation of the parabola:</p>
+  <p> <m> y^2 = </m> <fillin characters="5" name="ans6"/></p>
+   <p>Solving for <m> \text{y} </m>, we get <m> \text{y} = \pm </m> <fillin characters="5" name="ans7"/>.</p>
+   <p>So, the endpoints of the latus rectum are <m> A</m> <fillin characters="5" name="ans8"/> and <m>B</m> <fillin characters="5" name="ans9"/></p>
+   <p>The length of the latus rectum <m>\text{AB}</m> is then:</p>
+<p><m>AB =</m> <fillin characters="5" name="ans10"/>.</p>
+  <p> Thus, we have shown that the focal width (length of the latus rectum) of the parabola is indeed <m> 4\, \text{p} </m>. </p></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p><alert>A. Comprehension</alert></p>
+<p>To demonstrate that the focal width, which is the length of the latus rectum of the parabola is <m>4 \, \text{p}</m>, we can follow these steps:</p>
+<p><alert>1. Understand the Terminology:</alert></p>
+   <p>  The focal length of a parabola is denoted by <m> \text{p}</m>. It is the distance between the focus <m> (F) </m> and the vertex <m> (V) </m> of the parabola.</p>
+   <p>   The latus rectum is a line segment perpendicular to the axis of symmetry of the parabola, passing through the focus, and having endpoints on the parabola itself.</p>
+<p><alert>2. Standard Form of a Parabola: </alert> </p>
+   <p> The standard equation of a parabola with its vertex at the origin is given by:
+   <m> y^2 = 4\, \text{p}  \text{x} </m> </p>
+   <p>where <m> \text{p} </m> is the focal length, and the axis of symmetry is the x-axis.</p>
+<p><alert>3. Definition of the Focal Width (Latus Rectum):</alert></p>
+   <p>The length of the latus rectum of a parabola is given by the formula: </p>
+   <p><m> L = 4 \text{p} </m></p>
+   <p>where L is the length of the latus rectum and <m> \text{p} </m> is the focal length.</p>
+<p><alert>B. Proof:</alert></p><p>
+</p><p>Suppose the focal length of a parabola is <m> \text{p} </m>, for some <m> \text{p} &gt; 0 </m> </p>
+   <p>We will now derive the focal width of the parabola using the given standard equation.</p>
+  <p> Let's consider a point on the parabola, denoted by <m> P(x, y) </m> and the focus <m>F(0\, ,\, p)</m>.</p> 
+<p>Then the distance between the focus F and point P is given by the distance formula:</p>
+   <p> <m> FP = \sqrt{x^2 + (y - p)^2} </m> </p>
+  <p> Now, we want to find the length of the latus rectum, which is the distance between the endpoints of the latus rectum. These endpoints are two points on the parabola where the x-coordinate is <m> x = p </m>.</p>
+   <p>Let's plug <m> x = p </m> into the equation of the parabola:</p>
+  <p> <m> y^2 = 4 \text{p} \cdot \text{p} = 4 \, \text{p}^2 </m></p>
+   <p>Solving for <m>y</m>, we get <m> y = \pm 2p </m>.</p>
+   <p>So, the endpoints of the latus rectum are <m> A(p, 2p)</m> and <m>B(p, -2p) </m>.</p>
+   <p>The length of the latus rectum <m>AB</m> is given by the distance formula:</p>
+<p> <m>\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}</m>.</p>
+<p>Substituting we have:</p>
+  <p> <m> AB = \sqrt{(p - p)^2 + (2p - (-2p))^2} = \sqrt{0 + 16p^2} = 4p </m>.</p>
+  <p> Thus, we have shown that the focal width (length of the latus rectum) of the parabola is indeed <m> 4\, \text{p} </m>. </p></div></solution>
+<answer><p><m>(1)</m></p></answer>
+<answer><p><m>(2)</m></p></answer>
+<answer><p><m>4 p x</m></p></answer>
+<answer><p><m>4 p</m></p></answer>
+<answer><p><m>\sqrt{{\left(y-p\right)}^2+x^2}</m></p></answer>
+<answer><p><m>4 p^2</m></p></answer>
+<answer><p><m>2 p</m></p></answer>
+<answer><p><m>\left[ p , 2 p \right] </m></p></answer>
+<answer><p><m>\left[ p , -2 p \right] </m></p></answer>
+<answer><p><m>4 p</m></p></answer>
+</stack-static>

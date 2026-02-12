@@ -1032,9 +1032,7 @@
 
 
         <exercise>
-            <stack-moodle label="existential-quantifier-1" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Open-propositions-and-quantifiers/Existential-Quantifier-1.xml" />
-            </stack-moodle>
+            <stack label="existential-quantifier-1" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Open-propositions-and-quantifiers/Existential-Quantifier-1.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FOpen-propositions-and-quantifiers%2FExistential-Quantifier-1.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsec-open-propositions-and-quantifiers.ptx">Add review</url>
             </conclusion>
@@ -1042,9 +1040,7 @@
             
 
         <exercise>
-            <stack-moodle label="write-with-quantifiers-propositions-t1s" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Open-propositions-and-quantifiers/Write-with-quantifiers-propositions-T1s.xml" />
-            </stack-moodle>
+            <stack label="write-with-quantifiers-propositions-t1s" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Open-propositions-and-quantifiers/Write-with-quantifiers-propositions-T1s.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FOpen-propositions-and-quantifiers%2FWrite-with-quantifiers-propositions-T1s.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsec-open-propositions-and-quantifiers.ptx">Add review</url>
             </conclusion>
@@ -1052,9 +1048,7 @@
             
 
         <exercise>
-            <stack-moodle label="statements-using-quantifiers-2" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Open-propositions-and-quantifiers/Statements-using-quantifiers-2.xml" />
-            </stack-moodle>
+            <stack label="statements-using-quantifiers-2" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Open-propositions-and-quantifiers/Statements-using-quantifiers-2.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FOpen-propositions-and-quantifiers%2FStatements-using-quantifiers-2.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsec-open-propositions-and-quantifiers.ptx">Add review</url>
             </conclusion>
@@ -1062,9 +1056,7 @@
             
 
         <exercise>
-            <stack-moodle label="universal-quantifier-1" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Open-propositions-and-quantifiers/Universal-Quantifier-1.xml" />
-            </stack-moodle>
+            <stack label="universal-quantifier-1" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Open-propositions-and-quantifiers/Universal-Quantifier-1.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FOpen-propositions-and-quantifiers%2FUniversal-Quantifier-1.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsec-open-propositions-and-quantifiers.ptx">Add review</url>
             </conclusion>

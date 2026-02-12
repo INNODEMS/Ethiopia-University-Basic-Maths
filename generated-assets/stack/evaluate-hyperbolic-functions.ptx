@@ -1,0 +1,26 @@
+<stack-static>
+<statement><div><p>Find the exact numerical value of <m> \sinh(\ln({5})) </m>.</p>
+<p><fillin characters="15" name="ans1"/>  </p></div></statement>
+<solution><p>We know that:
+<me>
+\sinh(x) = \frac{e^x - e^{-x}}{2}.
+</me>
+
+Substituting <m> x = \ln({5}) </m>:
+
+<me>
+\sinh(\ln({5})) = \frac{e^{\ln({5})} - e^{-\ln({5})}}{2}.
+</me>
+
+Now simplify each term:
+
+<me>
+e^{\ln({5})} = {5}, \quad \text{and} \quad e^{-\ln({5})} = \frac{1}{{5}}.
+</me>
+
+Therefore,
+<me>
+\sinh(\ln({5})) = \frac{{5} - \frac{1}{{5}}}{2} = {\frac{12}{5}}.
+</me></p></solution>
+<answer><p><m>\frac{12}{5}</m></p></answer>
+</stack-static>

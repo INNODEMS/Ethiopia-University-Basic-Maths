@@ -1,0 +1,25 @@
+<stack-static>
+<statement><div><p>Solve the following exponential equation by writing both sides as a power of the same number. Give your answer fully simplifed and as a fraction where appropriate.</p>
+<p><m>\displaystyle {3}^{{x+6}} = \frac{1}{{9}^{{x-6}}}</m></p>
+<p><m>x =</m> <fillin characters="10" name="ans1"/> </p></div></statement>
+<solution><div><p/><p>Worked Solution:</p>
+<p>We first note that <m>{3}^2 = {9}</m>, so we can write the right hand side of the equation as a power of <m>{3}</m> using rules of indices as follows:</p>
+<p><m>\displaystyle \frac{1}{{9}^{{x-6}}} = \frac{1}{({3}^2)^{x-6}}</m></p>
+<p>Expanding the bracket in the power, we get</p>
+<p><md>
+<mrow>\displaystyle  \frac{1}{({3}^2)^{x-6}} \amp  = \frac{1}{{3}^{2\cdot ({x-6})}}</mrow>
+<mrow>\amp  = \displaystyle \frac{1}{{3}^{2\cdot x-12}}</mrow>
+<mrow>\amp =\displaystyle  {3}^{-({2\cdot x-12})}</mrow>
+<mrow>\amp  =\displaystyle  {3}^{-{2\cdot x+12}}</mrow>
+<mrow>\amp  = \displaystyle {3}^{{12-2\cdot x}}</mrow>
+</md></p>
+
+
+
+<p>So, the equation becomes <m>{3}^{{x+6}} = {3}^{{12-2\cdot x}}</m> and we can conclude that <m>{x+6} = {12-2\cdot x}</m>, which we can be  solved to find the value of <m>x</m>;</p>
+<p><m>{x+6} = {12-2\cdot x}</m></p>
+<p>Grouping the lies terms together and finding <m>x</m>,we have</p>
+<p><m>{3\cdot x} = {6}</m></p>
+<p><m>x = {2}</m>.</p></div></solution>
+<answer><p><m>2</m></p></answer>
+</stack-static>

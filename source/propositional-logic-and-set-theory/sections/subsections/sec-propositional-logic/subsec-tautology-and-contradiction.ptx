@@ -426,9 +426,7 @@
 
 
         <exercise>
-            <stack-moodle label="determine-which-ones-of-statements-are-tautologies-2" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Tautology-and-contradiction/Determine-which-ones-of-statements-are-tautologies.xml" />
-            </stack-moodle>
+            <stack label="determine-which-ones-of-statements-are-tautologies-2" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Tautology-and-contradiction/Determine-which-ones-of-statements-are-tautologies.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FTautology-and-contradiction%2FDetermine-which-ones-of-statements-are-tautologies.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-tautology-and-contradiction.ptx">Add review</url>
             </conclusion>

@@ -1,0 +1,98 @@
+<stack-static>
+<statement><div><p>Given that the <m>xy</m>-coordinate axes have undergone a <m>{420}^{\circ}</m> counterclockwise rotation about the origin to establish the new <m>x'y'</m>-coordinate system, determine the coordinates of the following points in relation to the <m>x’y’</m>-system:</p>
+<p><alert>Note:</alert>
+<m>
+x' = x \cos(\theta) - y \sin(\theta) \\
+y' = x \sin(\theta) + y \cos(\theta)
+</m>
+Where <m>\theta</m> is the angle of rotation, which is <m>{420}^{\circ}</m>  in this case.</p>
+
+<p>Calculate the coordinates in the <m>x’y’</m>-system for each of the following points:</p>
+<ol>
+    <li><m>({8},{2})</m>
+      <m>\begin{pmatrix}x' \\  y' \end{pmatrix}=</m> <fillin characters="5" name="ans1"/>  <br/>
+    </li>
+    <li><m>({3},{2})</m>
+      <m>\begin{pmatrix}x' \\  y' \end{pmatrix}=</m> <fillin characters="5" name="ans2"/>  <br/>
+    </li>
+    <li><m>({2},{3})</m>
+      <m>\begin{pmatrix}x' \\  y' \end{pmatrix}=</m> <fillin characters="5" name="ans3"/>  <br/>
+    </li>
+    <li><m>({-\frac{1}{2}},{\frac{8}{3}})</m>
+      <m>\begin{pmatrix}x' \\  y' \end{pmatrix}=</m> <fillin characters="5" name="ans4"/>  <br/>
+    </li>
+    <li><m>({-2},{-7})</m>
+        <m>\begin{pmatrix}x' \\  y' \end{pmatrix}=</m>  <fillin characters="5" name="ans5"/>  
+    </li>
+</ol></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p>When rotating the coordinate axes counterclockwise by <m>{420}^{\circ}</m>, you are performing a coordinate transformation using rotation matrices. </p><p>The rotation matrix for a counterclockwise rotation by an angle <m>\theta</m> is:</p>
+<p><m> R(\theta) = \begin{pmatrix}
+    \cos (\theta) &amp; -\sin (\theta) \\
+    \sin (\theta) &amp; \cos (\theta)
+\end{pmatrix}
+</m></p>
+<p>This rotates column vectors by means of the following matrix multiplication:
+<m>
+\begin{pmatrix}
+    x' \\
+    y'
+\end{pmatrix} =
+\begin{pmatrix}
+    \cos \theta &amp; -\sin \theta \\
+    \sin \theta &amp; \cos \theta
+\end{pmatrix}
+\begin{pmatrix}
+    x \\
+    y
+\end{pmatrix}
+</m>
+</p>
+<p>In this case, since the angle <m>\theta</m> is <m>{420}^{\circ}</m>, we have:
+</p>
+<p><m> R(\theta) = \begin{pmatrix}
+    \cos ({420}^{\circ}) &amp; -\sin ({420}^{\circ}) \\
+    \sin ({420}^{\circ})&amp; \cos ({420}^{\circ})
+\end{pmatrix} =  {\left(\begin{array}{cc} \frac{1}{2} &amp; -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} &amp; \frac{1}{2} \end{array}\right)}
+</m></p>
+<p>To find the coordinates of points relative to the new <m>x'y'</m>-system, you multiply the rotation matrix by the original coordinates. Let's go through each point:</p>
+        <ol>
+            <li>
+                <p> Point <m>({8},{2})</m>:</p>
+              <p> <m>\begin{pmatrix}x' \\  y' \end{pmatrix}= {\left(\begin{array}{cc} \frac{1}{2} &amp; -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} &amp; \frac{1}{2} \end{array}\right)}\begin{pmatrix}{8}\\ {2}\end{pmatrix}=\begin{pmatrix}{4-\sqrt{3}} \\  {4 \sqrt{3}+1}\end{pmatrix}</m>
+                Coordinates in <alert><m>x'y'</m></alert>-system: <m>\left({4-\sqrt{3}}, {4 \sqrt{3}+1}\right)</m>
+                </p>
+            </li>
+            <li>
+                <p> Point <m>({3},{2})</m>:</p>
+     <p> <m>\begin{pmatrix}x' \\  y' \end{pmatrix}= {\left(\begin{array}{cc} \frac{1}{2} &amp; -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} &amp; \frac{1}{2} \end{array}\right)}\begin{pmatrix}{3}\\ {2}\end{pmatrix}=\begin{pmatrix}{\frac{3}{2}-\sqrt{3}} \\  {\frac{3^{\frac{3}{2}}}{2}+1}\end{pmatrix}</m>
+                Coordinates in <alert><m>x'y'</m></alert>-system: <m>\left({\frac{3}{2}-\sqrt{3}}, {\frac{3^{\frac{3}{2}}}{2}+1}\right)</m>
+                </p>
+            </li>
+            <li>
+                <p> Point <m>({2},{3})</m>:</p>
+             <p> <m>\begin{pmatrix}x' \\  y' \end{pmatrix}= {\left(\begin{array}{cc} \frac{1}{2} &amp; -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} &amp; \frac{1}{2} \end{array}\right)}\begin{pmatrix}{2}\\ {3}\end{pmatrix}=\begin{pmatrix}{1-\frac{3^{\frac{3}{2}}}{2}} \\  {\sqrt{3}+\frac{3}{2}}\end{pmatrix}</m>
+                Coordinates in <alert><m>x'y'</m></alert>-system: <m>\left({1-\frac{3^{\frac{3}{2}}}{2}}, {\sqrt{3}+\frac{3}{2}}\right)</m>
+                </p>
+            </li>
+            <li>
+                <p> Point <m>({-\frac{1}{2}},{\frac{8}{3}})</m>:</p>
+     <p> <m>\begin{pmatrix}x' \\  y' \end{pmatrix}= {\left(\begin{array}{cc} \frac{1}{2} &amp; -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} &amp; \frac{1}{2} \end{array}\right)}\begin{pmatrix}{-\frac{1}{2}}\\ {\frac{8}{3}}\end{pmatrix}=\begin{pmatrix}{-\frac{4}{\sqrt{3}}-\frac{1}{4}} \\  {\frac{4}{3}-\frac{\sqrt{3}}{4}}\end{pmatrix}</m>
+                Coordinates in <alert><m>x'y'</m></alert>-system: <m>\left({-\frac{4}{\sqrt{3}}-\frac{1}{4}}, {\frac{4}{3}-\frac{\sqrt{3}}{4}}\right)</m>
+                </p>
+            </li>
+            <li>
+                <p> Point <m>({-2},{-7})</m>:</p>
+     <p> <m>\begin{pmatrix}x' \\  y' \end{pmatrix}= {\left(\begin{array}{cc} \frac{1}{2} &amp; -\frac{\sqrt{3}}{2} \\ \frac{\sqrt{3}}{2} &amp; \frac{1}{2} \end{array}\right)}\begin{pmatrix}{-2}\\ {-7}\end{pmatrix}=\begin{pmatrix}{\frac{7 \sqrt{3}}{2}-1} \\  {-\sqrt{3}-\frac{7}{2}}\end{pmatrix}</m>
+                Coordinates in <alert><m>x'y'</m></alert>-system: <m>\left({\frac{7 \sqrt{3}}{2}-1}, {-\sqrt{3}-\frac{7}{2}}\right)</m>
+                </p>
+            </li>
+        </ol>
+  
+<p>These are the coordinates of the given points relative to the new <alert><m>x'y'</m></alert>-coordinate system after rotating the <alert><m>xy</m></alert>-coordinate axes <alert><m>{420}^{\circ}</m></alert> counterclockwise about the origin.</p></div></solution>
+<answer><p><m>\left(\begin{array}{c} 4-\sqrt{3} \\ 4 \sqrt{3}+1 \end{array}\right)</m></p></answer>
+<answer><p><m>\left(\begin{array}{c} \frac{3}{2}-\sqrt{3} \\ \frac{3^{\frac{3}{2}}}{2}+1 \end{array}\right)</m></p></answer>
+<answer><p><m>\left(\begin{array}{c} 1-\frac{3^{\frac{3}{2}}}{2} \\ \sqrt{3}+\frac{3}{2} \end{array}\right)</m></p></answer>
+<answer><p><m>\left(\begin{array}{c} -\frac{4}{\sqrt{3}}-\frac{1}{4} \\ \frac{4}{3}-\frac{\sqrt{3}}{4} \end{array}\right)</m></p></answer>
+<answer><p><m>\left(\begin{array}{c} \frac{7 \sqrt{3}}{2}-1 \\ -\sqrt{3}-\frac{7}{2} \end{array}\right)</m></p></answer>
+</stack-static>

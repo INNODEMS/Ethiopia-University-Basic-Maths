@@ -1,0 +1,101 @@
+<stack-static>
+<statement><div><p>Suppose the endpoints of the major axis of an ellipse are <m> (0, \pm {5}) </m> and the end points of its minor axis are <m> ( \pm {4}, 0) </m>.</p>
+<p><em>Note: Give your answers in exact form i.e using fractions or writing in square root form
+<br/>The equation of an ellipse with center <m>(h, k)</m>, semi-major axis <m>a</m>, and semi-minor axis <m>b</m> is given by:</em></p>
+ <p style="margin-left: 30px"><m>\displaystyle \frac{(x - h)^2}{a^2} + \frac{(y - k)^2}{b^2} = 1</m></p>
+<p><m> ( \text{a} ) </m> Where is the center of the ellipse?</p>
+<p>Center <m>=</m> <fillin characters="5" name="ans1"/>  </p>
+<p><m> (\text{b}) </m> Find the coordinates of the foci.</p>
+<p><fillin characters="7" name="ans2"/> and <fillin characters="7" name="ans3"/> </p>
+<p><m> (\text{c}) </m> Determine whether each of the following points is on the ellipse or not by first substituting the coordinates of the specific points into the equation of the ellipse and giving the result.</p>
+<br/><m> (\text{i}) \quad ({-4}, \, {-5}) </m> 
+<br/>Substituting into the equation of the ellipse we get: <fillin characters="7" name="ans4"/> 
+<br/>Hence the point is [ not on | on  ] the ellipse. 
+<p><m> (\text{ii}) \quad ({0}, \, {4}) </m> </p>
+<br/>Substituting into the equation of the ellipse we get: <fillin characters="7" name="ans6"/> 
+<br/>Hence the point is [ not on | on  ] the ellipse. 
+<p><m> (\text{iii}) \quad ({-5}, \, {-3})</m></p>
+<br/>Substituting into the equation of the ellipse we get: <fillin characters="7" name="ans8"/> 
+<br/>Hence the point is [ not on | on  ] the ellipse. 
+<p><m> (\text{iv}) \quad ({-5}, \, {0}) </m> </p>
+<br/>Substituting into the equation of the ellipse we get: <fillin characters="7" name="ans10"/> 
+<br/>Hence the point is [ on  | not on ] the ellipse. </div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p>To find the center, foci, and determine whether specific points lie on the ellipse, we can follow these steps:</p>
+<p>Given information:</p>
+<p>- Major axis endpoints: <m> A(0, {5}) </m> and <m> B(0, -{5}) </m> </p>
+<p>- Minor axis endpoints: <m> C({4}, 0) </m> and <m> D({-4}, 0) </m></p>
+
+<p><alert>Step 1: Find the Center of the Ellipse</alert></p>
+
+<p>The center of an ellipse is the midpoint of the endpoints of the major axis. We can find it using the formula for the midpoint of two points <m>(x_1, y_1)</m> and <m>(x_2, y_2)</m>:</p>
+
+<p style="margin-left: 30px"><m>\text{Center} = \displaystyle \left(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}\right)</m></p>
+
+<p>In this case, the endpoints of the major axis are <m>\displaystyle (0, {5}) </m> and <m>\displaystyle (0, -{5}) </m>, so the center is:</p>
+
+<p style="margin-left: 30px"><m>\text{Center} = \displaystyle \left(\frac{0 + 0}{2}, \frac{{5} + (-{5})}{2}\right) = (0, 0)</m></p>
+
+<p><alert>Step 2: Find the Coordinates of the Foci</alert></p>
+
+<p>The distance from the center to each focus is given by the equation:</p>
+
+<p style="margin-left: 30px"><m>c =\displaystyle \sqrt{a^2 - b^2}</m></p>
+
+<p>where <m>a</m> is the length of the semi-major axis and <m>b</m> is the length of the semi-minor axis.</p>
+
+<p>Given the endpoints of the minor axis, we can calculate the length of the semi-minor axis <m>b</m>:</p>
+
+<p style="margin-left: 30px"><m>b =\displaystyle \frac{1}{2} \cdot \text{distance}(C, D) =\displaystyle \frac{1}{2} \cdot \sqrt{({4} - (-{4}))^2 + (0 - 0)^2} = {4}</m></p>
+
+<p>Given the endpoints of the major axis, we can calculate the length of the semi-major axis <m>a</m>:</p>
+
+<p style="margin-left: 30px"><m>a =\displaystyle \frac{1}{2} \cdot \text{distance}(A, B) = \displaystyle \frac{1}{2} \cdot \sqrt{(0 - 0)^2 + ({5} - (-{5}))^2} = {5}</m></p>
+
+<p>Now we can calculate the distance from the center to each focus:</p>
+
+<p style="margin-left: 30px"><m>c = \displaystyle \sqrt{a^2 - b^2} = \sqrt{{5}^2 - {4}^2}= \displaystyle {3}</m></p>
+
+<p>The foci will be located along the major axis, which is the <m>y</m>-axis. So, the coordinates of the foci are:</p>
+
+<p>Foci: <m>\displaystyle (0,  {3} ) </m> and <m>\displaystyle (0,  -{3}) </m> </p>
+
+<p><alert>Step 3: Determine if Specific Points are on the Ellipse</alert></p>
+
+<p>The equation of an ellipse with center <m>(h, k)</m>, semi-major axis <m>a</m>, and semi-minor axis <m>b</m> is given by:</p>
+
+<p style="margin-left: 30px"><m>\displaystyle \frac{(x - h)^2}{a^2} + \frac{(y - k)^2}{b^2} = 1</m></p>
+
+<p>In this case, the center is <m>(0, 0)</m>, <m>a = \displaystyle {5}</m>, and <m>b =\displaystyle {4}</m>. We can now check whether each point lies on the ellipse:</p>
+
+<p style="margin-left: 30px">(i) <m>({-4}, \, {-5})</m>:</p>
+<p>Substituting the coordinates into the ellipse equation:</p>
+<p style="margin-left: 30px"><m>\displaystyle \frac{({-4}-0)^2}{{5}^2} + \frac{({-5}-0)^2}{{4}^2} ={\frac{16}{25}} + {\frac{25}{16}}= {\frac{881}{400}}</m></p>
+<p>So, this point is not on the ellipse.</p>
+
+<p style="margin-left: 30px">(ii) <m>\displaystyle ({0}, \, {4})</m>:</p>
+<p>Substituting the coordinates into the ellipse equation:</p>
+<p style="margin-left: 30px"><m> \displaystyle \frac{({0}-0)^2}{{5}^2} + \frac{({4}-0)^2}{{4}^2} ={0} + {1}= {1} </m></p>
+<p>So, this point is on  the ellipse.</p>
+
+<p style="margin-left: 30px">(iii) <m>\displaystyle ({-5}, \, {-3})</m>:</p>
+<p>Substituting the coordinates into the ellipse equation:
+</p><p style="margin-left: 30px"><m>\displaystyle \frac{({-5}-0)^2}{{5}^2} + \frac{({-3}-0)^2}{{4}^2} ={1} + {\frac{9}{16}} = {\frac{25}{16}}</m></p>
+<p>So, this point is not on the ellipse.</p>
+
+<p style="margin-left: 30px">(iv) <m>\displaystyle ({-5}, \, {0})</m>:</p>
+<p>Substituting the coordinates into the ellipse equation:</p>
+<p style="margin-left: 30px"><m>\displaystyle \frac{({-5}-0)^2}{{5}^2} + \frac{({0}-0)^2}{{4}^2} ={1}+ {0}= {1}</m></p>
+<p>So, this point is on  the ellipse.</p></div></solution>
+<answer><p><m>\left[ 0 , 0 \right] </m></p></answer>
+<answer><p><m>\left[ 0 , 3 \right] </m></p></answer>
+<answer><p><m>\left[ 0 , -3 \right] </m></p></answer>
+<answer><p><m>\frac{881}{400}</m></p></answer>
+<answer><p>not on</p></answer>
+<answer><p><m>1</m></p></answer>
+<answer><p>on </p></answer>
+<answer><p><m>\frac{25}{16}</m></p></answer>
+<answer><p>not on</p></answer>
+<answer><p><m>1</m></p></answer>
+<answer><p>on </p></answer>
+</stack-static>

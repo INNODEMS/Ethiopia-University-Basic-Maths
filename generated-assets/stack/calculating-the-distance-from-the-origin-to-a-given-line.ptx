@@ -1,0 +1,14 @@
+<stack-static>
+<statement><div><p>Find the distance from the origin to the line <m> \displaystyle {-4\cdot y+9\cdot x-2=0}</m>. Give your answer in exact form.</p>
+<p>Note: type <c>sqrt(x)</c> for <m>\sqrt{x}</m>.</p>
+<p><m>\qquad</m> Distance <m>=</m> <fillin characters="10" name="ans1"/>  </p></div></statement>
+<solution><div><p><alert><h3>Worked Solution</h3></alert></p>
+<p>To find the distance from the origin to the line with equation  <m> \displaystyle {-4\cdot y+9\cdot x-2=0}</m>, we can use the formula for the distance between the point <m>A (x_{0}, y_{0})</m> and the line of equation <m>ax+by+c=0</m>, where <m>a, \, b</m>, and <m>c</m> are the coefficients of the equation of the line.</p>
+<p><me> \displaystyle \text{distance} = \frac{ \left| ax_{0} + by_{0} + c \right| }{ \sqrt{a^2 + b^2}}</me></p>
+<p>In this case, the equation of the line is <m> \displaystyle {-4\cdot y+9\cdot x-2=0}</m>, so <m>a = {9}, \, b = {-4}, </m> and <m>c = {-2}</m>. </p>
+<p>The point <m>(0, 0)</m> is the origin.</p>
+<p>Substituting these values into the formula, we get:</p>
+<p><m> \displaystyle \text{distance} = \frac{ \left| {9}(0){-4}(0) {-2} \right| }{ \sqrt{{9}^2 +( {-4})^2}}</m>,</p>
+<p><m> \displaystyle \text{distance} ={\frac{2}{\sqrt{97}}}</m> units.</p></div></solution>
+<answer><p><m>\frac{2}{\sqrt{97}}</m></p></answer>
+</stack-static>

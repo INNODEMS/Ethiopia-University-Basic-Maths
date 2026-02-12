@@ -193,9 +193,7 @@
 
 
         <exercise>
-            <stack-moodle label="determining-positions-of-points-with-respect-to-a-given-circle" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-a-circle/Determining-Positions-of-Points-with-Respect-to-a-Given-Circle.xml" />
-            </stack-moodle>
+            <stack label="determining-positions-of-points-with-respect-to-a-given-circle" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-a-circle/Determining-Positions-of-Points-with-Respect-to-a-Given-Circle.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-a-circle%2FDetermining-Positions-of-Points-with-Respect-to-a-Given-Circle.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-definition-of-a-circle.ptx">Add review</url>
             </conclusion>
@@ -203,9 +201,7 @@
             
 
         <exercise>
-            <stack-moodle label="finding-the-center-and-radius-of-a-circle-given-endpoints-of-a-d" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-a-circle/Finding-the-Center-and-Radius-of-a-Circle-Given-Endpoints-of-a-D.xml" />
-            </stack-moodle>
+            <stack label="finding-the-center-and-radius-of-a-circle-given-endpoints-of-a-d" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-a-circle/Finding-the-Center-and-Radius-of-a-Circle-Given-Endpoints-of-a-D.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-a-circle%2FFinding-the-Center-and-Radius-of-a-Circle-Given-Endpoints-of-a-D.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-definition-of-a-circle.ptx">Add review</url>
             </conclusion>
@@ -213,9 +209,7 @@
             
 
         <exercise>
-            <stack-moodle label="finding-the-radius-of-a-circle-with-given-center-and-point-on-th" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-a-circle/Finding-the-Radius-of-a-Circle-with-Given-Center-and-Point-on-th.xml" />
-            </stack-moodle>
+            <stack label="finding-the-radius-of-a-circle-with-given-center-and-point-on-th" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-a-circle/Finding-the-Radius-of-a-Circle-with-Given-Center-and-Point-on-th.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-a-circle%2FFinding-the-Radius-of-a-Circle-with-Given-Center-and-Point-on-th.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-circles%2Fsubsec-definition-of-a-circle.ptx">Add review</url>
             </conclusion>

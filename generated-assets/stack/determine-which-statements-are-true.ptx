@@ -1,0 +1,36 @@
+<stack-static>
+<statement><div><p> Select all of the statements below that are true.</p>
+<p/><ol marker="(1)">
+<li>The sum of the interior angles of any triangle in Euclidean geometry is always 180 degrees..</li>
+<li><m>2 + 4 = 8</m></li>
+<li>Division by zero is defined</li>
+</ol> 
+<p/></div></statement>
+<solution><div><h3>Worked solution</h3>
+
+
+
+
+<p>"The sum of the interior angles of any triangle is always 180 degrees."</p>
+<p>The Triangle Sum Theorem states that the sum of the interior angles of a triangle is always equal to a straight angle, which measures 180 degrees thus the statement is true.</p>
+<br/>
+
+
+
+
+
+<p>"<m>2 + 4 = 8</m>"</p>
+<p> Here, we are claiming that <m>2 + 4 = 8</m> which is <alert>False</alert>. 
+<br/>Therefore, this is a false statement.</p>
+<br/>
+
+
+
+<p>"Division by zero is defined "</p>
+<p>The statement is false because in mathematics, division by zero is considered undefined because it leads to various contradictions and inconsistencies. When we divide a number by a very small positive number, the result becomes extremely large. As the divisor approaches zero, the quotient tends to infinity, which is not a finite and well-defined value. On the other hand, if the divisor approaches zero from the negative side, the quotient tends to negative infinity.</p>
+<br/>
+
+
+</div></solution>
+<answer><p><m>(1)</m></p></answer>
+</stack-static>

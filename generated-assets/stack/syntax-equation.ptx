@@ -1,0 +1,6 @@
+<stack-static>
+<statement><div><p>Multiplication needs a * symbol, so for example, <m>3x</m> has to be typed as <c>3*x</c>.</p>
+<p>Input the equation <m>{y=3\cdot x+5}</m> in the box below.</p>
+<p><fillin characters="15" name="ans1"/> </p></div></statement>
+<answer><p><m>y=3\cdot x+5</m></p></answer>
+</stack-static>

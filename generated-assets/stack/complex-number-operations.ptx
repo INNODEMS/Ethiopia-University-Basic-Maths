@@ -1,0 +1,28 @@
+<stack-static>
+<statement><div><p> Given the complex numbers z = <m>{1-\mathrm{i}}</m> and w = <m>{6}</m>, evaluate and write in the form <m>a+bi</m>, where <m>a</m> and <m>b</m> are real numbers <alert>(to write the complex number <m>i</m> type %i, and √a type sqrt(a))</alert></p>
+<p><alert>(i)</alert> <m>z+w</m> = <fillin characters="9" name="ans1"/> </p>
+<p><alert>(ii)</alert> <m>z-w</m> = <fillin characters="9" name="ans2"/> </p></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p>Given complex numbers:  <m>z={1-\mathrm{i}}</m> and  <m>w={6}</m>.</p>
+
+<p><alert>(i)</alert><alert> <m> z + w </m></alert></p>
+ <p> <m> z + w = ({1-\mathrm{i}}) + ({6}) </m></p>
+
+  Combining the real and imaginary parts:
+<p>   <md>
+<mrow>z + w \amp = ({1}+{6}) + ({-1}+{0})i</mrow>
+<mrow>z + w \amp = {7-\mathrm{i}}</mrow>
+</md></p>
+ <p>  So, <m> z + w </m> in the form <m> a + bi </m> is <m> {7-\mathrm{i}}</m>.</p>
+
+<br/><alert>(ii)</alert><alert> <m> z - w </m></alert>
+   <p><m> z - w = ({1-\mathrm{i}}) - ({6}) </m></p>
+ <p>  Combining the real and imaginary parts:</p>
+ <p>  <md>
+<mrow>z - w  \amp =({1}-{6}) +({-1}-{0})i</mrow>
+<mrow>z - w  \amp = {-\mathrm{i}-5}</mrow>
+</md></p>
+  <p> So, <m> z - w </m> in the form <m> a + bi </m> is <m> {-\mathrm{i}-5} </m>.</p></div></solution>
+<answer><p><m>7-\mathrm{i}</m></p></answer>
+<answer><p><m>-\mathrm{i}-5</m></p></answer>
+</stack-static>

@@ -1,0 +1,23 @@
+<stack-static>
+<statement><div><p> Given the complex numbers <m>z={4 \mathrm{i}+19}</m> and <m>w={8-7 \mathrm{i}}</m></p> 
+<br/> Evaluate:
+<br/><m>|z|=</m> <fillin characters="8" name="ans1"/>  
+<br/>
+<br/><m>|z+w|=</m> <fillin characters="8" name="ans2"/>  <br/>
+<p>Note: type <c>sqrt(x)</c> for <m>\sqrt{x}</m>.</p></div></statement>
+<solution><div><h3>Worked solution.</h3>
+<p><md>
+<mrow>\displaystyle |z| \amp = \sqrt{z \overline{z}}</mrow>
+<mrow>\amp  = \sqrt{({4 \mathrm{i}+19})(\overline{4 \mathrm{i}+19})}</mrow>
+<mrow>\amp  =  \sqrt{({4 \mathrm{i}+19}) ({19-4 \mathrm{i}})}</mrow>
+<mrow>\amp  ={\sqrt{377}}</mrow>
+</md></p>
+<p>We have <m>z+w=({4 \mathrm{i}+19})+({8-7 \mathrm{i}})={27-3 \mathrm{i}}</m>. So</p>
+<p><md>
+<mrow>\displaystyle |z+w|\amp  = \sqrt{({27-3 \mathrm{i}})(\overline{27-3 \mathrm{i}})}</mrow>
+<mrow>\amp  =  \sqrt{({27-3 \mathrm{i}}) ({3 \mathrm{i}+27})}</mrow>
+<mrow>\amp  ={3 \sqrt{82}}</mrow>
+</md></p></div></solution>
+<answer><p><m>\sqrt{377}</m></p></answer>
+<answer><p><m>3 \sqrt{82}</m></p></answer>
+</stack-static>

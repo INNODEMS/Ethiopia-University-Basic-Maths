@@ -1,0 +1,92 @@
+<stack-static>
+<statement><div><p>Suppose the endpoints of the minor axis of an ellipse are <m>({4}, \pm {5})</m> and its eccentricity is <m>{0.8}</m>.</p>
+<p>Find the coordinates of:</p>
+
+<p>(a) The center, <nbsp/> <m>C:</m> <fillin characters="10" name="ans1"/> </p>
+<p> </p>
+
+<br/>
+
+<p>(b) The foci, <nbsp/> <m>F_1:</m> <fillin characters="10" name="ans2"/> </p>
+<p style="margin-left:90px"><m>F_2:</m> <fillin characters="10" name="ans3"/> </p>
+<p/>
+
+<br/>
+
+<p>(c) The vertices of the ellipse, <nbsp/> <m>V_1:</m> <fillin characters="10" name="ans4"/> </p>
+<p style="margin-left:202px"><m>V_2:</m> <fillin characters="10" name="ans5"/> </p>
+<p/></div></statement>
+<solution><div><h3>Worked Solution</h3>
+
+<p>To find the coordinates of the center, foci, and vertices of the ellipse, we can use the standard form for an ellipse with centre <m>(x_0, y_0)</m>,</p>
+
+<p style="margin-left:30px"><m>\displaystyle 
+\frac{(x - x_0)^2}{a^2} + \frac{(y - y_0)^2}{b^2} = 1
+</m></p>
+<p>where <m>a</m> is the semi-major axis length and <m>b</m> is the semi-minor axis length.</p>
+
+<p>The eccentricity <m>e</m> of the ellipse is given by:</p>
+<p style="margin-left:30px"><m>\displaystyle 
+e = \sqrt{1 - \frac{b^2}{a^2}}
+</m></p>
+
+<p>Given that the endpoints of the minor axis are <m>({4}, \pm {5})</m>, we can use this information to find <m>b</m> and then calculate <m>a</m> using the eccentricity.</p>
+
+<br/>
+
+<p>(a) To find the center of the ellipse, we can simply find the midpoint of the minor axis:</p>
+<p style="margin-left:30px"><m>C: \displaystyle  \left(\frac{{4} + {4}}{2}, \frac{{5}{-5}}{2}\right) 
+= ({4}, {0})</m></p>
+<p>Then, we can write the equation of this ellipse as,</p>
+<p style="margin-left:30px"><m>\displaystyle 
+\frac{(x - x_0)^2}{a^2} + \frac{y^2}{b^2} = 1
+</m></p>
+
+<br/>
+
+<p>(b) The foci of the ellipse can be found using the formula <m>c = ae</m>, where <m>c</m> is the distance from the center to each focus. 
+<br/>Since the center is at <m>({4}, {0})</m> and the eccentricity <m>e</m> is given as <m>{0.8}</m>, we can calculate <m>a</m> and then use it to find <m>c</m>.</p>
+
+<p>Given <m>e = {0.8}</m>, we can rearrange the eccentricity formula to solve for <m>a</m>:</p>
+<p style="margin-left:30px"><m> \displaystyle 
+a = \frac{b}{\sqrt{1 - e^2}}
+</m></p>
+
+<p>Using the endpoints of the minor axis, <m> \textstyle  b = \frac{{5}-({-5})}{2} = {5}</m> and <m>e = {0.8}</m>.</p>
+
+<p>Then, for <m>a</m>,</p>
+<p style="margin-left:30px"><m> \displaystyle 
+a = \frac{{5}}{\sqrt{1 - {0.8}^2}} 
+= \frac{{5}}{\sqrt{{0.36}}} 
+= {\frac{25}{3}}
+</m></p>
+
+<p>Now we can find <m>c</m> using <m>c = ae</m>:</p>
+<p style="margin-left:30px"><m> \displaystyle 
+c = {\frac{25}{3}} \cdot {0.8} 
+= {\frac{20}{3}}
+</m></p>
+
+<p>So, the coordinates of the foci are,</p>
+<p style="margin-left:30px"><m> \displaystyle 
+\left({4} \pm {\frac{20}{3}}, 0 \right) 
+= \left({\frac{32}{3}}, {0} \right), \left({-\frac{8}{3}}, {0}\right)</m>
+</p>
+
+<br/>
+
+<p>(c) The vertices of the ellipse can be found using the values of <m>a</m> and <m>b</m>, which we already calculated. Since the vertices occur when <m>y=0</m>, we have.</p>
+
+<p style="margin-left:30px"><m>(x-{4})^2 = a^2</m></p>
+<p style="margin-left:30px"><m>x-{4} = \pm a = \pm {\frac{25}{3}}</m></p>
+
+<p>Therefore, the vertices along the major axis are at,</p>
+<p style="margin-left:30px"><m> \displaystyle  
+\left( {4} \pm {\frac{25}{3}}, 0 \right) 
+= \left({\frac{37}{3}}, {0} \right), \left({-\frac{13}{3}}, {0} \right)</m></p></div></solution>
+<answer><p><m>\left[ 4 , 0 \right] </m></p></answer>
+<answer><p><m>\left[ \frac{32}{3} , 0 \right] </m></p></answer>
+<answer><p><m>\left[ -\frac{8}{3} , 0 \right] </m></p></answer>
+<answer><p><m>\left[ \frac{37}{3} , 0 \right] </m></p></answer>
+<answer><p><m>\left[ -\frac{13}{3} , 0 \right] </m></p></answer>
+</stack-static>

@@ -1,0 +1,30 @@
+<stack-static>
+<statement><div><p>Find the focus and directrix of the parabola <m> (c): {16\cdot y+x^2-32=0} </m></p>
+<br/> 1. a) Rewrite the parabola (c)  in the form <m>X^{2} = 4 p Y</m>.
+<br/>  <m> \quad </m> <fillin characters="15" name="ans1"/>  
+<br/> 2. We recall that in general, <m>(c): (x-x_{0})^{2}= 4 p (y - y_{0}) </m> has focus <m>F(x_{0}, y_{0}+p)</m> and directrix <m>(l): y = y_{0}-p</m> .
+<br/>  Find the focus and directrix of the parabola (c). 
+<br/> Focus: <m> F</m> (<fillin characters="5" name="ans2"/>, <fillin characters="5" name="ans3"/>)  
+  <br/>  <m> \qquad \qquad </m>   <m>\qquad</m>  
+<br/> Directrix <m>(l):</m> <fillin characters="10" name="ans4"/>  </div></statement>
+<solution><span><br/><alert>Worked solution</alert>
+<br/> 1. a) Rewrite the parabola (c)  in the form <m>X^{2} = 4 p Y</m>.
+<br/> <m> (c): {16\cdot y+x^2-32=0} </m>
+<br/><m>
+\begin{array}{rc}
+\Leftrightarrow &amp; ({x^2})+({16\cdot y-32})= 0 \\ 
+\Leftrightarrow &amp;{{\left(x-0\right)}^2}+({16\cdot y-32})= 0 \\ 
+\Leftrightarrow &amp; {{\left(x-0\right)}^2}=({32-16\cdot y}) \\ 
+\Leftrightarrow &amp; {{\left(x-0\right)}^2}= 4 \cdot ({-4})({y-2}) 
+\end{array}
+</m>
+<br/> So, <m> X = {x-0}</m>, <m>p={-4} </m> and <m> Y = {y-2} </m>.
+<br/> 2.  Find the focus and directrix of the parabola (c). 
+<br/>In general, <m>(c): (x-x_{0})^{2}= 4 p (y - y_{0}) </m> has focus <m>F(x_{0}, y_{0}+p)</m> and directrix <m>(l): y = y_{0}-p</m> 
+<br/> It follows that <m>y_{0} = {2} </m>,  <m> x_{0}= {0} </m> and <m>p={-4}</m>.
+<br/> Therefore, Focus: <m>F({0},{2-4}) \equiv ({0},{-2}) </m> and directrix <m> (l): y = {2+4}= {6}</m></span></solution>
+<answer><p><m>{\left(x-0\right)}^2=4\cdot \left(-4\right)\cdot \left(y-2\right)</m></p></answer>
+<answer><p><m>0</m></p></answer>
+<answer><p><m>-2</m></p></answer>
+<answer><p><m>y=6</m></p></answer>
+</stack-static>

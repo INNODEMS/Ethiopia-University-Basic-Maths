@@ -1,0 +1,71 @@
+<stack-static>
+<statement><div><p>Find the domain and range of <m>f(x)={8 \left| x^2-4\right| -9}</m>.</p>
+<p>Give your answer as interval of the real numbers.</p>
+
+<p><em>Note: To enter intervals of you real line, you should write the relevant text in the table below.</em></p>
+
+<tabular width="250" cellspacing="1" cellpadding="0" border="1" style="margin-left: 30px">
+  <row>
+    <cell style="text-align: center;">Intervals</cell>
+    <cell style="text-align: center;">Input Syntax</cell>
+  </row>
+  <row>
+    <cell style="text-align: center;"><m> [a,b] </m></cell>
+    <cell style="text-align: center;"><c>cc(a,b)</c></cell>
+  </row>
+  <row>
+    <cell style="text-align: center;"><m> (a,b) </m></cell>
+    <cell style="text-align: center;"><c>oo(a,b)</c></cell>
+  </row>
+  <row>
+    <cell style="text-align: center;"><m> [a,b) </m></cell>
+    <cell style="text-align: center;"><c>co(a,b)</c></cell>
+  </row>
+  <row>
+    <cell style="text-align: center;"><m> (a,b] </m></cell>
+    <cell style="text-align: center;"><c>oc(a,b)</c></cell>
+  </row>
+ <row>
+    <cell style="text-align: center;"><m> (a, \infty) </m></cell>
+    <cell style="text-align: center;"><c>oo(a,inf)</c></cell>
+  </row>
+ <row>
+    <cell style="text-align: center;"><m> (-\infty, b] </m></cell>
+    <cell style="text-align: center;"><c>oc(-inf,b)</c></cell>
+  </row>
+ <row>
+    <cell style="text-align: center;"><m> (-\infty, \infty) </m></cell>
+    <cell style="text-align: center;"><c>oo(-inf,inf)</c></cell>
+  </row>
+</tabular>
+
+<br/>
+
+<p>(a) <m>Dom(f)=</m> <fillin characters="7" name="ans1"/> </p>
+<p>(b) <m>Range(f)=</m> <fillin characters="7" name="ans2"/> <br/></p></div></statement>
+<solution><div><h3>Worked Solution</h3>
+
+<p>(a) To determine the domain of the function, we need to identify any restrictions on the values of <m>x</m> that would make the expression undefined.</p>
+
+<p>Looking at the function expression <m>f(x)={8 \left| x^2-4\right| -9}</m>, there are no specific restrictions on the input value <m> x </m>.</p>
+<p>The function <m> x \mapsto x^2 - {4} </m> is a polynomial function, so defined for all real numbers <m> x </m>. Moreover, the absolute value function <m> \lvert \cdot \rvert </m> is defined for all real numbers.</p> 
+<p>Therefore, the domain of <m>f(x)</m> is all real numbers, which can be denoted as,</p>
+<p style="margin-left: 30px"><m> Dom(f) = \mathbb{R} = {\left( -\infty ,\, \infty \right)}</m></p>
+
+<br/>
+
+<p>(b) Next, we determine the range of the function. 
+<br/>The range represents the set of all possible values that <m>f(x)</m> can attain as <m>x</m> varies.</p>
+
+<p>We know that, for all <m>x \in \mathbb{R}</m>
+</p><p style="margin-left: 30px"><md>
+<mrow>\amp  {\left| x^2-4\right|} \geq 0</mrow>
+<mrow>\amp  \Rightarrow {8 \left| x^2-4\right|} \geq 0</mrow>
+<mrow>\amp  \Rightarrow {8 \left| x^2-4\right| -9} \geq {-9}</mrow>
+</md></p>
+
+<p>Hence, for all <m>x \in \mathbb{R}</m>, <m>f(x) \geq {-9}</m>, so,</p>
+<p style="margin-left: 30px"><m>Range(f) = \{ y : y \in \mathbb{R}, y \geq {-9} \} = {\left[ -9,\, \infty \right)} </m></p></div></solution>
+<answer><p><m>\left( -\infty ,\, \infty \right)</m></p></answer>
+<answer><p><m>\left[ -9,\, \infty \right)</m></p></answer>
+</stack-static>

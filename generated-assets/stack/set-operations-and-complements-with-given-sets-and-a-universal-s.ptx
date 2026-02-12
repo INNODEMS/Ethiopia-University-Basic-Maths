@@ -1,0 +1,24 @@
+<stack-static>
+<statement><div><p>In this question you will have to find sets defined from two sets <m>A</m>, <m>B</m> and a universal set. Write your answers using curly brackets notation, listing elements using commas and without spaces between elements, for example the set containing numbers 1, 2 and 3 is entered as {1,2,3}. The empty set is entered as {}. </p><p>Set <m>A = {\left \{4 , 6 , 7 , 8 , 12 \right \}}</m> and set <m>B = {\left \{4 , 6 , 7 , 9 , 10 \right \}}</m></p><p>Find the following sets:</p><p>1. <m>A \cup B = </m> <fillin characters="20" name="ans1"/>  </p> <p>2. <m>A \cap B = </m> <fillin characters="20" name="ans2"/>  </p> <p>3. <m>A \setminus B = </m> <fillin characters="20" name="ans3"/>  </p> <p>4. <m>B \setminus A = </m> <fillin characters="20" name="ans4"/>  </p> <p>The universal set for this question is the set of natural numbers up to and including 12. Considering this, find the following sets: </p> <p>5. <m>\overline{B} \cap A = </m> <fillin characters="20" name="ans5"/>  </p> <p>6. <m>\overline{A \setminus \overline{B}} = </m> <fillin characters="20" name="ans6"/>  </p> <p>7. <m>\overline{A \setminus \overline{A}} = </m> <fillin characters="20" name="ans7"/>  </p> <p>8. <m>A \cap \overline{A} = </m> <fillin characters="20" name="ans8"/>  </p></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p>In this question you will have to find sets defined from two sets <m>A</m>, <m>B</m> and a universal set. Write your answers using curly brackets notation, listing elements using commas and without spaces between elements, for example the set containing numbers 1, 2 and 3 is entered as {1,2,3}. The empty set is entered as {}. </p><p>Set <m>A = {\left \{4 , 6 , 7 , 8 , 12 \right \}}</m> and set <m>B = {\left \{4 , 6 , 7 , 9 , 10 \right \}}</m></p>
+<p>Find the following sets:</p>
+<p>1. <m>A \cup B = {\left \{4 , 6 , 7 , 8 , 9 , 10 , 12 \right \}}</m></p>
+ <p>2. <m>A \cap B ={\left \{4 , 6 , 7 \right \}} </m> </p> 
+<p>3. <m>A \setminus B = {\left \{8 , 12 \right \}} </m></p> 
+<p>4. <m>B \setminus A =  {\left \{9 , 10 \right \}}  </m></p> 
+<p>The universal set for this question is the set of natural numbers up to and including 12. Considering this, find the following sets: </p> 
+<p>We recall that the uiversal set is <m> \Omega = {\left \{1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 , 11 , 12 \right \}} </m></p>
+<p>5. <m> \overline{B} \cap A =  {\left \{8 , 12 \right \}}  </m>, because <m>  \overline{B} = {\left \{1 , 2 , 3 , 5 , 8 , 11 , 12 \right \}} </m></p>
+ <p>6. <m>\overline{A \setminus \overline{B}} = {\left \{1 , 2 , 3 , 5 , 8 , 9 , 10 , 11 , 12 \right \}}</m>, because <m> A \setminus \overline{B}={\left \{4 , 6 , 7 \right \}}</m></p>
+ <p>7. <m> \overline{A \setminus \overline{A}} = {\left \{1 , 2 , 3 , 5 , 9 , 10 , 11 \right \}} </m>, because <m> \overline{A} = {\left \{1 , 2 , 3 , 5 , 9 , 10 , 11 \right \}} </m> and <m> A \setminus \overline{A} = {\left \{4 , 6 , 7 , 8 , 12 \right \}}  </m></p> 
+<p>8. <m> A \cap \overline{A} = {\left \{ \right \}} </m></p></div></solution>
+<answer><p><m>\left \{4 , 6 , 7 , 8 , 9 , 10 , 12 \right \}</m></p></answer>
+<answer><p><m>\left \{4 , 6 , 7 \right \}</m></p></answer>
+<answer><p><m>\left \{8 , 12 \right \}</m></p></answer>
+<answer><p><m>\left \{9 , 10 \right \}</m></p></answer>
+<answer><p><m>\left \{8 , 12 \right \}</m></p></answer>
+<answer><p><m>\left \{1 , 2 , 3 , 5 , 8 , 9 , 10 , 11 , 12 \right \}</m></p></answer>
+<answer><p><m>\left \{1 , 2 , 3 , 5 , 9 , 10 , 11 \right \}</m></p></answer>
+<answer><p><m>\left \{ \right \}</m></p></answer>
+</stack-static>

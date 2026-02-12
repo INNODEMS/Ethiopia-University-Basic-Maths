@@ -1,0 +1,13 @@
+<stack-static>
+<statement><div><p>Sometimes you will need to enter a set or list. We also sometimes use a list of coordinates <c>[x, y]</c> for a point or pair <m>(x, y)</m> as round brackets have a different purpose in Maxima.</p>
+<ul>
+<li>Sets are enclosed by curly brackets <m> \{a,b,c\} </m> is entered <c>{a,b,c}</c></li>
+<li>Lists are enclosed by square brackets <m> [a,b,c] </m> is entered <c>[a,b,c]</c></li>
+</ul>
+<p>Type in <m>{\left \{-2 , -1 \right \}}</m>.</p>
+<p><fillin characters="15" name="ans1"/>  </p>
+<p>Type in the point <m> ( {4}, {-3} ) </m> as a list of its coordinates.</p>
+<p><fillin characters="15" name="ans2"/>  </p></div></statement>
+<answer><p><m>\left \{-2 , -1 \right \}</m></p></answer>
+<answer><p><m>\left[ 4 , -3 \right] </m></p></answer>
+</stack-static>

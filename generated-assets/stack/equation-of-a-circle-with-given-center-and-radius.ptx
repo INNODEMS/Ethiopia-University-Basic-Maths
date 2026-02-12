@@ -1,0 +1,14 @@
+<stack-static>
+<statement><div><p>Find an equation of the circle with radius <m>{4}</m> and center <m> ( {4}\, ,\, {4} ) </m> . </p>
+<p><fillin characters="15" name="ans1"/> </p></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p>The equation of a circle with center <m> (h\, , \, k) </m> and radius <m> r </m> is given by:</p>
+<p><m> (x-h)^2+(y-k)^2=r^2 </m></p>
+<p>In this case, the center is <m> ( {4}\, ,\, {4} ) </m> and the radius is <m>{4}</m>. Plugging these values into the equation, we get:</p>
+<p><md>
+<mrow>(x-({4}))^2+(y-({4}))^2 \amp  = {4}^2</mrow>
+<mrow>{{\left(x-4\right)}^2}+{{\left(y-4\right)}^2} \amp  = {16}</mrow>
+</md></p>
+Therefore, the equation of the circle with radius <m>{4}</m> and center  <m> ({4}, {4}) </m> is <m>  {{\left(x-4\right)}^2}+{{\left(y-4\right)}^2}= {16} </m>, which can be also written <m>{y^2-8 y+x^2-8 x+16=0}</m>.</div></solution>
+<answer><p><m>{\left(y-4\right)}^2+{\left(x-4\right)}^2=16</m></p></answer>
+</stack-static>

@@ -1,0 +1,29 @@
+<stack-static>
+<statement><div><p>(a) Consider the following sets: </p>
+<p><m>A={\left \{3 , 4 , 6 , 7 , 12 \right \}}</m> and <m>B={\left \{1 , 2 , 8 , 10 , 11 \right \}} </m>.</p>
+<p>Find the cardinality of the largest possible set <m>C</m> such that <m>C \subseteq A</m> and <m>C \subseteq B</m>.</p><p><fillin characters="5" name="ans1"/>  </p>
+
+<br/>
+
+<p>(b) For this part, the universal set is <m>{\left \{\text{apple} , \text{banana} , \text{coconut} , \text{grape} , \text{lemon} , \text{lime} , \text{mango} , \text{melon} , \text{orange} , \text{pear} \right \}}</m>.</p>
+<p>Find examples of sets <m>D</m> and <m>E</m> such that <m>|D| = {4}</m>, <m>|E| = {3}</m> and <m>|D \cup E| = {7}</m></p>
+<p><em>Note: A set is entered in the blanks using curly brackets notation and double quotes.  As example, we have: <c>{"apple","orange","mango"}</c></em>.</p>
+<p><m>D = </m> <fillin characters="25" name="ans2"/> </p>
+<p> <m>E = </m> <fillin characters="25" name="ans3"/>   </p>
+<p>  </p></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p>(a) Consider the following sets: </p>
+<p><m>A={\left \{3 , 4 , 6 , 7 , 12 \right \}}</m> and <m>B={\left \{1 , 2 , 8 , 10 , 11 \right \}} </m>.</p>
+<p>To find the cardinality of the largest possible set <m>C</m> such that <m>C \subseteq A</m> and <m>C \subseteq B</m>, the first step is to determine the set corresponding to <m> A \cap B</m>.</p>
+<p>We have: <m> A \cap B = {\left \{ \right \}}</m> and Card<m>(A \cap B)={0} </m>. Therefore, the cardinality of the largest possible set <m>C</m> satisfying the given condition above is <m>{0}</m>.</p>
+
+<br/>
+
+<p>(b) For this part, the universal set is <m>{\left \{\text{apple} , \text{banana} , \text{coconut} , \text{grape} , \text{lemon} , \text{lime} , \text{mango} , \text{melon} , \text{orange} , \text{pear} \right \}}</m>.</p>
+<p>Let find examples of sets <m>D</m> and <m>E</m> such that <m>|D| = {4}</m>, <m>|E| = {3}</m> and <m>|D \cup E| = {7}</m></p>
+<p>There are many possible ways to write the sets <m>D</m> and <m>E</m> in this case. Thus, we can choose:</p>
+<p><m>D={\left \{\text{banana} , \text{grape} , \text{lime} , \text{pear} \right \}}</m> and <m>E={\left \{\text{coconut} , \text{mango} , \text{orange} \right \}}</m>. Then  <m>D \cup E = {\left \{\text{banana} , \text{coconut} , \text{grape} , \text{lime} , \text{mango} , \text{orange} , \text{pear} \right \}}</m>.</p></div></solution>
+<answer><p><m>0</m></p></answer>
+<answer><p><m>\left \{\text{banana} , \text{grape} , \text{lime} , \text{pear} \right \}</m></p></answer>
+<answer><p><m>\left \{\text{coconut} , \text{mango} , \text{orange} \right \}</m></p></answer>
+</stack-static>

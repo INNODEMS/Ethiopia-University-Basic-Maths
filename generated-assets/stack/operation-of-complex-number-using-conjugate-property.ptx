@@ -1,0 +1,15 @@
+<stack-static>
+<statement><div><p>Write the complex number  <m>z = \displaystyle  \frac{({11-8 \mathrm{i}})+({4 \mathrm{i}+9})}{({\mathrm{i}+10})-({6-7 \mathrm{i}})}</m>   in the form <m>a+b{\mathrm{i}}</m>. </p>
+<p><em>Note: Use <c>b*%i</c> to input the imaginary part of the complex number.</em></p>
+<p> <m>z =</m> <fillin characters="15" name="ans1"/>  </p></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p><md>
+<mrow>\displaystyle  z \amp  =  \frac{({11-8 \mathrm{i}})+({4 \mathrm{i}+9})}{({\mathrm{i}+10})-({6-7 \mathrm{i}})}</mrow>
+<mrow>\amp  =  \displaystyle \frac{20-4 \mathrm{i}}{8 \mathrm{i}+4}</mrow>
+<mrow>\amp  =  \displaystyle \left( \frac{20-4 \mathrm{i}}{8 \mathrm{i}+4} \right) \left( \frac{\overline{8 \mathrm{i}+4}}{\overline{8 \mathrm{i}+4}} \right)</mrow>
+<mrow>\amp  =  \displaystyle \left( \frac{20-4 \mathrm{i}}{8 \mathrm{i}+4} \right) \left( \frac{4-8 \mathrm{i}}{4-8 \mathrm{i}}\right)</mrow>
+<mrow>\amp  =   \displaystyle \frac{48-176 \mathrm{i}}{80}</mrow>
+<mrow>\amp  = \displaystyle  {\frac{3}{5}}{-}{\frac{11}{5}}{\mathrm{i}}</mrow>
+</md></p></div></solution>
+<answer><p><m>\frac{3}{5}-\frac{11 \mathrm{i}}{5}</m></p></answer>
+</stack-static>

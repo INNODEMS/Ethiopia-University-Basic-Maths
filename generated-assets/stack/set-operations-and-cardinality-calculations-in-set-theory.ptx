@@ -1,0 +1,65 @@
+<stack-static>
+<statement><div><p><m>\mathscr{E}=</m> All Real Numbers <m>\mathbb{R}</m></p>
+<p style="margin-left: 30px"><m>A = {\left \{10 , 11 , 15 , 16 , 17 , 20 \right \}} </m></p>
+<p><em>Note: We write <m>n(X)</m> for the number of elements contained in the set <m>X</m>. For example, <m>n(A) = 6</m>.</em></p>
+
+<br/>
+
+<p>(a) Let <m>B</m> be a set such that <m> n(B)=4 </m> and <m> n(A \cap B)=3 </m>.
+<br/>Find one possible set of elements for <m>B</m>.</p>
+<p style="margin-left: 30px"><m>B = \{ </m> <fillin characters="3" name="ans1"/>  <m>,</m> <fillin characters="3" name="ans2"/>  <m>,</m> <fillin characters="3" name="ans3"/>  <m>,</m> <fillin characters="3" name="ans4"/> <m> \} </m></p>
+<p/>
+
+<br/>
+
+<p>(b) Let <m>C</m> be a set such that <m> n(C)=2 </m> and <m> C \subset B </m></p>
+<p>Find one possible set of elements for <m>C</m>.</p>
+<p style="margin-left: 30px"><m>C = \{ </m> <fillin characters="3" name="ans5"/>  <m>,</m> <fillin characters="3" name="ans6"/>  <m> \} </m></p>
+<p/>
+
+<br/>
+
+<p>(c) Given that <m>x \in{A'} </m></p>
+<p>Find one possible value for <m> x </m></p>
+<p style="margin-left: 30px"><m> x = </m> <fillin characters="3" name="ans7"/> </p>
+<p/>
+
+<br/>
+
+<p>(d) Let <m>D</m> be a set such that <m> n(D)={5} </m> and <m> n(D \cap C) = 1 </m></p>
+<p style="margin-left: 30px"><m> n(D \cup C) = </m> <fillin characters="3" name="ans8"/> </p>
+<p/></div></statement>
+<solution><div><p/><h3><alert>Worked Solution:</alert></h3>
+<p>(a) <m> n(B)=4 </m> means that <m>B</m> is a set with 4 elements and <m> n(A \cap B)=3 </m> means that <m>A</m> and <m>B</m> have exactly 3 elements in common.
+<br/>So <m>B</m> is a set with 3 elements from <m>A</m> and one element not from <m>A</m>, for example:</p>
+<p style="margin-left: 30px"><m> B = \{ {20} , {15} , {17} , 23 \} </m></p>
+
+<br/>
+
+<p>(b) <m> n(C)=2 </m> means that <m>C</m> is a set with 2 elements and <m> C \subset B </m> means that <m>C</m> is a subset of <m>B</m>, so every element of <m>C</m> is also in <m>B</m>.
+<br/>So <m>C</m> is a set with any 2 elements from your <m>B</m>, for example:</p>
+<p style="margin-left: 30px"><m> C = \{ {15}, 23 \} </m></p>
+
+<br/>
+
+<p>(c) <m>x \in A' </m> means that <m>x</m> is an element of the <alert>complement</alert> of <m>A</m>, <m>x \in \mathbb{R} \setminus A</m>.
+<br/>So, <m>x</m> is any real number that is not in <m>A</m>, for example:</p>
+<p style="margin-left: 30px"><m> x= 359 </m></p>
+
+<br/>
+
+<p>(d) <m> n(D)={5} </m> means that <m>D</m> is a set with <m>{5}</m> elements, and we know that <m>C</m> has 2 elements from (b).</p>
+<p><m> n(D \cap C) =1 </m> tells us that <m>D</m> and <m>C</m> have one element in common.</p>
+<p><m> n(D \cup C) </m>, the union of <m>D</m> and <m>C</m>, is the number of elements in either <m>D</m> or <m>C</m> - how many element in total?</p>
+<p>You can draw a quick Venn Diagram if you aren't comfortable doing this in your head:</p>
+<p><image alt="Sets (d) Venn Solution Example" width="50%" class="img-responsive atto_image_button_middle" source="stack/images/set-operations-and-cardinality-calculations-in-set-theory-SetsVennEx.jpg"/></p>
+<p>So the number of elements, all together (considering one is shared) is <m> n(D \cup C) = {6}</m></p></div></solution>
+<answer><p><m>20</m></p></answer>
+<answer><p><m>16</m></p></answer>
+<answer><p><m>15</m></p></answer>
+<answer><p><m>21</m></p></answer>
+<answer><p><m>20</m></p></answer>
+<answer><p><m>16</m></p></answer>
+<answer><p><m>21</m></p></answer>
+<answer><p><m>6</m></p></answer>
+</stack-static>

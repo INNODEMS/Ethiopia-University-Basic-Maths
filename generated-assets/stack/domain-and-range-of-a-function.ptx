@@ -1,0 +1,85 @@
+<stack-static>
+<statement><div><p>Find the domain and range of <m>f(x)=x^2{+} {11}x {+}{35}</m>.</p><p/>
+<p>Give your answer as interval of the real numbers.</p>
+<p><em>Note: To enter intervals of you real line, you should write the relevant text in the table below.</em></p>
+
+<tabular width="250" cellspacing="1" cellpadding="0" border="1" style="margin-left: 30px">
+  <row>
+    <cell style="text-align: center;">Intervals</cell>
+    <cell style="text-align: center;">Input Syntax</cell>
+  </row>
+  <row>
+    <cell style="text-align: center;"><m> [a,b] </m></cell>
+    <cell style="text-align: center;"><c>cc(a,b)</c></cell>
+  </row>
+  <row>
+    <cell style="text-align: center;"><m> (a,b) </m></cell>
+    <cell style="text-align: center;"><c>oo(a,b)</c></cell>
+  </row>
+  <row>
+    <cell style="text-align: center;"><m> [a,b) </m></cell>
+    <cell style="text-align: center;"><c>co(a,b)</c></cell>
+  </row>
+  <row>
+    <cell style="text-align: center;"><m> (a,b] </m></cell>
+    <cell style="text-align: center;"><c>oc(a,b)</c></cell>
+  </row>
+ <row>
+    <cell style="text-align: center;"><m> (a, \infty) </m></cell>
+    <cell style="text-align: center;"><c>oo(a,inf)</c></cell>
+  </row>
+ <row>
+    <cell style="text-align: center;"><m> (-\infty, b] </m></cell>
+    <cell style="text-align: center;"><c>oc(-inf,b)</c></cell>
+  </row>
+ <row>
+    <cell style="text-align: center;"><m> (-\infty, \infty) </m></cell>
+    <cell style="text-align: center;"><c>oo(-inf,inf)</c></cell>
+  </row>
+</tabular>
+
+
+<br/>
+
+<p>(a) <m>Dom(f)=</m> <fillin characters="8" name="ans1"/> </p>
+<p/>
+<p>(b) <m>Range(f) =</m> <fillin characters="8" name="ans2"/> </p>
+<p/></div></statement>
+<solution><div><h3>Worked Solution</h3>
+
+<p>(a) To determine the domain of the function, we need to identify any restrictions on the values of <m>x</m> that would make the expression undefined.</p>
+<p>Looking at the function expression <m>f(x)=x^2{+} {11}x {+}{35}</m>, we observe that there are no explicit limitations or restrictions on the variable <m>x</m>. </p>
+<p>Therefore, the domain of <m>f(x)</m> is all real numbers, which can be denoted as,</p>
+<p style="margin-left: 30px"><m> Dom(f) = \mathbb{R} = {\left( -\infty ,\, \infty \right)}</m></p>
+
+<br/>
+
+<p>(b) Next, we determine the range of the function. 
+<br/>The range represents the set of all possible values that <m>f(x)</m> can attain as <m>x</m> varies.</p>
+
+<p>Since we recognize that <m>f(x)</m> is a quadratic function, the range will be given by a <alert>half-line</alert>, <m> [a, \infty) </m> or <m> (-\infty, a] </m>
+<br/>Where the maximum or minimum value of <m>f(x)</m> is determined by the vertex of the quadratic function.</p>
+
+<br/>
+
+<p>To determine the vertex of the quadratic function, we can "complete the square".
+<br/><em>Note: It is also possible to use a calculus method here to determine the turning point of the function, which is the same as the vertex.</em>
+
+</p><p hidden=""><m>{\mathbf{False}}</m></p>
+<p style="margin-left: 30px"><md number="yes">
+<mrow>f(x) \amp = x^2{+} {\left| 11\right|}x {+}{\left| 35\right|}</mrow>
+<mrow>\amp = {{\left(x+\frac{11}{2}\right)}^2-\frac{121}{4}+35}</mrow>
+<mrow>\amp = {{\left(x+\frac{11}{2}\right)}^2+\frac{19}{4}}</mrow>
+</md></p>
+<p hidden=""><m>{\mathbf{True}}</m></p>
+
+<br/>
+
+<p>Therefore, <m>f(x)</m> has a <alert>minimum</alert> value of <m>{\frac{19}{4}}</m> since <m>({x+\frac{11}{2}})^2 \geq 0</m>
+<br/>Hence, the vertex of <m>f(x)</m> occurs at <m> ({-\frac{11}{2}}, {\frac{19}{4}}) </m>.</p>
+
+<p>Then, considering the shape of a quadratic function, the range of the function <m>f(x)</m> can be expressed as:</p>
+<p style="margin-left: 30px"><m>Range(f)= \{ y \in \mathbb{R}: y \geq {\frac{19}{4}} \} ={\left[ \frac{19}{4},\, \infty \right)}</m>.</p></div></solution>
+<answer><p><m>\left( -\infty ,\, \infty \right)</m></p></answer>
+<answer><p><m>\left[ \frac{19}{4},\, \infty \right)</m></p></answer>
+</stack-static>

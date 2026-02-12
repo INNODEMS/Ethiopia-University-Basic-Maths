@@ -1,0 +1,23 @@
+<stack-static>
+<statement><div><p>Consider the function, <m> \displaystyle g(x)=\frac{{x+4}}{{1-2 x}} </m></p>
+<p>Find the inverse function <m> \displaystyle g^{-1}(x)</m></p>
+<p style="margin-left: 30px"><m> \displaystyle g^{-1} (x) = </m> <fillin characters="15" name="ans1"/> </p>
+<p/></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p>To find the inverse of the function, we follow the procedure below.</p><p> 
+</p><p>1. Replace the <m>g(x)</m> in <m>{g\left(x\right)=\frac{x+4}{1-2 x}}</m> with <m>y</m>.</p>
+<p style="margin-left: 30px"><m> \displaystyle {y=\frac{x+4}{1-2 x}} </m></p>
+
+<p>2. Change all the <m>x</m>'s in the equation to <m>y</m>, and all of the <m>y</m>'s to <m>x</m>.</p>
+<p style="margin-left: 30px"><m> \displaystyle{x=\frac{y+4}{1-2 y}} </m></p>
+
+<p>3. Make <m>y</m> subject of the formulae.</p>
+<p style="margin-left: 30px"><m> \displaystyle {x-2 x y=y+4} </m></p>
+<p style="margin-left: 30px"><m> \displaystyle {-2 x y-y=4-x} </m></p>
+<p style="margin-left: 30px"><m> \displaystyle {\left(-2 x-1\right) y=4-x} </m></p>
+<p style="margin-left: 30px"><m> \displaystyle {y=\frac{4-x}{-2 x-1}} </m></p>
+
+<p>4. Replace <m>y</m> with the inverse function.</p>
+<p style="margin-left: 30px"><m>g^{-1}(x)={\frac{4-x}{-2 x-1}}</m></p></div></solution>
+<answer><p><m>\frac{4-x}{-2 x-1}</m></p></answer>
+</stack-static>

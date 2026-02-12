@@ -1,0 +1,35 @@
+<stack-static>
+<statement><span><br/> Find the hyperbola with focus <m> F_{1} ({-3}, {-1})</m> and  <m> F_{2} ({-7}, {-5})</m> and vertices <m> A_{1}({-2}, {-3}), A_{2}({0}, {-3}) </m>.
+<br/><fillin characters="15" name="ans1"/>  </span></statement>
+<solution><div><h3> Worked solution</h3>
+<p>To find the hyperbola with focus <m> F_{1} ({-3}, {-1})</m> and  <m> F_{2} ({-7}, {-5})</m> and vertices <m> A_{1}({-2}, {-3}), A_{2}({0}, {-3}) </m>. we proceed as follows:</p>
+<p> The equation of a hyperbola in standard form follows:</p>
+ <p><me>  \displaystyle \frac{(x-h)^2}{a^2} - \frac{(y-k)^2}{b^2} = 1</me></p>
+<p> Here the center is <m>(h, k)</m> and the vertices are <m> (h \pm a, k) </m></p>
+<p> In addtion if <m>F_{1} (x_{F_{1}}, y_{F_{1}})</m> and <m>F_{2} (x_{F_{2}}, y_{F_{2}}) </m> are the focus, and <m> A_{1} (x_{A_{1}}, y_{A_{1}})</m>, <m> A_{2} (x_{A_{2}}, y_{A_{2}})</m> are vertices.</p>
+<p>let <m>F_{1}F_{2}=2\cdot c</m> and <m>A_{1}A_{2}=2\cdot a</m> . Then we have the following relations:</p>
+<p><m>
+(1) \left\{ \begin{array}{r}
+a^2+b^2= c^2\\ 
+2 \cdot a= A_{1} A_{2} 
+\end{array}\right. </m> 
+ and <m> (2) \left\{ \begin{array}{r}
+h=  \displaystyle \frac{x_{F_{1}}+x_{F_{2}}}{2}\\ 
+k=  \displaystyle \frac{y_{F_{1}}+y_{F_{2}}}{2}
+\end{array}\right. </m> </p>
+<p> In this case, focus <m> F_{1} ({-3}, {-1})</m> and  <m> F_{1} ({-7}, {-5})</m> and vertices <m> A_{1}({-2}, {-3}), A_{2}({0}, {-3}) </m>. </p>
+<p>Using the information above we have</p>
+<p> <m>2 \cdot a =|x_{A_{1}}-x_{A_{2}}|=|({-2})-({0})|={2} \implies a =  \displaystyle {1}</m>.</p>
+<p> <m>2 \cdot c =|x_{F_{1}}-x_{F_{2}}|=|({-3})-({-7})|={4} \implies c =  \displaystyle {2}</m>.</p>
+<p> <m> b=  \displaystyle {\sqrt{3}} </m></p>
+<p> Using the system (2), we get 
+<m> \left\{ \begin{array}{r}
+h=  \displaystyle \frac{({-3})+({-7})}{2} = {-5} \\ 
+k=  \displaystyle \frac{({-1})+({-5})}{2} = {-3}
+\end{array}\right. </m> </p>
+<p> Therefore, the equation of the hyperbola is:</p>
+<p> <m>  \displaystyle \frac{(x-({-5}))^2}{1} - \frac{(y-({-3}))^2}{3} = 1</m></p>
+<p> <m>  \displaystyle {3\cdot {\left(x+5\right)}^2-{\left(y+3\right)}^2=3} </m></p>
+<p> <m> {-y^2-6\cdot y+3\cdot x^2+30\cdot x+63=0} </m></p></div></solution>
+<answer><p><m>-y^2-6\cdot y+3\cdot x^2+30\cdot x+63=0</m></p></answer>
+</stack-static>

@@ -1,0 +1,41 @@
+<stack-static>
+<statement><div><p> Find the hyperbola with foci <m> F_{1} ({3-\sqrt{5}}, {-3})</m> and  <m> F_{1} ({\sqrt{5}+3}, {-3})</m> and asymptotes <m> (l_{{3},{2}}): {y-3= \pm 2\cdot \left(x+3\right)}  </m>.</p>
+<p><fillin characters="25" name="ans1"/>  </p></div></statement>
+<solution><div><p><alert><h3>Worked solution</h3></alert></p>
+<p>We need to find the equation of the hyperbola with foci <m> F_{1} ({3-\sqrt{5}}, {-3})</m> and  <m> F_{1} ({\sqrt{5}+3}, {-3})</m> and asymptotes <m> (l_{{3},{2}}): {y-3= \pm 2\cdot \left(x+3\right)}  </m>.
+<br/> The equation of a hyperbola opening left and right in standard form follows: <m>\displaystyle  \frac{(x-h)^2}{a^2}- \frac{(y-k)^2}{b^2}=1.</m>
+<br/> Here the center is <m>(h, k)</m> and the vertices are <m> (h \pm a, k) </m>
+<br/> Let <m>F_{1} (x_{F_{1}}, y_{F_{1}})</m> and <m>F_{2} (x_{F_{2}}, y_{F_{2}}) </m> be the foci, and <m> (l): y - y_{0} = \pm u (x-x_{0}) </m> the asymptotes, we have <m>F_{1}F_{2}=2\cdot c</m>. Then we have the following relations:
+<br/><m>
+(1) \left\{ \begin{array}{r}
+a^2+b^2= c^2\\ 
+b= u \cdot a
+\end{array}\right. </m> 
+ and <m> (2) \left\{ \begin{array}{r}
+h=  \displaystyle \frac{x_{F_{1}}+x_{F_{2}}}{2}\\ 
+k=  \displaystyle \frac{y_{F_{1}}+y_{F_{2}}}{2}
+\end{array}\right. </m> 
+<br/> In this case, foci are <m> F_{1} ({3-\sqrt{5}}, {-3})</m> and  <m> F_{1} ({\sqrt{5}+3}, {-3})</m>, and asymptotes <m> (l_{{3},{2}}): {y-3= \pm 2\cdot \left(x+3\right)}  </m>, 
+<br/>Using the information above we have
+<br/> <m> u = {2}  \implies  b=  {2}  \cdot a </m>
+<br/> <m>2 \cdot c =|x_{F_{1}}-x_{F_{2}}|=|({3-\sqrt{5}})-({\sqrt{5}+3})|={2\cdot \sqrt{5}} \implies c = {\sqrt{5}}</m>.
+<br/> The system (1) becomes: <br/><m>
+(1) \left\{ \begin{array}{r}
+a^2+b^2= {5}\\ 
+b= {2} \cdot a
+\end{array}\right. \implies 
+\left\{ \begin{array}{r}
+a=  \displaystyle {1}\\ 
+b=  \displaystyle {2}
+\end{array}\right.</m> 
+<br/> Using the system (2), we get 
+<m> \left\{ \begin{array}{r}
+h=  \displaystyle \frac{({3-\sqrt{5}})+({\sqrt{5}+3})}{2} = {3} \\ 
+k=  \displaystyle \frac{({-3})+({-3})}{2} = {-3}
+\end{array}\right. </m> 
+<br/> Therefore, the equation of the hyperbola is:
+<br/> <m>  \displaystyle \frac{(x-({3}))^2}{1} - \frac{(y-({-3}))^2}{4} = 1</m>
+<br/> <m> \displaystyle {4\cdot {\left(x-3\right)}^2-{\left(y+3\right)}^2=4} </m>
+<br/> <m> {-y^2-6\cdot y+4\cdot x^2-24\cdot x+23=0} </m></p></div></solution>
+<answer><p><m>-y^2-6\cdot y+4\cdot x^2-24\cdot x+23=0</m></p></answer>
+</stack-static>

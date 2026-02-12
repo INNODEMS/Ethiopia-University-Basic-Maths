@@ -1,0 +1,5 @@
+<stack-static>
+<statement><div><p>Input <m>\sin 2x</m> into the answer box.</p>
+<p><fillin characters="15" name="ans1"/> </p></div></statement>
+<answer><p><m>\sin \left( 2\cdot x \right)</m></p></answer>
+</stack-static>

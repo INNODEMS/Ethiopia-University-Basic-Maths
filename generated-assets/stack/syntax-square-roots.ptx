@@ -1,0 +1,6 @@
+<stack-static>
+<statement><div><p>Input <m>{\sqrt{\alpha\cdot x}}</m> into the box below.</p>
+<p><fillin characters="15" name="ans1"/> </p>
+<p>Remember, you can type <m>\sqrt{x}</m> as <c>sqrt(x)</c>.</p></div></statement>
+<answer><p><m>\sqrt{\alpha\cdot x}</m></p></answer>
+</stack-static>

@@ -890,9 +890,7 @@
 
 
         <exercise>
-            <stack-moodle label="proof-by-contraposition" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Argument-and-validity/Proof-by-contraposition.xml" />
-            </stack-moodle>
+            <stack label="proof-by-contraposition" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Argument-and-validity/Proof-by-contraposition.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FArgument-and-validity%2FProof-by-contraposition.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsec-argument-and-validity.ptx">Add review</url>
             </conclusion>
@@ -900,9 +898,7 @@
             
 
         <exercise>
-            <stack-moodle label="proof-by-contrapositions-with-comprehensions" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Argument-and-validity/Proof-by-contrapositions-with-comprehensions.xml" />
-            </stack-moodle>
+            <stack label="proof-by-contrapositions-with-comprehensions" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Argument-and-validity/Proof-by-contrapositions-with-comprehensions.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FArgument-and-validity%2FProof-by-contrapositions-with-comprehensions.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsec-argument-and-validity.ptx">Add review</url>
             </conclusion>

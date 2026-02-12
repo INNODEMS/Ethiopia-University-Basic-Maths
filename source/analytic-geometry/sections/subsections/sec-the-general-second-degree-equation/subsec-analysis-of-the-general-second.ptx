@@ -351,9 +351,7 @@
 
 
         <exercise>
-            <stack-moodle label="finding-equations-and-graphs-of-conic-sections-with-specific-pro" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Analysis-of-the-general-second-degree-equation/Finding-Equations-and-Graphs-of-Conic-Sections-with-Specific-Pro.xml" />
-            </stack-moodle>
+            <stack label="finding-equations-and-graphs-of-conic-sections-with-specific-pro" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Analysis-of-the-general-second-degree-equation/Finding-Equations-and-Graphs-of-Conic-Sections-with-Specific-Pro.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FAnalysis-of-the-general-second-degree-equation%2FFinding-Equations-and-Graphs-of-Conic-Sections-with-Specific-Pro.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-the-general-second-degree-equation%2Fsubsec-analysis-of-the-general-second.ptx">Add review</url>
             </conclusion>
@@ -361,9 +359,7 @@
             
 
         <exercise>
-            <stack-moodle label="graph-analysis-hyperbola-and-intersecting-lines-with-b-0" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Analysis-of-the-general-second-degree-equation/Graph-Analysis-Hyperbola-and-Intersecting-Lines-with-B-0.xml" />
-            </stack-moodle>
+            <stack label="graph-analysis-hyperbola-and-intersecting-lines-with-b-0" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Analysis-of-the-general-second-degree-equation/Graph-Analysis-Hyperbola-and-Intersecting-Lines-with-B-0.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FAnalysis-of-the-general-second-degree-equation%2FGraph-Analysis-Hyperbola-and-Intersecting-Lines-with-B-0.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-the-general-second-degree-equation%2Fsubsec-analysis-of-the-general-second.ptx">Add review</url>
             </conclusion>
@@ -371,9 +367,7 @@
             
 
         <exercise>
-            <stack-moodle label="rotation-of-axes-conic-section-locus-and-graph-sketch" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Analysis-of-the-general-second-degree-equation/Rotation-of-Axes-Conic-Section-Locus-and-Graph-Sketch.xml" />
-            </stack-moodle>
+            <stack label="rotation-of-axes-conic-section-locus-and-graph-sketch" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Analysis-of-the-general-second-degree-equation/Rotation-of-Axes-Conic-Section-Locus-and-Graph-Sketch.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FAnalysis-of-the-general-second-degree-equation%2FRotation-of-Axes-Conic-Section-Locus-and-Graph-Sketch.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-the-general-second-degree-equation%2Fsubsec-analysis-of-the-general-second.ptx">Add review</url>
             </conclusion>

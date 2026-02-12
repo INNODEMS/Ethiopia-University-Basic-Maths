@@ -1,0 +1,20 @@
+<stack-static>
+<statement><div><p>Give the converse of the given statement, then their truth values.</p>
+<hr/>
+<p><alert>Statement:</alert> "<m>1+1=3</m> if <m>2+2=4</m>."</p>
+<hr/>
+<p>Converse:[ Whenever 2+2=3, 1+1=3. | 1+1=3 only if 2+2=4. | 2+2=4, therefore 1+1=3. | 2+2=4 only if 1+1=3. ]</p>
+<p>The given statement is [ true | false ], and its converse is [ true | false ]</p>
+<p> </p></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<hr/>
+<p><alert>Statement:</alert>"<m>1+1=3</m> if <m>2+2=4</m>."</p>
+<hr/>
+<p>We recall that the converse of <m>P \implies Q</m>, is <m>Q \implies P</m>. <alert>Note:</alert> You can refer to other forms for reading <m>P \implies Q</m> from Week 1.</p>
+<p>Recall also, <m>P \implies Q</m> is false when <m>P</m> is true and <m>Q</m> is false, and it is true otherwise.</p>
+<p>Converse: ""<m>1+1=3</m> only if <m>2+2=4</m>."</p>
+<p>The given statement is false, and its converse is true.</p></div></solution>
+<answer><p>1+1=3 only if 2+2=4.</p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+</stack-static>

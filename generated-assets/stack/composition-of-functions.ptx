@@ -1,0 +1,18 @@
+<stack-static>
+<statement><div><p>Given the following two functions,</p>
+<p style="margin-left: 30px"><m>f(x)={3 x+7}</m>
+<br/><m>g(x)={x^2-2}</m></p>
+<p>Determine the composition <m>f(g(x))</m>.</p>
+
+<p style="margin-left: 30px"><m> f(g(x)) = </m> <fillin characters="10" name="ans1"/> </p>
+<p/></div></statement>
+<solution><div><h3>Worked Solution</h3>
+
+<p>To find <m>f(g(x))</m> we need to apply the function <m>f(x)</m> to the function <m>g(x)</m>. We compute the following,</p>
+<p style="margin-left: 30px"><md number="yes">
+<mrow>f(g(x)) \amp = f({x^2-2})</mrow>
+<mrow>\amp = {3 \left(x^2-2\right)+7}</mrow>
+<mrow>\amp = {3 x^2+1}</mrow>
+</md></p></div></solution>
+<answer><p><m>3 x^2+1</m></p></answer>
+</stack-static>

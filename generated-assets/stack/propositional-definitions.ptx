@@ -1,0 +1,46 @@
+<stack-static>
+<statement><div><p>Complete the following definitions relating to propositional logic.</p>
+
+<br/>
+
+<p>(a) A “proposition” is a statement that is [ either true or false | false | true | either true or false but not both ]</p>
+<p/>
+
+<br/>
+
+<p>(b) The “implication”, <m>p \Rightarrow q</m>, is the statement that,</p>
+<p>if <m>p</m> is true [ exactly when | if | only if | if and only if | depending on whether ] <m>q</m> is [ false | indeterminable | true ].</p>
+<p> </p>
+
+<br/>
+
+<p>(c) The “bi-implication” or “equivalence”, <m>p \iff q</m>, is the statement that,</p>
+<p><m>p</m> is true [ only if | if and only if | depending on whether | if ] <m>q</m> is also [ false | indeterminable | true ].</p>
+<p> </p>
+
+<p/></div></statement>
+<solution><div><h3>Worked solution</h3>
+
+<p>The correct completed statements are the following:</p>
+
+<br/>
+
+<p>(a) A “proposition” is a statement that is <alert>either true or false but not both</alert>.
+<br/>For example, “a cube has 9 faces” or “<m>x^2 - 3x + 2 = 0</m>".</p>
+
+<br/>
+
+<p>(b) The “implication”, <m>p \Rightarrow q</m>, means <alert>if <m>p</m> is true then <m>q</m> is true</alert>.
+<br/>This does not mean that the truth of <m>q</m> depends on <m>p</m>; it is simply the logical relationship “if <m>p</m>, then <m>q</m>”.
+<br/>For example, “if <m>x=2</m>, then <m>x^2 - 3x + 2 = 0</m>”.</p>
+
+<br/>
+
+<p>(c) The “bi-implication” or “equivalence”, <m>p \iff q</m>, means that <alert><m>p</m> is true if and only if <m>q</m> is true</alert>.
+<br/>For example, “<m>x^2 - 3x + 2 = 0</m> if and only if <m>x=2</m> or <m>x=1</m>”.</p></div></solution>
+<answer><p>either true or false but not both</p></answer>
+<answer><p>if</p></answer>
+<answer><p>true</p></answer>
+<answer><p>if and only if</p></answer>
+<answer><p>true</p></answer>
+</stack-static>

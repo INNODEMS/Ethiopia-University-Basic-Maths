@@ -1,0 +1,32 @@
+<stack-static>
+<statement><div><p>1. Find the modulus <m>r</m> and argument <m>\theta </m> of <m>{-\frac{7 \sqrt{3}}{2}}{+}{\frac{7 \mathrm{i}}{2}}</m>.</p> 
+<p>Give your answers in exact form (in terms of square roots and <m>\pi</m>). Recall that <m>\sqrt{a}</m> is entered as sqrt(a) and <m>\pi</m> is entered as %pi.</p>
+<p><m>r = </m> <fillin characters="15" name="ans1"/>  </p>
+<p><m>\theta = </m> <fillin characters="15" name="ans2"/>  </p>
+<p>2. Find the modulus <m>q</m> and argument <m>\delta </m> of the complex conjugate of <m>{-\frac{7 \sqrt{3}}{2}}{+}{\frac{7 \mathrm{i}}{2}}</m>.</p> 
+<p>Give your answers in exact form.</p>
+<p><m>q = </m> <fillin characters="15" name="ans3"/>  </p>
+<p><m>\delta = </m> <fillin characters="15" name="ans4"/>  </p></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p>1. The complex number in question is <m>{-\frac{7 \sqrt{3}}{2}}{+}{\frac{7 \mathrm{i}}{2}}</m>. If we consider it in the form <m>a + b\cdot i</m>, then <m>a = {-\frac{7 \sqrt{3}}{2}}</m> and <m>b = {\frac{7}{2}}</m>. So, the modulus of <m>{-\frac{7 \sqrt{3}}{2}}{+}{\frac{7 \mathrm{i}}{2}}</m> is</p>
+<p><m>r = \left| {-\frac{7 \sqrt{3}}{2}}{+}{\frac{7 \mathrm{i}}{2}}\right| = \sqrt{a^2 + b^2}</m></p>
+<p><m> = \sqrt{\left( {-\frac{7 \sqrt{3}}{2}}\right) ^2 + \left( {\frac{7}{2}}\right) ^2}</m></p>
+<p><m> = \sqrt{ {\frac{147}{4}} + {\frac{49}{4}}}</m></p>
+<p><m> = \sqrt{{49}}</m></p>
+<p><m> = {7}</m></p>
+<br/>
+<p>The complex number in question is <m>{-\frac{7 \sqrt{3}}{2}}{+}{\frac{7 \mathrm{i}}{2}}</m>. If we consider it in the form <m>a + b\cdot i</m>, then <m>a = {-\frac{7 \sqrt{3}}{2}}</m> and <m>b = {\frac{7}{2}}</m>.</p> 
+<p>We first note that, in the Argand Diagram, <m>{-\frac{7 \sqrt{3}}{2}}{+}{\frac{7 \mathrm{i}}{2}}</m> lies in quadrant number <m>{2}</m>, which means that the argument <m>\theta </m> is within the range <m>{\frac{\pi}{2}}&lt;\theta &lt; {\pi}</m>.</p>
+So, <m>\theta = \tan^{-1}\left( \frac{{\frac{7}{2}}}{{\frac{7 \sqrt{3}}{2}}}\right) </m><p/>
+<p> <m>= \tan^{-1}\left( {\frac{1}{\sqrt{3}}}\right) </m></p>
+<p> <m>= {-\frac{\pi}{6}}</m>.</p>
+<p>2. So, considering the symmetry of the unit circle, for <m>{-\frac{7 \sqrt{3}}{2}}{+}{\frac{7 \mathrm{i}}{2}}</m>, <m>\theta = {\frac{5 \pi}{6}}</m>.</p>
+<br/>
+<p>The modulus of a complex number and its conjugate are the same as the distance from the origin in the argand diagram will not change. So, <m>q = r = {7}</m>.</p>
+<br/>
+<p>In the Argand Diagram, the complex conjugate of a number is its reflection on the <m>x-</m>axis. Therefore, its argument is the negative of the argument of the original number. In this case, <m>\delta = -\theta = {-\frac{5 \pi}{6}}</m>.</p></div></solution>
+<answer><p><m>7</m></p></answer>
+<answer><p><m>\frac{5 \pi}{6}</m></p></answer>
+<answer><p><m>7</m></p></answer>
+<answer><p><m>-\frac{5 \pi}{6}</m></p></answer>
+</stack-static>

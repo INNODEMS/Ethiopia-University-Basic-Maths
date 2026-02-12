@@ -1,0 +1,46 @@
+<stack-static>
+<statement><div><p>We define the relation, <m>f</m>, to be the subset of <m> \mathbb{Z} \times \mathbb{Z} </m> such that</p>
+<p style="margin-left: 30px"><m> f=\{ ({5}mn, {3 m+4 n}) : m,n \in \mathbb{Z} \} </m></p>
+
+<br/>
+
+<p>Find two pairs of integers <m>(m_1, n_1)</m> and <m>(m_2, n_2)</m> that take the same value in the domain of the relation, but different values in the range.
+<br/>This then shows that <m>f</m> is <alert>not</alert> a function.</p>
+
+<p style="margin-left: 30px"><m> m_{1} = </m> <fillin characters="5" name="ans1"/>  and <m> n_{1} = </m> <fillin characters="5" name="ans1s"/> </p> 
+<p style="margin-left: 30px"><m> m_{2} = </m> <fillin characters="5" name="ans2"/>   and <m> n_{2} = </m> <fillin characters="5" name="ans2s"/> </p>
+<p/></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p>We have the relation,</p>
+<p style="margin-left: 30px"><m> f=\{ ({5}mn, {3 m+4 n}) : m,n \in \mathbb{Z} \} </m></p>
+
+<p>We require two pairs of integer coordinates <m>(m,n)</m> where the values in the domain of the relation, <m>{5 n m}</m>, are the same. 
+<br/>For this we can choose any number with a non-unique factorization, so any non-prime integer, then take <m>m</m> and <m>n</m> to be the different pairs of factors.
+<br/>For example, choosing <m>{6}</m> we have distinct factorizations, 
+
+</p><p style="margin-left: 30px"><m>{6} = {1} \times {6}</m>
+<br/><m>{6} = {2} \times {3}</m></p>
+
+<br/>
+
+<p>We also require that the value of the pairs of integers are different in the range of the relation, <m>{3 m+4 n}</m>,
+<br/>We can verify that this is the case in the above example.
+
+</p><p style="margin-left: 30px">For <m>(m,n) = ({1}, {6})</m>, we have <m>{3 m+4 n=27}</m></p>
+<p style="margin-left: 30px">For <m>(m,n) = ({2}, {3})</m>, we have <m>{3 m+4 n=18}</m></p>
+
+<p>Therefore we may take</p>
+<p style="margin-left: 30px"><m>(m_1,n_1) = ({1}, {6})</m></p>
+<p style="margin-left: 30px"><m>(m_2,n_2) = ({2}, {3})</m></p>
+
+<br/>
+
+<p>In particular, <m>f</m> cannot be a function since,</p>
+<p style="margin-left: 30px"><m>f({30}) = f({5} \cdot {1} \cdot {6}) = {3} \cdot {1} + {4} \cdot {6} = {27}</m>
+<br/><m>f({30}) = f({5} \cdot {2} \cdot {3}) = {3} \cdot {2} + {4} \cdot {3} = {18}</m></p>
+<p>So, since <m>{27} \neq {18}</m>, <m>f</m> is <alert>not</alert> a well-defined function.</p></div></solution>
+<answer><p><m>1</m></p></answer>
+<answer><p><m>6</m></p></answer>
+<answer><p><m>2</m></p></answer>
+<answer><p><m>3</m></p></answer>
+</stack-static>

@@ -1,0 +1,19 @@
+<stack-static>
+<statement><div><p>Give the contrapositive of the given statement, then their truth values.</p>
+<hr/>
+<p><alert>Statement:</alert> "<m>2+2=4</m> only if <m>1+1=3.</m>"</p>
+<hr/>
+<p>Contrapositive: [ Whenever 1+1=3,  2+2=4. | 1+1=2 is a necessary condition for 2+2=5. | 1+1=2 is a sufficient condition for  2+2=5. | 2+2=5 implies 1+1=2. ]</p>
+<p>The given statement is [ true | false ], and its contrapositive is [ true | false ]</p>
+<p> </p></div></statement>
+<solution><div><h3><alert>Worked solution</alert></h3>
+<hr/>
+<p><alert>Statement:</alert> "<m>2+2=4</m> only if <m>1+1=3</m>."</p>
+<hr/>
+<p>We recall that the contrapositive of <m>P \implies Q</m>, is <m>\neg Q \implies \neg P</m>. </p>
+<p>Contrapositive: "1+1=2 is a sufficient condition for 2+2=5."</p>
+<p>The given statement is false, and its contrapositive is false.</p></div></solution>
+<answer><p>1+1=2 is a sufficient condition for  2+2=5.</p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+</stack-static>

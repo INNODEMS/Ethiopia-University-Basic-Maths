@@ -71,9 +71,7 @@
 
 
         <exercise>
-            <stack-moodle label="determine-which-statements-are-true" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Definition-and-examples-of-propositions/Determine-which-statements-are-true.xml" />
-            </stack-moodle>
+            <stack label="determine-which-statements-are-true" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Definition-and-examples-of-propositions/Determine-which-statements-are-true.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FDefinition-and-examples-of-propositions%2FDetermine-which-statements-are-true.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-definition-and-examples-of-propositions.ptx">Add review</url>
             </conclusion>
@@ -81,9 +79,7 @@
             
 
         <exercise>
-            <stack-moodle label="propositional-definitions" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Definition-and-examples-of-propositions/Propositional-definitions.xml" />
-            </stack-moodle>
+            <stack label="propositional-definitions" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Definition-and-examples-of-propositions/Propositional-definitions.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FDefinition-and-examples-of-propositions%2FPropositional-definitions.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-definition-and-examples-of-propositions.ptx">Add review</url>
             </conclusion>
@@ -91,9 +87,7 @@
             
 
         <exercise>
-            <stack-moodle label="using-definition-of-statement-to-say-whether-or-not-the-sentence" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Definition-and-examples-of-propositions/Using-definition-of-statement-to-say-whether-or-not-the-sentence.xml" />
-            </stack-moodle>
+            <stack label="using-definition-of-statement-to-say-whether-or-not-the-sentence" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Definition-and-examples-of-propositions/Using-definition-of-statement-to-say-whether-or-not-the-sentence.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FDefinition-and-examples-of-propositions%2FUsing-definition-of-statement-to-say-whether-or-not-the-sentence.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-definition-and-examples-of-propositions.ptx">Add review</url>
             </conclusion>

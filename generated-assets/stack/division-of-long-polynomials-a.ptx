@@ -1,0 +1,347 @@
+<stack-static>
+<statement><div><p>Perform long division</p>
+<p><m> ({5 x^3+4 x^2-x-6}) \div ({x-3})=</m> <fillin characters="15" name="ans1"/> </p></div></statement>
+<solution><div><h3>Worked Solution</h3>
+
+
+
+
+    <tabular style="margin-bottom:0pt; border-collapse:collapse;">
+        
+            <row>
+                <cell>
+                    <p> </p>
+                </cell>
+                <cell style="width:20.8pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:43pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:24.75pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:35.85pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p><m>{5 x^2}</m></p>
+                </cell>
+                <cell style="width:21.4pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p>+</p>
+                </cell>
+                <cell style="width:35.85pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p><m>{19 x}</m></p>
+                </cell>
+                <cell style="width:21.4pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p>+</p>
+                </cell>
+                <cell style="width:23.7pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p><m>{56}</m></p>
+                </cell>
+                <cell style="width:20.55pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:19.35pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+            </row>
+            <row>
+                <cell style="width:21.05pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p>x</p>
+                </cell>
+                <cell style="width:20.8pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p>-</p>
+                </cell>
+                <cell style="width:43pt; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding-right:5.03pt;  ">
+                    <p><m>{3}</m></p>
+                </cell>
+                <cell style="width:24.75pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; padding-right:5.4pt; padding-left:5.03pt; ">
+                    <p> </p>
+                </cell>
+                <cell style="width:27.85pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p><m>{5 x^3}</m></p>
+                </cell>
+                <cell style="width:21.4pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p>+</p>
+                </cell>
+                <cell style="width:27.85pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p><m>{4 x^2}</m></p>
+                </cell>
+                <cell style="width:21.4pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p>-</p>
+                </cell>
+                <cell style="width:23.7pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p><m>{x}</m></p>
+                </cell>
+                <cell style="width:20.55pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p>-</p>
+                </cell>
+                <cell style="width:19.35pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p><m>{6}</m></p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+            </row>
+            <row>
+                <cell style="width:21.05pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:20.8pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:43pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:24.75pt; padding-right:5.4pt;  ">
+                    <p>-</p>
+                </cell>
+                <cell style="width:40.85pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p>( <m>{5 x^3}</m></p>
+                </cell>
+                <cell style="width:21.4pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p>-</p>
+                </cell>
+                <cell style="width:45.85pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p> <m>{15 x^2}</m> )</p>
+                </cell>
+                <cell style="width:21.4pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:23.7pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:20.55pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <p> </p>
+                </cell>
+                <cell style="width:20.8pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:43pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:24.75pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:27.85pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:21.4pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:35.85pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p><m>{19 x^2}</m></p>
+                </cell>
+                <cell style="width:21.4pt; padding-right:5.4pt;  ">
+                    <p>-</p>
+                </cell>
+                <cell style="width:23.7pt; padding-right:5.4pt;  ">
+                    <p><m>{x}</m></p>
+                </cell>
+                <cell style="width:20.55pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <p> </p>
+                </cell>
+                <cell style="width:20.8pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:43pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:24.75pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:27.85pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:21.4pt; padding-right:5.4pt;  ">
+                    <p>-</p>
+                </cell>
+                <cell style="width:35.85pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p>(<m>{19 x^2}</m></p>
+                </cell>
+                <cell style="width:21.4pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p>-</p>
+                </cell>
+                <cell style="width:45.7pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p><m>{57 x}</m> )</p>
+                </cell>
+                <cell style="width:20.55pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <p> </p>
+                </cell>
+                <cell style="width:20.8pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:43pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:24.75pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:27.85pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:21.4pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:27.85pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:21.4pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:35.7pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p><m>{56 x}</m></p>
+                </cell>
+                <cell style="width:20.55pt; padding-right:5.4pt;  ">
+                    <p>-</p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p><m>{6}</m></p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <p> </p>
+                </cell>
+                <cell style="width:20.8pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:43pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:24.75pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:27.85pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:21.4pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:27.85pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:21.4pt; padding-right:5.4pt;  ">
+                    <p>-</p>
+                </cell>
+                <cell style="width:35.7pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p>(<m>{56 x}</m></p>
+                </cell>
+                <cell style="width:20.55pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p>-</p>
+                </cell>
+                <cell style="width:35.35pt; border-bottom:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p><m>{168}</m>)</p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+            </row>
+            <row>
+                <cell>
+                    <p> </p>
+                </cell>
+                <cell style="width:20.8pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:43pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:24.75pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:27.85pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:21.4pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:27.85pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:21.4pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:23.7pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:20.55pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:35.35pt; border-top:0.75pt solid #000000; padding-right:5.4pt;  ">
+                    <p><m>{162}</m></p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+                <cell style="width:19.35pt; padding-right:5.4pt;  ">
+                    <p> </p>
+                </cell>
+            </row>
+        
+    </tabular>
+    <p> </p>
+    <p style="bottom: 10px; right: 10px; position: absolute;"><url href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0;">Converted to HTML with WordToHTML.net</url></p>
+
+
+</div></solution>
+<answer><p><m>5 x^2+19 x+\frac{162}{x-3}+56</m></p></answer>
+</stack-static>

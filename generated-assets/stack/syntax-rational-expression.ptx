@@ -1,0 +1,5 @@
+<stack-static>
+<statement><div><p>Enter the following <me>{\frac{x^2}{\left(x-5\right)\cdot \left(x+1\right)}}</me> in STACK. Use the <c>/</c> sign for division, and make sure to use brackets when needed. Use the <c>^</c> sign to denote a power, and make sure you input multiplication as <c>a*b</c>.</p>
+<p><fillin characters="15" name="ans1"/> </p></div></statement>
+<answer><p><m>\frac{x^2}{\left(x-5\right)\cdot \left(x+1\right)}</m></p></answer>
+</stack-static>

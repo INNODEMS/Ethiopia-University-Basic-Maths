@@ -1,0 +1,11 @@
+<stack-static>
+<statement><p>Note that the existential quantification of <m>Q(x)</m> is the proposition "There exists an element <m>x</m> in the domain such that <m>Q(x)</m>." 
+The notation <m> \exists x Q(x) </m> denotes the existential quantification of <m>Q(x)</m>. 
+
+Let <m>Q(x)</m> be the statement "<m>x &gt; 3.</m>"
+What is the truth value of the quantification <m>  \exists x Q(x) </m>, where the domain of <m>x</m> consists of all real numbers? [ true | false ]  </p></statement>
+<solution><div><p><alert><h3>Worked solution</h3></alert></p>
+Let <m> x = 4 </m> (i.e. <m>4 &gt; 3 \equiv </m> True ) the existential quantification of 
+<m>Q(x)</m>, which is <m>  \exists x Q(x) </m>, is true.</div></solution>
+<answer><p><m>\mathbf{True}</m></p></answer>
+</stack-static>

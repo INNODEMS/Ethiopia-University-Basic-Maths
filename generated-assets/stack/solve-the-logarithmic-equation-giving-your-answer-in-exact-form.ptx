@@ -1,0 +1,21 @@
+<stack-static>
+<statement><div><p>Solve the following logarithmic equation, giving your answer in exact form in terms of <m>e</m>.</p> 
+<p><m>\ln({x+8})-\ln(x) = {-3}</m></p>
+<p><em>Note: <m>e</m> is entered as %e.</em></p>
+<p><fillin characters="15" name="ans1"/> </p>
+<p/></div></statement>
+<solution><div><h3>Worked Solution:</h3>
+<p>To solve the equation, we first combine the two logarithm functions using the standard laws of logarithms.
+</p><p style="margin-left: 30px"><m>\ln({x+8}) - \ln(x) = {-3}</m></p>
+<p style="margin-left: 30px"><m>\ln \left({\frac{x+8}{x}}\right) = {-3}</m></p>
+
+<p><br/>We may now apply the exponential function to both sides. In other words, we raise <m>e</m> to the power of both sides, which cancels out the logarithm funciton.</p>
+<p style="margin-left: 30px"><m>{\frac{x+8}{x}} = {e^ {- 3 }}</m></p>
+<p style="margin-left: 30px"><m>{x+8} = x{e^ {- 3 }} </m></p>
+
+<p><br/>Finally, we solve the resulting linear equation.</p>
+<p style="margin-left: 30px"><m>x-x </m><m>{e^ {- 3 }} = {-8}</m></p>
+<p style="margin-left: 30px"><m>x ({1-e^ {- 3 }}) = {-8}</m></p>
+<p style="margin-left: 30px"><m>\displaystyle x = \frac{{-8}}{{1-e^ {- 3 }}}</m></p></div></solution>
+<answer><p><m>-\frac{8}{1-e^ {- 3 }}</m></p></answer>
+</stack-static>

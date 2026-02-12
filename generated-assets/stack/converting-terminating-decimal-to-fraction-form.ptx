@@ -1,0 +1,13 @@
+<stack-static>
+<statement><div><p>Convert the  termination decimal <m>{36.5}</m> to fraction form.</p>
+<p><fillin characters="5" name="ans1"/> </p></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p>Step 1: Identify the whole number and decimal parts.</p>
+<p>The whole number part is <m>{36}</m>. </p>
+<p>The decimal part is <m>{0.5}</m>. </p>
+
+<p>Step 2: Convert the decimal part to a fraction and simplify it by dividing both the numerator and the denominator by the GCD. <m>{\frac{1}{2}}</m></p>
+
+<p>Step 3: Combine the whole number and  the fraction to get <m>{\frac{73}{2}}</m> .</p></div></solution>
+<answer><p><m>\frac{73}{2}</m></p></answer>
+</stack-static>

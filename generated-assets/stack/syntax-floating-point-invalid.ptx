@@ -1,0 +1,10 @@
+<stack-static>
+<statement><div><p>STACK normally rejects floating point numbers (unless the question demands them). Avoid using floating points when a fraction, such as <m>\frac{1}{2}</m> or a surd <m>\sqrt{2}</m> would be more accurate. </p>
+
+<ol>
+<li>Type in <m>{0.33\cdot x^2+1}</m>.</li>
+<li>If it wasn't valid, then type in <m>{\frac{x^2}{3}+1}</m>.</li>
+</ol>
+<p><fillin characters="15" name="ans1"/> </p></div></statement>
+<answer><p><m>\frac{x^2}{3}+1</m></p></answer>
+</stack-static>

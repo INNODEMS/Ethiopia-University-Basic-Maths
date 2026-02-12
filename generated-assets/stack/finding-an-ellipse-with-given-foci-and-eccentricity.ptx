@@ -1,0 +1,43 @@
+<stack-static>
+<statement><span><br/> Find the ellipse with foci <m> F_{1} ({2}, {3})</m> and  <m> F_{2} ({4}, {7})</m> and eccentricity <m> e={\frac{1}{7}} </m>.
+<br/><fillin characters="15" name="ans1"/>  </span></statement>
+<solution><div><h3>Worked solution</h3>
+<br/> Find the ellipse with foci <m> F_{1} ({2}, {3})</m> and  <m> F_{2} ({4}, {7})</m> and eccentricity <m> e= {\frac{1}{7}}  </m>.
+<br/> The equation of an ellipse in standard form follows:
+ <br/><me> \displaystyle \frac{(x-h)^2}{a^2} + \frac{(y-k)^2}{b^2} = 1</me>
+<br/> Here the center is <m>(h, k)</m>. 
+<br/> In addtion if <m>F_{1} (x_{F_{1}}, y_{F_{1}})</m> and <m>F_{2} (x_{F_{2}}, y_{F_{2}}) </m> are the foci, and <m> e </m>  the eccenticity, let <m>F_{1}F_{2}=2\cdot c</m>
+<br/> We suppose that <m>F_{1}F_{2} </m> is computed along <m> x-axis</m>, that is,  <m> a &gt; b</m>.
+<br/>Then we have the following relations:
+<br/><m>
+(1) \left\{ \begin{array}{r}
+e= \displaystyle \frac{c}{a}\\ 
+a^2=b^2 + c^2
+\end{array}\right. </m> 
+ and <m> (2) \left\{ \begin{array}{r}
+h= \displaystyle \frac{x_{F_{1}}+x_{F_{2}}}{2}\\ 
+k= \displaystyle \frac{y_{F_{1}}+y_{F_{2}}}{2}
+\end{array}\right. </m> 
+<br/> In this case, foci are <m> F_{1} ({2}, {3})</m> and  <m> F_{2} ({4}, {7})</m>, and eccentricity <m> e= \displaystyle {\frac{1}{7}}  </m>.
+<br/>Using the information above we have;
+<br/> <m>2 \cdot c =|x_{F_{1}}-x_{F_{2}}|=|({2})-({4})|={2} \implies c = \displaystyle {1}</m>, and <m> e  =\displaystyle {\frac{1}{7}} </m>
+<br/> The system (1) becomes: <br/><m>
+(1) \left\{ \begin{array}{r}
+b^2=  a^2 - c^2\\ 
+ a=  \displaystyle  \frac{c}{e}
+\end{array}\right. \implies 
+\left\{ \begin{array}{r}
+a= \displaystyle {7}\\ 
+b=\displaystyle  {4\cdot \sqrt{3}}
+\end{array}\right.</m> 
+<br/> Using the system (2), we get 
+<m> \left\{ \begin{array}{r}
+h= \displaystyle \frac{({2})+({4})}{2} = {3} \\ 
+k=\displaystyle  \frac{({3})+({7})}{2} = {5}
+\end{array}\right. </m> 
+<br/> Therefore, the equation of the ellipse is:
+<br/> <m> \displaystyle \frac{(x-({3}))^2}{49} + \frac{(y-({5}))^2}{48} = 1</m>
+<br/> <m> \displaystyle \Leftrightarrow {49\cdot {\left(y-5\right)}^2+48\cdot {\left(x-3\right)}^2=2352} </m>
+<br/> <m> \displaystyle \Leftrightarrow  {49\cdot y^2-490\cdot y+48\cdot x^2-288\cdot x-695=0} </m></div></solution>
+<answer><p><m>49\cdot y^2-490\cdot y+48\cdot x^2-288\cdot x-695=0</m></p></answer>
+</stack-static>

@@ -269,9 +269,7 @@
 
 
         <exercise>
-            <stack-moodle label="locating-center-foci-and-vertices-of-an-ellipse-with-given-min" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-an-ellipse/Locating-Center,-Foci,-and-Vertices-of-an-Ellipse-with-Given-Min.xml" />
-            </stack-moodle>
+            <stack label="locating-center-foci-and-vertices-of-an-ellipse-with-given-min" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-an-ellipse/Locating-Center,-Foci,-and-Vertices-of-an-Ellipse-with-Given-Min.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-an-ellipse%2FLocating-Center%2C-Foci%2C-and-Vertices-of-an-Ellipse-with-Given-Min.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-ellipses%2Fsubsec-definition-of-an-ellipse.ptx">Add review</url>
             </conclusion>
@@ -279,9 +277,7 @@
             
 
         <exercise>
-            <stack-moodle label="properties-of-an-ellipse-center-foci-and-point-verification" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-an-ellipse/Properties-of-an-Ellipse-Center,-Foci,-and-Point-Verification.xml" />
-            </stack-moodle>
+            <stack label="properties-of-an-ellipse-center-foci-and-point-verification" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Analytic-Geometry-(NS)/Definition-of-an-ellipse/Properties-of-an-Ellipse-Center,-Foci,-and-Point-Verification.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FAnalytic-Geometry-%28NS%29%2FDefinition-of-an-ellipse%2FProperties-of-an-Ellipse-Center%2C-Foci%2C-and-Point-Verification.xml&amp;entry.2077830997=source%2Fanalytic-geometry%2Fsections%2Fsubsections%2Fsec-ellipses%2Fsubsec-definition-of-an-ellipse.ptx">Add review</url>
             </conclusion>

@@ -1,0 +1,91 @@
+<stack-static>
+<statement><div><p>We define the <alert>real-valued</alert> function <m> f(x)={\sqrt{36-x^2}} </m></p>
+<p>Determine the domain and the range of <m>f</m>, as subsets of the real numbers represented by inequalities.
+<br/>Also write these sets as intervals of the real numbers.</p>
+<p><em>Note: To enter intervals of you real line, you should write the relevant text in the table below.</em></p>
+
+<tabular width="250" cellspacing="1" cellpadding="0" border="1" style="margin-left: 30px">
+  <row>
+    <cell style="text-align: center;">Intervals</cell>
+    <cell style="text-align: center;">Input Syntax</cell>
+  </row>
+  <row>
+    <cell style="text-align: center;"><m> [a,b] </m></cell>
+    <cell style="text-align: center;"><c>cc(a,b)</c></cell>
+  </row>
+  <row>
+    <cell style="text-align: center;"><m> (a,b) </m></cell>
+    <cell style="text-align: center;"><c>oo(a,b)</c></cell>
+  </row>
+  <row>
+    <cell style="text-align: center;"><m> [a,b) </m></cell>
+    <cell style="text-align: center;"><c>co(a,b)</c></cell>
+  </row>
+  <row>
+    <cell style="text-align: center;"><m> (a,b] </m></cell>
+    <cell style="text-align: center;"><c>oc(a,b)</c></cell>
+  </row>
+ <row>
+    <cell style="text-align: center;"><m> (a, \infty) </m></cell>
+    <cell style="text-align: center;"><c>oo(a,inf)</c></cell>
+  </row>
+ <row>
+    <cell style="text-align: center;"><m> (-\infty, b] </m></cell>
+    <cell style="text-align: center;"><c>oc(-inf,b)</c></cell>
+  </row>
+ <row>
+    <cell style="text-align: center;"><m> (-\infty, \infty) </m></cell>
+    <cell style="text-align: center;"><c>oo(-inf,inf)</c></cell>
+  </row>
+</tabular>
+
+<br/>
+
+<p>(a) <m>Dom(f) = \{ x \in \mathbb{R} : </m> <fillin characters="3" name="ans1"/>  <m>\leq x \leq</m> <fillin characters="3" name="ans2"/>  <m>\}</m> = <fillin characters="7" name="ans5"/>  </p>
+<p/>
+
+<p>(b) <m>Range(f) = \{ y \in \mathbb{R} : </m> <fillin characters="3" name="ans3"/>  <m>\leq x \leq</m> <fillin characters="3" name="ans4"/>  <m>\}</m> = <fillin characters="7" name="ans6"/> </p>
+<p/></div></statement>
+<solution><div><h3>Worked Solution</h3>
+
+<p>(a) Since we require <m>f</m> to be real-valued, to determine the domain of <m>f(x)</m> we need to find the values of <m>x</m> for which <m>{36-x^2} \geq 0</m>.</p>
+
+<p>To do this, we first find the roots of the quadratic. In this case,</p>
+<p style="margin-left: 30px"> <m>{36-x^2} = {\left(6-x\right) \left(x+6\right)}</m></p> 
+<p>So, the roots are <m>x = {-6}</m> and <m>x = {6}</m>.</p>
+
+<p>Now, since the coefficient of the <m>x^2</m> term is negative, the values between the roots will be positive. 
+<br/>In particular, we can verify that for <m>x = 0</m>,</p>
+<p style="margin-left: 30px"><m>{36-x^2} = {36} &gt; 0</m></p>
+
+<p>Hence, the domain of <m>f</m> is the set <m> \{ x \in \mathbb{R} : {-6} \leq x \leq {6} \}={\left[ -6,\, 6\right]} </m></p>
+
+<br/>
+
+<p>(b) To determine the range of <m>f</m>, we need to find the minimal and maximal values of the function. Since <m>f</m> is continuous it must take every value between its minimum and maximum, so these values will give us the range.</p>
+
+<p>To determine the minimum we have, by definition, that the square root function is non-negative. So,</p>
+<p style="margin-left: 30px"><m>f(x) \geq 0</m>.</p>
+<p>To see that <m>f</m> does actually attain the value <m>0</m>, we note that <m>f({6}) = 0</m>.</p>
+
+<br/>
+
+<p>To determine the maximum, we note that the square root function is increasing, so <m>f</m> is maximised at the maximum of <m>{36} - x^2</m>.</p>
+<p>Since <m>x^2 \geq 0</m>, we have,</p>
+<p style="margin-left: 30px"><md number="yes">
+<mrow>\amp  {36} - x^2 \leq {36}</mrow>
+<mrow>\amp \Rightarrow f(x) = {\sqrt{36-x^2}} \leq {6}</mrow>
+</md></p>
+<p>To see that <m>f</m> does actually attain the value <m>{6}</m>, we note that <m>f(0) = {6}</m>.</p>
+
+<br/>
+
+<p>Hence, we have noted that <m>0 \leq f(x) \leq {6}</m> and <m>f</m> attains the values of <m>0</m> and <m>{6}</m>.</p>
+<p>Therefore, the range of <m>f</m> is the set <m> \{ y \in \mathbb{R} : 0 \leq y \leq {6} \}={\left[ 0,\, 6\right]} </m></p></div></solution>
+<answer><p><m>-6</m></p></answer>
+<answer><p><m>6</m></p></answer>
+<answer><p><m>\left[ -6,\, 6\right]</m></p></answer>
+<answer><p><m>0</m></p></answer>
+<answer><p><m>6</m></p></answer>
+<answer><p><m>\left[ 0,\, 6\right]</m></p></answer>
+</stack-static>

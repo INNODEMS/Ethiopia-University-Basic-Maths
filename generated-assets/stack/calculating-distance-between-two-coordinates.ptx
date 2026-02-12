@@ -1,0 +1,30 @@
+<stack-static>
+<statement><div><p>Find the distance between the points <m>A({5},{4})</m>  and <m>B({4},{5})</m>. 
+<br/>Give your answer in it's simplest form.</p>
+<p>Note: type <c>sqrt(x)</c> for <m>\sqrt{x}</m>.</p>
+
+<p style="margin-left: 30px"><m>|AB| = </m> <fillin characters="8" name="ans1"/> </p>
+<p/></div></statement>
+<solution><div><h3>Worked solution</h3>
+
+<p>Recall that the distance between two points <m>P_1(x_1, y_1)</m> and <m>P_2(x_2, y_2)</m> is given by the formula,</p>
+<p style="margin-left: 30px"><m>|P_1 P_2| = \sqrt{(x_2-x_1)^2+(y_2-y_1)^2}</m></p>
+
+<p>In this case, we have,</p>
+<p style="margin-left: 30px"><m>A({5},{4}) \Rightarrow x_1={5}, <nbsp/> y_1={4}</m></p>
+<p style="margin-left: 30px"><m>B({4},{5}) \Rightarrow x_2={4}, <nbsp/> y_2={5}</m></p>
+
+<p>So, the distance between the two points is,</p>
+
+<p hidden=""><m>{\mathbf{False}}</m></p>
+<p style="margin-left: 30px"><md number="yes">
+<mrow>|AB| \amp = {\sqrt{{\left(5-4\right)}^2+{\left(4-5\right)}^2}}</mrow>
+<mrow>\amp ={\sqrt{1^2+\left(-1\right)^2}}</mrow>
+<mrow>\amp ={\sqrt{1+1}}</mrow>
+<mrow>\amp ={\sqrt{2}}</mrow>
+</md></p>
+<p hidden=""><m>{\mathbf{True}}</m></p>
+
+<p>Therefore, <m> |AB| = {\sqrt{2}} </m></p></div></solution>
+<answer><p><m>\sqrt{2}</m></p></answer>
+</stack-static>

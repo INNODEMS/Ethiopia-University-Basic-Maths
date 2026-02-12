@@ -1,0 +1,21 @@
+<stack-static>
+<statement><div><p>Determine in the form <m>p + {\mathrm{i}\cdot q}</m> a complex root of the cubic equation <me> {x^3+\left(-4\cdot \sqrt{3}-4\right)\cdot x^2+\left(16\cdot \sqrt{3}+16\right)\cdot x-64} = 0.</me> </p>
+<p>Note: </p>
+<p><em> - Recall that <m>\sqrt{a} </m> is  also rewritten as <m> a^{\frac{1}{2}}</m>,  with <m>a&gt;0</m>  </em></p>
+<p><em> - Type your answer in one expression using STACK notation, For example: 2^(3/2) + i*2^(3/2)</em></p>
+<p><em> - Do not separate expressions with commas or “or.”</em></p>
+<p/>
+<br/> <fillin characters="15" name="ans1"/> </div></statement>
+<solution><div><h3><alert>Worked Solution</alert></h3>
+<p>Consider the polynomial <m> P(x)={x^3+\left(-4\cdot \sqrt{3}-4\right)\cdot x^2+\left(16\cdot \sqrt{3}+16\right)\cdot x-64} </m></p>
+<p>We observe that <m> P( {4})=0</m>. Then <m>{4}</m> is a root for <m>P(x)=0</m></p>
+<p>By dividing <m>{x^3+\left(-4\cdot \sqrt{3}-4\right)\cdot x^2+\left(16\cdot \sqrt{3}+16\right)\cdot x-64}</m> by <m>{x-4}</m>, we obtain <m>{x^2-4\cdot \sqrt{3}\cdot x+16}</m>.</p>
+<p>So, <m> {x^3+\left(-4\cdot \sqrt{3}-4\right)\cdot x^2+\left(16\cdot \sqrt{3}+16\right)\cdot x-64} = ({x-4})({x^2-4\cdot \sqrt{3}\cdot x+16}) </m> </p>
+<p>Since  <m>{x^3+\left(-4\cdot \sqrt{3}-4\right)\cdot x^2+\left(16\cdot \sqrt{3}+16\right)\cdot x-64}=0</m>, then <m> {x-4=0} </m> or <m> {x^2-4\cdot \sqrt{3}\cdot x+16=0} </m></p>
+<p>Let solve <m> {x^2-4\cdot \sqrt{3}\cdot x+16=0} </m>. When we compute its discriminant <m>\Delta=b^2-4ac</m> with <m>b={-4\cdot \sqrt{3}}, a={1}, c={16}</m> we get, <m>\Delta ={-16}&lt;0</m></p>
+ <p>So the equation <m> {x^2-4\cdot \sqrt{3}\cdot x+16=0} </m> admits two distinct complex roots satisfying the formula; </p>
+<p> <me>x=\frac{-b±\sqrt{- \Delta} {\mathrm{i}}}{2a}</me> </p>
+<p> <me>x=\frac{{+}{4\cdot \sqrt{3}}±\sqrt{{16}} {\mathrm{i}}}{{2}}</me> </p>
+<p><me>x = {2\cdot \mathrm{i}+2\cdot \sqrt{3}} \; \text{or} \;{2\cdot \sqrt{3}-2\cdot \mathrm{i}}</me></p></div></solution>
+<answer><p><m>2\cdot \mathrm{i}+2\cdot \sqrt{3}</m></p></answer>
+</stack-static>

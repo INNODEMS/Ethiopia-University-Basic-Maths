@@ -1,0 +1,67 @@
+<stack-static>
+<statement><span><br/> Find the foci, vertices, and asymptotes of hyperbola <m> {-6\cdot y^2+12\cdot y+3\cdot x^2-30\cdot x+51=0} </m>.
+
+<br/> a) Focus 
+<br/><m> F_{1}=</m>  <fillin characters="7" name="ans1"/>  <m> F_{2}=</m>  <fillin characters="7" name="ans2"/>   <br/><m>\qquad</m>    
+
+<br/> b) Vertices
+<br/> <m> A_{1}=</m>  <fillin characters="7" name="ans3"/>  <m> A_{2}=</m>  <fillin characters="7" name="ans4"/>   <br/><m>\qquad</m>   
+
+<br/> c) Asymptotes: 
+<br/> <m> l_{1}=</m>  <fillin characters="15" name="ans5"/> <m> l_{2}=</m>  <fillin characters="15" name="ans6"/>  
+<br/> <m>\qquad</m>    </span></statement>
+<solution><div><br/><alert>Worked solution</alert>
+<br/><alert>Recall:</alert> Summary of Standard Equations of Hyperbola
+<br/> <tabular border="1" width="60%">
+        <row>
+            <cell width="40%">Equation</cell>
+            <cell>Centre</cell>
+            <cell>Vertices</cell>
+            <cell width="30%">Foci</cell>
+        </row>
+        <row>
+            <cell><m>\displaystyle \frac{{(x-h)^2}}{{a^2}} - \frac{{(y-k)^2}}{{b^2}} = 1</m></cell>
+            <cell><m>(h, k)</m></cell>
+            <cell><m>(h \pm a, k)</m></cell>
+            <cell><m>(h \pm \sqrt{{a^2 + b^2}}, k)</m></cell>
+        </row>
+        <row>
+            <cell><m>\displaystyle \frac{{(y-k)^2}}{{a^2}} - \frac{{(x-h)^2}}{{b^2}} = 1</m></cell>
+            <cell><m>(h, k)</m></cell>
+            <cell><m>(h, k \pm a)</m></cell>
+            <cell><m>(h, k \pm \sqrt{{a^2 + b^2}})</m></cell>
+        </row>
+    </tabular>
+
+<br/>We need to write  <m>{-6\cdot y^2+12\cdot y+3\cdot x^2-30\cdot x+51=0} </m> in standard form <m>\displaystyle \implies  \frac{(x-h)^2}{a^2}- \frac{(y-k)^2}{b^2}=1.</m>
+<br/> Rearrange the eqn as follows;
+<br/><m>{-6\cdot y^2+12\cdot y+3\cdot x^2-30\cdot x=-51}</m>
+<br/>
+<br/> Use completing square method to factories the equation.
+<br/><m>\displaystyle {3\cdot \left(x^2-10\cdot x+25\right)-6\cdot \left(y^2-2\cdot y+1\right)}=  {-51}- {3}({25}) + {6}({1}) </m>
+<br/>
+<br/><m>{3\cdot {\left(x-5\right)}^2-6\cdot {\left(y-1\right)}^2=18}</m>
+<br/>
+<br/><m>\displaystyle{\frac{{\left(x-5\right)}^2}{6}-\frac{{\left(y-1\right)}^2}{3}=1}</m>
+<br/>
+<br/> Note: <m>\displaystyle  h= {5},   k= {1},   a= {\sqrt{6}},   b = {\sqrt{3}}</m> and <m>c =\sqrt(a^2+b^2)= {3}</m>
+
+<br/>
+<br/>From here,
+<br/>
+<br/> a) Focus : <m> (h \pm c, k) \implies  ({2}, {1})</m> and   <m>({8}, {1}) </m>
+<br/>
+<br/> b) Vertices: <m> (h \pm a, k) \implies  ({\sqrt{6}+5}, {1})</m> and   <m> ({5-\sqrt{6}}, {1}) </m>
+<br/>
+<br/> c) Asymptotes: <m> y-k=\pm {\frac{b}{a}} \cdot (x-h) </m>;
+<br/>
+<br/> Which simplifies to;
+<br/> <m> \displaystyle l_{1}: {y-1=\frac{\sqrt{3}\cdot \left(x-5\right)}{\sqrt{6}}} \Leftrightarrow {y-\frac{\sqrt{3}\cdot x}{\sqrt{6}}+\frac{5\cdot \sqrt{3}}{\sqrt{6}}-1=0} </m>
+<br/> <m>\displaystyle  l_{2}: {y-1=-\frac{\sqrt{3}\cdot \left(x-5\right)}{\sqrt{6}}} \Leftrightarrow {y+\frac{\sqrt{3}\cdot x}{\sqrt{6}}-\frac{5\cdot \sqrt{3}}{\sqrt{6}}-1=0} </m></div></solution>
+<answer><p><m>\left(\begin{array}{c} 2 \\ 1 \end{array}\right)</m></p></answer>
+<answer><p><m>\left(\begin{array}{c} 8 \\ 1 \end{array}\right)</m></p></answer>
+<answer><p><m>\left(\begin{array}{c} \sqrt{6}+5 \\ 1 \end{array}\right)</m></p></answer>
+<answer><p><m>\left(\begin{array}{c} 5-\sqrt{6} \\ 1 \end{array}\right)</m></p></answer>
+<answer><p><m>y-\frac{\sqrt{3}\cdot x}{\sqrt{6}}+\frac{5\cdot \sqrt{3}}{\sqrt{6}}-1=0</m></p></answer>
+<answer><p><m>y+\frac{\sqrt{3}\cdot x}{\sqrt{6}}-\frac{5\cdot \sqrt{3}}{\sqrt{6}}-1=0</m></p></answer>
+</stack-static>

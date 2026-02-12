@@ -1,0 +1,44 @@
+<stack-static>
+<statement><div><p>Suppose the vertices of a hyperbola are at <m>({0},{0})</m> and its eccentricity is <m>{1.2}</m>. Then,</p>
+<br/>(a) Find the foci of the hyperbola.
+<br/><m>F1=</m><fillin characters="5" name="ans1"/>  and <m>F2=</m> <fillin characters="5" name="ans2"/> 
+<p/>
+<p>(b) Determine the equation of the hyperbola in standard form.</p>
+<p>Equation of the hyperbola <m>=</m>  <fillin characters="15" name="ans3"/> </p>
+<p>(c) Determine whether each of the following points is on the hyperbola or not</p>
+<p>(i) <m>({-4}, {1})</m> is  [ is on the hyperbola | is not on the hyperbola ] </p>
+<p>(ii)<m>({-8}, {0})</m>  is  [ is on the hyperbola | is not on the hyperbola ] </p></div></statement>
+<solution><div><h3>Worked solution</h3>
+<p>The eccentricity <m>\varepsilon</m> of a hyperbola is given by the formula:</p>
+<p><m> \displaystyle \varepsilon=\frac{c}{a}</m>  So <m>c =\varepsilon \times a</m> 
+</p><p>Where:</p>
+<ul>
+    <li><m>\varepsilon</m> is the eccentricity of the hyperbola.</li>
+    <li><m>c</m> is the distance from the center to the foci.</li>
+    <li><m>a</m> is the distance from the center to a vertex.</li>
+    </ul>
+<p>Given that the eccentricity is <m>{\frac{6}{5}}</m> and the vertices are at <m>({0}, \pm {4})</m>, we have:</p>
+<p><m>  \displaystyle \varepsilon = {\frac{6}{5}}</m>, and <m> \displaystyle a={4}</m> , since the center of the hyperbola is at the origin <m>(0, 0)</m>.</p>
+<p><m> \displaystyle c= {\frac{6}{5}} \times a= {\frac{6}{5}} \times {4}={4.8}</m></p>
+<p>So, the distance from the center to the foci  is <m>{4.8}</m>.</p>
+<p>Since the vertices are at <m>({0}, \pm {4})</m>, the center of the hyperbola is at the origin <m>(0, 0)</m>, the foci lie on the <m>y-</m>axis at a distance of <m>{4.8}</m> units from the center in the positive and negative <m>y-</m>directions.</p>
+<p>Therefore, the foci of the hyperbola are located at <m>  \displaystyle ({0},{4.8})</m> and <m>({0},{-4.8})</m>.</p>
+<p>b) Now, let's determine whether each of the given points lies on the hyperbola with the equation <m>\displaystyle \frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1</m> where <m>a={4}</m> and <m>b</m> can be calculated using the eccentricity <m>e</m> formula.</p>
+<p><m>\displaystyle e^{2}=1+\frac{b^{2}}{a^{2}}</m></p>
+<p>Solving for <m>b^{2}</m>,</p>
+<p><m>\displaystyle b^{2}=a^{2}(e^{2}-1)={4^2}({{\left(\frac{6}{5}\right)}^2}-1)={7.04}</m></p>
+<p>Thus the equation is: <m>\displaystyle {\frac{x^2}{4^2}-\frac{y^2}{7.04}=1}</m>.</p>
+<p> (i) <m>\displaystyle ({-4} , {1})</m></p>
+<p>Substitute  <m>x= {-4}</m> and <m>y={1}</m> into the equation;</p>
+<p><m>\displaystyle \frac{{-4}^2}{{4}^2}-\frac{{1}^2}{{7.04}}={0.86}</m> ≠ <m>1</m></p>
+<p>The point <m>({-4} , {1} )</m> is not on the hyperbola. </p>
+<p> (ii) <m>\displaystyle ({-8} , {0})</m></p>
+<p>Substitute  <m>\displaystyle x= {-8}</m> and <m>y={0}</m> into the equation;</p>
+ <p><m>\displaystyle \frac{{-8}^2}{{4}^2}-\frac{{0}^2}{{7.04}}={4}</m> ≠ <m>1</m></p>
+<p>The point <m>({-8} , {0})</m> is not on the hyperbola.</p></div></solution>
+<answer><p><m>\left[\begin{array}{c} 0 \\ 4.8 \end{array}\right]</m></p></answer>
+<answer><p><m>\left[\begin{array}{c} 0 \\ -4.8 \end{array}\right]</m></p></answer>
+<answer><p><m>\frac{x^2}{4^2}-\frac{y^2}{7.04}=1</m></p></answer>
+<answer><p>is not on the hyperbola</p></answer>
+<answer><p>is not on the hyperbola</p></answer>
+</stack-static>

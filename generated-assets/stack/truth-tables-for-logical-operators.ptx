@@ -1,0 +1,120 @@
+<stack-static>
+<statement><div><p>(a) Complete the truth table below for a bi-implication.</p>
+
+<br/>
+
+<tabular style="border: 1px solid black; border-collapse: collapse; text-align: center; margin-left: 30px;">
+  <row>
+    <cell style="width:100px; border: 1px solid black"><m>A</m></cell>
+    <cell style="width:100px; border: 1px solid black"><m>B</m></cell>
+    <cell style="width:200px; border: 1px solid black"><m>A {\iff} B</m></cell>
+  </row>
+  <row>
+    <cell style="border: 1px solid black">true</cell>
+    <cell style="border: 1px solid black">true</cell>
+    <cell style="border: 1px solid black">[ true | false ]</cell>
+  </row>
+  <row>
+    <cell style="border: 1px solid black">true</cell>
+    <cell style="border: 1px solid black">false</cell>
+    <cell style="border: 1px solid black">[ true | false ]</cell>
+  </row>
+  <row>
+    <cell style="border: 1px solid black">false</cell>
+    <cell style="border: 1px solid black">true</cell>
+    <cell style="border: 1px solid black">[ true | false ]</cell>
+  </row>
+  <row>
+    <cell style="border: 1px solid black">false</cell>
+    <cell style="border: 1px solid black">false</cell>
+    <cell style="border: 1px solid black">[ true | false ]</cell>
+  </row>
+</tabular>
+
+<br/>
+
+<p>   </p>
+<p/>
+
+<p>(b) On a day where it <alert>is raining</alert>, I claim that "today it is raining if and only if I am not telling the truth".
+<br/>Which of the following options describes the truth of this statement.</p>
+
+<p/><ol marker="(1)">
+<li>This statement is true</li>
+<li>This statement is false</li>
+<li>This statement is neither true nor false since each option gives a contradiction</li>
+<li>This statement could be either true or false</li>
+</ol> 
+<p/></div></statement>
+<solution><div><h3>Worked solution:</h3>
+
+<p>(a) The correct truth table for the implication operator is the following,</p>
+
+<tabular style="border: 1px solid black; border-collapse: collapse; text-align: center; margin-left: 30px;">
+  <row>
+    <cell style="width:100px; border: 1px solid black"><m>A</m></cell>
+    <cell style="width:100px; border: 1px solid black"><m>B</m></cell>
+    <cell style="width:200px; border: 1px solid black"><m>A {\iff} B</m></cell>
+  </row>
+  <row>
+    <cell style="border: 1px solid black">true</cell>
+    <cell style="border: 1px solid black">true</cell>
+    <cell style="border: 1px solid black"><alert>true</alert></cell>
+  </row>
+  <row>
+    <cell style="border: 1px solid black">true</cell>
+    <cell style="border: 1px solid black">false</cell>
+    <cell style="border: 1px solid black"><alert>false</alert></cell>
+  </row>
+  <row>
+    <cell style="border: 1px solid black">false</cell>
+    <cell style="border: 1px solid black">true</cell>
+    <cell style="border: 1px solid black"><alert>false</alert></cell>
+  </row>
+  <row>
+    <cell style="border: 1px solid black">false</cell>
+    <cell style="border: 1px solid black">false</cell>
+    <cell style="border: 1px solid black"><alert>true</alert></cell>
+  </row>
+</tabular>
+
+<br/>
+
+<p>(b) To evaluate the given statement, we can separate the two claims as,</p>
+<p style="margin-left: 30px">
+  <m>A</m>: "it is raining"
+  <br/><m>B</m>: "I am not telling the truth"
+</p>
+<p>We can now use the truth table in part (a) to evaluate the full statement.</p>
+
+<br/>
+
+<p>We know immediately from the information in the question that statement <m>A</m> is <alert>true</alert>, so we have a case of either the first or second row in the table.</p>
+
+<tabular style="border: 1px solid black; border-collapse: collapse; text-align: center; margin-left: 30px;">
+  <row>
+    <cell style="width:100px; border: 1px solid black"><m>A</m></cell>
+    <cell style="width:100px; border: 1px solid black"><m>B</m></cell>
+    <cell style="width:200px; border: 1px solid black"><m>A {\iff} B</m></cell>
+  </row>
+  <row>
+    <cell style="border: 1px solid black">true</cell>
+    <cell style="border: 1px solid black">true</cell>
+    <cell style="border: 1px solid black"><alert>true</alert></cell>
+  </row>
+  <row>
+    <cell style="border: 1px solid black">true</cell>
+    <cell style="border: 1px solid black">false</cell>
+    <cell style="border: 1px solid black"><alert>false</alert></cell>
+  </row>
+</tabular>
+
+<br/>
+
+<p>Then, from the table we see that the <alert>as long as there is not a contradiction</alert>, the statement could be either true or false.</p><p>Let us suppose first that the statement is <alert>true</alert>, so we are in the first row of the shortened truth table above. Since I am therefore telling the truth, we know statement <m>B</m> is <alert>false</alert>.<br/>Now looking at the relevant row in the shortened truth table, this <alert>does not</alert> correspond to the evaluation of <m>B</m>, so we have a contradiction and the statement <alert>cannot be true</alert>.</p><p>Let us suppose now that the statement is <alert>false</alert>, so we are in the second row of the shortened truth table above. Since I am therefore not telling the truth, we know statement <m>B</m> is <alert>true</alert>.<br/>Now looking at the relevant row in the shortened truth table, this <alert>does not</alert> correspond to the evaluation of <m>B</m>, so we have a contradiction and the statement <alert>cannot be false</alert>.</p><p>Then, considering both cases, the statement is <alert>neither true nor false</alert> since each option gives a contradiction.</p></div></solution>
+<answer><p>true</p></answer>
+<answer><p>false</p></answer>
+<answer><p>false</p></answer>
+<answer><p>true</p></answer>
+<answer><p><m>(3)</m></p></answer>
+</stack-static>

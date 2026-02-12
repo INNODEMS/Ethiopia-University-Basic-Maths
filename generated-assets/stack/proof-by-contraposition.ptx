@@ -1,0 +1,26 @@
+<stack-static>
+<statement><div><p>Consider the following proposition, and fill in the blanks in its proof. Then answer the comprehension questions below.</p>
+<hr/>
+<p><alert>Proposition:</alert> Let <m>x, y \in \mathbb{R} </m>. If <m>y^3 + yx^2 \leq x^3 + xy^2</m>, then <m>y \leq x </m>.</p>
+<hr/>
+<p><alert>Proof:</alert> <br/>Suppose it is not true that <m>y \leq x</m>, so [ x&gt;y | y &gt;= x | y&gt;x ] . Then [ y - x &gt; 0 | y - x &lt;= 0 | y - x&lt;0 ] .  <br/>Multiply both sides of <m>y− x &gt; 0</m> by the positive value <m>x^2 + y^2</m> . We obtain (y− x)(x^2 + y^2 ) = <fillin characters="8" name="ans3"/>   <br/>Therefore <fillin characters="8" name="ans4"/>,  <br/>so it is [ true | false ] , that <m>y^3 + yx^2 \leq x^3 + x y^2</m>.  <br/>Therefore, <m>\forall x, y \in \mathbb{R} </m>. If <m>y^3 + yx^2 \leq x^3 + xy^2</m>, then <m>y \leq x </m> is [ true | false ]  </p>
+<hr/>
+<p><alert>Proof Comprehension questions</alert> <br/>1. What is the type of proof? [ Direct proof | Proof by contraposition | Proofs by contradiction ]   <br/>2. Give the hypothesis used in the proof? <fillin characters="12" name="ans7"/>  <br/>3. Give the obtained conclusion in the proof? <fillin characters="12" name="ans8"/>   <br/>4. Give the negation of the conclusion: <fillin characters="12" name="ans9"/>  </p></div></statement>
+<solution><div><h3>Worked solution</h3>
+<hr/>
+<p><alert>Proposition:</alert> Let <m>x, y \in \mathbb{R} </m>. If <m>y^3 + yx^2 \leq x^3 + xy^2</m>, then <m>y \leq x </m>.</p>
+<hr/>
+<p><alert>Proof:</alert> <br/>Suppose it is not true that <m>y \leq x</m>, so <m> y &gt; x</m>. Then <m> y - x &gt; 0 </m>. <br/>Multiply both sides of <m>y− x &gt; 0</m> by the positive value <m>x^2 + y^2</m> . We obtain: <br/><m> (y− x)(x^2 + y^2 ) </m> = <m> yx^2+y^3-x^3-xy^2 &gt; 0 </m><m> \Leftrightarrow y^3+yx^2&gt;x^3+xy^2 </m> <br/>Therefore <m> {y^3+x^2\cdot y &gt; x\cdot y^2+x^3} </m>, so it is <m> {\mathbf{False}} </m> that <m>y^3 + yx^2 \leq x^3 + x y^2</m>.</p>
+<hr/>
+<p><alert>Proof Comprehension questions</alert> <br/>1. The type of proof used is proof by contraposition.<br/>2. The hypothesis used in the proof: <m> y &gt; x</m> or <m>y-x &gt; 0 </m>.<br/>3. The conclusion used in the proof: <m> y^3 + yx^2 &gt; x^3 + x \cdot y^2</m> <br/>4. Give the negation of the conclusion: <m> y^3 + yx^2 \leq x^3 + xy^2 </m></p></div></solution>
+<answer><p>y&gt;x</p></answer>
+<answer><p>y - x &gt; 0</p></answer>
+<answer><p><m>\left[ y^3-x\cdot y^2+x^2\cdot y-x^3 &gt; 0 , y^3+x^2\cdot y &gt; x\cdot y^2+x^3 \right] </m></p></answer>
+<answer><p><m>y^3+x^2\cdot y &gt; x\cdot y^2+x^3</m></p></answer>
+<answer><p><m>\mathbf{False}</m></p></answer>
+<answer><p><m>\mathbf{True}</m></p></answer>
+<answer><p>Proof by contraposition</p></answer>
+<answer><p><m>y &gt; x</m></p></answer>
+<answer><p><m>{\it yx}^2+y^3 &gt; {\it xy}^2+x^3</m></p></answer>
+<answer><p><m>{\it yx}^2+y^3\leq {\it xy}^2+x^3</m></p></answer>
+</stack-static>

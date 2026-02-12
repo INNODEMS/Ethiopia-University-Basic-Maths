@@ -575,9 +575,7 @@
 
 
         <exercise>
-            <stack-moodle label="evaluating-statements-and-truth-values" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Logical-connectives/Evaluating-Statements-and-Truth-Values.xml" />
-            </stack-moodle>
+            <stack label="evaluating-statements-and-truth-values" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Logical-connectives/Evaluating-Statements-and-Truth-Values.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FLogical-connectives%2FEvaluating-Statements-and-Truth-Values.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-logical-connectives.ptx">Add review</url>
             </conclusion>
@@ -585,9 +583,7 @@
             
 
         <exercise>
-            <stack-moodle label="give-statement-forms-of-the-axioms-of-an-enigma-and-answer-to-an" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Logical-connectives/Give-statement-forms-of-the-axioms-of-an-enigma-and-answer-to-an.xml" />
-            </stack-moodle>
+            <stack label="give-statement-forms-of-the-axioms-of-an-enigma-and-answer-to-an" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Logical-connectives/Give-statement-forms-of-the-axioms-of-an-enigma-and-answer-to-an.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FLogical-connectives%2FGive-statement-forms-of-the-axioms-of-an-enigma-and-answer-to-an.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-logical-connectives.ptx">Add review</url>
             </conclusion>
@@ -595,9 +591,7 @@
             
 
         <exercise>
-            <stack-moodle label="truth-tables-and-logical-connectives-interchanging-operators-an" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Logical-connectives/Truth-Tables-and-Logical-Connectives-Interchanging-Operators-an.xml" />
-            </stack-moodle>
+            <stack label="truth-tables-and-logical-connectives-interchanging-operators-an" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Logical-connectives/Truth-Tables-and-Logical-Connectives-Interchanging-Operators-an.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FLogical-connectives%2FTruth-Tables-and-Logical-Connectives-Interchanging-Operators-an.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-logical-connectives.ptx">Add review</url>
             </conclusion>
@@ -605,9 +599,7 @@
             
 
         <exercise>
-            <stack-moodle label="truth-tables-for-logical-operators" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Logical-connectives/Truth-tables-for-logical-operators.xml" />
-            </stack-moodle>
+            <stack label="truth-tables-for-logical-operators" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Propositional-Logic-and-Set-Theory-(NS-and-SS)/Logical-connectives/Truth-tables-for-logical-operators.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FPropositional-Logic-and-Set-Theory-%28NS-and-SS%29%2FLogical-connectives%2FTruth-tables-for-logical-operators.xml&amp;entry.2077830997=source%2Fpropositional-logic-and-set-theory%2Fsections%2Fsubsections%2Fsec-propositional-logic%2Fsubsec-logical-connectives.ptx">Add review</url>
             </conclusion>

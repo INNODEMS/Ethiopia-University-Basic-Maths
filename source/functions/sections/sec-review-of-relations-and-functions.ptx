@@ -998,9 +998,7 @@
 </exercises>
 
         <exercise>
-            <stack-moodle label="give-example-proving-not-function" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Review-of-relations-and-functions/Give-example-proving-not-function.xml" />
-            </stack-moodle>
+            <stack label="give-example-proving-not-function" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Review-of-relations-and-functions/Give-example-proving-not-function.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReview-of-relations-and-functions%2FGive-example-proving-not-function.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-review-of-relations-and-functions.ptx">Add review</url>
             </conclusion>
@@ -1008,9 +1006,7 @@
             
 
         <exercise>
-            <stack-moodle label="relations-cartesian-products" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Review-of-relations-and-functions/Relations-Cartesian-Products.xml" />
-            </stack-moodle>
+            <stack label="relations-cartesian-products" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Review-of-relations-and-functions/Relations-Cartesian-Products.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReview-of-relations-and-functions%2FRelations-Cartesian-Products.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-review-of-relations-and-functions.ptx">Add review</url>
             </conclusion>
@@ -1018,9 +1014,7 @@
             
 
         <exercise>
-            <stack-moodle label="checking-definition-of-relation" xmlns="http://stack-assessment.org/2025/moodle-question">
-                <xi:include href="../../stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Review-of-relations-and-functions/Checking-definition-of-relation.xml" />
-            </stack-moodle>
+            <stack label="checking-definition-of-relation" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Review-of-relations-and-functions/Checking-definition-of-relation.xml"/>
             <conclusion component="review">
                 <url href="https://docs.google.com/forms/d/e/1FAIpQLSfSNI6CXkmgeSZJh6v0WKkeD9MJ9g4pEQ9r0JaowD4ovNxj5w/viewform?usp=pp_url&amp;entry.699375810=source%2Fstack%2Ftop%2FMathematics-for-NS-SS-23-24-Question-Bank%2FFunctions-%28NS-and-SS%29%2FReview-of-relations-and-functions%2FChecking-definition-of-relation.xml&amp;entry.2077830997=source%2Ffunctions%2Fsections%2Fsec-review-of-relations-and-functions.ptx">Add review</url>
             </conclusion>

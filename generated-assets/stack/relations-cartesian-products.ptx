@@ -1,0 +1,84 @@
+<stack-static>
+<statement><div><p>(a) Consider the two sets <m>A={\left \{4 , 9 , 4 x \right \}}</m> and <m>B={\left \{1 , 4 , 5 y \right \}}</m>. 
+<br/>Find the Cartesian product <m>A \times B</m>.
+<br/><em>Note: To enter a set, write the elements inside “curly braces”, like <c>{1, 2, 3, …}</c>. 
+<br/>The elements of your set will be coordinates contained in <alert>square brackets</alert>, so your answer should have the form <c>{[x1, y1], [x2, y2], ...}</c></em>
+
+</p><p><fillin characters="30" name="ans1"/></p>
+<p/>
+<p/>
+
+<br/>
+
+<p>(b) Now, consider the two sets <m>C={\left \{20 , 5 y , 5 z \right \}}</m> and <m>D={\left \{9 , 22 , 8 x , 9 y , 9 z \right \}}</m>.
+<br/>Determine the number of elements in the Cartesian product <m>C \times D</m>.
+
+</p><p><fillin characters="8" name="ans2"/> </p>
+<p/></div></statement>
+<solution><div><h3>Worked Solution</h3>
+
+<p>For two non-empty sets <m> A = \{ a_i : 1 \leq i \leq m \} </m> and <m> B = \{ b_j : 1 \leq j \leq n \} </m>, the "Cartesian product", <m>A \times B</m>, is the set of all ordered pairs of elements from <m>A</m> and <m>B</m>.</p>
+
+<p style="margin-left: 30px"><m> A \times B = \{ [a_i, b_j] : 1 \leq i \leq m, 1 \leq j \leq n \} </m></p>
+
+<br/>
+
+<p> (a) For the sets <m>A</m> and <m>B</m> given in the question,</p>
+<p style="margin-left: 30px"><m>A \times B = {\left \{\left[ 4 , 1 \right] , \left[ 4 , 4 \right] , \left[ 4 , 5 y \right] , \left[ 9 , 1 \right] , \left[ 9 , 4 \right] , \left[ 9 , 5 y \right] , \left[ 4 x , 1 \right] , \left[ 4 x , 4 \right] , \left[ 4 x , 5 y \right] \right \}}</m></p>
+
+<br/>
+
+<p> (b) We will write <m>n(X)</m> to denote the number of elements in the set <m>X</m>.
+<br/>Then, we can use the fact that <m>n(C \times D) = n(C) \cdot n(D) </m>.</p>
+
+<p>We can visualize why this is true using a table with the individual elements of each of <m>C</m> and <m>D</m> determining the rows and columns respectively.</p>
+
+<br/>
+
+<tabular style="border: 1px solid black; border-collapse: collapse; text-align: center; margin-left: 30px;">
+    <row style="height: 40px;">
+        <cell style="width: 80px; border: 1px solid gray;"/>
+        <cell style="width: 80px; border: 1px solid gray;"><m>c_1</m></cell>
+        <cell style="width: 80px; border: 1px solid gray;"><m>c_2</m></cell>
+        <cell style="width: 80px; border: 1px solid gray"><m>...</m></cell>
+        <cell style="width: 80px; border: 1px solid gray;"><m>c_m</m></cell>
+    </row>
+    <row style="height: 40px;">
+        <cell style="border: 1px solid gray;"><m>d_1</m></cell>
+        <cell style="border: 1px solid gray"><m>[c_1, d_1]</m></cell>
+        <cell style="border: 1px solid gray"><m>[c_2, d_1]</m></cell>
+        <cell style="border: 1px solid gray"><m>...</m></cell>
+        <cell style="border: 1px solid gray"><m>[c_m, d_1]</m></cell>
+    </row>
+    <row style="height: 40px;">
+        <cell style="border: 1px solid gray"><m>d_2</m></cell>
+        <cell style="border: 1px solid gray"><m>[c_1, d_2]</m></cell>
+        <cell style="border: 1px solid gray"><m>[c_2, d_2]</m></cell>
+        <cell style="border: 1px solid gray"><m>...</m></cell>
+        <cell style="border: 1px solid gray"><m>[c_m, d_2]</m></cell>
+    </row>
+    <row style="height: 40px;">
+        <cell style="border: 1px solid gray"><m>...</m></cell>
+        <cell style="border: 1px solid gray"><m>...</m></cell>
+        <cell style="border: 1px solid gray"><m>...</m></cell>
+        <cell style="border: 1px solid gray"/>
+        <cell style="border: 1px solid gray"><m>...</m></cell>
+    </row>
+    <row style="height: 40px;">
+        <cell style="border: 1px solid gray"><m>d_n</m></cell>
+        <cell style="border: 1px solid gray"><m>[c_1,d_n]</m></cell>
+        <cell style="border: 1px solid gray"><m>[c_2,d_n]</m></cell>
+        <cell style="border: 1px solid gray"><m>...</m></cell>
+        <cell style="border: 1px solid gray"><m>[c_m,d_n]</m></cell>
+    </row>
+</tabular>
+
+<br/>
+
+<p>The elements of <m>C \times D</m> are the entries in the table, of which there are <m>m \cdot n</m>.</p>
+
+<p>The set <m>C</m> has <m>{3} </m> elements and the set <m>D</m> has <m>{5} </m> elements.
+<br/>Therefore, <m>C  \times D</m> will have <m>{3} \cdot {5} = {15}</m> elements.</p></div></solution>
+<answer><p><m>\left \{\left[ 4 , 1 \right] , \left[ 4 , 4 \right] , \left[ 4 , 5 y \right] , \left[ 9 , 1 \right] , \left[ 9 , 4 \right] , \left[ 9 , 5 y \right] , \left[ 4 x , 1 \right] , \left[ 4 x , 4 \right] , \left[ 4 x , 5 y \right] \right \}</m></p></answer>
+<answer><p><m>15</m></p></answer>
+</stack-static>

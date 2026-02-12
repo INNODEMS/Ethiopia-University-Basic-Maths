@@ -1,0 +1,18 @@
+<stack-static>
+<statement><div><p>Suppose the center of a circle is <m>O({5},{-2})</m> and <m>P({-1},{-5})</m> is a point on the circle. What is the radius of the circle?</p>
+<p>Radius <m>=</m> <fillin characters="6" name="ans1"/>  </p></div></statement>
+<solution><div><h3>Worked Solution</h3>
+<p>To find the radius of the circle, we can use the distance formula between the center of the circle <m>(C)</m> and any point  (<m>P)</m> on the circle. </p><p>The distance formula between two points <m>(x_1, y_1)</m> and <m>(x_2, y_2)</m> is given by:</p>
+<p><m> \text{Distance} = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} </m></p>
+<p>In this case, the center of the circle is <m>O({5},{-2})</m> and the point on the circle is  <m>P({-1},{-5})</m>. </p>
+<p>Let's substitute these values into the formula:</p>
+<p><md>
+<mrow>\text{Radius} \amp = \sqrt{({-1} - {5})^2 + ({-5} - {-2})^2}</mrow>
+<mrow>\amp = \sqrt{({-6})^2 + ({-3})^2}</mrow>
+<mrow>\amp = \sqrt{{36} + {9}}</mrow>
+<mrow>\amp  = \sqrt{{45}}</mrow>
+<mrow>\amp   \approx {6.71}</mrow>
+<mrow>\text{Therefore, the radius of the circle is approximately}\,  {6.71} \, \text{units.}</mrow>
+</md> </p></div></solution>
+<answer><p><m>3 \sqrt{5}</m></p></answer>
+</stack-static>

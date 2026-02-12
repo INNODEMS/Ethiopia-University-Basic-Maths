@@ -1,0 +1,50 @@
+<stack-static>
+<statement><div><p>Fill in the blanks</p>
+<br/> To find the equation for the line passing through the points <m> P({5}, {2}, {7}) </m> and <m> Q({2}, {-1}, {3}) </m>.
+<br/>We can proceed as follows:
+<br/><alert>Step 1:</alert> First, identify a vector that is parallel to the line, <m> (PQ) </m>.
+<br/><alert>Recall:</alert> A vector that is parallel to the line  is <m> \vec{PQ} </m> or <m> \vec{QP} </m>.
+<br/> <m> \vec{PQ}</m> (<fillin characters="3" name="ans1"/> , <fillin characters="3" name="ans2"/> , <fillin characters="3" name="ans3"/>) 
+<br/> <m> \quad </m>    <m> \quad </m>   <m> \quad </m>  
+<br/><alert>Step 2:</alert>  Picking either point will give you parametric equations for the line.
+<br/>Here, let use <m>P</m> and a parameter <m> \alpha \in \mathbb{R}</m>. <m> \alpha </m> is typed as <alert>alpha</alert>
+<br/> Let the point <m> M(x, y) \in (PQ) </m>, so <m> \vec{PM} </m>  and <m> \vec{PQ} </m> are colinear.
+<br/> This means, there exists <m> \alpha \in \mathbb{R}</m>, such that  <m> \vec{PM} = \alpha \vec{PQ}  </m>
+<br/> <m> \vec{PM} = \alpha \vec{PQ}  \implies {\left[\begin{array}{c} x-5 \\ y-2 \\ z-7 \end{array}\right]}={\left[\begin{array}{c} -3\cdot \alpha \\ -3\cdot \alpha \\ -4\cdot \alpha \end{array}\right]}</m>. Thus
+<br/> <m> x= </m>  <fillin characters="7" name="ans4"/>    
+<br/> <m> y= </m> <fillin characters="7" name="ans5"/>    
+<br/> <m> z= </m> <fillin characters="7" name="ans6"/>    
+<br/><alert>Step 2:</alert> Deduce the equations for the line passing through the points <m>P</m> and <m>Q</m>.
+ <br/> The equations of the line are:
+<br/>  <fillin characters="7" name="ans7"/> = <fillin characters="7" name="ans8"/> = <fillin characters="7" name="ans9"/>  
+<br/> <m> \quad </m>    <m> \quad </m>   <m> \quad </m> </div></statement>
+<solution><div><h3><alert>Worked solution</alert></h3>
+<br/><alert>Step 1:</alert> First, identify a vector that is parallel to the line, <m> (PQ) </m>.
+<br/><alert>Recall:</alert> A vector that is parallel to the line  is <m> \vec{PQ} </m> or <m> \vec{QP} </m>.
+<br/> <m> \vec{PQ} ({-3}, {-3}, {-4}) </m> 
+
+<br/><alert>Step 2:</alert>  Picking either point will give you parametric equations for the line.
+<br/>Here, let use <m>P</m> and a parameter <m> \alpha \in \mathbb{R}</m>. <m> \alpha </m> is typed as <alert>alpha</alert>
+<br/> Let the point <m> M(x, y) \in (PQ) </m>, so <m> \vec{PM} </m>  and <m> \vec{PQ} </m> are colinear.
+<br/> This means, there exists <m> \alpha \in \mathbb{R}</m>, such that  <m> \vec{PM} = \alpha \vec{PQ}  </m>
+<br/> <m> \vec{PM} = \alpha \vec{PQ}  \implies {\left[\begin{array}{c} x-5 \\ y-2 \\ z-7 \end{array}\right]}={\left[\begin{array}{c} -3\cdot \alpha \\ -3\cdot \alpha \\ -4\cdot \alpha \end{array}\right]}</m>. Thus
+<br/> <m> x= {5-3\cdot \alpha} </m>
+<br/> <m> y= {2-3\cdot \alpha} </m>
+<br/> <m> z= {7-4\cdot \alpha} </m>
+
+<br/><alert>Step 2:</alert> Deduce the equations for the line passing through the points <m>P</m> and <m>Q</m>.
+ <br/> Since <m> x= {5-3\cdot \alpha} </m> then <m> \alpha = \frac{{x-5}}{{-3}} </m>     
+ <br/> Similarly  <m> y= {2-3\cdot \alpha} </m> then <m> \alpha = \frac{{y-2}}{{-3}} </m> 
+ <br/>  and <m> z= {7-4\cdot \alpha} </m> then <m> \alpha = \frac{{z-7}}{{-4}} </m> 
+<br/> Therefore, the equations of the line are:
+<br/> <m> {-\frac{x-5}{3}}={-\frac{y-2}{3}}={-\frac{z-7}{4}} </m></div></solution>
+<answer><p><m>-3</m></p></answer>
+<answer><p><m>-3</m></p></answer>
+<answer><p><m>-4</m></p></answer>
+<answer><p><m>5-3\cdot \alpha</m></p></answer>
+<answer><p><m>2-3\cdot \alpha</m></p></answer>
+<answer><p><m>7-4\cdot \alpha</m></p></answer>
+<answer><p><m>-\frac{x-5}{3}</m></p></answer>
+<answer><p><m>-\frac{y-2}{3}</m></p></answer>
+<answer><p><m>-\frac{z-7}{4}</m></p></answer>
+</stack-static>
