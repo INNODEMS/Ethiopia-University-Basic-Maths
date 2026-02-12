@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Finding Distance between Points in R4</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p> Let  \(\mathbf{u} = {@u@}\) and \(\mathbf{v} = {@v@}\), defined in \(\mathbb{R}^4\). </p>
+
+<p>Find the distance between the points \(\mathbf{u}\) and \(\mathbf{v}\). </p>
+
+<p>[[input:ans1]] [[validation:ans1]][[feedback:prt1]] </p>
+<p>(<b>Note:</b>Give your answer in exact form.)</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3><b>Worked Solution</b></h3>
+<p>The distance between two vectors \(\mathbf{u}\) and \(\mathbf{v}\) is<br>\[ d(\mathbf{u},&nbsp;\mathbf{v}) = ||&nbsp;\mathbf{u} -\mathbf{v}||. \]</p><p>In this question we have \(\mathbf{u} = {@u@}\) and let \(\mathbf{v} = {@v@}\) so
+\[ &nbsp;{@u@}-{@v@} = {@ws2@}.\]
+So 
+\[ ||{@ws2@}|| = {@ws3@} = {@ev(ws3,simp)@}.\] 
+</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[simp:true;
+avar:rand_with_step(2,6,1); 
+bvar:-rand_with_step(1,5,2);
+cvar:rand_with_step(1,7,1);
+u:matrix([avar,1,bvar,2]);
+v:matrix([1,0, cvar,3]);
+v3:u-v;
+simp:false;
+ta:sqrt(ev(v3.v3,simp));
+ws2:ev(u-v,simp);
+ws3:sqrt(apply("+",maplist(lambda([ex], ex^2),first(args(ws2)))));]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>  \(\mathbf{u} = {@u@}\) and \(\mathbf{v} = {@v@}\)</p>
+<p>Distance between the points given by \(\mathbf{u}\) and \(\mathbf{v}: {@ta@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>0</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>numerical</type>
+      <tans>ta</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>255323791</deployedseed>
+    <deployedseed>535573114</deployedseed>
+    <deployedseed>751721786</deployedseed>
+    <deployedseed>187729938</deployedseed>
+    <deployedseed>1474941603</deployedseed>
+    <deployedseed>1768668680</deployedseed>
+    <deployedseed>1042643158</deployedseed>
+    <deployedseed>1593581898</deployedseed>
+    <deployedseed>1602941302</deployedseed>
+    <deployedseed>2147272137</deployedseed>
+    <deployedseed>7971695</deployedseed>
+    <deployedseed>743309136</deployedseed>
+    <deployedseed>1279363540</deployedseed>
+    <deployedseed>319762288</deployedseed>
+    <deployedseed>187010987</deployedseed>
+    <deployedseed>405570811</deployedseed>
+    <deployedseed>906951433</deployedseed>
+    <deployedseed>609742365</deployedseed>
+    <deployedseed>1992310825</deployedseed>
+    <deployedseed>1396146074</deployedseed>
+    <deployedseed>481340446</deployedseed>
+    <deployedseed>376378222</deployedseed>
+    <deployedseed>1051544196</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

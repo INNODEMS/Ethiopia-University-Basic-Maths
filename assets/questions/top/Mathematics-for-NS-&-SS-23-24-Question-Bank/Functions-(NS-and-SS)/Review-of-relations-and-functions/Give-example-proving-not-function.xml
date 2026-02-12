@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Give example proving not function</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>We define the relation, \(f\), to be the subset of \( \mathbb{Z} \times \mathbb{Z} \) such that</p>
+<p style="margin-left: 30px">\( f=\{ ({@aa*m*n@}, {@bb*m+cc*n@}) : m,n \in \mathbb{Z} \} \)</p>
+
+<br>
+
+<p>Find two pairs of integers \((m_1, n_1)\) and \((m_2, n_2)\) that take the same value in the domain of the relation, but different values in the range.
+<br>This then shows that \(f\) is <b>not</b> a function.</p>
+
+<p style="margin-left: 30px">\( m_{1} = \) [[input:ans1]] [[validation:ans1]] and \( n_{1} = \) [[input:ans1s]] [[validation:ans1s]]</p> 
+<p style="margin-left: 30px">\( m_{2} = \) [[input:ans2]] [[validation:ans2]]  and \( n_{2} = \) [[input:ans2s]] [[validation:ans2s]]</p>
+<p>[[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked solution</h3>
+<p>We have the relation,</p>
+<p style="margin-left: 30px">\( f=\{ ({@aa*m*n@}, {@bb*m+cc*n@}) : m,n \in \mathbb{Z} \} \)</p>
+
+<p>We require two pairs of integer coordinates \((m,n)\) where the values in the domain of the relation, \({@aa*m*n@}\), are the same. 
+<br>For this we can choose any number with a non-unique factorization, so any non-prime integer, then take \(m\) and \(n\) to be the different pairs of factors.
+<br>For example, choosing {@t_ans1*t_ans1s@} we have distinct factorizations, 
+
+<p style="margin-left: 30px">\({@t_ans1*t_ans1s@} = {@t_ans1@} \times {@t_ans1s@}\)
+<br>\({@t_ans1*t_ans1s@} = {@t_ans2@} \times {@t_ans2s@}\)</p>
+
+<br>
+
+<p>We also require that the value of the pairs of integers are different in the range of the relation, \({@bb*m + cc*n@}\),
+<br>We can verify that this is the case in the above example.
+
+<p style="margin-left: 30px">For \((m,n) = ({@t_ans1@}, {@t_ans1s@})\), we have \({@bb*m+cc*n = bb*t_ans1+cc*t_ans1s@}\)</p>
+<p style="margin-left: 30px">For \((m,n) = ({@t_ans2@}, {@t_ans2s@})\), we have \({@bb*m+cc*n = bb*t_ans2+cc*t_ans2s@}\)</p>
+
+<p>Therefore we may take</p>
+<p style="margin-left: 30px">\((m_1,n_1) = ({@t_ans1@}, {@t_ans1s@})\)</p>
+<p style="margin-left: 30px">\((m_2,n_2) = ({@t_ans2@}, {@t_ans2s@})\)</p>
+
+<br>
+
+<p>In particular, \(f\) cannot be a function since,</p>
+<p style="margin-left: 30px">\(f({@aa*t_ans1*t_ans1s@}) = f({@aa@} \cdot {@t_ans1@} \cdot {@t_ans1s@}) = {@bb@} \cdot {@t_ans1@} + {@cc@} \cdot {@t_ans1s@} = {@bb*t_ans1 + cc*t_ans1s@}\)
+<br>\(f({@aa*t_ans2*t_ans2s@}) = f({@aa@} \cdot {@t_ans2@} \cdot {@t_ans2s@}) = {@bb@} \cdot {@t_ans2@} + {@cc@} \cdot {@t_ans2s@} = {@bb*t_ans2 + cc*t_ans2s@}\)</p>
+<p>So, since \({@bb*t_ans1 + cc*t_ans1s@} \neq {@bb*t_ans2 + cc*t_ans2s@}\), \(f\) is <b>not</b> a well-defined function.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>ordergreat(m,n);
+
+/*Randomization {(aa*m*n, bb*m + cc*n)}*/
+aa:rand(5)+1;
+bb:rand(5)+1;
+cc:rand(5)+1;
+
+if bb + 6*cc # 2*bb + 3*cc then (
+    t_ans1:1,
+    t_ans1s:6,
+    t_ans2:2,
+    t_ans2s:3
+) else (
+    t_ans1:1,
+    t_ans1s:8,
+    t_ans2:2,
+    t_ans2s:4
+);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>\( f=\{ ({@aa*m*n@}, {@bb*m+cc*n@}) : m,n \in \mathbb{Z} \} \)</p>
+<p style="margin-left: 30px">\((m_1,n_1) = ({@t_ans1@}, {@t_ans1s@})\)</p>
+<p style="margin-left: 30px">\((m_2,n_2) = ({@t_ans2@}, {@t_ans2s@})\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>t_ans1</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans1s</name>
+      <type>algebraic</type>
+      <tans>t_ans1s</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>t_ans2</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2s</name>
+      <type>algebraic</type>
+      <tans>t_ans2s</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/* Node 1 - Checks all inputs are integers */
+node1_test: if (integerp(ans1) and integerp(ans1s) and integerp(ans2) and integerp(ans2s)) then 1 else 0;
+
+/* Node 2 - Check product of (m,n) pairs match */
+node2_test: if ans1*ans1s = ans2*ans2s then 1 else 0;
+
+/* Node 3 - Check values in domain differ (for n1-T) */
+/* Node 4 - Check values in domain differ (for n1-F) */
+node3_test: if bb*ans1 + cc*ans1s # bb*ans2 + cc*ans2s then 1 else 0;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node1_test</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>You have included answers which are not <b>integer values</b>.
+<br>Notice that we specify that \(m,n \in \mathbb{Z}\).</p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node2_test</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>2</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node3_test</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>You have correctly determined two pairs of integers for which the values in the domain of the relation are the same.
+<br>However, the values in the range of the relation need to be <b>different</b>. For your answers,</p>
+<p style="margin-left: 30px">\({@bb*m_1 + cc*n_1@} = {@bb@} \cdot {@ans1@} + {@cc@} \cdot {@ans1s@} = {@bb*ans1 + cc*ans1s@}\)
+<br>\({@bb*m_2 + cc*n_2@} = {@bb@} \cdot {@ans2@} + {@cc@} \cdot {@ans2s@} = {@bb*ans1 + cc*ans1s@}\)</p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node3_test</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You have correctly determined two pairs of integers for which the values in the range of the relation are different.
+<br>However, the values in the domain of the relation need to be <b>the same</b>. For your answers,</p>
+<p style="margin-left: 30px">\({@aa*m_1*n_1@} = {@aa@} \cdot {@ans1@} \cdot {@ans1s @} = {@aa*ans1*ans1s@}\)
+<br>\({@aa*m_2*n_2@} = {@aa@} \cdot {@ans2@} \cdot {@ans2s@} = {@aa*ans2*ans2s@} \)</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>For the pairs of integers which you have given, the values in the range of the relation are not the same and nor are the values in the domain different.</p>
+
+<p>Remember that a <b>relation</b>. \(R\), from \(A\) to \(B\) is a subset of the Cartesian product \(A \times B\).</p>
+<p>Then the <b>domain</b> of the relation is the set of first coordinates of the elements of \(R\), so,</p>
+<p style="margin-left: 30px">\(\text{Dom}(R) = \{a \in A : (a,b) \in R\} \)</p>
+<p>Similarly, the <b>range</b> of the relation is the set of second coordinates of the elements of \(R\), so,</p>
+<p style="margin-left: 30px">\(\text{Range}(R) = \{b \in B : (a,b) \in R\)</p>]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1864559397</deployedseed>
+    <deployedseed>953767891</deployedseed>
+    <deployedseed>1815227070</deployedseed>
+    <deployedseed>1349104757</deployedseed>
+    <deployedseed>1080585448</deployedseed>
+    <deployedseed>643830960</deployedseed>
+    <deployedseed>1321979517</deployedseed>
+    <deployedseed>2135519872</deployedseed>
+    <deployedseed>1316491523</deployedseed>
+    <deployedseed>691165538</deployedseed>
+    <deployedseed>656317225</deployedseed>
+    <deployedseed>214354856</deployedseed>
+    <deployedseed>2002927412</deployedseed>
+    <deployedseed>427449609</deployedseed>
+    <deployedseed>250237776</deployedseed>
+    <deployedseed>2142867136</deployedseed>
+    <deployedseed>881226528</deployedseed>
+    <deployedseed>724141050</deployedseed>
+    <deployedseed>1906445509</deployedseed>
+    <deployedseed>1411049914</deployedseed>
+    <deployedseed>1307304409</deployedseed>
+    <deployedseed>48998558</deployedseed>
+    <deployedseed>1386904841</deployedseed>
+    <deployedseed>528825884</deployedseed>
+    <deployedseed>162283235</deployedseed>
+    <deployedseed>550863304</deployedseed>
+    <deployedseed>1384470106</deployedseed>
+    <deployedseed>1219833919</deployedseed>
+    <deployedseed>1428479001</deployedseed>
+    <deployedseed>1528572889</deployedseed>
+    <deployedseed>199836120</deployedseed>
+    <deployedseed>1848820797</deployedseed>
+    <deployedseed>2041530998</deployedseed>
+    <deployedseed>956000492</deployedseed>
+    <deployedseed>522766443</deployedseed>
+    <deployedseed>1454981724</deployedseed>
+    <deployedseed>1840037987</deployedseed>
+    <deployedseed>862644671</deployedseed>
+    <deployedseed>1080043917</deployedseed>
+    <deployedseed>1975269580</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>t_ans1</value>
+      </testinput>
+      <testinput>
+        <name>ans1s</name>
+        <value>t_ans1s</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>t_ans2</value>
+      </testinput>
+      <testinput>
+        <name>ans2s</name>
+        <value>t_ans2s</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-3-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

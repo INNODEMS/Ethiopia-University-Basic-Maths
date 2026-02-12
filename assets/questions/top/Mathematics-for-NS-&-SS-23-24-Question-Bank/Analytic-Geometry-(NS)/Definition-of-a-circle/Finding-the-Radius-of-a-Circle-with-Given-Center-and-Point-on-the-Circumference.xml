@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Finding the Radius of a Circle with Given Center and Point on the Circumference</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Suppose the center of a circle is \(O({@center[1]@},{@center[2]@})\) and \(P({@point[1]@},{@point[2]@})\) is a point on the circle. What is the radius of the circle?</p>
+<p>Radius \(=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3>Worked Solution</h3>
+<p>To find the radius of the circle, we can use the distance formula between the center of the circle \((C)\) and any point  (\(P)\) on the circle. </p><p>The distance formula between two points \((x_1, y_1)\) and \((x_2, y_2)\) is given by:</p>
+<p>\( \text{Distance} = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \)</p>
+<p>In this case, the center of the circle is \(O({@center[1]@},{@center[2]@})\) and the point on the circle is  \(P({@point[1]@},{@point[2]@})\). </p>
+<p>Let's substitute these values into the formula:</p>
+<p>\( \begin{align} \text{Radius} &= \sqrt{({@point[1]@} - {@center[1]@})^2 + ({@point[2]@} - {@center[2]@})^2} \\
+                                           &= \sqrt{({@expr1@})^2 + ({@expr2@})^2} \\
+                                          &= \sqrt{{@expr3@} + {@expr4@}} \\
+                                          & = \sqrt{{@expr5@}} \\
+                                        [[ if test='integerp(sqrt(expr5))' ]] 
+                                        &= {@radius@} \\
+\text{Therefore, the radius of the circle is} \,{@radius@} \,  \text{units.}
+                                       [[ else ]]
+                                      &  \approx {@expr6@}  \\
+\text{Therefore, the radius of the circle is approximately}\,  {@expr6@} \, \text{units.}
+                                      [[/ if]]   \end{align} \) </p>]]></text>
+    </generalfeedback>
+    <defaultgrade>2</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/* Define the coordinates of the center and the point on the circle */
+center: [rand_with_step(-5,5,1), rand_with_step(-5,5,1)];
+point: [rand_with_prohib(-5,5,[centre[1],0,centre[2]]), rand_with_step(-5,5,1)];  
+/* Calculate the radius using the distance formula */
+radius: sqrt((point[1] - center[1])^2 + (point[2] - center[2])^2);
+
+/*Worked Solution*/
+expr1:point[1] - center[1];
+expr2:point[2] - center[2];
+expr3:expr1^2;
+expr4:expr2^2;
+expr5:expr3+expr4;
+expr6:decimalplaces(radius,2);
+/*possible mistakes*/
+incorrect_distance:sqrt((point[1] - center[1]) + (point[2] - center[2]));</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>Suppose the center of a circle is \(O({@center[1]@},{@center[2]@})\) and \(P({@point[1]@},{@point[2]@})\) is a point on the circle. </p>
+<p>Radius \(={@radius@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>radius</tans>
+      <boxsize>6</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>radius</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>NumDecPlaces</answertest>
+        <sans>ans1</sans>
+        <tans>radius</tans>
+        <testoptions>2</testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>incorrect_distance</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.25</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>The distance formula between two points \((x_1, y_1)\) and \((x_2, y_2)\) is: </p><p>Distance \( D= \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\). </p><p>Make sure you squared the differences before adding and taking the square root.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description/>
+        <answertest>NumDecPlaces</answertest>
+        <sans>ans1</sans>
+        <tans>radius</tans>
+        <testoptions>1</testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>4</truenextnode>
+        <trueanswernote>prt1-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>4</name>
+        <description/>
+        <answertest>NumDecPlaces</answertest>
+        <sans>ans1</sans>
+        <tans>radius</tans>
+        <testoptions>3</testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-5-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt1-5-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>306441738</deployedseed>
+    <deployedseed>2044678548</deployedseed>
+    <deployedseed>2055650870</deployedseed>
+    <deployedseed>1211403848</deployedseed>
+    <deployedseed>899248938</deployedseed>
+    <deployedseed>1444000240</deployedseed>
+    <deployedseed>1926829378</deployedseed>
+    <deployedseed>1006954306</deployedseed>
+    <deployedseed>1299307384</deployedseed>
+    <deployedseed>1357855500</deployedseed>
+    <deployedseed>1803453678</deployedseed>
+    <deployedseed>29656647</deployedseed>
+    <deployedseed>339342594</deployedseed>
+    <deployedseed>388440022</deployedseed>
+    <deployedseed>1134619510</deployedseed>
+    <deployedseed>831167716</deployedseed>
+    <deployedseed>272276884</deployedseed>
+    <deployedseed>1471492612</deployedseed>
+    <deployedseed>410057430</deployedseed>
+    <deployedseed>521967081</deployedseed>
+    <deployedseed>304403580</deployedseed>
+    <deployedseed>523489565</deployedseed>
+    <deployedseed>1546442275</deployedseed>
+    <deployedseed>735519438</deployedseed>
+    <deployedseed>346308963</deployedseed>
+    <deployedseed>322277745</deployedseed>
+    <deployedseed>1295425367</deployedseed>
+    <deployedseed>1590612384</deployedseed>
+    <deployedseed>65686183</deployedseed>
+    <deployedseed>75859806</deployedseed>
+    <deployedseed>1357223099</deployedseed>
+    <deployedseed>1812328859</deployedseed>
+    <deployedseed>173811583</deployedseed>
+    <deployedseed>2037620256</deployedseed>
+    <deployedseed>1731433700</deployedseed>
+    <deployedseed>596060500</deployedseed>
+    <deployedseed>63704221</deployedseed>
+    <deployedseed>340471132</deployedseed>
+    <deployedseed>1905577219</deployedseed>
+    <deployedseed>1857961855</deployedseed>
+    <deployedseed>1684797706</deployedseed>
+    <deployedseed>1705230175</deployedseed>
+    <deployedseed>385117346</deployedseed>
+    <deployedseed>1843699170</deployedseed>
+    <deployedseed>1056696648</deployedseed>
+    <deployedseed>721002552</deployedseed>
+    <deployedseed>488765460</deployedseed>
+    <deployedseed>1064638241</deployedseed>
+    <deployedseed>571716658</deployedseed>
+    <deployedseed>869165309</deployedseed>
+    <deployedseed>797558946</deployedseed>
+    <deployedseed>1482014313</deployedseed>
+    <deployedseed>95697135</deployedseed>
+    <deployedseed>373534297</deployedseed>
+    <deployedseed>52804617</deployedseed>
+    <deployedseed>387171152</deployedseed>
+    <deployedseed>748370737</deployedseed>
+    <deployedseed>870412779</deployedseed>
+    <deployedseed>871008183</deployedseed>
+    <deployedseed>1159884824</deployedseed>
+    <deployedseed>1041323460</deployedseed>
+    <deployedseed>2108729534</deployedseed>
+    <deployedseed>513264447</deployedseed>
+    <deployedseed>1276040793</deployedseed>
+    <deployedseed>1480428835</deployedseed>
+    <deployedseed>1689111405</deployedseed>
+    <deployedseed>161652176</deployedseed>
+    <deployedseed>1296999185</deployedseed>
+    <deployedseed>161853555</deployedseed>
+    <deployedseed>1944433745</deployedseed>
+    <deployedseed>183590613</deployedseed>
+    <deployedseed>1144042302</deployedseed>
+    <deployedseed>1429252652</deployedseed>
+    <deployedseed>1332397672</deployedseed>
+    <deployedseed>230769454</deployedseed>
+    <deployedseed>1599889266</deployedseed>
+    <deployedseed>1608376147</deployedseed>
+    <deployedseed>519133037</deployedseed>
+    <deployedseed>1858797265</deployedseed>
+    <deployedseed>652281811</deployedseed>
+    <deployedseed>1949757145</deployedseed>
+    <deployedseed>736423339</deployedseed>
+    <deployedseed>1918983021</deployedseed>
+    <deployedseed>982821817</deployedseed>
+    <deployedseed>1391307043</deployedseed>
+    <deployedseed>1264290800</deployedseed>
+    <deployedseed>933588319</deployedseed>
+    <deployedseed>2062140666</deployedseed>
+    <deployedseed>748051853</deployedseed>
+    <deployedseed>62407896</deployedseed>
+    <deployedseed>1493829130</deployedseed>
+    <deployedseed>1487701809</deployedseed>
+    <deployedseed>1738486459</deployedseed>
+    <deployedseed>2105069197</deployedseed>
+    <deployedseed>594989039</deployedseed>
+    <deployedseed>2063473478</deployedseed>
+    <deployedseed>2116484880</deployedseed>
+    <deployedseed>691200463</deployedseed>
+    <deployedseed>922758181</deployedseed>
+    <deployedseed>1685454756</deployedseed>
+    <deployedseed>1506566579</deployedseed>
+    <deployedseed>549143673</deployedseed>
+    <deployedseed>716569056</deployedseed>
+    <deployedseed>839420240</deployedseed>
+    <deployedseed>408349840</deployedseed>
+    <deployedseed>1081263654</deployedseed>
+    <deployedseed>974801744</deployedseed>
+    <deployedseed>1914423549</deployedseed>
+    <deployedseed>2121790637</deployedseed>
+    <deployedseed>1550850032</deployedseed>
+    <deployedseed>1472993880</deployedseed>
+    <deployedseed>1215313284</deployedseed>
+    <deployedseed>525223851</deployedseed>
+    <deployedseed>1939965720</deployedseed>
+    <deployedseed>534452986</deployedseed>
+    <deployedseed>631130214</deployedseed>
+    <deployedseed>1850728168</deployedseed>
+    <deployedseed>102123316</deployedseed>
+    <deployedseed>1298826373</deployedseed>
+    <deployedseed>1528940674</deployedseed>
+    <deployedseed>1841555353</deployedseed>
+    <deployedseed>35440398</deployedseed>
+    <deployedseed>931701902</deployedseed>
+    <deployedseed>59518398</deployedseed>
+    <deployedseed>33565776</deployedseed>
+    <deployedseed>332744436</deployedseed>
+    <deployedseed>227430441</deployedseed>
+    <deployedseed>323178378</deployedseed>
+    <deployedseed>1666765551</deployedseed>
+    <deployedseed>838531052</deployedseed>
+    <deployedseed>389688824</deployedseed>
+    <deployedseed>1787156819</deployedseed>
+    <deployedseed>964600504</deployedseed>
+    <deployedseed>59104193</deployedseed>
+    <deployedseed>2000405406</deployedseed>
+    <deployedseed>562636995</deployedseed>
+    <deployedseed>1181520161</deployedseed>
+    <deployedseed>393222467</deployedseed>
+    <deployedseed>1904507665</deployedseed>
+    <deployedseed>1800267643</deployedseed>
+    <deployedseed>916449780</deployedseed>
+    <deployedseed>1368003706</deployedseed>
+    <deployedseed>351332533</deployedseed>
+    <deployedseed>962756361</deployedseed>
+    <deployedseed>1288934039</deployedseed>
+    <deployedseed>1260295025</deployedseed>
+    <deployedseed>982520921</deployedseed>
+    <deployedseed>1815807464</deployedseed>
+    <deployedseed>1389009182</deployedseed>
+    <deployedseed>128533467</deployedseed>
+    <deployedseed>370417480</deployedseed>
+    <deployedseed>1725179213</deployedseed>
+    <deployedseed>447447965</deployedseed>
+    <deployedseed>1931166678</deployedseed>
+    <deployedseed>380130900</deployedseed>
+    <deployedseed>1550030027</deployedseed>
+    <deployedseed>1941294706</deployedseed>
+    <deployedseed>256428874</deployedseed>
+    <deployedseed>75281996</deployedseed>
+    <deployedseed>2070284856</deployedseed>
+    <deployedseed>1051349330</deployedseed>
+    <deployedseed>1822564833</deployedseed>
+    <deployedseed>1186376353</deployedseed>
+    <deployedseed>259024096</deployedseed>
+    <deployedseed>1802315457</deployedseed>
+    <deployedseed>826691603</deployedseed>
+    <deployedseed>2128881566</deployedseed>
+    <deployedseed>2041712266</deployedseed>
+    <deployedseed>1203148390</deployedseed>
+    <deployedseed>567383864</deployedseed>
+    <deployedseed>1753917695</deployedseed>
+    <deployedseed>722388067</deployedseed>
+    <deployedseed>740096931</deployedseed>
+    <deployedseed>1549275642</deployedseed>
+    <deployedseed>1190097419</deployedseed>
+    <deployedseed>106400021</deployedseed>
+    <deployedseed>946171198</deployedseed>
+    <deployedseed>1256403796</deployedseed>
+    <deployedseed>1203567298</deployedseed>
+    <deployedseed>1213948060</deployedseed>
+    <deployedseed>725638443</deployedseed>
+    <deployedseed>1593901787</deployedseed>
+    <deployedseed>1126231376</deployedseed>
+    <deployedseed>1604248299</deployedseed>
+    <deployedseed>596126238</deployedseed>
+    <deployedseed>1830362741</deployedseed>
+    <deployedseed>27701197</deployedseed>
+    <deployedseed>390332533</deployedseed>
+    <deployedseed>309353119</deployedseed>
+    <deployedseed>770816062</deployedseed>
+    <deployedseed>1457874589</deployedseed>
+    <deployedseed>2032016046</deployedseed>
+    <deployedseed>1511671014</deployedseed>
+    <deployedseed>156389599</deployedseed>
+    <deployedseed>1588615853</deployedseed>
+    <deployedseed>2146383284</deployedseed>
+    <deployedseed>1507331062</deployedseed>
+    <deployedseed>321163655</deployedseed>
+    <deployedseed>605201321</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>radius</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

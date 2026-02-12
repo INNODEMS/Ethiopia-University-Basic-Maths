@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Gauss-Jordan Method for Matrix Inversion</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Use the Gauss-Jordan method (row operations) to find the inverse of \[ {@A@} \]&nbsp;</p><p>[[input:ans1]] [[validation:ans1]][[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3><b>Worked solution</b></h3>
+<p>This question asked you to find the inverse using the Gauss-Jordan method (row operations). To use the Gauss-Jordan method set up the problem as \[ \left[ A \big{|} I \right] \] and then use row operations to reduce this to reduced row echelon form.&nbsp; The left hand side will be the identity matrix, and overall we will have&nbsp;\[ \left[ I \big{|} A^{-1} \right]. \]
+So, using our values we have \[ {@ws1@}\] which has reduced row echelon form (working omitted) \[ {@ws2@}\] from which we read out the inverse as \[ {@ta@}.\]</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/* Theorem: Let A be a square integer matrix. Then A^{−1} is an integer matrix if and only
+if detA = +-1. */
+U:matrix([1,rand(3),-2-rand(2)],[0,1,rand(4)+2],[0,0,1]);
+L:matrix([1,0,0],[2+rand(2),1,0],[1,-2-rand(2),1]);
+A:U.L;
+ta:invert(A);
+ident(3)
+I:ident(3)
+ws1:apply(matrix,zip_with(append,args(A),args(I)));
+ws2:rref(ws1);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p> \(A={@A@}\)</p>
+<p>\( A^{-1}={@ta@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>ta</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>EqualComAss</answertest>
+        <sans>ev(A.ans1,simp)</sans>
+        <tans>I</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>The inverse of \(A\) should satisfy \(AA^{-1}=I\). You notice that \[ {@A@}{@ans1@} = {@A.ans1@} \neq {@I@}\] so you must have done something wrong!</p>]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1520384279</deployedseed>
+    <deployedseed>1579101635</deployedseed>
+    <deployedseed>79582968</deployedseed>
+    <deployedseed>1009339204</deployedseed>
+    <deployedseed>1676851493</deployedseed>
+    <deployedseed>1446648011</deployedseed>
+    <deployedseed>13531299</deployedseed>
+    <deployedseed>1922136231</deployedseed>
+    <deployedseed>118213019</deployedseed>
+    <deployedseed>1872240190</deployedseed>
+    <deployedseed>989070862</deployedseed>
+    <deployedseed>958676424</deployedseed>
+    <deployedseed>1533462595</deployedseed>
+    <deployedseed>292534281</deployedseed>
+    <deployedseed>1973224227</deployedseed>
+    <deployedseed>1659503128</deployedseed>
+    <deployedseed>1302006304</deployedseed>
+    <deployedseed>286157499</deployedseed>
+    <deployedseed>238646328</deployedseed>
+    <deployedseed>614480192</deployedseed>
+    <deployedseed>425801433</deployedseed>
+    <deployedseed>79566873</deployedseed>
+    <deployedseed>84896433</deployedseed>
+    <deployedseed>1086437875</deployedseed>
+    <deployedseed>1752190614</deployedseed>
+    <deployedseed>1140343680</deployedseed>
+    <deployedseed>1395447929</deployedseed>
+    <deployedseed>1576900926</deployedseed>
+    <deployedseed>1041297191</deployedseed>
+    <deployedseed>1485412243</deployedseed>
+    <deployedseed>1804551247</deployedseed>
+    <deployedseed>1604802498</deployedseed>
+    <deployedseed>169135554</deployedseed>
+    <deployedseed>164020738</deployedseed>
+    <deployedseed>11499405</deployedseed>
+    <deployedseed>1350256669</deployedseed>
+    <deployedseed>1890264950</deployedseed>
+    <deployedseed>9981095</deployedseed>
+    <deployedseed>1640560988</deployedseed>
+    <deployedseed>1748096238</deployedseed>
+    <deployedseed>965825200</deployedseed>
+    <deployedseed>650169071</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>U</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

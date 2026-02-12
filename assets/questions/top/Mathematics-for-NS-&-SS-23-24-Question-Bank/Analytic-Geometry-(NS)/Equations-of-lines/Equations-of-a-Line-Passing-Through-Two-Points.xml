@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Equations of a Line Passing Through Two Points</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Fill in the blanks</p>
+<br> To find the equation for the line passing through the points \( P({@P_x@}, {@P_y@}, {@P_z@}) \) and \( Q({@Q_x@}, {@Q_y@}, {@Q_z@}) \).
+<br>We can proceed as follows:
+<br><b>Step 1:</b> First, identify a vector that is parallel to the line, \( (PQ) \).
+<br><b>Recall:</b> A vector that is parallel to the line  is \( \vec{PQ} \) or \( \vec{QP} \).
+<br> \( \vec{PQ}\) ([[input:ans1]] , [[input:ans2]] , [[input:ans3]]) [[feedback:prtA]]
+<br> \( \quad \)  [[validation:ans1]]  \( \quad \) [[validation:ans2]]  \( \quad \) [[validation:ans3]] 
+<br><b>Step 2:</b>  Picking either point will give you parametric equations for the line.
+<br>Here, let use \(P\) and a parameter \( \alpha \in \mathbb{R}\). \( \alpha \) is typed as <b>alpha</b>
+<br> Let the point \( M(x, y) \in (PQ) \), so \( \vec{PM} \)  and \( \vec{PQ} \) are colinear.
+<br> This means, there exists \( \alpha \in \mathbb{R}\), such that  \( \vec{PM} = \alpha \vec{PQ}  \)
+<br> \( \vec{PM} = \alpha \vec{PQ}  \implies {@matrix([x-P_x],[y-P_y],[z-P_z])@}={@alpha*matrix([PQ_x],[PQ_y],[PQ_z])@}\). Thus
+<br> \( x= \)  [[input:ans4]]  [[validation:ans4]]  [[feedback:prt4]]
+<br> \( y= \) [[input:ans5]]  [[validation:ans5]]  [[feedback:prt5]]
+<br> \( z= \) [[input:ans6]]  [[validation:ans6]]  [[feedback:prt6]]
+<br><b>Step 2:</b> Deduce the equations for the line passing through the points \(P\) and \(Q\).
+ <br> The equations of the line are:
+<br>  [[input:ans7]] = [[input:ans8]] = [[input:ans9]]  [[feedback:prtB]]
+<br> \( \quad \)  [[validation:ans7]]  \( \quad \) [[validation:ans8]]  \( \quad \) [[validation:ans9]]]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3><b>Worked solution</b></h3>
+<br><b>Step 1:</b> First, identify a vector that is parallel to the line, \( (PQ) \).
+<br><b>Recall:</b> A vector that is parallel to the line  is \( \vec{PQ} \) or \( \vec{QP} \).
+<br> \( \vec{PQ} ({@PQ_x@}, {@PQ_y@}, {@PQ_z@}) \) 
+
+<br><b>Step 2:</b>  Picking either point will give you parametric equations for the line.
+<br>Here, let use \(P\) and a parameter \( \alpha \in \mathbb{R}\). \( \alpha \) is typed as <b>alpha</b>
+<br> Let the point \( M(x, y) \in (PQ) \), so \( \vec{PM} \)  and \( \vec{PQ} \) are colinear.
+<br> This means, there exists \( \alpha \in \mathbb{R}\), such that  \( \vec{PM} = \alpha \vec{PQ}  \)
+<br> \( \vec{PM} = \alpha \vec{PQ}  \implies {@matrix([x-P_x],[y-P_y],[z-P_z])@}={@alpha*matrix([PQ_x],[PQ_y],[PQ_z])@}\). Thus
+<br> \( x= {@ta_4@} \)
+<br> \( y= {@ta_5@} \)
+<br> \( z= {@ta_6@} \)
+
+<br><b>Step 2:</b> Deduce the equations for the line passing through the points \(P\) and \(Q\).
+ <br> Since \( x= {@ta_4@} \) then \( \alpha = \frac{{@x -P_x@}}{{@ta_1@}} \)     
+ <br> Similarly  \( y= {@ta_5@} \) then \( \alpha = \frac{{@y -P_y@}}{{@ta_2@}} \) 
+ <br>  and \( z= {@ta_6@} \) then \( \alpha = \frac{{@z -P_z@}}{{@ta_3@}} \) 
+<br> Therefore, the equations of the line are:
+<br> \( {@equation1@}={@equation2@}={@equation3@} \)]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*Defining the randomized points*/
+P_x: rand_with_step(-5,5,1);
+P_y:  rand_with_step(-6,5,1);
+P_z:  rand_with_step(-4,7,1);
+Q_x:  rand_with_prohib(-7,7,[P_x]);
+Q_y:  rand_with_prohib(-5,5,[P_y]);
+Q_z:  rand_with_prohib(-4,4,[P_z]);
+PQ_x: Q_x-P_x; /*abscissa of vector PQ*/
+PQ_y: Q_y-P_y; /*ordinate of vector PQ*/
+PQ_z: Q_z-P_z; /*cote of vector PQ*/
+
+/*Model answers*/
+ta_1: PQ_x;
+ta_2: PQ_y;
+ta_3: PQ_z;
+ta_4: ta_1*alpha+P_x;
+ta_5: ta_2*alpha+P_y;
+ta_6: ta_3*alpha+P_z;
+equation1: (x -P_x)/ta_1;
+equation2: (y -P_y)/ta_2;
+equation3: (z -P_z)/ta_3;
+ta_7: equation1;
+ta_8: equation2;
+ta_9: equation3;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<br> Find equations for the line passing through the points \( P({@P_x@}, {@P_y@}, {@P_z@}) \) and \( Q({@Q_x@}, {@Q_y@}, {@Q_z@}) \).
+<br> \( \vec{PQ} ({@PQ_x@}, {@PQ_y@}, {@PQ_z@}) \) and  \( {@equation1@}={@equation2@}={@equation3@} \)]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta_1</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta_2</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta_3</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>ta_4</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans5</name>
+      <type>algebraic</type>
+      <tans>ta_5</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans6</name>
+      <type>algebraic</type>
+      <tans>ta_6</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans7</name>
+      <type>algebraic</type>
+      <tans>ta_7</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>x+?</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans8</name>
+      <type>algebraic</type>
+      <tans>ta_8</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>y+?</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans9</name>
+      <type>algebraic</type>
+      <tans>ta_9</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>z+?</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>ta_4</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt5</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans5</sans>
+        <tans>ta_5</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt5-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt5-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt6</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans6</sans>
+        <tans>ta_6</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt6-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt6-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prtA</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */
+/*Node 2: Checks for the correct answer */
+/*Node 3: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta_1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prtA-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtA-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta_2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>2</truenextnode>
+        <trueanswernote>prtA-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtA-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>ta_3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtA-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtA-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prtB</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */
+/*Node 2: Checks for the correct answer */
+/*Node 3: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans7</sans>
+        <tans>ta_7</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prtB-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtB-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>You should get {@equation1@}</text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans8</sans>
+        <tans>ta_8</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>2</truenextnode>
+        <trueanswernote>prtB-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtB-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>You should get {@equation2@}</text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans9</sans>
+        <tans>ta_9</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtB-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtB-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>You should get {@equation3@}</text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1802914176</deployedseed>
+    <deployedseed>1465638463</deployedseed>
+    <deployedseed>238125537</deployedseed>
+    <deployedseed>1592536690</deployedseed>
+    <deployedseed>538196688</deployedseed>
+    <deployedseed>48936883</deployedseed>
+    <deployedseed>274899448</deployedseed>
+    <deployedseed>577626938</deployedseed>
+    <deployedseed>538875319</deployedseed>
+    <deployedseed>1296965745</deployedseed>
+    <deployedseed>2076428081</deployedseed>
+    <deployedseed>169796795</deployedseed>
+    <deployedseed>1816961287</deployedseed>
+    <deployedseed>2112515952</deployedseed>
+    <deployedseed>1653796507</deployedseed>
+    <deployedseed>1361196275</deployedseed>
+    <deployedseed>1563289073</deployedseed>
+    <deployedseed>493908851</deployedseed>
+    <deployedseed>1880712811</deployedseed>
+    <deployedseed>932072382</deployedseed>
+    <deployedseed>1321886821</deployedseed>
+    <deployedseed>598392263</deployedseed>
+    <deployedseed>1012104112</deployedseed>
+    <deployedseed>1800398897</deployedseed>
+    <deployedseed>1515917369</deployedseed>
+    <deployedseed>472647823</deployedseed>
+    <deployedseed>449618620</deployedseed>
+    <deployedseed>456291192</deployedseed>
+    <deployedseed>494831175</deployedseed>
+    <deployedseed>1744545013</deployedseed>
+    <deployedseed>1148016298</deployedseed>
+    <deployedseed>522450093</deployedseed>
+    <deployedseed>197750852</deployedseed>
+    <deployedseed>1052281369</deployedseed>
+    <deployedseed>1710269159</deployedseed>
+    <deployedseed>1009252744</deployedseed>
+    <deployedseed>638143039</deployedseed>
+    <deployedseed>312274643</deployedseed>
+    <deployedseed>1802589900</deployedseed>
+    <deployedseed>2139293287</deployedseed>
+    <deployedseed>1389677108</deployedseed>
+    <deployedseed>745670502</deployedseed>
+    <deployedseed>897900822</deployedseed>
+    <deployedseed>429150431</deployedseed>
+    <deployedseed>561324765</deployedseed>
+    <deployedseed>1797195591</deployedseed>
+    <deployedseed>703736029</deployedseed>
+    <deployedseed>665674467</deployedseed>
+    <deployedseed>59401842</deployedseed>
+    <deployedseed>959704269</deployedseed>
+    <deployedseed>1053657381</deployedseed>
+    <deployedseed>819160901</deployedseed>
+    <deployedseed>1178893777</deployedseed>
+    <deployedseed>2137029221</deployedseed>
+    <deployedseed>2147075767</deployedseed>
+    <deployedseed>1369959943</deployedseed>
+    <deployedseed>174187942</deployedseed>
+    <deployedseed>720896597</deployedseed>
+    <deployedseed>1588107894</deployedseed>
+    <deployedseed>1142554108</deployedseed>
+    <deployedseed>1651806262</deployedseed>
+    <deployedseed>762674862</deployedseed>
+    <deployedseed>15784673</deployedseed>
+    <deployedseed>1055018105</deployedseed>
+    <deployedseed>417080537</deployedseed>
+    <deployedseed>1607160559</deployedseed>
+    <deployedseed>779523944</deployedseed>
+    <deployedseed>682061081</deployedseed>
+    <deployedseed>1319578654</deployedseed>
+    <deployedseed>474958781</deployedseed>
+    <deployedseed>552828734</deployedseed>
+    <deployedseed>1907873330</deployedseed>
+    <deployedseed>1662996465</deployedseed>
+    <deployedseed>415524673</deployedseed>
+    <deployedseed>434923896</deployedseed>
+    <deployedseed>1363547603</deployedseed>
+    <deployedseed>655149900</deployedseed>
+    <deployedseed>1786165731</deployedseed>
+    <deployedseed>267027964</deployedseed>
+    <deployedseed>1235318241</deployedseed>
+    <deployedseed>732184955</deployedseed>
+    <deployedseed>494618591</deployedseed>
+    <deployedseed>1694284382</deployedseed>
+    <deployedseed>627693737</deployedseed>
+    <deployedseed>1326352896</deployedseed>
+    <deployedseed>423995348</deployedseed>
+    <deployedseed>1224859846</deployedseed>
+    <deployedseed>967945823</deployedseed>
+    <deployedseed>1789468602</deployedseed>
+    <deployedseed>285877499</deployedseed>
+    <deployedseed>1929382857</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta_1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta_2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta_3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta_4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>ta_5</value>
+      </testinput>
+      <testinput>
+        <name>ans6</name>
+        <value>ta_6</value>
+      </testinput>
+      <testinput>
+        <name>ans7</name>
+        <value>ta_7</value>
+      </testinput>
+      <testinput>
+        <name>ans8</name>
+        <value>ta_8</value>
+      </testinput>
+      <testinput>
+        <name>ans9</name>
+        <value>ta_9</value>
+      </testinput>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt5</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt5-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt6</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt6-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prtA</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prtA-3-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prtB</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prtB-3-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

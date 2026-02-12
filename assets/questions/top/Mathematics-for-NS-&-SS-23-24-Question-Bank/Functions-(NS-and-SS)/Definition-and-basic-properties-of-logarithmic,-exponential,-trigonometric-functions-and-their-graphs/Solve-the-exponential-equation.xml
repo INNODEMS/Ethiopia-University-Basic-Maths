@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Solve the exponential equation</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Solve the following exponential equation by writing both sides as a power of the same number. Give your answer fully simplifed and as a fraction where appropriate.</p>
+<p>\(\displaystyle {@aa@}^{{@pwr1@}} = \frac{1}{{@aa^2@}^{{@pwr2@}}}\)</p>
+<p>\(x =\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<p><p>Worked Solution:</b></p>
+<p>We first note that \({@aa@}^2 = {@aa^2@}\), so we can write the right hand side of the equation as a power of {@aa@} using rules of indices as follows:</p>
+<p>\(\displaystyle \frac{1}{{@aa^2@}^{{@pwr2@}}} = \frac{1}{({@aa@}^2)^{@x-cc@}}\)</p>
+<p>Expanding the bracket in the power, we get</p>
+<p>\( 
+\begin{align}
+\displaystyle  \frac{1}{({@aa@}^2)^{@x-cc@}} & = \frac{1}{{@aa@}^{2\cdot ({@x-cc@})}} \\
+& = \displaystyle \frac{1}{{@aa@}^{@2*x-2*cc@}} \\
+&=\displaystyle  {@aa@}^{-({@2*x-2*cc@})} \\
+& =\displaystyle  {@aa@}^{-{@2*x+2*cc@}} \\
+& = \displaystyle {@aa@}^{{@2*cc-2*x@}}
+\end{align}
+\)</p>
+
+
+
+<p>So, the equation becomes \({@aa@}^{{@x+bb@}} = {@aa@}^{{@2*cc-2*x@}}\) and we can conclude that \({@x+bb@} = {@2*cc-2*x@}\), which we can be  solved to find the value of \(x\);</p>
+<p>\({@x+bb@} = {@2*cc-2*x@}\)</p>
+<p>Grouping the lies terms together and finding \(x\),we have</p>
+<p>\({@3*x@} = {@2*cc-bb@}\)</p>
+<p>\(x = {@(2*cc-bb)/3@}\).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>aa:rand(6)+2;
+bb:rand(10)+1;
+cc:rand(9)+2;
+pwr1:x+bb;
+pwr2:x-cc;
+ta1:(2*cc-bb)/3;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>\(\displaystyle {@aa@}^{{@pwr1@}} = \frac{1}{{@aa^2@}^{{@pwr2@}}}\) \(\implies x ={@ta1@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>EqualComAss</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>1</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer is correct but not fully simplified.</p>
+<p></p>]]></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1527189590</deployedseed>
+    <deployedseed>1092627507</deployedseed>
+    <deployedseed>1702463950</deployedseed>
+    <deployedseed>484439074</deployedseed>
+    <deployedseed>1529554917</deployedseed>
+    <deployedseed>1613692486</deployedseed>
+    <deployedseed>756646297</deployedseed>
+    <deployedseed>1175300798</deployedseed>
+    <deployedseed>1531353127</deployedseed>
+    <deployedseed>809262273</deployedseed>
+    <deployedseed>1893579668</deployedseed>
+    <deployedseed>951886126</deployedseed>
+    <deployedseed>174909225</deployedseed>
+    <deployedseed>771466578</deployedseed>
+    <deployedseed>856932800</deployedseed>
+    <deployedseed>1285556311</deployedseed>
+    <deployedseed>851708748</deployedseed>
+    <deployedseed>1859251260</deployedseed>
+    <deployedseed>752186977</deployedseed>
+    <deployedseed>981244628</deployedseed>
+    <deployedseed>741563450</deployedseed>
+    <deployedseed>86369425</deployedseed>
+    <deployedseed>762473050</deployedseed>
+    <deployedseed>631353685</deployedseed>
+    <deployedseed>323243658</deployedseed>
+    <deployedseed>609088182</deployedseed>
+    <deployedseed>1892476333</deployedseed>
+    <deployedseed>1882298605</deployedseed>
+    <deployedseed>7372870</deployedseed>
+    <deployedseed>588484805</deployedseed>
+    <deployedseed>643928867</deployedseed>
+    <deployedseed>372813432</deployedseed>
+    <deployedseed>250479535</deployedseed>
+    <deployedseed>261347102</deployedseed>
+    <deployedseed>999426598</deployedseed>
+    <deployedseed>2120598581</deployedseed>
+    <deployedseed>325669354</deployedseed>
+    <deployedseed>1544083125</deployedseed>
+    <deployedseed>813488899</deployedseed>
+    <deployedseed>145491933</deployedseed>
+    <deployedseed>1658060527</deployedseed>
+    <deployedseed>1117762879</deployedseed>
+    <deployedseed>642928243</deployedseed>
+    <deployedseed>724562867</deployedseed>
+    <deployedseed>918346449</deployedseed>
+    <deployedseed>420250882</deployedseed>
+    <deployedseed>1102370569</deployedseed>
+    <deployedseed>1708961641</deployedseed>
+    <deployedseed>1599435389</deployedseed>
+    <deployedseed>1840463278</deployedseed>
+    <deployedseed>536617411</deployedseed>
+    <deployedseed>231729247</deployedseed>
+    <deployedseed>1798709706</deployedseed>
+    <deployedseed>1388178281</deployedseed>
+    <deployedseed>973811648</deployedseed>
+    <deployedseed>1817076586</deployedseed>
+    <deployedseed>1532685707</deployedseed>
+    <deployedseed>834159830</deployedseed>
+    <deployedseed>1277699615</deployedseed>
+    <deployedseed>1320443545</deployedseed>
+    <deployedseed>1042401791</deployedseed>
+    <deployedseed>1344992425</deployedseed>
+    <deployedseed>1747778446</deployedseed>
+    <deployedseed>431176494</deployedseed>
+    <deployedseed>1222798255</deployedseed>
+    <deployedseed>1263029525</deployedseed>
+    <deployedseed>1895696098</deployedseed>
+    <deployedseed>188040944</deployedseed>
+    <deployedseed>486660200</deployedseed>
+    <deployedseed>1872376885</deployedseed>
+    <deployedseed>721166091</deployedseed>
+    <deployedseed>978192181</deployedseed>
+    <deployedseed>404404204</deployedseed>
+    <deployedseed>394410417</deployedseed>
+    <deployedseed>967126229</deployedseed>
+    <deployedseed>1250644183</deployedseed>
+    <deployedseed>1844597789</deployedseed>
+    <deployedseed>1090877856</deployedseed>
+    <deployedseed>1464692389</deployedseed>
+    <deployedseed>308371847</deployedseed>
+    <deployedseed>1281433894</deployedseed>
+    <deployedseed>1092773925</deployedseed>
+    <deployedseed>1517998949</deployedseed>
+    <deployedseed>1655223164</deployedseed>
+    <deployedseed>377263979</deployedseed>
+    <deployedseed>907103443</deployedseed>
+    <deployedseed>1948625485</deployedseed>
+    <deployedseed>666696223</deployedseed>
+    <deployedseed>138245240</deployedseed>
+    <deployedseed>1651226840</deployedseed>
+    <deployedseed>1445379968</deployedseed>
+    <deployedseed>1054218981</deployedseed>
+    <deployedseed>1826976637</deployedseed>
+    <deployedseed>24536578</deployedseed>
+    <deployedseed>1000609382</deployedseed>
+    <deployedseed>1510562154</deployedseed>
+    <deployedseed>480008384</deployedseed>
+    <deployedseed>799600138</deployedseed>
+    <deployedseed>54234498</deployedseed>
+    <deployedseed>315157775</deployedseed>
+    <deployedseed>1129535969</deployedseed>
+    <deployedseed>1802822009</deployedseed>
+    <deployedseed>882197199</deployedseed>
+    <deployedseed>885533000</deployedseed>
+    <deployedseed>743523638</deployedseed>
+    <deployedseed>298715929</deployedseed>
+    <deployedseed>1559923467</deployedseed>
+    <deployedseed>534946054</deployedseed>
+    <deployedseed>433261158</deployedseed>
+    <deployedseed>1744108635</deployedseed>
+    <deployedseed>737724646</deployedseed>
+    <deployedseed>1696045209</deployedseed>
+    <deployedseed>896444903</deployedseed>
+    <deployedseed>672162019</deployedseed>
+    <deployedseed>1703475565</deployedseed>
+    <deployedseed>2092872490</deployedseed>
+    <deployedseed>512374681</deployedseed>
+    <deployedseed>807392954</deployedseed>
+    <deployedseed>1926332003</deployedseed>
+    <deployedseed>1303635011</deployedseed>
+    <deployedseed>1041734657</deployedseed>
+    <deployedseed>505095988</deployedseed>
+    <deployedseed>1424903460</deployedseed>
+    <deployedseed>1014236476</deployedseed>
+    <deployedseed>1528452170</deployedseed>
+    <deployedseed>1246432596</deployedseed>
+    <deployedseed>1748230166</deployedseed>
+    <deployedseed>302656521</deployedseed>
+    <deployedseed>580225018</deployedseed>
+    <deployedseed>135625749</deployedseed>
+    <deployedseed>1171784078</deployedseed>
+    <deployedseed>815953650</deployedseed>
+    <deployedseed>310083213</deployedseed>
+    <deployedseed>627074179</deployedseed>
+    <deployedseed>1424322455</deployedseed>
+    <deployedseed>585936900</deployedseed>
+    <deployedseed>1682453059</deployedseed>
+    <deployedseed>1061626780</deployedseed>
+    <deployedseed>562874679</deployedseed>
+    <deployedseed>677269163</deployedseed>
+    <deployedseed>723882490</deployedseed>
+    <deployedseed>751759824</deployedseed>
+    <deployedseed>359567718</deployedseed>
+    <deployedseed>267712437</deployedseed>
+    <deployedseed>1387442063</deployedseed>
+    <deployedseed>614320278</deployedseed>
+    <deployedseed>1685920427</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

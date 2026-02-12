@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Rotation of Axes: Conic Section Locus and Graph Sketch</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Consider the equation: \({@equation@}= 0\).</p>
+
+<p><b>A.</b> Use rotation of axes to eliminate the \(xy\) term in the equation, and describe the type of conic section.</p>
+
+<p>a. Calculate the exact angle of rotation in radians</p>
+<p>Let \(\theta\) be the angle of rotation.</p>
+<p>\(\qquad \theta =\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]</p>
+
+<p>b. Find the equation of transformation in terms of \(\theta\)</p>
+<p><b>Note: The coefficients of the new equation will be obtained by making the substitutions of the rotation matrix defined below.</b></p>
+<p>\( \qquad x = X \cos(\theta) - Y \sin(\theta)\)</p>
+<p>\( \qquad y = X \sin(\theta) + Y \cos(\theta)\)</p>
+<p>Simplified equation: [[input:ans2]] [[validation:ans2]][[feedback:prt2]]</p>
+
+<p>c. Deduce the type of the conic section. [[input:ans3]] [[validation:ans3]][[feedback:prt3]]</p>
+
+<p>d. Write the equation obtained in <b>(b)</b> in standard form.</p>
+<p>\(\qquad \) [[input:ans4]] [[validation:ans4]][[feedback:prt4]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<p><h3>Worked solution</h3></p>
+<p>The general second-degree equation</p>
+<p>\(Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0\)</p>
+<p>where \(B \neq 0\), can be rewritten as</p>
+<p>\(A'(x')^2 + C'(y')^2 + D'x' + E'y' + F' = 0\)</p>
+
+<p>To eliminate the \(xy\) term in the given equation and determine the type of conic section, we can use rotation of axes. The standard procedure involves finding the angle of rotation that eliminates the \(xy\) term, transforming the equation, and then identifying the resulting conic section.</p>
+
+<p>The given equation is:</p>
+<p>\[{@equation@} = 0\]</p>
+
+<p><strong>Step 1: Calculate the Angle of Rotation</strong></p>
+<p>The angle of rotation \(\theta\) that eliminates the \(xy\) term is given by:</p>
+<p>\[\displaystyle \tan(2\theta) = \frac{B}{A - C}\]</p>
+
+<p>In our equation, \(A = {@A@}\), \(B = {@B@}\), and \(C = {@C@}\):</p>
+<p>\[ \displaystyle  \tan(2\theta) = \frac{{@B@}}{{@A@} - {@C@}} = \frac{{@B@}}{{@A-C@}} = {@B/(A-C)@}\]</p>
+
+<p>Therefore, \( \displaystyle  2\theta = \arctan \left({@B/(A-C)@} \right)  \) and \(  \displaystyle  \theta = \frac{1}{2} \arctan\left({@B/(A-C)@}\right)\).</p>
+
+<p><strong>Step 2: Transform the Equation</strong></p>
+<p>We will use the rotation matrix to transform the equation:</p>
+<p>\[x = X \cos(\theta) - Y \sin(\theta)\]</p>
+<p>\[y = X \sin(\theta) +Y \cos(\theta)\]</p>
+
+<p>Substituting the values of \(x\) and \(y\) in the original equation, we get:</p>
+<p>\[{@transformed_equation@}= 0\]</p>
+
+<p><strong>Step 3: Simplify and Identify Conic Section</strong></p>
+<p>Simplify the equation and expand the terms:</p>
+<p>\[{@simplified_equation@} = 0\]</p>
+
+<p>Simplify the trigonometric terms:</p>
+<p>\[{@A@}X^2 + {@C@}Y^2 - {@D@} = 0\]</p>
+
+<p>This simplified equation represents an {@mcq_correct(ta3)[1]@}. </p><p>The equation of an ellipse in standard form is:</p>
+<p>\[ \displaystyle  \frac{X^2}{a^2} + \frac{Y^2}{b^2} = 1\]</p>
+
+<p>Comparing the equations, we have:</p>
+<p>\[{@A@}X^2 + {@C@}Y^2 - {@D@} = 0\]</p>
+<p>\[ \displaystyle  \frac{X^2}{\frac{{@D@}}{{@A@}}} + \frac{Y^2}{\frac{{@D@}}{{@C@}} }= 1\]</p>
+<p>\[{@ta4@}\]</p>
+<p>So, the ellipse has major axis along the x'-axis, semi-major axis \( \displaystyle  a ={@sqrt(D/A)@} \), and semi-minor axis \( \displaystyle  b = {@sqrt(D/C)@} \).</p>
+
+<p><strong>Step 4: The Graph of the equation: {@ta4@} is provided below </strong></p>
+<p>[[jsxgraph]]
+const board = JXG.JSXGraph.initBoard(divid, {
+                    boundingbox: [{#-0.5-b#}, {#0.5+b#}, {#0.5+b#}, {#-0.5-b#}],
+      showCopyright: false,
+      showNavigation: false,
+      axis: true
+    });
+    board.suspendUpdate();
+
+    var a = Math.sqrt({#a#}); // Semi-major axis length
+    var b = Math.sqrt({#b#});  // Semi-minor axis length
+    var nColE = '#FF00FF';
+
+    var ellipse = board.create('curve', [
+      function(t) {
+        return a * Math.cos(t);
+      },
+      function(t) {
+        return b * Math.sin(t);
+      },
+      0, 2 * Math.PI
+    ], {
+      strokeColor: nColE
+    });
+
+    board.unsuspendUpdate();
+
+[[/jsxgraph]]</p>
+
+<p>In summary, by performing the rotation of axes, we transformed the equation into the standard form of an ellipse. The locus is an ellipse with major axis along the x'-axis and semi-major and semi-minor axes calculated as \(a ={@sqrt(D/A)@} \),and \(b = {@sqrt(D/C)@} \), respectively.</p>
+</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[/* Step 1: Calculate the angle of rotation */ 
+A: rand_with_step(2,20,2); 
+B:rand_with_step(2,20,2); 
+C: rand_with_prohib(2,20,[A,B]);
+D:rand_with_prohib(2,50,[A,B,C]); 
+/* Define the given equation */ 
+equation: A*x^2 + B*x*y + C*y^2 +D; 
+angle_of_rotation: atan(B / (A - C)) / 2; /*theta*/
+angle:angle_of_rotation*2; 
+/*Step 2  transform the equations*/
+x_new: a * cos(theta) - b * sin(theta); 
+y_new: a * sin(theta) + b * cos(theta);
+transformed_equation1: subst([x = x_new, y = y_new], equation);
+transformed_equation: subst([a = X, b = Y], transformed_equation1);
+simplified_equation:trigsimp(transformed_equation)=0;
+/* Step 3: Simplify and identify conic section */ 
+conic_section_type: if (B^2 - 4*A*C < 0) then "Ellipse" elseif (B^2 - 4*A*C = 0) then "Parabola"  else "Hyperbola"; 
+standard_eqn: ((X^2/(D/A))  +  (Y^2/(D/C)) =1); 
+
+/*Graphing code section */
+a:D/A; /* Semi-major axis length */
+b:D/C;  /*Semi-minor axis length*/
+
+/*Model answers*/
+ta1:angle_of_rotation;
+ta2:simplified_equation;
+ta3:random_permutation([[conic_section_type,true],["No conic section",false],["Circle",false],["Parabola",false],["Hyperbola",false]]);
+simp:false;
+ta4:standard_eqn;]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>Consider the equation: \({@equation@}= 0\).</p>
+<p>Let \(\theta\) be the angle of rotation.</p>
+<p>\(\qquad \theta ={@ta1@}\)</p>
+
+
+<be>
+[[jsxgraph]]
+const board = JXG.JSXGraph.initBoard(divid, {
+                    boundingbox: [{#-0.5-b#}, {#0.5+b#}, {#0.5+b#}, {#-0.5-b#}],
+      showCopyright: false,
+      showNavigation: true,
+      axis: true
+    });
+    board.suspendUpdate();
+
+    var a = Math.sqrt({#a#}); // Semi-major axis length
+    var b = Math.sqrt({#b#});  // Semi-minor axis length
+    var nColE = '#FF00FF';
+
+    var ellipse = board.create('curve', [
+      function(t) {
+        return a * Math.cos(t);
+      },
+      function(t) {
+        return b * Math.sin(t);
+      },
+      0, 2 * Math.PI
+    ], {
+      strokeColor: nColE
+    });
+
+    board.unsuspendUpdate();
+
+[[/jsxgraph]]
+<p>Simplified equation: {@ta2@}</p>
+
+<p>c. Deduce the type of the conic section. {@mcq_correct(ta3)[1]@}</p>
+
+<p>d. Write the equation obtained in <b>b.</b> in a standard form.</p>
+<p>{@ta4@}</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>81</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>radio</type>
+      <tans>ta3</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options>nonotanswered</options>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>ta4</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1 checks for correct answer in terms of X*/
+/*Node 2 checks for incorrect answer in terms of x*/
+transformed_x_equation: subst([a = x, b = y], transformed_equation1);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>transformed_x_equation</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.25</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You used \(x\) in your computations instead of \(X\) otherwise you have got it right.</p>
+<p><b>Note: The coefficients of the new equation will be obtained by making the substitutions of the rotation matrix defined below.</b></p>
+<p>\( \qquad x = X \cos(\theta) - Y \sin(\theta)\)</p>
+<p>\( \qquad y = X \sin(\theta) + Y \cos(\theta)\)</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>mcq_correct(ta3)[1]</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1 checks for correct answer in terms of standard form*/ 
+/*Node 2 checks for incorrect answer in terms of x*/ 
+standard_x_eqn: subst([X =x , Y = y], ta4);
+/*Node 3 checks for incorrect std form of equation*/
+incorrect_standard_eqn: (((X^2/(D/A))  +  (Y^2/(D/C)) =1))*((D/A)*(D/C));</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>EqualComAss</answertest>
+        <sans>ans4</sans>
+        <tans>ta4</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text>Well done! you equation is in standard form.</text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>standard_x_eqn</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.25</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your computations are correct but you used the \(x\) and \(y\) instead you should use \(X\) and \(Y\) in your computations.</p>
+<p><b>Note: The coefficients of the new equation will be obtained by making the substitutions of the rotation matrix defined below.</b></p>
+<p>\( \qquad x = X \cos(\theta) - Y \sin(\theta)\)</p>
+<p>\( \qquad y = X \sin(\theta) + Y \cos(\theta)\)</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt4-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>incorrect_standard_eqn</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1/2</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>The your equation \({@ans4@}\) is not in standard form recall that:</p>
+<p>The equation of an ellipse in standard form is:</p>
+<p>\[ \displaystyle  \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1\]</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1612692452</deployedseed>
+    <deployedseed>701607352</deployedseed>
+    <deployedseed>1279045125</deployedseed>
+    <deployedseed>1050292525</deployedseed>
+    <deployedseed>1668881341</deployedseed>
+    <deployedseed>290863662</deployedseed>
+    <deployedseed>281372979</deployedseed>
+    <deployedseed>1060548489</deployedseed>
+    <deployedseed>839834104</deployedseed>
+    <deployedseed>1284120504</deployedseed>
+    <deployedseed>1949587748</deployedseed>
+    <deployedseed>965029964</deployedseed>
+    <deployedseed>949284011</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>first(mcq_correct(ta3))</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

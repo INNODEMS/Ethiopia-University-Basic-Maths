@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Finding the Parabola with Given Focus and Directrix</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p> Find the parabola with focus \(F({@Focus_x@},{@Focus_y@})\) and directrix \( (l): y={@directrix@} \)</p>
+<p>[[input:ans5]] [[validation:ans5]]</p>
+<p>[[feedback:prt5]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked solution</h3>
+<p>We want to find the parabola with focus \(F({@Focus_x@},{@Focus_y@})\) and directrix \( (l): y={@directrix@} \)</p>
+<p>A parabola consists of the set of points \((x,y)\) which are <b>equidistant</b> from the focus and the directrix.
+<br>So, for a general focus \(F(x_{0}, y_{0}+p)\) and directrix \((l): y = y_{0}-p\), we have</p>
+
+<p style="margin-left: 30px">Distance to \(F\): &emsp; \(\sqrt{(x - x_0)^2 + (y - (y_0 + p))}\)</p>
+<p style="margin-left: 30px">Distance to \((l)\): &emsp; \(y - (y_0 - p))\)</p>
+
+<p>Therefore, the points on the parabola satisfy,</p>
+
+<p style="margin-left: 30px">\(\sqrt{(x - x_0)^2 + (y - (y_0 + p))^2} = y - (y_0 - p)\)</p>
+<p style="margin-left: 30px">\(\Rightarrow (x - x_0)^2 + (y - (y_0 + p))^2 = (y - (y_0 - p))^2)\)</p>
+<p style="margin-left: 30px">\(\Rightarrow (x - x_0)^2 + (y^2 - 2y(y_0 + p) + (y_0 + p)^2) = (y^2 - 2y(y_0 - p) + (y_0 - p)^2))\)</p>
+<p style="margin-left: 30px">\(\Rightarrow (x - x_0)^2 - 2y(y_0 + p) + (y_0^2 + 2y_0p + p^2) = - 2y(y_0 - p) + (y_0^2 - 2y_0p + p^2))\)</p>
+<p style="margin-left: 30px">\(\Rightarrow (x - x_0)^2 - 4yp + 4y_0p = 0\)</p>
+<p style="margin-left: 30px">\(\Rightarrow (x - x_0)^2 = 4p(y - y_0)\)</p>
+
+<br>
+
+<p>So in general, for focus \(F(x_{0}, y_{0}+p)\) and directrix \((l): y = y_{0}-p\), the corresponding parabola is,
+<p style="margin-left: 30px">\((x-x_{0})^{2}= 4 p (y - y_{0}) \)</p>
+
+<br>
+
+<p>Then, for the focus and directrix given we have \(x_0 = {@Focus_x@}\), and,</p>
+
+<p style="margin-left: 30px">\(\left\{ \begin{array}{ll}
+y_{0} + p =  {@Focus_y@} \\
+y_{0} - p =  {@directrix@}
+\end{array}\right.
+\hspace{10px} \Rightarrow \hspace{10px} y_{0} = {@expr6@}, \hspace{5px} p = {@expr8@}\)</p>
+
+<br>
+
+<p>Now substituting these values for \(x_{0}, y_{0}\) and \(p\) into the general formula, we conclude,</p>
+<p style="margin-left: 30px">\({@expr_c@}\)
+<p style="margin-left: 30px">\(\Rightarrow {@expr_c1@}\)]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*Defining randomizing focus F*/
+Focus_x: rand_with_step(-5,5,1);
+Focus_y: rand_with_step(-5,5,1);
+/*Defining randomizing directrix l*/
+directrix: 2*(rand(5)+1)-Focus_y;
+
+/*Solve the system*/
+expr1: y0+p=Focus_y;
+expr2: y0-p=directrix;
+expr3: solve([expr1,expr2],[y0,p]); /*solve expression 1 and 2 simultaneously*/
+expr4: expr3[1]; 
+expr5: expr4[1] /*to obtain y=b*/
+expr6: rhs(expr5); /*to obtain value b*/
+expr7: expr4[2]; /*to obtained p=a*/
+expr8: rhs(expr7); /*to obtained a*/
+expr_c: (x-Focus_x)^2=4*expr8*(y-expr6); /*parabola equation*/
+expr_c1: expand((x-Focus_x)^2-4*expr8*(y-expr6))=0; /*parabola equation expanded*/
+
+/*Model answers*/
+ta1: (x-x0)^2=4*p*(y-y0); /*Formula of the parabola (c) */
+ta2: Focus_x;
+ta3: expr6;
+ta4: expr8;
+ta5: expr_c1;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>Parabola with focus \(F({@Focus_x@},{@Focus_y@})\) and directrix \( (l): y={@directrix@} \)</p>
+<p>\(x_{0} ={@ta2@}\), \(y_{0}={@ta3@}\), \(p={@ta4@}\)</p>
+<p>Deducing the parabola: \({@ta5@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans5</name>
+      <type>algebraic</type>
+      <tans>ta5</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt5</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node1: Check for the correct answer */
+/*Node 2: Forgot to multiply the term p(y-y0) by 4 in the formula */
+mistake1: expand((x-Focus_x)^2-expr8*(y-expr6))=0;
+/*Node 3: Forgot to multiply the term 4(y-y0) by p in the formula*/
+mistake2: expand((x-Focus_x)^2-4*(y-expr6))=0;
+/*Node 4: Interchanged x, x0 by y and y0 respectively in the formula*/
+mistake3: expand((y-expr6)^2-4*expr8*(x-Focus_x))=0;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans5</sans>
+        <tans>ta5</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt5-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt5-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans5</sans>
+        <tans>mistake1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt5-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You have not used the correct general equation to determine the parabola, remember to multiply the right-hand side of the equation by \(4\).
+<br>In general, for focus \(F(x_{0}, y_{0}+p)\) and directrix \((l): y = y_{0}-p\), the corresponding parabola is,
+<p style="margin-left: 30px">\((x-x_{0})^{2}= 4 p (y - y_{0}) \)</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt5-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans5</sans>
+        <tans>mistake2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt5-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You have not used the correct general equation to determine the parabola, remember to multiply the right-hand side of the equation by \(p\).
+<br>In general, for focus \(F(x_{0}, y_{0}+p)\) and directrix \((l): y = y_{0}-p\), the corresponding parabola is,
+<p style="margin-left: 30px">\((x-x_{0})^{2}= 4 p (y - y_{0}) \)</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prt5-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans5</sans>
+        <tans>mistake3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt5-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You have not used the correct general equation to determine the parabola, take care not to interchange the values for \(x\) and \(y\).
+<br>In general, for focus \(F(x_{0}, y_{0}+p)\) and directrix \((l): y = y_{0}-p\), the corresponding parabola is,
+<p style="margin-left: 30px">\((x-x_{0})^{2}= 4 p (y - y_{0}) \)</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt5-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1091348115</deployedseed>
+    <deployedseed>1798669762</deployedseed>
+    <deployedseed>1076685582</deployedseed>
+    <deployedseed>1076707995</deployedseed>
+    <deployedseed>55408238</deployedseed>
+    <deployedseed>1500131143</deployedseed>
+    <deployedseed>2134241381</deployedseed>
+    <deployedseed>1730157594</deployedseed>
+    <deployedseed>105742030</deployedseed>
+    <deployedseed>817172156</deployedseed>
+    <deployedseed>1762197263</deployedseed>
+    <deployedseed>295853238</deployedseed>
+    <deployedseed>452748519</deployedseed>
+    <deployedseed>742308685</deployedseed>
+    <deployedseed>1190201779</deployedseed>
+    <deployedseed>2121648656</deployedseed>
+    <deployedseed>946170998</deployedseed>
+    <deployedseed>793029475</deployedseed>
+    <deployedseed>1696449300</deployedseed>
+    <deployedseed>815314209</deployedseed>
+    <deployedseed>1196636190</deployedseed>
+    <deployedseed>124035117</deployedseed>
+    <deployedseed>925340700</deployedseed>
+    <deployedseed>1752915960</deployedseed>
+    <deployedseed>1835791168</deployedseed>
+    <deployedseed>1850906490</deployedseed>
+    <deployedseed>1612500446</deployedseed>
+    <deployedseed>700412585</deployedseed>
+    <deployedseed>1648633086</deployedseed>
+    <deployedseed>571631485</deployedseed>
+    <deployedseed>704219620</deployedseed>
+    <deployedseed>722901899</deployedseed>
+    <deployedseed>1598683319</deployedseed>
+    <deployedseed>1219605835</deployedseed>
+    <deployedseed>1846749601</deployedseed>
+    <deployedseed>79254599</deployedseed>
+    <deployedseed>376181937</deployedseed>
+    <deployedseed>296762355</deployedseed>
+    <deployedseed>1889836170</deployedseed>
+    <deployedseed>1901596790</deployedseed>
+    <deployedseed>1568633280</deployedseed>
+    <deployedseed>1422780033</deployedseed>
+    <deployedseed>1114046999</deployedseed>
+    <deployedseed>770490765</deployedseed>
+    <deployedseed>821453418</deployedseed>
+    <deployedseed>940069042</deployedseed>
+    <deployedseed>1099014876</deployedseed>
+    <deployedseed>599271915</deployedseed>
+    <deployedseed>90417244</deployedseed>
+    <deployedseed>167675097</deployedseed>
+    <deployedseed>1727614075</deployedseed>
+    <deployedseed>237119912</deployedseed>
+    <deployedseed>436687599</deployedseed>
+    <deployedseed>1546173313</deployedseed>
+    <deployedseed>524280551</deployedseed>
+    <deployedseed>1784344829</deployedseed>
+    <deployedseed>1362163713</deployedseed>
+    <deployedseed>1995361934</deployedseed>
+    <deployedseed>234005927</deployedseed>
+    <deployedseed>926466296</deployedseed>
+    <deployedseed>1585467265</deployedseed>
+    <deployedseed>1307692756</deployedseed>
+    <deployedseed>410493321</deployedseed>
+    <deployedseed>452537586</deployedseed>
+    <deployedseed>1677164511</deployedseed>
+    <deployedseed>21038100</deployedseed>
+    <deployedseed>1364933642</deployedseed>
+    <deployedseed>1883436540</deployedseed>
+    <deployedseed>107063333</deployedseed>
+    <deployedseed>944380944</deployedseed>
+    <deployedseed>1151324386</deployedseed>
+    <deployedseed>836985968</deployedseed>
+    <deployedseed>1065841325</deployedseed>
+    <deployedseed>130264876</deployedseed>
+    <deployedseed>1003816711</deployedseed>
+    <deployedseed>1942383796</deployedseed>
+    <deployedseed>448733605</deployedseed>
+    <deployedseed>165326590</deployedseed>
+    <deployedseed>2041357359</deployedseed>
+    <deployedseed>543413624</deployedseed>
+    <deployedseed>2026500184</deployedseed>
+    <deployedseed>457958254</deployedseed>
+    <deployedseed>695943958</deployedseed>
+    <deployedseed>1290512878</deployedseed>
+    <deployedseed>868902387</deployedseed>
+    <deployedseed>1797845807</deployedseed>
+    <deployedseed>1873103556</deployedseed>
+    <deployedseed>757700455</deployedseed>
+    <deployedseed>482263610</deployedseed>
+    <deployedseed>1737816365</deployedseed>
+    <deployedseed>572566703</deployedseed>
+    <deployedseed>691094065</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans5</name>
+        <value>ta5</value>
+      </testinput>
+      <expected>
+        <name>prt5</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt5-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

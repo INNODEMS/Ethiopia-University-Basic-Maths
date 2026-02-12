@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Determining Collinearity Using Slope</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p> In this question, we are going to use the slope to determine whether or not the points \( ({@pt1_x@}, {@pt1_y@}) \), \( ({@pt2_x@}, {@pt2_y@}) \) and \( ({@pt3_x@}, {@pt3_y@}) \) are collinear. </p>
+<br> <b>Step 1:</b> Find the slope \(m_{1}\) of the line joining \( ({@pt1_x@}, {@pt1_y@}) \) and \( ({@pt2_x@}, {@pt2_y@}) \), 
+<br>\( m_{1} = \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+<br> <b>Step 2:</b>Find the slope \(m_{2}\) of the line joining  \( ({@pt2_x@}, {@pt2_y@}) \) and \( ({@pt3_x@}, {@pt3_y@}) \).
+<br> \( m_{2} =\)  [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+<br> <b>Step 3:</b> Determine whether or not the points are colinear.
+<br>Since the slopes are [[input:ans4]], the points [[input:ans3]]  [[feedback:prtA]] [[validation:ans4]] [[validation:ans3]]]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3>Worked solution</h3></p>
+<p> Use slope to determine whether or not the points \( ({@pt1_x@}, {@pt1_y@}) \), \( ({@pt2_x@}, {@pt2_y@}) \) and \( ({@pt3_x@}, {@pt3_y@}) \) are collinear. </p>
+<p> We proceed as follow: </p>
+<br> <b>Step 1: </b> Find the slope \(m_{1}\) of the line joining \( ({@pt1_x@}, {@pt1_y@}) \) and \( ({@pt2_x@}, {@pt2_y@}) \), 
+<br>\( m_{1} = \frac{y_{2}-y_{1}}{x_{2}-x_{1}} = \frac{({@pt2_y@})-({@pt1_y@})}{({@pt2_x@})-({@pt1_x@})} = {@ta_1@} \)
+<br> <b>Step 2: </b>Find the slope \(m_{2}\) of the line joining  \( ({@pt2_x@}, {@pt2_y@}) \) and \( ({@pt3_x@}, {@pt3_y@}) \).
+<br> \( m_{2} = \frac{y_{3}-y_{2}}{x_{3}-x_{2}} = \frac{({@pt3_y@})- ({@pt2_y@})}{({@pt3_x@})-({@pt2_x@})} = {@ta_2@} \)
+<br> <b>Step 3:</b> Determine whether or not the points are colinear.
+<br>Since the slopes are {@sol@}, the points {@mcq_correct(ta_3)[1]@}.]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[/*Defining the point 1*/
+pt1_x: rand([1,5]);
+pt1_y: rand([2,-3]);
+/*Defining the point 2*/
+pt2_x: rand([3,7]);
+pt2_y: rand([10,-8]);
+/*Defining the point 3*/
+pt3_x: rand([4]);
+pt3_y: rand([14]);
+/*Find slope joining first and second points*/
+m1: (pt2_y-pt1_y)/(pt2_x-pt1_x);
+/*Find slope joining second and third points*/
+m2: (pt3_y-pt2_y)/(pt3_x-pt2_x);
+/*Model answers*/
+ta_1: m1;
+ta_2: m2;
+ta_4a: random_permutation([["the same", true],["not the same", false]]);
+ta_4b: random_permutation([["the same", false],["not the same", true]]);
+ta_4: if m1=m2 then ta_4a else ta_4b; /*Decide whether slope are the same or not*/
+
+ta_3a: random_permutation([["are colinear", false],["are not colinear", true]]);
+ta_3b: random_permutation([["are colinear", true],["are not colinear", false]]);
+ta_3: if m1=m2 then ta_3b else ta_3a; /*Decide whether points are colinear or not*/
+
+/*Worked solution*/
+sol: if m1=m2 then "the same" else "not the same";]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p> Use slope to determine whether or not the points \( ({@pt1_x@}, {@pt1_y@}) \), \( ({@pt2_x@}, {@pt2_y@}) \) and \( ({@pt3_x@}, {@pt3_y@}) \) are collinear. </p>
+<p>\( m_{1} = {@ta_1@} \) and \( m_{2} = {@ta_2@} \). So  the points {@mcq_correct(ta_3)[1]@}. </p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta_1</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta_2</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>dropdown</type>
+      <tans>ta_3</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>dropdown</type>
+      <tans>ta_4</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta_1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>You should use the formula \( m_{1} = \frac{y_{2}-y_{1}}{x_{2}-x_{1}} \). Check the worked solution.</text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta_2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>You should use the formula \( m_{2} = \frac{y_{3}-y_{2}}{x_{3}-x_{2}}  \). Check the worked solution.</text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prtA</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>mcq_correct(ta_4)[1]</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prtA-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtA-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>mcq_correct(ta_3)[1]</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prtA-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prtA-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>116468833</deployedseed>
+    <deployedseed>1030663581</deployedseed>
+    <deployedseed>30719190</deployedseed>
+    <deployedseed>2003821704</deployedseed>
+    <deployedseed>25513005</deployedseed>
+    <deployedseed>192030548</deployedseed>
+    <deployedseed>585906060</deployedseed>
+    <deployedseed>1619947757</deployedseed>
+    <deployedseed>1071416152</deployedseed>
+    <deployedseed>607856871</deployedseed>
+    <deployedseed>330247698</deployedseed>
+    <deployedseed>1212586263</deployedseed>
+    <deployedseed>802425253</deployedseed>
+    <deployedseed>527981106</deployedseed>
+    <deployedseed>1242664026</deployedseed>
+    <deployedseed>1992277915</deployedseed>
+    <deployedseed>321906689</deployedseed>
+    <deployedseed>2119922828</deployedseed>
+    <deployedseed>1089044461</deployedseed>
+    <deployedseed>1907445073</deployedseed>
+    <deployedseed>1643338520</deployedseed>
+    <deployedseed>1463788179</deployedseed>
+    <deployedseed>1442918111</deployedseed>
+    <deployedseed>1868767890</deployedseed>
+    <deployedseed>169778697</deployedseed>
+    <deployedseed>1932627898</deployedseed>
+    <deployedseed>923375925</deployedseed>
+    <deployedseed>1801647549</deployedseed>
+    <deployedseed>1597748259</deployedseed>
+    <deployedseed>1676996685</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta_1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta_2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>first(mcq_correct(ta_3))</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>first(mcq_correct(ta_4))</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prtA</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prtA-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta_1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta_2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>first(mcq_correct(ta_3))</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>first(mcq_correct(ta_4))</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prtA</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prtA-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

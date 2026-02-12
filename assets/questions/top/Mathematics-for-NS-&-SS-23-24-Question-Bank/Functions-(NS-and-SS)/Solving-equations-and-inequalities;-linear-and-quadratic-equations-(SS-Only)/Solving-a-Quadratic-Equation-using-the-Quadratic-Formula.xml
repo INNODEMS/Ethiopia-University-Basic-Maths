@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Solving a Quadratic Equation using the Quadratic Formula</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Solve the following quadratic equation by using the quadratic formula, giving your answer in exact form.</p>
+
+<p style="margin-left: 30px">\( {@a*v^2+b*v+c@} = 0 \) </p>
+
+<p>Give your answer as a set containing all of the solutions for \({@v@}\), for example, \( \{ {@v@}_1 ,{@v@}_2 \} \).</p>
+
+<p><em>Note: To enter a set, write the elements inside “curly braces”, like <code>{1, 2, 3, …}</code>.
+<br>The “empty set” should be written as <code>{}</code>.
+<br>To enter a square root, \(\sqrt{x}\), you should write <code>sqrt(x)</code>.</em></p>
+
+<p style="margin-left: 30px">\({@v@} \in \) [[input:ans]] [[validation:ans]]</p>
+<p>[[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked Solution</h3>
+
+<p>A good method for solving any quadratic equation is using the quadratic formula.</p>
+
+<p>For the general quadratic equation \(a{@v@}^2+b{@v@}+c = 0 \), the solutions for \({@v@}\) are given by,</p>
+<p style="margin-left: 30px">\(\displaystyle {@v@} = \frac{ -b\pm\sqrt{b^2-4ac} }{2a}\)</p>
+
+<br>
+
+<p>In this example: \(a = {@a@}\), \(b = {@b@}\) and \(c = {@c@}\), so substituting these values into the quadratic formula gives,</p>
+
+<p style="margin-left: 30px">\(\displaystyle {@v@} = \frac{{@(-b)@} \pm \sqrt{{@b^2@}-({@4*a*c@})}}{@2*a@} = {@-b/(2*a)@} \pm {@(sqrt(b^2-4*a*c))/(2*a)@}\)</p>
+
+<br>
+
+<p>Therefore \( {@v@} = {@ta1@}\) or \( {@v@} = {@ta2@}\) and so the solution set is,</p>
+
+<p style="margin-left: 30px">\({@v@} \in {@{ta1, ta2}@}\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/* Question variables */
+
+v:rand([x,y,z,t]);
+a:rand(2)+2;
+b:rand(5)+8;
+c:rand(3)+1;
+ta1:-b/(2*a)+sqrt(b^2-4*a*c)/(2*a);
+ta2:-b/(2*a)-sqrt(b^2-4*a*c)/(2*a);
+ta:{ta1,ta2};
+
+/* Response tree variables */
+
+/*node 3 mistake: Failing to input negative infront of b when applying the quadratic formula*/
+ta_1:b/(2*a)+sqrt(b^2-4*a*c)/(2*a);
+ta_2:b/(2*a)-sqrt(b^2-4*a*c)/(2*a);
+mistake_3:{ta_1,ta_2};</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>quadratic equation: \[ {@a*v^2+b*v+c@} = 0. \] </p>
+<p>answer: \[ {@v@} \in {@{ta1  , ta2}@}. \]</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans</name>
+      <type>algebraic</type>
+      <tans>ta</tans>
+      <boxsize>18</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>1</requirelowestterms>
+      <checkanswertype>1</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1 checks for correct answer*/
+/*node 2 mistake: Giving a solution set with only one correct answer*/
+correctList:intersect(ans, ta);
+incorrectList:setdifference(ans, ta);
+node3_test: if cardinality(correctList)=1 and cardinality(incorrectList)=1 then 1 else 0;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans</sans>
+        <tans>ta</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>1-0-T </trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>1-0-F </falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node3_test</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer \(x = {@listify(correctList)[1]@}\) is correct.
+<br>However \(x = {@listify(incorrectList)[1]@}\) is not a correct solution, check your calculations.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans</sans>
+        <tans>mistake_3</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You seem to have failed to input negative in front of \(b\) when applying the quadratic formula. Check your formula well.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>210785883</deployedseed>
+    <deployedseed>2140135771</deployedseed>
+    <deployedseed>81744491</deployedseed>
+    <deployedseed>181621413</deployedseed>
+    <deployedseed>1195623594</deployedseed>
+    <deployedseed>2092346740</deployedseed>
+    <deployedseed>2034758388</deployedseed>
+    <deployedseed>221807106</deployedseed>
+    <deployedseed>889305115</deployedseed>
+    <deployedseed>1332303005</deployedseed>
+    <deployedseed>104503494</deployedseed>
+    <deployedseed>1600018722</deployedseed>
+    <deployedseed>1171995483</deployedseed>
+    <deployedseed>1241039780</deployedseed>
+    <deployedseed>808841996</deployedseed>
+    <deployedseed>677263872</deployedseed>
+    <deployedseed>42662660</deployedseed>
+    <deployedseed>477965163</deployedseed>
+    <deployedseed>340485544</deployedseed>
+    <deployedseed>68498630</deployedseed>
+    <deployedseed>759519713</deployedseed>
+    <deployedseed>760196390</deployedseed>
+    <deployedseed>884734771</deployedseed>
+    <deployedseed>1456343414</deployedseed>
+    <deployedseed>1519968475</deployedseed>
+    <deployedseed>642786083</deployedseed>
+    <deployedseed>1362381612</deployedseed>
+    <deployedseed>780729592</deployedseed>
+    <deployedseed>1920218540</deployedseed>
+    <deployedseed>1350998861</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans</name>
+        <value>{ta1, ta2}</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>1-0-T </expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <description/>
+      <testinput>
+        <name>ans</name>
+        <value>{ta1,0}</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty/>
+        <expectedanswernote>prt1-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <description/>
+      <testinput>
+        <name>ans</name>
+        <value>mistake_3</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty/>
+        <expectedanswernote>prt1-3-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

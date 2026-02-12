@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Properties of an Ellipse: Center, Foci, and Point Verification</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Suppose the endpoints of the major axis of an ellipse are \( (0, \pm {@Major_y@}) \) and the end points of its minor axis are \( ( \pm {@Minor_x@}, 0) \).</p>
+<p><em>Note: Give your answers in exact form i.e using fractions or writing in square root form
+<br>The equation of an ellipse with center \((h, k)\), semi-major axis \(a\), and semi-minor axis \(b\) is given by:</em></p>
+ <p style="margin-left: 30px">\(\displaystyle \frac{(x - h)^2}{a^2} + \frac{(y - k)^2}{b^2} = 1\)</p></p>
+<p>\( ( \text{a} ) \) Where is the center of the ellipse?</p>
+<p>Center \(=\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]] </p>
+<p>\( (\text{b}) \) Find the coordinates of the foci.</p>
+<p>[[input:ans2]] and [[input:ans3]][[validation:ans2]] [[validation:ans3]][[feedback:prt2]]</p>
+<p>\( (\text{c}) \) Determine whether each of the following points is on the ellipse or not by first substituting the coordinates of the specific points into the equation of the ellipse and giving the result.</p>
+<br>\( (\text{i}) \quad ({@x_1@}, \, {@y_1@}) \) 
+<br>Substituting into the equation of the ellipse we get: [[input:ans4]] [[validation:ans4]][[feedback:prt4]]
+<br>Hence the point is [[input:ans5]] the ellipse. [[validation:ans5]][[feedback:prt5]]
+<p>\( (\text{ii}) \quad ({@x_2@}, \, {@y_2@}) \) </p>
+<br>Substituting into the equation of the ellipse we get: [[input:ans6]] [[validation:ans6]][[feedback:prt6]]
+<br>Hence the point is [[input:ans7]] the ellipse. [[validation:ans7]][[feedback:prt7]]
+<p>\( (\text{iii}) \quad ({@x_3@}, \, {@y_3@})\)</p>
+<br>Substituting into the equation of the ellipse we get: [[input:ans8]] [[validation:ans8]][[feedback:prt8]]
+<br>Hence the point is [[input:ans9]] the ellipse.[[validation:ans9]][[feedback:prt9]] 
+<p>\( (\text{iv}) \quad ({@x_4@}, \, {@y_4@}) \) </p>
+<br>Substituting into the equation of the ellipse we get: [[input:ans10]] [[validation:ans10]][[feedback:prt10]]
+<br>Hence the point is [[input:ans11]] the ellipse. [[validation:ans11]][[feedback:prt11]]]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<h3>Worked Solution</h3>
+<p>To find the center, foci, and determine whether specific points lie on the ellipse, we can follow these steps:</p>
+<p>Given information:</p>
+<p>- Major axis endpoints: \( A(0, {@Major_y@}) \) and \( B(0, -{@Major_y@}) \) </p>
+<p>- Minor axis endpoints: \( C({@Minor_x@}, 0) \) and \( D({@-Minor_x@}, 0) \)</p>
+
+<p><b>Step 1: Find the Center of the Ellipse</b></p>
+
+<p>The center of an ellipse is the midpoint of the endpoints of the major axis. We can find it using the formula for the midpoint of two points \((x_1, y_1)\) and \((x_2, y_2)\):</p>
+
+<p style="margin-left: 30px">\(\text{Center} = \displaystyle \left(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}\right)\)</p>
+
+<p>In this case, the endpoints of the major axis are \(\displaystyle (0, {@Major_y@}) \) and \(\displaystyle (0, -{@Major_y@}) \), so the center is:</p>
+
+<p style="margin-left: 30px">\(\text{Center} = \displaystyle \left(\frac{0 + 0}{2}, \frac{{@Major_y@} + (-{@Major_y@})}{2}\right) = (0, 0)\)</p>
+
+<p><b>Step 2: Find the Coordinates of the Foci</b></p>
+
+<p>The distance from the center to each focus is given by the equation:</p>
+
+<p style="margin-left: 30px">\(c =\displaystyle \sqrt{a^2 - b^2}\)</p>
+
+<p>where \(a\) is the length of the semi-major axis and \(b\) is the length of the semi-minor axis.</p>
+
+<p>Given the endpoints of the minor axis, we can calculate the length of the semi-minor axis \(b\):</p>
+
+<p style="margin-left: 30px">\(b =\displaystyle \frac{1}{2} \cdot \text{distance}(C, D) =\displaystyle \frac{1}{2} \cdot \sqrt{({@Minor_x@} - (-{@Minor_x@}))^2 + (0 - 0)^2} = {@Minor_x@}\)</p>
+
+<p>Given the endpoints of the major axis, we can calculate the length of the semi-major axis \(a\):</p>
+
+<p style="margin-left: 30px">\(a =\displaystyle \frac{1}{2} \cdot \text{distance}(A, B) = \displaystyle \frac{1}{2} \cdot \sqrt{(0 - 0)^2 + ({@Major_y@} - (-{@Major_y@}))^2} = {@Major_y@}\)</p>
+
+<p>Now we can calculate the distance from the center to each focus:</p>
+
+<p style="margin-left: 30px">\(c = \displaystyle \sqrt{a^2 - b^2} = \sqrt{{@Major_y@}^2 - {@Minor_x@}^2}= \displaystyle {@sqrt(Major_y^2 - Minor_x^2)@}\)</p>
+
+<p>The foci will be located along the major axis, which is the \(y\)-axis. So, the coordinates of the foci are:</p>
+
+<p>Foci: \(\displaystyle (0,  {@sqrt(Major_y^2 - Minor_x^2)@} ) \) and \(\displaystyle (0,  -{@sqrt(Major_y^2 - Minor_x^2)@}) \) </p>
+
+<p><b>Step 3: Determine if Specific Points are on the Ellipse</b></p>
+
+<p>The equation of an ellipse with center \((h, k)\), semi-major axis \(a\), and semi-minor axis \(b\) is given by:</p>
+
+<p style="margin-left: 30px">\(\displaystyle \frac{(x - h)^2}{a^2} + \frac{(y - k)^2}{b^2} = 1\)</p>
+
+<p>In this case, the center is \((0, 0)\), \(a = \displaystyle {@Major_y@}\), and \(b =\displaystyle {@Minor_x@}\). We can now check whether each point lies on the ellipse:</p>
+
+<p style="margin-left: 30px">(i) \(({@x_1@}, \, {@y_1@})\):</p>
+<p>Substituting the coordinates into the ellipse equation:</p>
+<p style="margin-left: 30px">\(\displaystyle \frac{({@x_1@}-0)^2}{{@Major_y@}^2} + \frac{({@y_1@}-0)^2}{{@Minor_x@}^2} ={@(x_1^2)/(Major_y^2)@} + {@(y_1^2)/Minor_x^2@}= {@ta4@}\)</p>
+<p>So, this point is {@mcq_correct(ta5)[1]@} the ellipse.</p>
+
+<p style="margin-left: 30px">(ii) \(\displaystyle ({@x_2@}, \, {@y_2@})\):</p>
+<p>Substituting the coordinates into the ellipse equation:</p>
+<p style="margin-left: 30px">\( \displaystyle \frac{({@x_2@}-0)^2}{{@Major_y@}^2} + \frac{({@y_2@}-0)^2}{{@Minor_x@}^2} ={@(x_2^2)/(Major_y^2)@} + {@(y_2^2)/Minor_x^2@}= {@ta6@} \)</p>
+<p>So, this point is {@mcq_correct(ta7)[1]@} the ellipse.</p>
+
+<p style="margin-left: 30px">(iii) \(\displaystyle ({@x_3@}, \, {@y_3@})\):</p>
+<p>Substituting the coordinates into the ellipse equation:
+<p style="margin-left: 30px">\(\displaystyle \frac{({@x_3@}-0)^2}{{@Major_y@}^2} + \frac{({@y_3@}-0)^2}{{@Minor_x@}^2} ={@(x_3^2)/Major_y^2@} + {@(y_3^2)/Minor_x^2@} = {@ta8@}\)</p>
+<p>So, this point is {@mcq_correct(ta9)[1]@} the ellipse.</p>
+
+<p style="margin-left: 30px">(iv) \(\displaystyle ({@x_4@}, \, {@y_4@})\):</p>
+<p>Substituting the coordinates into the ellipse equation:</p>
+<p style="margin-left: 30px">\(\displaystyle \frac{({@x_4@}-0)^2}{{@Major_y@}^2} + \frac{({@y_4@}-0)^2}{{@Minor_x@}^2} ={@(x_4^2)/Major_y^2@}+ {@(y_4^2)/(Minor_x^2)@}= {@ta10@}\)</p>
+<p>So, this point is {@mcq_correct(ta11)[1]@} the ellipse.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[/*Question Variables*/ 
+Major_y:rand(4)+2;
+Minor_x:if Major_y>3 then Major_y-(rand(2)+1) else if Major_y>2 then Major_y-(rand(1)+1) else 1;
+ta1:[0,0];
+val_b:(1/2)*sqrt((Minor_x*2)^2);
+val_a:(1/2)*sqrt((Major_y*2)^2);
+val_c:sqrt(val_a^2-val_b^2);
+ta2:[0,val_c];
+ta3:[0,-val_c];
+x_1:rand_with_step(-5,5,1);
+y_1:rand_with_step(-5,5,1);
+x_2:0;
+y_2:val_b;
+x_3:rand_with_step(-5,5,1);
+y_3:rand_with_step(-5,5,1);
+x_4:rand_with_step(-5,5,1);
+y_4:rand_with_step(-5,5,1);
+ta4:(((x_1)^2)/(val_a)^2)+(((y_1)^2)/(val_b)^2);
+ta5:if ta4=1 then random_permutation([["on ", true],["not on", false]]) else random_permutation([["on ", false],["not on", true]]);
+ta6:(((x_2)^2)/(val_a)^2)+(((y_2)^2)/(val_b)^2);
+ta7:if ta6=1 then random_permutation([["on ", true],["not on", false]]) else random_permutation([["on ", false],["not on", true]]);
+ta8:(((x_3)^2)/(val_a)^2)+(((y_3)^2)/(val_b)^2);
+ta9:if ta8=1 then random_permutation([["on ", true],["not on", false]]) else random_permutation([["on ", false],["not on", true]]);
+ta10:(((x_4)^2)/(val_a)^2)+(((y_4)^2)/(val_b)^2);
+ta11:if ta10=1 then random_permutation([["on ", true],["not on", false]]) else random_permutation([["on ", false],["not on", true]]);]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>The endpoints of the major axis of an ellipse are \( (0, \pm {@Major_y@}) \) and the end points of its minor axis are \( \pm {@Minor_x@}, 0 \).</p>
+<p>Center \(={@ta1@}\)</p>
+<p>Foci: \({@ta2@}\) and \({@ta3@}\)</p>
+<p>\( (i) \quad ({@x_1@}, \, {@y_1@}) \) </p>
+<p>Substituting into the equation of the ellipse we get: \({@ta4@}\)</p>
+<p>Hence the point is \({@ta5@}\) the ellipse</p>
+<p>\( (ii) \quad ({@x_2@}, \, {@y_2@}) \) </p>
+<p>Substituting into the equation of the ellipse we get: \({@ta6@}\)</p>
+<p>Hence the point is \({@ta7@}\) the ellipse</p>
+<p>\( (iii) \quad ({@x_3@}, \, {@y_3@})\)</p>
+<p>Substituting into the equation of the ellipse we get: \({@ta8@}\)</p>
+<p>Hence the point is \({@ta9@}\) the ellipse</p>
+<p>\( (iv) \quad ({@x_4@}, \, {@y_4@}) \) </p>
+<p>Substituting into the equation of the ellipse we get: \({@ta10@}\)</p>
+<p>Hence the point is \({@ta11@}\) the ellipse</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>[?,?]</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans10</name>
+      <type>algebraic</type>
+      <tans>ta10</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans11</name>
+      <type>dropdown</type>
+      <tans>ta11</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options>nonotanswered</options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>[ ?, ? ]</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>[? , ?]</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>ta4</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans5</name>
+      <type>dropdown</type>
+      <tans>ta5</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options>nonotanswered</options>
+    </input>
+    <input>
+      <name>ans6</name>
+      <type>algebraic</type>
+      <tans>ta6</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans7</name>
+      <type>dropdown</type>
+      <tans>ta7</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options>nonotanswered</options>
+    </input>
+    <input>
+      <name>ans8</name>
+      <type>algebraic</type>
+      <tans>ta8</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans9</name>
+      <type>dropdown</type>
+      <tans>ta9</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options>nonotanswered</options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt10</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans10</sans>
+        <tans>ta10</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt10-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt10-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt11</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans11</sans>
+        <tans>mcq_correct(ta11)[1]</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt11-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt11-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */
+sans:{ans2,ans3};
+Ta:{ta2,ta3}
+/*node 2: Checks that one of answer is true*/
+is_one_foci: is(ans2 # ans3) and member[ans1, [ta2,ta3]] or member[ans2,[ta2,ta3]];</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>Sets</answertest>
+        <sans>sans</sans>
+        <tans>Ta</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>ta4</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt5</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans5</sans>
+        <tans>mcq_correct(ta5)[1]</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt5-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt5-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt6</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans6</sans>
+        <tans>ta6</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt6-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt6-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt7</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans7</sans>
+        <tans>mcq_correct(ta7)[1]</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt7-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt7-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt8</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans8</sans>
+        <tans>ta8</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt8-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt8-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt9</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans9</sans>
+        <tans>mcq_correct(ta9)[1]</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt9-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt9-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1881516860</deployedseed>
+    <deployedseed>1362890503</deployedseed>
+    <deployedseed>1950343973</deployedseed>
+    <deployedseed>1719868775</deployedseed>
+    <deployedseed>1613001965</deployedseed>
+    <deployedseed>1266283193</deployedseed>
+    <deployedseed>1228020576</deployedseed>
+    <deployedseed>1117465640</deployedseed>
+    <deployedseed>477947605</deployedseed>
+    <deployedseed>629620579</deployedseed>
+    <deployedseed>392200015</deployedseed>
+    <deployedseed>792826289</deployedseed>
+    <deployedseed>1396452393</deployedseed>
+    <deployedseed>726385503</deployedseed>
+    <deployedseed>1993232877</deployedseed>
+    <deployedseed>1377401554</deployedseed>
+    <deployedseed>612785151</deployedseed>
+    <deployedseed>2050249469</deployedseed>
+    <deployedseed>250855992</deployedseed>
+    <deployedseed>841228885</deployedseed>
+    <deployedseed>1357105715</deployedseed>
+    <deployedseed>1233251389</deployedseed>
+    <deployedseed>1080824567</deployedseed>
+    <deployedseed>893225683</deployedseed>
+    <deployedseed>580989265</deployedseed>
+    <deployedseed>1681412659</deployedseed>
+    <deployedseed>2096771462</deployedseed>
+    <deployedseed>31880794</deployedseed>
+    <deployedseed>1178248539</deployedseed>
+    <deployedseed>653418218</deployedseed>
+    <deployedseed>1512086998</deployedseed>
+    <deployedseed>144245090</deployedseed>
+    <deployedseed>1398567342</deployedseed>
+    <deployedseed>1157962469</deployedseed>
+    <deployedseed>1863811408</deployedseed>
+    <deployedseed>291685074</deployedseed>
+    <deployedseed>1894960163</deployedseed>
+    <deployedseed>620385253</deployedseed>
+    <deployedseed>768318927</deployedseed>
+    <deployedseed>1728536615</deployedseed>
+    <deployedseed>184718624</deployedseed>
+    <deployedseed>1015794415</deployedseed>
+    <deployedseed>1860295513</deployedseed>
+    <deployedseed>1980578177</deployedseed>
+    <deployedseed>1033728727</deployedseed>
+    <deployedseed>245047156</deployedseed>
+    <deployedseed>1524556046</deployedseed>
+    <deployedseed>2111389585</deployedseed>
+    <deployedseed>1016134341</deployedseed>
+    <deployedseed>1623027803</deployedseed>
+    <deployedseed>2099892908</deployedseed>
+    <deployedseed>640103798</deployedseed>
+    <deployedseed>1746090873</deployedseed>
+    <deployedseed>78902660</deployedseed>
+    <deployedseed>316711506</deployedseed>
+    <deployedseed>1002518994</deployedseed>
+    <deployedseed>1026945489</deployedseed>
+    <deployedseed>452058302</deployedseed>
+    <deployedseed>581006087</deployedseed>
+    <deployedseed>1274580387</deployedseed>
+    <deployedseed>537775297</deployedseed>
+    <deployedseed>1782430602</deployedseed>
+    <deployedseed>996635019</deployedseed>
+    <deployedseed>762304559</deployedseed>
+    <deployedseed>1456540901</deployedseed>
+    <deployedseed>88281934</deployedseed>
+    <deployedseed>351362396</deployedseed>
+    <deployedseed>1961124259</deployedseed>
+    <deployedseed>1245554027</deployedseed>
+    <deployedseed>1805097430</deployedseed>
+    <deployedseed>1412561350</deployedseed>
+    <deployedseed>917374440</deployedseed>
+    <deployedseed>1850967453</deployedseed>
+    <deployedseed>720345611</deployedseed>
+    <deployedseed>565897280</deployedseed>
+    <deployedseed>1706127157</deployedseed>
+    <deployedseed>843110654</deployedseed>
+    <deployedseed>1278488671</deployedseed>
+    <deployedseed>759469157</deployedseed>
+    <deployedseed>2077607438</deployedseed>
+    <deployedseed>1605576916</deployedseed>
+    <deployedseed>1065435646</deployedseed>
+    <deployedseed>1920325641</deployedseed>
+    <deployedseed>1156931995</deployedseed>
+    <deployedseed>2039099877</deployedseed>
+    <deployedseed>943832989</deployedseed>
+    <deployedseed>1126150754</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans10</name>
+        <value>ta10</value>
+      </testinput>
+      <testinput>
+        <name>ans11</name>
+        <value>first(mcq_correct(ta11))</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>first(mcq_correct(ta5))</value>
+      </testinput>
+      <testinput>
+        <name>ans6</name>
+        <value>ta6</value>
+      </testinput>
+      <testinput>
+        <name>ans7</name>
+        <value>first(mcq_correct(ta7))</value>
+      </testinput>
+      <testinput>
+        <name>ans8</name>
+        <value>ta8</value>
+      </testinput>
+      <testinput>
+        <name>ans9</name>
+        <value>first(mcq_correct(ta9))</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt10</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt10-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt11</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt11-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt5</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt5-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt6</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt6-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt7</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt7-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt8</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt8-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt9</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt9-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

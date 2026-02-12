@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Propositional definitions</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Complete the following definitions relating to propositional logic.</p>
+
+<br>
+
+<p>(a) A “proposition” is a statement that is [[input:ans1]]</p>
+<p>[[validation:ans1]]</p>
+
+<br>
+
+<p>(b) The “implication”, \(p \Rightarrow q\), is the statement that,</p>
+<p>The proposition {@if t_ans2="if" then "\\(q\\)" else "\\(p\\)"@} is true [[input:ans2]] the proposition {@if t_ans2="if" then "\\(p\\)" else "\\(q\\)"@} is [[input:ans3]]</p>
+<p>[[validation:ans2]] [[validation:ans3]]</p>
+
+<br>
+
+<p>(c) The “bi-implication” or “equivalence”, \(p \iff q\), is the statement that,</p>
+<p>The proposition \(p\) is true [[input:ans4]] the proposition \(q\) is [[input:ans5]]</p>
+<p>[[validation:ans4]] [[validation:ans5]]</p>
+
+<p>[[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked solution</h3>
+
+<p>The correct completed statements are the following:</p>
+
+<br>
+
+<p>(a) A “proposition” is a statement that is <b>either true or false but not both</b>.
+<br>For example, “a cube has 9 faces” or “\(x^2 - 3x + 2 = 0\)".</p>
+
+<br>
+
+<p>(b) The “implication”, \(p \Rightarrow q\), is the statement that the proposition {@if t_ans2="if" then "\\(q\\)" else "\\(p\\)"@} is true <b>{@t_ans2@}</b> the proposition {@if t_ans2="if" then "\\(p\\)" else "\\(q\\)"@} is <b>true</b>.
+<br>An alternate phrasing is <b>if \(p\) then \(q\)</b>.
+<br>For example, “if \(x=2\) then \(x^2 - 3x + 2 = 0\)”.</p>
+
+<br>
+
+<p>(c) The “bi-implication” or “equivalence”, \(p \iff q\), is the statement that the proposition \(p\) is true <b>if and only if</b> the proposition \(q\) is <b>true</b>.
+<br>For example, “\(x^2 - 3x + 2 = 0\) <b>if and only if</b> \(x=2\) or \(x=1\)”.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>3</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[/* Randomization of incorrect options */
+
+/* (a) */
+incorrect_ops_a: rand_selection([
+  ["true", false],
+  ["false", false],
+  ["indeterminable", false],
+  ["both true and false", false],
+  ["neither true nor false", false]
+], 2);
+m_ans1: random_permutation(append(
+  [["either true or false but not both", true]],
+  [["either true or false", false]],
+  incorrect_ops_a
+));
+t_ans1: "either true or false but not both";
+
+/* (b) */
+
+correct_ops_b_i: rand([[["if", true]], [["only if", true]]]);
+t_ans2: correct_ops_b_i[1][1];
+
+incorrect_ops_b_i1: if t_ans2="if" then [["only if", false]] else if t_ans2="only if" then [["if", false]];
+
+incorrect_ops_b_i2: rand_selection([
+  ["if and only if", false],
+  ["exactly when", false],
+  ["depending on whether", false]
+], 2);
+
+m_ans2: random_permutation(append(
+  correct_ops_b_i,
+  incorrect_ops_b_i1,
+  incorrect_ops_b_i2
+));
+
+m_ans3: random_permutation([
+  ["true", true],
+  ["false", false],
+  ["indeterminable", false]
+]);
+t_ans3: "true";
+
+/* (c) */
+incorrect_ops_c_i: rand_selection([
+  ["if", false],
+  ["only if", false],
+  ["depending on whether", false]
+], 2);
+m_ans4: random_permutation(append(
+  [["if and only if", true]],
+  incorrect_ops_c_i
+));
+t_ans4: "if and only if";
+
+m_ans5: random_permutation([
+  ["true", true],
+  ["false", false],
+  ["indeterminable", false]
+]);
+t_ans5: "true";]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>Part (a) options: {@m_ans1@}</p>
+<p>Part (b)(i) options: {@m_ans2@}</p>
+<p>Part (b)(ii) options: {@m_ans3@}</p>
+<p>Part (c)(i) options: {@m_ans4@}</p>
+<p>Part (c)(ii) options: {@m_ans5@}</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>dropdown</type>
+      <tans>m_ans1</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>dropdown</type>
+      <tans>m_ans2</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>dropdown</type>
+      <tans>m_ans3</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>dropdown</type>
+      <tans>m_ans4</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans5</name>
+      <type>dropdown</type>
+      <tans>m_ans5</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>2.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/* Node 1: Check all answers correct */
+node1_test: if [ans1, ans2, ans3, ans4, ans5] = [t_ans1, t_ans2, t_ans3, t_ans4, t_ans5] then 1 else 0;
+
+/* Node 2: Award one mark if two of the three statements are correct */
+correct_part_a: is(ans1=t_ans1);
+correct_part_b: is([ans2, ans3]=[t_ans2, t_ans3]);
+correct_part_c: is([ans4, ans5]=[t_ans4, t_ans5]);
+node2_test: if (correct_part_a and correct_part_b) or (correct_part_a and correct_part_c) or (correct_part_b and correct_part_c) then 1 else 0;
+
+/* Node 3: Feedback for part (a) */
+node3_test: if correct_part_a then 1 else 0;
+
+/* Node 4: Feedback for part (b) */
+node4_test: if correct_part_b then 1 else 0;
+
+/* Node 5: Feedback for part (c) */
+node5_test: if correct_part_c then 1 else 0;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node1_test</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node2_test</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>2</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node3_test</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>3</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>Your definition of a proposition is not correct.
+<br> A <b>proposition</b> is a statement that is <b>either true or false but not both</b>.</p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node4_test</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>4</truenextnode>
+        <trueanswernote>prt1-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>4</falsenextnode>
+        <falseanswernote>prt1-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>Your definition of an implication is not correct.
+<br> An <b>implication</b> is a statement that a proposition is true <b>if</b> or <b>only if</b> another proposition is <b>true</b>.</p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>4</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node5_test</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-5-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-5-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>Your definition of a bi-implication is not correct.
+<br> A <b>bi-implication</b> is a statement that a proposition is true <b>if and only if</b> another proposition is <b>true</b>.</p>]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1350179340</deployedseed>
+    <deployedseed>1606511609</deployedseed>
+    <deployedseed>28621883</deployedseed>
+    <deployedseed>2112990057</deployedseed>
+    <deployedseed>706573573</deployedseed>
+    <deployedseed>2099196757</deployedseed>
+    <deployedseed>525350023</deployedseed>
+    <deployedseed>801105833</deployedseed>
+    <deployedseed>120060253</deployedseed>
+    <deployedseed>1850836350</deployedseed>
+    <deployedseed>781605427</deployedseed>
+    <deployedseed>1469831423</deployedseed>
+    <deployedseed>408561614</deployedseed>
+    <deployedseed>1383276995</deployedseed>
+    <deployedseed>495929505</deployedseed>
+    <deployedseed>438545378</deployedseed>
+    <deployedseed>1995158778</deployedseed>
+    <deployedseed>1231072045</deployedseed>
+    <deployedseed>1273957123</deployedseed>
+    <deployedseed>1878126588</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>t_ans1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>t_ans2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>t_ans3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>t_ans4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>t_ans5</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value><![CDATA["either true or false"]]></value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>t_ans2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>t_ans3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>t_ans4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>t_ans5</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty/>
+        <expectedanswernote>prt1-5-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>t_ans1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>incorrect_ops_b_i[1][1]</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>t_ans3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>t_ans4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>t_ans5</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty/>
+        <expectedanswernote>prt1-5-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>4</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>t_ans1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>t_ans2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value><![CDATA["false"]]></value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>t_ans4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>t_ans5</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty/>
+        <expectedanswernote>prt1-5-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>5</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>t_ans1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>t_ans2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>t_ans3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>incorrect_ops_c_i[1][1]</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>t_ans5</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty/>
+        <expectedanswernote>prt1-5-F</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>6</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>t_ans1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>t_ans2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>t_ans3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>t_ans4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value><![CDATA["false"]]></value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty/>
+        <expectedanswernote>prt1-5-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

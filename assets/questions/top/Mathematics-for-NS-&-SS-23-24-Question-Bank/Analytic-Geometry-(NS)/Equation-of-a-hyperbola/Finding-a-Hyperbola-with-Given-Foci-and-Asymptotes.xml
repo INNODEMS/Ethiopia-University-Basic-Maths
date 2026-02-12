@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Finding a Hyperbola with Given Foci and Asymptotes</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p> Find the hyperbola with foci \( F_{1} ({@focus1_x@}, {@focus1_y@})\) and  \( F_{1} ({@focus2_x@}, {@focus2_y@})\) and asymptotes \( (l_{{@asym_y@},{@coef@}}): {@asym@}  \).</p>
+<p>[[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text><![CDATA[<p><b><h3>Worked solution</h3></b></p>
+<p>We need to find the equation of the hyperbola with foci \( F_{1} ({@focus1_x@}, {@focus1_y@})\) and  \( F_{1} ({@focus2_x@}, {@focus2_y@})\) and asymptotes \( (l_{{@asym_y@},{@coef@}}): {@asym@}  \).
+<br> The equation of a hyperbola opening left and right in standard form follows: \(\displaystyle  \frac{(x-h)^2}{a^2}- \frac{(y-k)^2}{b^2}=1.\)
+<br> Here the center is \((h, k)\) and the vertices are \( (h \pm a, k) \)
+<br> Let \(F_{1} (x_{F_{1}}, y_{F_{1}})\) and \(F_{2} (x_{F_{2}}, y_{F_{2}}) \) be the foci, and \( (l): y - y_{0} = \pm u (x-x_{0}) \) the asymptotes, we have \(F_{1}F_{2}=2\cdot c\). Then we have the following relations:
+<br>\(
+(1) \left\{ \begin{array}{r}
+a^2+b^2= c^2\\ 
+b= u \cdot a
+\end{array}\right. \) 
+ and \( (2) \left\{ \begin{array}{r}
+h=  \displaystyle \frac{x_{F_{1}}+x_{F_{2}}}{2}\\ 
+k=  \displaystyle \frac{y_{F_{1}}+y_{F_{2}}}{2}
+\end{array}\right. \) 
+<br> In this case, foci are \( F_{1} ({@focus1_x@}, {@focus1_y@})\) and  \( F_{1} ({@focus2_x@}, {@focus2_y@})\), and asymptotes \( (l_{{@asym_y@},{@coef@}}): {@asym@}  \), 
+<br>Using the information above we have
+<br> \( u = {@coef@}  \implies  b=  {@coef@}  \cdot a \)
+<br> \(2 \cdot c =|x_{F_{1}}-x_{F_{2}}|=|({@focus1_x@})-({@focus2_x@})|={@cc@} \implies c = {@c@}\).
+<br> The system (1) becomes: <br>\(
+(1) \left\{ \begin{array}{r}
+a^2+b^2= {@c^2@}\\ 
+b= {@coef@} \cdot a
+\end{array}\right. \implies 
+\left\{ \begin{array}{r}
+a=  \displaystyle {@val_a@}\\ 
+b=  \displaystyle {@val_b@}
+\end{array}\right.\) 
+<br> Using the system (2), we get 
+\( \left\{ \begin{array}{r}
+h=  \displaystyle \frac{({@focus1_x@})+({@focus2_x@})}{2} = {@h@} \\ 
+k=  \displaystyle \frac{({@focus1_y@})+({@focus2_y@})}{2} = {@k@}
+\end{array}\right. \) 
+<br> Therefore, the equation of the hyperbola is:
+<br> \(  \displaystyle \frac{(x-({@h@}))^2}{@val_a^2@} - \frac{(y-({@k@}))^2}{@val_b^2@} = 1\)
+<br> \( \displaystyle {@hyper2@} \)
+<br> \( {@ta1@} \)]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*Randomising coordinates of focus*/
+aa: rand_with_step(2,5,1);
+bb: rand_with_prohib(-5,5,[0,aa^2]);
+focus1_x: bb-sqrt(aa);
+focus1_y: rand_with_prohib(-5,5,[0]);
+focus2_x: bb+sqrt(aa);
+focus2_y:  rand_with_prohib(-5,5,[0]);
+
+/*Defining asymptotes*/
+asym_y: (focus1_x+focus2_x)/2;
+asym_x: (focus1_y+focus2_y)/2;
+coef: 2;
+asym: y-asym_y=+-coef*(x-asym_x);
+
+/*compute F1F2*/
+cc: abs(focus1_x-focus2_x);
+c: cc/2;
+/*Solve system 1 to get values of a and b*/
+expr1: solve([a^2+b^2=c^2,b=coef*a],[a,b]);
+expr2: expr1[1];
+expr3: expr2[1];
+val_a: abs(rhs(expr3)); /*value of a*/
+expr5: expr2[2];
+val_b: abs(rhs(expr5)); /*value of b*/
+/*Value on center h, k */
+h:  (focus1_x+focus2_x)/2;
+k:  (focus1_y+focus2_y)/2;
+/*Equation of hyperbola*/
+hyper1: ((x-h)^2/val_a^2)-((y-k)^2/val_b^2)=1;
+hyper2: val_b^2*(x-h)^2-val_a^2*(y-k)^2=val_a^2*val_b^2;
+hyper3: val_b^2*(x-h)^2-val_a^2*(y-k)^2-val_a^2*val_b^2=0
+den_ab: denom(val_a^2*val_b^2);
+ta1: expand(den_ab*hyper3);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<br> Find the hyperbola with focus \( F_{1} ({@focus1_x@}, {@focus1_y@})\) and  \( F_{1} ({@focus2_x@}, {@focus2_y@})\) and asymptotes \( (l_{{@asym_y@},{@coef@}}): {@asym@}  \).
+<br> \( {@hyper2@} \)
+<br>The equation of hyperbola is \( {@ta1@} \)]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>25</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Check correct answer*/
+/*Node 2: Alternative of correct answer*/
+feedback1:  ((x-h)^2/val_a^2)-((y-k)^2/val_b^2)=1;
+/*Node 3: Interchanged h vs k only*/
+mistake1: ((x-k)^2/val_a^2)-((y-h)^2/val_b^2)=1;
+/*Node 4: Interchanged values of \(a\) and \( b\)*/
+mistake2:  ((x-h)^2/val_b^2)-((y-k)^2/val_a^2)=1;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>feedback1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text>You interchanged the elements of the centre when doing the computation.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>395474646</deployedseed>
+    <deployedseed>1758957292</deployedseed>
+    <deployedseed>308570347</deployedseed>
+    <deployedseed>36732559</deployedseed>
+    <deployedseed>2097051366</deployedseed>
+    <deployedseed>1572133104</deployedseed>
+    <deployedseed>969214789</deployedseed>
+    <deployedseed>1464575340</deployedseed>
+    <deployedseed>1222102717</deployedseed>
+    <deployedseed>1966682275</deployedseed>
+    <deployedseed>827914456</deployedseed>
+    <deployedseed>1178759953</deployedseed>
+    <deployedseed>1985684538</deployedseed>
+    <deployedseed>2003247476</deployedseed>
+    <deployedseed>90484815</deployedseed>
+    <deployedseed>1466949330</deployedseed>
+    <deployedseed>909489360</deployedseed>
+    <deployedseed>2091096740</deployedseed>
+    <deployedseed>338736345</deployedseed>
+    <deployedseed>1903818698</deployedseed>
+    <deployedseed>238423540</deployedseed>
+    <deployedseed>170261861</deployedseed>
+    <deployedseed>374728082</deployedseed>
+    <deployedseed>1248742412</deployedseed>
+    <deployedseed>444387582</deployedseed>
+    <deployedseed>854578244</deployedseed>
+    <deployedseed>2121181263</deployedseed>
+    <deployedseed>1594545698</deployedseed>
+    <deployedseed>524589676</deployedseed>
+    <deployedseed>1683576339</deployedseed>
+    <deployedseed>1351488533</deployedseed>
+    <deployedseed>1501087660</deployedseed>
+    <deployedseed>501762717</deployedseed>
+    <deployedseed>1689466465</deployedseed>
+    <deployedseed>1895876243</deployedseed>
+    <deployedseed>1774769275</deployedseed>
+    <deployedseed>2074327175</deployedseed>
+    <deployedseed>1824853322</deployedseed>
+    <deployedseed>221385469</deployedseed>
+    <deployedseed>26125414</deployedseed>
+    <deployedseed>711403128</deployedseed>
+    <deployedseed>869706171</deployedseed>
+    <deployedseed>418659479</deployedseed>
+    <deployedseed>1299225155</deployedseed>
+    <deployedseed>2124286848</deployedseed>
+    <deployedseed>219993055</deployedseed>
+    <deployedseed>1246800201</deployedseed>
+    <deployedseed>982904454</deployedseed>
+    <deployedseed>492477781</deployedseed>
+    <deployedseed>888397489</deployedseed>
+    <deployedseed>1452239358</deployedseed>
+    <deployedseed>1479771270</deployedseed>
+    <deployedseed>1197043599</deployedseed>
+    <deployedseed>1582546928</deployedseed>
+    <deployedseed>1949767196</deployedseed>
+    <deployedseed>1949272363</deployedseed>
+    <deployedseed>1935239994</deployedseed>
+    <deployedseed>1544075429</deployedseed>
+    <deployedseed>1359958768</deployedseed>
+    <deployedseed>418029341</deployedseed>
+    <deployedseed>1191041972</deployedseed>
+    <deployedseed>1790731229</deployedseed>
+    <deployedseed>1403766217</deployedseed>
+    <deployedseed>158992373</deployedseed>
+    <deployedseed>315443804</deployedseed>
+    <deployedseed>526786095</deployedseed>
+    <deployedseed>1905118357</deployedseed>
+    <deployedseed>233987261</deployedseed>
+    <deployedseed>710219231</deployedseed>
+    <deployedseed>834896047</deployedseed>
+    <deployedseed>819132524</deployedseed>
+    <deployedseed>2033174516</deployedseed>
+    <deployedseed>1961200894</deployedseed>
+    <deployedseed>1177207603</deployedseed>
+    <deployedseed>1169436805</deployedseed>
+    <deployedseed>817461302</deployedseed>
+    <deployedseed>1563980690</deployedseed>
+    <deployedseed>1591546517</deployedseed>
+    <deployedseed>1207946068</deployedseed>
+    <deployedseed>2091118324</deployedseed>
+    <deployedseed>1057407156</deployedseed>
+    <deployedseed>502288381</deployedseed>
+    <deployedseed>831821650</deployedseed>
+    <deployedseed>1524710931</deployedseed>
+    <deployedseed>2067654415</deployedseed>
+    <deployedseed>521911583</deployedseed>
+    <deployedseed>965033021</deployedseed>
+    <deployedseed>726377936</deployedseed>
+    <deployedseed>1310201512</deployedseed>
+    <deployedseed>99206579</deployedseed>
+    <deployedseed>1230046118</deployedseed>
+    <deployedseed>1017712616</deployedseed>
+    <deployedseed>1330429772</deployedseed>
+    <deployedseed>793634681</deployedseed>
+    <deployedseed>594887993</deployedseed>
+    <deployedseed>1732790341</deployedseed>
+    <deployedseed>281784117</deployedseed>
+    <deployedseed>873749061</deployedseed>
+    <deployedseed>692892119</deployedseed>
+    <deployedseed>2125074163</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

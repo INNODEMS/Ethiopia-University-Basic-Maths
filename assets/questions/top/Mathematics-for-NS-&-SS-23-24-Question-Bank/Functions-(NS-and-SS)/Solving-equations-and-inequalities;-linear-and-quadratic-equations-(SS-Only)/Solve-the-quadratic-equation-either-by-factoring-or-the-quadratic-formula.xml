@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Solve the quadratic equation either by factoring or the quadratic formula</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Solve the quadratic equation \({@quest@} = 0\). Enter your answers in the boxes below.</p> 
+<p>If the equation has a double root enter the double root twice.</p>
+
+<p>\(x =\) [[input:ans1]]  [[validation:ans1]] or \(x = \) [[input:ans2]] [[validation:ans2]]</p>
+<p>[[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked solution</h3>
+
+<p>We will consider two ways to approach this question.</p>
+
+<br>
+
+<p>Method 1 - Factorising:</p>
+
+<p>\({@quest@} = 0\)</p>
+<p>\({@(x-pm1*aa)*(x-pm2*bb)@} = 0\)</p>
+<p>\({@x-pm1*aa@} = 0\) or \({@x-pm2*bb@} = 0\)</p>
+<p>\(x = {@pm1*aa@}\) or \(x = {@pm2*bb@}\)</p>
+
+<br>
+
+<p>Method 2 - Quadratic Formula:</p>
+
+<p>\({@quest@} = 0\)</p>
+<p>\(a = 1\), \(b = {@-(pm1*aa+pm2*bb)@}\) and \(c = {@pm1*aa*pm2*bb@}\)</p>
+<p>\(x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}\)</p>
+<p>\(= \frac{-{@blb@} {@-(pm1*aa+pm2*bb)@} {@brb@} \pm \sqrt{{@blb@} {@-(pm1*aa+pm2*bb)@} {@brb@}^2-4\cdot 1 \cdot {@clb@} {@pm1*aa*pm2*bb@} {@crb@}}}{2\cdot 1}\)</p>
+<p>\(= \frac{{@(pm1*aa+pm2*bb)@} \pm \sqrt{{@(-(pm1*aa+pm2*bb))^2@}- {@clb@} {@4*pm1*aa*pm2*bb@} {@crb@}}}{2}\)</p>
+<p>\(= \frac{{@(pm1*aa+pm2*bb)@} \pm \sqrt{{@(-(pm1*aa+pm2*bb))^2-4*pm1*aa*pm2*bb@}}}{2}\)</p>
+<p>\(\displaystyle = \frac{{@(pm1*aa+pm2*bb)@} \pm {@sqrt((-(pm1*aa+pm2*bb))^2-4*pm1*aa*pm2*bb)@}}{2}\)</p>
+<p>\(\displaystyle x= \frac{{@(pm1*aa+pm2*bb)@} + {@sqrt((-(pm1*aa+pm2*bb))^2-4*pm1*aa*pm2*bb)@}}{2}\) or&nbsp;\(\displaystyle x= \frac{{@(pm1*aa+pm2*bb)@} - {@sqrt((-(pm1*aa+pm2*bb))^2-4*pm1*aa*pm2*bb)@}}{2}\)</p>
+<p>\(x = {@pm1*aa@}\) or \(x = {@pm2*bb@}\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[pm1:rand([-1,1]);
+aa:rand(8)+1;
+pm2:rand([-1,1]);
+bb:rand(8)+1;
+quest:expand((x-pm1*aa)*(x-pm2*bb));
+ta:{pm1*aa,pm2*bb};
+
+/*Worked solution codes*/
+ans:{ans1,ans2};
+err:if cardinality(intersect(ans,ta))>0 then 1 else 0;
+errcorr:if cardinality(intersect(ans,ta))>0 then listify(intersect(ans,ta))[1] else "";
+blb:if -(pm1*aa+pm2*bb)<0 then "(" else "";
+brb:if -(pm1*aa+pm2*bb)<0 then ")" else "";
+clb:if pm1*aa*pm2*bb<0 then "(" else "";
+crb:if pm1*aa*pm2*bb<0 then ")" else "";]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>\({@quest@} = 0\).</p>
+<p>Answer: \(x = {@ta@}\)]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>pm1*aa</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>pm2*bb</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text><![CDATA[ans:{ans1,ans2};
+err:if cardinality(intersect(ans,ta))>0 then 1 else 0;
+errcorr:if cardinality(intersect(ans,ta))>0 then listify(intersect(ans,ta))[1] else "";
+blb:if -(pm1*aa+pm2*bb)<0 then "(" else "";
+brb:if -(pm1*aa+pm2*bb)<0 then ")" else "";
+clb:if pm1*aa*pm2*bb<0 then "(" else "";
+crb:if pm1*aa*pm2*bb<0 then ")" else "";]]></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>Sets</answertest>
+        <sans>ans</sans>
+        <tans>ta</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>err</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer \(x={@errcorr@}\) is correct but the second one isn't. Please double check your working.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>967666596</deployedseed>
+    <deployedseed>1041048838</deployedseed>
+    <deployedseed>1239092349</deployedseed>
+    <deployedseed>1301081644</deployedseed>
+    <deployedseed>1246522049</deployedseed>
+    <deployedseed>612186072</deployedseed>
+    <deployedseed>864081887</deployedseed>
+    <deployedseed>2113231395</deployedseed>
+    <deployedseed>894158182</deployedseed>
+    <deployedseed>773809877</deployedseed>
+    <deployedseed>600152249</deployedseed>
+    <deployedseed>341892850</deployedseed>
+    <deployedseed>492712269</deployedseed>
+    <deployedseed>66922347</deployedseed>
+    <deployedseed>177354013</deployedseed>
+    <deployedseed>877132146</deployedseed>
+    <deployedseed>2064298897</deployedseed>
+    <deployedseed>1567929626</deployedseed>
+    <deployedseed>1413069173</deployedseed>
+    <deployedseed>202172637</deployedseed>
+    <deployedseed>1291443154</deployedseed>
+    <deployedseed>315551591</deployedseed>
+    <deployedseed>1873753196</deployedseed>
+    <deployedseed>1101461038</deployedseed>
+    <deployedseed>184071414</deployedseed>
+    <deployedseed>661920988</deployedseed>
+    <deployedseed>409219687</deployedseed>
+    <deployedseed>1765270982</deployedseed>
+    <deployedseed>1104050226</deployedseed>
+    <deployedseed>767589689</deployedseed>
+    <deployedseed>320544611</deployedseed>
+    <deployedseed>1741989443</deployedseed>
+    <deployedseed>1319092173</deployedseed>
+    <deployedseed>1258863471</deployedseed>
+    <deployedseed>295736022</deployedseed>
+    <deployedseed>350413183</deployedseed>
+    <deployedseed>247067939</deployedseed>
+    <deployedseed>1452196781</deployedseed>
+    <deployedseed>313332578</deployedseed>
+    <deployedseed>2137623604</deployedseed>
+    <deployedseed>389530681</deployedseed>
+    <deployedseed>894017169</deployedseed>
+    <deployedseed>1891265184</deployedseed>
+    <deployedseed>1219663947</deployedseed>
+    <deployedseed>1872731562</deployedseed>
+    <deployedseed>843440397</deployedseed>
+    <deployedseed>1773911603</deployedseed>
+    <deployedseed>408900377</deployedseed>
+    <deployedseed>1498842917</deployedseed>
+    <deployedseed>4686620</deployedseed>
+    <deployedseed>825355323</deployedseed>
+    <deployedseed>883482537</deployedseed>
+    <deployedseed>350865322</deployedseed>
+    <deployedseed>337913917</deployedseed>
+    <deployedseed>753061462</deployedseed>
+    <deployedseed>1409551002</deployedseed>
+    <deployedseed>1447290750</deployedseed>
+    <deployedseed>821707629</deployedseed>
+    <deployedseed>924793442</deployedseed>
+    <deployedseed>1848147599</deployedseed>
+    <deployedseed>1171763413</deployedseed>
+    <deployedseed>170676780</deployedseed>
+    <deployedseed>1840155434</deployedseed>
+    <deployedseed>1568150041</deployedseed>
+    <deployedseed>540970389</deployedseed>
+    <deployedseed>1724345678</deployedseed>
+    <deployedseed>295423190</deployedseed>
+    <deployedseed>1842324109</deployedseed>
+    <deployedseed>1153667295</deployedseed>
+    <deployedseed>1062155774</deployedseed>
+    <deployedseed>215731527</deployedseed>
+    <deployedseed>149196630</deployedseed>
+    <deployedseed>1309426666</deployedseed>
+    <deployedseed>295099805</deployedseed>
+    <deployedseed>1949440376</deployedseed>
+    <deployedseed>1821221442</deployedseed>
+    <deployedseed>1807126932</deployedseed>
+    <deployedseed>962733766</deployedseed>
+    <deployedseed>1867759674</deployedseed>
+    <deployedseed>1104909447</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>pm1*aa</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>pm2*bb</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>pm1*aa</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>pm2*bb</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>pm1*aa</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>pm2*bb</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

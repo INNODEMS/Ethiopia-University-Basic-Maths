@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Finding the Standard Form of Circle Equation with Given Center and Point</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>Write the equation of the circle with centre at \(C({@c_x_coord@},{@c_y_coord@})\) and that passes through the point \(P({@p_x_coord@},{@p_y_coord@})\).</p>
+<p>[[input:ans1]] [[validation:ans1]][[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked Solution</h3>
+
+<p>Let \(r\) be the radius of a circle, \((x,y)\) be the coordinates of a point on the circle, and \((x_0,y_0)\) be the coordinates on the center of the circle. 
+<br>Then the equation of the circle is,</p>
+<p style="margin-left: 30px">\( (x-x_0)^2+(y-y_0)^2=r^2\)</p>
+
+<br>
+
+<p>In the question given, we have the coordinates of the center of the circle as \(x_0={@c_x_coord@}\, , \, y_0={@c_y_coord@}\).
+<br>Therefore, the equation of the circle is,</p>
+<p style="margin-left: 30px">\( ({@ta1@})^2+({@ta2@})^2=r^2\)</p>
+<p>Since the point \(P({@p_x_coord@},{@p_y_coord@})\) is on the circle, we must have,</p>
+<p style="margin-left: 30px"> \(({@p_x_coord@}-({@c_x_coord@}))^2+({@p_y_coord@}-({@c_y_coord@}))^2=r^2\)</p>
+<p>This implies, \(r^2 = ({@p_x_coord-c_x_coord@})^2+({@p_y_coord-c_y_coord@})^2 = {@r_square@}\)</p>
+
+<br>
+
+<p>Therefore, the equation of the circle is,</p>
+<p style="margin-left: 30px">\(({@x-c_x_coord@})^2+({@y-c_y_coord@})^2={@(p_x_coord-c_x_coord)^2+(p_y_coord-c_y_coord)^2@}\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[/*Defining Question Variables*/
+c_x_coord:rand_with_prohib(-3,10,[0]);
+c_y_coord:rand_with_prohib(-3,10,[0,c_x_coord]);
+p_x_coord:rand(10)-3;
+p_y_coord:rand_with_prohib(-3,10,[p_x_coord]);
+r_square:(p_x_coord-c_x_coord)^2+(p_y_coord-c_y_coord)^2;
+/*Model Answer*/
+ta:(x-c_x_coord)^2+(y-c_y_coord)^2=r_square;
+/*Possible mistake code*/
+ta1:if c_x_coord<0 then x-c_x_coord else x-c_x_coord;
+ta2:if c_y_coord<0 then y-c_y_coord else y-c_y_coord;
+ta2_1:subst(p_x_coord,x,ta1);
+ta3_1:subst(p_y_coord,y,ta2); 
+/*Possible mistake code*/
+r_square_M:(c_x_coord-p_y_coord)^2+(c_y_coord-p_x_coord)^2;
+mistake4:(x-p_y_coord)^2+(y-p_x_coord)^2=r_square_M;]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>circle with centre at \(C({@c_x_coord@},{@c_y_coord@})\) and that passes through the point \(P({@p_x_coord@},{@p_y_coord@})\).</p>
+<p>Standard form of the equation \(={@ta@}\)</p>
+<p>Possible mistake \(={@mistake4@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Possible Mistakes*/
+/*Node1: Checks for the correct answer*/
+/*Node2: Using the coordinates of point P as the center of the circle to compute the equation however computing the value of r^2 correctly*/
+mistake2:(x-p_x_coord)^2+(y-p_y_coord)^2=r_square;
+/*Node3:Interchanging the coordinates of y with x coordinate when computing the equation of the circle however computing the value of r^2 correctly*/
+mistake3:(x-p_y_coord)^2+(y-p_x_coord)^2=r_square;
+/*Node4:Subtracted y coordinate of point P from the x coordinate of  point C and the  x coordinate of point P from the y coordinate of point C in finding r^2*/
+mistake4:(x-p_y_coord)^2+(y-p_x_coord)^2=r_square_M;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You seem to have used the coordinates of point \(P\) as the centre of the circle  to compute the equation which should not  be the case.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You seem to have interchanged the coordinate of \(y\) with \(x\) coordinate when computing the equation of the circle</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>mistake4</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You seem to have interchanged the coordinates of y with x coordinate when computing the value of \(r^2\).</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>948761663</deployedseed>
+    <deployedseed>648396764</deployedseed>
+    <deployedseed>1981556220</deployedseed>
+    <deployedseed>484108072</deployedseed>
+    <deployedseed>1697838356</deployedseed>
+    <deployedseed>1140303468</deployedseed>
+    <deployedseed>1438961899</deployedseed>
+    <deployedseed>1791771529</deployedseed>
+    <deployedseed>1617543481</deployedseed>
+    <deployedseed>154785558</deployedseed>
+    <deployedseed>125552847</deployedseed>
+    <deployedseed>1572915746</deployedseed>
+    <deployedseed>1786659628</deployedseed>
+    <deployedseed>1826157088</deployedseed>
+    <deployedseed>838706288</deployedseed>
+    <deployedseed>717562460</deployedseed>
+    <deployedseed>733929846</deployedseed>
+    <deployedseed>294477608</deployedseed>
+    <deployedseed>944534407</deployedseed>
+    <deployedseed>463728091</deployedseed>
+    <deployedseed>1864984745</deployedseed>
+    <deployedseed>2112533127</deployedseed>
+    <deployedseed>1202729808</deployedseed>
+    <deployedseed>1024539949</deployedseed>
+    <deployedseed>1115096993</deployedseed>
+    <deployedseed>10831756</deployedseed>
+    <deployedseed>1224416134</deployedseed>
+    <deployedseed>1487773665</deployedseed>
+    <deployedseed>1385881951</deployedseed>
+    <deployedseed>504970557</deployedseed>
+    <deployedseed>123568064</deployedseed>
+    <deployedseed>579888015</deployedseed>
+    <deployedseed>590753785</deployedseed>
+    <deployedseed>184147807</deployedseed>
+    <deployedseed>1780468808</deployedseed>
+    <deployedseed>1994106431</deployedseed>
+    <deployedseed>266117586</deployedseed>
+    <deployedseed>2078676243</deployedseed>
+    <deployedseed>788727637</deployedseed>
+    <deployedseed>606892235</deployedseed>
+    <deployedseed>1863951592</deployedseed>
+    <deployedseed>1898942494</deployedseed>
+    <deployedseed>731872398</deployedseed>
+    <deployedseed>1084144619</deployedseed>
+    <deployedseed>743534969</deployedseed>
+    <deployedseed>465619966</deployedseed>
+    <deployedseed>1050903957</deployedseed>
+    <deployedseed>411305985</deployedseed>
+    <deployedseed>1625631516</deployedseed>
+    <deployedseed>436672089</deployedseed>
+    <deployedseed>509205757</deployedseed>
+    <deployedseed>139185105</deployedseed>
+    <deployedseed>1163106241</deployedseed>
+    <deployedseed>1055906488</deployedseed>
+    <deployedseed>645359166</deployedseed>
+    <deployedseed>1498350864</deployedseed>
+    <deployedseed>950066155</deployedseed>
+    <deployedseed>452733203</deployedseed>
+    <deployedseed>500886344</deployedseed>
+    <deployedseed>992257377</deployedseed>
+    <deployedseed>1359183806</deployedseed>
+    <deployedseed>598039969</deployedseed>
+    <deployedseed>797308731</deployedseed>
+    <deployedseed>881184134</deployedseed>
+    <deployedseed>1994407963</deployedseed>
+    <deployedseed>1235888066</deployedseed>
+    <deployedseed>924363716</deployedseed>
+    <deployedseed>1593594832</deployedseed>
+    <deployedseed>2081653943</deployedseed>
+    <deployedseed>906308273</deployedseed>
+    <deployedseed>1133109429</deployedseed>
+    <deployedseed>1733520938</deployedseed>
+    <deployedseed>483052319</deployedseed>
+    <deployedseed>1507755328</deployedseed>
+    <deployedseed>1004030365</deployedseed>
+    <deployedseed>1598533496</deployedseed>
+    <deployedseed>912236796</deployedseed>
+    <deployedseed>880583518</deployedseed>
+    <deployedseed>1837181129</deployedseed>
+    <deployedseed>739181598</deployedseed>
+    <deployedseed>979873647</deployedseed>
+    <deployedseed>889828138</deployedseed>
+    <deployedseed>1535772099</deployedseed>
+    <deployedseed>1812267389</deployedseed>
+    <deployedseed>653494903</deployedseed>
+    <deployedseed>1907573274</deployedseed>
+    <deployedseed>1233021581</deployedseed>
+    <deployedseed>768276623</deployedseed>
+    <deployedseed>1916579860</deployedseed>
+    <deployedseed>2019516292</deployedseed>
+    <deployedseed>1831933078</deployedseed>
+    <deployedseed>1988283984</deployedseed>
+    <deployedseed>1741240482</deployedseed>
+    <deployedseed>540634273</deployedseed>
+    <deployedseed>1956069343</deployedseed>
+    <deployedseed>1178711967</deployedseed>
+    <deployedseed>117383497</deployedseed>
+    <deployedseed>1054955943</deployedseed>
+    <deployedseed>1653933068</deployedseed>
+    <deployedseed>646746730</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Simplification of rational expressions in partial fractions: 1.8 a,c</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Write the rational expression below as a sum of its partial fractions.</p>
+<p>\(\qquad  \displaystyle {@question_expression2@}=\) [[input:ans3]] \(+\) [[input:ans4]] \(+\) [[input:ans5]] </p><p>\(\hspace{6cm} \) [[validation:ans3]]\(\hspace{1.5cm} \) [[validation:ans4]] \(\hspace{1.5cm} \) [[validation:ans5]]</p>
+<p>\(\quad \)  [[feedback:prt2]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p style="">To write \(  \displaystyle {@question_expression2@}\) as a sum of its partial fractions we need to follow the steps below:</p>
+<p style="">\[{@question_expression2@} ={@part_frac_Aa@}+{@part_frac_Bb@}+{@part_frac_Cc@}\]</p>
+<p style="">Setting the numerators equal gives:</p>
+<p style="">\[{@expra@}\]</p>
+<p style="">Getting the coefficients \(A\) and \(B\), we have</p>
+<p style="">Let \(x=0:\quad {@expr1a@} \implies {@expAa@}\). </p>
+<p style="">Let \(x={@-const_3@}:\quad {@expr2b@} \implies {@expCc@}\).</p>
+<p style="">Let \(x={@(-const_2/const_1)@}:\quad {@expr3bc@} \implies {@expBb@}\).</p>
+<p style="">The partial fraction is then,</p>
+<p style="">\[{@expr3c@}\]</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*...........Question 2.......................................*/
+
+/*Defining the question*/
+const_1:1+rand(5);/*The first constant coefficient*/
+const_2:1+rand(5);/*The second constant*/
+const_3:1+rand(4);/*The third constant*/
+const_4:1+rand(8);/*The fourth constant*/
+zz1:rand_with_prohib(-7,7,[0]);/* numerator_1*/
+zz2:rand_with_prohib(-7,7,[0]);/* numerator_2*/
+zz3:rand_with_prohib(-7,7,[0]);/* numerator_2*/
+part_frac_1a:zz1/x;/*The first Partial fraction*/
+part_frac_2b:zz2/(const_1*x+const_2);/*The second Partial fraction*/
+part_frac_3c:zz3/(x+const_3);/*The third Partial fraction*/
+question_expression2: factor(part_frac_1a+part_frac_2b+part_frac_3c);
+
+/*model answer question 2*/
+ta1:part_frac_1a;
+ta2:part_frac_2b;
+ta3:part_frac_3c;
+ta4:ta1+ta2+ta3;
+ta1a: partfrac(question_expression2,x);
+
+/*Worked solution codes for question 2 */
+part_frac_Aa:A/x;
+part_frac_Bb:B/(const_1*x+const_2);
+part_frac_Cc:C/(x+const_3);
+numerator_question_expression2:num(question_expression2);
+expra:A*(const_1*x+const_2)*(x+const_3)+B*x*(x+const_3)+C*x*(const_1*x+const_2)=numerator_question_expression2;
+
+/*Find A, B and C*/
+expr1a:ev(expra,x=0);
+expAa:expr1a/ev(((const_1*x+const_2)*(x+const_3)),x=0);
+expr2b:ev(expra,x=-const_3);
+expCc:expr2b/ev((x*(const_1*x+const_2)),x=-const_3);
+coef_Bb:ev((-const_2/const_1),simp);
+expr3bc:ev(expra,x=coef_Bb);
+expBb:expr3bc/ev(x*(x+const_3),x=(-const_2/const_1));
+
+expr3c: question_expression2=ta1+ta2+ta3;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<br>\(\displaystyle {@question_expression2@} = {@ta1@}+{@ta2@}+{@ta3@}\)]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans5</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text><![CDATA[/*Node 1: Check answer is correct and in correct form*/
+sans_full: ans3+ans4+ans5;
+
+/*Node 2: check if the answer is equivalent to the expression given*/
+
+/*Node 3: Identify incorrect answers */
+sans_set:{ans3,ans4,ans5};
+ta_set:{ta1,ta2,ta3};
+correct:intersect(sans_set,ta_set);
+incorrect:setdifference(sans_set,ta_set);
+any_correct: if 1<=cardinality(correct) and cardinality(correct)<=2 then 1 else 0;]]></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>EqualComAss</answertest>
+        <sans>sans_full</sans>
+        <tans>ta4</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>sans_full</sans>
+        <tans>ta4</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text>Your answer is equivalent to {@question_expression2@}. However, it is not written in full partial fractions.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>any_correct</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>The following answer(s) is (are) correct: {@correct@}. However, the following answer(s) is (are) not correct: {@incorrect@}.</p><p>You can verify this by adding your answers together:</p><p>\(\displaystyle {@ans3@}+{@ans4@}+{@ans5@} = {@factor(sans_full)@} \neq {@question_expression2@} \).</p><br>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p dir="ltr" style="text-align: left;"></p><p>None of your answers are correct.</p><p>You can verify this by adding your answers together:</p><p>\(\displaystyle {@ans3@}+{@ans4@}+{@ans5@} = {@factor(sans_full)@} \neq {@question_expression2@} \).</p><br><br><p></p>]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1683940633</deployedseed>
+    <deployedseed>814491475</deployedseed>
+    <deployedseed>1176498027</deployedseed>
+    <deployedseed>1791595496</deployedseed>
+    <deployedseed>2041012363</deployedseed>
+    <deployedseed>306975987</deployedseed>
+    <deployedseed>1367113354</deployedseed>
+    <deployedseed>881324740</deployedseed>
+    <deployedseed>67859650</deployedseed>
+    <deployedseed>540807275</deployedseed>
+    <deployedseed>319186946</deployedseed>
+    <deployedseed>749442268</deployedseed>
+    <deployedseed>750061270</deployedseed>
+    <deployedseed>1538443072</deployedseed>
+    <deployedseed>1660283107</deployedseed>
+    <deployedseed>1255863054</deployedseed>
+    <deployedseed>1362221502</deployedseed>
+    <deployedseed>285886768</deployedseed>
+    <deployedseed>731770444</deployedseed>
+    <deployedseed>234250700</deployedseed>
+    <deployedseed>1263730496</deployedseed>
+    <deployedseed>294954318</deployedseed>
+    <deployedseed>2090835825</deployedseed>
+    <deployedseed>2036175063</deployedseed>
+    <deployedseed>971220054</deployedseed>
+    <deployedseed>1257740261</deployedseed>
+    <deployedseed>1435185047</deployedseed>
+    <deployedseed>177316925</deployedseed>
+    <deployedseed>89132778</deployedseed>
+    <deployedseed>609837964</deployedseed>
+    <deployedseed>724817121</deployedseed>
+    <deployedseed>1521993290</deployedseed>
+    <deployedseed>1775421315</deployedseed>
+    <deployedseed>2000972727</deployedseed>
+    <deployedseed>1000697463</deployedseed>
+    <deployedseed>1946697759</deployedseed>
+    <deployedseed>1286814251</deployedseed>
+    <deployedseed>1902939745</deployedseed>
+    <deployedseed>2122642337</deployedseed>
+    <deployedseed>1870043618</deployedseed>
+    <deployedseed>877374424</deployedseed>
+    <deployedseed>1948555507</deployedseed>
+    <deployedseed>539560336</deployedseed>
+    <deployedseed>2086339096</deployedseed>
+    <deployedseed>1038384464</deployedseed>
+    <deployedseed>2050464077</deployedseed>
+    <deployedseed>2126613867</deployedseed>
+    <deployedseed>1096664441</deployedseed>
+    <deployedseed>823784154</deployedseed>
+    <deployedseed>1581146265</deployedseed>
+    <deployedseed>2019669899</deployedseed>
+    <deployedseed>418768918</deployedseed>
+    <deployedseed>242614903</deployedseed>
+    <deployedseed>457364220</deployedseed>
+    <deployedseed>1373399110</deployedseed>
+    <deployedseed>469283794</deployedseed>
+    <deployedseed>1448345549</deployedseed>
+    <deployedseed>1124487293</deployedseed>
+    <deployedseed>1804984798</deployedseed>
+    <deployedseed>1993542854</deployedseed>
+    <deployedseed>1366615310</deployedseed>
+    <deployedseed>1026629760</deployedseed>
+    <deployedseed>1782291860</deployedseed>
+    <deployedseed>1890385004</deployedseed>
+    <deployedseed>205678266</deployedseed>
+    <deployedseed>741682731</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans3</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>ta3</value>
+      </testinput>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <description/>
+      <testinput>
+        <name>ans3</name>
+        <value>1</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>1</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>1</value>
+      </testinput>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-3-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>
