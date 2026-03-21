@@ -75,7 +75,7 @@ board.create('text', [
     () => (R.Y() + Q.Y()) / 2,
     function () {
         const dy = Q.Y() - P.Y();
-        return `|Qᵧ - Pᵧ| = |${dy.toFixed(2)}| = ${Math.abs(dy).toFixed(2)}`;
+        return `|Qᵧ - Rᵧ| = |${dy.toFixed(2)}| = ${Math.abs(dy).toFixed(2)}`;
     }
 ]);
 
