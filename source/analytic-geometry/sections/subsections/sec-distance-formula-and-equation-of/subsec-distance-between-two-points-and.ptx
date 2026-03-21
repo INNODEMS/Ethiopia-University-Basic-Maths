@@ -76,6 +76,64 @@
         </me>
         
     </p>
+
+    <exploration xml:id="exploration-distance-between-two-points">
+        <title>Distance Between Two Points</title>
+
+        <introduction>
+            <p>
+                
+            </p>
+            <p>
+                In this activity, you will explore how to determine the distance between any two points in the coordinate plane. By connecting points <m>P</m> and <m>Q</m>, we can form a right triangle with a third point <m>R</m>.
+            </p>
+            <p>
+                To guide your exploration, click to view the <xref ref="instructions-distance-between-points" text="custom">Instructions</xref> here, or you can expand the <alert>Instructions</alert> dropdown located at the bottom left below the interactive graph.
+            </p>
+        </introduction>
+
+        <figure xml:id="fig-distance-between-points">
+            <caption>
+                Interactive visualization of the distance between two points. Drag the points to observe how the horizontal and vertical distances determine the length of the hypotenuse.
+            </caption>
+
+            <interactive xml:id="interactive-distance-between-points"
+                platform="jsxgraph"
+                width="90%"
+                aspect="4:3"
+                source="jsxgraph/distance-between-two-points.js">
+
+                <slate xml:id="jsxgraph-distance" surface="jsxboard" aspect="4:3" width="90%"/>
+
+                <instructions xml:id="instructions-distance-between-points">
+                    <p>
+                        Click and drag point <m>P</m> or <m>Q</m> around the coordinate plane. Use the interactive to investigate the following questions:
+                    </p>
+                    <p>
+                        <ol>
+                            <li>
+                                <p>
+                                    Look at the coordinates of <m>P</m> and <m>Q</m>. How are the lengths of the horizontal base and the vertical height of the triangle calculated directly from these coordinates?
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    How do the lengths of the base and height relate to the length of the hypotenuse <m>|PQ|</m>? (Hint: Think about how the Pythagorean Theorem applies to this right triangle).
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Based on your observations, can you write a general formula to find the distance between any two points <m>(x_1, y_1)</m> and <m>(x_2, y_2)</m>?
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </instructions>
+
+            </interactive>
+        </figure>
+    </exploration>
+
     <example>
         <statement>
             <p>
