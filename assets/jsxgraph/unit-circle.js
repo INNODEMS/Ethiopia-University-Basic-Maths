@@ -1,63 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Unit Circle with Traced Sine and Cosine</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsxgraph@1.12.2/distrib/jsxgraph.css" />
-    <script src="https://cdn.jsdelivr.net/npm/jsxgraph@1.12.2/distrib/jsxgraphcore.js"></script>
-    <style>
-        body {
-            margin: 0;
-            padding: 16px;
-            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-            background: #f2f2f4;
-        }
-
-        .controls {
-            margin-bottom: 10px;
-        }
-
-        .controls button {
-            border: 1px solid #bbb;
-            background: white;
-            color: #222;
-            border-radius: 8px;
-            padding: 8px 14px;
-            font-size: 14px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-
-<div class="controls">
-    <button id="toggle-rotation">Start rotation</button>
-</div>
-
-<div id="jsxgraph-unit-circle-sine-cosine"
-    class="jxgbox"
-    style="width: 1000px; height: 500px; border: 1px solid #d9d9de; border-radius: 10px; background: #f8f8fa;">
-</div>
-
-<script>
 (function () {
     'use strict';
 
-    var BOARD_ID = 'jsxgraph-unit-circle-sine-cosine';
-    var BOUNDING_BOX = [-5, -2.5, 5, 2.5];
-
-    const UNIT_CIRCLE_BUFF = 0.2;
+    const UNIT_CIRCLE_BUFF = 0.3;
     const VERT_BUFF = 0.5;
 
+
     var CIRCLE = {
-        cx: -5 + 1 + UNIT_CIRCLE_BUFF,
-        cy: -2.5 + 1 + UNIT_CIRCLE_BUFF,
+        cx: 0,
+        cy: 0,
         r: 1.0
     };
 
+    var leftx = CIRCLE.cx - CIRCLE.r - UNIT_CIRCLE_BUFF;
+    var topy = CIRCLE.cy - CIRCLE.r - UNIT_CIRCLE_BUFF;
+
+    var BOARD_ID = 'jsxgraph-unit-circle-sine-cosine';
+    var BOUNDING_BOX = [leftx, topy, leftx + 10, topy + 5];
+
     var WAVES = {
-        startX: -2,
-        endX: 5,
+        startX: leftx + 3,
+        endX: leftx + 10,
         scaleX: 1,
         amp: 1,
         cosMidY: CIRCLE.cy + 2*CIRCLE.r + VERT_BUFF,
@@ -205,8 +167,6 @@
         showNavigation: false
     });
 
-    board.suspendUpdate();
-
 
     createWaveGrid(WAVES.cosMidY);
     createWaveGrid(WAVES.sinMidY);
@@ -318,7 +278,8 @@
         strokeColor: '#d9ddff',
         strokeWidth: 3,
         fixed: true,
-        highlight: false
+        highlight: false,
+        fillOpacity: 1,
     });
 
     board.create('curve', [
@@ -334,7 +295,8 @@
         strokeColor: '#ffd8d8',
         strokeWidth: 3,
         fixed: true,
-        highlight: false
+        highlight: false,
+        fillOpacity: 1
     });
 
     board.create('curve', [
@@ -351,7 +313,8 @@
     ], {
         strokeColor: COLORS.cosine,
         strokeWidth: 4,
-        highlight: false
+        highlight: false,
+        fillOpacity: 1
     });
 
     board.create('curve', [
@@ -368,7 +331,8 @@
     ], {
         strokeColor: COLORS.sine,
         strokeWidth: 4,
-        highlight: false
+        highlight: false,
+        fillOpacity: 1
     });
 
     var cosHead = board.create('point', [
@@ -420,63 +384,63 @@
     });
 
     board.create('text', [
-        3.5,
-        -1.5 + VERT_BUFF + 2,
+        WAVES.startX + 2 * Math.PI - 0.7,
+        WAVES.cosMidY - 0.2,
         'cos θ'
     ], {
-        fontSize: 30,
+        fontSize: 16,
         color: COLORS.cosine,
         fixed: true
     });
 
     board.create('text', [
-        3.6,
-        -1.5,
+        WAVES.startX + 2 * Math.PI - 0.7,
+        WAVES.sinMidY - 0.2,
         'sin θ'
     ], {
-        fontSize: 30,
+        fontSize: 16,
         color: COLORS.sine,
         fixed: true
     });
 
     board.create('text', [
-        -4.9,
-        2.25,
+        leftx + 0.1,
+        topy + 4.8,
         function () {
             return 'θ = ' + fmt(currentTheta()) + ' rad';
         }
     ], {
-        fontSize: 24,
+        fontSize: 14,
         color: COLORS.angle,
         fixed: true,
         anchorX: 'left'
     });
 
-    board.create('text', [0.36, -0.08, '0'], {
+    board.create('text', [thetaToX(0), WAVES.cosMidY - 1 - VERT_BUFF/2, '0'], {
         fontSize: 14,
         color: '#555',
         fixed: true
     });
 
-    board.create('text', [thetaToX(Math.PI / 2) - 0.15, -0.08, 'π/2'], {
+    board.create('text', [thetaToX(Math.PI / 2) - 0.15,WAVES.cosMidY - 1 - VERT_BUFF/2, 'π/2'], {
         fontSize: 14,
         color: '#555',
         fixed: true
     });
 
-    board.create('text', [thetaToX(Math.PI) - 0.08, -0.08, 'π'], {
+    board.create('text', [thetaToX(Math.PI) - 0.08,WAVES.cosMidY - 1 - VERT_BUFF/2, 'π'], {
         fontSize: 14,
         color: '#555',
         fixed: true
     });
 
-    board.create('text', [thetaToX(3 * Math.PI / 2) - 0.15, -0.08, '3π/2'], {
+    board.create('text', [thetaToX(3 * Math.PI / 2) - 0.15, WAVES.cosMidY - 1 - VERT_BUFF/2, '3π/2'], {
         fontSize: 14,
         color: '#555',
         fixed: true
     });
 
-    board.create('text', [thetaToX(2 * Math.PI) - 0.15, -0.08, '2π'], {
+    board.create('text', [thetaToX(2 * Math.PI) - 0.15, WAVES.cosMidY - 1 - VERT_BUFF/2, '2π'], {
         fontSize: 14,
         color: '#555',
         fixed: true
@@ -501,49 +465,4 @@
         strokeWidth: 3
     });
 
-    function animationStep(timestamp) {
-        if (!state.animating) {
-            return;
-        }
-
-        if (!state.lastTimestamp) {
-            state.lastTimestamp = timestamp;
-        }
-
-        var dt = (timestamp - state.lastTimestamp) / 1000;
-        state.lastTimestamp = timestamp;
-        state.theta = normalizeAngle(state.theta + dt * state.speed);
-
-        var p = pointOnCircle(state.theta);
-        rotor.moveTo(p, 0);
-        board.update();
-        window.requestAnimationFrame(animationStep);
-    }
-
-    function updateButton() {
-        var btn = document.getElementById('toggle-rotation');
-        btn.textContent = state.animating ? 'Pause rotation' : 'Start rotation';
-    }
-
-    document.getElementById('toggle-rotation').addEventListener('click', function () {
-        state.animating = !state.animating;
-        state.lastTimestamp = 0;
-        updateButton();
-        if (state.animating) {
-            window.requestAnimationFrame(animationStep);
-        }
-    });
-
-    board.on('update', function () {
-        if (!state.animating) {
-            state.theta = thetaFromPoint(rotor);
-        }
-    });
-
-    updateButton();
-    board.unsuspendUpdate();
 })();
-</script>
-
-</body>
-</html>
