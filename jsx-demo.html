@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unit Circle with Traced Sine and Cosine</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsxgraph@1.12.2/distrib/jsxgraph.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jsxgraph@1.12.2/distrib/jsxgraphcore.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 16px;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            background: #f2f2f4;
+        }
+
+        .controls {
+            margin-bottom: 10px;
+        }
+
+        .controls button {
+            border: 1px solid #bbb;
+            background: white;
+            color: #222;
+            border-radius: 8px;
+            padding: 8px 14px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="controls">
+    <button id="toggle-rotation">Start rotation</button>
+</div>
+
+<div id="jsxgraph-unit-circle-sine-cosine"
+    class="jxgbox"
+    style="width: 1000px; height: 500px; border: 1px solid #d9d9de; border-radius: 10px; background: #f8f8fa;">
+</div>
+
+<script>
+(function () {
+    'use strict';
+
+    var BOARD_ID = 'jsxgraph-unit-circle-sine-cosine';
+    var BOUNDING_BOX = [-5, -2.5, 5, 2.5];
+
+    const UNIT_CIRCLE_BUFF = 0.2;
+    const VERT_BUFF = 0.5;
+
+    var CIRCLE = {
+        cx: -5 + 1 + UNIT_CIRCLE_BUFF,
+        cy: -2.5 + 1 + UNIT_CIRCLE_BUFF,
+        r: 1.0
+    };
+
+    var WAVES = {
+        startX: -2,
+        endX: 5,
+        scaleX: 1,
+        amp: 1,
+        cosMidY: CIRCLE.cy + 2*CIRCLE.r + VERT_BUFF,
+        sinMidY: CIRCLE.cy
+    };
+
+    var COLORS = {
+        cosine: '#2447ff',
+        sine: '#ff2a2a',
+        circle: '#f0ae2b',
+        radius: '#f0ae2b',
+        panel: '#c8c8cc',
+        grid: '#d4d4da',
+        connectionCos: '#bcc4ff',
+        connectionSin: '#ffc2c2',
+        angle: '#f0ae2b',
+        text: '#202020'
+    };
+
+    var state = {
+        theta: Math.PI / 6,
+        animating: false,
+        lastTimestamp: 0,
+        speed: 0.9
+    };
+
+    function normalizeAngle(angle) {
+        angle = angle % (2 * Math.PI);
+        if (angle < 0) {
+            angle += 2 * Math.PI;
+        }
+        return angle;
+    }
+
+    function thetaToX(theta) {
+        return WAVES.startX + WAVES.scaleX * theta;
+    }
+
+    function thetaFromPoint(p) {
+        return normalizeAngle(Math.atan2(CIRCLE.cy-p.Y(), p.X() - CIRCLE.cx));
+    }
+
+    function pointOnCircle(theta) {
+        return [
+            CIRCLE.cx + CIRCLE.r * Math.cos(theta),
+            CIRCLE.cy - CIRCLE.r * Math.sin(theta)
+        ];
+    }
+
+    function currentTheta() {
+        return normalizeAngle(state.theta);
+    }
+
+    function fmt(v) {
+        return (Math.round(v * 100) / 100).toFixed(2);
+    }
+
+    var xMin = WAVES.startX;
+    var xMax = WAVES.startX + WAVES.scaleX * 2 * Math.PI;
+
+
+    function createWaveGrid(midY) {
+        var yMin = midY - WAVES.amp;
+        var yMax = midY + WAVES.amp;
+
+        var majorThetaStep = Math.PI / 2;
+        var minorThetaStep = Math.PI / 4;
+        var majorYStep = 1;
+        var minorYStep = 0.5;
+
+        var i;
+        var theta;
+        var x;
+        var y;
+
+        // Minor vertical grid lines
+        for (theta = 0, i = 0; theta <= 2 * Math.PI + 1e-9; theta += minorThetaStep, i += 1) {
+            if (i % 2 === 0) {
+                continue;
+            }
+            x = thetaToX(theta);
+            board.create('segment', [[x, yMin], [x, yMax]], {
+                strokeColor: '#e4e4e9',
+                strokeWidth: 1,
+                fixed: true,
+                highlight: false
+            });
+        }
+
+        // Major vertical grid lines (0, pi/2, pi, 3pi/2, 2pi)
+        for (theta = 0; theta <= 2 * Math.PI + 1e-9; theta += majorThetaStep) {
+            x = thetaToX(theta);
+            board.create('segment', [[x, yMin], [x, yMax]], {
+                strokeColor: '#d2d2d8',
+                strokeWidth: 2,
+                fixed: true,
+                highlight: false
+            });
+        }
+
+        // Minor horizontal grid lines
+        for (i = 1; i <= 3; i += 2) {
+            board.create('segment', [[xMin, yMin + i * minorYStep], [xMax, yMin + i * minorYStep]], {
+                strokeColor: '#e4e4e9',
+                strokeWidth: 1,
+                fixed: true,
+                highlight: false
+            });
+        }
+
+        // Major horizontal grid lines
+        for (i = 0; i <= 2; i += 1) {
+            board.create('segment', [[xMin, yMin + i * majorYStep], [xMax, yMin + i * majorYStep]], {
+                strokeColor: '#d2d2d8',
+                strokeWidth: 1.4,
+                fixed: true,
+                highlight: false
+            });
+        }
+
+        // Panel border
+        board.create('polygon', [[xMin, yMin], [xMax, yMin], [xMax, yMax], [xMin, yMax]], {
+            withLines: true,
+            fillOpacity: 0,
+            borders: {
+                strokeColor: '#c8c8cf',
+                strokeWidth: 0.5,
+                fixed: true,
+                highlight: false
+            },
+            vertices: {
+                visible: false
+            },
+            fixed: true,
+            highlight: false
+        });
+    }
+
+    var board = JXG.JSXGraph.initBoard(BOARD_ID, {
+        boundingbox: BOUNDING_BOX,
+        keepAspectRatio: false,
+        axis: false,
+        grid: false,
+        showCopyright: false,
+        showNavigation: false
+    });
+
+    board.suspendUpdate();
+
+
+    createWaveGrid(WAVES.cosMidY);
+    createWaveGrid(WAVES.sinMidY);
+
+    var center = board.create('point', [CIRCLE.cx, CIRCLE.cy], {
+        visible: false,
+        fixed: true
+    });
+
+    var xDirection = board.create('point', [CIRCLE.cx + CIRCLE.r, CIRCLE.cy], {
+        visible: false,
+        fixed: true
+    });
+
+    var circle = board.create('circle', [center, CIRCLE.r], {
+        strokeColor: 'black',
+        strokeWidth: 3,
+        fillOpacity: 0,
+        fixed: true
+    });
+
+    var initial = pointOnCircle(state.theta);
+    var rotor = board.create('glider', [initial[0], initial[1], circle], {
+        name: '',
+        size: 5,
+        strokeColor: COLORS.circle,
+        fillColor: COLORS.circle
+    });
+
+    board.create('segment', [center, rotor], {
+        strokeColor: COLORS.radius,
+        strokeWidth: 3
+    });
+
+    var horizontalProjection = board.create('point', [
+        function () {
+            return rotor.X();
+        },
+        CIRCLE.cy
+    ], {
+        visible: false
+    });
+
+    board.create('angle', [rotor, center, xDirection], {
+        radius: 0.26,
+        orthoType: 'sector',
+        fillColor: COLORS.angle,
+        fillOpacity: 0.3,
+        strokeColor: COLORS.angle,
+        strokeWidth: 2,
+        name: 'θ',
+        withLabel: false
+    });
+
+
+
+    var arc_centre = board.create('point', [CIRCLE.cx + CIRCLE.r, WAVES.cosMidY - 1], {
+        visible: false
+    });
+    var arc_tl = board.create('point', [() => rotor.X(), WAVES.cosMidY - 1], {
+        visible: false
+    });
+    var arc_br = board.create('point', [CIRCLE.cx + CIRCLE.r, () => WAVES.cosMidY - Math.cos(currentTheta())], {
+        visible: false
+    });
+
+    var top_left = board.create('point', [CIRCLE.cx - CIRCLE.r, WAVES.cosMidY - 1], {
+        visible: false
+    });
+
+    var bottom_right = board.create('point', [CIRCLE.cx + CIRCLE.r, WAVES.cosMidY + 1], {
+        visible: false
+    });
+
+
+
+    var a = board.create('arc', [arc_centre, arc_br, arc_tl], {
+        strokeColor: COLORS.cosine,
+        strokeWidth: 2,
+        withLabel: false
+    });
+
+    board.create('arc', [arc_centre, bottom_right, top_left], {
+        strokeColor: COLORS.grid,
+        strokeWidth: 2,
+        withLabel: false
+    });
+
+    board.create('segment', [arc_centre, top_left], {
+        strokeColor: COLORS.grid,
+        strokeWidth: 2
+    });
+
+    board.create('segment', [arc_centre, bottom_right], {
+        strokeColor: COLORS.grid,
+        strokeWidth: 2,
+    });
+
+    board.create('curve', [
+        function (u) {
+            return thetaToX(u);
+        },
+        function (u) {
+            return WAVES.cosMidY - WAVES.amp * Math.cos(u);
+        },
+        0,
+        2 * Math.PI
+    ], {
+        strokeColor: '#d9ddff',
+        strokeWidth: 3,
+        fixed: true,
+        highlight: false
+    });
+
+    board.create('curve', [
+        function (u) {
+            return thetaToX(u);
+        },
+        function (u) {
+            return WAVES.sinMidY - WAVES.amp * Math.sin(u);
+        },
+        0,
+        2 * Math.PI
+    ], {
+        strokeColor: '#ffd8d8',
+        strokeWidth: 3,
+        fixed: true,
+        highlight: false
+    });
+
+    board.create('curve', [
+        function (u) {
+            return thetaToX(u);
+        },
+        function (u) {
+            return WAVES.cosMidY - WAVES.amp * Math.cos(u);
+        },
+        0,
+        function () {
+            return currentTheta();
+        }
+    ], {
+        strokeColor: COLORS.cosine,
+        strokeWidth: 4,
+        highlight: false
+    });
+
+    board.create('curve', [
+        function (u) {
+            return thetaToX(u);
+        },
+        function (u) {
+            return WAVES.sinMidY - WAVES.amp * Math.sin(u);
+        },
+        0,
+        function () {
+            return currentTheta();
+        }
+    ], {
+        strokeColor: COLORS.sine,
+        strokeWidth: 4,
+        highlight: false
+    });
+
+    var cosHead = board.create('point', [
+        function () {
+            return thetaToX(currentTheta());
+        },
+        function () {
+            return WAVES.cosMidY - WAVES.amp * Math.cos(currentTheta());
+        }
+    ], {
+        name: '',
+        size: 4,
+        strokeColor: COLORS.cosine,
+        fillColor: COLORS.cosine,
+        fixed: true
+    });
+
+    var sinHead = board.create('point', [
+        function () {
+            return thetaToX(currentTheta());
+        },
+        function () {
+            return WAVES.sinMidY - WAVES.amp * Math.sin(currentTheta());
+        }
+    ], {
+        name: '',
+        size: 4,
+        strokeColor: COLORS.sine,
+        fillColor: COLORS.sine,
+        fixed: true
+    });
+
+    board.create('segment', [rotor, arc_tl], {
+        strokeColor: COLORS.connectionCos,
+        strokeWidth: 2,
+        dash: 1
+    });
+
+    board.create('segment', [arc_br, cosHead], {
+        strokeColor: COLORS.connectionCos,
+        strokeWidth: 2,
+        dash: 1
+    });
+
+    board.create('segment', [rotor, sinHead], {
+        strokeColor: COLORS.connectionSin,
+        strokeWidth: 2,
+        dash: 1
+    });
+
+    board.create('text', [
+        3.5,
+        -1.5 + VERT_BUFF + 2,
+        'cos θ'
+    ], {
+        fontSize: 30,
+        color: COLORS.cosine,
+        fixed: true
+    });
+
+    board.create('text', [
+        3.6,
+        -1.5,
+        'sin θ'
+    ], {
+        fontSize: 30,
+        color: COLORS.sine,
+        fixed: true
+    });
+
+    board.create('text', [
+        -4.9,
+        2.25,
+        function () {
+            return 'θ = ' + fmt(currentTheta()) + ' rad';
+        }
+    ], {
+        fontSize: 24,
+        color: COLORS.angle,
+        fixed: true,
+        anchorX: 'left'
+    });
+
+    board.create('text', [0.36, -0.08, '0'], {
+        fontSize: 14,
+        color: '#555',
+        fixed: true
+    });
+
+    board.create('text', [thetaToX(Math.PI / 2) - 0.15, -0.08, 'π/2'], {
+        fontSize: 14,
+        color: '#555',
+        fixed: true
+    });
+
+    board.create('text', [thetaToX(Math.PI) - 0.08, -0.08, 'π'], {
+        fontSize: 14,
+        color: '#555',
+        fixed: true
+    });
+
+    board.create('text', [thetaToX(3 * Math.PI / 2) - 0.15, -0.08, '3π/2'], {
+        fontSize: 14,
+        color: '#555',
+        fixed: true
+    });
+
+    board.create('text', [thetaToX(2 * Math.PI) - 0.15, -0.08, '2π'], {
+        fontSize: 14,
+        color: '#555',
+        fixed: true
+    });
+
+    rotor.on('drag', function () {
+        state.theta = thetaFromPoint(rotor);
+    });
+
+    rotor.on('down', function () {
+        state.animating = false;
+        updateButton();
+    });
+
+    board.create('segment', [center, horizontalProjection], {
+        strokeColor: COLORS.cosine,
+        strokeWidth: 3
+    });
+
+    board.create('segment', [horizontalProjection, rotor], {
+        strokeColor: COLORS.sine,
+        strokeWidth: 3
+    });
+
+    function animationStep(timestamp) {
+        if (!state.animating) {
+            return;
+        }
+
+        if (!state.lastTimestamp) {
+            state.lastTimestamp = timestamp;
+        }
+
+        var dt = (timestamp - state.lastTimestamp) / 1000;
+        state.lastTimestamp = timestamp;
+        state.theta = normalizeAngle(state.theta + dt * state.speed);
+
+        var p = pointOnCircle(state.theta);
+        rotor.moveTo(p, 0);
+        board.update();
+        window.requestAnimationFrame(animationStep);
+    }
+
+    function updateButton() {
+        var btn = document.getElementById('toggle-rotation');
+        btn.textContent = state.animating ? 'Pause rotation' : 'Start rotation';
+    }
+
+    document.getElementById('toggle-rotation').addEventListener('click', function () {
+        state.animating = !state.animating;
+        state.lastTimestamp = 0;
+        updateButton();
+        if (state.animating) {
+            window.requestAnimationFrame(animationStep);
+        }
+    });
+
+    board.on('update', function () {
+        if (!state.animating) {
+            state.theta = thetaFromPoint(rotor);
+        }
+    });
+
+    updateButton();
+    board.unsuspendUpdate();
+})();
+</script>
+
+</body>
+</html>
