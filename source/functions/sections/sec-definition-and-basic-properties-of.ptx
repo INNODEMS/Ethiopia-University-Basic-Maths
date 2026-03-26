@@ -1739,7 +1739,57 @@
         \end{tikzpicture}
     </latex-image>
     </image>
+    
+    <exploration xml:id="exploration-trig-limits">
+        <title>Visualizing Trigonometric Limits</title>
+        <introduction>
+            <p>
+                
+            </p>
+            <p>
+                By using a right triangle inscribed in a unit circle (where the hypotenuse <m>r = 1</m>), we can visualize the behavior of the sine and cosine functions. Let's explore what happens to these values as the angle <m>t</m> approaches <m>0^\circ</m> and <m>90^\circ</m> (<m>\frac{\pi}{2}</m> radians).
+            </p>
+            <p>
+                To guide your exploration, click to view the <xref ref="instructions-trig-limits" text="custom">Instructions here</xref>, or you can expand the <alert>Instructions</alert> dropdown located at the bottom left below the interactive graph.
+            </p>
+        </introduction>
 
+        <figure xml:id="fig-trig-limits">
+            <caption>
+                Interactive visualization of <m>\cos(t)</m> and <m>\sin(t)</m> in the first quadrant.
+            </caption>
+
+            <interactive xml:id="interactive-trig-limits"
+                platform="jsxgraph"
+                width="95%"
+                aspect="1:1"
+                source="jsxgraph/trig-limits.js">
+
+                <slate xml:id="jsxgraph-trig-limits" surface="jsxboard" aspect="1:1" width="95%"/>
+
+                <instructions xml:id="instructions-trig-limits">
+                    <p>
+                        Drag point <alert>P</alert> along the arc of the unit circle to change the angle <m>t</m>.
+
+                        <ol>
+                            <li>
+                                <p>
+                                    <alert>As <m>t \to 0^\circ</m>:</alert> Drag point <alert>P</alert> down towards the <m>x</m>-axis. Observe the height (blue, <m>\sin(t)</m>) and the base (green, <m>\cos(t)</m>). What numerical values are they approaching?
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <alert>As <m>t \to 90^\circ</m>:</alert> Drag point <alert>P</alert> up towards the <m>y</m>-axis. How do the lengths of <m>\sin(t)</m> and <m>\cos(t)</m> change?
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </instructions>
+
+            </interactive>
+        </figure>
+    </exploration>
+    
     <p>
         We can see the relationship between <m>\sin \theta</m>, <m>\cos \theta</m> and the unit circle in the interactive below. Try dragging the point around the circle, and see the graphs traced out.
     </p>
@@ -1753,7 +1803,6 @@
             <slate xml:id="jsxgraph-unit-circle-sine-cosine" surface="jsxboard" aspect="2:1"/>
         </interactive>
     </figure>
-
 
     <p>
         <m>\textbf{The graph of} \, y=\tan \theta</m>
