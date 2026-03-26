@@ -1739,9 +1739,9 @@
         \end{tikzpicture}
     </latex-image>
     </image>
+    
     <exploration xml:id="exploration-trig-limits">
         <title>Visualizing Trigonometric Limits</title>
-
         <introduction>
             <p>
                 
@@ -1789,6 +1789,20 @@
             </interactive>
         </figure>
     </exploration>
+    
+    <p>
+        We can see the relationship between <m>\sin \theta</m>, <m>\cos \theta</m> and the unit circle in the interactive below. Try dragging the point around the circle, and see the graphs traced out.
+    </p>
+
+    <figure xml:id="fig-unit-circle-sine-cosine">
+        <caption>
+            Drag the point around the unit circle to see how its coordinates give <m>\cos\theta</m> and <m>\sin\theta</m>.
+        </caption>
+
+        <interactive xml:id="interactive-unit-circle-sine-cosine" platform="jsxgraph" width="100%" aspect="2:1" source="jsxgraph/unit-circle.js">
+            <slate xml:id="jsxgraph-unit-circle-sine-cosine" surface="jsxboard" aspect="2:1"/>
+        </interactive>
+    </figure>
 
     <p>
         <m>\textbf{The graph of} \, y=\tan \theta</m>
