@@ -88,7 +88,7 @@
                 In this activity, you will explore how to determine the distance between any two points in the coordinate plane. By connecting points <m>P</m> and <m>Q</m>, we can form a right triangle with a third point <m>R</m>.
             </p>
             <p>
-                To guide your exploration, click to view the <xref ref="instructions-distance-between-points" text="custom">Instructions</xref> here, or you can expand the <alert>Instructions</alert> dropdown located at the bottom left below the interactive graph.
+                To guide your exploration, click to view the <xref ref="instructions-distance-between-points" text="custom">Instructions here</xref>, or you can expand the <alert>Instructions</alert> dropdown located at the bottom left below the interactive graph.
             </p>
         </introduction>
 
