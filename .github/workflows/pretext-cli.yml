@@ -50,6 +50,11 @@ jobs:
                     echo "PreTeXt version is less than 2.5, using old build command"
                     pretext build
                 fi
+
+            - name: Copy custom stackapicalls.js
+              run: |
+                cp assets/pretext/js/pretext-stack/stackapicalls.js output/web/_static/pretext/js/pretext-stack/stackapicalls.js
+
             - name: stage deployment
               run: pretext deploy --stage-only
 
