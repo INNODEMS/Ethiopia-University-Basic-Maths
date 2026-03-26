@@ -108,3 +108,4 @@ codechat_config.yaml
 .github/workflows/test-build.yml
 
 jsx.html
+test.html
