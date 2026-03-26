@@ -80,6 +80,118 @@
         </me>
         
     </p>
+
+    <!-- Interactives Exploration -->
+    <exploration xml:id="exploration-distance-point-to-line">
+        <title>Distance from a Point to a Line</title>
+
+        <introduction>
+            <p>
+                
+            </p>
+            <p>
+                In this activity, you will explore how to find the shortest distance from a point to a line.
+                A perpendicular from point <m>P</m> meets the line at point <m>Q</m>, forming the shortest distance.
+                See <xref ref="instructions-distance-point-line" text="custom">instructions below</xref> on how to interact with the simulation.
+            </p>
+        </introduction>
+
+        <figure xml:id="fig-distance-point-line">
+            <caption>
+                Interactive visualization of the distance from a point to a line using a perpendicular segment and a live calculation panel.
+            </caption>
+
+            <interactive xml:id="jsx-distance-point-line"
+                platform="jsxgraph"
+                source="jsxgraph/distance-point-line.js"
+                aspect="6:7">
+
+                <sidebyside width="90%" margins="5%">
+                    <stack>
+                        <!-- Main geometry board -->
+                        <slate xml:id="jsxgraph-distance-point-line"
+                            surface="jsxboard"
+                            aspect="6:4"/>
+
+                        <!-- Calculation panel board -->
+                        <slate xml:id="jsxgraph-calculation-panel"
+                            surface="jsxboard"
+                            aspect="6:3"/>
+                    </stack>
+                </sidebyside>
+
+                <instructions xml:id="instructions-distance-point-line">
+                    <p>
+                        <ol>
+                            <li>Drag point <m>P</m> to different positions on the plane.</li>
+                            <li>Drag points <m>A</m> and <m>B</m> to change the direction and position of the line.</li>
+                            <li>Observe the perpendicular segment from <m>P</m> to the line meeting it at point <m>Q</m>.</li>
+                            <li>Watch how the distance value in the calculation panel updates as you move the point or the line.</li>
+                        </ol>
+                    </p>
+
+                    <p>
+                        Explore the following:
+                        <ol>
+                            <li>Why is the perpendicular segment from <m>P</m> to the line the shortest distance?</li>
+                            <li>How does changing the slope or position of the line affect the distance?</li>
+                            <li>What happens to the distance when point <m>P</m> moves closer to or farther from the line?</li>
+                            <li>How do the values <m>a</m>, <m>b</m>, and <m>c</m> in the line equation relate to the distance formula?</li>
+                            <li>What role do the numerator and denominator in the formula play in determining the distance?</li>
+                        </ol>
+                    </p>
+                </instructions>
+
+            </interactive>
+        </figure>
+    </exploration>
+
+
+        <!-- <exploration xml:id="exploration-distance-point-to-line">
+        <title>Distance from a Point to a Line</title>
+
+        <introduction>
+            <p>
+                In this activity, you will explore how to find the shortest distance from a point to a line.
+                A perpendicular from point <m>P</m> meets the line at point <m>Q</m>, forming the shortest distance.
+            </p>
+        </introduction>
+
+        <figure xml:id="fig-distance-point-line">
+            <caption>
+                Interactive visualization of the distance from a point to a line using a perpendicular segment.
+            </caption>
+            <interactive xml:id="jsx-distance-point-line" platform="jsxgraph" source="jsxgraph/distance-point-line.js" aspect="6:7">
+                <sidebyside width="90%" margins="5%">
+                    <stack>
+                        <slate xml:id="jsxgraph-distance-point-line" surface="jsxboard" aspect="6:4" />
+                        <slate xml:id="jsxgraph-calculation-panel" surface="jsxboard" aspect="6:3" />
+                    </stack>
+                </sidebyside>
+                <instructions>
+                    <p>
+                        <ol>
+                            <li>Drag point <m>P</m> to different positions on the plane.</li>
+                            <li>Drag points <m>A</m> and <m>B</m> to change the direction of the line.</li>
+                            <li>Observe the perpendicular segment from <m>P</m> to the line.</li>
+                            <li>Watch how the distance value updates as the point or line moves.</li>
+                        </ol>
+                    </p>
+
+                    <p>
+                        Explore the following:
+                        <ol>
+                            <li>Why is the perpendicular segment the shortest distance from the point to the line?</li>
+                            <li>How does changing the slope of the line affect the distance?</li>
+                            <li>What happens to the distance when point <m>P</m> moves closer to or farther from the line?</li>
+                            <li>How are the values in the formula related to the position of the point and the line?</li>
+                        </ol>
+                    </p>
+                </instructions>
+            </interactive>
+        </figure>
+    </exploration> -->
+
     <example>
         <statement>
             <p>
