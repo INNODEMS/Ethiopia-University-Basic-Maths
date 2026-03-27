@@ -7,12 +7,14 @@
   <bibinfo>
   
     <author>
-      <personname>Ato Arbsie Yasin</personname>
+      <personname>BDU, INNODEMS, IDEMS, MOSHE-Ethiopia</personname>
+    </author>
+      <!-- <personname>Ato Arbsie Yasin</personname>
       <department></department>
       <institution></institution>
       <email></email>
-    </author>
-    <author>
+    </author> -->
+    <!-- <author>
       <personname>Dr. Berhanu Bekele</personname>
       <department></department>
       <institution></institution>
@@ -29,7 +31,7 @@
       <department></department>
       <institution></institution>
       <email></email>
-    </author>
+    </author> -->
     
     <date>
       <today />
@@ -49,14 +51,53 @@
 
   </bibinfo>
 
-  <titlepage>
+  <!-- <titlepage>
     <titlepage-items/>
-  </titlepage>
+  </titlepage> -->
 
 
     <abstract>
-    <title>Acknowledgements</title>
+      <title>Supported by</title>
+
+      <sidebyside widths="32% 32% 32%" margins="auto" valign="middle">
+        <image source="logos/INNODEMS.png" >
+           <shortdescription>INNODEMS Logo</shortdescription>
+        </image>
+        <image source="logos/BDU.jpeg">
+            <shortdescription>Bahir Dar University Logo</shortdescription>
+        </image>
+        <image source="logos/IDEMS.png">
+            <shortdescription>IDEMS Logo</shortdescription>
+        </image>
+    </sidebyside>
+
     <paragraphs>
+        <title>Contributors</title>
+        <p>The following individuals enabled the conversion of Basic Mathematics for Natural Scienecs into this digital interactive textbook:</p>
+        <p>
+            <ul cols="2">
+            <li><p>Dr. Abdu Mohammed Seid</p></li>
+            <li><p>Dr. Michael Obiero</p></li>
+            <li><p>Dr. Georg Osang</p></li>
+            <li><p>Sheila Cherotich</p></li>
+            <li><p>Rodgers Maragia</p></li>
+            <li><p>Purity Ekadeli</p></li>
+            <li><p>Michael Onyimbo</p></li>
+            <li><p>Joseph Baya</p></li>
+            <li><p>Isdora Akinyi</p></li>
+            <li><p>Henry Onyango</p></li>
+            <li><p>Hariet Moraa</p></li>
+            <li><p>Eric Morara</p></li>
+            <li><p>Daniel Murunga</p></li>
+            <li><p>Dr. David Stern</p></li>
+            <li><p>Ben Lloyd-Hurwitz</p></li>
+            </ul>
+        </p>
+
+      </paragraphs>
+
+    <paragraphs>
+      <title>Acknowledgements</title>
 
     <p> 
       We would like to extend our sincere gratitude to the <em>Department of Mathematics at Bahir Dar University</em> for organizing the <em>3rd African STACK Conference</em> one of whose outcomes is this textbook and for their coordination/leadership in digitizing the <em>Basic Mathematics for Natural Sciences</em> course material for undergraduate programs at Ethiopian universities. This important initiative has been crucial for enhancing the accessibility and quality of educational resources.
@@ -68,6 +109,10 @@
         <li><p><em>Prof. Berhanu Assaye</em>, Dean, College of Science, Bahir Dar University</p></li>
       </ul>
     </p> 
+
+    <interactive xml:id="interactive-unit-circle-sine-cosine-title" platform="jsxgraph" width="100%" aspect="2:1" source="jsxgraph/unit-circle-title.js">
+        <slate xml:id="jsxgraph-unit-circle-sine-cosine-title" surface="jsxboard" aspect="2:1"/>
+    </interactive>
 
     <p> 
         We also wish to express our appreciation to the following colleagues who contributed their time and expertise in reviewing the questions and providing valuable feedback:
@@ -82,19 +127,28 @@
           <li><p><em>Dr. Gerima Tefera</em>, Wollo University</p></li>
           <li><p><em>Mr. Fasil Gidaf</em>, Wollo University</p></li>
           <li><p><em>Dr. Habtamu Getachew</em>, Debre Markos University</p></li>
+          <li><p><em>Mr. Santiago Borio</em>, IDEMS International</p></li>
         </ul>
     </p>
 
     <p>We are deeply grateful to all the individuals mentioned above for their unwavering support and dedication to this project. Their expertise and collaboration have been invaluable in ensuring the success of this digital textbook.</p>
-    </paragraphs>
-    </abstract>
 
+    <p>The original Basic Mathematics for Natural Sciences course material was developed by the following individuals, laying the foundation for this digital adaptation:</p>
+      <ul>
+        <li><p>Ato Arbsie Yasin</p></li>
+        <li><p>Dr. Berhanu Bekele</p></li>
+        <li><p>Dr. Berhanu Guta</p></li>
+        <li><p>Ato Wondwosen Zemene</p></li>
+      </ul>
+    </paragraphs>
+  </abstract>
+    
+  <xi:include href="preface.ptx"/>
 
   <colophon xml:id="front-colophon">
     <colophon-items/>
   </colophon>
 
-  <xi:include href="preface.ptx"/>
 
 </frontmatter>
 

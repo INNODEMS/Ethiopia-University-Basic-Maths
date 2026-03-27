@@ -3,10 +3,14 @@
 <preface xml:id="preface" xmlns:xi="http://www.w3.org/2001/XInclude">
     <paragraphs>
         <title>Introduction</title>
-
         <p>
             This is an interactive online version of the Basic Maths for Natural Sciences textbook.
-            As such, at the end of most section it contains interactive exercises (<term>Checkpoints</term>)
+            Interactive elements of the online book include e.g. automatically evaluated
+            checkpoint questions (see further below) and animations (see e.g <xref ref="fig-distance-point-line"/>) that can
+            be projected in class or used by learners at home to explore on their own.
+        </p>
+        <p>
+            At the end of most sections you will find interactive exercises (<term>Checkpoints</term>)
             that students can use to practice and verify their understanding.
             Most questions are randomized, meaning that by clicking the <em>Show new example question</em> button,
             students can get a new random variant of the question to practice with.
@@ -15,9 +19,13 @@
         <p>
             The technology for these questions is called <url href="https://stack-assessment.org/">STACK</url>.
             These got beyond multiple choice questions and allow you to enter mathematical expressions.
-            The next paragraphs explain how this is done.
+            You can see an example below, and the next paragraphs explain how this is done.
         </p>
 
+        <exercise>
+            <stack label="find-several-x-values-on-the-graph-of-the-trigonometric-function-preface" source="stack/top/Mathematics-for-NS-SS-23-24-Question-Bank/Functions-(NS-and-SS)/Definition-and-basic-properties-of-logarithmic,-exponential,-tri/Find-several-x-values-on-the-graph-of-the-trigonometric-function.xml"/>
+        </exercise>
+            
     </paragraphs>
 
     <paragraphs>

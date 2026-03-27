@@ -6,7 +6,7 @@
 
   <book xml:id="basic-maths-for-natural-sciences">
     <title>BASIC MATHEMATICS FOR NATURAL SCIENCES</title>
-    <subtitle>UNDERGRADUATE STUDENT TEXTBOOK</subtitle>
+    <subtitle>INTERACTIVE UNDERGRADUATE STUDENT TEXTBOOK</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
