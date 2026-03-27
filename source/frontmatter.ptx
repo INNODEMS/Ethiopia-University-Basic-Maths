@@ -87,6 +87,37 @@
 
     <p>We are deeply grateful to all the individuals mentioned above for their unwavering support and dedication to this project. Their expertise and collaboration have been invaluable in ensuring the success of this digital textbook.</p>
     </paragraphs>
+    <paragraphs>
+        <title>Contributors</title>
+        <p>
+            <ul cols="2">
+            <li><p>Sheila Cherotich</p></li>
+            <li><p>Rodgers Maragia</p></li>
+            <li><p>Purity Ekadeli</p></li>
+            <li><p>Michael Onyimbo</p></li>
+            <li><p>Joseph Baya</p></li>
+            <li><p>Isdora Akinyi</p></li>
+            <li><p>Henry Onyango</p></li>
+            <li><p>Hariet Moraa</p></li>
+            <li><p>Eric Morara</p></li>
+            <li><p>Daniel Murunga</p></li>
+            <li><p>Zachariah Mbasu</p></li>
+            <li><p>Santiago Borio</p></li>
+            <li><p>Ben Lloyd-Hurwitz</p></li>
+            </ul>
+        </p>
+    </paragraphs>
+     <sidebyside widths="30% 30% 30%" margins="auto" valign="middle">
+        <image source="logos/BDU.jpeg">
+            <shortdescription>Bahir Dar University Logo</shortdescription>
+        </image>
+        <image source="logos/INNODEMS.png" >
+            <shortdescription>INNODEMS Logo</shortdescription>
+        </image>
+        <image source="logos/IDEMS.png">
+            <shortdescription>IDEMS Logo</shortdescription>
+        </image>
+    </sidebyside>
     </abstract>
 
 
