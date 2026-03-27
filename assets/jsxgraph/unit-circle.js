@@ -492,5 +492,6 @@ board.create('text', [CIRCLE.cx, CIRCLE.cy + 1.25, function () {
 }], {
     anchorX: 'middle',
     fontSize: 14,
-    anchorY: 'middle'
+    anchorY: 'middle',
+    color: COLORS.angle
 });
