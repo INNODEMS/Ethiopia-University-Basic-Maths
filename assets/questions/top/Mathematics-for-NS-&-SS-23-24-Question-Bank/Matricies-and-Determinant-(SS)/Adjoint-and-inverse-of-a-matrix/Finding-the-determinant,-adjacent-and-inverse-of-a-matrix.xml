@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Finding the determinant, adjacent and inverse of a matrix</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Let \(A={@matrix_A@}\). Find each of the following.</p>
+
+<br>
+
+<table>
+  <tr>
+    <td width="100px">(a) \(A_{11} = \)</td>
+    <td>&nbsp; [[input:ans1]] [[validation:ans1]]</td>
+  </tr>
+</table>
+<p>[[feedback:prt1]]</p>
+
+<table>
+  <tr>
+    <td width="100px">(b) \(Adj(A) = \)</td>
+    <td>&nbsp; [[input:ans2]] [[validation:ans2]]</td>
+  </tr>
+</table>
+<p>[[feedback:prt2]]</p>
+
+<br>
+
+<p>(c) \(\text{det}(A)=\) [[input:ans3]] [[validation:ans3]]</p>
+<p>[[feedback:prt3]]</p>
+
+<br>
+
+<table>
+  <tr>
+    <td width="100px">(d) \(A^{-1} = \)</td>
+    <td>&nbsp; [[input:ans4]] [[validation:ans4]]</td>
+  </tr>
+</table>
+<p>[[feedback:prt4]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked solution</h3>
+
+<p>(a) The matrix \(A_{ij}\) is the matrix \(A\) with the \(i^{\text{th}}\) row and \(j^{\text{th}}\) column removed. Therefore,</p>
+<p style="margin-left: 30px">\(A_{11} = {@ta_1@}\)</p>
+
+<br>
+
+<p>(b) The adjoint of a matrix, \(Adj(A)\) is given by the transpose of the matrix of cofactors, \([C_{ij}(A)]\).
+<br>The entries of the matrix of cofactors are given by,<p>
+<p style="margin-left:30px">\(C_{ij}(A) = (-1)^{i+j} \text{det}(A_{ij})\)</p>
+
+<br>
+
+<p>Using part (a), we have that,</p>
+<p style="margin-left:30px">\(C_{11}(A) = (-1)^{1+1} \text{det}(A_{11}) = \text{det} \left( {@ta_1@} \right) = {@ta_5@}\)</p>
+
+<p>Similarly, we can compute, \(A_{12} = 
+{@matrix([matrix_A[2][1], matrix_A[2][3]], [matrix_A[3][1], matrix_A[3][3]])@}
+\)
+<br>Therefore,</p>
+<p style="margin-left: 30px">\(C_{12}(A) = - \text{det} \left( {@matrix([matrix_A[2][1], matrix_A[2][3]], [matrix_A[3][1], matrix_A[3][3]])@} \right) 
+= {@ta_6@}\)</p>
+
+<br>
+
+<p>We continue to compute the remaining values to get the matrix of cofactors,</p>
+<p style="margin-left: 30px">\([C_{ij}(A)] ={@mistake_ta2@}\) </p>
+
+<p>Then, the adjoint of matrix \(A\) is given by,</p>
+<p style="margin-left:30px">\(Adj(A) = [C_{ij}(A)]^{T}= {@ta_2@}\)</p>
+
+<br>
+
+<p>(c) We can expand down the first column of the matrix to compute the determinant, remembering to alternate between addition and subtraction,</p>
+<p style="margin-left: 30px">\(\begin{align*}
+\text{det}(A) 
+
+&= {@matrix_A[1][1]@} \cdot \text{det}(A_{11}) - {@matrix_A[2][1]@} \cdot \text{det}(A_{21}) + {@matrix_A[3][1]@} \cdot \text{det}(A_{31}) \\
+
+&= {@matrix_A[1][1]@} \cdot {@if ta_2[1][1]<0 then "(" else ""@}{@ta_2[1][1]@}{@if ta_2[1][1]<0 then ")" else ""@} 
+- {@matrix_A[2][1]@} \cdot {@if -ta_2[1][2]<0 then "(" else ""@}{@-ta_2[1][2]@}{@if -ta_2[1][2]<0 then ")" else ""@} 
++ {@matrix_A[3][1]@} \cdot {@if ta_2[1][3]<0 then "(" else ""@}{@ta_2[1][3]@}{@if ta_2[1][3]<0 then ")" else ""@} \\
+
+&= {@ta_3@}
+\end{align*}\)</p>
+
+<br>
+
+<p>(d) We obtain the inverse of a matrix, \(A\) by dividing the matrix \(\text{adj}(A)\) by the constant \(\text{det}(A)\),
+<p style="margin-left: 30px">\(A^{-1} = \frac{1}{\text{det}(A)} \cdot \text{adj}(A)
+={@ta_4@}\)]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>matrix_A:rand(matrix([3,3,3],[3,3,3],[3,3,3]));
+while determinant(matrix_A) = 0 do matrix_A: rand(matrix([3,3,3],[3,3,3],[3,3,3]));
+ta_1:matrix([matrix_A[2,2],matrix_A[2,3]],[matrix_A[3,2],matrix_A[3,3]]);
+ta_2:adjoint(matrix_A);
+ta_3:determinant(matrix_A);
+ta_4:invert(matrix_A);
+
+simp:true;
+ta_5:ratsimp((-1)^(1+1)*((matrix_A[2,2]*matrix_A[3,3])-(matrix_A[3,2]*matrix_A[2,3])));
+ta_6: ratsimp((-1)^(1+2) *((matrix_A[2,1]*matrix_A[3,3])-(matrix_A[3,1]*matrix_A[2,3])));
+
+/*Possible mistakes*/
+mistake_ta2:transpose(ta_2);
+mistake_ta4:transpose(matrix_A);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>\(A={@matrix_A@}\).</p>
+<p>\(A(1|1)={@ta_1@} \) </p>
+<p>adj\((A)={@ta_2@} \) </p>
+<p>\(\text{det}(A)={@ta_3@}\)</p>
+<p> \(A^{-1}={@ta_4@} \) </p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>ta_1</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>ta_2</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta_3</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>matrix</type>
+      <tans>ta_4</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta_1</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*node 1 checks for correct answer*/
+/*node 2 mistake: Forgetting to find the transpose of the cofactor matrix.*/
+mistake_1:mistake_ta2;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta_2</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>mistake_1</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer is almost correct.
+<br>However, you have forgotten to take the <b>transpose</b> of the cofactor matrix in order to find the adjoint matrix.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*Node 1: Checks for the correct answer */</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>ta_3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*node 1 checks for correct answer*/
+/*node 2 mistake: Finding the transpose of A*/
+mistake_2:mistake_ta4;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>ta_4</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>mistake_2</tans>
+        <testoptions/>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You have given the <b>transpose</b> of the matrix \(A\).
+<br>You should have determined the <b>inverse</b> of the matrix \(A\), which is the matrix, \(A^{-1}\), such that,</p>
+<p style="margin-left:30px">\(A A^{-1} = I = A A^{-1}\)</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>103807350</deployedseed>
+    <deployedseed>335577088</deployedseed>
+    <deployedseed>1265814154</deployedseed>
+    <deployedseed>628086339</deployedseed>
+    <deployedseed>1177122277</deployedseed>
+    <deployedseed>452082304</deployedseed>
+    <deployedseed>899527677</deployedseed>
+    <deployedseed>1687646905</deployedseed>
+    <deployedseed>339918942</deployedseed>
+    <deployedseed>1764423027</deployedseed>
+    <deployedseed>1388368562</deployedseed>
+    <deployedseed>165460528</deployedseed>
+    <deployedseed>739804725</deployedseed>
+    <deployedseed>1415451854</deployedseed>
+    <deployedseed>1233022336</deployedseed>
+    <deployedseed>1124591521</deployedseed>
+    <deployedseed>1165414116</deployedseed>
+    <deployedseed>1813145605</deployedseed>
+    <deployedseed>779986814</deployedseed>
+    <deployedseed>1849899729</deployedseed>
+    <deployedseed>1737639263</deployedseed>
+    <deployedseed>779051886</deployedseed>
+    <deployedseed>1730837656</deployedseed>
+    <deployedseed>1692451855</deployedseed>
+    <deployedseed>1943047250</deployedseed>
+    <deployedseed>221987300</deployedseed>
+    <deployedseed>1238688125</deployedseed>
+    <deployedseed>957768855</deployedseed>
+    <deployedseed>101451981</deployedseed>
+    <deployedseed>1532729359</deployedseed>
+    <deployedseed>1150311796</deployedseed>
+    <deployedseed>1546189905</deployedseed>
+    <deployedseed>2094868168</deployedseed>
+    <deployedseed>222855933</deployedseed>
+    <deployedseed>640724058</deployedseed>
+    <deployedseed>1049115005</deployedseed>
+    <deployedseed>224208859</deployedseed>
+    <deployedseed>1423232077</deployedseed>
+    <deployedseed>1584345088</deployedseed>
+    <deployedseed>1673264217</deployedseed>
+    <deployedseed>1558872717</deployedseed>
+    <deployedseed>53468151</deployedseed>
+    <deployedseed>2119141414</deployedseed>
+    <deployedseed>1538339626</deployedseed>
+    <deployedseed>1591773920</deployedseed>
+    <deployedseed>42978047</deployedseed>
+    <deployedseed>1791061210</deployedseed>
+    <deployedseed>1289664117</deployedseed>
+    <deployedseed>1693300831</deployedseed>
+    <deployedseed>754350462</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta_1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta_2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta_3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta_4</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

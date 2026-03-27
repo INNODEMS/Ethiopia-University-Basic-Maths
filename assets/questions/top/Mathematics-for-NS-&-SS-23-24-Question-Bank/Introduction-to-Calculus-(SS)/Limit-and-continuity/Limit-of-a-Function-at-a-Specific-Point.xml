@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Limit of a Function at a Specific Point</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>You are given that the function \(f(x)\) satisfies the inequality,</p>
+<p style="margin-left: 30px">\({@fleft@} \leq f(x) \leq {@fright@}\) for \(x \leq {@cc@}\)</p>
+<p>Determine the value of \(\displaystyle \lim_{x \rightarrow {@cc@}} f(x)\)</p>
+
+<p style="margin-left: 30px">\(\displaystyle \lim_{x \rightarrow {@cc@}} f(x) =\) [[input:ans1]] [[validation:ans1]]</p>
+<p>[[feedback:prt1]]<p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked solution</h3>
+
+<p>We can find \(\displaystyle \lim_{x \rightarrow {@cc@}} f(x)\) using the "Squeeze Theorem", as follows,</p>
+
+<p style="margin-left: 30px">
+\({@fleft@} \leq f(x) \leq {@fright@} \Rightarrow \displaystyle
+\lim_{x \rightarrow {@cc@}}({@fleft@}) \leq \lim_{x \rightarrow {@cc@}}f(x) \leq \lim_{x \rightarrow {@cc@}}({@fright@})\)
+</p>
+
+<p>Then, we can compute the two bounding limits,</p>
+<p hidden>{@simp:false;@}
+<p style="margin-left: 30px">\(\displaystyle \lim_{x \rightarrow {@cc@}}({@fleft@}) = {@aa@} \cdot {@cc + bb@} = {@sqval@}\)</p>
+
+<p style="margin-left: 30px">\(\displaystyle \lim_{x \rightarrow {@cc@}}({@fright@}) = {@line1@} = {@sqval@}\)</p>
+<p hidden>{@simp:true;@}
+
+<p>Therefore, since both of these limits exist and are equal, the Squeeze Theorem tells us that the limit of \(f(x)\) exists, and is equal to the limit of its bounding functions.</p>
+<p>Hence, \(\displaystyle \lim_{x \rightarrow {@cc@}} f(x) = {@sqval@}\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[aa:rand(5)+2;
+bb:rand_with_prohib(-5,5,[0]);
+sig:if bb<0 then "-" else "+";
+cc:rand(3)+1;
+fleft:aa*x+bb;
+sqval:ev(fleft,x=cc);
+fright:x+sqval-cc;
+
+/* worked solution - unevaluated lines */
+simp:false;
+line1: cc + ev(sqval-cc,simp);
+simp:true;]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>inequality: \({@fleft@} \leq f(x) \leq {@fright@}\) for \(x \leq {@cc@}\)</p>
+<p>answer: \({@sqval@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>sqval</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*node1: checks for the correct answer*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>sqval</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>625360063</deployedseed>
+    <deployedseed>1770674849</deployedseed>
+    <deployedseed>1577378847</deployedseed>
+    <deployedseed>1523684791</deployedseed>
+    <deployedseed>730905344</deployedseed>
+    <deployedseed>2107977864</deployedseed>
+    <deployedseed>313384694</deployedseed>
+    <deployedseed>908946984</deployedseed>
+    <deployedseed>398804035</deployedseed>
+    <deployedseed>1589052833</deployedseed>
+    <deployedseed>2144400584</deployedseed>
+    <deployedseed>1101474687</deployedseed>
+    <deployedseed>316922821</deployedseed>
+    <deployedseed>1144789547</deployedseed>
+    <deployedseed>1416886319</deployedseed>
+    <deployedseed>1451997223</deployedseed>
+    <deployedseed>1576728424</deployedseed>
+    <deployedseed>671943370</deployedseed>
+    <deployedseed>212101813</deployedseed>
+    <deployedseed>1190767491</deployedseed>
+    <deployedseed>2058841847</deployedseed>
+    <deployedseed>36147420</deployedseed>
+    <deployedseed>1420841106</deployedseed>
+    <deployedseed>325126236</deployedseed>
+    <deployedseed>1588985030</deployedseed>
+    <deployedseed>796350694</deployedseed>
+    <deployedseed>1328995962</deployedseed>
+    <deployedseed>1597458400</deployedseed>
+    <deployedseed>1742879709</deployedseed>
+    <deployedseed>1988650036</deployedseed>
+    <deployedseed>2035843510</deployedseed>
+    <deployedseed>1388554858</deployedseed>
+    <deployedseed>1850515709</deployedseed>
+    <deployedseed>1340960407</deployedseed>
+    <deployedseed>1129501324</deployedseed>
+    <deployedseed>901773980</deployedseed>
+    <deployedseed>1756815706</deployedseed>
+    <deployedseed>357317656</deployedseed>
+    <deployedseed>12265791</deployedseed>
+    <deployedseed>1104279014</deployedseed>
+    <deployedseed>347186206</deployedseed>
+    <deployedseed>131654030</deployedseed>
+    <deployedseed>1184152904</deployedseed>
+    <deployedseed>807531385</deployedseed>
+    <deployedseed>493957579</deployedseed>
+    <deployedseed>1841735521</deployedseed>
+    <deployedseed>9155193</deployedseed>
+    <deployedseed>1585994893</deployedseed>
+    <deployedseed>1253540639</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>sqval</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>
