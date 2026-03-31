@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Analyzing a Hyperbola with Given Foci and a Point</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Consider a hyperbola with foci \(F: \hspace{3px} (\){@focus1[1]@}\(,\) {@focus1[2]@}\()\) and \(F': \hspace{3px} (\){@focus2[1]@}\(,\) {@focus2[2]@}\()\), and which contains the point \((\){@point[1]@}\(,\) {@point[2]@}\()\).</p>
+
+<br>
+
+<p>(a) Where is the center of the hyperbola?</p>
+<p style="margin-left:30px">\( C: \hspace{3px} \big( \) [[input:ans1x]] [[validation:ans1x]] \( , \) [[input:ans1y]] [[validation:ans1y]] \( \big) \)</p>
+<p>[[feedback:prt1]]</p>
+
+<br>
+
+<p>(b) Determine the principal axis of the hyperbola.</p>
+<p style="margin-left:30px">[[input:ans2]] [[validation:ans2]]</p>
+<p>[[feedback:prt2]]</p>
+
+<br>
+
+<p>(c) Find the length of the transverse axis of the hyperbola.</p>
+<p style="margin-left:30px">[[input:ans3]] [[validation:ans3]]</p>
+<p>[[feedback:prt3]]</p>
+
+<br>
+
+<p>(d) Find the coordinates of the vertices of the hyperbola.</p>
+<p style="margin-left:30px">\( V: \hspace{3px} \big( \) [[input:ans4x]] [[validation:ans4x]] \( , \) [[input:ans4y]] [[validation:ans4y]] \( \big) \)</p>
+<p style="margin-left:30px">\( V': \hspace{3px} \big( \) [[input:ans5x]] [[validation:ans5x]] \( , \) [[input:ans5y]] [[validation:ans5y]] \( \big) \)</p>
+<p>[[feedback:prt4]]</p>
+
+<br>
+
+<p>(e) Determine whether each of the following points is on the hyperbola or not.</p>
+
+<table style="margin-left:30px">
+  <tr height="30px">
+    <td width="200px">(i) \((\){@question_e[1][1][1]@}\(,\) {@question_e[1][1][2]@}\()\)</td>
+    <td width="200px">[[input:ans6a]] [[validation:ans6a]]</td>
+  </tr>
+  <tr height="30px">
+    <td>(ii) \((\){@question_e[2][1][1]@}\(,\) {@question_e[2][1][2]@}\()\)</td>
+    <td>[[input:ans6b]] [[validation:ans6b]]</td>
+  </tr>
+  <!---<tr height="30px">
+    <td>(iii) \((\) @question_e[3][1][1]@ \(,\) @question_e[3][1][2]@ \()\)</td>
+    <td>[input:ans6c] [validation:ans6c]</td>
+  </tr>--->
+</table>
+<p>[[feedback:prt6]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked Solution</h3>
+
+<p>We are given a hyperbola with foci \(F: \hspace{3px} (\){@focus1[1]@}\(,\) {@focus1[2]@}\()\) and \(F': \hspace{3px} (\){@focus2[1]@}\(,\) {@focus2[2]@}\()\), and which contains the point \((\){@point[1]@}\(,\) {@point[2]@}\()\).</p>
+
+<br>
+
+<p>(a) The <b>center</b> of the hyperbola is the midpoint of the two foci. 
+<br>Therefore, this hyperbola has center at \((\) {@ta1x@} \(,\) {@ta1y@} \()\)</p>
+
+<br>
+
+<p>(b) The <b>principal axis</b> of the hyperbola is the line passing through both of the foci. 
+<br>Therefore, this hyperbola has principal axis {@prin_axis@}</p>
+
+<br>
+
+<p>(c) The <b>transverse axis</b> of the hyperbola is the line segment between the two vertices of the hyperbola. We will call the two vertices \(V\) and \(V’\), which are the points of the hyperbola which lie on the principal axis.
+<br>Since the hyperbola has rotational symmetry about the center, the distance between the two vertices is twice the distance between the center and one of the vertices.</p>
+<p>\(|VV'| = 2|CV|\)</p>
+
+<p>By definition, for any point on the hyperbola, the difference between the distance to each focus is constant. 
+<br>We call this constant \(2a\), and our aim is to write the distance \(|CV|\) in terms of this constant.</p>
+
+<br>
+
+<p>Since the center, vertex and focus are collinear, we have the following relationships,</p>
+<p style="margin-left:30px">\(|CV| + |VF| = |CF|\)</p>
+<p style="margin-left:30px">\(|VF’| = |CV| + |CF’| = |CV| + |CF|\)</p>
+<p>Then, subtracting the first equation from the second,</p>
+<p style="margin-left:30px">\(|VF’| - |VF| = 2|CV|\)</p>
+
+<p>Since the vertex is a point on the hyperbola, by definition we know that \(|VF’| - |VF| = 2a\).
+<br>Therefore, \(|CV| = a\)</p>
+
+<br>
+
+<p>However, \(a\) is a constant which we can determine since we know a point on the hyperbola.</p>
+<p hidden>{@simp:false@}</p>
+<p style="margin-left:30px">\(\begin{align*}
+    2a &= \big| |PF’| - |PF| \big| \\
+    &= \big| {@line1@} - {@line2@} \big| \\
+    &= | {@ev(line1,simp)@} - {@ev(line2,simp)@} | \\
+    &= {@ev(2*const_a, simp)@} \\
+    a &= {@const_a@}
+\end{align*}\)</p>
+<p hidden>{@simp:true@}</p>
+
+<p>Therefore \(|CV| = {@const_a@}\), so the length of the transverse axis is given by,</p>
+<p style="margin-left:30px">\(|VV’| = |CV| + |CV’| = {@2*const_a@}\)</p>
+
+<br>
+
+<p>(d) Since \(|CV| = |CV’| = {@const_a@}\) and \(V, V’\) lie on the principal axis {@prin_axis@}, we conclude that,</p> 
+<p style="margin-left:30px">\(V = ({@ta4x@}, {@ta4y@})\)</p>
+<p style="margin-left:30px">\(V’ = ({@ta5x@}, {@ta5y@})\)</p>
+
+<br>
+
+<p>(e) For each of the points, we can check whether the difference between the distance to each focus is equal to \(2a = {@2*const_a@}\)</p>
+
+[[ foreach x="[1,2]" ]]
+<br>
+<p style="margin-left:30px">
+{@if x=1 then "(i)" else if x=2 then "(ii)" else if x=3 then "(iii)"@}
+Writing \(Q_{@x@}: \hspace{3px} (\){@question_e[x][1][1]@}\(,\) {@question_e[x][1][2]@}\()\), we have</p>
+<p hidden>{@simp:false@}</p>
+<p style="margin-left:60px">\(\begin{align*}
+    \big| |Q_{@1@}F’| - |Q_{@1@}F| \big|
+    &= \big| \sqrt{{@line1e[x]@}} - \sqrt{{@line2e[x]@}} \big| \\
+    &= | {@sqrt(line3e[x])@} - {@sqrt(line4e[x])@} | \\
+    &= {@line5e[x]@}
+\end{align*}\)</p>
+<p hidden>{@simp:true@}</p>
+<p style="margin-left:30px">Therefore, \(Q_{@x@}\) <b>does {@if line5e[x]=2*const_a then "" else "not"@}</b> lie on the hyperbola.</p>
+<p hidden>{@simp:true@}</p>
+[[/ foreach ]]]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[/* randomized components of the question */
+center: [rand_with_prohib(-5,5,[0]), rand_with_prohib(-5,5,[0])];
+const_a: rand(4)+1;
+ecc: rand(2)+2;
+axis_direction: rand(["x", "y"]);
+
+/* determine key points */
+prin_axis: if axis_direction="x" then y=center[2] 
+  else if axis_direction="y" then x=center[1];
+
+vertex1: if axis_direction="x" then center + [const_a,0] 
+  else if axis_direction="y" then center + [0,const_a];
+vertex2: if axis_direction="x" then center - [const_a,0] 
+  else if axis_direction="y" then center - [0,const_a];
+
+focus1: if axis_direction="x" then center + [ecc*const_a,0] 
+  else if axis_direction="y" then center + [0,ecc*const_a];
+focus2: if axis_direction="x" then center - [ecc*const_a,0] 
+  else if axis_direction="y" then center - [0,ecc*const_a];
+
+const: if ecc=2 then 3 else if ecc=3 then 8;
+point: if axis_direction="x" then 
+    center + [rand([1,-1])*ecc*const_a, rand([1,-1])*const*const_a]
+  else if axis_direction="y" then
+    center + [rand([1,-1])*const*const_a, rand([1,-1])*ecc*const_a];
+
+/* points for q3 */
+point1: random_permutation([rand([-1,1]), -1])*point;
+point2: center + random_permutation([rand([-1,1]), -1])*(point-center);
+
+/* --------------- REMOVED */ /*
+I have removed the third part of (e) which should be a random point lying either on or off the hyperbola. This wasn't generating correctly so I am leaving it for now, possibly to be returned to later.
+
+is_point3_corr: rand([true, false]);
+point3_min_coord: rand_with_prohib(-4,4,[0, const, -const]);
+point3_maj_coord: if is_point3_corr then 
+    rand([-1,1])*sqrt(const_a^2 + point3_min_coord^2 / ecc^2)
+  else
+    rand([-1,1])*sqrt(rand_with_prohib(-5,5,[0]) + const_a^2 + point3_min_coord^2 / ecc^2);
+
+point3: if axis_direction="x" then 
+    center + [point3_maj_coord, point3_min_coord]
+  else if axis_direction="y" then
+    center + [point3_min_coord, point3_maj_coord];
+*/ /* --------------- END OF REMOVED */
+
+question_e: random_permutation([
+  [point1, [["Yes", false], ["No", true]]],
+  [point2, [["Yes", true], ["No", false]]]
+  /*[point3, [["Yes", is_point3_corr], ["No", not(is_point3_corr)]]]*/
+]);
+
+/* teacher answers */
+ta1x:center[1];
+ta1y:center[2];
+
+ta2:prin_axis;
+
+ta3:2*const_a;
+
+ta4x:vertex1[1];
+ta4y:vertex1[2];
+ta5x:vertex2[1];
+ta5y:vertex2[2];
+
+ma6a:question_e[1][2];
+ma6b:question_e[2][2];
+/*ma6c:question_e[3][2];*/
+ta6a:mcq_correct(ma6a)[1];
+ta6b:mcq_correct(ma6b)[1];
+/*ta6c:mcq_correct(ma6c)[1];*/
+
+/* worked solution */
+simp:false;
+
+line1: sqrt((point[1] - focus1[1])^2 + (point[2] - focus1[2])^2);
+line2: sqrt((point[1] - focus2[1])^2 + (point[2] - focus2[2])^2);
+
+line1e: [
+    (question_e[1][1][1] - focus1[1])^2 + (question_e[1][1][2] - focus1[2])^2,
+    (question_e[2][1][1] - focus1[1])^2 + (question_e[2][1][2] - focus1[2])^2
+  /*(question_e[3][1][1] - focus1[1])^2 + (question_e[3][1][2] - focus1[2])^2*/
+];
+
+line2e: [
+    (question_e[1][1][1] - focus2[1])^2 + (question_e[1][1][2] - focus2[2])^2,
+    (question_e[2][1][1] - focus2[1])^2 + (question_e[2][1][2] - focus2[2])^2
+  /*(question_e[3][1][1] - focus2[1])^2 + (question_e[3][1][2] - focus2[2])^2*/
+];
+
+simp:true;
+
+line3e: makelist(ev(expand(line1e[i]), simp), i, 1, 2);
+line4e: makelist(ev(expand(line2e[i]), simp), i, 1, 2);
+line5e: makelist(ev(abs(sqrt(line3e[i])-sqrt(line4e[i])), simp), i, 1, 2);]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>Consider a hyperbola with foci \(F: (\){@focus1[1]@}\(,\) {@focus1[2]@}\()\) and \(F': (\){@focus2[1]@}\(,\) {@focus2[2]@}\()\), and which contains the point \((\){@point[1]@}\(,\) {@point[2]@}\()\).</p>
+<p>(a) \(C: {@center@}\)</p>
+<p>(b) Principal axis: \({@ta2@}\)</p>
+<p>(c) Length: \({@ta3@}\)</p>
+<p>(d) \(V: {@vertex1@}, V': {@vertex2@}\)</p>
+<p>(e) (i) {@question_e[1][1]@} - {@ta6a@}</p>
+<p>(e) (ii) {@question_e[2][1]@} - {@ta6b@}</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1x</name>
+      <type>algebraic</type>
+      <tans>ta1x</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans1y</name>
+      <type>algebraic</type>
+      <tans>ta1y</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>8</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4x</name>
+      <type>algebraic</type>
+      <tans>ta4x</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans4y</name>
+      <type>algebraic</type>
+      <tans>ta4y</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans5x</name>
+      <type>algebraic</type>
+      <tans>ta5x</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans5y</name>
+      <type>algebraic</type>
+      <tans>ta5y</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans6a</name>
+      <type>dropdown</type>
+      <tans>ma6a</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <input>
+      <name>ans6b</name>
+      <type>dropdown</type>
+      <tans>ma6b</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>[ans1x, ans1y]</sans>
+        <tans>[ta1x, ta1y]</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>{[ans4x, ans4y], [ans5x, ans5y]}</sans>
+        <tans>{[ta4x, ta4y], [ta5x, ta5y]}</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt6</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>[ans6a, ans6b]</sans>
+        <tans>[ta6a, ta6b]</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt6-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt6-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1968250576</deployedseed>
+    <deployedseed>1355490423</deployedseed>
+    <deployedseed>1524959635</deployedseed>
+    <deployedseed>143940666</deployedseed>
+    <deployedseed>119127682</deployedseed>
+    <deployedseed>1665989843</deployedseed>
+    <deployedseed>1733146766</deployedseed>
+    <deployedseed>227675114</deployedseed>
+    <deployedseed>2018846673</deployedseed>
+    <deployedseed>185398850</deployedseed>
+    <deployedseed>205536788</deployedseed>
+    <deployedseed>65367880</deployedseed>
+    <deployedseed>1900025043</deployedseed>
+    <deployedseed>109307799</deployedseed>
+    <deployedseed>312668004</deployedseed>
+    <deployedseed>806789683</deployedseed>
+    <deployedseed>1877208119</deployedseed>
+    <deployedseed>879480832</deployedseed>
+    <deployedseed>1230393150</deployedseed>
+    <deployedseed>1071684270</deployedseed>
+    <deployedseed>732558653</deployedseed>
+    <deployedseed>1953581099</deployedseed>
+    <deployedseed>2089924680</deployedseed>
+    <deployedseed>937312782</deployedseed>
+    <deployedseed>1990412906</deployedseed>
+    <deployedseed>1359777053</deployedseed>
+    <deployedseed>75653159</deployedseed>
+    <deployedseed>1043041894</deployedseed>
+    <deployedseed>843752072</deployedseed>
+    <deployedseed>666780796</deployedseed>
+    <deployedseed>1362079549</deployedseed>
+    <deployedseed>642436572</deployedseed>
+    <deployedseed>1914552107</deployedseed>
+    <deployedseed>235831826</deployedseed>
+    <deployedseed>1582711322</deployedseed>
+    <deployedseed>1997615412</deployedseed>
+    <deployedseed>1439151251</deployedseed>
+    <deployedseed>1682221390</deployedseed>
+    <deployedseed>69976750</deployedseed>
+    <deployedseed>2023747164</deployedseed>
+    <deployedseed>70100365</deployedseed>
+    <deployedseed>855306371</deployedseed>
+    <deployedseed>2097513945</deployedseed>
+    <deployedseed>612585089</deployedseed>
+    <deployedseed>1641088795</deployedseed>
+    <deployedseed>1057437115</deployedseed>
+    <deployedseed>206557092</deployedseed>
+    <deployedseed>818554606</deployedseed>
+    <deployedseed>1797963449</deployedseed>
+    <deployedseed>987884403</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1x</name>
+        <value>ta1x</value>
+      </testinput>
+      <testinput>
+        <name>ans1y</name>
+        <value>ta1y</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4x</name>
+        <value>ta4x</value>
+      </testinput>
+      <testinput>
+        <name>ans4y</name>
+        <value>ta4y</value>
+      </testinput>
+      <testinput>
+        <name>ans5x</name>
+        <value>ta5x</value>
+      </testinput>
+      <testinput>
+        <name>ans5y</name>
+        <value>ta5y</value>
+      </testinput>
+      <testinput>
+        <name>ans6a</name>
+        <value>first(mcq_correct(ma6a))</value>
+      </testinput>
+      <testinput>
+        <name>ans6b</name>
+        <value>first(mcq_correct(ma6b))</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt6</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt6-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

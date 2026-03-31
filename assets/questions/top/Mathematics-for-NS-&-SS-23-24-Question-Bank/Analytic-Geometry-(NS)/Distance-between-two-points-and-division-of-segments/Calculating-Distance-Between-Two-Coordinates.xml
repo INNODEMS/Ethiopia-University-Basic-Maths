@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Calculating Distance Between Two Coordinates</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Find the distance between the points \(A({@x_1@},{@y_1@})\)  and \(B({@x_2@},{@y_2@})\). 
+<br>Give your answer in exact form.</p>
+
+<p style="margin-left: 30px">\(|AB| = \) [[input:ans1]] [[validation:ans1]]</p>
+<p>[[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked solution</h3>
+
+<p>Recall that the distance between two points \(P_1(x_1, y_1)\) and \(P_2(x_2, y_2)\) is given by the formula,</p>
+<p style="margin-left: 30px">\(|P_1 P_2| = \sqrt{(x_2-x_1)^2+(y_2-y_1)^2}\)</p>
+
+<p>In this case, we have,</p>
+<p style="margin-left: 30px">\(A({@x_1@},{@y_1@}) \Rightarrow x_1={@x_1@}, &nbsp; y_1={@y_1@}\)</p>
+<p style="margin-left: 30px">\(B({@x_2@},{@y_2@}) \Rightarrow x_2={@x_2@}, &nbsp; y_2={@y_2@}\)</p>
+
+<p>So, the distance between the two points is,</p>
+
+<p hidden>{@simp:false@}</p>
+<p style="margin-left: 30px">\(\begin{align*}
+|AB| &= {@line1@} \\
+&={@line2@} \\
+&={@line3@} \\
+&={@ta1@}
+\end{align*}\)</p>
+<p hidden>{@simp:true@}</p>
+
+<p>Therefore, \( |AB| = {@ta1@} \)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text>/* Generate random coordinates*/
+x_1: rand(5) + 5;  /* x-coordinate of point A (range: 5-9)*/
+x_2: rand_with_step(-5, 5, 1);  /* x-coordinate of point B (range: -5 to 5 in steps of 1)*/
+y_1: rand(3) + 4;  /* y-coordinate of point A (range: 4-6)*/
+y_2: rand(4) + 4;  /* y-coordinate of point B (range: 4-7)*/
+
+/* Calculate distance between points AB*/
+ta1: sqrt((x_2 - x_1)^2 + (y_2 - y_1)^2);  /* distance formula*/
+/*worked solution variables*/
+x_points:(x_2 - x_1)^2;
+y_points: (y_2 - y_1)^2;
+
+/* Worked solution */
+simp:false;
+line1: sqrt((x_1 - x_2)^2 + (y_1 - y_2)^2);
+line2: sqrt(ev(x_1 - x_2,simp)^2 + ev(y_1 - y_2,simp)^2);
+line3: sqrt(ev((x_1 - x_2)^2,simp) + ev((y_1 - y_2)^2,simp));
+simp:true;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>Coordinates: \(A({@x_1@},{@y_1@})\) and \(B({@x_2@},{@y_2@})\)</p>
+<p>Distance: \({@ta1@}\)</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>8</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*node 1:checks for the correct answers*/
+
+/*node 2:Subtracting the square of the points instead of adding*/
+mistake_1:sqrt(abs((x_2-x_1)^2-(y_2-y_1)^2));
+
+/*node 3:Adding x_2+x_1 and y_2+y_1 instead of subtracting*/
+mistake_2:sqrt((x_2+x_1)^2+(y_2+y_1)^2);
+
+/*node 4:Failing to get the square root of   the addition after finding a square of the difference of the point of \(x\) and \(y\)*/
+mistake_3:((x_2-x_1)^2+(y_2-y_1)^2);
+
+/*node 5:Not leaving the answer in exact form - giving to 0-4dp*/
+inexact_ans:[
+    decimalplaces(float(ta1),0),
+    decimalplaces(float(ta1),1),
+    decimalplaces(float(ta1),2),
+    decimalplaces(float(ta1),3),
+    decimalplaces(float(ta1),4)
+]
+node5_test: if member(ans1, inexact_ans) then 1 else 0;</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>CasEqual</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake_1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>To find the distance between the points you should <b>add</b> the squared difference of the \(x\) and \(y\) coordinates and take the square root.
+<br>For points \(P_1(x_1, y_1)\) and \(P_2(x_2, y_2)\), the distance between the points is given by the formula,</p>
+<p style="margin-left:30px">\(|P_1 P_2| = \sqrt{(x_2-x_1)^2+(y_2-y_1)^2}\)</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake_2</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>To find the distance between the points you should add the squared <b>difference</b> of the \(x\) and \(y\) coordinates and take the square root.
+<br>For points \(P_1(x_1, y_1)\) and \(P_2(x_2, y_2)\), the distance between the points is given by the formula,</p>
+<p style="margin-left:30px">\(|P_1 P_2| = \sqrt{(x_2-x_1)^2+(y_2-y_1)^2}\)</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mistake_3</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>To find the distance between the points you should add the squared difference of the \(x\) and \(y\) coordinates and <b>take the square root</b>.
+<br>For points \(P_1(x_1, y_1)\) and \(P_2(x_2, y_2)\), the distance between the points is given by the formula,</p>
+<p style="margin-left:30px">\(|P_1 P_2| = \sqrt{(x_2-x_1)^2+(y_2-y_1)^2}\)</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>4</falsenextnode>
+        <falseanswernote>prt1-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>4</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>node5_test</sans>
+        <tans>1</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1/2</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-5-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your answer is correct.
+<br>However you have rounded your answer and have not given the distance in <b>exact form</b>.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-5-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>817018752</deployedseed>
+    <deployedseed>1721656552</deployedseed>
+    <deployedseed>974510578</deployedseed>
+    <deployedseed>1189602275</deployedseed>
+    <deployedseed>1500742813</deployedseed>
+    <deployedseed>725522276</deployedseed>
+    <deployedseed>759766978</deployedseed>
+    <deployedseed>535588530</deployedseed>
+    <deployedseed>1802367641</deployedseed>
+    <deployedseed>122341065</deployedseed>
+    <deployedseed>2096117675</deployedseed>
+    <deployedseed>692199705</deployedseed>
+    <deployedseed>282261742</deployedseed>
+    <deployedseed>1769610474</deployedseed>
+    <deployedseed>1584350451</deployedseed>
+    <deployedseed>1594263288</deployedseed>
+    <deployedseed>1550396356</deployedseed>
+    <deployedseed>1241905235</deployedseed>
+    <deployedseed>1606460292</deployedseed>
+    <deployedseed>704088296</deployedseed>
+    <deployedseed>19066436</deployedseed>
+    <deployedseed>1882124497</deployedseed>
+    <deployedseed>1587734485</deployedseed>
+    <deployedseed>1285685918</deployedseed>
+    <deployedseed>694178072</deployedseed>
+    <deployedseed>557657034</deployedseed>
+    <deployedseed>1011442014</deployedseed>
+    <deployedseed>202295419</deployedseed>
+    <deployedseed>2132679303</deployedseed>
+    <deployedseed>310408286</deployedseed>
+    <deployedseed>1768898091</deployedseed>
+    <deployedseed>819116948</deployedseed>
+    <deployedseed>894075924</deployedseed>
+    <deployedseed>1843573377</deployedseed>
+    <deployedseed>1565595502</deployedseed>
+    <deployedseed>2093476593</deployedseed>
+    <deployedseed>635295893</deployedseed>
+    <deployedseed>1416269453</deployedseed>
+    <deployedseed>1649088200</deployedseed>
+    <deployedseed>554591541</deployedseed>
+    <deployedseed>240775438</deployedseed>
+    <deployedseed>122463270</deployedseed>
+    <deployedseed>1497448969</deployedseed>
+    <deployedseed>2049948186</deployedseed>
+    <deployedseed>1329781718</deployedseed>
+    <deployedseed>1887403642</deployedseed>
+    <deployedseed>71474328</deployedseed>
+    <deployedseed>1845721487</deployedseed>
+    <deployedseed>2023572083</deployedseed>
+    <deployedseed>341063101</deployedseed>
+    <deployedseed>1903729175</deployedseed>
+    <deployedseed>1270133335</deployedseed>
+    <deployedseed>1208233921</deployedseed>
+    <deployedseed>544993237</deployedseed>
+    <deployedseed>769558178</deployedseed>
+    <deployedseed>1872030683</deployedseed>
+    <deployedseed>1344020291</deployedseed>
+    <deployedseed>1307171067</deployedseed>
+    <deployedseed>676471675</deployedseed>
+    <deployedseed>1247703187</deployedseed>
+    <deployedseed>1909019159</deployedseed>
+    <deployedseed>2080725105</deployedseed>
+    <deployedseed>2130951271</deployedseed>
+    <deployedseed>1265012499</deployedseed>
+    <deployedseed>1056186888</deployedseed>
+    <deployedseed>2022096682</deployedseed>
+    <deployedseed>1254671835</deployedseed>
+    <deployedseed>1815068646</deployedseed>
+    <deployedseed>1546449584</deployedseed>
+    <deployedseed>1642198159</deployedseed>
+    <deployedseed>2057958198</deployedseed>
+    <deployedseed>1881037715</deployedseed>
+    <deployedseed>933191383</deployedseed>
+    <deployedseed>1911845747</deployedseed>
+    <deployedseed>1688053552</deployedseed>
+    <deployedseed>2125056888</deployedseed>
+    <deployedseed>451971092</deployedseed>
+    <deployedseed>1497674508</deployedseed>
+    <deployedseed>310133885</deployedseed>
+    <deployedseed>1190731107</deployedseed>
+    <deployedseed>1936608696</deployedseed>
+    <deployedseed>2030230319</deployedseed>
+    <deployedseed>208180642</deployedseed>
+    <deployedseed>1682255960</deployedseed>
+    <deployedseed>367030854</deployedseed>
+    <deployedseed>1402783501</deployedseed>
+    <deployedseed>1834989451</deployedseed>
+    <deployedseed>317853308</deployedseed>
+    <deployedseed>144370848</deployedseed>
+    <deployedseed>494394271</deployedseed>
+    <deployedseed>1111997348</deployedseed>
+    <deployedseed>2049588416</deployedseed>
+    <deployedseed>923469517</deployedseed>
+    <deployedseed>1803047246</deployedseed>
+    <deployedseed>809624012</deployedseed>
+    <deployedseed>174639553</deployedseed>
+    <deployedseed>1992474927</deployedseed>
+    <deployedseed>1644170750</deployedseed>
+    <deployedseed>1646160873</deployedseed>
+    <deployedseed>1187686147</deployedseed>
+    <deployedseed>1626101301</deployedseed>
+    <deployedseed>808094846</deployedseed>
+    <deployedseed>572887165</deployedseed>
+    <deployedseed>550146544</deployedseed>
+    <deployedseed>275076615</deployedseed>
+    <deployedseed>1434401282</deployedseed>
+    <deployedseed>71461994</deployedseed>
+    <deployedseed>319752519</deployedseed>
+    <deployedseed>338321655</deployedseed>
+    <deployedseed>1536540348</deployedseed>
+    <deployedseed>2085496190</deployedseed>
+    <deployedseed>1782876466</deployedseed>
+    <deployedseed>435619705</deployedseed>
+    <deployedseed>1566214004</deployedseed>
+    <deployedseed>1276024658</deployedseed>
+    <deployedseed>1903154074</deployedseed>
+    <deployedseed>460962458</deployedseed>
+    <deployedseed>1648068353</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>

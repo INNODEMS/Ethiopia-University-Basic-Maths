@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="stack">
+    <name>
+      <text>Determine which statements are true</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p> Select all of the statements below that are true.</p>
+<p>[[input:ans1]] [[validation:ans1]]</p>
+<p>[[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<h3>Worked solution</h3>
+
+[[ if test="member(1, ta_index)" ]]
+<p> "Horses are mammals and frogs are amphibians."</p>
+<p>This statement is true because both of the comprising statements are true.</p>
+{@if not(ta_largest=1) then "<br>" else ""@}
+[[/ if ]]
+
+[[ if test="member(2, ta_index)" ]]
+<p>"The sum of the interior angles of any triangle is always 180 degrees."</p>
+<p>The Triangle Sum Theorem states that the sum of the interior angles of a triangle is always equal to a straight angle, which measures 180 degrees thus the statement is true.</p>
+{@if not(ta_largest=1) then "<br>" else ""@}
+[[/ if ]]
+
+[[ if test="member(3, ta_index)" ]]
+<p>"if two lines are parallel, then they will never intersect"</p>
+<p>Two parallel lines will never intersect because they maintain a constant distance from each other at every point hence the satement is true.</p>
+{@if not(ta_largest=1) then "<br>" else ""@}
+[[/ if ]]
+
+[[ if test="member(4, ta_index)" ]]
+<p>"\(2 \times 4 = 8\), only if \(2 + 4 = 8\)"</p>
+<p> Here we are claiming <b>True</b> \( \Rightarrow \) <b>False</b>, which is False. 
+<br>Thus it is a false statement.</p>
+{@if not(ta_largest=1) then "<br>" else ""@}
+[[/ if ]]
+
+[[ if test="member(5, ta_index)" ]]
+<p>"Division by zero is defined and results in a meaningful value"</p>
+<p>The statement is false because in mathematics, division by zero is considered undefined because it leads to various contradictions and inconsistencies. When we divide a number by a very small positive number, the result becomes extremely large. As the divisor approaches zero, the quotient tends to infinity, which is not a finite and well-defined value. On the other hand, if the divisor approaches zero from the negative side, the quotient tends to negative infinity.</p>
+{@if not(ta_largest=1) then "<br>" else ""@}
+[[/ if ]]
+
+[[ if test="member(6, ta_index)" ]]
+<p>"The square root of a negative number is a real number."</p>
+<p>The statement is false because the square root of a negative number is not a real number. In the real number system, there is no real number that, when squared, gives a negative result. This is because the square of any real number is always non-negative.</p>
+{@if not(ta_largest=1) then "<br>" else ""@}
+[[/ if ]]]]></text>
+    </generalfeedback>
+    <defaultgrade>3</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>0</hidden>
+    <idnumber/>
+    <stackversion>
+      <text>2023060500</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[ta_true: rand_selection([
+  [1, true, "Horses are mammals and frogs are amphibians."],
+  [2, true, "The sum of the interior angles of any triangle is always 180 degrees."],
+  [3, true, "if two lines are parallel, then they will never intersect"]
+], 1);
+
+ta_false: rand_selection([
+  [4, false, "\\(2 \\times 4 = 8\\), only if \\(2 + 4 = 8\\)"],
+  [5, false, "Division by zero is defined and results in a meaningful value"],
+  [6, false, "The square root of a negative number is a real number."]
+], 2);
+
+ta:random_permutation(append(ta_true,ta_false));
+ta_index: sort(makelist(x[1], x, ta));
+ta_largest: last(ta_index);]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text/>
+    </specificfeedback>
+    <questionnote format="moodle_auto_format">
+      <text><![CDATA[<p>True statement: {@mcq_correct(ta)[1]@}</p>
+<p>False statements: {@mcq_incorrect(ta)@}</p>]]></text>
+    </questionnote>
+    <questiondescription format="moodle_auto_format">
+      <text/>
+    </questiondescription>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i> Your answer is partially correct.</span>]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <decimals>.</decimals>
+    <scientificnotation>*10</scientificnotation>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed/>
+    <input>
+      <name>ans1</name>
+      <type>checkbox</type>
+      <tans>ta</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint/>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords/>
+      <allowwords/>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options/>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text/>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <description/>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mcq_correct(ta)</tans>
+        <testoptions/>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1</truescore>
+        <truepenalty/>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text/>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0</falsescore>
+        <falsepenalty/>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text/>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>415442381</deployedseed>
+    <deployedseed>60683925</deployedseed>
+    <deployedseed>1487461689</deployedseed>
+    <deployedseed>499706999</deployedseed>
+    <deployedseed>1917782380</deployedseed>
+    <deployedseed>1284588220</deployedseed>
+    <deployedseed>957474342</deployedseed>
+    <deployedseed>1273001315</deployedseed>
+    <deployedseed>31931398</deployedseed>
+    <deployedseed>1064595179</deployedseed>
+    <deployedseed>1130112719</deployedseed>
+    <deployedseed>620883387</deployedseed>
+    <deployedseed>1993736347</deployedseed>
+    <deployedseed>1062169906</deployedseed>
+    <deployedseed>1883997875</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <description/>
+      <testinput>
+        <name>ans1</name>
+        <value>mcq_correct(ta)</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+</quiz>
